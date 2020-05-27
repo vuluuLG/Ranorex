@@ -1,0 +1,11 @@
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\mobileSol.rxtmg
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\mobileSol.rxtst
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\mobileSol.exe.config
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\mobileSol.xml
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\mobileSol.exe
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\mobileSol.pdb
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\Ranorex.Core.Resolver.dll
+D:\Ranorex Workplace\mobileSol\mobileSol\obj\x86\Debug\mobileSol.csprojResolveAssemblyReference.cache
+D:\Ranorex Workplace\mobileSol\mobileSol\obj\x86\Debug\mobileSol.exe
+D:\Ranorex Workplace\mobileSol\mobileSol\obj\x86\Debug\mobileSol.pdb
+D:\Ranorex Workplace\mobileSol\mobileSol\bin\Debug\Test_case_001__Verify_that_user_can_add_page_DataSource.csv

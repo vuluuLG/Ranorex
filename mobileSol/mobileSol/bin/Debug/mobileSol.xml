@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mobileSol</name>
+    </assembly>
+    <members>
+        <member name="T:mobileSol.mobileSolRepository">
+            <summary>
+            The class representing the mobileSolRepository element repository.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the mobileSolRepository element repository.
+            </summary>
+        </member>
+        <member name="M:mobileSol.mobileSolRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepository.Browser">
+            <summary>
+            The Browser folder.
+            </summary>
+        </member>
+        <member name="T:mobileSol.mobileSolRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder">
+            <summary>
+            The BrowserAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Browser  folder.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder.LoginPage">
+            <summary>
+            The LoginPage folder.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder.DashboardPage">
+            <summary>
+            The DashboardPage folder.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.BrowserAppFolder.Dom">
+            <summary>
+            The Dom folder.
+            </summary>
+        </member>
+        <member name="T:mobileSol.mobileSolRepositoryFolders.LoginPageFolder">
+            <summary>
+            The LoginPageFolder folder.
+            </summary>
+        </member>
+        <member name="M:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new LoginPage  folder.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.TxtUsername">
+            <summary>
+            The TxtUsername item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.TxtUsernameInfo">
+            <summary>
+            The TxtUsername item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.TxtPassword">
+            <summary>
+            The TxtPassword item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.TxtPasswordInfo">
+            <summary>
+            The TxtPassword item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.BtnLogin">
+            <summary>
+            The BtnLogin item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.BtnLoginInfo">
+            <summary>
+            The BtnLogin item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.DdlRepository">
+            <summary>
+            The DdlRepository item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.LoginPageFolder.DdlRepositoryInfo">
+            <summary>
+            The DdlRepository item info.
+            </summary>
+        </member>
+        <member name="T:mobileSol.mobileSolRepositoryFolders.DashboardPageFolder">
+            <summary>
+            The DashboardPageFolder folder.
+            </summary>
+        </member>
+        <member name="M:mobileSol.mobileSolRepositoryFolders.DashboardPageFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DashboardPage  folder.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.DashboardPageFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.DashboardPageFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:mobileSol.mobileSolRepositoryFolders.DomAppFolder">
+            <summary>
+            The DomAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:mobileSol.mobileSolRepositoryFolders.DomAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Dom  folder.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.DomAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.DomAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.DomAppFolder.MnSetting">
+            <summary>
+            The MnSetting item.
+            </summary>
+        </member>
+        <member name="P:mobileSol.mobileSolRepositoryFolders.DomAppFolder.MnSettingInfo">
+            <summary>
+            The MnSetting item info.
+            </summary>
+        </member>
+        <member name="T:mobileSol.Recording_Modules.CloseApp">
+             <summary>
+            The CloseApp recording.
+             </summary>
+        </member>
+        <member name="F:mobileSol.Recording_Modules.CloseApp.repo">
+            <summary>
+            Holds an instance of the global::mobileSol.mobileSolRepository repository.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.CloseApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.CloseApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.CloseApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:mobileSol.Recording_Modules.CloseApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.CloseApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.CloseApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:mobileSol.Recording_Modules.Login">
+             <summary>
+            The Login recording.
+             </summary>
+        </member>
+        <member name="F:mobileSol.Recording_Modules.Login.repo">
+            <summary>
+            Holds an instance of the global::mobileSol.mobileSolRepository repository.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.Login.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.Login.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.Login.varRepository">
+            <summary>
+            Gets or sets the value of variable varRepository.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.Login.varUsername">
+            <summary>
+            Gets or sets the value of variable varUsername.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.Login.varPassword">
+            <summary>
+            Gets or sets the value of variable varPassword.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.Login.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:mobileSol.Recording_Modules.Login.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.Login.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.Login.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:mobileSol.Recording_Modules.StartApp">
+             <summary>
+            The StartApp recording.
+             </summary>
+        </member>
+        <member name="F:mobileSol.Recording_Modules.StartApp.repo">
+            <summary>
+            Holds an instance of the global::mobileSol.mobileSolRepository repository.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.StartApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.StartApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:mobileSol.Recording_Modules.StartApp.varURL">
+            <summary>
+            Gets or sets the value of variable varURL.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.StartApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:mobileSol.Recording_Modules.StartApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.StartApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:mobileSol.Recording_Modules.StartApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

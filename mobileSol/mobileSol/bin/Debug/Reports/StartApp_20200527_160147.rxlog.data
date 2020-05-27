@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.3m"
+		durationms="75084"
+		type="root"
+		rid="1ba73f25b961c16e"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="thuc.duy.nguyen"
+		rxversion="9.3.1.0"
+		host="LGVN181265"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="5/27/2020 4:01:50 PM"
+		timestampiso="2020-05-27T09:01:50"
+		endtime="5/27/2020 4:03:05 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="StartApp">
+		<detail>
+			StartApp
+		</detail>
+		<errormessage>
+			Failed to start app 'ranorex.RxBrowser' because the app started event was not received within the specified timeout of '00:01:00'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.668"
+			timeRelativeToTestModuleStartTime="00:04.668"
+			timeWallClock="16:01:55"
+			time="00:04.668"
+			level="Warn"
+			category="Data"
+			errimg="images_StartApp_1193b699\StartApp_1193b699_bc8fc8f9_trace.jpg"
+			errthumb="images_StartApp_1193b699\StartApp_1193b699_bc8fc8f9_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>varURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.685"
+			timeRelativeToTestModuleStartTime="00:04.685"
+			timeWallClock="16:01:55"
+			time="00:04.685"
+			level="Info"
+			category="Application"
+			errimg="images_StartApp_1193b699\StartApp_1193b699_bc8fc8f9_trace.jpg"
+			errthumb="images_StartApp_1193b699\StartApp_1193b699_bc8fc8f9_trace_thumb.jpg">
+			<message>
+				Run mobile app 'ranorex.RxBrowser' on device 'Samsung Galaxy Tab A'.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="D:\Ranorex Workplace\mobileSol\mobileSol\Recording Modules\StartApp.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:15.007"
+			timeRelativeToTestModuleStartTime="01:15.007"
+			timeWallClock="16:03:05"
+			time="01:15.007"
+			level="Error"
+			category="Module"
+			errimg="images_StartApp_1193b699\StartApp_1193b699_121b654b_trace.jpg"
+			errthumb="images_StartApp_1193b699\StartApp_1193b699_121b654b_trace_thumb.jpg">
+			<message>
+				Failed to start app 'ranorex.RxBrowser' because the app started event was not received within the specified timeout of '00:01:00'.<br/>The operation has timed out.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Plugin.Mobile.Device.MobileDevice.WaitForAppStartedEvent(AppInformation appInfo, TimeSpan timeout, TimeSpan waitTimeCorrection)
+   at Ranorex.Plugin.Mobile.Device.MobileDevice.StartApplication(AppInformation appInfo, Boolean resetInitialState)
+   at Ranorex.Host.RunMobileApp(String deviceDisplayName, String appName, Boolean resetInitialState)
+   at mobileSol.Recording_Modules.StartApp.Ranorex.Core.Testing.ITestModule.Run() in D:\Ranorex Workplace\mobileSol\mobileSol\Recording Modules\StartApp.cs:line 96
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="D:\Ranorex Workplace\mobileSol\mobileSol\Recording Modules\StartApp.cs"
+				codeline="96"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

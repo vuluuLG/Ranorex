@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="44.95s"
+		durationms="44945"
+		type="root"
+		rid="9b76ffe9b849b06"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="thuc.duy.nguyen"
+		rxversion="9.3.1.0"
+		host="LGVN181265"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="5/27/2020 4:03:32 PM"
+		timestampiso="2020-05-27T09:03:32"
+		endtime="5/27/2020 4:04:17 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="StartApp">
+		<detail>
+			StartApp
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.751"
+			timeRelativeToTestModuleStartTime="00:04.751"
+			timeWallClock="16:03:36"
+			time="00:04.751"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>varURL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.765"
+			timeRelativeToTestModuleStartTime="00:04.765"
+			timeWallClock="16:03:36"
+			time="00:04.765"
+			level="Info"
+			category="Application">
+			<message>
+				Run mobile app 'ranorex.RxBrowser' on device 'Samsung Galaxy Tab A'.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="D:\Ranorex Workplace\mobileSol\mobileSol\Recording Modules\StartApp.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:31.978"
+			timeRelativeToTestModuleStartTime="00:31.978"
+			timeWallClock="16:04:04"
+			time="00:31.978"
+			level="Info"
+			category="Set value">
+			<message>
+				Browse to site.<br/>Setting attribute PageUrl to 'http://192.168.171.142/TADashboard' on item 'Browser.Dom'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/mobileapp[@title='ranorex.RxBrowser']//dom"
+				itempath=".//dom"
+				fullname="mobileSolRepository.Browser.Dom.Self"
+				id="11c35c9dd669494fa63f70257e80752f"
+				timeout="20000"
+				codefile="D:\Ranorex Workplace\mobileSol\mobileSol\Recording Modules\StartApp.cs"
+				codeline="100"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

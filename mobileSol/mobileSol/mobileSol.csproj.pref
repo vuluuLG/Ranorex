@@ -1,0 +1,19 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="Coding Modules\GoToSettingFunctions.cs" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="mobileSol.rxtst" />
+    <Element value="mobileSolRepository.rxrep" />
+    <Element value="Recording Modules\Recording1.rxrec" />
+    <Element value="Coding Modules\GoToSettingFunctions.cs" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <fileNames value="" />
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

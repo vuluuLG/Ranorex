@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0621c4b3-b837-451c-907a-53fd2f5cf7ed"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="mobileSol.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"
+	name="mobileSolRepository"
+	relativepath="..\mobileSolRepository.rxrep">
+		<codegen
+		classname="mobileSolRepository"
+		namespace="mobileSol">
+		</codegen>
+		<rootfolder
+		id="481228dd-fc9e-4553-a870-03b9f327e5aa"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
