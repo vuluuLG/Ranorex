@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.41s"
+		durationms="7405"
+		type="root"
+		rid="2adefc7f6130d2a6"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Administrator"
+		rxversion="9.3.1.0"
+		host="__TRANG__"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/28/2020 4:09:35 PM"
+		timestampiso="2020-05-28T09:09:35"
+		endtime="5/28/2020 4:09:42 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="InstallApp">
+		<detail>
+			InstallApp
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.253"
+			timeRelativeToTestModuleStartTime="00:07.253"
+			timeWallClock="16:09:42"
+			time="00:07.253"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>StartAutProcessIDVar
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.357"
+			timeRelativeToTestModuleStartTime="00:07.357"
+			timeWallClock="16:09:42"
+			time="00:07.357"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'F:\Software\npp.7.8.6.Installer.x64.exe' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="25.94s"
+		durationms="25944"
+		type="root"
+		rid="282792eb880c1db0"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Administrator"
+		rxversion="9.3.1.0"
+		host="__TRANG__"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/28/2020 3:23:53 PM"
+		timestampiso="2020-05-28T08:23:53"
+		endtime="5/28/2020 3:24:19 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DownloadApp">
+		<detail>
+			DownloadApp
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.967"
+			timeRelativeToTestModuleStartTime="00:06.967"
+			timeWallClock="15:24:00"
+			time="00:06.967"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer.GoogleChrome' at 22;30.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@processname='explorer']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename='Google Chrome']"
+				itempath="container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename='Google Chrome']"
+				fullname="DesktopApp_AutomationRepository.Explorer.GoogleChrome"
+				id="35ad773f82f04a679a99cbaec371ac35"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.500"
+			timeRelativeToTestModuleStartTime="00:09.500"
+			timeWallClock="15:24:03"
+			time="00:09.500"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'n' with focus on 'NewTab'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='newtab']"
+				itempath="/dom[@domain='newtab']"
+				fullname="DesktopApp_AutomationRepository.NewTab.Self"
+				id="05343ef3b67a406987185e7e62980174"
+				timeout="30000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.175"
+			timeRelativeToTestModuleStartTime="00:11.175"
+			timeWallClock="15:24:04"
+			time="00:11.175"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Return}' with focus on 'NewTab'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='newtab']"
+				itempath="/dom[@domain='newtab']"
+				fullname="DesktopApp_AutomationRepository.NewTab.Self"
+				id="05343ef3b67a406987185e7e62980174"
+				timeout="30000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="91"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.788"
+			timeRelativeToTestModuleStartTime="00:11.788"
+			timeWallClock="15:24:05"
+			time="00:11.788"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusDownloadGoogleSearch1.DownloadsNotepadPlusPlus' at 141;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='www.google.com']//div[#'rso']/div[1]//a[@href>'https://notepad-plus-plus']/h3[@innertext='Downloads | Notepad++']"
+				itempath=".//div[#'rso']/div[1]//a[@href>'https://notepad-plus-plus']/h3[@innertext='Downloads | Notepad++']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusDownloadGoogleSearch1.DownloadsNotepadPlusPlus"
+				id="0c4cecf889db4b57aaa1fe8c76485081"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="96"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.032"
+			timeRelativeToTestModuleStartTime="00:14.032"
+			timeWallClock="15:24:07"
+			time="00:14.032"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R' at 99;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul//a[@innertext>'            Notepad++ 7.8.6']"
+				itempath=".//main[#'main']/ul//a[@innertext>'            Notepad++ 7.8.6']"
+				fullname="DesktopApp_AutomationRepository.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R"
+				id="73ddebf88caf4d25a24dc36be22fad29"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="100"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.283"
+			timeRelativeToTestModuleStartTime="00:15.283"
+			timeWallClock="15:24:08"
+			time="00:15.283"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Down item 'DownloadsNotepadPlusPlus' at 1354;169.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='notepad-plus-plus.org']"
+				itempath="/dom[@domain='notepad-plus-plus.org']"
+				fullname="DesktopApp_AutomationRepository.DownloadsNotepadPlusPlus.Self"
+				id="80836e3bd7ee447b8dfc4fa35dc1565b"
+				timeout="30000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="104"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.052"
+			timeRelativeToTestModuleStartTime="00:16.052"
+			timeWallClock="15:24:09"
+			time="00:16.052"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Up item 'DownloadsNotepadPlusPlus' at 1364;347.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='notepad-plus-plus.org']"
+				itempath="/dom[@domain='notepad-plus-plus.org']"
+				fullname="DesktopApp_AutomationRepository.DownloadsNotepadPlusPlus.Self"
+				id="80836e3bd7ee447b8dfc4fa35dc1565b"
+				timeout="30000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="109"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.740"
+			timeRelativeToTestModuleStartTime="00:16.740"
+			timeWallClock="15:24:10"
+			time="00:16.740"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 22;8.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul[2]/?/?/a[@innertext='Installer']"
+				itempath=".//main[#'main']/ul[2]/?/?/a[@innertext='Installer']"
+				fullname="DesktopApp_AutomationRepository.DownloadsNotepadPlusPlus.Installer"
+				id="88d204cfd0f7445eaa250bb1e8fda038"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="114"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.585"
+			timeRelativeToTestModuleStartTime="00:17.585"
+			timeWallClock="15:24:11"
+			time="00:17.585"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'SaveAs.ButtonSave' at 30;8.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Save As']/button[@text='&amp;Save']"
+				itempath="button[@text='&amp;Save']"
+				fullname="DesktopApp_AutomationRepository.SaveAs.ButtonSave"
+				id="9cac2d417be24dd1a08a04bbfc998a7e"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="118"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.900"
+			timeRelativeToTestModuleStartTime="00:20.900"
+			timeWallClock="15:24:14"
+			time="00:20.900"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (Text&gt;' npp.7.8.6.Installer.x64 ') on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Notepad++ 7.8.6 release |']/container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+				itempath="container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe"
+				id="7b0ecce42c2347f3b3bd93cfd84a1f01"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="122"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:25.834"
+			timeRelativeToTestModuleStartTime="00:25.834"
+			timeWallClock="15:24:19"
+			time="00:25.834"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'DesktopApp_AutomationRepository.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Notepad++ 7.8.6 release |']/container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+				itempath="container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe"
+				id="7b0ecce42c2347f3b3bd93cfd84a1f01"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\DownloadApp.cs"
+				codeline="123"
+				loglvl="Success"
+				itemindex="9">
+			</metainfo>
+		</item>
+	</activity>
+</report>

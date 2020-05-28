@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="28.21s"
+		durationms="28206"
+		type="root"
+		rid="453b4cb8002ac70"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Administrator"
+		rxversion="9.3.1.0"
+		host="__TRANG__"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/28/2020 3:12:10 PM"
+		timestampiso="2020-05-28T08:12:10"
+		endtime="5/28/2020 3:12:38 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="UninstallApp">
+		<detail>
+			UninstallApp
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.336"
+			timeRelativeToTestModuleStartTime="00:07.336"
+			timeWallClock="15:12:18"
+			time="00:07.336"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer.FileExplorer' at 17;23.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@processname='explorer']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename='File Explorer']"
+				itempath="container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename='File Explorer']"
+				fullname="DesktopApp_AutomationRepository.Explorer.FileExplorer"
+				id="b6a572789fd147529d184974d9347dae"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.037"
+			timeRelativeToTestModuleStartTime="00:09.037"
+			timeWallClock="15:12:19"
+			time="00:09.037"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Right Click item 'FileExplorer.ThisPC' at 18;6.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='File Explorer']/element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/?/?/treeitem[@text='This PC']"
+				itempath="element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/?/?/treeitem[@text='This PC']"
+				fullname="DesktopApp_AutomationRepository.FileExplorer.ThisPC"
+				id="ac04b269098d44a9a451ab6046605269"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.868"
+			timeRelativeToTestModuleStartTime="00:10.868"
+			timeWallClock="15:12:21"
+			time="00:10.868"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer1.Properties' at 92;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/contextmenu[@processname='explorer']/?/?/menuitem[@accessiblename='Properties']"
+				itempath="?/?/menuitem[@accessiblename='Properties']"
+				fullname="DesktopApp_AutomationRepository.Explorer1.Properties"
+				id="5766201b64c1490fb351e7c2a81bc837"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.834"
+			timeRelativeToTestModuleStartTime="00:11.834"
+			timeWallClock="15:12:22"
+			time="00:11.834"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'System.CPLink' at 75;5.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='System']//container[@automationid='FolderLayoutContainer']/container[@automationid='NavPanel']/link[@automationid='CPLink']"
+				itempath=".//container[@automationid='FolderLayoutContainer']/container[@automationid='NavPanel']/link[@automationid='CPLink']"
+				fullname="DesktopApp_AutomationRepository.System.CPLink"
+				id="dbd9841770c14cde9cd14d6781877a97"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.767"
+			timeRelativeToTestModuleStartTime="00:14.767"
+			timeWallClock="15:12:25"
+			time="00:14.767"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ControlPanel.Tasklink' at 47;8.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Control Panel']//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+				itempath=".//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+				fullname="DesktopApp_AutomationRepository.ControlPanel.Tasklink"
+				id="5804611c497544969de5e865aca3e972"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="98"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.635"
+			timeRelativeToTestModuleStartTime="00:16.635"
+			timeWallClock="15:12:27"
+			time="00:16.635"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Text='Notepad++ (64-bit x64)') on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+				id="ecca0354b4984e39b9b66b0f1a4c0ee2"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="102"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.765"
+			timeRelativeToTestModuleStartTime="00:17.765"
+			timeWallClock="15:12:28"
+			time="00:17.765"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+				id="ecca0354b4984e39b9b66b0f1a4c0ee2"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="103"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.871"
+			timeRelativeToTestModuleStartTime="00:17.871"
+			timeWallClock="15:12:28"
+			time="00:17.871"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Right Click item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64' at 120;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+				id="ecca0354b4984e39b9b66b0f1a4c0ee2"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="106"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.851"
+			timeRelativeToTestModuleStartTime="00:18.851"
+			timeWallClock="15:12:29"
+			time="00:18.851"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer1.Uninstall' at 47;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/contextmenu[@processname='explorer']/?/?/menuitem[@accessiblename='Uninstall']"
+				itempath="?/?/menuitem[@accessiblename='Uninstall']"
+				fullname="DesktopApp_AutomationRepository.Explorer1.Uninstall"
+				id="0db5063dd00b489786b8624b7fe9747a"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="110"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.535"
+			timeRelativeToTestModuleStartTime="00:19.535"
+			timeWallClock="15:12:30"
+			time="00:19.535"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonUninstall' at 15;13.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Uninstall']"
+				itempath="button[@text='&amp;Uninstall']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Uninstall.ButtonUninstall"
+				id="80d3ca04c988466bb4a809cc0708611c"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="114"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.117"
+			timeRelativeToTestModuleStartTime="00:21.117"
+			timeWallClock="15:12:31"
+			time="00:21.117"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Uninstall1.ButtonNo' at 33;13.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Notepad++ v7.8.6 Uninstal']/button[@text='&amp;No']"
+				itempath="button[@text='&amp;No']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Uninstall1.ButtonNo"
+				id="695cb77ed5774ea39941b537a9ef2cde"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="118"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.103"
+			timeRelativeToTestModuleStartTime="00:27.103"
+			timeWallClock="15:12:37"
+			time="00:27.103"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonClose' at 27;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Close']"
+				itempath="button[@text='&amp;Close']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Uninstall.ButtonClose"
+				id="553ddc339ad3494c880f068049616f62"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="122"
+				itemindex="10"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.521"
+			timeRelativeToTestModuleStartTime="00:27.521"
+			timeWallClock="15:12:38"
+			time="00:27.521"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ProgramsAndFeatures.Close' at 17;5.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/?/?/button[@accessiblename='Close']"
+				itempath="?/?/button[@accessiblename='Close']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.Close"
+				id="14401f65f676453a8eaee6f3d713f11d"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\UninstallApp.cs"
+				codeline="126"
+				itemindex="11"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="16.92s"
+		durationms="16922"
+		type="root"
+		rid="137579fd40978575"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Administrator"
+		rxversion="9.3.1.0"
+		host="__TRANG__"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/28/2020 2:09:57 PM"
+		timestampiso="2020-05-28T07:09:57"
+		endtime="5/28/2020 2:10:14 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateInstalled">
+		<detail>
+			ValidateInstalled
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.047"
+			timeRelativeToTestModuleStartTime="00:06.047"
+			timeWallClock="14:10:03"
+			time="00:06.047"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer.FileExplorer' at 16;14.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@processname='explorer']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename='File Explorer']"
+				itempath="container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename='File Explorer']"
+				fullname="DesktopApp_AutomationRepository.Explorer.FileExplorer"
+				id="b6a572789fd147529d184974d9347dae"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.372"
+			timeRelativeToTestModuleStartTime="00:08.372"
+			timeWallClock="14:10:05"
+			time="00:08.372"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Right Click item 'FileExplorer.ThisPC' at 16;14.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='File Explorer']/element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/?/?/treeitem[@text='This PC']"
+				itempath="element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/?/?/treeitem[@text='This PC']"
+				fullname="DesktopApp_AutomationRepository.FileExplorer.ThisPC"
+				id="ac04b269098d44a9a451ab6046605269"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.072"
+			timeRelativeToTestModuleStartTime="00:10.072"
+			timeWallClock="14:10:07"
+			time="00:10.072"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer1.Properties' at 24;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/contextmenu[@processname='explorer']/?/?/menuitem[@accessiblename='Properties']"
+				itempath="?/?/menuitem[@accessiblename='Properties']"
+				fullname="DesktopApp_AutomationRepository.Explorer1.Properties"
+				id="5766201b64c1490fb351e7c2a81bc837"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.986"
+			timeRelativeToTestModuleStartTime="00:10.986"
+			timeWallClock="14:10:08"
+			time="00:10.986"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'System.CPLink' at 96;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='System']//container[@automationid='FolderLayoutContainer']/container[@automationid='NavPanel']/link[@automationid='CPLink']"
+				itempath=".//container[@automationid='FolderLayoutContainer']/container[@automationid='NavPanel']/link[@automationid='CPLink']"
+				fullname="DesktopApp_AutomationRepository.System.CPLink"
+				id="dbd9841770c14cde9cd14d6781877a97"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.655"
+			timeRelativeToTestModuleStartTime="00:13.655"
+			timeWallClock="14:10:11"
+			time="00:13.655"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ControlPanel.Tasklink' at 31;5.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Control Panel']//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+				itempath=".//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+				fullname="DesktopApp_AutomationRepository.ControlPanel.Tasklink"
+				id="5804611c497544969de5e865aca3e972"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="98"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.339"
+			timeRelativeToTestModuleStartTime="00:15.339"
+			timeWallClock="14:10:12"
+			time="00:15.339"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Text='Notepad++ (64-bit x64)') on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+				id="ecca0354b4984e39b9b66b0f1a4c0ee2"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="102"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.367"
+			timeRelativeToTestModuleStartTime="00:16.367"
+			timeWallClock="14:10:13"
+			time="00:16.367"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='Notepad++ (64-bit x64)']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+				id="ecca0354b4984e39b9b66b0f1a4c0ee2"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="103"
+				loglvl="Success"
+				itemindex="5">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.475"
+			timeRelativeToTestModuleStartTime="00:16.475"
+			timeWallClock="14:10:14"
+			time="00:16.475"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ProgramsAndFeatures.ProgramsAndFeatures' at 1327;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Programs and Features']/titlebar[@accessiblerole='TitleBar']"
+				itempath="titlebar[@accessiblerole='TitleBar']"
+				fullname="DesktopApp_AutomationRepository.ProgramsAndFeatures.ProgramsAndFeatures"
+				id="bfe4acea6ab840049256388bb3a66ee0"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\ValidateInstalled.cs"
+				codeline="106"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

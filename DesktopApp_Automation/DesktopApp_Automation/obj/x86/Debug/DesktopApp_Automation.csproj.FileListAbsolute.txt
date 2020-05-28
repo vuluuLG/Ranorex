@@ -1,0 +1,10 @@
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.rxtmg
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.rxtst
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.exe.config
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.xml
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.exe
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.pdb
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\Ranorex.Core.Resolver.dll
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.csprojResolveAssemblyReference.cache
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.exe
+F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.pdb

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="17.51s"
+		durationms="17507"
+		type="root"
+		rid="3a5a42999c143f02"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Administrator"
+		rxversion="9.3.1.0"
+		host="__TRANG__"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="5/28/2020 4:28:48 PM"
+		timestampiso="2020-05-28T09:28:48"
+		endtime="5/28/2020 4:29:06 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="InstallApp">
+		<detail>
+			InstallApp
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.192"
+			timeRelativeToTestModuleStartTime="00:06.192"
+			timeWallClock="16:28:55"
+			time="00:06.192"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>StartAutProcessIDVar
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.239"
+			timeRelativeToTestModuleStartTime="00:06.239"
+			timeWallClock="16:28:55"
+			time="00:06.239"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'F:\Software\npp.7.8.6.Installer.x64.exe' in normal mode. Return value bound to $StartAutProcessIDVar.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.286"
+			timeRelativeToTestModuleStartTime="00:06.286"
+			timeWallClock="16:28:55"
+			time="00:06.286"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'InstallerLanguage.ButtonOK' at 28;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Installer Language']/button[@text='OK']"
+				itempath="button[@text='OK']"
+				fullname="DesktopApp_AutomationRepository.InstallerLanguage.ButtonOK"
+				id="deeda41765b94ba7874201b3a316e568"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.252"
+			timeRelativeToTestModuleStartTime="00:09.252"
+			timeWallClock="16:28:58"
+			time="00:09.252"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 20;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+				itempath="button[@text='&amp;Next >']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.ButtonNext"
+				id="bd103db34c6f43a4871d7a2b74776334"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.604"
+			timeRelativeToTestModuleStartTime="00:10.604"
+			timeWallClock="16:28:59"
+			time="00:10.604"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Setup.IAgree' at 20;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='I &amp;Agree']"
+				itempath="button[@text='I &amp;Agree']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.IAgree"
+				id="39a27e69fc114477963b0e3995574088"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="107"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.105"
+			timeRelativeToTestModuleStartTime="00:11.105"
+			timeWallClock="16:29:00"
+			time="00:11.105"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 17;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+				itempath="button[@text='&amp;Next >']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.ButtonNext"
+				id="bd103db34c6f43a4871d7a2b74776334"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="111"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.554"
+			timeRelativeToTestModuleStartTime="00:11.554"
+			timeWallClock="16:29:00"
+			time="00:11.554"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 17;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+				itempath="button[@text='&amp;Next >']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.ButtonNext"
+				id="bd103db34c6f43a4871d7a2b74776334"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="115"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.002"
+			timeRelativeToTestModuleStartTime="00:12.002"
+			timeWallClock="16:29:00"
+			time="00:12.002"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonInstall' at 17;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Install']"
+				itempath="button[@text='&amp;Install']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.ButtonInstall"
+				id="077b33a1aa3749e9aee85cae20ddb495"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="119"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.439"
+			timeRelativeToTestModuleStartTime="00:12.439"
+			timeWallClock="16:29:01"
+			time="00:12.439"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (Title&gt;'7.8.6 ') on item 'NotepadPlusPlusV786Setup'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']"
+				itempath="/form[@title='Notepad++ v7.8.6 Setup']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.Self"
+				id="766b6185b8ac4e3d88d36169b9e63e6f"
+				timeout="30000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="123"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.482"
+			timeRelativeToTestModuleStartTime="00:12.482"
+			timeWallClock="16:29:01"
+			time="00:12.482"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Title' of element for item 'DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.Self' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']"
+				itempath="/form[@title='Notepad++ v7.8.6 Setup']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.Self"
+				id="766b6185b8ac4e3d88d36169b9e63e6f"
+				timeout="30000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="124"
+				loglvl="Success"
+				itemindex="7">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.593"
+			timeRelativeToTestModuleStartTime="00:12.593"
+			timeWallClock="16:29:01"
+			time="00:12.593"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonFinish' at 31;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Finish']"
+				itempath="button[@text='&amp;Finish']"
+				fullname="DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup.ButtonFinish"
+				id="1ed6ded83f9e4afda1767a973b2c43ab"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="127"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.072"
+			timeRelativeToTestModuleStartTime="00:15.072"
+			timeWallClock="16:29:04"
+			time="00:15.072"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'CProgramFilesNotepadPlusPlusChange.Close' at 20;16.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title>'C:\Program Files\Notepad++\change.log']/?/?/button[@accessiblename='Close']"
+				itempath="?/?/button[@accessiblename='Close']"
+				fullname="DesktopApp_AutomationRepository.CProgramFilesNotepadPlusPlusChange.Close"
+				id="28d9e51a35cc45178d6c583182b54022"
+				timeout="60000"
+				codefile="f:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\Recordings\InstallApp.cs"
+				codeline="131"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

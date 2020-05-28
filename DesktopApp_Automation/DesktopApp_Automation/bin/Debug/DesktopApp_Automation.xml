@@ -1,0 +1,1181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DesktopApp_Automation</name>
+    </assembly>
+    <members>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepository">
+            <summary>
+            The class representing the DesktopApp_AutomationRepository element repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the DesktopApp_AutomationRepository element repository.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.Explorer">
+            <summary>
+            The Explorer folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.FileExplorer">
+            <summary>
+            The FileExplorer folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.System">
+            <summary>
+            The System folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.ControlPanel">
+            <summary>
+            The ControlPanel folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.Explorer1">
+            <summary>
+            The Explorer1 folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.ProgramsAndFeatures">
+            <summary>
+            The ProgramsAndFeatures folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NotepadPlusPlusV786Uninstall">
+            <summary>
+            The NotepadPlusPlusV786Uninstall folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NotepadPlusPlusV786Uninstall1">
+            <summary>
+            The NotepadPlusPlusV786Uninstall1 folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.Explorer2">
+            <summary>
+            The Explorer2 folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NewTab">
+            <summary>
+            The NewTab folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NotepadPlusPlusDownloadGoogleSearch">
+            <summary>
+            The NotepadPlusPlusDownloadGoogleSearch folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NewTabGoogleChrome">
+            <summary>
+            The NewTabGoogleChrome folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NotepadPlusPlusDownloadGoogleSearch1">
+            <summary>
+            The NotepadPlusPlusDownloadGoogleSearch1 folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.DownloadsNotepadPlusPlus">
+            <summary>
+            The DownloadsNotepadPlusPlus folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.SaveAs">
+            <summary>
+            The SaveAs folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NotepadPlusPlus786ReleaseNotepadP">
+            <summary>
+            The NotepadPlusPlus786ReleaseNotepadP folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.InstallerLanguage">
+            <summary>
+            The InstallerLanguage folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NotepadPlusPlusV786Setup">
+            <summary>
+            The NotepadPlusPlusV786Setup folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.CProgramFilesNotepadPlusPlusChange">
+            <summary>
+            The CProgramFilesNotepadPlusPlusChange folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.NewNotification">
+            <summary>
+            The NewNotification folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.UntitledGoogleChrome">
+            <summary>
+            The UntitledGoogleChrome folder.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder">
+            <summary>
+            The ExplorerAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Explorer  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.FileExplorer">
+            <summary>
+            The FileExplorer item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.FileExplorerInfo">
+            <summary>
+            The FileExplorer item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.Text4101">
+            <summary>
+            The Text4101 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.Text4101Info">
+            <summary>
+            The Text4101 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.GoogleChrome">
+            <summary>
+            The GoogleChrome item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ExplorerAppFolder.GoogleChromeInfo">
+            <summary>
+            The GoogleChrome item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder">
+            <summary>
+            The FileExplorerAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new FileExplorer  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.SystemItemNameDisplay">
+            <summary>
+            The SystemItemNameDisplay item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.SystemItemNameDisplayInfo">
+            <summary>
+            The SystemItemNameDisplay item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.ThisPC">
+            <summary>
+            The ThisPC item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.ThisPCInfo">
+            <summary>
+            The ThisPC item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder">
+            <summary>
+            The SystemAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new System  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.CPLink">
+            <summary>
+            The CPLink item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.CPLinkInfo">
+            <summary>
+            The CPLink item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.CategoryPanel">
+            <summary>
+            The CategoryPanel item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.CategoryPanelInfo">
+            <summary>
+            The CategoryPanel item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.Maximize">
+            <summary>
+            The Maximize item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.MaximizeInfo">
+            <summary>
+            The Maximize item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.NotepadPlusPlus64BitX64">
+            <summary>
+            The NotepadPlusPlus64BitX64 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.NotepadPlusPlus64BitX64Info">
+            <summary>
+            The NotepadPlusPlus64BitX64 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.ContentPane">
+            <summary>
+            The ContentPane item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder.ContentPaneInfo">
+            <summary>
+            The ContentPane item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder">
+            <summary>
+            The ControlPanelAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ControlPanel  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.Tasklink">
+            <summary>
+            The Tasklink item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.TasklinkInfo">
+            <summary>
+            The Tasklink item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.NotepadPlusPlus64BitX64">
+            <summary>
+            The NotepadPlusPlus64BitX64 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ControlPanelAppFolder.NotepadPlusPlus64BitX64Info">
+            <summary>
+            The NotepadPlusPlus64BitX64 item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder">
+            <summary>
+            The Explorer1AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Explorer1  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.Properties">
+            <summary>
+            The Properties item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.PropertiesInfo">
+            <summary>
+            The Properties item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.Uninstall">
+            <summary>
+            The Uninstall item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer1AppFolder.UninstallInfo">
+            <summary>
+            The Uninstall item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder">
+            <summary>
+            The ProgramsAndFeaturesAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ProgramsAndFeatures  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.NotepadPlusPlus64BitX64">
+            <summary>
+            The NotepadPlusPlus64BitX64 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.NotepadPlusPlus64BitX64Info">
+            <summary>
+            The NotepadPlusPlus64BitX64 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.ProgramsAndFeatures">
+            <summary>
+            The ProgramsAndFeatures item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.ProgramsAndFeaturesInfo">
+            <summary>
+            The ProgramsAndFeatures item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Cell786">
+            <summary>
+            The Cell786 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Cell786Info">
+            <summary>
+            The Cell786 item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder">
+            <summary>
+            The NotepadPlusPlusV786UninstallAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusV786Uninstall  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonUninstall">
+            <summary>
+            The ButtonUninstall item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonUninstallInfo">
+            <summary>
+            The ButtonUninstall item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonClose">
+            <summary>
+            The ButtonClose item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonCloseInfo">
+            <summary>
+            The ButtonClose item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder">
+            <summary>
+            The NotepadPlusPlusV786Uninstall1AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusV786Uninstall1  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.ButtonNo">
+            <summary>
+            The ButtonNo item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.ButtonNoInfo">
+            <summary>
+            The ButtonNo item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer2AppFolder">
+            <summary>
+            The Explorer2AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer2AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Explorer2  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer2AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer2AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer2AppFolder.List1">
+            <summary>
+            The List1 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.Explorer2AppFolder.List1Info">
+            <summary>
+            The List1 item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabAppFolder">
+            <summary>
+            The NewTabAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NewTab  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearchAppFolder">
+            <summary>
+            The NotepadPlusPlusDownloadGoogleSearchAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearchAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusDownloadGoogleSearch  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearchAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearchAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearchAppFolder.Pane">
+            <summary>
+            The Pane item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearchAppFolder.PaneInfo">
+            <summary>
+            The Pane item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabGoogleChromeAppFolder">
+            <summary>
+            The NewTabGoogleChromeAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabGoogleChromeAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NewTabGoogleChrome  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabGoogleChromeAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabGoogleChromeAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabGoogleChromeAppFolder.Pane">
+            <summary>
+            The Pane item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewTabGoogleChromeAppFolder.PaneInfo">
+            <summary>
+            The Pane item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearch1AppFolder">
+            <summary>
+            The NotepadPlusPlusDownloadGoogleSearch1AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearch1AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusDownloadGoogleSearch1  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearch1AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearch1AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearch1AppFolder.DownloadsNotepadPlusPlus">
+            <summary>
+            The DownloadsNotepadPlusPlus item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusDownloadGoogleSearch1AppFolder.DownloadsNotepadPlusPlusInfo">
+            <summary>
+            The DownloadsNotepadPlusPlus item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder">
+            <summary>
+            The DownloadsNotepadPlusPlusAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DownloadsNotepadPlusPlus  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.ATagNotepadPlusPlus786R">
+            <summary>
+            The ATagNotepadPlusPlus786R item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.ATagNotepadPlusPlus786RInfo">
+            <summary>
+            The ATagNotepadPlusPlus786R item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.Installer">
+            <summary>
+            The Installer item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.InstallerInfo">
+            <summary>
+            The Installer item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SaveAsAppFolder">
+            <summary>
+            The SaveAsAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SaveAsAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new SaveAs  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SaveAsAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SaveAsAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SaveAsAppFolder.ButtonSave">
+            <summary>
+            The ButtonSave item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SaveAsAppFolder.ButtonSaveInfo">
+            <summary>
+            The ButtonSave item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder">
+            <summary>
+            The NotepadPlusPlus786ReleaseNotepadPAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlus786ReleaseNotepadP  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.ButtonNpp786InstallerX641Exe">
+            <summary>
+            The ButtonNpp786InstallerX641Exe item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.ButtonNpp786InstallerX641ExeInfo">
+            <summary>
+            The ButtonNpp786InstallerX641Exe item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.InstallerLanguageAppFolder">
+            <summary>
+            The InstallerLanguageAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.InstallerLanguageAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new InstallerLanguage  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.InstallerLanguageAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.InstallerLanguageAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.InstallerLanguageAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.InstallerLanguageAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder">
+            <summary>
+            The NotepadPlusPlusV786SetupAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusV786Setup  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonNext">
+            <summary>
+            The ButtonNext item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonNextInfo">
+            <summary>
+            The ButtonNext item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.IAgree">
+            <summary>
+            The IAgree item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.IAgreeInfo">
+            <summary>
+            The IAgree item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonInstall">
+            <summary>
+            The ButtonInstall item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonInstallInfo">
+            <summary>
+            The ButtonInstall item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonFinish">
+            <summary>
+            The ButtonFinish item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonFinishInfo">
+            <summary>
+            The ButtonFinish item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder">
+            <summary>
+            The CProgramFilesNotepadPlusPlusChangeAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new CProgramFilesNotepadPlusPlusChange  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder">
+            <summary>
+            The NewNotificationAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NewNotification  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.MessageText">
+            <summary>
+            The MessageText item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.MessageTextInfo">
+            <summary>
+            The MessageText item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder">
+            <summary>
+            The UntitledGoogleChromeAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new UntitledGoogleChrome  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.CloseAUT">
+             <summary>
+            The CloseAUT recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.CloseAUT.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.CloseAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.CloseAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.CloseAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.CloseAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.CloseAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.CloseAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.CloseAUT.CloseAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable CloseAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.DownloadApp">
+             <summary>
+            The DownloadApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.DownloadApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.DownloadApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.DownloadApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.DownloadApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.DownloadApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.DownloadApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.DownloadApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.InstallApp">
+             <summary>
+            The InstallApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.InstallApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.InstallApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.InstallApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.InstallApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.InstallApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.InstallApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.InstallApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.InstallApp.StartAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.StartAUT">
+             <summary>
+            The StartAUT recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.StartAUT.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.StartAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.StartAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.StartAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.StartAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.StartAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.StartAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.StartAUT.StartAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.UninstallApp">
+             <summary>
+            The UninstallApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.UninstallApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.UninstallApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.UninstallApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.UninstallApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.UninstallApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.UninstallApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.UninstallApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.ValidateInstalled">
+             <summary>
+            The ValidateInstalled recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.ValidateInstalled.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.ValidateInstalled.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.ValidateInstalled.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.ValidateInstalled.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.ValidateInstalled.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.ValidateInstalled.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.ValidateInstalled.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>
