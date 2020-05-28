@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f4a6a803-e335-4f15-a262-944d5f4f3c0a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="DesktopApp_Automation">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="984f1cb7-b49d-4310-867b-372839aa88b1"
+	name="DesktopApp_AutomationRepository"
+	relativepath="DesktopApp_AutomationRepository.rxrep">
+		<codegen
+		classname="DesktopApp_AutomationRepository"
+		namespace="DesktopApp_Automation">
+		</codegen>
+		<rootfolder
+		id="7935e43c-403a-4420-9025-8265ae4b66f4"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
