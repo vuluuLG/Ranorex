@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="DesktopApp_AutomationRepository"
+id="9b738719-fd0c-49cf-b9c9-5451af1b3f48">
+  <codegen
+  classname="DesktopApp_AutomationRepository"
+  namespace="DesktopApp_Automation"/>
+  <rootfolder
+  name="Root"
+  id="4a754f5e-c544-40d9-8073-732361f09b0b"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+      <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
