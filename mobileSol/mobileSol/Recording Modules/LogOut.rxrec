@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="d9ffc363-6eee-43fc-82da-cf2939821f3f"
+id="2e7a9cf5-f61a-4dc2-af9e-2f87a1bc74ff"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,40 +19,12 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ModifyPage"
+	classname="LogOut"
 	namespace="mobileSol.Recording_Modules">
 	</codegen>
 	<variables>
-		<var
-		id="a6966578-4ec5-49a5-8f0f-3fffc9898830"
-		name="varPageName">
-		</var>
 	</variables>
 	<recorditems>
-		<setvaluerecorditem
-		attrname="Value"
-		enabled="True"
-		optional="False"
-		searchpropertyid="a978ea01-d71d-49f0-a0d3-dbdbe7df9b5e">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="AttributeValue"
-				variable="varPageName">
-				</binding>
-			</bindings>
-			<info
-			id="7809c182-e268-47af-bd31-95c6724abf74"
-			sourcename="RepositoryEditor">
-				<path>
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'div_popup']//input[@id='name']
-				</path>
-			</info>
-			<AttributeValue>
-				$varPageName
-			</AttributeValue>
-		</setvaluerecorditem>
 		<touchrecorditem
 		duration="300ms"
 		elementlocation="Center"
@@ -63,7 +35,7 @@ mode="Global">
 		moveduration="100ms"
 		optional="False"
 		screenshotname=""
-		searchpropertyid="4ceaf931-6d66-4825-bd37-d10a3f6b12c5"
+		searchpropertyid="5ee407a0-cf1e-4498-ad68-0e2f586421de"
 		sx="0"
 		sy="0"
 		touchduration="100ms"
@@ -74,10 +46,38 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="1a14f63d-f13c-48bf-9e5e-c0eff5fc1170"
+			id="33b1dc0c-0488-4f82-8ef0-697801e4a81c"
 			sourcename="RepositoryEditor">
 				<path>
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'div_popup']//input[@id='OK']
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext=$varUsername]
+				</path>
+			</info>
+		</touchrecorditem>
+		<touchrecorditem
+		duration="300ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="54fa6913-286e-4974-bab0-050938f23d22"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="412e4ab5-b8c4-4d63-8537-efcdd769dadd"
+			sourcename="RepositoryEditor">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul[@class='head-menu']//ul//a[@innertext='Logout']
 				</path>
 			</info>
 		</touchrecorditem>
@@ -97,7 +97,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ModifyPage.UserCode.cs
+		LogOut.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

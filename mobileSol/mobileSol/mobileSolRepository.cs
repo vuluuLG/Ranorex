@@ -73,6 +73,18 @@ namespace mobileSol
             set { _varMainMenuItem = value; }
         }
 
+        string _varUsername = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable varUsername.
+        /// </summary>
+        [TestVariable("9070833a-c51c-4996-a05b-acf80582ff3f")]
+        public string varUsername
+        {
+            get { return _varUsername; }
+            set { _varUsername = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -112,6 +124,7 @@ namespace mobileSol
             mobileSolRepositoryFolders.LoginPageFolder _loginpage;
             mobileSolRepositoryFolders.DashboardPageFolder _dashboardpage;
             mobileSolRepositoryFolders.DomAppFolder _dom;
+            RepoItemInfo _btnokInfo;
 
             /// <summary>
             /// Creates a new Browser  folder.
@@ -122,6 +135,7 @@ namespace mobileSol
                 _loginpage = new mobileSolRepositoryFolders.LoginPageFolder(this);
                 _dashboardpage = new mobileSolRepositoryFolders.DashboardPageFolder(this);
                 _dom = new mobileSolRepositoryFolders.DomAppFolder(this);
+                _btnokInfo = new RepoItemInfo(this, "BtnOK", ".//form//button[@text='OK']", 30000, null, "03530834-552f-43ce-9b95-118216a201f8");
             }
 
             /// <summary>
@@ -145,6 +159,30 @@ namespace mobileSol
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnOK item.
+            /// </summary>
+            [RepositoryItem("03530834-552f-43ce-9b95-118216a201f8")]
+            public virtual Ranorex.Button BtnOK
+            {
+                get
+                {
+                    return _btnokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnOK item info.
+            /// </summary>
+            [RepositoryItemInfo("03530834-552f-43ce-9b95-118216a201f8")]
+            public virtual RepoItemInfo BtnOKInfo
+            {
+                get
+                {
+                    return _btnokInfo;
                 }
             }
 
@@ -333,6 +371,8 @@ namespace mobileSol
             RepoItemInfo _btncreatepanelInfo;
             RepoItemInfo _btnglobalsettingitemInfo;
             RepoItemInfo _lblmainmenuitemInfo;
+            RepoItemInfo _lbluserpanelInfo;
+            RepoItemInfo _btnlogoutInfo;
 
             /// <summary>
             /// Creates a new DashboardPage  folder.
@@ -347,6 +387,8 @@ namespace mobileSol
                 _btncreatepanelInfo = new RepoItemInfo(this, "BtnCreatePanel", ".//div[#'main-menu']//li/a[@innertext='Create Panel']", 30000, null, "803ba082-d8de-4b1a-9edd-cd2783343067");
                 _btnglobalsettingitemInfo = new RepoItemInfo(this, "BtnGlobalSettingItem", ".//div[#'main-menu']//li/a[@innertext=$varGSItemName]", 30000, null, "45f97d99-b3c5-4451-9548-edb6a1d5be37");
                 _lblmainmenuitemInfo = new RepoItemInfo(this, "LblMainMenuItem", ".//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]", 30000, null, "27ead7b6-0298-45b0-9253-2fca024e301e");
+                _lbluserpanelInfo = new RepoItemInfo(this, "LblUserPanel", ".//div[#'header']//ul//a[@innertext=$varUsername]", 30000, null, "33b1dc0c-0488-4f82-8ef0-697801e4a81c");
+                _btnlogoutInfo = new RepoItemInfo(this, "BtnLogout", ".//div[#'header']//ul[@class='head-menu']//ul//a[@innertext='Logout']", 30000, null, "412e4ab5-b8c4-4d63-8537-efcdd769dadd");
             }
 
             /// <summary>
@@ -514,6 +556,54 @@ namespace mobileSol
                 get
                 {
                     return _lblmainmenuitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LblUserPanel item.
+            /// </summary>
+            [RepositoryItem("33b1dc0c-0488-4f82-8ef0-697801e4a81c")]
+            public virtual Ranorex.ATag LblUserPanel
+            {
+                get
+                {
+                    return _lbluserpanelInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LblUserPanel item info.
+            /// </summary>
+            [RepositoryItemInfo("33b1dc0c-0488-4f82-8ef0-697801e4a81c")]
+            public virtual RepoItemInfo LblUserPanelInfo
+            {
+                get
+                {
+                    return _lbluserpanelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnLogout item.
+            /// </summary>
+            [RepositoryItem("412e4ab5-b8c4-4d63-8537-efcdd769dadd")]
+            public virtual Ranorex.ATag BtnLogout
+            {
+                get
+                {
+                    return _btnlogoutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnLogout item info.
+            /// </summary>
+            [RepositoryItemInfo("412e4ab5-b8c4-4d63-8537-efcdd769dadd")]
+            public virtual RepoItemInfo BtnLogoutInfo
+            {
+                get
+                {
+                    return _btnlogoutInfo;
                 }
             }
 

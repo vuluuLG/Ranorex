@@ -13,19 +13,23 @@
 			name="Test_case_003:_Verify_that_user_can_edit_the_created_page">
 				<parameters>
 					<param
-					name="parPageName"
-					value="Test">
-					</param>
-					<param
-					name="parPageNameUpdate"
-					value="Test_Update">
-					</param>
-					<param
-					name="parGlobalSetting"
+					name="parGSEdit"
 					value="Edit">
+					</param>
+					<param
+					name="parGSAdd"
+					value="Add Page">
+					</param>
+					<param
+					name="parGSDelete"
+					value="Delete">
 					</param>
 				</parameters>
 			</testcase>
+			<setup
+			id="147e41ab-b9c6-4a17-8793-53045114f738"
+			name="setup">
+			</setup>
 			<testmodule
 			id="239e2a0f-ddb7-4038-974a-fec1ae9382cd"
 			name="VerifyPageNotExists"
@@ -33,31 +37,93 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="varMainMenuItem"
-					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="1d6c062c-882d-4fee-9c9d-35fe23ed965a"
 					variablename="varMainMenuItem">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="3fac9e81-da81-4356-a57f-53e724cbd427"
+			name="setup">
+			</setup>
+			<modulegroup
+			enabled="False"
+			id="48f018bb-2e06-435f-b8e6-afbfff85e3b5"
+			name="DeletePage"
+			ref="b16dfc5f-bb6d-4282-8a85-79532a2dbeed">
+				<databinding>
+					<var
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="21d38f62-7285-4222-b6f1-ba1dc1dde93d"
+					variablename="ModuleGroupvarMainMenuItem">
+					</var>
+					<var
+					dataname="varGSDelete"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="45ea26d0-7eed-4bbd-9b11-560f957f6b0a"
+					variablename="ModuleGroupvarGSItemName">
+					</var>
+				</databinding>
+			</modulegroup>
 			<modulegroup
 			id="4ff6aac2-4c55-44fa-8498-e85a95c6c0ed"
 			name="AddPage"
 			ref="13b49a71-dcf4-47fe-9df7-6649d4de0521">
 				<databinding>
 					<var
-					dataname="varGlobalSettingItemName"
+					dataname="varGSAddPage"
 					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
 					variableid="8e30a93d-d398-471e-b0c6-1075d6cc480e"
 					variablename="ModuleGroupvarGlobalSettingItemName">
 					</var>
 					<var
-					dataname="varPageName"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="b7234ad8-0e20-401a-9850-dd78ab4b109d"
 					variablename="ModuleGroupvarPageName">
 					</var>
 				</databinding>
+			</modulegroup>
+			<teardown
+			id="524b84bc-2d85-4c0c-9116-b2cc2165c14b"
+			name="teardown">
+			</teardown>
+			<modulegroup
+			enabled="False"
+			id="52dff963-77e1-485b-9d0b-416bb25b6676"
+			name="DeletePage"
+			ref="b16dfc5f-bb6d-4282-8a85-79532a2dbeed">
+				<databinding>
+					<var
+					dataname="parGSDelete"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="45ea26d0-7eed-4bbd-9b11-560f957f6b0a"
+					variablename="ModuleGroupvarGSItemName">
+					</var>
+					<var
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="21d38f62-7285-4222-b6f1-ba1dc1dde93d"
+					variablename="ModuleGroupvarMainMenuItem">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="varPageName"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="21d38f62-7285-4222-b6f1-ba1dc1dde93d"
+					variablename="ModuleGroupvarMainMenuItem">
+					</var>
+					<var
+					dataname="varGSDelete"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="45ea26d0-7eed-4bbd-9b11-560f957f6b0a"
+					variablename="ModuleGroupvarGSItemName">
+					</var>
+				</missingdatabinding>
 			</modulegroup>
 			<testcase
 			id="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
@@ -74,6 +140,18 @@
 					</param>
 					<param
 					name="varPassword"
+					value="">
+					</param>
+					<param
+					name="baseName"
+					value="Test">
+					</param>
+					<param
+					name="pageName"
+					value="">
+					</param>
+					<param
+					name="pageNameUpdate"
 					value="">
 					</param>
 				</parameters>
@@ -98,16 +176,40 @@
 			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
+			id="665410cd-3cd2-45ba-aab7-7965d7e0bc0d"
+			name="CloseApp"
+			ref="833b3673-eac1-4e7a-8c8b-f9fcb39c723a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="6983cd0e-359c-45d3-9a3f-15c376d2515b"
 			name="VerifyPageExists"
 			ref="1cc91304-99dd-43e5-92b1-321b42ec1fa4"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="varPageName"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="d10443f0-8177-4ee4-a1ab-5cadc7459319"
 					variablename="varMainMenuItem">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="6decf852-52cd-44ec-ad3a-61514fd85ba3"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="779dbe4d-8680-4107-98dc-ed84593084a7"
+			name="LogOut"
+			ref="2e7a9cf5-f61a-4dc2-af9e-2f87a1bc74ff"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="varUsername"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="9070833a-c51c-4996-a05b-acf80582ff3f"
+					variablename="varUsername">
 					</var>
 				</databinding>
 			</testmodule>
@@ -116,15 +218,53 @@
 			name="Test_case_001:_Verify_that_user_can_add_page">
 				<parameters>
 					<param
-					name="varGlobalSettingItemName"
+					name="varGSAddPage"
 					value="Add Page">
 					</param>
 					<param
-					name="varPageName"
-					value="Test">
+					name="varGSDelete"
+					value="Delete">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="830870f4-9279-48cf-a866-c8f0505ee7b4"
+			name="ModifyPageName"
+			ref="122adce5-adb5-4215-82c4-0dae0b749633"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="baseName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="09e49ae6-d7d9-4379-bb25-7a83e47f6f07"
+					variablename="pageName">
+					</var>
+					<var
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="4d4dda97-2813-4227-ac99-c3232dff2415"
+					variablename="pageNameReturn">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="varPageName"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="4d4dda97-2813-4227-ac99-c3232dff2415"
+					variablename="pageNameReturn">
+					</var>
+					<var
+					dataname="pageName"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="09e49ae6-d7d9-4379-bb25-7a83e47f6f07"
+					variablename="pageName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<teardown
+			id="8430bccc-02a4-4b3f-9110-55f1394a6702"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="8e00f3ba-5a4c-4812-8441-ad268726324f"
 			name="VerifyPageExists"
@@ -132,8 +272,8 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="parPageNameUpdate"
-					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="d10443f0-8177-4ee4-a1ab-5cadc7459319"
 					variablename="varMainMenuItem">
 					</var>
@@ -145,13 +285,13 @@
 			ref="b16dfc5f-bb6d-4282-8a85-79532a2dbeed">
 				<databinding>
 					<var
-					dataname="varMainMenuItem"
-					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="21d38f62-7285-4222-b6f1-ba1dc1dde93d"
 					variablename="ModuleGroupvarMainMenuItem">
 					</var>
 					<var
-					dataname="varGSItemName"
+					dataname="parGSDelete"
 					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
 					variableid="45ea26d0-7eed-4bbd-9b11-560f957f6b0a"
 					variablename="ModuleGroupvarGSItemName">
@@ -193,12 +333,12 @@
 			name="Test_case_004:_Verify_that_user_can_delete_created_page">
 				<parameters>
 					<param
-					name="varMainMenuItem"
-					value="Test_Update">
+					name="parGSDelete"
+					value="Delete">
 					</param>
 					<param
-					name="varGSItemName"
-					value="Delete">
+					name="parGSAdd"
+					value="Add Page">
 					</param>
 				</parameters>
 			</testcase>
@@ -208,25 +348,106 @@
 			ref="b2a2c4a2-e95d-4f20-b293-0361fee408df">
 				<databinding>
 					<var
-					dataname="parPageName"
-					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="f231f77e-d610-4965-bb3a-dd5e88829811"
 					variablename="ModuleGroupNewParameter">
 					</var>
 					<var
-					dataname="parGlobalSetting"
+					dataname="parGSEdit"
 					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
 					variableid="f9dc3827-c340-418a-93ef-201a53e7d2a3"
 					variablename="ModuleGroupNewParameter2">
 					</var>
 					<var
-					dataname="parPageNameUpdate"
-					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="d24e3211-8007-40bf-bd5e-2d6297e40e85"
 					variablename="ModuleGroupNewParameter1">
 					</var>
 				</databinding>
 			</modulegroup>
+			<modulegroup
+			enabled="False"
+			id="ce24860d-4eb3-4196-8bc2-8bc3667b710a"
+			name="AddPage"
+			ref="13b49a71-dcf4-47fe-9df7-6649d4de0521">
+				<databinding>
+					<var
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="b7234ad8-0e20-401a-9850-dd78ab4b109d"
+					variablename="ModuleGroupvarPageName">
+					</var>
+					<var
+					dataname="parGSAdd"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="8e30a93d-d398-471e-b0c6-1075d6cc480e"
+					variablename="ModuleGroupvarGlobalSettingItemName">
+					</var>
+				</databinding>
+			</modulegroup>
+			<modulegroup
+			id="f78a1c9b-6597-4ed6-a643-2ae2a966f956"
+			name="AddPage"
+			ref="13b49a71-dcf4-47fe-9df7-6649d4de0521">
+				<databinding>
+					<var
+					dataname="parGSAdd"
+					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
+					variableid="8e30a93d-d398-471e-b0c6-1075d6cc480e"
+					variablename="ModuleGroupvarGlobalSettingItemName">
+					</var>
+					<var
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="b7234ad8-0e20-401a-9850-dd78ab4b109d"
+					variablename="ModuleGroupvarPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="parPageName"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="b7234ad8-0e20-401a-9850-dd78ab4b109d"
+					variablename="ModuleGroupvarPageName">
+					</var>
+					<var
+					dataname="parGSAdd"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="8e30a93d-d398-471e-b0c6-1075d6cc480e"
+					variablename="ModuleGroupvarGlobalSettingItemName">
+					</var>
+				</missingdatabinding>
+			</modulegroup>
+			<testmodule
+			id="f865f41d-672b-451c-bef3-044f009d00ba"
+			name="ModifyPageNameUpdate"
+			ref="24e437c0-45e6-4d5b-91aa-d845e139cc08"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="pageName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="57f24b32-960d-4822-a708-972f23586c26"
+					variablename="input">
+					</var>
+					<var
+					dataname="pageNameUpdate"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="a57fe166-80bf-45d4-8080-a207c12485f5"
+					variablename="output">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="parPageNameUpdate"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="a57fe166-80bf-45d4-8080-a207c12485f5"
+					variablename="output">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -246,6 +467,14 @@
 						id="b1510a18-a40c-48b7-988b-a48051543074"
 						name="Login">
 						</testmodule>
+						<testmodule
+						id="830870f4-9279-48cf-a866-c8f0505ee7b4"
+						name="ModifyPageName">
+						</testmodule>
+						<testmodule
+						id="f865f41d-672b-451c-bef3-044f009d00ba"
+						name="ModifyPageNameUpdate">
+						</testmodule>
 					</setup>
 					<testcase
 					id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
@@ -258,10 +487,26 @@
 						id="6983cd0e-359c-45d3-9a3f-15c376d2515b"
 						name="VerifyPageExists">
 						</testmodule>
+						<teardown
+						id="6decf852-52cd-44ec-ad3a-61514fd85ba3"
+						name="teardown">
+							<modulegroup
+							id="48f018bb-2e06-435f-b8e6-afbfff85e3b5"
+							name="DeletePage">
+							</modulegroup>
+						</teardown>
 					</testcase>
 					<testcase
 					id="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
 					name="Test_case_003:_Verify_that_user_can_edit_the_created_page">
+						<setup
+						id="147e41ab-b9c6-4a17-8793-53045114f738"
+						name="setup">
+							<modulegroup
+							id="ce24860d-4eb3-4196-8bc2-8bc3667b710a"
+							name="AddPage">
+							</modulegroup>
+						</setup>
 						<modulegroup
 						id="c89d9a45-1b5a-4e92-99ca-5ad31189f913"
 						name="EditPage">
@@ -270,10 +515,26 @@
 						id="8e00f3ba-5a4c-4812-8441-ad268726324f"
 						name="VerifyPageExists">
 						</testmodule>
+						<teardown
+						id="524b84bc-2d85-4c0c-9116-b2cc2165c14b"
+						name="teardown">
+							<modulegroup
+							id="52dff963-77e1-485b-9d0b-416bb25b6676"
+							name="DeletePage">
+							</modulegroup>
+						</teardown>
 					</testcase>
 					<testcase
 					id="c556462a-e67a-49b8-8601-09ca46a37e25"
 					name="Test_case_004:_Verify_that_user_can_delete_created_page">
+						<setup
+						id="3fac9e81-da81-4356-a57f-53e724cbd427"
+						name="setup">
+							<modulegroup
+							id="f78a1c9b-6597-4ed6-a643-2ae2a966f956"
+							name="AddPage">
+							</modulegroup>
+						</setup>
 						<modulegroup
 						id="98af39c0-2613-4e56-a6e6-0becee79d33a"
 						name="DeletePage">
@@ -283,6 +544,18 @@
 						name="VerifyPageNotExists">
 						</testmodule>
 					</testcase>
+					<teardown
+					id="8430bccc-02a4-4b3f-9110-55f1394a6702"
+					name="teardown">
+						<testmodule
+						id="779dbe4d-8680-4107-98dc-ed84593084a7"
+						name="LogOut">
+						</testmodule>
+						<testmodule
+						id="665410cd-3cd2-45ba-aab7-7965d7e0bc0d"
+						name="CloseApp">
+						</testmodule>
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>

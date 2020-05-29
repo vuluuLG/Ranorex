@@ -126,6 +126,12 @@
     <Compile Include="AssemblyInfo.cs">
       <id>4c3a6c05-8487-4a1d-ad7d-ce59220bb31e</id>
     </Compile>
+    <Compile Include="Coding Modules\ModifyPageName.cs">
+      <id>94ad87e3-8be8-4dcc-9a6d-a37250fb2c3f</id>
+    </Compile>
+    <Compile Include="Coding Modules\ModifyPageNameUpdate.cs">
+      <id>462f2d9a-fbcf-409e-8dee-c6ec298828b6</id>
+    </Compile>
     <Compile Include="Common\Utility.cs">
       <id>861cf2a2-6fa2-47e3-9126-ca92e1171dc8</id>
     </Compile>
@@ -161,6 +167,18 @@
       <UserCode>true</UserCode>
       <id>ac064cdf-aff5-4a6a-83cc-8b1a198d3b5a</id>
       <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\LogOut.cs">
+      <BoundTo>db9e7d55-3078-4754-978a-482f4adb5773</BoundTo>
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4e627cc-e17a-4c34-84ea-61b5b933333c</id>
+    </Compile>
+    <Compile Include="Recording Modules\LogOut.UserCode.cs">
+      <BoundTo>db9e7d55-3078-4754-978a-482f4adb5773</BoundTo>
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ea13833-a1b5-4ea8-8fdd-48c6814f0ea4</id>
     </Compile>
     <Compile Include="Recording Modules\ModifyPage.cs">
       <BoundTo>bf98b113-6898-4f56-9056-feb09d8a1963</BoundTo>
@@ -259,6 +277,11 @@
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</id>
       <recordtableid>80c2ffe4-1e67-44b5-9b5c-f20cd908e272</recordtableid>
+    </None>
+    <None Include="Recording Modules\LogOut.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>db9e7d55-3078-4754-978a-482f4adb5773</id>
+      <recordtableid>2e7a9cf5-f61a-4dc2-af9e-2f87a1bc74ff</recordtableid>
     </None>
     <None Include="Recording Modules\ModifyPage.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>

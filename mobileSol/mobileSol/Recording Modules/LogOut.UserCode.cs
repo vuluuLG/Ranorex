@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace mobileSol.Recording_Modules
 {
-    public partial class SelectItemOfGlobalSetting
+    public partial class LogOut
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,20 +31,6 @@ namespace mobileSol.Recording_Modules
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void SelectGlobalSettingItem(RepoItemInfo litagInfo, RepoItemInfo atagInfo)
-        {
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'litagInfo' at Center", litagInfo);
-            litagInfo.FindAdapter<LiTag>().Touch();
-            
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'atagInfo' at Center", atagInfo);
-            atagInfo.FindAdapter<ATag>().Touch();
-            
-            // Handle popup incase of Delete
-            if (repo.varGSItemName == "Delete") {
-            	repo.Browser.BtnOK.Click();
-            }
         }
 
     }

@@ -34,14 +34,16 @@ namespace mobileSol.Recording_Modules
         {
             // Your recording specific initialization code goes here.
         }
+        
+        
+        
         	
-        public String GetPageName(String baseName, bool isRnd)
+        public string GetPageName(String baseName, bool isRnd)
         {
         	if (isRnd) {
         		return baseName + Utility.GetCurrentDate("yyyyddMM");
         	}
         	return baseName;
         }
-
     }
 }

@@ -491,7 +491,7 @@ rxversion="9.3">
 		Current
 	</plugins.msaa.FilterCompatibilityLevel>
 	<plugins.msaa.ExpensiveAttributesEnabled>
-		False
+		True
 	</plugins.msaa.ExpensiveAttributesEnabled>
 	<plugins.msaa.FromPointRefineEnabled>
 		True
@@ -646,7 +646,7 @@ rxversion="9.3">
 		50
 	</plugin.mobile.ios.maxcollectionviewvcellcount>
 	<plugin.mobile.android.UseAndroidOS>
-		False
+		True
 	</plugin.mobile.android.UseAndroidOS>
 	<plugin.mobile.android.FetchAndroidOSScreenshots>
 		True

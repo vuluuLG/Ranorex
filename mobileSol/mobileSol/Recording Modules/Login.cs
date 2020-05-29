@@ -68,18 +68,6 @@ namespace mobileSol.Recording_Modules
             set { _varRepository = value; }
         }
 
-        string _varUsername;
-
-        /// <summary>
-        /// Gets or sets the value of variable varUsername.
-        /// </summary>
-        [TestVariable("6ad1199e-33da-4ce5-80fc-92782850c33d")]
-        public string varUsername
-        {
-            get { return _varUsername; }
-            set { _varUsername = value; }
-        }
-
         string _varPassword;
 
         /// <summary>
@@ -90,6 +78,16 @@ namespace mobileSol.Recording_Modules
         {
             get { return _varPassword; }
             set { _varPassword = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable varUsername.
+        /// </summary>
+        [TestVariable("6ad1199e-33da-4ce5-80fc-92782850c33d")]
+        public string varUsername
+        {
+            get { return repo.varUsername; }
+            set { repo.varUsername = value; }
         }
 
 #endregion

@@ -142,6 +142,24 @@ name="mobileSolRepository">
 				searchtimeout="30000ms">
 					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]
 				</item>
+				<item
+				addcaps="unknown,atag,webelement,mobileuielement"
+				capname="atag"
+				id="33b1dc0c-0488-4f82-8ef0-697801e4a81c"
+				name="LblUserPanel"
+				refimgid="d25d8a33-74fa-4827-bab7-034c68004add"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext=$varUsername]
+				</item>
+				<item
+				addcaps="unknown,atag,webelement,mobileuielement"
+				capname="atag"
+				id="412e4ab5-b8c4-4d63-8537-efcdd769dadd"
+				name="BtnLogout"
+				refimgid="0909bf98-85d1-4c59-a39b-6535cb4b89ee"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul[@class='head-menu']//ul//a[@innertext='Logout']
+				</item>
 				<basepath>
 					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']
 				</basepath>
@@ -157,6 +175,13 @@ name="mobileSolRepository">
 					/mobileapp[@title='ranorex.RxBrowser']//dom
 				</basepath>
 			</appfolder>
+			<item
+			capname="button"
+			id="03530834-552f-43ce-9b95-118216a201f8"
+			name="BtnOK"
+			searchtimeout="30000ms">
+				/mobileapp[@title='ranorex.RxBrowser']//form//button[@text='OK']
+			</item>
 			<basepath>
 				/mobileapp[@title='ranorex.RxBrowser']
 			</basepath>
@@ -172,6 +197,10 @@ name="mobileSolRepository">
 		<var
 		id="d10443f0-8177-4ee4-a1ab-5cadc7459319"
 		name="varMainMenuItem">
+		</var>
+		<var
+		id="9070833a-c51c-4996-a05b-acf80582ff3f"
+		name="varUsername">
 		</var>
 	</variables>
 </repository>

@@ -24,46 +24,43 @@ namespace mobileSol.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ModifyPage recording.
+    ///The LogOut recording.
     /// </summary>
-    [TestModule("d9ffc363-6eee-43fc-82da-cf2939821f3f", ModuleType.Recording, 1)]
-    public partial class ModifyPage : ITestModule
+    [TestModule("2e7a9cf5-f61a-4dc2-af9e-2f87a1bc74ff", ModuleType.Recording, 1)]
+    public partial class LogOut : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::mobileSol.mobileSolRepository repository.
         /// </summary>
         public static global::mobileSol.mobileSolRepository repo = global::mobileSol.mobileSolRepository.Instance;
 
-        static ModifyPage instance = new ModifyPage();
+        static LogOut instance = new LogOut();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ModifyPage()
+        public LogOut()
         {
-            varPageName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ModifyPage Instance
+        public static LogOut Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _varPageName;
-
         /// <summary>
-        /// Gets or sets the value of variable varPageName.
+        /// Gets or sets the value of variable varUsername.
         /// </summary>
-        [TestVariable("a6966578-4ec5-49a5-8f0f-3fffc9898830")]
-        public string varPageName
+        [TestVariable("9070833a-c51c-4996-a05b-acf80582ff3f")]
+        public string varUsername
         {
-            get { return _varPageName; }
-            set { _varPageName = value; }
+            get { return repo.varUsername; }
+            set { repo.varUsername = value; }
         }
 
 #endregion
@@ -92,12 +89,12 @@ namespace mobileSol.Recording_Modules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$varPageName' on item 'Browser.DashboardPage.Popup.TxtPageName'.", repo.Browser.DashboardPage.Popup.TxtPageNameInfo, new RecordItemIndex(0));
-            repo.Browser.DashboardPage.Popup.TxtPageName.Element.SetAttributeValue("Value", varPageName);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.LblUserPanel' at Center", repo.Browser.DashboardPage.LblUserPanelInfo, new RecordItemIndex(0));
+            repo.Browser.DashboardPage.LblUserPanel.Touch();
+            Delay.Milliseconds(300);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.Popup.BtnOK' at Center", repo.Browser.DashboardPage.Popup.BtnOKInfo, new RecordItemIndex(1));
-            repo.Browser.DashboardPage.Popup.BtnOK.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.BtnLogout' at Center", repo.Browser.DashboardPage.BtnLogoutInfo, new RecordItemIndex(1));
+            repo.Browser.DashboardPage.BtnLogout.Touch();
             Delay.Milliseconds(300);
             
         }
