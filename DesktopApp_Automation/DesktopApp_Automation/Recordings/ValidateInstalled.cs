@@ -41,7 +41,7 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public ValidateInstalled()
         {
-            SoftwareName = "Notepad++ (64-bit x64)";
+            SoftwareName = "";
         }
 
         /// <summary>

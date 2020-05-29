@@ -42,7 +42,7 @@ namespace DesktopApp_Automation.Recordings
         public DownloadApp()
         {
             varURL = "https://notepad-plus-plus.org/downloads/v7.8.6/";
-            varFileSetupName = " npp.7.8.6.Installer.x64 ";
+            varFileSetupName = "";
         }
 
         /// <summary>

@@ -41,7 +41,7 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public InstallApp()
         {
-            StartAutProcessIDVar = "F:\\Software\\npp.7.8.6.Installer.x64.exe";
+            StartAutProcessIDVar = "";
         }
 
         /// <summary>

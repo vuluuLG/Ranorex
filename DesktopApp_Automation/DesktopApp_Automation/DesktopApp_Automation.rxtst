@@ -25,6 +25,14 @@
 			name="InstallApp"
 			ref="34a2672d-15b3-4cca-b381-442a2d20103c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="StartAutProcessIDVar"
+					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					variableid="536ad227-d974-4792-a85e-6c67cb436034"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="63b1b80d-2839-457a-bd0e-9cfee73b0927"
@@ -35,12 +43,28 @@
 			name="ValidateInstalled"
 			ref="8eaed4a9-ef77-43b6-b80f-1482c01c1b0c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="SoftwareName"
+					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					variableid="f1ed3228-4719-431d-b09e-572c771fb8d3"
+					variablename="SoftwareName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="7ad4ec2a-7633-4a5a-8fd2-ab32e2119f05"
 			name="OpenApp"
 			ref="123028a2-860f-4416-97b3-5bb984146779"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="varPathSoftware"
+					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					variableid="ff238879-7bc6-4af6-913e-8612507bbea1"
+					variablename="varPathSoftware">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="87b45064-1ddd-45e1-acda-de505ac582c4"
@@ -59,6 +83,28 @@
 			<testcase
 			id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
 			name="TestCase001">
+				<parameters>
+					<param
+					name="SoftwareName"
+					value="Notepad++ (64-bit x64)">
+					</param>
+					<param
+					name="varURL"
+					value="https://notepad-plus-plus.org/downloads/v7.8.6/">
+					</param>
+					<param
+					name="varFileSetupName"
+					value=" npp.7.8.6.Installer.x64 ">
+					</param>
+					<param
+					name="StartAutProcessIDVar"
+					value="F:\Software\npp.7.8.6.Installer.x64.exe">
+					</param>
+					<param
+					name="varPathSoftware"
+					value="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk">
+					</param>
+				</parameters>
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -88,6 +134,20 @@
 			name="DownloadApp"
 			ref="74e20cc8-6176-4a3a-9388-fece32c32f9f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="varURL"
+					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					variableid="180b2a54-bc4c-4967-8bb8-acaea450e9d6"
+					variablename="varURL">
+					</var>
+					<var
+					dataname="varFileSetupName"
+					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					variableid="dba188fa-4309-405c-965f-6802f0e2b0cd"
+					variablename="varFileSetupName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c583fc2c-d6a3-4e72-b904-24f49a8781fb"
@@ -111,6 +171,14 @@
 			name="ValidateInstalled"
 			ref="8eaed4a9-ef77-43b6-b80f-1482c01c1b0c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="SoftwareName"
+					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					variableid="f1ed3228-4719-431d-b09e-572c771fb8d3"
+					variablename="SoftwareName">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>

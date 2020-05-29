@@ -41,7 +41,7 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public OpenApp()
         {
-            varPathSoftware = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Notepad++.lnk";
+            varPathSoftware = "";
         }
 
         /// <summary>
