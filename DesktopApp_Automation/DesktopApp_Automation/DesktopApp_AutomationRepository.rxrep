@@ -138,6 +138,16 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title='File Explorer']/element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/?/?/treeitem[@text='This PC']
 			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="664dd7ed-974f-43db-970b-f7482e80e161"
+			name="Close"
+			refimgid="f67c782e-8c3f-4388-a44b-e80323116c62"
+			refpath="/form[@title='File Explorer']/titlebar[@automationid='TitleBar']/button[@automationid='Close']"
+			searchtimeout="30000ms">
+				/form[@title='File Explorer']/?/?/button[@automationid='Close']
+			</item>
 			<basepath>
 				/form[@title='File Explorer']
 			</basepath>

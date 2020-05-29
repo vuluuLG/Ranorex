@@ -36,10 +36,6 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="StartAutProcessIDVar">
-				</binding>
 			</bindings>
 			<filename>
 				F:\Software\npp.7.8.6.Installer.x64.exe
@@ -1607,20 +1603,20 @@ KRkFS2fpj/GiihgRNcuAT5a4CB2+ftz049qs0UUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						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
-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
+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
+S3ZUAAAAAElFTkSuQmCC
 					</attribute>
 					<attribute
 					name="state"

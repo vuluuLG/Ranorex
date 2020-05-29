@@ -224,6 +224,16 @@
             The ThisPC item info.
             </summary>
         </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.FileExplorerAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
         <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.SystemAppFolder">
             <summary>
             The SystemAppFolder folder.
@@ -1039,6 +1049,45 @@
         <member name="P:DesktopApp_Automation.Recordings.InstallApp.StartAutProcessIDVar">
             <summary>
             Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Automation.Recordings.OpenApp">
+             <summary>
+            The OpenApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Automation.Recordings.OpenApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Automation.DesktopApp_AutomationRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.OpenApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.OpenApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Automation.Recordings.OpenApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.OpenApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Automation.Recordings.OpenApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.OpenApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="T:DesktopApp_Automation.Recordings.StartAUT">

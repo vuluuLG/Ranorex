@@ -127,6 +127,10 @@ namespace DesktopApp_Automation.Recordings
             repo.ProgramsAndFeatures.Close.Click("17;5");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FileExplorer.Close' at 28;10.", repo.FileExplorer.CloseInfo, new RecordItemIndex(12));
+            repo.FileExplorer.Close.Click("28;10");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

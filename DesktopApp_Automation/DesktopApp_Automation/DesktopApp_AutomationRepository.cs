@@ -425,6 +425,7 @@ namespace DesktopApp_Automation
         {
             RepoItemInfo _systemitemnamedisplayInfo;
             RepoItemInfo _thispcInfo;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new FileExplorer  folder.
@@ -434,6 +435,7 @@ namespace DesktopApp_Automation
             {
                 _systemitemnamedisplayInfo = new RepoItemInfo(this, "SystemItemNameDisplay", "element[@class='ShellTabWindowClass']//element[@instance='1']//container[@automationid='1']/listitem[@automationid='6']/text[@automationid='System.ItemNameDisplay']", 30000, null, "53b0f013-0807-42e7-a90d-b7c0c8cc032d");
                 _thispcInfo = new RepoItemInfo(this, "ThisPC", "element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/?/?/treeitem[@text='This PC']", 30000, null, "ac04b269-098d-44a9-a451-ab6046605269");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@automationid='Close']", 30000, null, "664dd7ed-974f-43db-970b-f7482e80e161");
             }
 
             /// <summary>
@@ -505,6 +507,30 @@ namespace DesktopApp_Automation
                 get
                 {
                     return _thispcInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("664dd7ed-974f-43db-970b-f7482e80e161")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("664dd7ed-974f-43db-970b-f7482e80e161")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

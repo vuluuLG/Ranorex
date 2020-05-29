@@ -5,12 +5,7 @@
   <Array name="bookmarks" />
   <Array name="files" />
   <SerializedValue name="ModuleBrowserState">
-    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <string>{BA6510CB-66BB-40D1-8786-6EF8618D02A6}</string>
-      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
-      <string>f459749b-8098-41cd-8dff-e057454ab20b</string>
-      <string>ed74ec03-9de6-401e-a93c-695ed8d3b9ec</string>
-    </ArrayOfString>
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </SerializedValue>
   <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Automation[Recordings[]]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\Recordings\OpenApp.rxrec&#xD;&#xA;Solution DesktopApp_Automation" />
   <StartupProject value="{BA6510CB-66BB-40D1-8786-6EF8618D02A6}" />
