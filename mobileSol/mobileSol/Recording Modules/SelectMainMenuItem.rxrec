@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="1b57d7b6-d364-4490-8dfc-7904d4291977"
-mode="Mobile">
-	<description>
-		The StartApp recording.
-	</description>
+id="d24a1db6-9dd0-424b-b3b1-d46dc63d3943"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -22,46 +19,40 @@ mode="Mobile">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="StartApp"
+	classname="SelectMainMenuItem"
 	namespace="mobileSol.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<runmobileapprecorditem
-		application="ranorex.RxBrowser"
-		devicename="Samsung Galaxy Tab A"
-		duration="3500ms"
+		<touchrecorditem
+		duration="300ms"
+		elementlocation="Center"
 		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
 		optional="False"
-		resetInitialState="True">
+		screenshotname=""
+		searchpropertyid="b7ed6987-cdf2-49e6-ab64-f2da5588da9f"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
 			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</runmobileapprecorditem>
-		<setvaluerecorditem
-		attrname="PageUrl"
-		duration="10000ms"
-		enabled="True"
-		optional="False"
-		searchpropertyid="e6fefff6-57dd-486d-bb5a-9fbe868668a0">
-			<comment>
-				Browse to site.
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="11c35c9d-d669-494f-a63f-70257e80752f"
-			sourcename="">
+			id="27ead7b6-0298-45b0-9253-2fca024e301e"
+			sourcename="RepositoryEditor">
 				<path>
-					/mobileapp[@title='ranorex.RxBrowser']//dom
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]
 				</path>
 			</info>
-			<AttributeValue>
-				http://192.168.171.142/TADashboard
-			</AttributeValue>
-		</setvaluerecorditem>
+		</touchrecorditem>
 	</recorditems>
 	<repository
 	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"
@@ -78,7 +69,7 @@ mode="Mobile">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartApp.UserCode.cs
+		SelectMainMenuItem.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

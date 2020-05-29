@@ -49,6 +49,30 @@ namespace mobileSol
 
 #region Variables
 
+        string _varGSItemName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable varGSItemName.
+        /// </summary>
+        [TestVariable("3e382d2a-cdf7-4df5-ae3c-5f5d70effc45")]
+        public string varGSItemName
+        {
+            get { return _varGSItemName; }
+            set { _varGSItemName = value; }
+        }
+
+        string _varMainMenuItem = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable varMainMenuItem.
+        /// </summary>
+        [TestVariable("d10443f0-8177-4ee4-a1ab-5cadc7459319")]
+        public string varMainMenuItem
+        {
+            get { return _varMainMenuItem; }
+            set { _varMainMenuItem = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -171,7 +195,7 @@ namespace mobileSol
             {
                 _txtusernameInfo = new RepoItemInfo(this, "TxtUsername", ".//input[#'username']", 30000, null, "58d476a1-e3f3-45de-a34b-c46ca214e812");
                 _txtpasswordInfo = new RepoItemInfo(this, "TxtPassword", ".//input[#'password']", 30000, null, "2513e857-8c81-4d8e-b6fb-ad0ee67b9a92");
-                _btnloginInfo = new RepoItemInfo(this, "BtnLogin", ".//div[#'content']/div/div[@class='btn-login']", 30000, null, "f303ea18-5ae5-4b28-9753-454f002dfdbf");
+                _btnloginInfo = new RepoItemInfo(this, "BtnLogin", ".//div[#'content']/?/div[@class='btn-login']", 30000, null, "f303ea18-5ae5-4b28-9753-454f002dfdbf");
                 _ddlrepositoryInfo = new RepoItemInfo(this, "DdlRepository", ".//select[#'repository']", 30000, null, "ac69b930-7609-4c22-9a19-4b507b4447d9");
             }
 
@@ -302,10 +326,13 @@ namespace mobileSol
         [RepositoryFolder("bba16f05-3957-42c0-8371-1bcfa250e643")]
         public partial class DashboardPageFolder : RepoGenBaseFolder
         {
+            mobileSolRepositoryFolders.PopupFolder _popup;
             RepoItemInfo _btnglobalsettingInfo;
             RepoItemInfo _btnaddpageInfo;
             RepoItemInfo _btncreateprofileInfo;
             RepoItemInfo _btncreatepanelInfo;
+            RepoItemInfo _btnglobalsettingitemInfo;
+            RepoItemInfo _lblmainmenuitemInfo;
 
             /// <summary>
             /// Creates a new DashboardPage  folder.
@@ -313,10 +340,13 @@ namespace mobileSol
             public DashboardPageFolder(RepoGenBaseFolder parentFolder) :
                     base("DashboardPage", ".//dom[@path~'/TADashboard/.*.page']", parentFolder, 30000, null, false, "bba16f05-3957-42c0-8371-1bcfa250e643", "")
             {
+                _popup = new mobileSolRepositoryFolders.PopupFolder(this);
                 _btnglobalsettingInfo = new RepoItemInfo(this, "BtnGlobalSetting", ".//div[#'main-menu']//li[@class='mn-setting']", 30000, null, "612c4bc0-08c3-4f40-b819-1dd17a39ae1a");
                 _btnaddpageInfo = new RepoItemInfo(this, "BtnAddPage", ".//div[#'main-menu']//li/a[@innertext='Add Page']", 30000, null, "0907055e-413e-4725-876e-7f366aa6a038");
                 _btncreateprofileInfo = new RepoItemInfo(this, "BtnCreateProfile", ".//div[#'main-menu']//li/a[@innertext='Create Profile']", 30000, null, "fb68220b-65a2-4071-8341-868ee2b9d38b");
                 _btncreatepanelInfo = new RepoItemInfo(this, "BtnCreatePanel", ".//div[#'main-menu']//li/a[@innertext='Create Panel']", 30000, null, "803ba082-d8de-4b1a-9edd-cd2783343067");
+                _btnglobalsettingitemInfo = new RepoItemInfo(this, "BtnGlobalSettingItem", ".//div[#'main-menu']//li/a[@innertext=$varGSItemName]", 30000, null, "45f97d99-b3c5-4451-9548-edb6a1d5be37");
+                _lblmainmenuitemInfo = new RepoItemInfo(this, "LblMainMenuItem", ".//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]", 30000, null, "27ead7b6-0298-45b0-9253-2fca024e301e");
             }
 
             /// <summary>
@@ -436,6 +466,155 @@ namespace mobileSol
                 get
                 {
                     return _btncreatepanelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnGlobalSettingItem item.
+            /// </summary>
+            [RepositoryItem("45f97d99-b3c5-4451-9548-edb6a1d5be37")]
+            public virtual Ranorex.ATag BtnGlobalSettingItem
+            {
+                get
+                {
+                    return _btnglobalsettingitemInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnGlobalSettingItem item info.
+            /// </summary>
+            [RepositoryItemInfo("45f97d99-b3c5-4451-9548-edb6a1d5be37")]
+            public virtual RepoItemInfo BtnGlobalSettingItemInfo
+            {
+                get
+                {
+                    return _btnglobalsettingitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LblMainMenuItem item.
+            /// </summary>
+            [RepositoryItem("27ead7b6-0298-45b0-9253-2fca024e301e")]
+            public virtual Ranorex.ATag LblMainMenuItem
+            {
+                get
+                {
+                    return _lblmainmenuitemInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LblMainMenuItem item info.
+            /// </summary>
+            [RepositoryItemInfo("27ead7b6-0298-45b0-9253-2fca024e301e")]
+            public virtual RepoItemInfo LblMainMenuItemInfo
+            {
+                get
+                {
+                    return _lblmainmenuitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Popup folder.
+            /// </summary>
+            [RepositoryFolder("9a522199-c9ba-4b64-bfcf-4ff4f1ddce05")]
+            public virtual mobileSolRepositoryFolders.PopupFolder Popup
+            {
+                get { return _popup; }
+            }
+        }
+
+        /// <summary>
+        /// The PopupFolder folder.
+        /// </summary>
+        [RepositoryFolder("9a522199-c9ba-4b64-bfcf-4ff4f1ddce05")]
+        public partial class PopupFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _txtpagenameInfo;
+            RepoItemInfo _btnokInfo;
+
+            /// <summary>
+            /// Creates a new Popup  folder.
+            /// </summary>
+            public PopupFolder(RepoGenBaseFolder parentFolder) :
+                    base("Popup", ".//div[#'div_popup']", parentFolder, 30000, null, false, "9a522199-c9ba-4b64-bfcf-4ff4f1ddce05", "")
+            {
+                _txtpagenameInfo = new RepoItemInfo(this, "TxtPageName", ".//input[@id='name']", 30000, null, "7809c182-e268-47af-bd31-95c6724abf74");
+                _btnokInfo = new RepoItemInfo(this, "BtnOK", ".//input[@id='OK']", 30000, null, "1a14f63d-f13c-48bf-9e5e-c0eff5fc1170");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9a522199-c9ba-4b64-bfcf-4ff4f1ddce05")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9a522199-c9ba-4b64-bfcf-4ff4f1ddce05")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtPageName item.
+            /// </summary>
+            [RepositoryItem("7809c182-e268-47af-bd31-95c6724abf74")]
+            public virtual Ranorex.InputTag TxtPageName
+            {
+                get
+                {
+                    return _txtpagenameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtPageName item info.
+            /// </summary>
+            [RepositoryItemInfo("7809c182-e268-47af-bd31-95c6724abf74")]
+            public virtual RepoItemInfo TxtPageNameInfo
+            {
+                get
+                {
+                    return _txtpagenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnOK item.
+            /// </summary>
+            [RepositoryItem("1a14f63d-f13c-48bf-9e5e-c0eff5fc1170")]
+            public virtual Ranorex.InputTag BtnOK
+            {
+                get
+                {
+                    return _btnokInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnOK item info.
+            /// </summary>
+            [RepositoryItemInfo("1a14f63d-f13c-48bf-9e5e-c0eff5fc1170")]
+            public virtual RepoItemInfo BtnOKInfo
+            {
+                get
+                {
+                    return _btnokInfo;
                 }
             }
         }

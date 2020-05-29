@@ -24,34 +24,47 @@ namespace mobileSol.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartApp recording.
+    ///The ModifyPage recording.
     /// </summary>
-    [TestModule("1b57d7b6-d364-4490-8dfc-7904d4291977", ModuleType.Recording, 1)]
-    public partial class StartApp : ITestModule
+    [TestModule("d9ffc363-6eee-43fc-82da-cf2939821f3f", ModuleType.Recording, 1)]
+    public partial class ModifyPage : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::mobileSol.mobileSolRepository repository.
         /// </summary>
         public static global::mobileSol.mobileSolRepository repo = global::mobileSol.mobileSolRepository.Instance;
 
-        static StartApp instance = new StartApp();
+        static ModifyPage instance = new ModifyPage();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartApp()
+        public ModifyPage()
         {
+            varPageName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartApp Instance
+        public static ModifyPage Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _varPageName;
+
+        /// <summary>
+        /// Gets or sets the value of variable varPageName.
+        /// </summary>
+        [TestVariable("a6966578-4ec5-49a5-8f0f-3fffc9898830")]
+        public string varPageName
+        {
+            get { return _varPageName; }
+            set { _varPageName = value; }
+        }
 
 #endregion
 
@@ -79,14 +92,16 @@ namespace mobileSol.Recording_Modules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'Samsung Galaxy Tab A'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("Samsung Galaxy Tab A", "ranorex.RxBrowser", true);
-            Delay.Milliseconds(3500);
+            varPageName = GetPageName(varPageName, ValueConverter.ArgumentFromString<bool>("isRnd", "False"));
+            Delay.Milliseconds(0);
             
-            // Browse to site.
-            Report.Log(ReportLevel.Info, "Set value", "Browse to site.\r\nSetting attribute PageUrl to 'http://192.168.171.142/TADashboard' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo, new RecordItemIndex(1));
-            repo.Browser.Dom.Self.Element.SetAttributeValue("PageUrl", "http://192.168.171.142/TADashboard");
-            Delay.Milliseconds(10000);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$varPageName' on item 'Browser.DashboardPage.Popup.TxtPageName'.", repo.Browser.DashboardPage.Popup.TxtPageNameInfo, new RecordItemIndex(1));
+            repo.Browser.DashboardPage.Popup.TxtPageName.Element.SetAttributeValue("Value", varPageName);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.Popup.BtnOK' at Center", repo.Browser.DashboardPage.Popup.BtnOKInfo, new RecordItemIndex(2));
+            repo.Browser.DashboardPage.Popup.BtnOK.Touch();
+            Delay.Milliseconds(300);
             
         }
 

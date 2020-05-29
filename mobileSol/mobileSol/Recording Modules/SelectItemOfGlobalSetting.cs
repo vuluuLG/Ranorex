@@ -24,34 +24,44 @@ namespace mobileSol.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartApp recording.
+    ///The SelectItemOfGlobalSetting recording.
     /// </summary>
-    [TestModule("1b57d7b6-d364-4490-8dfc-7904d4291977", ModuleType.Recording, 1)]
-    public partial class StartApp : ITestModule
+    [TestModule("0621c4b3-b837-451c-907a-53fd2f5cf7ed", ModuleType.Recording, 1)]
+    public partial class SelectItemOfGlobalSetting : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::mobileSol.mobileSolRepository repository.
         /// </summary>
         public static global::mobileSol.mobileSolRepository repo = global::mobileSol.mobileSolRepository.Instance;
 
-        static StartApp instance = new StartApp();
+        static SelectItemOfGlobalSetting instance = new SelectItemOfGlobalSetting();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartApp()
+        public SelectItemOfGlobalSetting()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartApp Instance
+        public static SelectItemOfGlobalSetting Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable varGSItemName.
+        /// </summary>
+        [TestVariable("3e382d2a-cdf7-4df5-ae3c-5f5d70effc45")]
+        public string varGSItemName
+        {
+            get { return repo.varGSItemName; }
+            set { repo.varGSItemName = value; }
+        }
 
 #endregion
 
@@ -79,14 +89,8 @@ namespace mobileSol.Recording_Modules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'Samsung Galaxy Tab A'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("Samsung Galaxy Tab A", "ranorex.RxBrowser", true);
-            Delay.Milliseconds(3500);
-            
-            // Browse to site.
-            Report.Log(ReportLevel.Info, "Set value", "Browse to site.\r\nSetting attribute PageUrl to 'http://192.168.171.142/TADashboard' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo, new RecordItemIndex(1));
-            repo.Browser.Dom.Self.Element.SetAttributeValue("PageUrl", "http://192.168.171.142/TADashboard");
-            Delay.Milliseconds(10000);
+            SelectGlobalSettingItem(repo.Browser.DashboardPage.BtnGlobalSettingInfo, repo.Browser.DashboardPage.BtnGlobalSettingItemInfo);
+            Delay.Milliseconds(0);
             
         }
 

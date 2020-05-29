@@ -126,8 +126,8 @@
     <Compile Include="AssemblyInfo.cs">
       <id>4c3a6c05-8487-4a1d-ad7d-ce59220bb31e</id>
     </Compile>
-    <Compile Include="Coding Modules\GoToSettingFunctions.cs">
-      <id>b63ffd25-e648-4a13-ae9c-c1b45a022be3</id>
+    <Compile Include="Common\Utility.cs">
+      <id>861cf2a2-6fa2-47e3-9126-ca92e1171dc8</id>
     </Compile>
     <Compile Include="mobileSolRepository.cs">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
@@ -162,15 +162,51 @@
       <id>ac064cdf-aff5-4a6a-83cc-8b1a198d3b5a</id>
       <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\Recording1.cs">
+    <Compile Include="Recording Modules\ModifyPage.cs">
+      <BoundTo>bf98b113-6898-4f56-9056-feb09d8a1963</BoundTo>
+      <DependentUpon>ModifyPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>897c8a04-052e-4a34-a080-6b47656cd5d0</id>
+    </Compile>
+    <Compile Include="Recording Modules\ModifyPage.UserCode.cs">
+      <BoundTo>bf98b113-6898-4f56-9056-feb09d8a1963</BoundTo>
+      <DependentUpon>ModifyPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99e18374-59bb-4ddc-9401-ab1d5b378599</id>
+    </Compile>
+    <Compile Include="Recording Modules\SelectMainMenuItem.cs">
+      <BoundTo>6ff76784-9be1-48c6-ae2c-63188414d72c</BoundTo>
+      <DependentUpon>SelectMainMenuItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ce819aa0-0490-44e2-ae5a-5b3edf9c6881</id>
+    </Compile>
+    <Compile Include="Recording Modules\SelectMainMenuItem.UserCode.cs">
+      <BoundTo>6ff76784-9be1-48c6-ae2c-63188414d72c</BoundTo>
+      <DependentUpon>SelectMainMenuItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>375c9465-684a-484d-875f-2beda25effed</id>
+    </Compile>
+    <Compile Include="Recording Modules\VerifyPageExists.cs">
+      <BoundTo>69c0e28e-fb8b-4f29-90b0-21e3094129b9</BoundTo>
+      <DependentUpon>VerifyPageExists.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1becc0c9-2eba-4733-b9f0-c65756896876</id>
+    </Compile>
+    <Compile Include="Recording Modules\VerifyPageExists.UserCode.cs">
+      <BoundTo>69c0e28e-fb8b-4f29-90b0-21e3094129b9</BoundTo>
+      <DependentUpon>VerifyPageExists.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a57b65a-4409-4e86-b8c1-141c63f80f23</id>
+    </Compile>
+    <Compile Include="Recording Modules\SelectItemOfGlobalSetting.cs">
       <BoundTo>93178723-c57a-4c0f-827d-4d5b7037e73d</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>SelectItemOfGlobalSetting.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a7e5b090-91a7-4b51-8da1-0d83f91d0245</id>
     </Compile>
-    <Compile Include="Recording Modules\Recording1.UserCode.cs">
+    <Compile Include="Recording Modules\SelectItemOfGlobalSetting.UserCode.cs">
       <BoundTo>93178723-c57a-4c0f-827d-4d5b7037e73d</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>SelectItemOfGlobalSetting.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>cbc175e9-18ea-48d0-9985-4804496d0e7d</id>
     </Compile>
@@ -185,6 +221,18 @@
       <UserCode>true</UserCode>
       <id>066fdac3-74ad-4ffa-aeeb-33c99aa9ecfd</id>
       <BoundTo>ea251ab0-325c-47e8-bbce-6f277fa30b4e</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\VerifyPageNotExists.cs">
+      <BoundTo>4e072525-5342-4d99-9dd2-00a9152d7541</BoundTo>
+      <DependentUpon>VerifyPageNotExists.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a04a6d82-6395-460c-9881-7500e325c438</id>
+    </Compile>
+    <Compile Include="Recording Modules\VerifyPageNotExists.UserCode.cs">
+      <BoundTo>4e072525-5342-4d99-9dd2-00a9152d7541</BoundTo>
+      <DependentUpon>VerifyPageNotExists.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>63437dc8-822a-43d6-9835-da00a3d83833</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -212,7 +260,22 @@
       <id>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</id>
       <recordtableid>80c2ffe4-1e67-44b5-9b5c-f20cd908e272</recordtableid>
     </None>
-    <None Include="Recording Modules\Recording1.rxrec">
+    <None Include="Recording Modules\ModifyPage.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>bf98b113-6898-4f56-9056-feb09d8a1963</id>
+      <recordtableid>d9ffc363-6eee-43fc-82da-cf2939821f3f</recordtableid>
+    </None>
+    <None Include="Recording Modules\SelectMainMenuItem.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>6ff76784-9be1-48c6-ae2c-63188414d72c</id>
+      <recordtableid>d24a1db6-9dd0-424b-b3b1-d46dc63d3943</recordtableid>
+    </None>
+    <None Include="Recording Modules\VerifyPageExists.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>69c0e28e-fb8b-4f29-90b0-21e3094129b9</id>
+      <recordtableid>1cc91304-99dd-43e5-92b1-321b42ec1fa4</recordtableid>
+    </None>
+    <None Include="Recording Modules\SelectItemOfGlobalSetting.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>93178723-c57a-4c0f-827d-4d5b7037e73d</id>
       <recordtableid>0621c4b3-b837-451c-907a-53fd2f5cf7ed</recordtableid>
@@ -222,13 +285,11 @@
       <id>ea251ab0-325c-47e8-bbce-6f277fa30b4e</id>
       <recordtableid>1b57d7b6-d364-4490-8dfc-7904d4291977</recordtableid>
     </None>
-    <Content Include="Test_case_001__Verify_that_user_can_add_page_DataSource.csv">
-      <Link>Test_case_001__Verify_that_user_can_add_page_DataSource.csv</Link>
-      <BoundTo>2e8fca6f-00dc-44fb-b208-a871173ad275</BoundTo>
-      <DependentUpon>mobileSol.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>467b9218-31a6-45a8-997d-0229f14a3e8e</id>
-    </Content>
+    <None Include="Recording Modules\VerifyPageNotExists.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>4e072525-5342-4d99-9dd2-00a9152d7541</id>
+      <recordtableid>39733693-5fe1-42b7-89b3-dbd38c61cd26</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="mobileSol.rxtmg">
@@ -243,6 +304,9 @@
   <ItemGroup>
     <Folder Include="Coding Modules">
       <id>ef99dad3-8aed-4291-814f-b8ea7d9abbe2</id>
+    </Folder>
+    <Folder Include="Common">
+      <id>ce502b41-c4e9-497f-aa86-ce4683aaed67</id>
     </Folder>
     <Folder Include="Recording Modules">
       <id>eec248fa-0fb2-4775-bd3a-f2982154fbb0</id>

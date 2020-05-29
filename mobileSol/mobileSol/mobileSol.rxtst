@@ -2,70 +2,81 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<teardown
-			id="0a112961-9511-44d0-8798-17612ffe1cc2"
-			name="teardown">
-			</teardown>
-			<setup
-			id="18403c90-6c72-4231-964f-537e827b2fde"
-			name="setup">
-			</setup>
 			<testmodule
-			id="37678004-f3ba-4d1a-a878-2bee8afb0c63"
-			name="CloseApp"
-			ref="833b3673-eac1-4e7a-8c8b-f9fcb39c723a"
+			id="032c4651-1195-49a9-b5d3-e099fc1bc253"
+			name="StartApp"
+			ref="1b57d7b6-d364-4490-8dfc-7904d4291977"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+			name="Test_case_003:_Verify_that_user_can_edit_the_created_page">
+				<parameters>
+					<param
+					name="parPageName"
+					value="Test">
+					</param>
+					<param
+					name="parPageNameUpdate"
+					value="Test_Update">
+					</param>
+					<param
+					name="parGlobalSetting"
+					value="Edit">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
-			id="4d3c0cf3-e5a9-413c-8ffc-3343028fa34c"
-			name="Login"
-			ref="80c2ffe4-1e67-44b5-9b5c-f20cd908e272"
+			id="239e2a0f-ddb7-4038-974a-fec1ae9382cd"
+			name="VerifyPageNotExists"
+			ref="39733693-5fe1-42b7-89b3-dbd38c61cd26"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="varPassword"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="5f637e61-89db-413d-9a9d-7ca7628bffb9"
-					variablename="varPassword">
-					</var>
-					<var
-					dataname="varRepository"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="f19cc64b-e78e-4d7d-8ae1-f7db2140002d"
-					variablename="varRepository">
-					</var>
-					<var
-					dataname="varUsername"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="6ad1199e-33da-4ce5-80fc-92782850c33d"
-					variablename="varUsername">
+					dataname="varMainMenuItem"
+					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
+					variableid="1d6c062c-882d-4fee-9c9d-35fe23ed965a"
+					variablename="varMainMenuItem">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="abc"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="c61b8566-b149-4fb6-b5a1-b0b16cc3a4d4"
-					variablename="page">
-					</var>
-					<var
-					dataname="abc"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="bcd9a3a1-b53f-4de5-8f73-1e32cfaa7346"
-					variablename="pageD">
-					</var>
-					<var
-					dataname="abc"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="92c09682-a8e1-423e-9654-511ee68edbb6"
-					variablename="page">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
+			<modulegroup
+			id="4ff6aac2-4c55-44fa-8498-e85a95c6c0ed"
+			name="AddPage"
+			ref="13b49a71-dcf4-47fe-9df7-6649d4de0521">
+				<databinding>
+					<var
+					dataname="varGlobalSettingItemName"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="8e30a93d-d398-471e-b0c6-1075d6cc480e"
+					variablename="ModuleGroupvarGlobalSettingItemName">
+					</var>
+					<var
+					dataname="varPageName"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="b7234ad8-0e20-401a-9850-dd78ab4b109d"
+					variablename="ModuleGroupvarPageName">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testcase
 			id="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 			name="mobileSol"
 			reportlevel="Info;20">
+				<parameters>
+					<param
+					name="varRepository"
+					value="SampleRepository">
+					</param>
+					<param
+					name="varUsername"
+					value="administrator">
+					</param>
+					<param
+					name="varPassword"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -86,53 +97,136 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<testmodule
+			id="6983cd0e-359c-45d3-9a3f-15c376d2515b"
+			name="VerifyPageExists"
+			ref="1cc91304-99dd-43e5-92b1-321b42ec1fa4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="varPageName"
+					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
+					variableid="d10443f0-8177-4ee4-a1ab-5cadc7459319"
+					variablename="varMainMenuItem">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
-			datasource="Test_case_001__Verify_that_user_can_add_page_DataSource"
 			id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
 			name="Test_case_001:_Verify_that_user_can_add_page">
 				<parameters>
 					<param
-					name="varRepository"
-					value="SampleRepository">
+					name="varGlobalSettingItemName"
+					value="Add Page">
 					</param>
 					<param
-					name="varUsername"
-					value="administrator">
-					</param>
-					<param
-					name="varPassword"
-					value="">
+					name="varPageName"
+					value="Test">
 					</param>
 				</parameters>
 			</testcase>
 			<testmodule
-			id="92a0a9e0-c952-42cf-8d7f-b7dc48f91ff3"
-			name="StartApp"
-			ref="1b57d7b6-d364-4490-8dfc-7904d4291977"
+			id="8e00f3ba-5a4c-4812-8441-ad268726324f"
+			name="VerifyPageExists"
+			ref="1cc91304-99dd-43e5-92b1-321b42ec1fa4"
 			type="Recording">
-				<missingdatabinding>
+				<databinding>
 					<var
-					dataname="varURL"
-					datasourceid="540d60db-df33-4ad1-92dd-6fa02934af12"
-					variableid="dd8218eb-8d8d-4ea1-8ed9-e783767e2b65"
-					variablename="varURL">
+					dataname="parPageNameUpdate"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="d10443f0-8177-4ee4-a1ab-5cadc7459319"
+					variablename="varMainMenuItem">
 					</var>
-				</missingdatabinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="abc"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="bcd9a3a1-b53f-4de5-8f73-1e32cfaa7346"
-					variablename="pageD">
-					</var>
-					<var
-					dataname="abc"
-					datasourceid="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
-					variableid="92c09682-a8e1-423e-9654-511ee68edbb6"
-					variablename="page">
-					</var>
-				</missingdatavariablesbinding>
+				</databinding>
 			</testmodule>
+			<modulegroup
+			id="98af39c0-2613-4e56-a6e6-0becee79d33a"
+			name="DeletePage"
+			ref="b16dfc5f-bb6d-4282-8a85-79532a2dbeed">
+				<databinding>
+					<var
+					dataname="varMainMenuItem"
+					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
+					variableid="21d38f62-7285-4222-b6f1-ba1dc1dde93d"
+					variablename="ModuleGroupvarMainMenuItem">
+					</var>
+					<var
+					dataname="varGSItemName"
+					datasourceid="c556462a-e67a-49b8-8601-09ca46a37e25"
+					variableid="45ea26d0-7eed-4bbd-9b11-560f957f6b0a"
+					variablename="ModuleGroupvarGSItemName">
+					</var>
+				</databinding>
+			</modulegroup>
+			<setup
+			id="a19b79b8-f319-4e65-8778-1ef2c3aff03d"
+			name="setup">
+			</setup>
+			<testmodule
+			id="b1510a18-a40c-48b7-988b-a48051543074"
+			name="Login"
+			ref="80c2ffe4-1e67-44b5-9b5c-f20cd908e272"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="varRepository"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="f19cc64b-e78e-4d7d-8ae1-f7db2140002d"
+					variablename="varRepository">
+					</var>
+					<var
+					dataname="varUsername"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="6ad1199e-33da-4ce5-80fc-92782850c33d"
+					variablename="varUsername">
+					</var>
+					<var
+					dataname="varPassword"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="5f637e61-89db-413d-9a9d-7ca7628bffb9"
+					variablename="varPassword">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="c556462a-e67a-49b8-8601-09ca46a37e25"
+			name="Test_case_004:_Verify_that_user_can_delete_created_page">
+				<parameters>
+					<param
+					name="varMainMenuItem"
+					value="Test_Update">
+					</param>
+					<param
+					name="varGSItemName"
+					value="Delete">
+					</param>
+				</parameters>
+			</testcase>
+			<modulegroup
+			id="c89d9a45-1b5a-4e92-99ca-5ad31189f913"
+			name="EditPage"
+			ref="b2a2c4a2-e95d-4f20-b293-0361fee408df">
+				<databinding>
+					<var
+					dataname="parPageName"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="f231f77e-d610-4965-bb3a-dd5e88829811"
+					variablename="ModuleGroupNewParameter">
+					</var>
+					<var
+					dataname="parGlobalSetting"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="f9dc3827-c340-418a-93ef-201a53e7d2a3"
+					variablename="ModuleGroupNewParameter2">
+					</var>
+					<var
+					dataname="parPageNameUpdate"
+					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					variableid="d24e3211-8007-40bf-bd5e-2d6297e40e85"
+					variablename="ModuleGroupNewParameter1">
+					</var>
+				</databinding>
+			</modulegroup>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -141,60 +235,75 @@
 				<testcase
 				id="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 				name="mobileSol">
+					<setup
+					id="a19b79b8-f319-4e65-8778-1ef2c3aff03d"
+					name="setup">
+						<testmodule
+						id="032c4651-1195-49a9-b5d3-e099fc1bc253"
+						name="StartApp">
+						</testmodule>
+						<testmodule
+						id="b1510a18-a40c-48b7-988b-a48051543074"
+						name="Login">
+						</testmodule>
+					</setup>
 					<testcase
 					id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
 					name="Test_case_001:_Verify_that_user_can_add_page">
-						<setup
-						id="18403c90-6c72-4231-964f-537e827b2fde"
-						name="setup">
-							<testmodule
-							id="92a0a9e0-c952-42cf-8d7f-b7dc48f91ff3"
-							name="StartApp">
-							</testmodule>
-							<testmodule
-							id="4d3c0cf3-e5a9-413c-8ffc-3343028fa34c"
-							name="Login">
-							</testmodule>
-						</setup>
-						<teardown
-						id="0a112961-9511-44d0-8798-17612ffe1cc2"
-						name="teardown">
-							<testmodule
-							id="37678004-f3ba-4d1a-a878-2bee8afb0c63"
-							name="CloseApp">
-							</testmodule>
-						</teardown>
+						<modulegroup
+						id="4ff6aac2-4c55-44fa-8498-e85a95c6c0ed"
+						name="AddPage">
+						</modulegroup>
+						<testmodule
+						id="6983cd0e-359c-45d3-9a3f-15c376d2515b"
+						name="VerifyPageExists">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
+					name="Test_case_003:_Verify_that_user_can_edit_the_created_page">
+						<modulegroup
+						id="c89d9a45-1b5a-4e92-99ca-5ad31189f913"
+						name="EditPage">
+						</modulegroup>
+						<testmodule
+						id="8e00f3ba-5a4c-4812-8441-ad268726324f"
+						name="VerifyPageExists">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="c556462a-e67a-49b8-8601-09ca46a37e25"
+					name="Test_case_004:_Verify_that_user_can_delete_created_page">
+						<modulegroup
+						id="98af39c0-2613-4e56-a6e6-0becee79d33a"
+						name="DeletePage">
+						</modulegroup>
+						<testmodule
+						id="239e2a0f-ddb7-4038-974a-fec1ae9382cd"
+						name="VerifyPageNotExists">
+						</testmodule>
 					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
-		<DataSource
-		id="540d60db-df33-4ad1-92dd-6fa02934af12"
-		includefile="Checked"
-		lastknownrowcount="0"
-		name="Test_case_001__Verify_that_user_can_add_page_DataSource"
-		type="Ranorex.Core.Data.CsvDataConnector"
-		withheaders="True">
-			<lastknowncolumns>
-			</lastknowncolumns>
-			<maskedcolumns>
-			</maskedcolumns>
-			<file>
-				Test_case_001__Verify_that_user_can_add_page_DataSource.csv
-			</file>
-		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4">
+			</testcontainer>
+			<testcontainer
 			id="5bd49d25-e171-45db-a73d-dd753cdc8ddb">
 			</testcontainer>
 			<testcontainer
 			id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779">
+			</testcontainer>
+			<testcontainer
+			id="c556462a-e67a-49b8-8601-09ca46a37e25">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

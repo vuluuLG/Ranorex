@@ -1,19 +1,26 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Coding Modules\GoToSettingFunctions.cs" />
+    <Element value="mobileSolRepository.rxrep" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="mobileSol.rxtst" />
+    <Element value="mobileSol.rxtmg" />
     <Element value="mobileSolRepository.rxrep" />
-    <Element value="Recording Modules\Recording1.rxrec" />
-    <Element value="Coding Modules\GoToSettingFunctions.cs" />
+    <Element value="Recording Modules\StartApp.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <fileNames value="" />
       <runOnBuild value="False" />
     </Properties>
-    <Array name="recentusercodeselections" />
+    <Array name="recentusercodeselections">
+      <Element value="mobileSol.Recording_Modules.ModifyPage.GetPageName(String baseName, Boolean isRnd)" />
+      <Element value="mobileSol.Recording_Modules.ModifyPage.GetPageName(String String)" />
+      <Element value="mobileSol.Recording_Modules.ModifyPage.AddPageWithRandomName()" />
+      <Element value="mobileSol.Recording_Modules.ModifyPage.GeneratePageName()" />
+      <Element value="mobileSol.Recording_Modules.ModifyPage.Touch_BtnOK(RepoItemInfo inputtagInfo)" />
+      <Element value="mobileSol.Recording_Modules.SelectItemOfGlobalSetting.SelectGlobalSettingItem(RepoItemInfo litagInfo, RepoItemInfo atagInfo)" />
+    </Array>
   </Properties>
 </Properties>
