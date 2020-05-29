@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{4D8CB34A-C6D5-4491-BBB7-FD3B40252B91}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Web_DashBoard</RootNamespace>
+    <AssemblyName>Web_DashBoard</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>c3427588-8506-43d8-9c15-fa4919818b27</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>2031ad98-13ba-4d8c-aa65-d2676ba31a9b</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>0e8f8dd5-6c12-424f-aa7d-1b5456932a99</id>
+    </Compile>
+    <Compile Include="Record Actions\CheckPageExist.cs">
+      <BoundTo>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</BoundTo>
+      <DependentUpon>CheckPageExist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76027073-169c-4174-8469-23fb5e6a2ec4</id>
+    </Compile>
+    <Compile Include="Record Actions\CheckPageExist.UserCode.cs">
+      <BoundTo>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</BoundTo>
+      <DependentUpon>CheckPageExist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32e73646-9eff-407b-a886-9c4d6236a52c</id>
+    </Compile>
+    <Compile Include="Record Actions\CheckPageIsNavigated.cs">
+      <BoundTo>8af8a105-b6b1-448c-8e4c-ed24973068d0</BoundTo>
+      <DependentUpon>CheckPageIsNavigated.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee3b4a7d-1245-4262-92f3-3f3c7296a4c4</id>
+    </Compile>
+    <Compile Include="Record Actions\CheckPageIsNavigated.UserCode.cs">
+      <BoundTo>8af8a105-b6b1-448c-8e4c-ed24973068d0</BoundTo>
+      <DependentUpon>CheckPageIsNavigated.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e5e973ab-a2fa-43e1-b11c-d5b9560a92a5</id>
+    </Compile>
+    <Compile Include="Record Actions\CheckPageNotExist.cs">
+      <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
+      <DependentUpon>CheckPageNotExist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0418dadd-dccb-4207-83fc-4f63b539a4b1</id>
+    </Compile>
+    <Compile Include="Record Actions\CheckPageNotExist.UserCode.cs">
+      <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
+      <DependentUpon>CheckPageNotExist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52063458-ed49-4c4b-a213-9ca6fb9a8fa0</id>
+    </Compile>
+    <Compile Include="Record Actions\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>839fc8fe-1059-4548-80ff-dcee787693ee</id>
+      <BoundTo>b4679731-9dd5-4031-a053-fbb45db0d5c3</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38d25232-85a7-4740-9fe4-12fb48c6f4f8</id>
+      <BoundTo>b4679731-9dd5-4031-a053-fbb45db0d5c3</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\ConfirmDeletePage.cs">
+      <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
+      <DependentUpon>ConfirmDeletePage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b918d800-16a7-4deb-a5c7-2dc776f55a05</id>
+    </Compile>
+    <Compile Include="Record Actions\ConfirmDeletePage.UserCode.cs">
+      <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
+      <DependentUpon>ConfirmDeletePage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5fd3f6a1-736f-476c-b145-97a277444f1e</id>
+    </Compile>
+    <Compile Include="Record Actions\GetNewPageName.cs">
+      <BoundTo>13abfe69-dcb6-4101-a21f-164300533adf</BoundTo>
+      <DependentUpon>GetNewPageName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80b6278f-5f43-454e-b5a1-42f2af2acd6f</id>
+    </Compile>
+    <Compile Include="Record Actions\GetNewPageName.UserCode.cs">
+      <BoundTo>13abfe69-dcb6-4101-a21f-164300533adf</BoundTo>
+      <DependentUpon>GetNewPageName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>09f225f0-b77e-4bf3-a674-ad2c606de10d</id>
+    </Compile>
+    <Compile Include="Record Actions\GetUpdatedPageName.cs">
+      <BoundTo>8527b371-6018-4271-b0ed-7c3e6f7db77d</BoundTo>
+      <DependentUpon>GetUpdatedPageName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>91b84446-bd88-4950-88ec-92864a413d01</id>
+    </Compile>
+    <Compile Include="Record Actions\GetUpdatedPageName.UserCode.cs">
+      <BoundTo>8527b371-6018-4271-b0ed-7c3e6f7db77d</BoundTo>
+      <DependentUpon>GetUpdatedPageName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d1448db7-2e89-439f-a43d-e430a4a76616</id>
+    </Compile>
+    <Compile Include="Record Actions\LogIn.cs">
+      <DependentUpon>LogIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>21a16aa4-06bd-4053-9abc-f857b90a6e75</id>
+      <BoundTo>68cdc111-de0e-44c5-bd22-126eb299001b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogIn.UserCode.cs">
+      <DependentUpon>LogIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e743279d-1e5f-4c28-a13c-c59fc142099f</id>
+      <BoundTo>68cdc111-de0e-44c5-bd22-126eb299001b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogOut.cs">
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1b1b7be-6231-4679-bbbf-c42bb83c7d11</id>
+      <BoundTo>6b3663cf-e1f2-45cf-9490-a6f729129049</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogOut.UserCode.cs">
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc41d48b-201c-4672-b3cd-dd4096320743</id>
+      <BoundTo>6b3663cf-e1f2-45cf-9490-a6f729129049</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\OpenBrowser.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>78e13056-0773-4dc9-a459-92a89deff348</id>
+      <BoundTo>4d608b70-31a5-41d2-9296-38e587d91152</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\OpenBrowser.UserCode.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f9ef0df-0dfa-4a77-9475-a808621cf7cb</id>
+      <BoundTo>4d608b70-31a5-41d2-9296-38e587d91152</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\SelectGlobleMenuItem.cs">
+      <BoundTo>333bf649-a9f0-474b-a302-80a4d3da0c67</BoundTo>
+      <DependentUpon>SelectGlobleMenuItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8ce62100-93e1-41f9-8ee8-141103a8eebd</id>
+    </Compile>
+    <Compile Include="Record Actions\SelectGlobleMenuItem.UserCode.cs">
+      <BoundTo>333bf649-a9f0-474b-a302-80a4d3da0c67</BoundTo>
+      <DependentUpon>SelectGlobleMenuItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3211a23e-3de3-4639-954f-c7cc70e7b569</id>
+    </Compile>
+    <Compile Include="Record Actions\SelectPage.cs">
+      <BoundTo>375aa49f-4329-4af4-a7c0-5a06fb5be60e</BoundTo>
+      <DependentUpon>SelectPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa6c1e2d-69c5-461b-a9a4-1f4fe0101f6c</id>
+    </Compile>
+    <Compile Include="Record Actions\SelectPage.UserCode.cs">
+      <BoundTo>375aa49f-4329-4af4-a7c0-5a06fb5be60e</BoundTo>
+      <DependentUpon>SelectPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>985eb837-ec9c-4858-9dc5-8d99b6c69e5b</id>
+    </Compile>
+    <Compile Include="Record Actions\SubmitPageInfo.cs">
+      <BoundTo>f154513c-4723-43d9-ad0a-a8900b6d31b2</BoundTo>
+      <DependentUpon>SubmitPageInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4d998873-7534-4d89-b2ba-9c95c42a9d5d</id>
+    </Compile>
+    <Compile Include="Record Actions\SubmitPageInfo.UserCode.cs">
+      <BoundTo>f154513c-4723-43d9-ad0a-a8900b6d31b2</BoundTo>
+      <DependentUpon>SubmitPageInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e34cfe87-0630-4965-adab-170d6a7e7a3a</id>
+    </Compile>
+    <Compile Include="Web_DashBoardRepository.cs">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <DependentUpon>Web_DashBoardRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>9c23c611-d26e-4cda-b932-9e85dce7da5a</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web_DashBorad_Week2.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a96c79e1-44cd-485d-a4d3-1d774154d077</id>
+    </Content>
+    <None Include="app.config">
+      <id>8739c1b7-ca83-4ef8-a09a-6b9ffb86a8d2</id>
+    </None>
+    <None Include="Record Actions\CheckPageExist.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</id>
+      <recordtableid>38f921a5-7c5e-46de-a863-381071224212</recordtableid>
+    </None>
+    <None Include="Record Actions\CheckPageIsNavigated.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>8af8a105-b6b1-448c-8e4c-ed24973068d0</id>
+      <recordtableid>336b06f1-53fb-497c-9cbc-9a1612cfb32a</recordtableid>
+    </None>
+    <None Include="Record Actions\CheckPageNotExist.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>91e80488-8bd2-4a96-abec-104393c24e6b</id>
+      <recordtableid>3b04334d-a660-4e7a-a871-7817814435b9</recordtableid>
+    </None>
+    <None Include="Record Actions\CloseBrowser.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>b4679731-9dd5-4031-a053-fbb45db0d5c3</id>
+      <recordtableid>37ce4a7a-5626-4f2f-b8f7-2de12472c5cb</recordtableid>
+    </None>
+    <None Include="Record Actions\ConfirmDeletePage.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</id>
+      <recordtableid>6fa42f98-ed2a-4abc-a1c7-057f776bad1c</recordtableid>
+    </None>
+    <None Include="Record Actions\GetNewPageName.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>13abfe69-dcb6-4101-a21f-164300533adf</id>
+      <recordtableid>da6b3217-35db-4570-ac77-b0335825776a</recordtableid>
+    </None>
+    <None Include="Record Actions\GetUpdatedPageName.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>8527b371-6018-4271-b0ed-7c3e6f7db77d</id>
+      <recordtableid>68c8aa2f-900e-4f76-b2b1-02fefaf1e51f</recordtableid>
+    </None>
+    <None Include="Record Actions\LogIn.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>68cdc111-de0e-44c5-bd22-126eb299001b</id>
+      <recordtableid>32b25d90-fcc7-4b82-951e-171f7933c94e</recordtableid>
+    </None>
+    <None Include="Record Actions\LogOut.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>6b3663cf-e1f2-45cf-9490-a6f729129049</id>
+      <recordtableid>6ae83ff8-be06-4ef6-92bb-f608d9b74367</recordtableid>
+    </None>
+    <None Include="Record Actions\OpenBrowser.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>4d608b70-31a5-41d2-9296-38e587d91152</id>
+      <recordtableid>abdff23a-ebdb-460e-a1e2-ad870356a5e0</recordtableid>
+    </None>
+    <None Include="Record Actions\SelectGlobleMenuItem.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>333bf649-a9f0-474b-a302-80a4d3da0c67</id>
+      <recordtableid>acbfcf69-45f3-4f16-8229-d16754701799</recordtableid>
+    </None>
+    <None Include="Record Actions\SelectPage.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>375aa49f-4329-4af4-a7c0-5a06fb5be60e</id>
+      <recordtableid>38c14862-9003-480c-b2d6-2a028e5e14ae</recordtableid>
+    </None>
+    <None Include="Record Actions\SubmitPageInfo.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>f154513c-4723-43d9-ad0a-a8900b6d31b2</id>
+      <recordtableid>bace383e-ce24-4d35-a374-222d4571d37a</recordtableid>
+    </None>
+    <Content Include="Web_DashBoard.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>836d5f0f-8567-4cda-9ca1-6923f9669018</id>
+    </Content>
+    <None Include="Web_DashBoardRepository.rximg">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <DependentUpon>Web_DashBoardRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>2f055243-4260-4679-a1f8-7890f6aea3c5</id>
+    </None>
+    <None Include="Web_DashBoardRepository.rxrep">
+      <id>c3427588-8506-43d8-9c15-fa4919818b27</id>
+      <repoid>3d69752c-c401-4365-984f-a65a6c995533</repoid>
+      <reporootid>c0b288b1-adc9-4642-a32e-5641551c150e</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web_DashBoard.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1d6039a1-cbb3-42f1-9caa-762b89d02d4a</id>
+    </Content>
+    <Content Include="Web_DashBoard_Week1.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e328ffc0-8346-45c3-888d-eb7bcaaaaacd</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Record Actions">
+      <id>521a7a12-0750-4c0c-b417-a0f70b4c43a9</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

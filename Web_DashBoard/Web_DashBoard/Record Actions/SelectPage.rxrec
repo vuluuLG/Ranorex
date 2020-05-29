@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="38c14862-9003-480c-b2d6-2a028e5e14ae"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectPage"
+	namespace="Web_DashBoard.Record_Actions">
+	</codegen>
+	<variables>
+		<var
+		id="17e6d7fa-e1b4-4635-bdbd-b6460b31ed1a"
+		name="pageName">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a42c0e62-377b-488d-8c92-16874c26e59b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='192.168.1.107']//div[#'main-menu']//a[@innertext=$displayPageName]
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectPage.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.63s"
+		durationms="7632"
+		type="root"
+		rid="122d1db29db2233e"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="dzung"
+		rxversion="9.3.1.0"
+		host="JOHNNY"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="2560x1080"
+		timestamp="5/29/2020 2:31:19 PM"
+		timestampiso="2020-05-29T07:31:19"
+		endtime="5/29/2020 2:31:26 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="DeletePage">
+		<detail>
+			DeletePage
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.677"
+			timeRelativeToTestModuleStartTime="00:04.677"
+			timeWallClock="14:31:23"
+			time="00:04.677"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>selectedItem
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.696"
+			timeRelativeToTestModuleStartTime="00:04.696"
+			timeWallClock="14:31:23"
+			time="00:04.696"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Dashboard.Test20200529' at 59;21.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='192.168.1.107']//div[#'main-menu']/?/?/ul/?/?/a[@innertext='Test_20200529']"
+				itempath=".//div[#'main-menu']/?/?/ul/?/?/a[@innertext='Test_20200529']"
+				fullname="Web_DashBoardRepository.Dashboard.Test20200529"
+				id="cd32f513070e459d8edff401c622f152"
+				timeout="60000"
+				codefile="F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\Record Actions\DeletePage.cs"
+				codeline="92"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.298"
+			timeRelativeToTestModuleStartTime="00:06.298"
+			timeWallClock="14:31:25"
+			time="00:06.298"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Dashboard.Main.Main_Menu.mniGlobalSetingSelectedItem' at 23;23.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='192.168.1.107']//div[#'main-menu']//a[@innertext='']"
+				itempath=".//div[#'main-menu']//a[@innertext=$selectedItem]"
+				fullname="Web_DashBoardRepository.Dashboard.Main.Main_Menu.mniGlobalSetingSelectedItem"
+				id="d773694f0bef4f9f8037b2d0551b4fa8"
+				timeout="60000"
+				codefile="F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\Record Actions\DeletePage.cs"
+				codeline="96"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.892"
+			timeRelativeToTestModuleStartTime="00:06.892"
+			timeWallClock="14:31:26"
+			time="00:06.892"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Dashboard.Main.Main_Menu.mniDelete' at 59;5.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='192.168.1.107']//div[#'main-menu']//a[@innertext='Delete']"
+				itempath=".//div[#'main-menu']//a[@innertext='Delete']"
+				fullname="Web_DashBoardRepository.Dashboard.Main.Main_Menu.mniDelete"
+				id="406561e50baa46148ab84a1133409654"
+				timeout="60000"
+				codefile="F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\Record Actions\DeletePage.cs"
+				codeline="100"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.981"
+			timeRelativeToTestModuleStartTime="00:06.981"
+			timeWallClock="14:31:26"
+			time="00:06.981"
+			level="Warn"
+			category="Click">
+			<message>
+				The mouse action was performed outside the boundaries of the assigned UI element.<br/>(null)
+			</message>
+			<metainfo
+				codefile="F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\Record Actions\DeletePage.cs"
+				codeline="101"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.423"
+			timeRelativeToTestModuleStartTime="00:07.423"
+			timeWallClock="14:31:26"
+			time="00:07.423"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{Enter}' with focus on 'Dashboard'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='192.168.1.107']"
+				itempath="/dom[@domain='192.168.1.107']"
+				fullname="Web_DashBoardRepository.Dashboard.Self"
+				id="934797ae870644019275bf20491199a0"
+				timeout="30000"
+				codefile="F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\Record Actions\DeletePage.cs"
+				codeline="104"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

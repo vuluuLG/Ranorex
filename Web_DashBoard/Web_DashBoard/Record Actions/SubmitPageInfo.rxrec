@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bace383e-ce24-4d35-a374-222d4571d37a"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SubmitPageInfo"
+	namespace="Web_DashBoard.Record_Actions">
+	</codegen>
+	<variables>
+		<var
+		id="f1199138-5502-4a5b-b886-e99ef6fcfe87"
+		name="parentPage">
+			(null)
+		</var>
+		<var
+		id="0908d7f6-d292-4ef9-ac53-6c037c9ae8e8"
+		name="numberOfColumn">
+			2
+		</var>
+		<var
+		id="d1c6a5f6-5743-439e-8914-967bd10b938c"
+		name="displayAfter">
+		</var>
+		<var
+		id="8426cd18-e80f-4a51-8154-dd394031322b"
+		name="isPublic">
+		</var>
+		<var
+		id="604eb7d5-ab98-4815-8acc-06d716c2f5c3"
+		name="pageName">
+			Test
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="SubmitPageInfo"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="EnterPageName"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="df7018ab-87ff-46d6-a7c2-48b4c60cf09e">
+				<argument
+				argname="inputtagInfo"
+				id="1a8a6b99-db8e-4639-b1c9-90ee4342ea7b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3d5ee29e-5aa9-430c-9aa1-9e4bcce27547"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='192.168.1.107']//input[#'name']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="pageName"
+				id="b63fcc3c-d855-437c-88a6-ab35e69725dc"
+				variable="pageName">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="SubmitPageInfo"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectParentPage"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2ab86d6f-8fe0-4f72-b973-47fa32c57ad1">
+				<argument
+				argname="selecttagInfo"
+				id="0e72c336-1a07-4340-8512-1a570a79d579">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f1584037-c898-48b9-a2c2-2a5df847dd1c"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='192.168.1.107']//select[#'parent']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="parentPage"
+				id="a7bcda82-9811-4f4a-acfc-1a80549cf916"
+				variable="parentPage">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="SubmitPageInfo"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectNumberOfColumn"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="fb23442c-24b3-4630-bd57-a173b77dec04">
+				<argument
+				argname="selecttagInfo"
+				id="8627d742-bad1-4b78-9d6f-9c2fc240963a">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fde58011-d0b3-4de2-ac47-1fc87a0d3ae4"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='192.168.1.107']//select[#'columnnumber']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="value"
+				id="8191bc08-6945-45c8-9dee-9bc3424f76dc"
+				variable="numberOfColumn">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="SubmitPageInfo"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectDisplayAfterPage"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c2655c9b-25ce-4535-a826-2e70c02eb2f5">
+				<argument
+				argname="selecttagInfo"
+				id="d230ead7-3dd7-43f6-b6b4-bc683918c416">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f7e9d182-8367-4171-815b-82f8f19c729b"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='192.168.1.107']//select[#'afterpage']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="value"
+				id="876c6da6-2340-4386-9916-0eb76cce2eaf"
+				variable="displayAfter">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="SubmitPageInfo"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SetIsPublic"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="298f4d0d-ec91-42a7-9201-5ddefa99e49b">
+				<argument
+				argname="inputtagInfo"
+				id="43bd8b28-02a2-4c3d-908c-29af167649d4">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="1d2acde9-e9a8-408c-8ea6-33bf7ec3133f"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='192.168.1.107']//input[#'ispublic']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="value"
+				id="e001558e-35ed-488c-90bf-8a1fe1bf1f71"
+				variable="isPublic">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ae01c402-77e6-4125-b5d9-2f48ceb709a5"
+		sx="1343"
+		sy="667"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a0e40d1e-6d87-4a5f-aac4-c2d1e191db80"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="1315,658,80,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						button page_button
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						OK
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						button page_button
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						OK
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						OK
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="onclick"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='192.168.1.107']//input[#'OK']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a95b73c0-8b70-4d80-8a1c-23101138399f">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="d5478c2d-3c93-434e-8473-687d1a98a531"
+		waitaction="NotExists"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a0e40d1e-6d87-4a5f-aac4-c2d1e191db80"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='192.168.1.107']//input[#'OK']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SubmitPageInfo.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

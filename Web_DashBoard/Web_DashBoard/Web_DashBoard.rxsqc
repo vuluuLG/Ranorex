@@ -1,0 +1,12 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "Web_DashBoard_Week1",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Web_DashBorad_Week2",
+    "RunConfig": "TestRun"
+  }
+]

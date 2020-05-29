@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="abdff23a-ebdb-460e-a1e2-ad870356a5e0"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="Web_DashBoard.Record_Actions">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://192.168.1.107/TADashboard/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

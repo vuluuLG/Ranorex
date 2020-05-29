@@ -1,0 +1,934 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web_DashBoard</name>
+    </assembly>
+    <members>
+        <member name="T:Web_DashBoard.Record_Actions.CheckPageExist">
+             <summary>
+            The CheckPageExist recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.CheckPageExist.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageExist.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CheckPageExist.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CheckPageExist.pageName">
+            <summary>
+            Gets or sets the value of variable pageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageExist.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.CheckPageExist.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageExist.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageExist.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.CheckPageIsNavigated">
+             <summary>
+            The CheckPageIsNavigated recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.CheckPageIsNavigated.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageIsNavigated.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CheckPageIsNavigated.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CheckPageIsNavigated.navigatedPageName">
+            <summary>
+            Gets or sets the value of variable navigatedPageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageIsNavigated.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.CheckPageIsNavigated.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageIsNavigated.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageIsNavigated.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.CheckPageNotExist">
+             <summary>
+            The CheckPageNotExist recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.CheckPageNotExist.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageNotExist.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CheckPageNotExist.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CheckPageNotExist.pageName">
+            <summary>
+            Gets or sets the value of variable pageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageNotExist.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.CheckPageNotExist.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageNotExist.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CheckPageNotExist.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.CloseBrowser">
+             <summary>
+            The CloseBrowser recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.CloseBrowser.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CloseBrowser.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.CloseBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CloseBrowser.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.CloseBrowser.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CloseBrowser.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.CloseBrowser.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.ConfirmDeletePage">
+             <summary>
+            The ConfirmDeletePage recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.ConfirmDeletePage.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.ConfirmDeletePage.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.ConfirmDeletePage.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.ConfirmDeletePage.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.ConfirmDeletePage.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.ConfirmDeletePage.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.ConfirmDeletePage.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.GetNewPageName">
+             <summary>
+            The GetNewPageName recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.GetNewPageName.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.GetNewPageName.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.GetNewPageName.NewPageName">
+            <summary>
+            Gets or sets the value of variable NewPageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GetNewPageName.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.GetUpdatedPageName">
+             <summary>
+            The GetUpdatedPageName recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.GetUpdatedPageName.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.GetUpdatedPageName.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.GetUpdatedPageName.UpdatedName">
+            <summary>
+            Gets or sets the value of variable UpdatedName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GetUpdatedPageName.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.LogIn">
+             <summary>
+            The LogIn recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.LogIn.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogIn.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.LogIn.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.LogIn.user">
+            <summary>
+            Gets or sets the value of variable user.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.LogIn.password">
+            <summary>
+            Gets or sets the value of variable password.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogIn.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.LogIn.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogIn.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogIn.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.LogOut">
+             <summary>
+            The LogOut recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.LogOut.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogOut.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.LogOut.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogOut.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.LogOut.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogOut.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.LogOut.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.OpenBrowser">
+             <summary>
+            The OpenBrowser recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.OpenBrowser.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.OpenBrowser.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.OpenBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.OpenBrowser.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.OpenBrowser.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.OpenBrowser.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.OpenBrowser.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.SelectGlobleMenuItem">
+             <summary>
+            The SelectGlobleMenuItem recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.selectedItem">
+            <summary>
+            Gets or sets the value of variable selectedItem.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.SelectPage">
+             <summary>
+            The SelectPage recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.SelectPage.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectPage.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectPage.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectPage.pageName">
+            <summary>
+            Gets or sets the value of variable pageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectPage.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.SelectPage.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectPage.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectPage.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.SubmitPageInfo">
+             <summary>
+            The SubmitPageInfo recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.SubmitPageInfo.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.parentPage">
+            <summary>
+            Gets or sets the value of variable parentPage.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.numberOfColumn">
+            <summary>
+            Gets or sets the value of variable numberOfColumn.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.displayAfter">
+            <summary>
+            Gets or sets the value of variable displayAfter.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.isPublic">
+            <summary>
+            Gets or sets the value of variable isPublic.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.pageName">
+            <summary>
+            Gets or sets the value of variable pageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.SubmitPageInfo.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepository">
+            <summary>
+            The class representing the Web_DashBoardRepository element repository.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the Web_DashBoardRepository element repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.displayPageName">
+            <summary>
+            Gets or sets the value of variable displayPageName.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.selectedItem">
+            <summary>
+            Gets or sets the value of variable selectedItem.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.pageName">
+            <summary>
+            Gets or sets the value of variable pageName.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.Dashboard">
+            <summary>
+            The Dashboard folder.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder">
+            <summary>
+            The DashboardAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Dashboard  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.LogIn">
+            <summary>
+            The LogIn folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Main">
+            <summary>
+            The Main folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.AddPage">
+            <summary>
+            The AddPage folder.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder">
+            <summary>
+            The LogInFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new LogIn  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.cbbRepository">
+            <summary>
+            The cbbRepository item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.cbbRepositoryInfo">
+            <summary>
+            The cbbRepository item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.txtUsername">
+            <summary>
+            The txtUsername item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.txtUsernameInfo">
+            <summary>
+            The txtUsername item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.txtPassword">
+            <summary>
+            The txtPassword item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.txtPasswordInfo">
+            <summary>
+            The txtPassword item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.btnLogin">
+            <summary>
+            The btnLogin item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.btnLoginInfo">
+            <summary>
+            The btnLogin item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder">
+            <summary>
+            The MainFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Main  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.Header_Menu">
+            <summary>
+            The Header_Menu folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.Main_Menu">
+            <summary>
+            The Main_Menu folder.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder">
+            <summary>
+            The Header_MenuFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Header_Menu  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniSignedInUser">
+            <summary>
+            The mniSignedInUser item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniSignedInUserInfo">
+            <summary>
+            The mniSignedInUser item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniLogout">
+            <summary>
+            The mniLogout item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniLogoutInfo">
+            <summary>
+            The mniLogout item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder">
+            <summary>
+            The Main_MenuFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Main_Menu  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniSetting">
+            <summary>
+            The mniSetting item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniSettingInfo">
+            <summary>
+            The mniSetting item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniAddPage">
+            <summary>
+            The mniAddPage item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniAddPageInfo">
+            <summary>
+            The mniAddPage item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniAddedPage">
+            <summary>
+            The mniAddedPage item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniAddedPageInfo">
+            <summary>
+            The mniAddedPage item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniDelete">
+            <summary>
+            The mniDelete item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniDeleteInfo">
+            <summary>
+            The mniDelete item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniGlobalSetingSelectedItem">
+            <summary>
+            The mniGlobalSetingSelectedItem item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniGlobalSetingSelectedItemInfo">
+            <summary>
+            The mniGlobalSetingSelectedItem item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder">
+            <summary>
+            The AddPageFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new AddPage  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.txtName">
+            <summary>
+            The txtName item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.txtNameInfo">
+            <summary>
+            The txtName item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.btnOK">
+            <summary>
+            The btnOK item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.btnOKInfo">
+            <summary>
+            The btnOK item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbParent">
+            <summary>
+            The cbbParent item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbParentInfo">
+            <summary>
+            The cbbParent item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbNumberOfColumn">
+            <summary>
+            The cbbNumberOfColumn item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbNumberOfColumnInfo">
+            <summary>
+            The cbbNumberOfColumn item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbDisplayAfter">
+            <summary>
+            The cbbDisplayAfter item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbDisplayAfterInfo">
+            <summary>
+            The cbbDisplayAfter item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbxPublic">
+            <summary>
+            The cbxPublic item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbxPublicInfo">
+            <summary>
+            The cbxPublic item info.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

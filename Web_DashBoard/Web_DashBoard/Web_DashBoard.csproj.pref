@@ -1,0 +1,23 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="Web_DashBorad_Week2.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="Web_DashBorad_Week2.rxtst" />
+    <Element value="Web_DashBoard_Week1.rxtst" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="Web_DashBoard.Record_Actions.SelectPage.Mouse_Click_Test20200529(RepoItemInfo atagInfo)" />
+      <Element value="Web_DashBoard.Record_Actions.SelectPage.SelectExistingPage(RepoItemInfo atagInfo, String selectedPageName)" />
+      <Element value="Web_DashBoard.Record_Actions.Recording1.Validate_Dashboard(RepoItemInfo webdocumentInfo)" />
+      <Element value="Web_DashBoard.Record_Actions.CheckPageNotExist.CheckPageDeleted(RepoItemInfo atagInfo, String validatePageDeleted)" />
+      <Element value="Web_DashBoard.Record_Actions.CheckPageNotExist.CheckPageAdded(RepoItemInfo atagInfo, String validatePageExist)" />
+      <Element value="Web_DashBoard.Record_Actions.DeletePage.Mouse_Click_Test20200529(RepoItemInfo atagInfo)" />
+    </Array>
+  </Properties>
+</Properties>
