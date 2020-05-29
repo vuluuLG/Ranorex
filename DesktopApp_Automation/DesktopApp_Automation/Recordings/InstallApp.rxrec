@@ -24,8 +24,12 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="536ad227-d974-4792-a85e-6c67cb436034"
-		name="StartAutProcessIDVar">
+		id="d621bdb1-a622-4131-9ece-108d110150cc"
+		name="varVersion">
+		</var>
+		<var
+		id="3ddb315b-cfb7-4296-b25f-b0b854fdc8cf"
+		name="varStartAut">
 		</var>
 	</variables>
 	<recorditems>
@@ -37,16 +41,13 @@ mode="Global">
 			</comment>
 			<bindings>
 				<binding
-				target="FileName"
-				variable="StartAutProcessIDVar">
+				target="ReturnVariable"
+				variable="varStartAut">
 				</binding>
 			</bindings>
 			<filename>
 				F:\Software\npp.7.8.6.Installer.x64.exe
 			</filename>
-			<workingdir>
-				F:\Software
-			</workingdir>
 			<args>
 			</args>
 		</runapprecorditem>
@@ -1584,6 +1585,10 @@ KRkFS2fpj/GiihgRNcuAT5a4CB2+ftz049qs0UUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="varVersion">
+				</binding>
 			</bindings>
 			<info
 			id="766b6185-b8ac-4e3d-88d3-6169b9e63e6f"
@@ -1610,19 +1615,18 @@ KRkFS2fpj/GiihgRNcuAT5a4CB2+ftz049qs0UUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKLSURBVDhPlZNbSBRhFMe/mdkZZ2cdmV1TtlFJ
-rVwCLVYSQoWISIxIUCqQEEyjrIwMs7xQUWEPeXkwKOwhK6qnyC6EdCFKSao1KzJMCm9Iqz4kGlKw
-6b/z7SyJZFQ/+HPOdy7f+fbsLvsHqkVR7BYE4U7oHEfKsdw/s5qUyx2bzTYIoqWlBXTJfVmW+zwe
-zxdKvef535CY2KfK9n4jKnKUTzbd5sDU1yl+B/aV7v0RdAi66COVu62uEAJjvg3HcrAfJ3EENSgO
-5KOxqgmVh6qDTTs2lwYth8q/WV1zZMqSOnAddWgcLMD5kWKcxU6klcVhsgvobZ1AzHaGA/X5EEXp
-LdWbVtsvhIYttVmBVziNTtJtVOIpatGG46joyUCZLwPjuIwbOEzTBb6D+QhMfN44VAKRiR30+bpP
-BEqwqXYt1hUlQ4/SP0THRfppJ+2yqLyj8iKri6DN1vNlSZLUQRv3kX1C506KPybdJD2URIpJEuVs
-z6ilnGJXeY78CuZyucb3ZOfCm5aEeNPlN6KdE1FOfVBVldfxsYv8id4lWJ++7Lvu0Iaa6jKQnW4i
-JcU7qmlaP13yKPgKYhcdLto17RP5Br3khRIW1kP+GlIxt6IgPiC1U90F0jmKHSTNY2NSZtIs2Rq7
-3T4sK3KXaZqTVopti/CGT6+EicLOrTPNMw0wDGOM4qus9BwjES79M9kqmnLXTHRPk59FSrY71WG3
-X0bBWB6uoQm0TP7CBZk1nMY4iU/w8QB9M90Otzac2rsUMfd0pAYSoCjyGxpyhecXYgUp1nIZc7Dw
-meXNi+mHdQZHXx5BIfLg3K3w/0ZbqOTvUPEtI0GfaMUlqKrqF5hwKpT6L8odSvgIWY91ZOwnq4v7
-nezUJA8AAAAASUVORK5CYII=
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJrSURBVDhPlVNbSFRRFD33zr2eGZyhBhnQMYmM
+JgJJtIRII/ooDEvQj0JCSCfKoMgw80VFhX3k48OgsI+movqK7EGIFVFGUo1ZkWFS5ANp1I8GDSmY
+dLXO3CGRjGrBYu+z99p7nzn7jvgH1Oq63qNp2u3YOYXMt9w/YzVZoBzDMAZBBAIBsEmHzWbr93g8
+X5h6p/K/wSb0foo+SYd9VE22S/vA5NdJ1QOl/pIfUYeg5gPliVZVDJoQwY1H87EfJ1CFOvgjRWiu
+aUH1odpoUcnWfVGrQPk3q2oWOew6cA0NaB4sxrkRP85gF7LKUzDRDfS1hZG8Q+BAYxF4szfUe62y
+X9Ca8irWRV7iFLrIW6jGY9SjHcdQ2ZuN8mA2xnEJ13GY0zX1BnOhCf1Z81AZdKE/Ub/9eKQMefXr
+saE0DTbT9t7htIcY7yTfUl5qVRF82UZVQKrCIPmI7GL8IXmDvB+LqdxTllQwdkXl6FcKh8Mxvje3
+ABlZPrjiZUi67GFpGoMUv3JxamrGYqxKT/7OdQ61NGQjd60XCQmeUbUpNnkQvQWxm4cLDH6kv5DF
+z8le+mtIv7LM39M1vZP2PHmWsYPkHGz25fhmaOs4bZgNut1u94SVEtucqc6plfBie8eW6dbpJkgp
+xxhPt9KzGDGl+Zm2hlPuuJMWTNHfRKYZccZwYshE8VghrqJFrVLdcF7MSLscJ9WEoApwMz2GwxjO
+7FuK5LsuZEaWqAavOeSyys+HFeQiyxUiXjinl7Um8cM6jSMvqrAThXDviVP/jfaY5O+g+KZMkOE2
+XIRpmiFNaCdjqf9CBR94hHa5dRTiJzc7905shj6eAAAAAElFTkSuQmCC
 					</attribute>
 					<attribute
 					name="state"

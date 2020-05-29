@@ -2002,6 +2002,7 @@ namespace DesktopApp_Automation
         public partial class NewNotificationAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _messagetextInfo;
+            RepoItemInfo _dismisstextblockInfo;
 
             /// <summary>
             /// Creates a new NewNotification  folder.
@@ -2010,6 +2011,7 @@ namespace DesktopApp_Automation
                     base("NewNotification", "/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']", parentFolder, 30000, null, true, "a0a6242c-ac51-46c5-b247-b87cd42f70cb", "")
             {
                 _messagetextInfo = new RepoItemInfo(this, "MessageText", "?/?/text[@automationid='MessageText']", 30000, null, "d45740e0-96e8-404e-99c2-5e1e1cbb6e91");
+                _dismisstextblockInfo = new RepoItemInfo(this, "DismissTextBlock", "form[@automationid='NormalToastView']/?/?/text[@automationid='DismissTextBlock']", 30000, null, "043a47c2-84b6-4f51-9c2c-f28d996c0913");
             }
 
             /// <summary>
@@ -2057,6 +2059,30 @@ namespace DesktopApp_Automation
                 get
                 {
                     return _messagetextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DismissTextBlock item.
+            /// </summary>
+            [RepositoryItem("043a47c2-84b6-4f51-9c2c-f28d996c0913")]
+            public virtual Ranorex.Text DismissTextBlock
+            {
+                get
+                {
+                    return _dismisstextblockInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DismissTextBlock item info.
+            /// </summary>
+            [RepositoryItemInfo("043a47c2-84b6-4f51-9c2c-f28d996c0913")]
+            public virtual RepoItemInfo DismissTextBlockInfo
+            {
+                get
+                {
+                    return _dismisstextblockInfo;
                 }
             }
         }

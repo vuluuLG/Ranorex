@@ -38,7 +38,7 @@ mode="Global">
 			</comment>
 			<bindings>
 				<binding
-				target="FileName"
+				target="ReturnVariable"
 				variable="varPathSoftware">
 				</binding>
 			</bindings>
@@ -83,17 +83,17 @@ mode="Global">
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAImSURBVDhPjZBfaFJRHMePIQuKQfSXehgFPcwe
-fBj11FNF0F4iMKg5RQWniExEs8QQlYJ6k9iwXoOk1cPqpcmMyohZoYNYIyhYtFaUs5Wt5rW89347
-v6M2zQl94cPhcs7v8/vdH4tGoyB0Ot3LWCwGvV7/qvkkGGP9nOZsim9YDz9jYOFwGKlUih71ptPp
-tpPkkUhE5d9mjsjWzVsmL+7swRkShEIhUK4mEvi5ImF0ZATLP1bEufRtWQgURWmWGEZv5XF8wEdN
-TCwYDAqBzB/9m99V+a+gISnf71Zvx0+gZ8/eGZqGBQIB8Xi+8AWz7z62QTto7Ck3bkBlQovMMB+d
-sd1C4Pf7hYCiqGpHKOrjLkxf0MBxpLsgiiler5eu8Onr9zUnaPBr1gQppcUjj+i+q1bN4/F4oKoK
-FkuLmPs81BE104Xn5zW4Gx8kwWrcbjfvLyP/JoeZt4k1qUz3oXRHi4e8u88ntr8al8slBGOZm5ic
-P9zG1IdB0f3pOQ3eP7kCmrheWovD4eBLkhG7EcX1uYNtVJ5tR3FMiwdnN4pfpYnrpbXY7XbIahUD
-l04j8KKvhfHXfuSTBkzx7pevDYlGTqezVWCz2YTgwPB+HL3X20Jywo7+Q/uQS54U9zIXUMN6aS0W
-iwVVpYodp7Zh3THWEbqX+S9YrdZWgclkQnGpqJSlskpIkiQolUoKUSgUZGJhYaGazWbLZrO5XWA0
-Gv8bel8v5WHsD+N+TQakp13ZAAAAAElFTkSuQmCC
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIjSURBVDhPjZBfaJJRGIePITMWQQVLCokuR5er
+rroqCNrNCAxqTlHBKSIT0SwxRKWg7iQ2rNsgaXWxQmg2oTJiVOgg1ggMFi6SNfu3pmuW3/f9Ou9R
+m+aEfvBw+Djnfd73e1kkEgGh1WrfRKNR6HS6t60nwRgb5LRmV6xXAx9jYKFQCKlUih71p9PpjpPk
+4XBY4d8mjsh2jWbmyr4DOE+CYDAIyo14HJX1DUyMj2OtvC7Or9/XhECW5VaJfuJuDkPDXmpiZIFA
+QAgk/ujf/K5JfwVNSfnRTuVe7DR27+mbp2mY3+8Xj5dWvmChUOyAdtDcU3ZKj+q0GpkxPjpjB4XA
+5/MJAUVWlK5QlGc9mLuswtDh3hVRTPF4PHSF5W8/tpygya8FIzZSajx1i+7769U8brcbiiKjtFrC
+4qfRriiZHry6pMKD2AgJNuNyuXh/Cbl3Wcy/j29JdW4Aq/fVeMK7e71i+5txOp1CMJm5g5mlEx3M
+fhwR3V9cVOHD8+ugiRul9djtdr4kCdHbEdxaPNZB9eVefJ5U4/GFHeJXaeJGaT02mw2SUsPw1XPw
+vx5oYyrvQy6hxyzvfu3mqGjkcDjaBVarVQiOjh3ByYf9bSSmbRg8fgjZxBlxL3EBNWyU1mM2m1GT
+a9Ce7cO2U6wrdC/xX7BYLO0Co9GI4nJRLlfKClGpVASlUkkmCoWCROTz+VoymfxpMpk6BQaD4b+h
+941SHsb+AH+/SvtfRGUFAAAAAElFTkSuQmCC
 					</attribute>
 					<attribute
 					name="state"

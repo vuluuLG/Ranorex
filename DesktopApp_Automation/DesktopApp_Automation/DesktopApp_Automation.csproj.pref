@@ -1,12 +1,10 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="CodeModules\AppInformation.cs" />
+    <Element value="DesktopApp_Automation.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="DesktopApp_Automation.rxtst" />
-    <Element value="Recordings\UninstallApp.rxrec" />
-    <Element value="CodeModules\AppInformation.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

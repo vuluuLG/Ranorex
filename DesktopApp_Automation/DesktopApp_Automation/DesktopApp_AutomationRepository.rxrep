@@ -989,6 +989,16 @@ p9MJhTYxcPUCgi/6dIy/llDOmDDDul+7NSQaud1uvcDhcAjBseGjOPWwV0dm0on+E0dQypwT+woT
 			searchtimeout="30000ms">
 				/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']/?/?/text[@automationid='MessageText']
 			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="043a47c2-84b6-4f51-9c2c-f28d996c0913"
+			name="DismissTextBlock"
+			refimgid="474a15f9-bfa1-44ff-a1f2-90422d860583"
+			refpath="/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']/form/button/text[@automationid='DismissTextBlock']"
+			searchtimeout="30000ms">
+				/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']/form[@automationid='NormalToastView']/?/?/text[@automationid='DismissTextBlock']
+			</item>
 			<basepath>
 				/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']
 			</basepath>

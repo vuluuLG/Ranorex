@@ -922,6 +922,16 @@
             The MessageText item info.
             </summary>
         </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.DismissTextBlock">
+            <summary>
+            The DismissTextBlock item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.DismissTextBlockInfo">
+            <summary>
+            The DismissTextBlock item info.
+            </summary>
+        </member>
         <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder">
             <summary>
             The UntitledGoogleChromeAppFolder folder.
@@ -1074,9 +1084,14 @@
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:DesktopApp_Automation.Recordings.InstallApp.StartAutProcessIDVar">
+        <member name="P:DesktopApp_Automation.Recordings.InstallApp.varVersion">
             <summary>
-            Gets or sets the value of variable StartAutProcessIDVar.
+            Gets or sets the value of variable varVersion.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.InstallApp.varStartAut">
+            <summary>
+            Gets or sets the value of variable varStartAut.
             </summary>
         </member>
         <member name="T:DesktopApp_Automation.Recordings.OpenApp">
@@ -1245,9 +1260,14 @@
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:DesktopApp_Automation.Recordings.ValidateInstalled.SoftwareName">
+        <member name="P:DesktopApp_Automation.Recordings.ValidateInstalled.varVersion">
             <summary>
-            Gets or sets the value of variable SoftwareName.
+            Gets or sets the value of variable varVersion.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.ValidateInstalled.varSoftwareName">
+            <summary>
+            Gets or sets the value of variable varSoftwareName.
             </summary>
         </member>
         <member name="T:__RxMain.__RxProgram">

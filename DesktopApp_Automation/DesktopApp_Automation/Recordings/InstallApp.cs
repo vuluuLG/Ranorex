@@ -41,7 +41,8 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public InstallApp()
         {
-            StartAutProcessIDVar = "";
+            varVersion = "";
+            varStartAut = "";
         }
 
         /// <summary>
@@ -54,16 +55,28 @@ namespace DesktopApp_Automation.Recordings
 
 #region Variables
 
-        string _StartAutProcessIDVar;
+        string _varVersion;
 
         /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
+        /// Gets or sets the value of variable varVersion.
         /// </summary>
-        [TestVariable("536ad227-d974-4792-a85e-6c67cb436034")]
-        public string StartAutProcessIDVar
+        [TestVariable("d621bdb1-a622-4131-9ece-108d110150cc")]
+        public string varVersion
         {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
+            get { return _varVersion; }
+            set { _varVersion = value; }
+        }
+
+        string _varStartAut;
+
+        /// <summary>
+        /// Gets or sets the value of variable varStartAut.
+        /// </summary>
+        [TestVariable("3ddb315b-cfb7-4296-b25f-b0b854fdc8cf")]
+        public string varStartAut
+        {
+            get { return _varStartAut; }
+            set { _varStartAut = value; }
         }
 
 #endregion
@@ -92,8 +105,8 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $StartAutProcessIDVar in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(StartAutProcessIDVar, "", "F:\\Software", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application 'F:\\Software\\npp.7.8.6.Installer.x64.exe' in normal mode. Return value bound to $varStartAut.", new RecordItemIndex(0));
+            varStartAut = ValueConverter.ToString(Host.Local.RunApplication("F:\\Software\\npp.7.8.6.Installer.x64.exe", "", "", false));
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InstallerLanguage.ButtonOK' at 28;10.", repo.InstallerLanguage.ButtonOKInfo, new RecordItemIndex(1));
@@ -120,8 +133,8 @@ namespace DesktopApp_Automation.Recordings
             repo.NotepadPlusPlusV786Setup.ButtonInstall.Click("17;9");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Title>'7.8.6 ') on item 'NotepadPlusPlusV786Setup'.", repo.NotepadPlusPlusV786Setup.SelfInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.NotepadPlusPlusV786Setup.SelfInfo, "Title", "7.8.6 ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Title>$varVersion) on item 'NotepadPlusPlusV786Setup'.", repo.NotepadPlusPlusV786Setup.SelfInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.NotepadPlusPlusV786Setup.SelfInfo, "Title", varVersion);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonFinish' at 31;10.", repo.NotepadPlusPlusV786Setup.ButtonFinishInfo, new RecordItemIndex(8));
