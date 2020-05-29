@@ -4,6 +4,24 @@
         <name>DesktopApp_Automation</name>
     </assembly>
     <members>
+        <member name="T:DesktopApp_Automation.CodeModules.AppInformation">
+            <summary>
+            Description of UserCodeModule1.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.CodeModules.AppInformation.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Automation.CodeModules.AppInformation.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
         <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepository">
             <summary>
             The class representing the DesktopApp_AutomationRepository element repository.
@@ -1007,6 +1025,16 @@
             Gets a static instance of this recording.
             </summary>
         </member>
+        <member name="P:DesktopApp_Automation.Recordings.DownloadApp.varURL">
+            <summary>
+            Gets or sets the value of variable varURL.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.DownloadApp.varFileSetupName">
+            <summary>
+            Gets or sets the value of variable varFileSetupName.
+            </summary>
+        </member>
         <member name="T:DesktopApp_Automation.Recordings.InstallApp">
              <summary>
             The InstallApp recording.
@@ -1088,6 +1116,11 @@
         <member name="P:DesktopApp_Automation.Recordings.OpenApp.Instance">
             <summary>
             Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.OpenApp.varPathSoftware">
+            <summary>
+            Gets or sets the value of variable varPathSoftware.
             </summary>
         </member>
         <member name="T:DesktopApp_Automation.Recordings.StartAUT">
@@ -1210,6 +1243,11 @@
         <member name="P:DesktopApp_Automation.Recordings.ValidateInstalled.Instance">
             <summary>
             Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.Recordings.ValidateInstalled.SoftwareName">
+            <summary>
+            Gets or sets the value of variable SoftwareName.
             </summary>
         </member>
         <member name="T:__RxMain.__RxProgram">

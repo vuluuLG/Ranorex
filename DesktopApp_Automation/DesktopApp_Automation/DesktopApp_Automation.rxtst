@@ -31,6 +31,12 @@
 			name="TestCase">
 			</testcase>
 			<testmodule
+			id="6980f941-e952-4cc6-bddf-79d2d32c48a4"
+			name="ValidateInstalled"
+			ref="8eaed4a9-ef77-43b6-b80f-1482c01c1b0c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7ad4ec2a-7633-4a5a-8fd2-ab32e2119f05"
 			name="OpenApp"
 			ref="123028a2-860f-4416-97b3-5bb984146779"
@@ -137,6 +143,10 @@
 					<testcase
 					id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
 					name="TestCase001">
+						<testmodule
+						id="6980f941-e952-4cc6-bddf-79d2d32c48a4"
+						name="ValidateInstalled">
+						</testmodule>
 						<testmodule
 						id="c583fc2c-d6a3-4e72-b904-24f49a8781fb"
 						name="UninstallApp">

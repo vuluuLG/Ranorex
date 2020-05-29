@@ -41,6 +41,8 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public DownloadApp()
         {
+            varURL = "https://notepad-plus-plus.org/downloads/v7.8.6/";
+            varFileSetupName = " npp.7.8.6.Installer.x64 ";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace DesktopApp_Automation.Recordings
         }
 
 #region Variables
+
+        string _varURL;
+
+        /// <summary>
+        /// Gets or sets the value of variable varURL.
+        /// </summary>
+        [TestVariable("180b2a54-bc4c-4967-8bb8-acaea450e9d6")]
+        public string varURL
+        {
+            get { return _varURL; }
+            set { _varURL = value; }
+        }
+
+        string _varFileSetupName;
+
+        /// <summary>
+        /// Gets or sets the value of variable varFileSetupName.
+        /// </summary>
+        [TestVariable("dba188fa-4309-405c-965f-6802f0e2b0cd")]
+        public string varFileSetupName
+        {
+            get { return _varFileSetupName; }
+            set { _varFileSetupName = value; }
+        }
 
 #endregion
 
@@ -83,9 +109,9 @@ namespace DesktopApp_Automation.Recordings
             repo.Explorer.GoogleChrome.Click("22;30");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'n' with focus on 'NewTab'.", repo.NewTab.SelfInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varURL' with focus on 'NewTab'.", repo.NewTab.SelfInfo, new RecordItemIndex(1));
             repo.NewTab.Self.EnsureVisible();
-            Keyboard.Press("n");
+            Keyboard.Press(varURL);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'NewTab'.", repo.NewTab.SelfInfo, new RecordItemIndex(2));
@@ -93,34 +119,26 @@ namespace DesktopApp_Automation.Recordings
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusDownloadGoogleSearch1.DownloadsNotepadPlusPlus' at 141;9.", repo.NotepadPlusPlusDownloadGoogleSearch1.DownloadsNotepadPlusPlusInfo, new RecordItemIndex(3));
-            repo.NotepadPlusPlusDownloadGoogleSearch1.DownloadsNotepadPlusPlus.Click("141;9");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R' at 99;9.", repo.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo, new RecordItemIndex(4));
-            repo.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R.Click("99;9");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'DownloadsNotepadPlusPlus' at 1354;169.", repo.DownloadsNotepadPlusPlus.SelfInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'DownloadsNotepadPlusPlus' at 1354;169.", repo.DownloadsNotepadPlusPlus.SelfInfo, new RecordItemIndex(3));
             repo.DownloadsNotepadPlusPlus.Self.MoveTo("1354;169");
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'DownloadsNotepadPlusPlus' at 1364;347.", repo.DownloadsNotepadPlusPlus.SelfInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'DownloadsNotepadPlusPlus' at 1364;347.", repo.DownloadsNotepadPlusPlus.SelfInfo, new RecordItemIndex(4));
             repo.DownloadsNotepadPlusPlus.Self.MoveTo("1364;347");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 22;8.", repo.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 22;8.", repo.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(5));
             repo.DownloadsNotepadPlusPlus.Installer.Click("22;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaveAs.ButtonSave' at 30;8.", repo.SaveAs.ButtonSaveInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaveAs.ButtonSave' at 30;8.", repo.SaveAs.ButtonSaveInfo, new RecordItemIndex(6));
             repo.SaveAs.ButtonSave.Click("30;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>' npp.7.8.6.Installer.x64 ') on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'.", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, "Text", " npp.7.8.6.Installer.x64 ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$varFileSetupName) on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'.", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, "Text", varFileSetupName);
             Delay.Milliseconds(100);
             
         }

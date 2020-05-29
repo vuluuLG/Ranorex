@@ -41,6 +41,7 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public ValidateInstalled()
         {
+            SoftwareName = "Notepad++ (64-bit x64)";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace DesktopApp_Automation.Recordings
         }
 
 #region Variables
+
+        string _SoftwareName;
+
+        /// <summary>
+        /// Gets or sets the value of variable SoftwareName.
+        /// </summary>
+        [TestVariable("f1ed3228-4719-431d-b09e-572c771fb8d3")]
+        public string SoftwareName
+        {
+            get { return _SoftwareName; }
+            set { _SoftwareName = value; }
+        }
 
 #endregion
 
@@ -99,12 +112,8 @@ namespace DesktopApp_Automation.Recordings
             repo.ControlPanel.Tasklink.Click("64;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Notepad++ (64-bit x64)') on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, "Text", "Notepad++ (64-bit x64)");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7.8.6') on item 'ProgramsAndFeatures.Cell786'.", repo.ProgramsAndFeatures.Cell786Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.ProgramsAndFeatures.Cell786Info, "Text", "7.8.6");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SoftwareName) on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, "Text", SoftwareName);
             Delay.Milliseconds(100);
             
         }

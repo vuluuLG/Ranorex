@@ -79,55 +79,31 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer.FileExplorer' at 17;23.", repo.Explorer.FileExplorerInfo, new RecordItemIndex(0));
-            repo.Explorer.FileExplorer.Click("17;23");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FileExplorer.ThisPC' at 18;6.", repo.FileExplorer.ThisPCInfo, new RecordItemIndex(1));
-            repo.FileExplorer.ThisPC.Click(System.Windows.Forms.MouseButtons.Right, "18;6");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer1.Properties' at 92;10.", repo.Explorer1.PropertiesInfo, new RecordItemIndex(2));
-            repo.Explorer1.Properties.Click("92;10");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'System.CPLink' at 75;5.", repo.System.CPLinkInfo, new RecordItemIndex(3));
-            repo.System.CPLink.Click("75;5");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ControlPanel.Tasklink' at 47;8.", repo.ControlPanel.TasklinkInfo, new RecordItemIndex(4));
-            repo.ControlPanel.Tasklink.Click("47;8");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Notepad++ (64-bit x64)') on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, "Text", "Notepad++ (64-bit x64)");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64' at 120;10.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64' at 120;10.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(0));
             repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64.Click(System.Windows.Forms.MouseButtons.Right, "120;10");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer1.Uninstall' at 47;11.", repo.Explorer1.UninstallInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer1.Uninstall' at 47;11.", repo.Explorer1.UninstallInfo, new RecordItemIndex(1));
             repo.Explorer1.Uninstall.Click("47;11");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonUninstall' at 15;13.", repo.NotepadPlusPlusV786Uninstall.ButtonUninstallInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonUninstall' at 15;13.", repo.NotepadPlusPlusV786Uninstall.ButtonUninstallInfo, new RecordItemIndex(2));
             repo.NotepadPlusPlusV786Uninstall.ButtonUninstall.Click("15;13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall1.ButtonNo' at 33;13.", repo.NotepadPlusPlusV786Uninstall1.ButtonNoInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall1.ButtonNo' at 33;13.", repo.NotepadPlusPlusV786Uninstall1.ButtonNoInfo, new RecordItemIndex(3));
             repo.NotepadPlusPlusV786Uninstall1.ButtonNo.Click("33;13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonClose' at 27;10.", repo.NotepadPlusPlusV786Uninstall.ButtonCloseInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonClose' at 27;10.", repo.NotepadPlusPlusV786Uninstall.ButtonCloseInfo, new RecordItemIndex(4));
             repo.NotepadPlusPlusV786Uninstall.ButtonClose.Click("27;10");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Close' at 17;5.", repo.ProgramsAndFeatures.CloseInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Close' at 17;5.", repo.ProgramsAndFeatures.CloseInfo, new RecordItemIndex(5));
             repo.ProgramsAndFeatures.Close.Click("17;5");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FileExplorer.Close' at 28;10.", repo.FileExplorer.CloseInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FileExplorer.Close' at 28;10.", repo.FileExplorer.CloseInfo, new RecordItemIndex(6));
             repo.FileExplorer.Close.Click("28;10");
             Delay.Milliseconds(0);
             

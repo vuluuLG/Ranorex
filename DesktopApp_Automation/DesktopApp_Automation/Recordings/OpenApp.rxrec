@@ -23,6 +23,11 @@ mode="Global">
 	namespace="DesktopApp_Automation.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="ff238879-7bc6-4af6-913e-8612507bbea1"
+		name="varPathSoftware">
+			C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk
+		</var>
 	</variables>
 	<recorditems>
 		<runapprecorditem
@@ -33,6 +38,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="FileName"
+				variable="varPathSoftware">
+				</binding>
 			</bindings>
 			<filename>
 				C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk
@@ -75,17 +84,17 @@ mode="Global">
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIvSURBVDhPjZBdaJJRGMfPu70YJEFIH3NBdDm6
-HHXVVUGw3URhVDpFBT8QnYhmiSEqBXUnsWHdFkmri9VNkwmVEaNCB7FGULBoUdTWrLWy98334997
-jq9j5oT+8ONcnPP8nuc8JJPJgBIKhV5ls1lEIpHXG0+K0WgcJhvCcdz23NYtiBECkkqlUCwWYTAY
-BkqlUsdJ5el0WjWZTA69nnitjulL5r04SwXJZBI01/J5/KoLGB8bw9rPOjtr39eYQFGUdUlfn9ky
-fqeKY9YozP177CSRSDCBrD36Nw1JXhe0JFJ5m3o3dxwnTjnn2DjxeJw9Xlxawfz7Tx3QHbT2VJm0
-QJziUR4l4Hl+HxPEYjEmoFFUtSs06hMDZi9yuBnYscSKabRt0yt8/vZj0wla/Jm3QyjyeBwm6O3t
-6dfLCQmHw1BVBcury1j44u2KWjbgxQUO93Mj0EubCQaDWn8Z1bcVzL3Lb4o4O4jVezwead2j0Wi7
-IBAIMMFE+TamF490MPNxhHV/dp7Dh6dXQSfWS5vx+XzakmRkb2VwY+FQB+LzXfg6wePhOSP7Kp1Y
-L23G4/FAViVYL59B/OVgG5NvYqgWLJjRul+57mWN/H5/u8DtdjPBwdEDOPpgoI3ClAfDh/ejUjjJ
-7mVNQBvqpc04nU5IioTdp3eiZ4h0hd7L2hdcLle7wG63oy7UFUmWVIosa300Go2GQhFFUaYIgiDV
-arXfDoejU2Cz2f4b+l4v1ULIXx+zVGXof2B+AAAAAElFTkSuQmCC
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIqSURBVDhPjZBfaFJRHMfPTVlQBHupqIfocfQS
+jUZQLxUEzYcMDNqcooJTRCaiucQQlYL1JrFhvQZJq4fVS5MJLSNGhQ5ijaDAaFHU1h/nXXP+ufd+
+O+eoq9ud0Bc+HDjn/D6/3zkkHo+DYTAYXicSCRiNxjd/rwxBEPqJOt3JHdsRJAQkGo0ik8mAbvZk
+s1nNyuSxWEzR6XRWVsnSd/jIzLV9B3CJCSKRCFhuplL4tb6BifFxiGvrfP1RErlAluVNCcU0ca+A
+c4MB6HR6CwmHw1wg0Uv/pt6QNgVtSW12l3I/eR7Hjp9c4OOEQiF+eWn5OxY/fNbA/qD9T/kpE6rT
+euRG6OiEHOSCYDDIBSyyonSERXnahfmrAsYGupd5MYvf72dH+PKzvOUEbWqLFmxk9Hji4933N6tp
+fD4fFEXGyuoKil+HO6LkuvDyioCHySEm+BOv10v7Syi8y2PhfWpLqvO9WH2gxyztHggE1AKPx8MF
+k7m7mFk6rWHu0xDv/vyygI/PboBN3CptxuVy0U+SkLgTx+3iCQ3VF3vwbVKPx6M7+VPZxK3SZpxO
+JySlgcGxAYRe9aqYehtEIW3CHO1+/dYwb+R2u9UCh8PBBX0jR3HmUY+K9LQT/acOIZ++wM8lKmAN
+W6XN2Gw2NOQG9l7cjW1nSUfYuUSfYLfb1QKLxYLyWlmu1WsKo16vcyqViswQRVFilEqlRrFYrFit
+Vq3AbDb/N+x+q5SGkN9On1A5dPT7CAAAAABJRU5ErkJggg==
 					</attribute>
 					<attribute
 					name="state"

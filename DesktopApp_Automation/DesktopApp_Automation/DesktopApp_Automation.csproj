@@ -125,6 +125,9 @@
     <Compile Include="AssemblyInfo.cs">
       <id>a1a95112-9b4b-4f57-bb28-e5f51375dc2f</id>
     </Compile>
+    <Compile Include="CodeModules\AppInformation.cs">
+      <id>4f9e157a-7cbc-4cea-8c40-fff522ce426e</id>
+    </Compile>
     <Compile Include="DesktopApp_AutomationRepository.cs">
       <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
       <DependentUpon>DesktopApp_AutomationRepository.rxrep</DependentUpon>
@@ -281,6 +284,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CodeModules">
+      <id>1e4944e8-1485-42b3-954f-76a93b742d67</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>f459749b-8098-41cd-8dff-e057454ab20b</id>
     </Folder>

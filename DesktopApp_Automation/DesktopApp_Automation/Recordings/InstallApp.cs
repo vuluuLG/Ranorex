@@ -41,7 +41,7 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public InstallApp()
         {
-            StartAutProcessIDVar = "";
+            StartAutProcessIDVar = "F:\\Software\\npp.7.8.6.Installer.x64.exe";
         }
 
         /// <summary>
@@ -92,8 +92,8 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'F:\\Software\\npp.7.8.6.Installer.x64.exe' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("F:\\Software\\npp.7.8.6.Installer.x64.exe", "", "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $StartAutProcessIDVar in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(StartAutProcessIDVar, "", "F:\\Software", false);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InstallerLanguage.ButtonOK' at 28;10.", repo.InstallerLanguage.ButtonOKInfo, new RecordItemIndex(1));
