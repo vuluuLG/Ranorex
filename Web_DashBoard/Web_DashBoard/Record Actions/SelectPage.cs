@@ -94,6 +94,9 @@ namespace Web_DashBoard.Record_Actions
             repo.Dashboard.Main.Main_Menu.mniAddedPage.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Caption' to contain the specified value $pageName. Associated repository item: 'Dashboard'", repo.Dashboard.SelfInfo, new RecordItemIndex(1));
+            repo.Dashboard.SelfInfo.WaitForAttributeContains(5000, "Caption", pageName);
+            
         }
 
 #region Image Feature Data

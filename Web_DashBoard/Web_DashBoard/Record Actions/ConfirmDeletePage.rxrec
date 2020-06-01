@@ -25,90 +25,53 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<keysequenceitem
-		KeySequence="{Enter}"
-		duration="20ms"
+		<userrecorditem
+		classname="ConfirmDeletePage"
 		enabled="True"
-		optional="False"
-		presstime="20ms"
-		repoItemActivation="EnsureVisible"
-		searchpropertyid="536ff5d3-3c48-4a9a-92a8-a24d297bef0c">
+		isexternaltestmethod="False"
+		methodname="MergedUserCodeMethod"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="934797ae-8706-4401-9275-bf20491199a0"
-			sourcename="Recorder">
-				<element
-				capabilities="webdocument"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="webdocument"
-				rect="0,103,2560,947"
-				role="container"
-				snapElem=""
-				uidroot="True"
-				valid="True"
-				visible="True">
-					<attribute
-					name="caption"
-					type="System.String">
-						TestArchitect ™ - v
-					</attribute>
-					<attribute
-					name="browsername"
-					type="System.String">
-						Chrome
-					</attribute>
-					<attribute
-					name="browserversion"
-					type="System.String">
-						83.0.4103.61
-					</attribute>
-					<attribute
-					name="domain"
-					type="System.String">
-						192.168.1.107
-					</attribute>
-					<attribute
-					name="fullscreen"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="page"
-					type="System.String">
-						c331c2lu5lyd.page
-					</attribute>
-					<attribute
-					name="pageurl"
-					type="System.String">
-						http://192.168.1.107/TADashboard/c331c2lu5lyd.page
-					</attribute>
-					<attribute
-					name="path"
-					type="System.String">
-						/TADashboard/c331c2lu5lyd.page
-					</attribute>
-					<attribute
-					name="state"
-					type="System.String">
-						complete
-					</attribute>
-					<dynamicaction
-					description="Enables the Chrome accessible renderer mode."
-					displayName="EnableAccessibleRenderer">
-					</dynamicaction>
-				</element>
-				<path>
-					/dom[@domain='192.168.1.107']
-				</path>
-			</info>
-		</keysequenceitem>
+			<arguments
+			id="c33db041-0ec0-4a25-882c-81cd24a5b9bc">
+				<argument
+				argname="popup"
+				id="ea4889ea-62b6-42a5-bde1-3f76b477a8cd">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f8dd0b14-8c4b-4718-91eb-90bc810a1649"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title&gt;'TestArchitect']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="control"
+				id="31f97d9f-fe0c-49fd-9402-07ce6f38060a">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="a7e5b9cb-4d83-4999-af64-c74a7e067f9f"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title&gt;'TestArchitect']//button[@accessiblename='OK']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"

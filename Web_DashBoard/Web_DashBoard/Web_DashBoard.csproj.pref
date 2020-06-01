@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="Web_DashBorad_Week2.rxtst" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="Web_DashBorad_Week2.rxtst" />
     <Element value="Web_DashBoard_Week1.rxtst" />
+    <Element value="Record Actions\LogIn.rxrec" />
+    <Element value="Web_DashBoardRepository.rxrep" />
+    <Element value="Record Actions\OpenBrowser.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

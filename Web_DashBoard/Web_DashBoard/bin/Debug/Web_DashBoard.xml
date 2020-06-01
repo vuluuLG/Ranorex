@@ -621,6 +621,11 @@
             The Dashboard folder.
             </summary>
         </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.Popup">
+            <summary>
+            The Popup folder.
+            </summary>
+        </member>
         <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders">
             <summary>
             Inner folder classes.
@@ -914,6 +919,36 @@
         <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbxPublicInfo">
             <summary>
             The cbxPublic item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder">
+            <summary>
+            The PopupAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Popup  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
             </summary>
         </member>
         <member name="T:__RxMain.__RxProgram">

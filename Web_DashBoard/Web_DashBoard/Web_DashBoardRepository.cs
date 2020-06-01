@@ -28,6 +28,7 @@ namespace Web_DashBoard
     {
         static Web_DashBoardRepository instance = new Web_DashBoardRepository();
         Web_DashBoardRepositoryFolders.DashboardAppFolder _dashboard;
+        Web_DashBoardRepositoryFolders.PopupAppFolder _popup;
 
         /// <summary>
         /// Gets the singleton class instance representing the Web_DashBoardRepository element repository.
@@ -45,6 +46,7 @@ namespace Web_DashBoard
             : base("Web_DashBoardRepository", "/", null, 0, false, "c0b288b1-adc9-4642-a32e-5641551c150e", ".\\RepositoryImages\\Web_DashBoardRepositoryc0b288b1.rximgres")
         {
             _dashboard = new Web_DashBoardRepositoryFolders.DashboardAppFolder(this);
+            _popup = new Web_DashBoardRepositoryFolders.PopupAppFolder(this);
         }
 
 #region Variables
@@ -107,6 +109,15 @@ namespace Web_DashBoard
         {
             get { return _dashboard; }
         }
+
+        /// <summary>
+        /// The Popup folder.
+        /// </summary>
+        [RepositoryFolder("f8dd0b14-8c4b-4718-91eb-90bc810a1649")]
+        public virtual Web_DashBoardRepositoryFolders.PopupAppFolder Popup
+        {
+            get { return _popup; }
+        }
     }
 
     /// <summary>
@@ -129,7 +140,7 @@ namespace Web_DashBoard
             /// Creates a new Dashboard  folder.
             /// </summary>
             public DashboardAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Dashboard", "/dom[@domain='192.168.1.107']", parentFolder, 30000, null, false, "934797ae-8706-4401-9275-bf20491199a0", "")
+                    base("Dashboard", "/dom[@domain='192.168.170.92']", parentFolder, 30000, null, false, "934797ae-8706-4401-9275-bf20491199a0", "")
             {
                 _login = new Web_DashBoardRepositoryFolders.LogInFolder(this);
                 _main = new Web_DashBoardRepositoryFolders.MainFolder(this);
@@ -788,6 +799,72 @@ namespace Web_DashBoard
                 get
                 {
                     return _cbxpublicInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PopupAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("f8dd0b14-8c4b-4718-91eb-90bc810a1649")]
+        public partial class PopupAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new Popup  folder.
+            /// </summary>
+            public PopupAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Popup", "/form[@title>'TestArchitect' or @title='Message from webpage']", parentFolder, 30000, null, true, "f8dd0b14-8c4b-4718-91eb-90bc810a1649", "")
+            {
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", ".//button[@accessiblename='OK' or @text='OK']", 30000, null, "a7e5b9cb-4d83-4999-af64-c74a7e067f9f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f8dd0b14-8c4b-4718-91eb-90bc810a1649")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f8dd0b14-8c4b-4718-91eb-90bc810a1649")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("a7e5b9cb-4d83-4999-af64-c74a7e067f9f")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("a7e5b9cb-4d83-4999-af64-c74a7e067f9f")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
                 }
             }
         }

@@ -53,6 +53,30 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Caption"
+		matchvalue="yourValue"
+		optional="False"
+		searchpropertyid="b68c0db4-178b-4c2c-ab21-9692cfcca1d2"
+		waitaction="AttributeContains"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="pageName">
+				</binding>
+			</bindings>
+			<info
+			id="934797ae-8706-4401-9275-bf20491199a0"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='192.168.170.92']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"

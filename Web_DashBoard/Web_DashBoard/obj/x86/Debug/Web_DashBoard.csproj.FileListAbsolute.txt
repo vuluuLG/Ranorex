@@ -10,3 +10,20 @@ F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Ranorex.Core.Resolver.
 F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.csproj.CopyComplete
 F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.exe
 F:\Training\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.pdb
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBorad_Week2.rxtst
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard.rxsqc
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard.rxtmg
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard_Week1.rxtst
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard.exe.config
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard.xml
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard.exe
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Web_DashBoard.pdb
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Ranorex.Core.Resolver.dll
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.exe
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.pdb
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.csprojAssemblyReference.cache
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\obj\x86\Debug\Web_DashBoard.csproj.CopyComplete
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Ranorex Automation Helpers.dll
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Ranorex.ReportToPDF.exe
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Ranorex Automation Helpers.pdb
+F:\Ranorex\Ranorex\Web_DashBoard\Web_DashBoard\bin\Debug\Ranorex Automation Helpers.xml

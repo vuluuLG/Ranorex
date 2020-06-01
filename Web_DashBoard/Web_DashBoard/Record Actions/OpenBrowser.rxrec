@@ -27,7 +27,7 @@ mode="Desktop">
 	<recorditems>
 		<openwebsiterecorditem
 		args=""
-		browser="chrome"
+		browser="IE"
 		clearcache="False"
 		clearcookies="False"
 		enabled="True"
@@ -41,7 +41,7 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 			<url>
-				http://192.168.1.107/TADashboard/
+				http://192.168.170.92/TADashboard/
 			</url>
 		</openwebsiterecorditem>
 	</recorditems>

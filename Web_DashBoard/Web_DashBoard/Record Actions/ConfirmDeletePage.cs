@@ -79,9 +79,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'Dashboard'.", repo.Dashboard.SelfInfo, new RecordItemIndex(0));
-            repo.Dashboard.Self.EnsureVisible();
-            Keyboard.Press("{Enter}");
+            MergedUserCodeMethod(repo.Popup.SelfInfo, repo.Popup.ButtonOKInfo);
             Delay.Milliseconds(0);
             
         }

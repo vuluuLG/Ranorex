@@ -79,8 +79,8 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.1.107/TADashboard/' with browser 'chrome' in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("http://192.168.1.107/TADashboard/", "chrome", "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.170.92/TADashboard/' with browser 'IE' in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("http://192.168.170.92/TADashboard/", "IE", "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
         }

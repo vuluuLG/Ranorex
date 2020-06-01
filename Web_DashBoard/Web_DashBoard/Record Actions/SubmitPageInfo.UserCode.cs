@@ -35,8 +35,6 @@ namespace Web_DashBoard.Record_Actions
   
         public void EnterPageName(RepoItemInfo inputtagInfo, string pageName)
         {	
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().Click();
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$pageName' with focus on 'inputtagInfo'.", inputtagInfo);
             Web_DashBoardRepository myRepo = new Web_DashBoardRepository();
             myRepo.Dashboard.AddPage.txtName.Element.SetAttributeValue("Value", pageName);

@@ -54,7 +54,7 @@ mode="Global">
 					id="934797ae-8706-4401-9275-bf20491199a0"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/dom[@domain='192.168.1.107']
+							/dom[@domain='192.168.170.92']
 						</path>
 					</info>
 				</argument>

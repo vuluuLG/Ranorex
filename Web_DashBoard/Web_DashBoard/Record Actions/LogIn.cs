@@ -109,17 +109,17 @@ namespace Web_DashBoard.Record_Actions
             repo.Dashboard.LogIn.cbbRepository.Element.SetAttributeValue("TagValue", "SampleRepository");
             Delay.Milliseconds(20);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.txtUsername' at Center.", repo.Dashboard.LogIn.txtUsernameInfo, new RecordItemIndex(1));
-            repo.Dashboard.LogIn.txtUsername.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.txtUsername' at Center.", repo.Dashboard.LogIn.txtUsernameInfo, new RecordItemIndex(1));
+            //repo.Dashboard.LogIn.txtUsername.Click();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$user' on item 'Dashboard.LogIn.txtUsername'.", repo.Dashboard.LogIn.txtUsernameInfo, new RecordItemIndex(2));
             repo.Dashboard.LogIn.txtUsername.Element.SetAttributeValue("Value", user);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.txtPassword' at Center.", repo.Dashboard.LogIn.txtPasswordInfo, new RecordItemIndex(3));
-            repo.Dashboard.LogIn.txtPassword.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.txtPassword' at Center.", repo.Dashboard.LogIn.txtPasswordInfo, new RecordItemIndex(3));
+            //repo.Dashboard.LogIn.txtPassword.Click();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$password' on item 'Dashboard.LogIn.txtPassword'.", repo.Dashboard.LogIn.txtPasswordInfo, new RecordItemIndex(4));
             repo.Dashboard.LogIn.txtPassword.Element.SetAttributeValue("Value", password);

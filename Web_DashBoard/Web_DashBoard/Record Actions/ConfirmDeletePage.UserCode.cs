@@ -33,11 +33,14 @@ namespace Web_DashBoard.Record_Actions
             // Your recording specific initialization code goes here.
         }
 
-        public void Mouse_Click_Test20200529(RepoItemInfo atagInfo)
+        public void MergedUserCodeMethod(RepoItemInfo popup,RepoItemInfo control)
         {
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'atagInfo' at Center.", atagInfo);
-            atagInfo.FindAdapter<ATag>().Click();
+            PopupWatcher watcher = new PopupWatcher();
+			watcher.WatchAndClick(popup,control);
+			watcher.Start();
+			control.WaitForNotExists(5000);			
+			watcher.Stop();
         }
-
+       
     }
 }
