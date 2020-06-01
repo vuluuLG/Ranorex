@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ef1bfdc0-7026-486d-9ee1-d81021ca167d"
+mode="Global">
+	<description>
+		The CloseBrowser recording.
+	</description>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="TADashboard_Modules.Browser_modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="736b75c3-ef65-46b4-b374-054db128fd0c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="68ec8234-f98c-499d-9132-fca7cea07c4d"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@path~'/TADashboard/']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="8538eef7-bc22-4008-8378-02c650bfaccf"
+	name="TADashboard_Repository"
+	relativepath="..\TADashboard_Repository.rxrep">
+		<codegen
+		classname="TADashboard_Repository"
+		namespace="TADashboard_Modules">
+		</codegen>
+		<rootfolder
+		id="a7b6ebfd-cff8-4c60-aff7-757d3fcfe5a5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fbdfe932-3144-40d4-abbd-7cb4c10896f4"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="TADashboard_Modules.Browser_modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="$browser"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+				Open browser
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				$pageUrl
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="8538eef7-bc22-4008-8378-02c650bfaccf"
+	name="TADashboard_Repository"
+	relativepath="..\TADashboard_Repository.rxrep">
+		<codegen
+		classname="TADashboard_Repository"
+		namespace="TADashboard_Modules">
+		</codegen>
+		<rootfolder
+		id="a7b6ebfd-cff8-4c60-aff7-757d3fcfe5a5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

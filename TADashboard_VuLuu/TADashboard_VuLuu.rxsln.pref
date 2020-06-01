@@ -1,0 +1,27 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{817D030A-C630-4EF8-A8E1-741D6E3D5547}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>1140f3c7-5ee6-4cae-a2ca-1ea21d14b973</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>7dbdc8a9-c65a-4243-a06c-d5b32fc96fd4</string>
+      <string>ff2be567-05de-4067-8b65-2b6efc7546ea</string>
+      <string>db3aec07-b35f-4ab3-aa8b-db727244f4bd</string>
+      <string>e632ae89-2d9c-4374-8bc3-f297ae1ed546</string>
+      <string>3232c6f9-afbd-4aef-a253-7a8feeea4f56</string>
+      <string>7645c0fc-9a30-4e9d-96c5-7bed94344eb3</string>
+      <string>bc54abf8-856f-40df-83b7-0bd29bde23c9</string>
+      <string>3695d8c3-7a59-4087-ac9a-176edf3160d5</string>
+      <string>7e398c13-fd24-48f2-9029-a1fee97bdb4c</string>
+      <string>7850777b-07f9-416a-a8df-a61fdb06fef6</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution TADashboard_VuLuu[Solution Items[]TADashboard_Modules[Extension[]Page modules[Base[HeaderMenu[]MainMenu[]]CustomPage[]Login[LoginToDashboard.rxrec[]]Popups[]Utilities[]]]TADashboard_Tests[TADashboard_Tests.rxtst[]]]]&#xD;&#xA;Solution TADashboard_VuLuu\TADashboard_Tests\TADashboard_Tests.rxtst&#xD;&#xA;Solution TADashboard_VuLuu\TADashboard_Modules\Page modules\Overview" />
+  <StartupProject value="{C2251CCE-B105-46A5-B4D8-7AA0B0454804}" />
+</Properties>

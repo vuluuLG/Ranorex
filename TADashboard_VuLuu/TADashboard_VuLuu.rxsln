@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Ranorex Studio 9.3.0
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{544E72A7-F0C5-40F2-BB9F-35ED443FE650}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TADashboard_Modules", "TADashboard_Modules\TADashboard_Modules.csproj", "{817D030A-C630-4EF8-A8E1-741D6E3D5547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TADashboard_Tests", "TADashboard_Tests\TADashboard_Tests.csproj", "{C2251CCE-B105-46A5-B4D8-7AA0B0454804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{817D030A-C630-4EF8-A8E1-741D6E3D5547}.Debug|x86.Build.0 = Debug|x86
+		{817D030A-C630-4EF8-A8E1-741D6E3D5547}.Debug|x86.ActiveCfg = Debug|x86
+		{817D030A-C630-4EF8-A8E1-741D6E3D5547}.Release|x86.Build.0 = Release|x86
+		{817D030A-C630-4EF8-A8E1-741D6E3D5547}.Release|x86.ActiveCfg = Release|x86
+		{C2251CCE-B105-46A5-B4D8-7AA0B0454804}.Debug|x86.Build.0 = Debug|x86
+		{C2251CCE-B105-46A5-B4D8-7AA0B0454804}.Debug|x86.ActiveCfg = Debug|x86
+		{C2251CCE-B105-46A5-B4D8-7AA0B0454804}.Release|x86.Build.0 = Release|x86
+		{C2251CCE-B105-46A5-B4D8-7AA0B0454804}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

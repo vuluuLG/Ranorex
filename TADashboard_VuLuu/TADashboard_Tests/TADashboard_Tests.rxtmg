@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="TADashboard_Tests"
+      id="21a05bbe-ba33-4abf-8978-80f321902b26"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="TADashboard_Tests"
+      id="21a05bbe-ba33-4abf-8978-80f321902b26"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
