@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>e4c00106-7745-4a90-81a7-3372e750c5a2</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -122,19 +123,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs">
-      <id>a1a95112-9b4b-4f57-bb28-e5f51375dc2f</id>
-    </Compile>
-    <Compile Include="CodeModules\AppInformation.cs">
-      <id>4f9e157a-7cbc-4cea-8c40-fff522ce426e</id>
-    </Compile>
     <Compile Include="DesktopApp_AutomationRepository.cs">
       <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
       <DependentUpon>DesktopApp_AutomationRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>3f4ce23f-bac7-4c7d-b467-c1e645698d0f</id>
     </Compile>
-    <Compile Include="Program.cs">
+    <Compile Include="DesktopApp_Test\AssemblyInfo.cs">
+      <id>a1a95112-9b4b-4f57-bb28-e5f51375dc2f</id>
+    </Compile>
+    <Compile Include="DesktopApp_Test\Program.cs">
       <id>6fac8e62-1d11-4262-a7e8-47bf163331e7</id>
     </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
@@ -223,9 +221,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config">
-      <id>4ff98269-3636-458b-a89a-4fdb3cdf1fb8</id>
-    </None>
     <None Include="DesktopApp_AutomationRepository.rximg">
       <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
       <DependentUpon>DesktopApp_AutomationRepository.rxrep</DependentUpon>
@@ -236,6 +231,9 @@
       <id>e4c00106-7745-4a90-81a7-3372e750c5a2</id>
       <repoid>9b738719-fd0c-49cf-b9c9-5451af1b3f48</repoid>
       <reporootid>4a754f5e-c544-40d9-8073-732361f09b0b</reporootid>
+    </None>
+    <None Include="DesktopApp_Test\app.config">
+      <id>4ff98269-3636-458b-a89a-4fdb3cdf1fb8</id>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
@@ -284,8 +282,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CodeModules">
-      <id>1e4944e8-1485-42b3-954f-76a93b742d67</id>
+    <Folder Include="DesktopApp_Test">
+      <id>b036aa92-11b0-4919-ab4e-457589d4602f</id>
     </Folder>
     <Folder Include="Recordings">
       <id>f459749b-8098-41cd-8dff-e057454ab20b</id>

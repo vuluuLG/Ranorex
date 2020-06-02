@@ -8,18 +8,16 @@
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <string>{BA6510CB-66BB-40D1-8786-6EF8618D02A6}</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
-      <string>f459749b-8098-41cd-8dff-e057454ab20b</string>
       <string>74e20cc8-6176-4a3a-9388-fece32c32f9f</string>
       <string>dba188fa-4309-405c-965f-6802f0e2b0cd</string>
       <string>180b2a54-bc4c-4967-8bb8-acaea450e9d6</string>
       <string>34a2672d-15b3-4cca-b381-442a2d20103c</string>
-      <string>536ad227-d974-4792-a85e-6c67cb436034</string>
       <string>123028a2-860f-4416-97b3-5bb984146779</string>
       <string>ff238879-7bc6-4af6-913e-8612507bbea1</string>
       <string>8eaed4a9-ef77-43b6-b80f-1482c01c1b0c</string>
-      <string>f1ed3228-4719-431d-b09e-572c771fb8d3</string>
+      <string>f459749b-8098-41cd-8dff-e057454ab20b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Automation[Reports[]CodeModules[]Recordings[StartAUT.rxrec[]ValidateInstalled.rxrec[]]]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\DesktopApp_Automation.rxtst&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\Reports" />
+  <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Automation[DesktopApp_Test[]]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\Recordings&#xD;&#xA;Solution DesktopApp_Automation" />
   <StartupProject value="{BA6510CB-66BB-40D1-8786-6EF8618D02A6}" />
 </Properties>

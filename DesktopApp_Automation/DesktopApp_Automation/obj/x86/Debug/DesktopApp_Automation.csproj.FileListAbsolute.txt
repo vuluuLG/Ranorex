@@ -8,3 +8,13 @@ F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\Ranorex
 F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.csprojResolveAssemblyReference.cache
 F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.exe
 F:\Ranorex\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.rxtmg
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.rxtst
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.exe.config
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.xml
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.exe
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Automation.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.csprojResolveAssemblyReference.cache
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.exe
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Automation.pdb

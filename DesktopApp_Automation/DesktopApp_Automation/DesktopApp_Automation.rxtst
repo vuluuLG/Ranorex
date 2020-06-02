@@ -3,24 +3,6 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="0d4939aa-1798-446e-89c8-641f0ff63748"
-			name="StartAUT"
-			ref="637b9911-4c36-41ee-9a59-c4d8e143a025"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="ed080cd5-dd07-413d-8b09-d33deb8f8a32"
-					variableid="ed74ec03-9de6-401e-a93c-695ed8d3b9ec"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</databinding>
-			</testmodule>
-			<setup
-			id="34eaceec-e1ec-44fa-aada-4eda551c8e8d"
-			name="setup">
-			</setup>
-			<testmodule
 			id="59e683fa-e4c2-4f19-9205-7c311d9bb83b"
 			name="InstallApp"
 			ref="34a2672d-15b3-4cca-b381-442a2d20103c"
@@ -40,10 +22,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="63b1b80d-2839-457a-bd0e-9cfee73b0927"
-			name="TestCase">
-			</testcase>
 			<testmodule
 			id="6980f941-e952-4cc6-bddf-79d2d32c48a4"
 			name="ValidateInstalled"
@@ -78,21 +56,8 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="87b45064-1ddd-45e1-acda-de505ac582c4"
-			name="CloseAUT"
-			ref="7096983f-420b-4de0-9f11-11715526019a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="ed080cd5-dd07-413d-8b09-d33deb8f8a32"
-					variableid="3fce90ee-3cd4-4081-85a6-ad6cefc47479"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
+			datasource="DataSource"
 			id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
 			name="TestCase001">
 				<parameters>
@@ -141,10 +106,6 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
-			<teardown
-			id="a6b20489-0301-48c1-8cf2-c92d80911cba"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="b8408a03-cff4-4862-b2b7-b78c93816454"
 			name="DownloadApp"
@@ -211,26 +172,6 @@
 				id="ed080cd5-dd07-413d-8b09-d33deb8f8a32"
 				name="DesktopApp_Automation">
 					<testcase
-					id="63b1b80d-2839-457a-bd0e-9cfee73b0927"
-					name="TestCase">
-						<setup
-						id="34eaceec-e1ec-44fa-aada-4eda551c8e8d"
-						name="setup">
-							<testmodule
-							id="0d4939aa-1798-446e-89c8-641f0ff63748"
-							name="StartAUT">
-							</testmodule>
-						</setup>
-						<teardown
-						id="a6b20489-0301-48c1-8cf2-c92d80911cba"
-						name="teardown">
-							<testmodule
-							id="87b45064-1ddd-45e1-acda-de505ac582c4"
-							name="CloseAUT">
-							</testmodule>
-						</teardown>
-					</testcase>
-					<testcase
 					id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
 					name="TestCase001">
 						<testmodule
@@ -263,14 +204,44 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="ae37bbc7-6d0e-4dd7-80d5-fae591853499"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="DataSource"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					SoftwareName
+				</column>
+				<column>
+					varURL
+				</column>
+				<column>
+					varFileSetupName
+				</column>
+				<column>
+					StartAutProcessIDVar
+				</column>
+				<column>
+					varPathSoftware
+				</column>
+				<column>
+					varVersion
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\DesktopApp_Test\TestCase001_DataSource.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="63b1b80d-2839-457a-bd0e-9cfee73b0927">
-			</testcontainer>
 			<testcontainer
 			id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0">
 			</testcontainer>
