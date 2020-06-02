@@ -118,32 +118,18 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $varURL with browser specified by variable $varBrowser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(varURL, varBrowser, "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $varURL with browser 'Chrome' in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(varURL, "Chrome", "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'DownloadsNotepadPlusPlus' at 1354;169.", repo.DownloadsNotepadPlusPlus.SelfInfo, new RecordItemIndex(1));
-            repo.DownloadsNotepadPlusPlus.Self.MoveTo("1354;169");
-            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'DownloadsNotepadPlusPlus' at 1364;347.", repo.DownloadsNotepadPlusPlus.SelfInfo, new RecordItemIndex(2));
-            repo.DownloadsNotepadPlusPlus.Self.MoveTo("1364;347");
-            Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 22;8.", repo.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 22;8.", repo.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(1));
             repo.DownloadsNotepadPlusPlus.Installer.Click("22;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaveAs.ButtonSave' at 30;8.", repo.SaveAs.ButtonSaveInfo, new RecordItemIndex(4));
-            repo.SaveAs.ButtonSave.Click("30;8");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, new ActionTimeout(30000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, new ActionTimeout(30000), new RecordItemIndex(2));
             repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$varFileSetupName) on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'.", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$varFileSetupName) on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641Exe'.", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX641ExeInfo, "Text", varFileSetupName);
             Delay.Milliseconds(100);
             

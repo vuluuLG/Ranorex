@@ -1,10 +1,10 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Page modules\Login\LoginToDashboard.rxrec" />
+    <Element value="Browser modules\OpenBrowser.rxrec" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Page modules\Login\LoginToDashboard.rxrec" />
+    <Element value="Browser modules\OpenBrowser.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
