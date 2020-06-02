@@ -47,7 +47,6 @@ namespace DesktopApp_Automation
         DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder _notepadplusplusv786setup;
         DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder _cprogramfilesnotepadpluspluschange;
         DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder _newnotification;
-        DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder _untitledgooglechrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the DesktopApp_AutomationRepository element repository.
@@ -84,7 +83,6 @@ namespace DesktopApp_Automation
             _notepadplusplusv786setup = new DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786SetupAppFolder(this);
             _cprogramfilesnotepadpluspluschange = new DesktopApp_AutomationRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder(this);
             _newnotification = new DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder(this);
-            _untitledgooglechrome = new DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder(this);
         }
 
 #region Variables
@@ -281,15 +279,6 @@ namespace DesktopApp_Automation
         public virtual DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder NewNotification
         {
             get { return _newnotification; }
-        }
-
-        /// <summary>
-        /// The UntitledGoogleChrome folder.
-        /// </summary>
-        [RepositoryFolder("b4ba1c2e-67aa-4a64-8a7a-eb1b873a2e37")]
-        public virtual DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder UntitledGoogleChrome
-        {
-            get { return _untitledgooglechrome; }
         }
     }
 
@@ -899,6 +888,9 @@ namespace DesktopApp_Automation
             RepoItemInfo _programsandfeaturesInfo;
             RepoItemInfo _closeInfo;
             RepoItemInfo _cell786Info;
+            RepoItemInfo _notepadplusplus64bitx641Info;
+            RepoItemInfo _someindicatorInfo;
+            RepoItemInfo _cell7861Info;
 
             /// <summary>
             /// Creates a new ProgramsAndFeatures  folder.
@@ -910,6 +902,9 @@ namespace DesktopApp_Automation
                 _programsandfeaturesInfo = new RepoItemInfo(this, "ProgramsAndFeatures", "titlebar[@accessiblerole='TitleBar']", 30000, null, "bfe4acea-6ab8-4004-9256-388bb3a66ee0");
                 _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "14401f65-f676-453a-8eae-e6f3d713f11d");
                 _cell786Info = new RepoItemInfo(this, "Cell786", ".//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='7.8.6']", 30000, null, "32d44277-422f-4671-a933-cecad6dd9e78");
+                _notepadplusplus64bitx641Info = new RepoItemInfo(this, "NotepadPlusPlus64BitX641", ".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']", 30000, null, "99365227-1f3d-4e25-8d6d-6bb9a26ba440");
+                _someindicatorInfo = new RepoItemInfo(this, "SomeIndicator", ".//container[@caption='ShellView']/table[@controlid='1']/scrollbar[@style='Horizontal']/indicator", 30000, null, "4ea020f3-a9d4-4157-a334-287f924f3022");
+                _cell7861Info = new RepoItemInfo(this, "Cell7861", ".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='7.8.6']", 30000, null, "d3caceeb-f795-4122-a7f5-4706a85ab6bd");
             }
 
             /// <summary>
@@ -1029,6 +1024,78 @@ namespace DesktopApp_Automation
                 get
                 {
                     return _cell786Info;
+                }
+            }
+
+            /// <summary>
+            /// The NotepadPlusPlus64BitX641 item.
+            /// </summary>
+            [RepositoryItem("99365227-1f3d-4e25-8d6d-6bb9a26ba440")]
+            public virtual Ranorex.Cell NotepadPlusPlus64BitX641
+            {
+                get
+                {
+                    return _notepadplusplus64bitx641Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NotepadPlusPlus64BitX641 item info.
+            /// </summary>
+            [RepositoryItemInfo("99365227-1f3d-4e25-8d6d-6bb9a26ba440")]
+            public virtual RepoItemInfo NotepadPlusPlus64BitX641Info
+            {
+                get
+                {
+                    return _notepadplusplus64bitx641Info;
+                }
+            }
+
+            /// <summary>
+            /// The SomeIndicator item.
+            /// </summary>
+            [RepositoryItem("4ea020f3-a9d4-4157-a334-287f924f3022")]
+            public virtual Ranorex.Indicator SomeIndicator
+            {
+                get
+                {
+                    return _someindicatorInfo.CreateAdapter<Ranorex.Indicator>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeIndicator item info.
+            /// </summary>
+            [RepositoryItemInfo("4ea020f3-a9d4-4157-a334-287f924f3022")]
+            public virtual RepoItemInfo SomeIndicatorInfo
+            {
+                get
+                {
+                    return _someindicatorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cell7861 item.
+            /// </summary>
+            [RepositoryItem("d3caceeb-f795-4122-a7f5-4706a85ab6bd")]
+            public virtual Ranorex.Cell Cell7861
+            {
+                get
+                {
+                    return _cell7861Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cell7861 item info.
+            /// </summary>
+            [RepositoryItemInfo("d3caceeb-f795-4122-a7f5-4706a85ab6bd")]
+            public virtual RepoItemInfo Cell7861Info
+            {
+                get
+                {
+                    return _cell7861Info;
                 }
             }
         }
@@ -2083,46 +2150,6 @@ namespace DesktopApp_Automation
                 get
                 {
                     return _dismisstextblockInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The UntitledGoogleChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("b4ba1c2e-67aa-4a64-8a7a-eb1b873a2e37")]
-        public partial class UntitledGoogleChromeAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new UntitledGoogleChrome  folder.
-            /// </summary>
-            public UntitledGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("UntitledGoogleChrome", "/form[@title='Untitled - Google Chrome']", parentFolder, 30000, null, true, "b4ba1c2e-67aa-4a64-8a7a-eb1b873a2e37", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("b4ba1c2e-67aa-4a64-8a7a-eb1b873a2e37")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("b4ba1c2e-67aa-4a64-8a7a-eb1b873a2e37")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

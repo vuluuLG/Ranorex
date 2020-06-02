@@ -26,6 +26,7 @@ mode="Global">
 		<var
 		id="ff238879-7bc6-4af6-913e-8612507bbea1"
 		name="varPathSoftware">
+			C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk
 		</var>
 	</variables>
 	<recorditems>
@@ -39,6 +40,10 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
+				variable="varPathSoftware">
+				</binding>
+				<binding
+				target="FileName"
 				variable="varPathSoftware">
 				</binding>
 			</bindings>
@@ -83,17 +88,17 @@ mode="Global">
 					name="appicon"
 					type="System.Drawing.Icon, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIkSURBVDhPjZBfaJJRGIeP4YyK/iEldRFdjm6C
-UVddFYzaTQQGNaeo4BSRiWiWGKJSUHcSG9ZtkLRCVjdNJlRGjAodxBpCgdFaY27VWtqa5fd9v857
-1KY5oR88HD7OeZ/3/V4WiURAaLXaN9FoFDqdLt98EoyxPk5zdsW2boaPMbBQKIRUKkWPutPpdNtJ
-8nA4rPBvE0dE09U1cXXfAVwgQTAYBOVmPI4fq2sYGR5Gqbwqzq/fSkIgy3KzRD9yL4fT/V5qYmSB
-QEAIJP7o3/yuSn8FDUkptV25HzuDHTt3T9M0zO/3i8ezi18w82G+DdpBY0/ZMT0q42pkhvjojB0U
-Ap/PJwQUWVE6QlGeaTB1RYWTh7csimKKx+OhKywsf99wgga/ZoxYS6nx1C26769V87jdbiiKjKWV
-JRSKgx1RMhq8uqzCw9gACdbjcrl4fwm5d1lMv49vSGWqBysP1HjCu3u9YvvrcTqdQjCauYuJ2RNt
-TH4aEN1fXFLh4/MboInrpbXY7Xa+JAnROxHcLhxro/JyLz6PqvH44jbxqzRxvbQWm80GSami/9p5
-+F/3tDD21odcQo9J3v36rUHRyOFwtAqsVqsQHB06gt5H3S0kxm3oO34I2cRZcS9xATWsl9ZiNptR
-lavQnduDTadYR+he4r9gsVhaBUajEXPzc3KpXFKIcrksKBaLMlEoFCQin89Xk8nkT5PJ1C4wGAz/
-Db2vl/Iw9gdh7Epo6P2iwwAAAABJRU5ErkJggg==
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIkSURBVDhPjZBfaFJRHMePIjYmQi8V9RA99DB6
+HNVLTwVBe4nAoOYUFZwiMhHNEkNUCupNYsPCtyBp9bB6qMmEyohRoUIsCQqsJkVt/fG2WrO89347
+v6M2zQl94cPhcs7v8/vdH4vH4yAMBsPzRCIBo9H4ovMkGGMjnM5sTg5uQpAxsGg0imw2S4+Gcrlc
+z0nyWCym8m8rR0Sr1c6d374Tp0gQiURAuZxK4cfqGqYmJ7HyfVWcX2orQqAoSqfENHWjiKOjAWpi
+YeFwWAhk/ujf/G7IfwVtSe2OUb2ZPIaBgcEFmoaFQiHxeHHpM8pv3/dAO2jvqTBjQn1Wh/wEH52x
+XUIQDAaFgKKoal8o6kM9Suc02L9bvySKKX6/n67w4eu3DSdo86tswVpWhwc+0X1Hs5rH5/NBVRUs
+S8uofBzvi5rX4+lZDW4nx0iwHq/Xy/vLKL4qYOF1akPqpWFIt3S4z7sHAmL76/F4PEIwnb+OucVD
+Pcy/GxPdH5/RoProEmjiVmkzLpeLL0lG4locVysHeqg/2YpP0zrcO20Qv0oTt0qbcTqdkNUGRi+c
+ROjZcBczL4MoZkyY590vXhkXjdxud7fA4XAIwb6JvTh8d6iLzKwTIwf3oJA5Lu5lLqCGrdJmbDYb
+GkoD205sgfYI6wvdy/wX7HZ7t8BisaDypqLUpJpKSJIkqFarClEul2WiVCo10un0T6vV2iswm83/
+Db1vlfIw9gf4d0jwIXWtkAAAAABJRU5ErkJggg==
 					</attribute>
 					<attribute
 					name="state"

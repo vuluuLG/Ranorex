@@ -239,7 +239,7 @@ zFd4P/vHEzk6q4gcnzlq9cFv+Qc8mGPuty1/TZgXw95XMKT94d8AAAAASUVORK5CYII=
 		id="3d1e18f7-0dcd-4638-969e-700094bfe0be"
 		isrooted="True"
 		name="ControlPanel"
-		refimgid="c5fb986a-2bca-4d58-80de-b9def41806f0"
+		refimgid="8a82d148-35c3-452f-b3b2-b4570e452f83"
 		refpath="/form[@title='Control Panel']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -411,6 +411,36 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='7.8.6']"
 			searchtimeout="30000ms">
 				/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='19']/cell[@text='7.8.6']
+			</item>
+			<item
+			addcaps="cell"
+			capname="cell"
+			id="99365227-1f3d-4e25-8d6d-6bb9a26ba440"
+			name="NotepadPlusPlus64BitX641"
+			refimgid="56721b0c-7483-4a81-9bfa-eaecc4732c1f"
+			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+			searchtimeout="30000ms">
+				/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']
+			</item>
+			<item
+			addcaps="indicator"
+			capname="indicator"
+			id="4ea020f3-a9d4-4157-a334-287f924f3022"
+			name="SomeIndicator"
+			refimgid="dbb70dba-87dd-4a38-9463-6c9c43d11919"
+			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='0']/container/table[@controlid='1']/scrollbar[@style='Horizontal']/indicator"
+			searchtimeout="30000ms">
+				/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/scrollbar[@style='Horizontal']/indicator
+			</item>
+			<item
+			addcaps="cell"
+			capname="cell"
+			id="d3caceeb-f795-4122-a7f5-4706a85ab6bd"
+			name="Cell7861"
+			refimgid="0d806a02-2bd7-416b-b1cb-5f4df063d249"
+			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='7.8.6']"
+			searchtimeout="30000ms">
+				/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='7.8.6']
 			</item>
 			<basepath>
 				/form[@title='Programs and Features']
@@ -1007,35 +1037,6 @@ p9MJhTYxcPUCgi/6dIy/llDOmDDDul+7NSQaud1uvcDhcAjBseGjOPWwV0dm0on+E0dQypwT+woT
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABTSURBVDhPxY5BCgAgCAR7nf/3RYaHlZQOWlIL
 g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
 86HMBTwY0AAAAABJRU5ErkJggg==
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="b4ba1c2e-67aa-4a64-8a7a-eb1b873a2e37"
-		isrooted="True"
-		name="UntitledGoogleChrome"
-		refimgid="83b2f253-b7f4-4d99-987f-3df7c1342be2"
-		refpath="/form[@title='Untitled - Google Chrome']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<basepath>
-				/form[@title='Untitled - Google Chrome']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
-pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
-sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
-M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
-q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
-hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
-ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
-RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
-sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
-MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
-RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
-AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

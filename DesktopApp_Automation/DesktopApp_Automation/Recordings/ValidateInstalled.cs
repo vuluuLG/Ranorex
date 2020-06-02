@@ -41,8 +41,8 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public ValidateInstalled()
         {
-            varVersion = "";
-            varSoftwareName = "";
+            varVersion = "7.8.6";
+            varSoftwareName = "Notepad++ (64-bit x64)";
         }
 
         /// <summary>
@@ -105,32 +105,28 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer.FileExplorer' at 21;23.", repo.Explorer.FileExplorerInfo, new RecordItemIndex(0));
-            repo.Explorer.FileExplorer.Click("21;23");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer.Text4101' at 96;14.", repo.Explorer.Text4101Info, new RecordItemIndex(0));
+            repo.Explorer.Text4101.Click("96;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FileExplorer.ThisPC' at 39;9.", repo.FileExplorer.ThisPCInfo, new RecordItemIndex(1));
-            repo.FileExplorer.ThisPC.Click(System.Windows.Forms.MouseButtons.Right, "39;9");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence ' Control Panel'.", new RecordItemIndex(1));
+            Keyboard.Press(" Control Panel");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer1.Properties' at 49;13.", repo.Explorer1.PropertiesInfo, new RecordItemIndex(2));
-            repo.Explorer1.Properties.Click("49;13");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(2));
+            Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'System.CPLink' at 48;7.", repo.System.CPLinkInfo, new RecordItemIndex(3));
-            repo.System.CPLink.Click("48;7");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ControlPanel.Tasklink' at 50;7.", repo.ControlPanel.TasklinkInfo, new RecordItemIndex(3));
+            repo.ControlPanel.Tasklink.Click("50;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ControlPanel.Tasklink' at 64;7.", repo.ControlPanel.TasklinkInfo, new RecordItemIndex(4));
-            repo.ControlPanel.Tasklink.Click("64;7");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varSoftwareName) on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, "Text", varSoftwareName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$varSoftwareName) on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX641'.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX641Info, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.ProgramsAndFeatures.NotepadPlusPlus64BitX641Info, "Text", varSoftwareName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varVersion) on item 'ProgramsAndFeatures.Cell786'.", repo.ProgramsAndFeatures.Cell786Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.ProgramsAndFeatures.Cell786Info, "Text", varVersion);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varVersion) on item 'ProgramsAndFeatures.Cell7861'.", repo.ProgramsAndFeatures.Cell7861Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ProgramsAndFeatures.Cell7861Info, "Text", varVersion);
             Delay.Milliseconds(100);
             
         }

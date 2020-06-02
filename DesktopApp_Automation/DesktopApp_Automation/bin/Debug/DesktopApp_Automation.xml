@@ -124,11 +124,6 @@
             The NewNotification folder.
             </summary>
         </member>
-        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepository.UntitledGoogleChrome">
-            <summary>
-            The UntitledGoogleChrome folder.
-            </summary>
-        </member>
         <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders">
             <summary>
             Inner folder classes.
@@ -442,6 +437,36 @@
         <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Cell786Info">
             <summary>
             The Cell786 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.NotepadPlusPlus64BitX641">
+            <summary>
+            The NotepadPlusPlus64BitX641 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.NotepadPlusPlus64BitX641Info">
+            <summary>
+            The NotepadPlusPlus64BitX641 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.SomeIndicator">
+            <summary>
+            The SomeIndicator item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.SomeIndicatorInfo">
+            <summary>
+            The SomeIndicator item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Cell7861">
+            <summary>
+            The Cell7861 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.ProgramsAndFeaturesAppFolder.Cell7861Info">
+            <summary>
+            The Cell7861 item info.
             </summary>
         </member>
         <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder">
@@ -912,26 +937,6 @@
         <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.NewNotificationAppFolder.DismissTextBlockInfo">
             <summary>
             The DismissTextBlock item info.
-            </summary>
-        </member>
-        <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder">
-            <summary>
-            The UntitledGoogleChromeAppFolder folder.
-            </summary>
-        </member>
-        <member name="M:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new UntitledGoogleChrome  folder.
-            </summary>
-        </member>
-        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder.Self">
-            <summary>
-            The Self item.
-            </summary>
-        </member>
-        <member name="P:DesktopApp_Automation.DesktopApp_AutomationRepositoryFolders.UntitledGoogleChromeAppFolder.SelfInfo">
-            <summary>
-            The Self item info.
             </summary>
         </member>
         <member name="T:DesktopApp_Automation.Recordings.CloseAUT">

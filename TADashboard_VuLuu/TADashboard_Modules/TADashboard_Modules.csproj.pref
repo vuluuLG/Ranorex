@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="Browser modules\OpenBrowser.rxrec" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Browser modules\OpenBrowser.rxrec" />
+    <Element value="Page modules\Popups\Page\CleanUp.cs" />
+    <Element value="TADashboard_Repository.rxrep" />
+    <Element value="Page modules\Login\LoginToDashboard.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

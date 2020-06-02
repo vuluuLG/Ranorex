@@ -32,6 +32,6 @@ namespace DesktopApp_Automation.Recordings
         {
             // Your recording specific initialization code goes here.
         }
-
+        
     }
 }

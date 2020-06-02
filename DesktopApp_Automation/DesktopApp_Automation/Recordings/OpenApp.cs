@@ -41,7 +41,7 @@ namespace DesktopApp_Automation.Recordings
         /// </summary>
         public OpenApp()
         {
-            varPathSoftware = "";
+            varPathSoftware = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Notepad++.lnk";
         }
 
         /// <summary>
@@ -92,8 +92,8 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Notepad++.lnk' in normal mode. Return value bound to $varPathSoftware.", new RecordItemIndex(0));
-            varPathSoftware = ValueConverter.ToString(Host.Local.RunApplication("C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Notepad++.lnk", "", "", false));
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $varPathSoftware in normal mode. Return value bound to $varPathSoftware.", new RecordItemIndex(0));
+            varPathSoftware = ValueConverter.ToString(Host.Local.RunApplication(varPathSoftware, "", "", false));
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'CProgramFilesNotepadPlusPlusChange'.", repo.CProgramFilesNotepadPlusPlusChange.SelfInfo, new RecordItemIndex(1));

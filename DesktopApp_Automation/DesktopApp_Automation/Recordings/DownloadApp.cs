@@ -42,8 +42,8 @@ namespace DesktopApp_Automation.Recordings
         public DownloadApp()
         {
             varURL = "https://notepad-plus-plus.org/downloads/v7.8.6/";
-            varFileSetupName = "";
-            varBrowser = "";
+            varFileSetupName = " npp.7.8.6.Installer.x64";
+            varBrowser = "Chrome";
         }
 
         /// <summary>
@@ -118,8 +118,8 @@ namespace DesktopApp_Automation.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $varURL with browser 'Chrome' in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(varURL, "Chrome", "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $varURL with browser specified by variable $varBrowser in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(varURL, varBrowser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 22;8.", repo.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(1));
