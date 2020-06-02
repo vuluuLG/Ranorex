@@ -33,11 +33,10 @@ namespace Web_DashBoard.Record_Actions
             // Your recording specific initialization code goes here.
         }
 
-        public void CheckPageDeleted(RepoItemInfo atagInfo, string validatePageDeleted)
-        {
-        	
-            Report.Log(ReportLevel.Info, "Validation", "Validating Page Not Exists on item 'atagInfo'.", atagInfo);
-            Validate.NotExists(".//div[#'main-menu']//a[@innertext='"+validatePageDeleted+"']");
+        public void CheckPageDeleted(string modValidateNotExistPageName)
+        {        	
+            Report.Log(ReportLevel.Info, "Validation", "Validating Page Not Exists on item 'atagInfo'.");
+            Validate.NotExists(".//div[#'main-menu']//a[@innertext='"+modValidateNotExistPageName+"']");
         }
         
 

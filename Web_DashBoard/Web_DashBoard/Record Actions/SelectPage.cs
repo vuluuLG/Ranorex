@@ -41,7 +41,7 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public SelectPage()
         {
-            pageName = "";
+            repoSelectedPageName = "";
         }
 
         /// <summary>
@@ -54,14 +54,16 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
+        string _repoSelectedPageName;
+
         /// <summary>
-        /// Gets or sets the value of variable pageName.
+        /// Gets or sets the value of variable repoSelectedPageName.
         /// </summary>
-        [TestVariable("17e6d7fa-e1b4-4635-bdbd-b6460b31ed1a")]
-        public string pageName
+        [TestVariable("28a0f270-2452-41da-b91b-fb15c2a97fb2")]
+        public string repoSelectedPageName
         {
-            get { return repo.pageName; }
-            set { repo.pageName = value; }
+            get { return _repoSelectedPageName; }
+            set { _repoSelectedPageName = value; }
         }
 
 #endregion
@@ -90,12 +92,8 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.Main.Main_Menu.mniAddedPage' at Center.", repo.Dashboard.Main.Main_Menu.mniAddedPageInfo, new RecordItemIndex(0));
-            repo.Dashboard.Main.Main_Menu.mniAddedPage.Click();
+            NavigateToPage(repoSelectedPageName, repo.Dashboard.SelfInfo);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Caption' to contain the specified value $pageName. Associated repository item: 'Dashboard'", repo.Dashboard.SelfInfo, new RecordItemIndex(1));
-            repo.Dashboard.SelfInfo.WaitForAttributeContains(5000, "Caption", pageName);
             
         }
 

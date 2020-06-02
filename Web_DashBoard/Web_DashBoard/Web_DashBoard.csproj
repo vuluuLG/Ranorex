@@ -293,10 +293,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web_DashBorad_Week2.rxtst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>a96c79e1-44cd-485d-a4d3-1d774154d077</id>
-    </Content>
     <None Include="app.config">
       <id>8739c1b7-ca83-4ef8-a09a-6b9ffb86a8d2</id>
     </None>
@@ -356,9 +352,9 @@
       <recordtableid>acbfcf69-45f3-4f16-8229-d16754701799</recordtableid>
     </None>
     <None Include="Record Actions\SelectPage.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>375aa49f-4329-4af4-a7c0-5a06fb5be60e</id>
       <recordtableid>38c14862-9003-480c-b2d6-2a028e5e14ae</recordtableid>
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
     </None>
     <None Include="Record Actions\SubmitPageInfo.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
@@ -385,10 +381,6 @@
     <Content Include="Web_DashBoard.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>1d6039a1-cbb3-42f1-9caa-762b89d02d4a</id>
-    </Content>
-    <Content Include="Web_DashBoard_Week1.rxtst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>e328ffc0-8346-45c3-888d-eb7bcaaaaacd</id>
     </Content>
   </ItemGroup>
   <ItemGroup>

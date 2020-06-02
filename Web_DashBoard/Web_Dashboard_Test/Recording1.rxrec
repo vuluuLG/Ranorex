@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e88324b0-67bc-4bcd-9e60-d0897f662bb9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="Web_Dashboard_Test">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="13898677-b910-4827-90d7-b7f37c79cf18"
+	name="Web_Dashboard_TestRepository"
+	relativepath="Web_Dashboard_TestRepository.rxrep">
+		<codegen
+		classname="Web_Dashboard_TestRepository"
+		namespace="Web_Dashboard_Test">
+		</codegen>
+		<rootfolder
+		id="d741e25a-b2c1-41c9-a3bd-786e581fcfb1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -23,6 +23,11 @@ mode="Desktop">
 	namespace="Web_DashBoard.Record_Actions">
 	</codegen>
 	<variables>
+		<var
+		id="3cb61d55-6e68-4335-b3a1-4b71b421fed2"
+		name="modBrowser">
+			Chrome
+		</var>
 	</variables>
 	<recorditems>
 		<openwebsiterecorditem
@@ -39,6 +44,10 @@ mode="Desktop">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="BrowserName"
+				variable="modBrowser">
+				</binding>
 			</bindings>
 			<url>
 				http://192.168.170.92/TADashboard/

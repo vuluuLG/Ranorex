@@ -1,0 +1,15 @@
+﻿<Properties>
+  <Array name="active" />
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="Web_Dashboard_Test.rxtst" />
+    <Element value="Web_Dashboard_TestRepository.rxrep" />
+    <Element value="Web_Dashboard_Test.rxtmg" />
+    <Element value="Recording1.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+  </Properties>
+</Properties>

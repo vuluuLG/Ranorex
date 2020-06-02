@@ -54,13 +54,13 @@ namespace Web_DashBoard.Record_Actions
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable selectedItem.
+        /// Gets or sets the value of variable repoSelectedItem.
         /// </summary>
-        [TestVariable("0b52e6cb-f81d-49cd-94fc-37ca34305381")]
-        public string selectedItem
+        [TestVariable("26955889-fa67-4888-819b-fd4a9830099a")]
+        public string repoSelectedItem
         {
-            get { return repo.selectedItem; }
-            set { repo.selectedItem = value; }
+            get { return repo.repoSelectedItem; }
+            set { repo.repoSelectedItem = value; }
         }
 
 #endregion

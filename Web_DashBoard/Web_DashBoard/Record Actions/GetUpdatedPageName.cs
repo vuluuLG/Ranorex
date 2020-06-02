@@ -41,7 +41,7 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public GetUpdatedPageName()
         {
-            UpdatedName = "";
+            modUpdatedName = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
-        string _UpdatedName;
+        string _modUpdatedName;
 
         /// <summary>
-        /// Gets or sets the value of variable UpdatedName.
+        /// Gets or sets the value of variable modUpdatedName.
         /// </summary>
         [TestVariable("150112c1-739c-4393-8b80-96cb0c0a9b0f")]
-        public string UpdatedName
+        public string modUpdatedName
         {
-            get { return _UpdatedName; }
-            set { _UpdatedName = value; }
+            get { return _modUpdatedName; }
+            set { _modUpdatedName = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            UpdatedName = GetUpdatedName();
+            modUpdatedName = GetUpdatedName();
             Delay.Milliseconds(0);
             
         }

@@ -41,7 +41,7 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public CheckPageIsNavigated()
         {
-            navigatedPageName = "";
+            modValidateNavigatedPageName = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
-        string _navigatedPageName;
+        string _modValidateNavigatedPageName;
 
         /// <summary>
-        /// Gets or sets the value of variable navigatedPageName.
+        /// Gets or sets the value of variable modValidateNavigatedPageName.
         /// </summary>
-        [TestVariable("7c8de0e6-cfdc-40e0-be70-65ad4bee5952")]
-        public string navigatedPageName
+        [TestVariable("78003753-5da4-4f92-9077-a4960ab6f620")]
+        public string modValidateNavigatedPageName
         {
-            get { return _navigatedPageName; }
-            set { _navigatedPageName = value; }
+            get { return _modValidateNavigatedPageName; }
+            set { _modValidateNavigatedPageName = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Validate_Dashboard(repo.Dashboard.SelfInfo, navigatedPageName);
+            Validate_Dashboard(repo.Dashboard.SelfInfo, modValidateNavigatedPageName);
             Delay.Milliseconds(0);
             
         }

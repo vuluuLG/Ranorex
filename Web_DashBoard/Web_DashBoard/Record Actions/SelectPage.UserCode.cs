@@ -32,17 +32,15 @@ namespace Web_DashBoard.Record_Actions
         {
             // Your recording specific initialization code goes here.
         }
-        
-        
 
-        public void SelectExistingPage(string selectedPageName)
+        public void NavigateToPage(string modSelectedPageName, RepoItemInfo webdocumentInfo)
         {
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'atagInfo' at Center.");
-            ATag expectedPage = "////div[#'main-menu']//a[@innertext='"+selectedPageName+"']";
-            expectedPage.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click Page '$modSelectedPageName'.");
+        	ATag btnSelectedPage = "//div[#'main-menu']//a[@innertext= '" + modSelectedPageName + "']";
+           	btnSelectedPage.Click();
+           	
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Caption' to contain the specified value $modSelectedPageName. Associated repository item: 'webdocumentInfo'", webdocumentInfo);
+            webdocumentInfo.WaitForAttributeContains(5000, "Caption", modSelectedPageName);
         }
-
-        
-
     }
 }

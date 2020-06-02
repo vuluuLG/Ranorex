@@ -25,25 +25,25 @@ mode="Global">
 	<variables>
 		<var
 		id="f1199138-5502-4a5b-b886-e99ef6fcfe87"
-		name="parentPage">
+		name="modSubmitedParentPage">
 			(null)
 		</var>
 		<var
 		id="0908d7f6-d292-4ef9-ac53-6c037c9ae8e8"
-		name="numberOfColumn">
+		name="modSubmitedNumberOfColumn">
 			2
 		</var>
 		<var
 		id="d1c6a5f6-5743-439e-8914-967bd10b938c"
-		name="displayAfter">
+		name="modSubmitedDisplayAfter">
 		</var>
 		<var
 		id="8426cd18-e80f-4a51-8154-dd394031322b"
-		name="isPublic">
+		name="modSubmitedPublic">
 		</var>
 		<var
 		id="604eb7d5-ab98-4815-8acc-06d716c2f5c3"
-		name="pageName">
+		name="modSubmitedPageName">
 			Test
 		</var>
 	</variables>
@@ -80,7 +80,7 @@ mode="Global">
 				<argument
 				argname="pageName"
 				id="b63fcc3c-d855-437c-88a6-ab35e69725dc"
-				variable="pageName">
+				variable="modSubmitedPageName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -121,7 +121,7 @@ mode="Global">
 				<argument
 				argname="parentPage"
 				id="a7bcda82-9811-4f4a-acfc-1a80549cf916"
-				variable="parentPage">
+				variable="modSubmitedParentPage">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -162,7 +162,7 @@ mode="Global">
 				<argument
 				argname="value"
 				id="8191bc08-6945-45c8-9dee-9bc3424f76dc"
-				variable="numberOfColumn">
+				variable="modSubmitedNumberOfColumn">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -203,7 +203,7 @@ mode="Global">
 				<argument
 				argname="value"
 				id="876c6da6-2340-4386-9916-0eb76cce2eaf"
-				variable="displayAfter">
+				variable="modSubmitedDisplayAfter">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -244,7 +244,7 @@ mode="Global">
 				<argument
 				argname="value"
 				id="e001558e-35ed-488c-90bf-8a1fe1bf1f71"
-				variable="isPublic">
+				variable="modSubmitedPublic">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

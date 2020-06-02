@@ -111,39 +111,12 @@ name="Web_DashBoardRepository">
 						/dom[@domain='192.168.170.92']//div[#'main-menu']//li[@class='mn-setting']
 					</item>
 					<item
-					addcaps="unknown,webelement,atag"
-					capname="atag"
-					id="230ec337-8339-45dd-86d2-bd8342c9cb93"
-					name="mniAddPage"
-					refimgid="047fa888-9d5f-4130-9db7-c93f920605ff"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext='Add Page']
-					</item>
-					<item
-					addcaps="unknown,webelement,atag"
-					capname="atag"
-					id="ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89"
-					name="mniAddedPage"
-					refimgid="3943413f-0dd9-47e2-8903-5e5daed6b298"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext=$pageName]
-					</item>
-					<item
-					addcaps="unknown,webelement,atag"
-					capname="atag"
-					id="406561e5-0baa-4614-8ab8-4a1133409654"
-					name="mniDelete"
-					refimgid="7064b141-0e97-45cd-9c57-c103d999a8f1"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext='Delete']
-					</item>
-					<item
 					capname="atag"
 					id="d773694f-0bef-4f9f-8037-b2d0551b4fa8"
 					name="mniGlobalSetingSelectedItem"
 					refimgid="41466a94-0e18-4daf-aae8-9df93f5b0882"
 					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext=$selectedItem]
+						/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext=$repoSelectedItem]
 					</item>
 				</folder>
 			</folder>
@@ -264,16 +237,24 @@ MdgAAAAASUVORK5CYII=
 	</rootfolder>
 	<variables>
 		<var
-		id="17e6d7fa-e1b4-4635-bdbd-b6460b31ed1a"
-		name="displayPageName">
-		</var>
-		<var
 		id="0b52e6cb-f81d-49cd-94fc-37ca34305381"
-		name="selectedItem">
+		name="modSelectedItem">
 		</var>
 		<var
 		id="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
-		name="pageName">
+		name="modValidateNotExistPageName">
+		</var>
+		<var
+		id="643b0c28-4bc5-4754-ac40-9a1ef660178f"
+		name="repoPageName">
+		</var>
+		<var
+		id="26955889-fa67-4888-819b-fd4a9830099a"
+		name="repoSelectedItem">
+		</var>
+		<var
+		id="ee505d0b-5904-48e8-8993-bab81144b2a5"
+		name="repoAddedPageName">
 		</var>
 	</variables>
 </repository>

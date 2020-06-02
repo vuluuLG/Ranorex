@@ -24,8 +24,8 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="46889e39-f259-4637-b388-0104ae333437"
-		name="pageName">
+		id="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
+		name="modValidateNotExistPageName">
 		</var>
 	</variables>
 	<recorditems>
@@ -43,25 +43,9 @@ mode="Global">
 			<arguments
 			id="d5357f51-218b-439d-9eb5-94080dbd9a27">
 				<argument
-				argname="atagInfo"
-				id="fd640e57-db72-4f4d-9f32-f2c4466e3d85">
-					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-					<info
-					id="ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/dom[@domain='192.168.1.107']//div[#'main-menu']//a[@innertext=$pageName]
-						</path>
-					</info>
-				</argument>
-				<argument
-				argname="validatePageDeleted"
+				argname="modValidateNotExistPageName"
 				id="b0d164db-31e7-4fb4-9792-930b0d7576f3"
-				variable="pageName">
+				variable="modValidateNotExistPageName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

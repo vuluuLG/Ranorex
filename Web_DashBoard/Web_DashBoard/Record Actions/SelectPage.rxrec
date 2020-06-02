@@ -24,59 +24,52 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="17e6d7fa-e1b4-4635-bdbd-b6460b31ed1a"
-		name="pageName">
+		id="28a0f270-2452-41da-b91b-fb15c2a97fb2"
+		name="repoSelectedPageName">
 		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<userrecorditem
+		classname="SelectPage"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="a42c0e62-377b-488d-8c92-16874c26e59b"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="NavigateToPage"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='192.168.1.107']//div[#'main-menu']//a[@innertext=$displayPageName]
-				</path>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		matchname="Caption"
-		matchvalue="yourValue"
-		optional="False"
-		searchpropertyid="b68c0db4-178b-4c2c-ab21-9692cfcca1d2"
-		waitaction="AttributeContains"
-		waittimeout="5000ms">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="pageName">
-				</binding>
-			</bindings>
-			<info
-			id="934797ae-8706-4401-9275-bf20491199a0"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='192.168.170.92']
-				</path>
-			</info>
-		</WaitForRecordItem>
+			<arguments
+			id="1355ade6-8384-4499-8583-08c7e08cc1f0">
+				<argument
+				argname="modSelectedPageName"
+				id="18f63492-5de0-4d2b-bee1-e3e178413240"
+				variable="repoSelectedPageName">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="webdocumentInfo"
+				id="4ebadd42-1843-4e71-b5b0-5383956779ce">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="934797ae-8706-4401-9275-bf20491199a0"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='192.168.170.92']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"

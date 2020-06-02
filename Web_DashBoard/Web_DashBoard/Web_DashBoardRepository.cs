@@ -51,40 +51,64 @@ namespace Web_DashBoard
 
 #region Variables
 
-        string _displayPageName = "";
+        string _modSelectedItem = "";
 
         /// <summary>
-        /// Gets or sets the value of variable displayPageName.
-        /// </summary>
-        [TestVariable("17e6d7fa-e1b4-4635-bdbd-b6460b31ed1a")]
-        public string displayPageName
-        {
-            get { return _displayPageName; }
-            set { _displayPageName = value; }
-        }
-
-        string _selectedItem = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable selectedItem.
+        /// Gets or sets the value of variable modSelectedItem.
         /// </summary>
         [TestVariable("0b52e6cb-f81d-49cd-94fc-37ca34305381")]
-        public string selectedItem
+        public string modSelectedItem
         {
-            get { return _selectedItem; }
-            set { _selectedItem = value; }
+            get { return _modSelectedItem; }
+            set { _modSelectedItem = value; }
         }
 
-        string _pageName = "";
+        string _modValidateNotExistPageName = "";
 
         /// <summary>
-        /// Gets or sets the value of variable pageName.
+        /// Gets or sets the value of variable modValidateNotExistPageName.
         /// </summary>
         [TestVariable("e92a8d07-3b39-4648-8de0-d9d309b59f2e")]
-        public string pageName
+        public string modValidateNotExistPageName
         {
-            get { return _pageName; }
-            set { _pageName = value; }
+            get { return _modValidateNotExistPageName; }
+            set { _modValidateNotExistPageName = value; }
+        }
+
+        string _repoPageName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable repoPageName.
+        /// </summary>
+        [TestVariable("643b0c28-4bc5-4754-ac40-9a1ef660178f")]
+        public string repoPageName
+        {
+            get { return _repoPageName; }
+            set { _repoPageName = value; }
+        }
+
+        string _repoSelectedItem = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable repoSelectedItem.
+        /// </summary>
+        [TestVariable("26955889-fa67-4888-819b-fd4a9830099a")]
+        public string repoSelectedItem
+        {
+            get { return _repoSelectedItem; }
+            set { _repoSelectedItem = value; }
+        }
+
+        string _repoAddedPageName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable repoAddedPageName.
+        /// </summary>
+        [TestVariable("ee505d0b-5904-48e8-8993-bab81144b2a5")]
+        public string repoAddedPageName
+        {
+            get { return _repoAddedPageName; }
+            set { _repoAddedPageName = value; }
         }
 
 #endregion
@@ -468,9 +492,6 @@ namespace Web_DashBoard
         public partial class Main_MenuFolder : RepoGenBaseFolder
         {
             RepoItemInfo _mnisettingInfo;
-            RepoItemInfo _mniaddpageInfo;
-            RepoItemInfo _mniaddedpageInfo;
-            RepoItemInfo _mnideleteInfo;
             RepoItemInfo _mniglobalsetingselecteditemInfo;
 
             /// <summary>
@@ -480,10 +501,7 @@ namespace Web_DashBoard
                     base("Main_Menu", "", parentFolder, 0, null, false, "f1f2dfbe-c345-43eb-90c3-a1d4f007a72d", "")
             {
                 _mnisettingInfo = new RepoItemInfo(this, "mniSetting", ".//div[#'main-menu']//li[@class='mn-setting']", 30000, null, "fc525480-bb7e-4ec4-bdda-eb9cab5d1fae");
-                _mniaddpageInfo = new RepoItemInfo(this, "mniAddPage", ".//div[#'main-menu']//a[@innertext='Add Page']", 30000, null, "230ec337-8339-45dd-86d2-bd8342c9cb93");
-                _mniaddedpageInfo = new RepoItemInfo(this, "mniAddedPage", ".//div[#'main-menu']//a[@innertext=$pageName]", 30000, null, "ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89");
-                _mnideleteInfo = new RepoItemInfo(this, "mniDelete", ".//div[#'main-menu']//a[@innertext='Delete']", 30000, null, "406561e5-0baa-4614-8ab8-4a1133409654");
-                _mniglobalsetingselecteditemInfo = new RepoItemInfo(this, "mniGlobalSetingSelectedItem", ".//div[#'main-menu']//a[@innertext=$selectedItem]", 30000, null, "d773694f-0bef-4f9f-8037-b2d0551b4fa8");
+                _mniglobalsetingselecteditemInfo = new RepoItemInfo(this, "mniGlobalSetingSelectedItem", ".//div[#'main-menu']//a[@innertext=$repoSelectedItem]", 30000, null, "d773694f-0bef-4f9f-8037-b2d0551b4fa8");
             }
 
             /// <summary>
@@ -519,78 +537,6 @@ namespace Web_DashBoard
                 get
                 {
                     return _mnisettingInfo;
-                }
-            }
-
-            /// <summary>
-            /// The mniAddPage item.
-            /// </summary>
-            [RepositoryItem("230ec337-8339-45dd-86d2-bd8342c9cb93")]
-            public virtual Ranorex.ATag mniAddPage
-            {
-                get
-                {
-                    return _mniaddpageInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The mniAddPage item info.
-            /// </summary>
-            [RepositoryItemInfo("230ec337-8339-45dd-86d2-bd8342c9cb93")]
-            public virtual RepoItemInfo mniAddPageInfo
-            {
-                get
-                {
-                    return _mniaddpageInfo;
-                }
-            }
-
-            /// <summary>
-            /// The mniAddedPage item.
-            /// </summary>
-            [RepositoryItem("ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89")]
-            public virtual Ranorex.ATag mniAddedPage
-            {
-                get
-                {
-                    return _mniaddedpageInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The mniAddedPage item info.
-            /// </summary>
-            [RepositoryItemInfo("ba8bcfa9-a068-4ca0-8ca7-6e6a64c8ff89")]
-            public virtual RepoItemInfo mniAddedPageInfo
-            {
-                get
-                {
-                    return _mniaddedpageInfo;
-                }
-            }
-
-            /// <summary>
-            /// The mniDelete item.
-            /// </summary>
-            [RepositoryItem("406561e5-0baa-4614-8ab8-4a1133409654")]
-            public virtual Ranorex.ATag mniDelete
-            {
-                get
-                {
-                    return _mnideleteInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The mniDelete item info.
-            /// </summary>
-            [RepositoryItemInfo("406561e5-0baa-4614-8ab8-4a1133409654")]
-            public virtual RepoItemInfo mniDeleteInfo
-            {
-                get
-                {
-                    return _mnideleteInfo;
                 }
             }
 

@@ -41,11 +41,11 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public SubmitPageInfo()
         {
-            parentPage = "(null)";
-            numberOfColumn = "2";
-            displayAfter = "";
-            isPublic = "";
-            pageName = "Test";
+            modSubmitedParentPage = "(null)";
+            modSubmitedNumberOfColumn = "2";
+            modSubmitedDisplayAfter = "";
+            modSubmitedPublic = "";
+            modSubmitedPageName = "Test";
         }
 
         /// <summary>
@@ -58,62 +58,64 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
-        string _parentPage;
+        string _modSubmitedParentPage;
 
         /// <summary>
-        /// Gets or sets the value of variable parentPage.
+        /// Gets or sets the value of variable modSubmitedParentPage.
         /// </summary>
         [TestVariable("f1199138-5502-4a5b-b886-e99ef6fcfe87")]
-        public string parentPage
+        public string modSubmitedParentPage
         {
-            get { return _parentPage; }
-            set { _parentPage = value; }
+            get { return _modSubmitedParentPage; }
+            set { _modSubmitedParentPage = value; }
         }
 
-        string _numberOfColumn;
+        string _modSubmitedNumberOfColumn;
 
         /// <summary>
-        /// Gets or sets the value of variable numberOfColumn.
+        /// Gets or sets the value of variable modSubmitedNumberOfColumn.
         /// </summary>
         [TestVariable("0908d7f6-d292-4ef9-ac53-6c037c9ae8e8")]
-        public string numberOfColumn
+        public string modSubmitedNumberOfColumn
         {
-            get { return _numberOfColumn; }
-            set { _numberOfColumn = value; }
+            get { return _modSubmitedNumberOfColumn; }
+            set { _modSubmitedNumberOfColumn = value; }
         }
 
-        string _displayAfter;
+        string _modSubmitedDisplayAfter;
 
         /// <summary>
-        /// Gets or sets the value of variable displayAfter.
+        /// Gets or sets the value of variable modSubmitedDisplayAfter.
         /// </summary>
         [TestVariable("d1c6a5f6-5743-439e-8914-967bd10b938c")]
-        public string displayAfter
+        public string modSubmitedDisplayAfter
         {
-            get { return _displayAfter; }
-            set { _displayAfter = value; }
+            get { return _modSubmitedDisplayAfter; }
+            set { _modSubmitedDisplayAfter = value; }
         }
 
-        string _isPublic;
+        string _modSubmitedPublic;
 
         /// <summary>
-        /// Gets or sets the value of variable isPublic.
+        /// Gets or sets the value of variable modSubmitedPublic.
         /// </summary>
         [TestVariable("8426cd18-e80f-4a51-8154-dd394031322b")]
-        public string isPublic
+        public string modSubmitedPublic
         {
-            get { return _isPublic; }
-            set { _isPublic = value; }
+            get { return _modSubmitedPublic; }
+            set { _modSubmitedPublic = value; }
         }
 
+        string _modSubmitedPageName;
+
         /// <summary>
-        /// Gets or sets the value of variable pageName.
+        /// Gets or sets the value of variable modSubmitedPageName.
         /// </summary>
         [TestVariable("604eb7d5-ab98-4815-8acc-06d716c2f5c3")]
-        public string pageName
+        public string modSubmitedPageName
         {
-            get { return repo.pageName; }
-            set { repo.pageName = value; }
+            get { return _modSubmitedPageName; }
+            set { _modSubmitedPageName = value; }
         }
 
 #endregion
@@ -142,19 +144,19 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            EnterPageName(repo.Dashboard.AddPage.txtNameInfo, pageName);
+            EnterPageName(repo.Dashboard.AddPage.txtNameInfo, modSubmitedPageName);
             Delay.Milliseconds(0);
             
-            SelectParentPage(repo.Dashboard.AddPage.cbbParentInfo, parentPage);
+            SelectParentPage(repo.Dashboard.AddPage.cbbParentInfo, modSubmitedParentPage);
             Delay.Milliseconds(0);
             
-            SelectNumberOfColumn(repo.Dashboard.AddPage.cbbNumberOfColumnInfo, numberOfColumn);
+            SelectNumberOfColumn(repo.Dashboard.AddPage.cbbNumberOfColumnInfo, modSubmitedNumberOfColumn);
             Delay.Milliseconds(0);
             
-            SelectDisplayAfterPage(repo.Dashboard.AddPage.cbbDisplayAfterInfo, displayAfter);
+            SelectDisplayAfterPage(repo.Dashboard.AddPage.cbbDisplayAfterInfo, modSubmitedDisplayAfter);
             Delay.Milliseconds(0);
             
-            SetIsPublic(repo.Dashboard.AddPage.cbxPublicInfo, isPublic);
+            SetIsPublic(repo.Dashboard.AddPage.cbxPublicInfo, modSubmitedPublic);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.AddPage.btnOK' at Center.", repo.Dashboard.AddPage.btnOKInfo, new RecordItemIndex(5));

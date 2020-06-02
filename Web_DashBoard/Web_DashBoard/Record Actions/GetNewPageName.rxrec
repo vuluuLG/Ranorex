@@ -25,7 +25,7 @@ mode="Global">
 	<variables>
 		<var
 		id="2f02d2ab-e902-4601-b2e8-5e2d34683031"
-		name="NewPageName">
+		name="modNewPageName">
 		</var>
 	</variables>
 	<recorditems>
@@ -41,7 +41,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="NewPageName">
+				variable="modNewPageName">
 				</binding>
 			</bindings>
 			<arguments

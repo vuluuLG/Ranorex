@@ -45,10 +45,10 @@ namespace Web_DashBoard.Record_Actions
         	}
         	return pageName;
         }
-        public void Validate_Dashboard(RepoItemInfo webdocumentInfo, string navigatedPageName)
+        public void Validate_Dashboard(RepoItemInfo webdocumentInfo, string modValidateNavigatedPageName)
         {        	
-            Report.Log(ReportLevel.Info, "Validation", "Validating Page "+ navigatedPageName +" is navigated'.", webdocumentInfo);
-           	Validate.AttributeEqual(webdocumentInfo, "Caption", "TestArchitect ™ - "+ navigatedPageName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Page "+ modValidateNavigatedPageName +" is navigated'.", webdocumentInfo);
+           	Validate.AttributeEqual(webdocumentInfo, "Caption", "TestArchitect ™ - "+ modValidateNavigatedPageName);
         }
 
     }

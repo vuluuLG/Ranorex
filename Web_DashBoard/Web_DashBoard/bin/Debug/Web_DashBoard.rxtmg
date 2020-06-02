@@ -7,83 +7,225 @@ rxversion="9.3">
 			id="0c7a5e19-c94e-4d50-9337-15c4efcd8f52"
 			name="Web_DashBoard">
 			</modulegroups>
-			<modulegroupdef
-			id="0ec17c20-507d-4a7d-8c75-23e050607f2e"
-			name="Common">
-			</modulegroupdef>
 			<testmodule
-			id="0ffd9064-3dbf-4fa2-b00b-37753c198525"
-			name="CloseBrowser"
-			ref="37ce4a7a-5626-4f2f-b8f7-2de12472c5cb"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="186eab53-1b51-4a93-845a-263cf5b17641"
-			name="GetUpdatedPageName"
-			ref="68c8aa2f-900e-4f76-b2b1-02fefaf1e51f"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="595c24d3-a4ab-4ed3-90ce-5bb2ec550a9f"
-			name="LogOut"
-			ref="6ae83ff8-be06-4ef6-92bb-f608d9b74367"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="72bd81a0-75ed-42f5-baa4-5134d53dc123"
-			name="CheckPageExist"
-			ref="38f921a5-7c5e-46de-a863-381071224212"
-			type="Recording">
-			</testmodule>
-			<modulegroupdef
-			id="7c490a38-bacd-46a6-b208-083756ee7356"
-			name="User">
-			</modulegroupdef>
-			<testmodule
-			id="8301644c-a393-4ced-a8b3-28bee03c0f5d"
+			id="0c86e6f3-bdef-4e0f-81ac-68dd10af3008"
 			name="SelectGlobleMenuItem"
 			ref="acbfcf69-45f3-4f16-8229-d16754701799"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="0ec17c20-507d-4a7d-8c75-23e050607f2e"
+			name="DeletePage">
+				<groupvariables>
+					<groupvariable
+					id="c865dd6f-ae2c-46fd-b841-09f92215a50e"
+					name="repoSelectedPageName">
+						<modulevariable
+						moduleref="19b870d7-d717-4a05-8ebb-59b88bdb0828"
+						name="repoSelectedPageName"
+						variableref="28a0f270-2452-41da-b91b-fb15c2a97fb2">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="Delete"
+					id="4d253b8b-5e1c-4550-8ba9-b21d689e3982"
+					name="repoSelectedItem">
+						<modulevariable
+						moduleref="b30b667d-d9e7-4305-863e-9ddf005a16d2"
+						name="repoSelectedItem"
+						variableref="26955889-fa67-4888-819b-fd4a9830099a">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
-			id="b3d200d0-71a9-4202-8026-014bbb9e2858"
-			name="LogIn"
-			ref="32b25d90-fcc7-4b82-951e-171f7933c94e"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="bcb6b9db-43a3-46e9-9d3f-57f42153d805"
-			name="CheckPageIsNavigated"
-			ref="336b06f1-53fb-497c-9cbc-9a1612cfb32a"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="c400de7e-b468-4db5-aa40-7953417c9193"
-			name="GetNewPageName"
-			ref="da6b3217-35db-4570-ac77-b0335825776a"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="ccabbb22-6803-47ae-91bc-fe2c20a61e04"
+			id="19b870d7-d717-4a05-8ebb-59b88bdb0828"
 			name="SelectPage"
 			ref="38c14862-9003-480c-b2d6-2a028e5e14ae"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="dce17d9b-455c-467e-ab0d-3caabdac2260"
-			name="OpenBrowser"
-			ref="abdff23a-ebdb-460e-a1e2-ad870356a5e0"
+			id="21028e42-b7ec-4011-aefb-831731ba710b"
+			name="SubmitPageInfo"
+			ref="bace383e-ce24-4d35-a374-222d4571d37a"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="defdf8ea-26bb-44a6-a97d-453d4ed24e67"
+			id="7614283e-bc73-4424-814b-d51691180150"
+			name="ConfirmDeletePage"
+			ref="6fa42f98-ed2a-4abc-a1c7-057f776bad1c"
+			type="Recording">
+			</testmodule>
+			<modulegroupdef
+			id="a4731725-d9d5-403c-b4b4-2a6441cb72f5"
+			name="UpdatePage">
+				<groupvariables>
+					<groupvariable
+					id="b3e50b36-b914-43d2-ac01-ebac4e0f47c9"
+					name="repoSelectedPageName">
+						<modulevariable
+						moduleref="decfff74-dff9-45da-b3a4-233ccee0b9a9"
+						name="repoSelectedPageName"
+						variableref="28a0f270-2452-41da-b91b-fb15c2a97fb2">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="Edit"
+					id="96a8e0bc-fc93-4dd0-ba51-29d1953a65e5"
+					name="repoSelectedItem">
+						<modulevariable
+						moduleref="0c86e6f3-bdef-4e0f-81ac-68dd10af3008"
+						name="repoSelectedItem"
+						variableref="26955889-fa67-4888-819b-fd4a9830099a">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="d260425d-57b7-46c3-9ee6-7e80553c4123"
+					name="modSubmitedPageName">
+						<modulevariable
+						moduleref="e748cee8-2886-4af6-8fd4-3892da52c405"
+						name="modSubmitedPageName"
+						variableref="604eb7d5-ab98-4815-8acc-06d716c2f5c3">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="bc7fedab-d54d-41f2-9193-93f9a4513ae2"
+					name="modSubmitedParentPage">
+						<modulevariable
+						moduleref="e748cee8-2886-4af6-8fd4-3892da52c405"
+						name="modSubmitedParentPage"
+						variableref="f1199138-5502-4a5b-b886-e99ef6fcfe87">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="82d64fbd-4b64-4ed6-b025-3ea4ca364268"
+					name="modSubmitedNumberOfColumn">
+						<modulevariable
+						moduleref="e748cee8-2886-4af6-8fd4-3892da52c405"
+						name="modSubmitedNumberOfColumn"
+						variableref="0908d7f6-d292-4ef9-ac53-6c037c9ae8e8">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="06e88a50-16f7-43b0-a34b-837a45639c08"
+					name="modSubmitedDisplayAfter">
+						<modulevariable
+						moduleref="e748cee8-2886-4af6-8fd4-3892da52c405"
+						name="modSubmitedDisplayAfter"
+						variableref="d1c6a5f6-5743-439e-8914-967bd10b938c">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="4511d58d-949a-45c1-9d3b-a630b081caf4"
+					name="modSubmitedPublic">
+						<modulevariable
+						moduleref="e748cee8-2886-4af6-8fd4-3892da52c405"
+						name="modSubmitedPublic"
+						variableref="8426cd18-e80f-4a51-8154-dd394031322b">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="Edit"
+					id="e960723e-861e-4aa2-8dba-4154ba522cab"
+					name="modSelectedItem">
+						<modulevariable
+						moduleref="0c86e6f3-bdef-4e0f-81ac-68dd10af3008"
+						name="repoSelectedItem"
+						variableref="26955889-fa67-4888-819b-fd4a9830099a">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<testmodule
+			id="b30b667d-d9e7-4305-863e-9ddf005a16d2"
+			name="SelectGlobleMenuItem"
+			ref="acbfcf69-45f3-4f16-8229-d16754701799"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cb63ebb8-3e42-4fb5-b624-acce3c4c9b48"
+			name="SelectGlobleMenuItem"
+			ref="acbfcf69-45f3-4f16-8229-d16754701799"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="decfff74-dff9-45da-b3a4-233ccee0b9a9"
+			name="SelectPage"
+			ref="38c14862-9003-480c-b2d6-2a028e5e14ae"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e748cee8-2886-4af6-8fd4-3892da52c405"
 			name="SubmitPageInfo"
 			ref="bace383e-ce24-4d35-a374-222d4571d37a"
 			type="Recording">
 			</testmodule>
 			<modulegroupdef
 			id="f9b719eb-a790-4642-a189-944e1e8170a8"
-			name="Page">
+			name="AddNewPage">
+				<groupvariables>
+					<groupvariable
+					defaultvalue="Add Page"
+					id="6b8375f7-0926-486a-8d82-3f65a459d611"
+					name="modSelectedItem">
+						<modulevariable
+						moduleref="cb63ebb8-3e42-4fb5-b624-acce3c4c9b48"
+						name="repoSelectedItem"
+						variableref="26955889-fa67-4888-819b-fd4a9830099a">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
+					name="modSubmitedPageName">
+						<modulevariable
+						moduleref="21028e42-b7ec-4011-aefb-831731ba710b"
+						name="modSubmitedPageName"
+						variableref="604eb7d5-ab98-4815-8acc-06d716c2f5c3">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="54ae5fc4-e2bd-450c-80df-c91577174290"
+					name="modSubmitedParentPage">
+						<modulevariable
+						moduleref="21028e42-b7ec-4011-aefb-831731ba710b"
+						name="modSubmitedParentPage"
+						variableref="f1199138-5502-4a5b-b886-e99ef6fcfe87">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="54698028-e8b8-4be3-ac31-89487a890ffb"
+					name="modSubmitedNumberOfColumn">
+						<modulevariable
+						moduleref="21028e42-b7ec-4011-aefb-831731ba710b"
+						name="modSubmitedNumberOfColumn"
+						variableref="0908d7f6-d292-4ef9-ac53-6c037c9ae8e8">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="f70be4a1-c459-4b27-8099-7b2500700f0e"
+					name="modSubmitedDisplayAfter">
+						<modulevariable
+						moduleref="21028e42-b7ec-4011-aefb-831731ba710b"
+						name="modSubmitedDisplayAfter"
+						variableref="d1c6a5f6-5743-439e-8914-967bd10b938c">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="6fabb1b5-3f85-4b5e-98f0-00e5ac9e168f"
+					name="modSubmitedPublic">
+						<modulevariable
+						moduleref="21028e42-b7ec-4011-aefb-831731ba710b"
+						name="modSubmitedPublic"
+						variableref="8426cd18-e80f-4a51-8154-dd394031322b">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+				<constantvalues>
+					<constantvalue
+					id="979f75cf-843a-4356-a116-c3a4a946ffd8"
+					value="AddPage">
+					</constantvalue>
+				</constantvalues>
 			</modulegroupdef>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -91,59 +233,47 @@ rxversion="9.3">
 			id="0c7a5e19-c94e-4d50-9337-15c4efcd8f52"
 			name="Web_DashBoard">
 				<modulegroupdef
-				id="7c490a38-bacd-46a6-b208-083756ee7356"
-				name="User">
+				id="f9b719eb-a790-4642-a189-944e1e8170a8"
+				name="AddNewPage">
 					<testmodule
-					id="b3d200d0-71a9-4202-8026-014bbb9e2858"
-					name="LogIn">
+					id="cb63ebb8-3e42-4fb5-b624-acce3c4c9b48"
+					name="SelectGlobleMenuItem">
 					</testmodule>
 					<testmodule
-					id="595c24d3-a4ab-4ed3-90ce-5bb2ec550a9f"
-					name="LogOut">
+					id="21028e42-b7ec-4011-aefb-831731ba710b"
+					name="SubmitPageInfo">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef
-				id="f9b719eb-a790-4642-a189-944e1e8170a8"
-				name="Page">
+				id="a4731725-d9d5-403c-b4b4-2a6441cb72f5"
+				name="UpdatePage">
 					<testmodule
-					id="c400de7e-b468-4db5-aa40-7953417c9193"
-					name="GetNewPageName">
-					</testmodule>
-					<testmodule
-					id="186eab53-1b51-4a93-845a-263cf5b17641"
-					name="GetUpdatedPageName">
-					</testmodule>
-					<testmodule
-					id="bcb6b9db-43a3-46e9-9d3f-57f42153d805"
-					name="CheckPageIsNavigated">
-					</testmodule>
-					<testmodule
-					id="defdf8ea-26bb-44a6-a97d-453d4ed24e67"
-					name="SubmitPageInfo">
-					</testmodule>
-					<testmodule
-					id="ccabbb22-6803-47ae-91bc-fe2c20a61e04"
+					id="decfff74-dff9-45da-b3a4-233ccee0b9a9"
 					name="SelectPage">
 					</testmodule>
 					<testmodule
-					id="72bd81a0-75ed-42f5-baa4-5134d53dc123"
-					name="CheckPageExist">
+					id="0c86e6f3-bdef-4e0f-81ac-68dd10af3008"
+					name="SelectGlobleMenuItem">
+					</testmodule>
+					<testmodule
+					id="e748cee8-2886-4af6-8fd4-3892da52c405"
+					name="SubmitPageInfo">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef
 				id="0ec17c20-507d-4a7d-8c75-23e050607f2e"
-				name="Common">
+				name="DeletePage">
 					<testmodule
-					id="8301644c-a393-4ced-a8b3-28bee03c0f5d"
+					id="19b870d7-d717-4a05-8ebb-59b88bdb0828"
+					name="SelectPage">
+					</testmodule>
+					<testmodule
+					id="b30b667d-d9e7-4305-863e-9ddf005a16d2"
 					name="SelectGlobleMenuItem">
 					</testmodule>
 					<testmodule
-					id="dce17d9b-455c-467e-ab0d-3caabdac2260"
-					name="OpenBrowser">
-					</testmodule>
-					<testmodule
-					id="0ffd9064-3dbf-4fa2-b00b-37753c198525"
-					name="CloseBrowser">
+					id="7614283e-bc73-4424-814b-d51691180150"
+					name="ConfirmDeletePage">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

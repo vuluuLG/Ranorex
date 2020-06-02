@@ -41,7 +41,7 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public GetNewPageName()
         {
-            NewPageName = "";
+            modNewPageName = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
-        string _NewPageName;
+        string _modNewPageName;
 
         /// <summary>
-        /// Gets or sets the value of variable NewPageName.
+        /// Gets or sets the value of variable modNewPageName.
         /// </summary>
         [TestVariable("2f02d2ab-e902-4601-b2e8-5e2d34683031")]
-        public string NewPageName
+        public string modNewPageName
         {
-            get { return _NewPageName; }
-            set { _NewPageName = value; }
+            get { return _modNewPageName; }
+            set { _modNewPageName = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            NewPageName = GetNewName();
+            modNewPageName = GetNewName();
             Delay.Milliseconds(0);
             
         }

@@ -24,8 +24,8 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="7c8de0e6-cfdc-40e0-be70-65ad4bee5952"
-		name="navigatedPageName">
+		id="78003753-5da4-4f92-9077-a4960ab6f620"
+		name="modValidateNavigatedPageName">
 		</var>
 	</variables>
 	<recorditems>
@@ -59,9 +59,9 @@ mode="Global">
 					</info>
 				</argument>
 				<argument
-				argname="navigatedPageName"
+				argname="modValidateNavigatedPageName"
 				id="65214068-c087-4e61-8b24-5479f3c9c1f3"
-				variable="navigatedPageName">
+				variable="modValidateNavigatedPageName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

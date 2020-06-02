@@ -41,6 +41,7 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public OpenBrowser()
         {
+            modBrowser = "Chrome";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Web_DashBoard.Record_Actions
         }
 
 #region Variables
+
+        string _modBrowser;
+
+        /// <summary>
+        /// Gets or sets the value of variable modBrowser.
+        /// </summary>
+        [TestVariable("3cb61d55-6e68-4335-b3a1-4b71b421fed2")]
+        public string modBrowser
+        {
+            get { return _modBrowser; }
+            set { _modBrowser = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,8 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.170.92/TADashboard/' with browser 'IE' in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("http://192.168.170.92/TADashboard/", "IE", "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.170.92/TADashboard/' with browser specified by variable $modBrowser in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("http://192.168.170.92/TADashboard/", modBrowser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
         }

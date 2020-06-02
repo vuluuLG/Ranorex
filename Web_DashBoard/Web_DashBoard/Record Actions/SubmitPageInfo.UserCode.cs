@@ -51,23 +51,23 @@ namespace Web_DashBoard.Record_Actions
         public void SelectNumberOfColumn(RepoItemInfo selecttagInfo, string value)
         {
         	if (value!="") {
-        		Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$numberOfColumn' on item 'selecttagInfo'.", selecttagInfo);
-            selecttagInfo.FindAdapter<SelectTag>().Element.SetAttributeValue("TagValue", numberOfColumn);
+        		Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$modSubmitedNumberOfColumn' on item 'selecttagInfo'.", selecttagInfo);
+            selecttagInfo.FindAdapter<SelectTag>().Element.SetAttributeValue("TagValue", modSubmitedNumberOfColumn);
         	}            
         }
 
         public void SelectDisplayAfterPage(RepoItemInfo selecttagInfo, string value)
         {
         	if (value!="") {
-        		Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$displayAfter' on item 'selecttagInfo'.", selecttagInfo);
-            selecttagInfo.FindAdapter<SelectTag>().Element.SetAttributeValue("TagValue", displayAfter);
+        		Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$modSubmitedDisplayAfter' on item 'selecttagInfo'.", selecttagInfo);
+            selecttagInfo.FindAdapter<SelectTag>().Element.SetAttributeValue("TagValue", modSubmitedDisplayAfter);
         	}            
         }
 
         public void SetIsPublic(RepoItemInfo inputtagInfo, string value)
         {
-        		Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to '$isPublic' on item 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().Element.SetAttributeValue("Checked", isPublic);
+        		Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to '$modSubmitedPublic' on item 'inputtagInfo'.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Element.SetAttributeValue("Checked", modSubmitedPublic);
         	            
         }
 

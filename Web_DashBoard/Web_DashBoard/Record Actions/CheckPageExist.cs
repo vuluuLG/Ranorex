@@ -41,7 +41,7 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public CheckPageExist()
         {
-            pageName = "";
+            modValidateExistPageName = "";
         }
 
         /// <summary>
@@ -54,14 +54,16 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
+        string _modValidateExistPageName;
+
         /// <summary>
-        /// Gets or sets the value of variable pageName.
+        /// Gets or sets the value of variable modValidateExistPageName.
         /// </summary>
-        [TestVariable("17e6d7fa-e1b4-4635-bdbd-b6460b31ed1a")]
-        public string pageName
+        [TestVariable("e92a8d07-3b39-4648-8de0-d9d309b59f2e")]
+        public string modValidateExistPageName
         {
-            get { return repo.pageName; }
-            set { repo.pageName = value; }
+            get { return _modValidateExistPageName; }
+            set { _modValidateExistPageName = value; }
         }
 
 #endregion
@@ -90,7 +92,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            CheckPageAdded(repo.Dashboard.Main.Main_Menu.mniAddedPageInfo, pageName);
+            CheckPageExists(modValidateExistPageName);
             Delay.Milliseconds(0);
             
         }

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="Web_Dashboard_TestRepository"
+id="13898677-b910-4827-90d7-b7f37c79cf18">
+  <codegen
+  classname="Web_Dashboard_TestRepository"
+  namespace="Web_Dashboard_Test"/>
+  <rootfolder
+  name="Root"
+  id="d741e25a-b2c1-41c9-a3bd-786e581fcfb1"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

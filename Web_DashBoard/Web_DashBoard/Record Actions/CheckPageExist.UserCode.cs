@@ -32,12 +32,11 @@ namespace Web_DashBoard.Record_Actions
         {
             // Your recording specific initialization code goes here.
         }
-
          
-        public void CheckPageAdded(RepoItemInfo atagInfo, string validatePageExist)
+        public void CheckPageExists(string modValidateExistPageName)
         {        	
-            Report.Log(ReportLevel.Info, "Validation", "Validating Page Exists on item 'atagInfo'.", atagInfo);
-            ATag expectedPage = ".//div[#'main-menu']//a[@innertext='"+validatePageExist+"']";
+            Report.Log(ReportLevel.Info, "Validation", "Validating Page'"+modValidateExistPageName+"' Exists .");
+            ATag expectedPage = ".//div[#'main-menu']//a[@innertext='"+modValidateExistPageName+"']";
             Validate.Exists(expectedPage);
         }
 

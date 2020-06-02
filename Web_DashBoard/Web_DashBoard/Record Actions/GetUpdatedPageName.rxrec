@@ -25,7 +25,7 @@ mode="Global">
 	<variables>
 		<var
 		id="150112c1-739c-4393-8b80-96cb0c0a9b0f"
-		name="UpdatedName">
+		name="modUpdatedName">
 		</var>
 	</variables>
 	<recorditems>
@@ -41,7 +41,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="UpdatedName">
+				variable="modUpdatedName">
 				</binding>
 			</bindings>
 			<arguments

@@ -41,8 +41,9 @@ namespace Web_DashBoard.Record_Actions
         /// </summary>
         public LogIn()
         {
-            user = "Administrator";
-            password = "";
+            modUser = "Administrator";
+            modPassword = "";
+            modRepository = "SampleRepository";
         }
 
         /// <summary>
@@ -55,28 +56,40 @@ namespace Web_DashBoard.Record_Actions
 
 #region Variables
 
-        string _user;
+        string _modUser;
 
         /// <summary>
-        /// Gets or sets the value of variable user.
+        /// Gets or sets the value of variable modUser.
         /// </summary>
         [TestVariable("a71012bb-098e-4af1-9403-57d63f300d42")]
-        public string user
+        public string modUser
         {
-            get { return _user; }
-            set { _user = value; }
+            get { return _modUser; }
+            set { _modUser = value; }
         }
 
-        string _password;
+        string _modPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable password.
+        /// Gets or sets the value of variable modPassword.
         /// </summary>
         [TestVariable("f52fbe2a-0ac7-4107-ab78-c181d1010688")]
-        public string password
+        public string modPassword
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return _modPassword; }
+            set { _modPassword = value; }
+        }
+
+        string _modRepository;
+
+        /// <summary>
+        /// Gets or sets the value of variable modRepository.
+        /// </summary>
+        [TestVariable("64e39241-b5be-44c2-bfb6-823dbec266e4")]
+        public string modRepository
+        {
+            get { return _modRepository; }
+            set { _modRepository = value; }
         }
 
 #endregion
@@ -105,24 +118,24 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'SampleRepository' on item 'Dashboard.LogIn.cbbRepository'.", repo.Dashboard.LogIn.cbbRepositoryInfo, new RecordItemIndex(0));
-            repo.Dashboard.LogIn.cbbRepository.Element.SetAttributeValue("TagValue", "SampleRepository");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$modRepository' on item 'Dashboard.LogIn.cbbRepository'.", repo.Dashboard.LogIn.cbbRepositoryInfo, new RecordItemIndex(0));
+            repo.Dashboard.LogIn.cbbRepository.Element.SetAttributeValue("TagValue", modRepository);
             Delay.Milliseconds(20);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.txtUsername' at Center.", repo.Dashboard.LogIn.txtUsernameInfo, new RecordItemIndex(1));
             //repo.Dashboard.LogIn.txtUsername.Click();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$user' on item 'Dashboard.LogIn.txtUsername'.", repo.Dashboard.LogIn.txtUsernameInfo, new RecordItemIndex(2));
-            repo.Dashboard.LogIn.txtUsername.Element.SetAttributeValue("Value", user);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$modUser' on item 'Dashboard.LogIn.txtUsername'.", repo.Dashboard.LogIn.txtUsernameInfo, new RecordItemIndex(2));
+            repo.Dashboard.LogIn.txtUsername.Element.SetAttributeValue("Value", modUser);
             Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.txtPassword' at Center.", repo.Dashboard.LogIn.txtPasswordInfo, new RecordItemIndex(3));
             //repo.Dashboard.LogIn.txtPassword.Click();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$password' on item 'Dashboard.LogIn.txtPassword'.", repo.Dashboard.LogIn.txtPasswordInfo, new RecordItemIndex(4));
-            repo.Dashboard.LogIn.txtPassword.Element.SetAttributeValue("Value", password);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$modPassword' on item 'Dashboard.LogIn.txtPassword'.", repo.Dashboard.LogIn.txtPasswordInfo, new RecordItemIndex(4));
+            repo.Dashboard.LogIn.txtPassword.Element.SetAttributeValue("Value", modPassword);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.LogIn.btnLogin' at Center.", repo.Dashboard.LogIn.btnLoginInfo, new RecordItemIndex(5));
