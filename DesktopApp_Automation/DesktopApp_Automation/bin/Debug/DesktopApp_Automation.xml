@@ -1027,6 +1027,11 @@
             Gets or sets the value of variable varFileSetupName.
             </summary>
         </member>
+        <member name="P:DesktopApp_Automation.Recordings.DownloadApp.varBrowser">
+            <summary>
+            Gets or sets the value of variable varBrowser.
+            </summary>
+        </member>
         <member name="T:DesktopApp_Automation.Recordings.InstallApp">
              <summary>
             The InstallApp recording.
