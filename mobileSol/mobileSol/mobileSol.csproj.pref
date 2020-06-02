@@ -1,14 +1,12 @@
 ﻿<Properties>
-  <Array name="active" />
+  <Array name="active">
+    <Element value="Common\Helpers.cs" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Coding Modules\ModifyPageNameUpdate.cs" />
-    <Element value="Coding Modules\ModifyPageName.cs" />
-    <Element value="mobileSolRepository.rxrep" />
-    <Element value="Recording Modules\SelectItemOfGlobalSetting.rxrec" />
-    <Element value="Recording Modules\SelectItemOfGlobalSetting.UserCode.cs" />
     <Element value="mobileSol.rxtst" />
-    <Element value="Recording Modules\ModifyPage.rxrec" />
+    <Element value="Recording Modules\General\StartApp.rxrec" />
+    <Element value="Common\Helpers.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
@@ -16,7 +14,7 @@
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="mobileSol.Recording_Modules.SelectItemOfGlobalSetting.SelectGlobalSettingItem(RepoItemInfo litagInfo, RepoItemInfo atagInfo)" />
+      <Element value="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(RepoItemInfo findElement, RepoItemInfo clickElement)" />
       <Element value="mobileSol.Recording_Modules.SelectItemOfGlobalSetting.SelectGlobalSettingItem(RepoItemInfo litagInfo, RepoItemInfo atagInfo)" />
       <Element value="mobileSol.Recording_Modules.ModifyPage.GetPageName(String baseName, Boolean isRnd)" />
       <Element value="mobileSol.Recording_Modules.ModifyPage.GetPageName(String String)" />

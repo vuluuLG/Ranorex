@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d24a1db6-9dd0-424b-b3b1-d46dc63d3943"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectMainMenuItem"
+	namespace="mobileSol.Recording_Modules.DashboardPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<touchrecorditem
+		duration="300ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="b7ed6987-cdf2-49e6-ab64-f2da5588da9f"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27ead7b6-0298-45b0-9253-2fca024e301e"
+			sourcename="RepositoryEditor">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]
+				</path>
+			</info>
+		</touchrecorditem>
+	</recorditems>
+	<repository
+	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"
+	name="mobileSolRepository"
+	relativepath="..\..\mobileSolRepository.rxrep">
+		<codegen
+		classname="mobileSolRepository"
+		namespace="mobileSol">
+		</codegen>
+		<rootfolder
+		id="481228dd-fc9e-4553-a870-03b9f327e5aa"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectMainMenuItem.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

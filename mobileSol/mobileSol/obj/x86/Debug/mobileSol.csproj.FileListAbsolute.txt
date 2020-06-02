@@ -19,3 +19,7 @@ D:\Ranorex\mobileSol\mobileSol\bin\Debug\mobileSol.pdb
 D:\Ranorex\mobileSol\mobileSol\bin\Debug\Ranorex.Core.Resolver.dll
 D:\Ranorex\mobileSol\mobileSol\obj\x86\Debug\mobileSol.exe
 D:\Ranorex\mobileSol\mobileSol\obj\x86\Debug\mobileSol.pdb
+D:\Ranorex\mobileSol\mobileSol\bin\Debug\Ranorex Automation Helpers.dll
+D:\Ranorex\mobileSol\mobileSol\bin\Debug\Ranorex.ReportToPDF.exe
+D:\Ranorex\mobileSol\mobileSol\bin\Debug\Ranorex Automation Helpers.pdb
+D:\Ranorex\mobileSol\mobileSol\bin\Debug\Ranorex Automation Helpers.xml

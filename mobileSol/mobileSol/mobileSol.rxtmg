@@ -18,7 +18,7 @@ rxversion="9.3">
 					name="ModuleGroupvarGlobalSettingItemName">
 						<modulevariable
 						moduleref="bb2c2ef5-7c04-4962-a6d1-0583114e1826"
-						name="varGSItemName"
+						name="repGSItemName"
 						variableref="3e382d2a-cdf7-4df5-ae3c-5f5d70effc45">
 						</modulevariable>
 					</groupvariable>
@@ -28,7 +28,7 @@ rxversion="9.3">
 					name="ModuleGroupvarPageName">
 						<modulevariable
 						moduleref="070ff875-5307-4894-b206-9e60efd26127"
-						name="varPageName"
+						name="modPageName"
 						variableref="a6966578-4ec5-49a5-8f0f-3fffc9898830">
 						</modulevariable>
 					</groupvariable>
@@ -61,7 +61,7 @@ rxversion="9.3">
 					name="ModuleGroupvarMainMenuItem">
 						<modulevariable
 						moduleref="5f4ca9ab-98ca-45c4-a4eb-a104a0641a08"
-						name="varMainMenuItem"
+						name="repMainMenuItem"
 						variableref="d10443f0-8177-4ee4-a1ab-5cadc7459319">
 						</modulevariable>
 					</groupvariable>
@@ -70,7 +70,7 @@ rxversion="9.3">
 					name="ModuleGroupvarGSItemName">
 						<modulevariable
 						moduleref="fb3f93e4-2d8f-4941-a62c-e6a16fc602b3"
-						name="varGSItemName"
+						name="repGSItemName"
 						variableref="3e382d2a-cdf7-4df5-ae3c-5f5d70effc45">
 						</modulevariable>
 					</groupvariable>
@@ -85,7 +85,7 @@ rxversion="9.3">
 					name="ModuleGroupNewParameter">
 						<modulevariable
 						moduleref="a39c950b-e7ab-469f-8b68-cfa15fc49e98"
-						name="varMainMenuItem"
+						name="repMainMenuItem"
 						variableref="d10443f0-8177-4ee4-a1ab-5cadc7459319">
 						</modulevariable>
 					</groupvariable>
@@ -94,7 +94,7 @@ rxversion="9.3">
 					name="ModuleGroupNewParameter2">
 						<modulevariable
 						moduleref="f3315f9a-8d80-4600-8cc8-4e52fba4fb14"
-						name="varGSItemName"
+						name="repGSItemName"
 						variableref="3e382d2a-cdf7-4df5-ae3c-5f5d70effc45">
 						</modulevariable>
 					</groupvariable>
@@ -103,7 +103,7 @@ rxversion="9.3">
 					name="ModuleGroupNewParameter1">
 						<modulevariable
 						moduleref="6de8f24f-bacb-4f1d-8fe2-881704e8acea"
-						name="varPageName"
+						name="modPageName"
 						variableref="a6966578-4ec5-49a5-8f0f-3fffc9898830">
 						</modulevariable>
 					</groupvariable>

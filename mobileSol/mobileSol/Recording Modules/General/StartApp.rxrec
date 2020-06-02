@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1b57d7b6-d364-4490-8dfc-7904d4291977"
+mode="Mobile">
+	<description>
+		The StartApp recording.
+	</description>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartApp"
+	namespace="mobileSol.Recording_Modules.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runmobileapprecorditem
+		application="ranorex.RxBrowser"
+		devicename="Samsung Galaxy Tab A"
+		duration="3500ms"
+		enabled="True"
+		optional="False"
+		resetInitialState="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</runmobileapprecorditem>
+		<setvaluerecorditem
+		attrname="PageUrl"
+		duration="10000ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e6fefff6-57dd-486d-bb5a-9fbe868668a0">
+			<comment>
+				Browse to site.
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="11c35c9d-d669-494f-a63f-70257e80752f"
+			sourcename="">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom
+				</path>
+			</info>
+			<AttributeValue>
+				http://192.168.171.142/TADashboard
+			</AttributeValue>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"
+	name="mobileSolRepository"
+	relativepath="..\..\mobileSolRepository.rxrep">
+		<codegen
+		classname="mobileSolRepository"
+		namespace="mobileSol">
+		</codegen>
+		<rootfolder
+		id="481228dd-fc9e-4553-a870-03b9f327e5aa"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartApp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

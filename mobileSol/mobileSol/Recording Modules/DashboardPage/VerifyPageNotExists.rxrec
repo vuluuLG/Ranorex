@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="14606e16-1275-40f9-95bd-7c8aa883131c"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyPageNotExists"
+	namespace="mobileSol.Recording_Modules.DashboardPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="NotExists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="97557982-4ed9-4a7f-8c57-b37677369169">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27ead7b6-0298-45b0-9253-2fca024e301e"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$repMainMenuItem]
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"
+	name="mobileSolRepository"
+	relativepath="..\..\mobileSolRepository.rxrep">
+		<codegen
+		classname="mobileSolRepository"
+		namespace="mobileSol">
+		</codegen>
+		<rootfolder
+		id="481228dd-fc9e-4553-a870-03b9f327e5aa"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyPageNotExists.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

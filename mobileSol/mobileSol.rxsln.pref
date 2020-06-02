@@ -8,14 +8,15 @@
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <string>{6688B8C8-BFC6-4671-AE1E-D01706FE19B8}</string>
       <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
-      <string>13b49a71-dcf4-47fe-9df7-6649d4de0521</string>
       <string>8e30a93d-d398-471e-b0c6-1075d6cc480e</string>
-      <string>b16dfc5f-bb6d-4282-8a85-79532a2dbeed</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>ef99dad3-8aed-4291-814f-b8ea7d9abbe2</string>
       <string>eec248fa-0fb2-4775-bd3a-f2982154fbb0</string>
+      <string>70652772-b111-4186-bbd5-44175f7817d7</string>
+      <string>5006a41d-10b7-4cfb-ab71-b4d181d2730c</string>
+      <string>76a3b45f-f92a-440c-b49b-2397f9bfdf3b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution mobileSol[Solution Items[]mobileSol[Coding Modules[]Common[]Recording Modules[ModifyPage.rxrec[]]mobileSolRepository.rxrep[]]]]&#xD;&#xA;Solution mobileSol\mobileSol\mobileSol.rxtst&#xD;&#xA;Solution mobileSol" />
+  <ProjectBrowserState value="[Solution mobileSol[Solution Items[]mobileSol[Coding Modules[]Common[]Recording Modules[DashboardPage[]General[]LoginPage[]]]Ranorex Automation Helpers[UserCodeCollections[]]]]&#xD;&#xA;Solution mobileSol\mobileSol\Common\Helpers.cs&#xD;&#xA;Solution mobileSol\mobileSol\References" />
   <StartupProject value="{6688B8C8-BFC6-4671-AE1E-D01706FE19B8}" />
 </Properties>

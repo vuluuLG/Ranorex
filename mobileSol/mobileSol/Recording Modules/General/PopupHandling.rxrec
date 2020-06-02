@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="72747bac-524f-4ed9-8639-4c66810628ff"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="PopupHandling"
+	namespace="mobileSol.Recording_Modules.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="af5c3688-e3b9-404c-9c2a-8bb4f35e38e6">
+				<argument
+				argname="findElement"
+				id="1abd0c65-34cb-411c-aae9-43ae8acba907">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3c09e35f-7904-4cdb-8091-9179ce887a8e"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/mobileapp[@title='ranorex.RxBrowser']//form
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="7f12f420-c434-4f70-ac07-4f9e17937dad">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="03530834-552f-43ce-9b95-118216a201f8"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/mobileapp[@title='ranorex.RxBrowser']//form//button[@accessibilitylabel='OK']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"
+	name="mobileSolRepository"
+	relativepath="..\..\mobileSolRepository.rxrep">
+		<codegen
+		classname="mobileSolRepository"
+		namespace="mobileSol">
+		</codegen>
+		<rootfolder
+		id="481228dd-fc9e-4553-a870-03b9f327e5aa"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		PopupHandling.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

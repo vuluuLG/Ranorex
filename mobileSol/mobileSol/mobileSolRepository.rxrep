@@ -133,14 +133,14 @@ name="mobileSolRepository">
 				id="45f97d99-b3c5-4451-9548-edb6a1d5be37"
 				name="BtnGlobalSettingItem"
 				searchtimeout="30000ms">
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//li/a[@innertext=$varGSItemName]
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//li/a[@innertext=$repGSItemName]
 				</item>
 				<item
 				capname="atag"
 				id="27ead7b6-0298-45b0-9253-2fca024e301e"
 				name="LblMainMenuItem"
 				searchtimeout="30000ms">
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$repMainMenuItem]
 				</item>
 				<item
 				addcaps="unknown,atag,webelement,mobileuielement"
@@ -149,7 +149,7 @@ name="mobileSolRepository">
 				name="LblUserPanel"
 				refimgid="d25d8a33-74fa-4827-bab7-034c68004add"
 				searchtimeout="30000ms">
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext=$varUsername]
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext=$repUsername]
 				</item>
 				<item
 				addcaps="unknown,atag,webelement,mobileuielement"
@@ -175,13 +175,24 @@ name="mobileSolRepository">
 					/mobileapp[@title='ranorex.RxBrowser']//dom
 				</basepath>
 			</appfolder>
-			<item
-			capname="button"
-			id="03530834-552f-43ce-9b95-118216a201f8"
-			name="BtnOK"
-			searchtimeout="30000ms">
-				/mobileapp[@title='ranorex.RxBrowser']//form//button[@text='OK']
-			</item>
+			<folder
+			capname="form"
+			id="3c09e35f-7904-4cdb-8091-9179ce887a8e"
+			isrooted="True"
+			name="Form"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="button"
+				id="03530834-552f-43ce-9b95-118216a201f8"
+				name="BtnOK"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//form//button[@accessibilitylabel='OK']
+				</item>
+				<basepath>
+					/mobileapp[@title='ranorex.RxBrowser']//form
+				</basepath>
+			</folder>
 			<basepath>
 				/mobileapp[@title='ranorex.RxBrowser']
 			</basepath>
@@ -192,15 +203,15 @@ name="mobileSolRepository">
 	<variables>
 		<var
 		id="3e382d2a-cdf7-4df5-ae3c-5f5d70effc45"
-		name="varGSItemName">
+		name="repGSItemName">
 		</var>
 		<var
 		id="d10443f0-8177-4ee4-a1ab-5cadc7459319"
-		name="varMainMenuItem">
+		name="repMainMenuItem">
 		</var>
 		<var
 		id="9070833a-c51c-4996-a05b-acf80582ff3f"
-		name="varUsername">
+		name="repUsername">
 		</var>
 	</variables>
 </repository>

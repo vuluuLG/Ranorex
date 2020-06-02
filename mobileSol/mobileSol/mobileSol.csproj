@@ -133,7 +133,7 @@
       <id>462f2d9a-fbcf-409e-8dee-c6ec298828b6</id>
     </Compile>
     <Compile Include="Common\Utility.cs">
-      <id>861cf2a2-6fa2-47e3-9126-ca92e1171dc8</id>
+      <id>5e2aa410-54f1-45ab-8e5f-e5a5cb74a000</id>
     </Compile>
     <Compile Include="mobileSolRepository.cs">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
@@ -144,113 +144,125 @@
     <Compile Include="Program.cs">
       <id>66d4b30d-f01d-45e7-9556-cda2b6a06558</id>
     </Compile>
-    <Compile Include="Recording Modules\CloseApp.cs">
-      <BoundTo>c2d5a772-6ee6-4d40-9797-c7c7078a8331</BoundTo>
-      <DependentUpon>CloseApp.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>c8a978f7-6211-4031-808a-9deb86ec36f6</id>
-    </Compile>
-    <Compile Include="Recording Modules\CloseApp.UserCode.cs">
-      <BoundTo>c2d5a772-6ee6-4d40-9797-c7c7078a8331</BoundTo>
-      <DependentUpon>CloseApp.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e9945037-ba7a-4463-b722-0190edaa7fd8</id>
-    </Compile>
-    <Compile Include="Recording Modules\Login.cs">
-      <DependentUpon>Login.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>6ab43021-9b43-4275-8c42-3d598a65a9cb</id>
-      <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
-    </Compile>
-    <Compile Include="Recording Modules\Login.UserCode.cs">
-      <DependentUpon>Login.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ac064cdf-aff5-4a6a-83cc-8b1a198d3b5a</id>
-      <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
-    </Compile>
-    <Compile Include="Recording Modules\LogOut.cs">
-      <BoundTo>db9e7d55-3078-4754-978a-482f4adb5773</BoundTo>
+    <Compile Include="Recording Modules\DashboardPage\LogOut.cs">
       <DependentUpon>LogOut.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>e4e627cc-e17a-4c34-84ea-61b5b933333c</id>
-    </Compile>
-    <Compile Include="Recording Modules\LogOut.UserCode.cs">
       <BoundTo>db9e7d55-3078-4754-978a-482f4adb5773</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\LogOut.UserCode.cs">
       <DependentUpon>LogOut.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1ea13833-a1b5-4ea8-8fdd-48c6814f0ea4</id>
+      <BoundTo>db9e7d55-3078-4754-978a-482f4adb5773</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\ModifyPage.cs">
-      <BoundTo>bf98b113-6898-4f56-9056-feb09d8a1963</BoundTo>
+    <Compile Include="Recording Modules\DashboardPage\ModifyPage.cs">
       <DependentUpon>ModifyPage.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>897c8a04-052e-4a34-a080-6b47656cd5d0</id>
-    </Compile>
-    <Compile Include="Recording Modules\ModifyPage.UserCode.cs">
       <BoundTo>bf98b113-6898-4f56-9056-feb09d8a1963</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\ModifyPage.UserCode.cs">
       <DependentUpon>ModifyPage.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>99e18374-59bb-4ddc-9401-ab1d5b378599</id>
+      <BoundTo>bf98b113-6898-4f56-9056-feb09d8a1963</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\SelectMainMenuItem.cs">
-      <BoundTo>6ff76784-9be1-48c6-ae2c-63188414d72c</BoundTo>
-      <DependentUpon>SelectMainMenuItem.rxrec</DependentUpon>
+    <Compile Include="Recording Modules\DashboardPage\VerifyPageNotExists.cs">
+      <BoundTo>6b7e415c-beae-4661-b52a-8c08ea1ec253</BoundTo>
+      <DependentUpon>VerifyPageNotExists.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>ce819aa0-0490-44e2-ae5a-5b3edf9c6881</id>
+      <id>51883747-0448-495d-a50a-0e0ef690dac8</id>
     </Compile>
-    <Compile Include="Recording Modules\SelectMainMenuItem.UserCode.cs">
-      <BoundTo>6ff76784-9be1-48c6-ae2c-63188414d72c</BoundTo>
-      <DependentUpon>SelectMainMenuItem.rxrec</DependentUpon>
+    <Compile Include="Recording Modules\DashboardPage\VerifyPageNotExists.UserCode.cs">
+      <BoundTo>6b7e415c-beae-4661-b52a-8c08ea1ec253</BoundTo>
+      <DependentUpon>VerifyPageNotExists.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>375c9465-684a-484d-875f-2beda25effed</id>
+      <id>b2976144-51d3-4c50-88ea-33bcff726e9f</id>
     </Compile>
-    <Compile Include="Recording Modules\VerifyPageExists.cs">
-      <BoundTo>69c0e28e-fb8b-4f29-90b0-21e3094129b9</BoundTo>
-      <DependentUpon>VerifyPageExists.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>1becc0c9-2eba-4733-b9f0-c65756896876</id>
-    </Compile>
-    <Compile Include="Recording Modules\VerifyPageExists.UserCode.cs">
-      <BoundTo>69c0e28e-fb8b-4f29-90b0-21e3094129b9</BoundTo>
-      <DependentUpon>VerifyPageExists.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>5a57b65a-4409-4e86-b8c1-141c63f80f23</id>
-    </Compile>
-    <Compile Include="Recording Modules\SelectItemOfGlobalSetting.cs">
-      <BoundTo>93178723-c57a-4c0f-827d-4d5b7037e73d</BoundTo>
+    <Compile Include="Recording Modules\DashboardPage\SelectItemOfGlobalSetting.cs">
       <DependentUpon>SelectItemOfGlobalSetting.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a7e5b090-91a7-4b51-8da1-0d83f91d0245</id>
-    </Compile>
-    <Compile Include="Recording Modules\SelectItemOfGlobalSetting.UserCode.cs">
       <BoundTo>93178723-c57a-4c0f-827d-4d5b7037e73d</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\SelectItemOfGlobalSetting.UserCode.cs">
       <DependentUpon>SelectItemOfGlobalSetting.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>cbc175e9-18ea-48d0-9985-4804496d0e7d</id>
+      <BoundTo>93178723-c57a-4c0f-827d-4d5b7037e73d</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\StartApp.cs">
+    <Compile Include="Recording Modules\DashboardPage\SelectMainMenuItem.cs">
+      <DependentUpon>SelectMainMenuItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ce819aa0-0490-44e2-ae5a-5b3edf9c6881</id>
+      <BoundTo>6ff76784-9be1-48c6-ae2c-63188414d72c</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\SelectMainMenuItem.UserCode.cs">
+      <DependentUpon>SelectMainMenuItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>375c9465-684a-484d-875f-2beda25effed</id>
+      <BoundTo>6ff76784-9be1-48c6-ae2c-63188414d72c</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\VerifyPageExists.cs">
+      <DependentUpon>VerifyPageExists.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1becc0c9-2eba-4733-b9f0-c65756896876</id>
+      <BoundTo>69c0e28e-fb8b-4f29-90b0-21e3094129b9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\VerifyPageExists.UserCode.cs">
+      <DependentUpon>VerifyPageExists.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a57b65a-4409-4e86-b8c1-141c63f80f23</id>
+      <BoundTo>69c0e28e-fb8b-4f29-90b0-21e3094129b9</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\General\CloseApp.cs">
+      <DependentUpon>CloseApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8a978f7-6211-4031-808a-9deb86ec36f6</id>
+      <BoundTo>c2d5a772-6ee6-4d40-9797-c7c7078a8331</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\General\CloseApp.UserCode.cs">
+      <DependentUpon>CloseApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9945037-ba7a-4463-b722-0190edaa7fd8</id>
+      <BoundTo>c2d5a772-6ee6-4d40-9797-c7c7078a8331</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\General\PopupHandling.cs">
+      <BoundTo>6186b114-ece5-4591-9c2b-d10117510e4a</BoundTo>
+      <DependentUpon>PopupHandling.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20ca8a59-5a6d-4085-a332-99869b9ec54d</id>
+    </Compile>
+    <Compile Include="Recording Modules\General\PopupHandling.UserCode.cs">
+      <BoundTo>6186b114-ece5-4591-9c2b-d10117510e4a</BoundTo>
+      <DependentUpon>PopupHandling.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89d4e5c2-a0b3-42e5-81d7-de4badc09dba</id>
+    </Compile>
+    <Compile Include="Recording Modules\General\StartApp.cs">
       <DependentUpon>StartApp.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>af3446a3-49ea-4165-9205-390aa8fb5b17</id>
       <BoundTo>ea251ab0-325c-47e8-bbce-6f277fa30b4e</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\StartApp.UserCode.cs">
+    <Compile Include="Recording Modules\General\StartApp.UserCode.cs">
       <DependentUpon>StartApp.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>066fdac3-74ad-4ffa-aeeb-33c99aa9ecfd</id>
       <BoundTo>ea251ab0-325c-47e8-bbce-6f277fa30b4e</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\VerifyPageNotExists.cs">
-      <BoundTo>4e072525-5342-4d99-9dd2-00a9152d7541</BoundTo>
-      <DependentUpon>VerifyPageNotExists.rxrec</DependentUpon>
+    <Compile Include="Recording Modules\LoginPage\Login.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>a04a6d82-6395-460c-9881-7500e325c438</id>
+      <id>6ab43021-9b43-4275-8c42-3d598a65a9cb</id>
+      <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
     </Compile>
-    <Compile Include="Recording Modules\VerifyPageNotExists.UserCode.cs">
-      <BoundTo>4e072525-5342-4d99-9dd2-00a9152d7541</BoundTo>
-      <DependentUpon>VerifyPageNotExists.rxrec</DependentUpon>
+    <Compile Include="Recording Modules\LoginPage\Login.UserCode.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>63437dc8-822a-43d6-9835-da00a3d83833</id>
+      <id>ac064cdf-aff5-4a6a-83cc-8b1a198d3b5a</id>
+      <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -268,53 +280,61 @@
       <repoid>67c22d6c-c97e-4bbb-93f5-3ca7d2a89007</repoid>
       <reporootid>481228dd-fc9e-4553-a870-03b9f327e5aa</reporootid>
     </None>
-    <None Include="Recording Modules\CloseApp.rxrec">
-      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
-      <id>c2d5a772-6ee6-4d40-9797-c7c7078a8331</id>
-      <recordtableid>833b3673-eac1-4e7a-8c8b-f9fcb39c723a</recordtableid>
-    </None>
-    <None Include="Recording Modules\Login.rxrec">
-      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
-      <id>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</id>
-      <recordtableid>80c2ffe4-1e67-44b5-9b5c-f20cd908e272</recordtableid>
-    </None>
-    <None Include="Recording Modules\LogOut.rxrec">
+    <None Include="Recording Modules\DashboardPage\LogOut.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>db9e7d55-3078-4754-978a-482f4adb5773</id>
       <recordtableid>2e7a9cf5-f61a-4dc2-af9e-2f87a1bc74ff</recordtableid>
     </None>
-    <None Include="Recording Modules\ModifyPage.rxrec">
+    <None Include="Recording Modules\DashboardPage\ModifyPage.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>bf98b113-6898-4f56-9056-feb09d8a1963</id>
       <recordtableid>d9ffc363-6eee-43fc-82da-cf2939821f3f</recordtableid>
     </None>
-    <None Include="Recording Modules\SelectMainMenuItem.rxrec">
+    <None Include="Recording Modules\DashboardPage\VerifyPageNotExists.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
-      <id>6ff76784-9be1-48c6-ae2c-63188414d72c</id>
-      <recordtableid>d24a1db6-9dd0-424b-b3b1-d46dc63d3943</recordtableid>
+      <id>6b7e415c-beae-4661-b52a-8c08ea1ec253</id>
+      <recordtableid>14606e16-1275-40f9-95bd-7c8aa883131c</recordtableid>
     </None>
-    <None Include="Recording Modules\VerifyPageExists.rxrec">
-      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
-      <id>69c0e28e-fb8b-4f29-90b0-21e3094129b9</id>
-      <recordtableid>1cc91304-99dd-43e5-92b1-321b42ec1fa4</recordtableid>
-    </None>
-    <None Include="Recording Modules\SelectItemOfGlobalSetting.rxrec">
+    <None Include="Recording Modules\DashboardPage\SelectItemOfGlobalSetting.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>93178723-c57a-4c0f-827d-4d5b7037e73d</id>
       <recordtableid>0621c4b3-b837-451c-907a-53fd2f5cf7ed</recordtableid>
     </None>
-    <None Include="Recording Modules\StartApp.rxrec">
+    <None Include="Recording Modules\DashboardPage\SelectMainMenuItem.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>6ff76784-9be1-48c6-ae2c-63188414d72c</id>
+      <recordtableid>d24a1db6-9dd0-424b-b3b1-d46dc63d3943</recordtableid>
+    </None>
+    <None Include="Recording Modules\DashboardPage\VerifyPageExists.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>69c0e28e-fb8b-4f29-90b0-21e3094129b9</id>
+      <recordtableid>1cc91304-99dd-43e5-92b1-321b42ec1fa4</recordtableid>
+    </None>
+    <None Include="Recording Modules\General\CloseApp.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>c2d5a772-6ee6-4d40-9797-c7c7078a8331</id>
+      <recordtableid>833b3673-eac1-4e7a-8c8b-f9fcb39c723a</recordtableid>
+    </None>
+    <None Include="Recording Modules\General\PopupHandling.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>6186b114-ece5-4591-9c2b-d10117510e4a</id>
+      <recordtableid>72747bac-524f-4ed9-8639-4c66810628ff</recordtableid>
+    </None>
+    <None Include="Recording Modules\General\StartApp.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>ea251ab0-325c-47e8-bbce-6f277fa30b4e</id>
       <recordtableid>1b57d7b6-d364-4490-8dfc-7904d4291977</recordtableid>
     </None>
-    <None Include="Recording Modules\VerifyPageNotExists.rxrec">
+    <None Include="Recording Modules\LoginPage\Login.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
-      <id>4e072525-5342-4d99-9dd2-00a9152d7541</id>
-      <recordtableid>39733693-5fe1-42b7-89b3-dbd38c61cd26</recordtableid>
+      <id>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</id>
+      <recordtableid>80c2ffe4-1e67-44b5-9b5c-f20cd908e272</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="mobileSol.cd">
+      <id>d5dcf4b5-739f-4af2-acf8-4901237859a3</id>
+    </Content>
     <Content Include="mobileSol.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>63d741c0-c2ff-4667-bc82-91acecca6bfa</id>
@@ -334,6 +354,21 @@
     <Folder Include="Recording Modules">
       <id>eec248fa-0fb2-4775-bd3a-f2982154fbb0</id>
     </Folder>
+    <Folder Include="Recording Modules\LoginPage">
+      <id>76a3b45f-f92a-440c-b49b-2397f9bfdf3b</id>
+    </Folder>
+    <Folder Include="Recording Modules\DashboardPage">
+      <id>70652772-b111-4186-bbd5-44175f7817d7</id>
+    </Folder>
+    <Folder Include="Recording Modules\General">
+      <id>5006a41d-10b7-4cfb-ab71-b4d181d2730c</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{7575CE1C-8129-464C-9F0A-E582FF53DF27}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
