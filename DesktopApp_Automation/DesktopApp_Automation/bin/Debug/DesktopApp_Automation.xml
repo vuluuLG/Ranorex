@@ -4,24 +4,6 @@
         <name>DesktopApp_Automation</name>
     </assembly>
     <members>
-        <member name="T:DesktopApp_Automation.CodeModules.AppInformation">
-            <summary>
-            Description of UserCodeModule1.
-            </summary>
-        </member>
-        <member name="M:DesktopApp_Automation.CodeModules.AppInformation.#ctor">
-            <summary>
-            Constructs a new instance.
-            </summary>
-        </member>
-        <member name="M:DesktopApp_Automation.CodeModules.AppInformation.Ranorex#Core#Testing#ITestModule#Run">
-            <summary>
-            Performs the playback of actions in this module.
-            </summary>
-            <remarks>You should not call this method directly, instead pass the module
-            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
-            that will in turn invoke this method.</remarks>
-        </member>
         <member name="T:DesktopApp_Automation.DesktopApp_AutomationRepository">
             <summary>
             The class representing the DesktopApp_AutomationRepository element repository.
