@@ -27,6 +27,17 @@ namespace DesktopApp_Modules
     public partial class DesktopApp_ModulesRepository : RepoGenBaseFolder
     {
         static DesktopApp_ModulesRepository instance = new DesktopApp_ModulesRepository();
+        DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder _explorer;
+        DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder _controlpanel;
+        DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder _programsandfeatures;
+        DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder _explorer1;
+        DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder _notepadplusplusv786uninstall;
+        DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder _notepadplusplusv786uninstall1;
+        DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder _downloadsnotepadplusplus;
+        DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder _notepadplusplus786releasenotepadp;
+        DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder _installerlanguage;
+        DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder _notepadplusplusv786setup;
+        DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder _cprogramfilesnotepadpluspluschange;
 
         /// <summary>
         /// Gets the singleton class instance representing the DesktopApp_ModulesRepository element repository.
@@ -43,6 +54,17 @@ namespace DesktopApp_Modules
         public DesktopApp_ModulesRepository() 
             : base("DesktopApp_ModulesRepository", "/", null, 0, false, "43f9a22b-83ee-4a35-a13f-fe3b69b8da65", ".\\RepositoryImages\\DesktopApp_ModulesRepository43f9a22b.rximgres")
         {
+            _explorer = new DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder(this);
+            _controlpanel = new DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder(this);
+            _programsandfeatures = new DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder(this);
+            _explorer1 = new DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder(this);
+            _notepadplusplusv786uninstall = new DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder(this);
+            _notepadplusplusv786uninstall1 = new DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder(this);
+            _downloadsnotepadplusplus = new DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder(this);
+            _notepadplusplus786releasenotepadp = new DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder(this);
+            _installerlanguage = new DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder(this);
+            _notepadplusplusv786setup = new DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder(this);
+            _cprogramfilesnotepadpluspluschange = new DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +82,105 @@ namespace DesktopApp_Modules
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("10fee342-2ada-4302-87dc-b3a55c23760a")]
+        public virtual DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
+
+        /// <summary>
+        /// The ControlPanel folder.
+        /// </summary>
+        [RepositoryFolder("9a1be1cb-8128-4372-9e7f-ea6fba3812b3")]
+        public virtual DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder ControlPanel
+        {
+            get { return _controlpanel; }
+        }
+
+        /// <summary>
+        /// The ProgramsAndFeatures folder.
+        /// </summary>
+        [RepositoryFolder("2b77e709-7db2-4b70-8e93-ee0aaefdb420")]
+        public virtual DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder ProgramsAndFeatures
+        {
+            get { return _programsandfeatures; }
+        }
+
+        /// <summary>
+        /// The Explorer1 folder.
+        /// </summary>
+        [RepositoryFolder("b36e0940-9774-4635-a077-455aeecbf069")]
+        public virtual DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder Explorer1
+        {
+            get { return _explorer1; }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlusV786Uninstall folder.
+        /// </summary>
+        [RepositoryFolder("ce1c3d5a-7559-4bcc-9377-531b3c03b585")]
+        public virtual DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder NotepadPlusPlusV786Uninstall
+        {
+            get { return _notepadplusplusv786uninstall; }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlusV786Uninstall1 folder.
+        /// </summary>
+        [RepositoryFolder("6ae39e09-c117-4074-a8ec-89b26fe58fad")]
+        public virtual DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder NotepadPlusPlusV786Uninstall1
+        {
+            get { return _notepadplusplusv786uninstall1; }
+        }
+
+        /// <summary>
+        /// The DownloadsNotepadPlusPlus folder.
+        /// </summary>
+        [RepositoryFolder("ebd13ecd-b78c-4a63-bb86-8fb87872759e")]
+        public virtual DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder DownloadsNotepadPlusPlus
+        {
+            get { return _downloadsnotepadplusplus; }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlus786ReleaseNotepadP folder.
+        /// </summary>
+        [RepositoryFolder("5bf747e1-1f5d-4959-a60f-a6c46e74f68d")]
+        public virtual DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder NotepadPlusPlus786ReleaseNotepadP
+        {
+            get { return _notepadplusplus786releasenotepadp; }
+        }
+
+        /// <summary>
+        /// The InstallerLanguage folder.
+        /// </summary>
+        [RepositoryFolder("07f946ec-20c5-4170-a004-b1f999572c04")]
+        public virtual DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder InstallerLanguage
+        {
+            get { return _installerlanguage; }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlusV786Setup folder.
+        /// </summary>
+        [RepositoryFolder("26f35ee2-0395-40de-ae09-7328f6846f54")]
+        public virtual DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder NotepadPlusPlusV786Setup
+        {
+            get { return _notepadplusplusv786setup; }
+        }
+
+        /// <summary>
+        /// The CProgramFilesNotepadPlusPlusChange folder.
+        /// </summary>
+        [RepositoryFolder("45ddef09-d6e5-41dd-9a00-48635b5f1562")]
+        public virtual DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder CProgramFilesNotepadPlusPlusChange
+        {
+            get { return _cprogramfilesnotepadpluspluschange; }
+        }
     }
 
     /// <summary>
@@ -68,6 +189,966 @@ namespace DesktopApp_Modules
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class DesktopApp_ModulesRepositoryFolders
     {
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("10fee342-2ada-4302-87dc-b3a55c23760a")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _text4101Info;
+            RepoItemInfo _notepadplusplusafreegnusourcecoInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "10fee342-2ada-4302-87dc-b3a55c23760a", "")
+            {
+                _text4101Info = new RepoItemInfo(this, "Text4101", "?/?/text[@controlid='4101']", 30000, null, "4f9f4c88-a097-4212-9592-0e09f35ce4c2");
+                _notepadplusplusafreegnusourcecoInfo = new RepoItemInfo(this, "NotepadPlusPlusAFreeGNUSourceCo", "container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[21]", 30000, null, "56709342-70dd-4f6c-a0dc-6eca0d9b598c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("10fee342-2ada-4302-87dc-b3a55c23760a")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("10fee342-2ada-4302-87dc-b3a55c23760a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text4101 item.
+            /// </summary>
+            [RepositoryItem("4f9f4c88-a097-4212-9592-0e09f35ce4c2")]
+            public virtual Ranorex.Text Text4101
+            {
+                get
+                {
+                    return _text4101Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text4101 item info.
+            /// </summary>
+            [RepositoryItemInfo("4f9f4c88-a097-4212-9592-0e09f35ce4c2")]
+            public virtual RepoItemInfo Text4101Info
+            {
+                get
+                {
+                    return _text4101Info;
+                }
+            }
+
+            /// <summary>
+            /// The NotepadPlusPlusAFreeGNUSourceCo item.
+            /// </summary>
+            [RepositoryItem("56709342-70dd-4f6c-a0dc-6eca0d9b598c")]
+            public virtual Ranorex.Button NotepadPlusPlusAFreeGNUSourceCo
+            {
+                get
+                {
+                    return _notepadplusplusafreegnusourcecoInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NotepadPlusPlusAFreeGNUSourceCo item info.
+            /// </summary>
+            [RepositoryItemInfo("56709342-70dd-4f6c-a0dc-6eca0d9b598c")]
+            public virtual RepoItemInfo NotepadPlusPlusAFreeGNUSourceCoInfo
+            {
+                get
+                {
+                    return _notepadplusplusafreegnusourcecoInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ControlPanelAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9a1be1cb-8128-4372-9e7f-ea6fba3812b3")]
+        public partial class ControlPanelAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tasklinkInfo;
+
+            /// <summary>
+            /// Creates a new ControlPanel  folder.
+            /// </summary>
+            public ControlPanelAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ControlPanel", "/form[@title='Control Panel']", parentFolder, 30000, null, true, "9a1be1cb-8128-4372-9e7f-ea6fba3812b3", "")
+            {
+                _tasklinkInfo = new RepoItemInfo(this, "Tasklink", ".//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']", 30000, null, "cc723430-0638-47a6-be70-93238dd98562");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9a1be1cb-8128-4372-9e7f-ea6fba3812b3")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9a1be1cb-8128-4372-9e7f-ea6fba3812b3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tasklink item.
+            /// </summary>
+            [RepositoryItem("cc723430-0638-47a6-be70-93238dd98562")]
+            public virtual Ranorex.Link Tasklink
+            {
+                get
+                {
+                    return _tasklinkInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Tasklink item info.
+            /// </summary>
+            [RepositoryItemInfo("cc723430-0638-47a6-be70-93238dd98562")]
+            public virtual RepoItemInfo TasklinkInfo
+            {
+                get
+                {
+                    return _tasklinkInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ProgramsAndFeaturesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2b77e709-7db2-4b70-8e93-ee0aaefdb420")]
+        public partial class ProgramsAndFeaturesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _notepadplusplus64bitx64Info;
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new ProgramsAndFeatures  folder.
+            /// </summary>
+            public ProgramsAndFeaturesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ProgramsAndFeatures", "/form[@title='Programs and Features']", parentFolder, 30000, null, true, "2b77e709-7db2-4b70-8e93-ee0aaefdb420", "")
+            {
+                _notepadplusplus64bitx64Info = new RepoItemInfo(this, "NotepadPlusPlus64BitX64", ".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']", 30000, null, "0227c8ad-f286-4279-9855-3fdb5c910f33");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "c8c597eb-8417-4a5c-98d3-c91cb54b136c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2b77e709-7db2-4b70-8e93-ee0aaefdb420")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2b77e709-7db2-4b70-8e93-ee0aaefdb420")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NotepadPlusPlus64BitX64 item.
+            /// </summary>
+            [RepositoryItem("0227c8ad-f286-4279-9855-3fdb5c910f33")]
+            public virtual Ranorex.Cell NotepadPlusPlus64BitX64
+            {
+                get
+                {
+                    return _notepadplusplus64bitx64Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NotepadPlusPlus64BitX64 item info.
+            /// </summary>
+            [RepositoryItemInfo("0227c8ad-f286-4279-9855-3fdb5c910f33")]
+            public virtual RepoItemInfo NotepadPlusPlus64BitX64Info
+            {
+                get
+                {
+                    return _notepadplusplus64bitx64Info;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("c8c597eb-8417-4a5c-98d3-c91cb54b136c")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("c8c597eb-8417-4a5c-98d3-c91cb54b136c")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Explorer1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b36e0940-9774-4635-a077-455aeecbf069")]
+        public partial class Explorer1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _uninstallInfo;
+
+            /// <summary>
+            /// Creates a new Explorer1  folder.
+            /// </summary>
+            public Explorer1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer1", "/contextmenu[@processname='explorer']", parentFolder, 30000, null, false, "b36e0940-9774-4635-a077-455aeecbf069", "")
+            {
+                _uninstallInfo = new RepoItemInfo(this, "Uninstall", "?/?/menuitem[@accessiblename='Uninstall']", 30000, null, "254fea72-1350-4535-b1e5-1feb4df712e9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b36e0940-9774-4635-a077-455aeecbf069")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b36e0940-9774-4635-a077-455aeecbf069")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Uninstall item.
+            /// </summary>
+            [RepositoryItem("254fea72-1350-4535-b1e5-1feb4df712e9")]
+            public virtual Ranorex.MenuItem Uninstall
+            {
+                get
+                {
+                    return _uninstallInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Uninstall item info.
+            /// </summary>
+            [RepositoryItemInfo("254fea72-1350-4535-b1e5-1feb4df712e9")]
+            public virtual RepoItemInfo UninstallInfo
+            {
+                get
+                {
+                    return _uninstallInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlusV786UninstallAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ce1c3d5a-7559-4bcc-9377-531b3c03b585")]
+        public partial class NotepadPlusPlusV786UninstallAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonuninstallInfo;
+            RepoItemInfo _buttoncloseInfo;
+
+            /// <summary>
+            /// Creates a new NotepadPlusPlusV786Uninstall  folder.
+            /// </summary>
+            public NotepadPlusPlusV786UninstallAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NotepadPlusPlusV786Uninstall", "/form[@title>'Notepad++ v7.8.6 Uninstall']", parentFolder, 30000, null, true, "ce1c3d5a-7559-4bcc-9377-531b3c03b585", "")
+            {
+                _buttonuninstallInfo = new RepoItemInfo(this, "ButtonUninstall", "button[@text='&Uninstall']", 30000, null, "bc9b1712-2937-49c3-b3e5-2fb6b8edd364");
+                _buttoncloseInfo = new RepoItemInfo(this, "ButtonClose", "button[@text='&Close']", 30000, null, "3c38e0b9-7930-4f61-b90b-13e50d0742b5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ce1c3d5a-7559-4bcc-9377-531b3c03b585")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ce1c3d5a-7559-4bcc-9377-531b3c03b585")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonUninstall item.
+            /// </summary>
+            [RepositoryItem("bc9b1712-2937-49c3-b3e5-2fb6b8edd364")]
+            public virtual Ranorex.Button ButtonUninstall
+            {
+                get
+                {
+                    return _buttonuninstallInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonUninstall item info.
+            /// </summary>
+            [RepositoryItemInfo("bc9b1712-2937-49c3-b3e5-2fb6b8edd364")]
+            public virtual RepoItemInfo ButtonUninstallInfo
+            {
+                get
+                {
+                    return _buttonuninstallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClose item.
+            /// </summary>
+            [RepositoryItem("3c38e0b9-7930-4f61-b90b-13e50d0742b5")]
+            public virtual Ranorex.Button ButtonClose
+            {
+                get
+                {
+                    return _buttoncloseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClose item info.
+            /// </summary>
+            [RepositoryItemInfo("3c38e0b9-7930-4f61-b90b-13e50d0742b5")]
+            public virtual RepoItemInfo ButtonCloseInfo
+            {
+                get
+                {
+                    return _buttoncloseInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlusV786Uninstall1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6ae39e09-c117-4074-a8ec-89b26fe58fad")]
+        public partial class NotepadPlusPlusV786Uninstall1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnoInfo;
+
+            /// <summary>
+            /// Creates a new NotepadPlusPlusV786Uninstall1  folder.
+            /// </summary>
+            public NotepadPlusPlusV786Uninstall1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NotepadPlusPlusV786Uninstall1", "/form[@title>'Notepad++ v7.8.6 Uninstal']", parentFolder, 30000, null, true, "6ae39e09-c117-4074-a8ec-89b26fe58fad", "")
+            {
+                _buttonnoInfo = new RepoItemInfo(this, "ButtonNo", "button[@text='&No']", 30000, null, "36de699f-a132-49ba-8ec0-06e7c7f1da98");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6ae39e09-c117-4074-a8ec-89b26fe58fad")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6ae39e09-c117-4074-a8ec-89b26fe58fad")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNo item.
+            /// </summary>
+            [RepositoryItem("36de699f-a132-49ba-8ec0-06e7c7f1da98")]
+            public virtual Ranorex.Button ButtonNo
+            {
+                get
+                {
+                    return _buttonnoInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNo item info.
+            /// </summary>
+            [RepositoryItemInfo("36de699f-a132-49ba-8ec0-06e7c7f1da98")]
+            public virtual RepoItemInfo ButtonNoInfo
+            {
+                get
+                {
+                    return _buttonnoInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DownloadsNotepadPlusPlusAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ebd13ecd-b78c-4a63-bb86-8fb87872759e")]
+        public partial class DownloadsNotepadPlusPlusAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _atagnotepadplusplus786rInfo;
+            RepoItemInfo _installerInfo;
+            RepoItemInfo _atagnotepadplusplus786r1Info;
+
+            /// <summary>
+            /// Creates a new DownloadsNotepadPlusPlus  folder.
+            /// </summary>
+            public DownloadsNotepadPlusPlusAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DownloadsNotepadPlusPlus", "/dom[@domain='notepad-plus-plus.org']", parentFolder, 30000, null, false, "ebd13ecd-b78c-4a63-bb86-8fb87872759e", "")
+            {
+                _atagnotepadplusplus786rInfo = new RepoItemInfo(this, "ATagNotepadPlusPlus786R", ".//main[#'main']/ul/li[1]", 30000, null, "5e7c12b6-09af-4c9c-983c-2a3f70c47d9c");
+                _installerInfo = new RepoItemInfo(this, "Installer", ".//main[#'main']/ul[2]/?/?/a[@innertext='Installer']", 30000, null, "5461a5b6-1dac-4bd8-a7ba-849ea5bc29da");
+                _atagnotepadplusplus786r1Info = new RepoItemInfo(this, "ATagNotepadPlusPlus786R1", ".//main[#'main']/ul//a[1]", 30000, null, "697fd51b-23d0-45f9-9536-78b74fe5cb25");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ebd13ecd-b78c-4a63-bb86-8fb87872759e")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ebd13ecd-b78c-4a63-bb86-8fb87872759e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ATagNotepadPlusPlus786R item.
+            /// </summary>
+            [RepositoryItem("5e7c12b6-09af-4c9c-983c-2a3f70c47d9c")]
+            public virtual Ranorex.LiTag ATagNotepadPlusPlus786R
+            {
+                get
+                {
+                    return _atagnotepadplusplus786rInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ATagNotepadPlusPlus786R item info.
+            /// </summary>
+            [RepositoryItemInfo("5e7c12b6-09af-4c9c-983c-2a3f70c47d9c")]
+            public virtual RepoItemInfo ATagNotepadPlusPlus786RInfo
+            {
+                get
+                {
+                    return _atagnotepadplusplus786rInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Installer item.
+            /// </summary>
+            [RepositoryItem("5461a5b6-1dac-4bd8-a7ba-849ea5bc29da")]
+            public virtual Ranorex.ATag Installer
+            {
+                get
+                {
+                    return _installerInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Installer item info.
+            /// </summary>
+            [RepositoryItemInfo("5461a5b6-1dac-4bd8-a7ba-849ea5bc29da")]
+            public virtual RepoItemInfo InstallerInfo
+            {
+                get
+                {
+                    return _installerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ATagNotepadPlusPlus786R1 item.
+            /// </summary>
+            [RepositoryItem("697fd51b-23d0-45f9-9536-78b74fe5cb25")]
+            public virtual Ranorex.ATag ATagNotepadPlusPlus786R1
+            {
+                get
+                {
+                    return _atagnotepadplusplus786r1Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ATagNotepadPlusPlus786R1 item info.
+            /// </summary>
+            [RepositoryItemInfo("697fd51b-23d0-45f9-9536-78b74fe5cb25")]
+            public virtual RepoItemInfo ATagNotepadPlusPlus786R1Info
+            {
+                get
+                {
+                    return _atagnotepadplusplus786r1Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlus786ReleaseNotepadPAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5bf747e1-1f5d-4959-a60f-a6c46e74f68d")]
+        public partial class NotepadPlusPlus786ReleaseNotepadPAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnpp786installerx646exeInfo;
+            RepoItemInfo _paneInfo;
+
+            /// <summary>
+            /// Creates a new NotepadPlusPlus786ReleaseNotepadP  folder.
+            /// </summary>
+            public NotepadPlusPlus786ReleaseNotepadPAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NotepadPlusPlus786ReleaseNotepadP", "/form[@title>'Notepad++ 7.8.6 release |']", parentFolder, 30000, null, true, "5bf747e1-1f5d-4959-a60f-a6c46e74f68d", "")
+            {
+                _buttonnpp786installerx646exeInfo = new RepoItemInfo(this, "ButtonNpp786InstallerX646Exe", "container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']", 30000, null, "c47b9956-a952-4255-9d62-7dc3b67f46a1");
+                _paneInfo = new RepoItemInfo(this, "Pane", "container[@accessiblename>'Notepad++ 7.8.6 release |']/container/container[2]/container[1]", 30000, null, "a628bb3f-5a18-4593-bfd5-e4d087782f7b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5bf747e1-1f5d-4959-a60f-a6c46e74f68d")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5bf747e1-1f5d-4959-a60f-a6c46e74f68d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNpp786InstallerX646Exe item.
+            /// </summary>
+            [RepositoryItem("c47b9956-a952-4255-9d62-7dc3b67f46a1")]
+            public virtual Ranorex.Button ButtonNpp786InstallerX646Exe
+            {
+                get
+                {
+                    return _buttonnpp786installerx646exeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNpp786InstallerX646Exe item info.
+            /// </summary>
+            [RepositoryItemInfo("c47b9956-a952-4255-9d62-7dc3b67f46a1")]
+            public virtual RepoItemInfo ButtonNpp786InstallerX646ExeInfo
+            {
+                get
+                {
+                    return _buttonnpp786installerx646exeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Pane item.
+            /// </summary>
+            [RepositoryItem("a628bb3f-5a18-4593-bfd5-e4d087782f7b")]
+            public virtual Ranorex.Container Pane
+            {
+                get
+                {
+                    return _paneInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Pane item info.
+            /// </summary>
+            [RepositoryItemInfo("a628bb3f-5a18-4593-bfd5-e4d087782f7b")]
+            public virtual RepoItemInfo PaneInfo
+            {
+                get
+                {
+                    return _paneInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The InstallerLanguageAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("07f946ec-20c5-4170-a004-b1f999572c04")]
+        public partial class InstallerLanguageAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new InstallerLanguage  folder.
+            /// </summary>
+            public InstallerLanguageAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("InstallerLanguage", "/form[@title='Installer Language']", parentFolder, 30000, null, true, "07f946ec-20c5-4170-a004-b1f999572c04", "")
+            {
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "a8754ebe-35b0-4e5f-a8a7-e92f47cd60d4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("07f946ec-20c5-4170-a004-b1f999572c04")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("07f946ec-20c5-4170-a004-b1f999572c04")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("a8754ebe-35b0-4e5f-a8a7-e92f47cd60d4")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("a8754ebe-35b0-4e5f-a8a7-e92f47cd60d4")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NotepadPlusPlusV786SetupAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("26f35ee2-0395-40de-ae09-7328f6846f54")]
+        public partial class NotepadPlusPlusV786SetupAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnextInfo;
+            RepoItemInfo _iagreeInfo;
+            RepoItemInfo _buttoninstallInfo;
+            RepoItemInfo _buttonfinishInfo;
+
+            /// <summary>
+            /// Creates a new NotepadPlusPlusV786Setup  folder.
+            /// </summary>
+            public NotepadPlusPlusV786SetupAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NotepadPlusPlusV786Setup", "/form[@title='Notepad++ v7.8.6 Setup']", parentFolder, 30000, null, true, "26f35ee2-0395-40de-ae09-7328f6846f54", "")
+            {
+                _buttonnextInfo = new RepoItemInfo(this, "ButtonNext", "button[@text='&Next >']", 30000, null, "eff53f5c-b839-448d-af24-8d4324f200e4");
+                _iagreeInfo = new RepoItemInfo(this, "IAgree", "button[@text='I &Agree']", 30000, null, "1184adbb-e2d2-419b-950b-8ca123e6a4d2");
+                _buttoninstallInfo = new RepoItemInfo(this, "ButtonInstall", "button[@text='&Install']", 30000, null, "152359dc-1124-4553-a903-de362014a817");
+                _buttonfinishInfo = new RepoItemInfo(this, "ButtonFinish", "button[@text='&Finish']", 30000, null, "66c0a68c-bff9-4550-9321-f7c81f4ae82f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("26f35ee2-0395-40de-ae09-7328f6846f54")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("26f35ee2-0395-40de-ae09-7328f6846f54")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNext item.
+            /// </summary>
+            [RepositoryItem("eff53f5c-b839-448d-af24-8d4324f200e4")]
+            public virtual Ranorex.Button ButtonNext
+            {
+                get
+                {
+                    return _buttonnextInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNext item info.
+            /// </summary>
+            [RepositoryItemInfo("eff53f5c-b839-448d-af24-8d4324f200e4")]
+            public virtual RepoItemInfo ButtonNextInfo
+            {
+                get
+                {
+                    return _buttonnextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IAgree item.
+            /// </summary>
+            [RepositoryItem("1184adbb-e2d2-419b-950b-8ca123e6a4d2")]
+            public virtual Ranorex.Button IAgree
+            {
+                get
+                {
+                    return _iagreeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IAgree item info.
+            /// </summary>
+            [RepositoryItemInfo("1184adbb-e2d2-419b-950b-8ca123e6a4d2")]
+            public virtual RepoItemInfo IAgreeInfo
+            {
+                get
+                {
+                    return _iagreeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonInstall item.
+            /// </summary>
+            [RepositoryItem("152359dc-1124-4553-a903-de362014a817")]
+            public virtual Ranorex.Button ButtonInstall
+            {
+                get
+                {
+                    return _buttoninstallInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonInstall item info.
+            /// </summary>
+            [RepositoryItemInfo("152359dc-1124-4553-a903-de362014a817")]
+            public virtual RepoItemInfo ButtonInstallInfo
+            {
+                get
+                {
+                    return _buttoninstallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFinish item.
+            /// </summary>
+            [RepositoryItem("66c0a68c-bff9-4550-9321-f7c81f4ae82f")]
+            public virtual Ranorex.Button ButtonFinish
+            {
+                get
+                {
+                    return _buttonfinishInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFinish item info.
+            /// </summary>
+            [RepositoryItemInfo("66c0a68c-bff9-4550-9321-f7c81f4ae82f")]
+            public virtual RepoItemInfo ButtonFinishInfo
+            {
+                get
+                {
+                    return _buttonfinishInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CProgramFilesNotepadPlusPlusChangeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("45ddef09-d6e5-41dd-9a00-48635b5f1562")]
+        public partial class CProgramFilesNotepadPlusPlusChangeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new CProgramFilesNotepadPlusPlusChange  folder.
+            /// </summary>
+            public CProgramFilesNotepadPlusPlusChangeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CProgramFilesNotepadPlusPlusChange", "/form[@title>'C:\\Program Files\\Notepad++\\change.log']", parentFolder, 30000, null, true, "45ddef09-d6e5-41dd-9a00-48635b5f1562", "")
+            {
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "3eeea3b0-f8da-4fca-8cbf-2676b2504c88");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("45ddef09-d6e5-41dd-9a00-48635b5f1562")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("45ddef09-d6e5-41dd-9a00-48635b5f1562")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("3eeea3b0-f8da-4fca-8cbf-2676b2504c88")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("3eeea3b0-f8da-4fca-8cbf-2676b2504c88")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

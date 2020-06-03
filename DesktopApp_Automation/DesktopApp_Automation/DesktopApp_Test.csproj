@@ -134,20 +134,6 @@
     <None Include="app.config">
       <id>4ff98269-3636-458b-a89a-4fdb3cdf1fb8</id>
     </None>
-    <Content Include="TestCase001_DataSource1.csv">
-      <Link>TestCase001_DataSource1.csv</Link>
-      <BoundTo>2ef19a5a-3363-4dbd-85e2-22e91132d799</BoundTo>
-      <DependentUpon>DesktopApp_Test.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>4e8230e7-90b3-4622-ac23-6c4a2b93518f</id>
-    </Content>
-    <Content Include="TestCase001_DataSource.csv">
-      <Link>TestCase001_DataSource.csv</Link>
-      <BoundTo>2ef19a5a-3363-4dbd-85e2-22e91132d799</BoundTo>
-      <DependentUpon>DesktopApp_Test.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>9c5117d6-6ff6-4d2d-a554-faeaa4dc5c50</id>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DesktopApp_Test.rxtmg">
@@ -158,6 +144,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>2ef19a5a-3363-4dbd-85e2-22e91132d799</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopApp_Modules\DesktopApp_Modules.csproj">
+      <Project>{39EBB2BB-80A9-4F93-99C8-492F9160856E}</Project>
+      <Name>DesktopApp_Modules</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

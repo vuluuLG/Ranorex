@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8f31c4de-ebcc-435c-8313-ceb234fbf2d1"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenApp"
+	namespace="DesktopApp_Modules.ApplicationModules.GeneralApplication">
+	</codegen>
+	<variables>
+		<var
+		id="6b6e48c6-c4e6-4bc5-bdf9-8f8fd4795e16"
+		name="varFileLocation">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="varFileLocation">
+				</binding>
+			</bindings>
+			<filename>
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="ef30ac9a-a357-4910-917a-46d0e437f538"
+	name="DesktopApp_ModulesRepository"
+	relativepath="..\..\DesktopApp_ModulesRepository.rxrep">
+		<codegen
+		classname="DesktopApp_ModulesRepository"
+		namespace="DesktopApp_Modules">
+		</codegen>
+		<rootfolder
+		id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenApp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

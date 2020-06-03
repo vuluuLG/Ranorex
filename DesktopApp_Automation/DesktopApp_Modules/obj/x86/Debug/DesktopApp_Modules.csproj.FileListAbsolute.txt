@@ -1,0 +1,8 @@
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\obj\x86\Debug\DesktopApp_Modules.csprojResolveAssemblyReference.cache
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\DesktopApp_Modules.rxtmg
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\DesktopApp_Modules.xml
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\DesktopApp_Modules.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\DesktopApp_Modules.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\obj\x86\Debug\DesktopApp_Modules.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\obj\x86\Debug\DesktopApp_Modules.pdb

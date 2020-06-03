@@ -1,0 +1,1147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="1.3m"
+		durationms="75490"
+		type="root"
+		rid="218d747e7c38bf5c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="1"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="trang.duong"
+		rxversion="9.3.1.0"
+		host="LGVN181421"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="6/3/2020 2:38:50 PM"
+		timestampiso="2020-06-03T07:38:50"
+		endtime="6/3/2020 2:40:06 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="1.2m"
+			durationms="71542"
+			type="test-suite"
+			rid="ea7473e934e96f1"
+			totalerrorcount="0"
+			totalwarningcount="1"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="0"
+			totalblockedtestcasecount="0"
+			childsuccesscount="1"
+			childfailedcount="0"
+			childblockedcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="DesktopApp_Test"
+			headertext="DesktopApp_Test"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Success"
+				duration="1.2m"
+				durationms="71522"
+				type="smart-folder"
+				rid="1b0685c6ecb022cd"
+				totalerrorcount="0"
+				totalwarningcount="1"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="0"
+				totalblockedtestcasecount="0"
+				childsuccesscount="2"
+				childfailedcount="0"
+				childblockedcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="SmartFolder"
+				testcontainerid="64b27845-8550-467d-94e5-cbf8de636c14"
+				headertext="SmartFolder"
+				displayName="SmartFolder"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<params>
+					<param
+						name="varURL">
+						https://notepad-plus-plus.org/downloads/
+					</param>
+					<param
+						name="varBrowser">
+						Chrome
+					</param>
+					<param
+						name="varFileSetupName">
+						npp.7.8.6.Installer.x64
+					</param>
+					<param
+						name="varStartApp">
+						D:\npp.7.8.6.Installer.x64.exe
+					</param>
+					<param
+						name="varSoftwareName">
+						Notepad++ (64-bit x64)
+					</param>
+				</params>
+				<activity
+					result="Success"
+					duration="1m"
+					durationms="62556"
+					type="setup-container"
+					rid="184524e16ea9bfa"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="2"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="46.97s"
+						durationms="46966"
+						type="module-group"
+						rid="163e92ff2ad96448"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="4"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulegroupname="DownloadApp (DesktopApp_Modules)">
+						<detail>
+							Download app
+						</detail>
+						<activity
+							result="Success"
+							duration="524ms"
+							durationms="524"
+							type="test-module"
+							rid="13469d051af43c85"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="OpenBrowser (DesktopApp_Modules)"
+							displayName="OpenBrowser (DesktopApp_Modules)"
+							moduleid="1b1e3d2d-448e-4085-8df7-784fda86a7af"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+								<varbinding
+									name="varURL"
+									value="https://notepad-plus-plus.org/downloads/">
+								</varbinding>
+								<varbinding
+									name="varBrowser"
+									value="Chrome">
+								</varbinding>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:00.203"
+								timeRelativeToTestModuleStartTime="00:00.006"
+								timeWallClock="14:38:54"
+								time="00:00.203"
+								level="Info"
+								category="Data">
+								<message>
+									Current variable values:<br/>$varURL = 'https://notepad-plus-plus.org/downloads/', $varBrowser = 'Chrome'
+								</message>
+								<metainfo
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:00.241"
+								timeRelativeToTestModuleStartTime="00:00.044"
+								timeWallClock="14:38:54"
+								time="00:00.241"
+								level="Info"
+								category="Website">
+								<message>
+									Opening web site URL in variable $varURL with browser specified by variable $varBrowser in maximized mode.
+								</message>
+								<metainfo
+									itemindex="0"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Browser\OpenBrowser.cs"
+									codeline="108"
+									loglvl="Info">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Success"
+							duration="8.32s"
+							durationms="8321"
+							type="test-module"
+							rid="2955857a32c5c3a8"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="DownloadApp (DesktopApp_Modules)"
+							displayName="DownloadApp (DesktopApp_Modules)"
+							moduleid="a0a8fba5-6527-497e-9bc9-dfc7b3eb2a19"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:00.726"
+								timeRelativeToTestModuleStartTime="00:00.002"
+								timeWallClock="14:38:55"
+								time="00:00.726"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R1' at 175;18.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul//a[1]"
+									itempath=".//main[#'main']/ul//a[1]"
+									fullname="DesktopApp_ModulesRepository.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R1"
+									id="697fd51b23d045f9953678b74fe5cb25"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Browser\DownloadApp.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:03.930"
+								timeRelativeToTestModuleStartTime="00:03.207"
+								timeWallClock="14:38:58"
+								time="00:03.930"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at 58;10.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul[2]/?/?/a[@innertext='Installer']"
+									itempath=".//main[#'main']/ul[2]/?/?/a[@innertext='Installer']"
+									fullname="DesktopApp_ModulesRepository.DownloadsNotepadPlusPlus.Installer"
+									id="5461a5b61dac4bd8a7ba849ea5bc29da"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Browser\DownloadApp.cs"
+									codeline="86"
+									itemindex="1"
+									loglvl="Info">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Success"
+							duration="37.5s"
+							durationms="37497"
+							type="test-module"
+							rid="2cb24a75807a623a"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="ValidateDownloaded (DesktopApp_Modules)"
+							displayName="ValidateDownloaded (DesktopApp_Modules)"
+							moduleid="144d67cf-cecf-483d-86b0-7e38ef7c05c7"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+								<varbinding
+									name="varFileSetupName"
+									value="npp.7.8.6.Installer.x64">
+								</varbinding>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:09.048"
+								timeRelativeToTestModuleStartTime="00:00.000"
+								timeWallClock="14:39:03"
+								time="00:09.048"
+								level="Info"
+								category="Data">
+								<message>
+									Current variable values:<br/>$varFileSetupName = 'npp.7.8.6.Installer.x64'
+								</message>
+								<metainfo
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:09.084"
+								timeRelativeToTestModuleStartTime="00:00.036"
+								timeWallClock="14:39:03"
+								time="00:09.084"
+								level="Info"
+								category="Validation">
+								<message>
+									Validating AttributeContains (Text&gt;$varFileSetupName) on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe'.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'Notepad++ 7.8.6 release |']/container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+									itempath="container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+									fullname="DesktopApp_ModulesRepository.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe"
+									id="c47b9956a95242559d627dc3b67f46a1"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Browser\ValidateDownloaded.cs"
+									codeline="95"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:46.415"
+								timeRelativeToTestModuleStartTime="00:37.367"
+								timeWallClock="14:39:40"
+								time="00:46.415"
+								level="Success"
+								category="Validation">
+								<message>
+									Attribute 'Text' of element for item 'DesktopApp_ModulesRepository.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe' does contain the specified value.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'Notepad++ 7.8.6 release |']/container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+									itempath="container[@accessiblename>'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename>' npp.7.8.6.Installer.x64']"
+									fullname="DesktopApp_ModulesRepository.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe"
+									id="c47b9956a95242559d627dc3b67f46a1"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Browser\ValidateDownloaded.cs"
+									codeline="96"
+									loglvl="Success"
+									itemindex="0">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Success"
+							duration="442ms"
+							durationms="442"
+							type="test-module"
+							rid="7087e513513416a"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="CloseBrowser (DesktopApp_Modules)"
+							displayName="CloseBrowser (DesktopApp_Modules)"
+							moduleid="47283911-64e5-4a77-bc97-7235700a7e95"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:46.546"
+								timeRelativeToTestModuleStartTime="00:00.000"
+								timeWallClock="14:39:41"
+								time="00:46.546"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'NotepadPlusPlus786ReleaseNotepadP.Pane' at 1264;14.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'Notepad++ 7.8.6 release |']/container[@accessiblename>'Notepad++ 7.8.6 release |']/container/container[2]/container[1]"
+									itempath="container[@accessiblename>'Notepad++ 7.8.6 release |']/container/container[2]/container[1]"
+									fullname="DesktopApp_ModulesRepository.NotepadPlusPlus786ReleaseNotepadP.Pane"
+									id="a628bb3f5a184593bfd5e4d087782f7b"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Browser\CloseBrowser.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+						</activity>
+					</activity>
+					<activity
+						result="Success"
+						duration="15.58s"
+						durationms="15580"
+						type="test-module"
+						rid="18dfab24f57c6243"
+						totalerrorcount="0"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulename="InstallApp (DesktopApp_Modules)"
+						displayName="InstallApp (DesktopApp_Modules)"
+						moduleid="b8406a47-926f-4564-98eb-5e8a4f178f34"
+						moduletype="Recording"
+						iteration="1"
+						activity-exectype="execute"
+						testentry-activity-type="testmodule">
+						<detail>
+							Install app
+						</detail>
+						<varbindings>
+							<varbinding
+								name="varStartApp"
+								value="D:\npp.7.8.6.Installer.x64.exe">
+							</varbinding>
+						</varbindings>
+						<item
+							timeRelativeToTestSuiteStartTime="00:46.993"
+							timeRelativeToTestModuleStartTime="00:00.000"
+							timeWallClock="14:39:41"
+							time="00:46.993"
+							level="Info"
+							category="Data">
+							<message>
+								Current variable values:<br/>$varStartApp = 'D:\npp.7.8.6.Installer.x64.exe'
+							</message>
+							<metainfo
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:47.027"
+							timeRelativeToTestModuleStartTime="00:00.034"
+							timeWallClock="14:39:41"
+							time="00:47.027"
+							level="Info"
+							category="Application">
+							<message>
+								Run application with file name from variable $varStartApp in normal mode. Return value bound to $varStartApp.
+							</message>
+							<metainfo
+								itemindex="0"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="95"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:56.522"
+							timeRelativeToTestModuleStartTime="00:09.530"
+							timeWallClock="14:39:51"
+							time="00:56.522"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'InstallerLanguage.ButtonOK' at 30;10.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Installer Language']/button[@text='OK']"
+								itempath="button[@text='OK']"
+								fullname="DesktopApp_ModulesRepository.InstallerLanguage.ButtonOK"
+								id="a8754ebe35b04e5fa8a7e92f47cd60d4"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="99"
+								itemindex="1"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:57.154"
+							timeRelativeToTestModuleStartTime="00:10.161"
+							timeWallClock="14:39:51"
+							time="00:57.154"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 30;9.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+								itempath="button[@text='&amp;Next >']"
+								fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup.ButtonNext"
+								id="eff53f5cb839448daf248d4324f200e4"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="103"
+								itemindex="2"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:57.720"
+							timeRelativeToTestModuleStartTime="00:10.727"
+							timeWallClock="14:39:52"
+							time="00:57.720"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'NotepadPlusPlusV786Setup.IAgree' at 30;9.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='I &amp;Agree']"
+								itempath="button[@text='I &amp;Agree']"
+								fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup.IAgree"
+								id="1184adbbe2d2419b950b8ca123e6a4d2"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="107"
+								itemindex="3"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:58.137"
+							timeRelativeToTestModuleStartTime="00:11.145"
+							timeWallClock="14:39:52"
+							time="00:58.137"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 31;9.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+								itempath="button[@text='&amp;Next >']"
+								fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup.ButtonNext"
+								id="eff53f5cb839448daf248d4324f200e4"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="111"
+								itemindex="4"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:58.569"
+							timeRelativeToTestModuleStartTime="00:11.577"
+							timeWallClock="14:39:53"
+							time="00:58.569"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 31;9.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+								itempath="button[@text='&amp;Next >']"
+								fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup.ButtonNext"
+								id="eff53f5cb839448daf248d4324f200e4"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="115"
+								itemindex="5"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:58.986"
+							timeRelativeToTestModuleStartTime="00:11.993"
+							timeWallClock="14:39:53"
+							time="00:58.986"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonInstall' at 31;9.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Install']"
+								itempath="button[@text='&amp;Install']"
+								fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup.ButtonInstall"
+								id="152359dc11244553a903de362014a817"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="119"
+								itemindex="6"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="00:59.402"
+							timeRelativeToTestModuleStartTime="00:12.410"
+							timeWallClock="14:39:53"
+							time="00:59.402"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonFinish' at 31;9.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Finish']"
+								itempath="button[@text='&amp;Finish']"
+								fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup.ButtonFinish"
+								id="66c0a68cbff945509321f7c81f4ae82f"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="123"
+								itemindex="7"
+								loglvl="Info">
+							</metainfo>
+						</item>
+						<item
+							timeRelativeToTestSuiteStartTime="01:00.669"
+							timeRelativeToTestModuleStartTime="00:13.677"
+							timeWallClock="14:39:55"
+							time="01:00.669"
+							level="Info"
+							category="Mouse">
+							<message>
+								Mouse Left Click item 'CProgramFilesNotepadPlusPlusChange.Close' at 29;18.
+							</message>
+							<metainfo
+								type="repoitem"
+								path="/form[@title>'C:\Program Files\Notepad++\change.log']/?/?/button[@accessiblename='Close']"
+								itempath="?/?/button[@accessiblename='Close']"
+								fullname="DesktopApp_ModulesRepository.CProgramFilesNotepadPlusPlusChange.Close"
+								id="3eeea3b0f8da4fca8cbf2676b2504c88"
+								timeout="60000"
+								codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\InstallApp.cs"
+								codeline="127"
+								itemindex="8"
+								loglvl="Info">
+							</metainfo>
+						</item>
+					</activity>
+				</activity>
+				<activity
+					result="Success"
+					duration="8.96s"
+					durationms="8960"
+					type="teardown-container"
+					rid="6db37900202a030"
+					totalerrorcount="0"
+					totalwarningcount="1"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="1"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0">
+					<activity
+						result="Success"
+						duration="8.96s"
+						durationms="8960"
+						type="module-group"
+						rid="185f095587ca6bf5"
+						totalerrorcount="0"
+						totalwarningcount="1"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="4"
+						childfailedcount="0"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulegroupname="UninstallApp (DesktopApp_Modules)">
+						<detail>
+							Uninstall app
+						</detail>
+						<activity
+							result="Success"
+							duration="2.66s"
+							durationms="2663"
+							type="test-module"
+							rid="57ac5fc424ef138"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="OpenControlPanel (DesktopApp_Modules)"
+							displayName="OpenControlPanel (DesktopApp_Modules)"
+							moduleid="20da548e-0ca7-4fcb-b121-e4913fb1db5a"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="01:02.591"
+								timeRelativeToTestModuleStartTime="00:00.001"
+								timeWallClock="14:39:57"
+								time="01:02.591"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'Explorer.Text4101' at 123;16.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/menubar[@processname='explorer']/?/?/text[@controlid='4101']"
+									itempath="?/?/text[@controlid='4101']"
+									fullname="DesktopApp_ModulesRepository.Explorer.Text4101"
+									id="4f9f4c88a097421295920e09f35ce4c2"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:03.284"
+								timeRelativeToTestModuleStartTime="00:00.695"
+								timeWallClock="14:39:57"
+								time="01:03.284"
+								level="Info"
+								category="Keyboard">
+								<message>
+									Key sequence 'Control Panel'.
+								</message>
+								<metainfo
+									itemindex="1"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="86"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:03.779"
+								timeRelativeToTestModuleStartTime="00:01.190"
+								timeWallClock="14:39:58"
+								time="01:03.779"
+								level="Info"
+								category="Keyboard">
+								<message>
+									Key sequence '{Return}'.
+								</message>
+								<metainfo
+									itemindex="2"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="90"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:03.993"
+								timeRelativeToTestModuleStartTime="00:01.404"
+								timeWallClock="14:39:58"
+								time="01:03.993"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'ControlPanel.Tasklink' at 71;4.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Control Panel']//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+									itempath=".//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+									fullname="DesktopApp_ModulesRepository.ControlPanel.Tasklink"
+									id="cc723430063847a6be7093238dd98562"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="94"
+									itemindex="3"
+									loglvl="Info">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Success"
+							duration="821ms"
+							durationms="821"
+							type="test-module"
+							rid="e0b4b9449bf3b20"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="ValidateInstalled (DesktopApp_Modules)"
+							displayName="ValidateInstalled (DesktopApp_Modules)"
+							moduleid="6b238876-72f3-40a2-97ba-4ecf35e8c515"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+								<varbinding
+									name="varSoftwareName"
+									value="Notepad++ (64-bit x64)">
+								</varbinding>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="01:05.254"
+								timeRelativeToTestModuleStartTime="00:00.000"
+								timeWallClock="14:39:59"
+								time="01:05.254"
+								level="Info"
+								category="Data">
+								<message>
+									Current variable values:<br/>$varSoftwareName = 'Notepad++ (64-bit x64)'
+								</message>
+								<metainfo
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:05.287"
+								timeRelativeToTestModuleStartTime="00:00.033"
+								timeWallClock="14:39:59"
+								time="01:05.287"
+								level="Info"
+								category="Validation">
+								<message>
+									Validating AttributeEqual (Text=$varSoftwareName) on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+									id="0227c8adf286427998553fdb5c910f33"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\ValidateInstalled.cs"
+									codeline="95"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:05.936"
+								timeRelativeToTestModuleStartTime="00:00.682"
+								timeWallClock="14:40:00"
+								time="01:05.936"
+								level="Success"
+								category="Validation">
+								<message>
+									Attribute 'Text' of element for item 'DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64' does match the specified value.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+									id="0227c8adf286427998553fdb5c910f33"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\ValidateInstalled.cs"
+									codeline="96"
+									loglvl="Success"
+									itemindex="0">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Success"
+							duration="4.89s"
+							durationms="4889"
+							type="test-module"
+							rid="fb4209230584a87"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="UninstallApp (DesktopApp_Modules)"
+							displayName="UninstallApp (DesktopApp_Modules)"
+							moduleid="bcf63e84-8b93-4423-b0c1-45fbe12d487c"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="01:06.079"
+								timeRelativeToTestModuleStartTime="00:00.003"
+								timeWallClock="14:40:00"
+								time="01:06.079"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Right Click item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64' at 80;10.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+									id="0227c8adf286427998553fdb5c910f33"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\UninstallApp.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:06.787"
+								timeRelativeToTestModuleStartTime="00:00.710"
+								timeWallClock="14:40:01"
+								time="01:06.787"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'Explorer1.Uninstall' at 50;15.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/contextmenu[@processname='explorer']/?/?/menuitem[@accessiblename='Uninstall']"
+									itempath="?/?/menuitem[@accessiblename='Uninstall']"
+									fullname="DesktopApp_ModulesRepository.Explorer1.Uninstall"
+									id="254fea7213504535b1e51feb4df712e9"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\UninstallApp.cs"
+									codeline="86"
+									itemindex="1"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:07.368"
+								timeRelativeToTestModuleStartTime="00:01.291"
+								timeWallClock="14:40:01"
+								time="01:07.368"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonUninstall' at 23;15.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Uninstall']"
+									itempath="button[@text='&amp;Uninstall']"
+									fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Uninstall.ButtonUninstall"
+									id="bc9b1712293749c3b3e52fb6b8edd364"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\UninstallApp.cs"
+									codeline="90"
+									itemindex="2"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:08.401"
+								timeRelativeToTestModuleStartTime="00:02.324"
+								timeWallClock="14:40:02"
+								time="01:08.401"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'NotepadPlusPlusV786Uninstall1.ButtonNo' at 36;14.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'Notepad++ v7.8.6 Uninstal']/button[@text='&amp;No']"
+									itempath="button[@text='&amp;No']"
+									fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Uninstall1.ButtonNo"
+									id="36de699fa13249ba8ec006e7c7f1da98"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\UninstallApp.cs"
+									codeline="94"
+									itemindex="3"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:10.534"
+								timeRelativeToTestModuleStartTime="00:04.457"
+								timeWallClock="14:40:05"
+								time="01:10.534"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonClose' at 46;10.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Close']"
+									itempath="button[@text='&amp;Close']"
+									fullname="DesktopApp_ModulesRepository.NotepadPlusPlusV786Uninstall.ButtonClose"
+									id="3c38e0b979304f61b90b13e50d0742b5"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\UninstallApp.cs"
+									codeline="98"
+									itemindex="4"
+									loglvl="Info">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Success"
+							duration="564ms"
+							durationms="564"
+							type="test-module"
+							rid="29bc90427f1f49a"
+							totalerrorcount="0"
+							totalwarningcount="1"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="CloseControlPanel (DesktopApp_Modules)"
+							displayName="CloseControlPanel (DesktopApp_Modules)"
+							moduleid="010e7db4-1e3b-41ae-ae10-4d2a1e4091ce"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="01:10.971"
+								timeRelativeToTestModuleStartTime="00:00.000"
+								timeWallClock="14:40:05"
+								time="01:10.971"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'ProgramsAndFeatures.Close' at 15;-1.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Programs and Features']/?/?/button[@accessiblename='Close']"
+									itempath="?/?/button[@accessiblename='Close']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.Close"
+									id="c8c597eb84174a5c98d3c91cb54b136c"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\CloseControlPanel.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="01:11.141"
+								timeRelativeToTestModuleStartTime="00:00.171"
+								timeWallClock="14:40:05"
+								time="01:11.141"
+								level="Warn"
+								category="Click"
+								errimg="images_DesktopA_7fbd1f18\DesktopA_5debab3f_rxlog.jpg"
+								errthumb="images_DesktopA_7fbd1f18\DesktopA_5debab3f_rxlog_thumb.jpg">
+								<message>
+									The mouse action was performed outside the boundaries of the assigned UI element.<br/>
+								</message>
+								<metainfo
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\CloseControlPanel.cs"
+									codeline="83"
+									loglvl="Warn">
+								</metainfo>
+							</item>
+						</activity>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

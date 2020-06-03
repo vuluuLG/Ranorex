@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1079f995-3537-470e-a785-773b49ffa279"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DownloadApp"
+	namespace="DesktopApp_Modules.ApplicationModules.Chrome">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="150;11"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="880b4bd7-e2e5-479c-b6b4-ed74aa5f78c8"
+		sx="574"
+		sy="221"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5e7c12b6-09af-4c9c-983c-2a3f70c47d9c"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul/li[1]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a660cc2a-c4d4-4f38-b7ef-7cf766e56278"
+		sx="528"
+		sy="698"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5461a5b6-1dac-4bd8-a7ba-849ea5bc29da"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="470,688,71,23"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Installer
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v7.8.6/npp.7.8.6.Installer.x64.exe
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul[2]/?/?/a[@innertext='Installer']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="9ad48e57-6eb7-4f84-a948-a663f1f628b0">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="e682311e-f3e2-477b-8d29-861824fd3292"
+		waitaction="Exists"
+		waittimeout="100000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c47b9956-a952-4255-9d62-7dc3b67f46a1"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@title&gt;'Notepad++ 7.8.6 release |']/container[@accessiblename&gt;'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename&gt;' npp.7.8.6.Installer.x64']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="ef30ac9a-a357-4910-917a-46d0e437f538"
+	name="DesktopApp_ModulesRepository"
+	relativepath="..\..\DesktopApp_ModulesRepository.rxrep">
+		<codegen
+		classname="DesktopApp_ModulesRepository"
+		namespace="DesktopApp_Modules">
+		</codegen>
+		<rootfolder
+		id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DownloadApp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

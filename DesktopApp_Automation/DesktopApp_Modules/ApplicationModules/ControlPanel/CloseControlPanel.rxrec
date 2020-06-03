@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4c2d7051-ec98-482e-9852-1e9af3524fe0"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseControlPanel"
+	namespace="DesktopApp_Modules.ApplicationModules.ControlPanel">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="15;-1"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6e65b98c-3406-4ddf-9d43-16e03ce40d82"
+		sx="1247"
+		sy="7"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c8c597eb-8417-4a5c-98d3-c91cb54b136c"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="2"
+				prefcap="button"
+				rect="1232,8,56,14"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Closes the window
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title='Programs and Features']/?/?/button[@accessiblename='Close']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="863ebe78-790e-4544-adad-61dff549d3ae">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAnAGMDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+AAkAEk4A71ALpC2FGecDDLz+tSTgmCQAZJU8fhTJZN6gIrFty4ypA6j2oAlRg6Kw6MM0tNiUpEin
+qqgU6gDndVv4rzyvKVxszncB3x/hWfmpz/x4xf8AXR/5LUNc+r1PchGMFyoQMCSAeR1ozV+w05b2
+ymeMiO4SY7H9flXg+38qS5n+0h45VNvPCeY2PX8e59+9U4u1zGOITk42KOaM0tFTqdGhtW+s20Vv
+HGySkogU4A7D60Vo2X/HlB/1zX+VFapS7nkynSu/d/H/AIBNRSZP90/pRk/3T+lWc4tFJk/3T+lG
+T/dP6UALRSZP90/pRk/3T+lAHNQQiezVfPhjKyMSJHxnIX/Cl/s//p8tP+/v/wBatf8Asuy/59j/
+AN9n/Gj+y7L/AJ9j/wB9n/GsuRnoPFQvo39y/wAzOtL+LS4J4iyTyebuxGwxt2KScn/JPFNvFe/v
+GMktnF5Z/dsSyl4yMrz0I/qKuQ6XFLCkmyIblDYw/Gf+BU7+x4uM7DgBRnecAdh8/SqvpY5uaCnz
+Xf8AXzM3+z/+ny0/7+//AFqP7P8A+ny0/wC/v/1q0/7Ii/uxf98v/wDFUf2RF/di/wC+X/8Aiqix
+0/WY939y/wAyxb3FtFbxxtcwkogU4kHYUVjXUcVvcNF9nibbjnLjtn+9RV+8cz9i3e7/AA/zNxLl
+ZLjy4yCBndweCMU5WkeZwGQIhxjacnjPXNFFWYCfaoCJDv4j+/weKb9thMsaBs+YMg4P+fWiigCT
+z49obdwVLDjsKb9qh+T5/wDWHC8Hk9KKKAHRzxySOiNlk+8MHipKKKAM5VEv2KGUbomhLFT0YgLj
+PqOTSXRSynjeKMBY4ZWCLwP4fyooqFuNbj3nu4w6HynkCq4ZVIAGcHgnnH1FR/briV41tUWdfLV2
+cLgNknsWGOnvRRQhf1+RR1X/AJCMv4fyFFFFUgP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="ef30ac9a-a357-4910-917a-46d0e437f538"
+	name="DesktopApp_ModulesRepository"
+	relativepath="..\..\DesktopApp_ModulesRepository.rxrep">
+		<codegen
+		classname="DesktopApp_ModulesRepository"
+		namespace="DesktopApp_Modules">
+		</codegen>
+		<rootfolder
+		id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseControlPanel.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

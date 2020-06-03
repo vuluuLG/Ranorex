@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9a097a65-4066-42c4-9816-9c541e035607"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateDownloaded"
+	namespace="DesktopApp_Modules.ApplicationModules.Chrome">
+	</codegen>
+	<variables>
+		<var
+		id="2a7bc221-2d79-4cb4-80e1-a85d20d7adb9"
+		name="varFileSetupName">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="354948c7-af69-4b25-8393-9b96f9f471e4">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="varFileSetupName">
+				</binding>
+			</bindings>
+			<info
+			id="c47b9956-a952-4255-9d62-7dc3b67f46a1"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="4,936,227,48"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						&#32;npp.7.8.6.Installer.x64 (6).exe
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						press
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						&#32;npp.7.8.6.Installer.x64 (6).exe
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title&gt;'Notepad++ 7.8.6 release |']/container[@accessiblename&gt;'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename&gt;' npp.7.8.6.Installer.x64']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8b99bc88-f736-4b25-a510-bbc270522ed1">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAE6AW8DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKztY/wCXH/r8j/rWjWdrH/Lj/wBfkf8AWgDRooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKztY/5cf+vyP+taNZ2sf8uP/X5H/WgDRooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKztY/5cf8Ar8j/AK1o1nax/wAuP/X5H/WgDRooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKztY/5cf+vyP+taNZ2sf8uP8A1+R/1oA0aKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACs7WP8Alx/6/I/61o1nax/y4/8AX5H/AFoA0aKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACs7WP+XH/r8j/rWjWdrH/Lj/1+R/1oA0aKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACs7WP+XH/AK/I/wCtaNZ2sf8ALj/1+R/1oA0aKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACs7WP+XH/r8j/rWjWdrH/Lj/ANfkf9aANGiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigArO1j/AJcf+vyP+taNZ2sf8uP/AF+R/wBaANGiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigArO1j/lx/6/I/61o1nax/y4/9fkf9aANGiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+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
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="ef30ac9a-a357-4910-917a-46d0e437f538"
+	name="DesktopApp_ModulesRepository"
+	relativepath="..\..\DesktopApp_ModulesRepository.rxrep">
+		<codegen
+		classname="DesktopApp_ModulesRepository"
+		namespace="DesktopApp_Modules">
+		</codegen>
+		<rootfolder
+		id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateDownloaded.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

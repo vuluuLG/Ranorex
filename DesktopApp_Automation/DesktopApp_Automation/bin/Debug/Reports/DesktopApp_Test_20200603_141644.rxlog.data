@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="36.69s"
+		durationms="36685"
+		type="root"
+		rid="aadc0116ea1da40"
+		totalerrorcount="2"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="2"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="trang.duong"
+		rxversion="9.3.1.0"
+		host="LGVN181421"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="6/3/2020 2:16:44 PM"
+		timestampiso="2020-06-03T07:16:44"
+		endtime="6/3/2020 2:17:21 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="32.58s"
+			durationms="32577"
+			type="test-suite"
+			rid="e237394df3f54b4"
+			totalerrorcount="2"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="2"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="DesktopApp_Test"
+			headertext="DesktopApp_Test"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Failed"
+				duration="32.56s"
+				durationms="32559"
+				type="smart-folder"
+				rid="2c832c5b505e4e"
+				totalerrorcount="2"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="2"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="SmartFolder"
+				testcontainerid="64b27845-8550-467d-94e5-cbf8de636c14"
+				headertext="SmartFolder"
+				displayName="SmartFolder"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="32.55s"
+					durationms="32553"
+					type="test-case"
+					rid="3fbebafd78d2730"
+					totalerrorcount="2"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="1"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="2"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="1"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					testcontainername="TestCase001"
+					testcontainerid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					headertext="TestCase001"
+					displayName="TestCase001"
+					iteration="1"
+					activity-exectype="execute"
+					conditionstate="none">
+					<params>
+						<param
+							name="varStartApp">
+							D:\npp.7.8.6.Installer.x64.exe
+						</param>
+						<param
+							name="varSoftwareName">
+						</param>
+						<param
+							name="varURL">
+						</param>
+						<param
+							name="varBrowser">
+						</param>
+						<param
+							name="varFileSetupName">
+						</param>
+						<param
+							name="varFileLocation">
+							C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk
+						</param>
+					</params>
+					<detail>
+						Verify app: install/uninstall
+					</detail>
+					<activity
+						result="Failed"
+						duration="9.2s"
+						durationms="9199"
+						type="module-group"
+						rid="b88a74f3752a105"
+						totalerrorcount="1"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="1"
+						childfailedcount="1"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0"
+						modulegroupname="UninstallApp (DesktopApp_Modules)">
+						<detail>
+							Uninstall app
+						</detail>
+						<activity
+							result="Success"
+							duration="5.23s"
+							durationms="5225"
+							type="test-module"
+							rid="2bb4a2a6143f4174"
+							totalerrorcount="0"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="OpenControlPanel (DesktopApp_Modules)"
+							displayName="OpenControlPanel (DesktopApp_Modules)"
+							moduleid="20da548e-0ca7-4fcb-b121-e4913fb1db5a"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:00.217"
+								timeRelativeToTestModuleStartTime="00:00.014"
+								timeWallClock="14:16:49"
+								time="00:00.217"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'Explorer.Text4101' at 123;16.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/menubar[@processname='explorer']/?/?/text[@controlid='4101']"
+									itempath="?/?/text[@controlid='4101']"
+									fullname="DesktopApp_ModulesRepository.Explorer.Text4101"
+									id="4f9f4c88a097421295920e09f35ce4c2"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:03.362"
+								timeRelativeToTestModuleStartTime="00:03.160"
+								timeWallClock="14:16:52"
+								time="00:03.362"
+								level="Info"
+								category="Keyboard">
+								<message>
+									Key sequence 'Control Panel'.
+								</message>
+								<metainfo
+									itemindex="1"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="86"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:03.847"
+								timeRelativeToTestModuleStartTime="00:03.645"
+								timeWallClock="14:16:53"
+								time="00:03.847"
+								level="Info"
+								category="Keyboard">
+								<message>
+									Key sequence '{Return}'.
+								</message>
+								<metainfo
+									itemindex="2"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="90"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:04.075"
+								timeRelativeToTestModuleStartTime="00:03.873"
+								timeWallClock="14:16:53"
+								time="00:04.075"
+								level="Info"
+								category="Mouse">
+								<message>
+									Mouse Left Click item 'ControlPanel.Tasklink' at 71;4.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Control Panel']//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+									itempath=".//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']"
+									fullname="DesktopApp_ModulesRepository.ControlPanel.Tasklink"
+									id="cc723430063847a6be7093238dd98562"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\OpenControlPanel.cs"
+									codeline="94"
+									itemindex="3"
+									loglvl="Info">
+								</metainfo>
+							</item>
+						</activity>
+						<activity
+							result="Failed"
+							duration="3.79s"
+							durationms="3792"
+							type="test-module"
+							rid="dca2610d84244f8"
+							totalerrorcount="1"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="ValidateInstalled (DesktopApp_Modules)"
+							displayName="ValidateInstalled (DesktopApp_Modules)"
+							moduleid="6b238876-72f3-40a2-97ba-4ecf35e8c515"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<errormessage>
+								Attribute 'Text' of element for item 'DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64' does not match the specified value (actual='Notepad++·(64-bit·x64)', expected='').
+							</errormessage>
+							<varbindings>
+								<varbinding
+									name="varSoftwareName"
+									value="">
+								</varbinding>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:05.433"
+								timeRelativeToTestModuleStartTime="00:00.003"
+								timeWallClock="14:16:54"
+								time="00:05.433"
+								level="Info"
+								category="Data">
+								<message>
+									Current variable values:<br/>$varSoftwareName = ''
+								</message>
+								<metainfo
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:05.461"
+								timeRelativeToTestModuleStartTime="00:00.030"
+								timeWallClock="14:16:54"
+								time="00:05.461"
+								level="Info"
+								category="Validation"
+								errimg="images_DesktopA_e5284cb6\DesktopA_e5284cb6_450342a5_trace.jpg"
+								errthumb="images_DesktopA_e5284cb6\DesktopA_e5284cb6_450342a5_trace_thumb.jpg">
+								<message>
+									Validating AttributeEqual (Text=$varSoftwareName) on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+									id="0227c8adf286427998553fdb5c910f33"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\ValidateInstalled.cs"
+									codeline="95"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:09.107"
+								timeRelativeToTestModuleStartTime="00:03.677"
+								timeWallClock="14:16:58"
+								time="00:09.107"
+								level="Failure"
+								category="Validation"
+								errimg="images_DesktopA_e5284cb6\DesktopA_e5284cb6_bdb963c1_trace.jpg"
+								errthumb="images_DesktopA_e5284cb6\DesktopA_e5284cb6_bdb963c1_trace_thumb.jpg">
+								<message>
+									Attribute 'Text' of element for item 'DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64' does not match the specified value (actual='Notepad++·(64-bit·x64)', expected='').
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+									id="0227c8adf286427998553fdb5c910f33"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\ValidateInstalled.cs"
+									codeline="96"
+									loglvl="Failure"
+									itemindex="0">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:09.146"
+								timeRelativeToTestModuleStartTime="00:03.715"
+								timeWallClock="14:16:58"
+								time="00:09.146"
+								level="Error"
+								category="Module"
+								errimg="images_DesktopA_e5284cb6\DesktopA_e5284cb6_75178c89_trace.jpg"
+								errthumb="images_DesktopA_e5284cb6\DesktopA_e5284cb6_75178c89_trace_thumb.jpg">
+								<message>
+									Module execution was aborted because a validation step has failed. Attribute 'Text' of element for item 'DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64' does not match the specified value (actual='Notepad++·(64-bit·x64)', expected='').
+								</message>
+								<metainfo
+									stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DesktopApp_Modules.Page_modules.GeneralPage.ValidateInstalled.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\ValidateInstalled.cs:line 96
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\GeneralPage\ValidateInstalled.cs"
+									codeline="96"
+									type="repoitem"
+									path="/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									itempath=".//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+									fullname="DesktopApp_ModulesRepository.ProgramsAndFeatures.NotepadPlusPlus64BitX64"
+									id="0227c8adf286427998553fdb5c910f33"
+									timeout="60000"
+									loglvl="Error"
+									itemindex="0">
+								</metainfo>
+							</item>
+						</activity>
+					</activity>
+					<activity
+						result="Failed"
+						duration="23.35s"
+						durationms="23349"
+						type="teardown-container"
+						rid="3ee1fd4ebc31b40"
+						totalerrorcount="1"
+						totalwarningcount="0"
+						totalsuccesstestcasecount="0"
+						totalfailedtestcasecount="0"
+						totalblockedtestcasecount="0"
+						childsuccesscount="0"
+						childfailedcount="1"
+						childblockedcount="0"
+						totalsuccesscount="0"
+						totalfailedcount="0"
+						totalblockedcount="0"
+						totalmaintenancemodecount="0">
+						<activity
+							result="Failed"
+							duration="23.35s"
+							durationms="23345"
+							type="test-module"
+							rid="19847186649a029c"
+							totalerrorcount="1"
+							totalwarningcount="0"
+							totalsuccesstestcasecount="0"
+							totalfailedtestcasecount="0"
+							totalblockedtestcasecount="0"
+							childsuccesscount="0"
+							childfailedcount="0"
+							childblockedcount="0"
+							totalsuccesscount="0"
+							totalfailedcount="0"
+							totalblockedcount="0"
+							totalmaintenancemodecount="0"
+							modulename="CloseApp (DesktopApp_Modules)"
+							displayName="CloseApp (DesktopApp_Modules)"
+							moduleid="a472755a-fde8-4072-859d-a5f373948c57"
+							moduletype="Recording"
+							iteration="1"
+							activity-exectype="execute"
+							testentry-activity-type="testmodule">
+							<varbindings>
+							</varbindings>
+							<item
+								timeRelativeToTestSuiteStartTime="00:09.229"
+								timeRelativeToTestModuleStartTime="00:00.000"
+								timeWallClock="14:16:58"
+								time="00:09.229"
+								level="Info"
+								category="Application"
+								errimg="images_DesktopA_e5284cb6\DesktopA_e5284cb6_85d5da91_trace.jpg"
+								errthumb="images_DesktopA_e5284cb6\DesktopA_e5284cb6_85d5da91_trace_thumb.jpg">
+								<message>
+									Closing application containing item 'CProgramFilesNotepadPlusPlusChange.Close'.
+								</message>
+								<metainfo
+									type="repoitem"
+									path="/form[@title>'C:\Program Files\Notepad++\change.log']/?/?/button[@accessiblename='Close']"
+									itempath="?/?/button[@accessiblename='Close']"
+									fullname="DesktopApp_ModulesRepository.CProgramFilesNotepadPlusPlusChange.Close"
+									id="3eeea3b0f8da4fca8cbf2676b2504c88"
+									timeout="60000"
+									codefile="c:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\Page modules\BasePage\CloseApp.cs"
+									codeline="82"
+									itemindex="0"
+									loglvl="Info">
+								</metainfo>
+							</item>
+							<item
+								timeRelativeToTestSuiteStartTime="00:31.816"
+								timeRelativeToTestModuleStartTime="00:22.588"
+								timeWallClock="14:17:21"
+								time="00:31.816"
+								level="Error"
+								category="Module">
+								<message>
+									The test run has been aborted by the user.
+								</message>
+								<metainfo
+									loglvl="Error">
+								</metainfo>
+							</item>
+						</activity>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

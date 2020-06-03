@@ -323,7 +323,7 @@
 				</columnname>
 			</maskedcolumns>
 			<file>
-				TestCase001_DataSource.csv
+				..\..\TestCase001_DataSource.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -374,7 +374,7 @@
 				</columnname>
 			</maskedcolumns>
 			<file>
-				TestCase001_DataSource1.csv
+				..\..\TestCase001_DataSource1.csv
 			</file>
 		</DataSource>
 	</datasources>

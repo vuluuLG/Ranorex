@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a472755a-fde8-4072-859d-a5f373948c57"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseApp"
+	namespace="DesktopApp_Modules.ApplicationModules.Notepad">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bdc74d0a-139e-47a8-b56b-0de6054283e4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3eeea3b0-f8da-4fca-8cbf-2676b2504c88"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@title&gt;'C:\Program Files\Notepad++\change.log']/?/?/button[@accessiblename='Close']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ef30ac9a-a357-4910-917a-46d0e437f538"
+	name="DesktopApp_ModulesRepository"
+	relativepath="..\..\DesktopApp_ModulesRepository.rxrep">
+		<codegen
+		classname="DesktopApp_ModulesRepository"
+		namespace="DesktopApp_Modules">
+		</codegen>
+		<rootfolder
+		id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseApp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

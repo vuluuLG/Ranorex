@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DesktopApp_Modules</name>
+    </assembly>
+    <members>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser">
+             <summary>
+            The CloseBrowser recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.CloseBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp">
+             <summary>
+            The DownloadApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser">
+             <summary>
+            The OpenBrowser recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.varURL">
+            <summary>
+            Gets or sets the value of variable varURL.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.OpenBrowser.varBrowser">
+            <summary>
+            Gets or sets the value of variable varBrowser.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded">
+             <summary>
+            The ValidateDownloaded recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Chrome.ValidateDownloaded.varFileSetupName">
+            <summary>
+            Gets or sets the value of variable varFileSetupName.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel">
+             <summary>
+            The CloseControlPanel recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.ControlPanel.CloseControlPanel.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp">
+             <summary>
+            The UninstallApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled">
+             <summary>
+            The ValidateInstalled recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.ControlPanel.ValidateInstalled.varSoftwareName">
+            <summary>
+            Gets or sets the value of variable varSoftwareName.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp">
+             <summary>
+            The OpenApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenApp.varFileLocation">
+            <summary>
+            Gets or sets the value of variable varFileLocation.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel">
+             <summary>
+            The OpenControlPanel recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.GeneralApplication.OpenControlPanel.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp">
+             <summary>
+            The CloseApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Notepad.CloseApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp">
+             <summary>
+            The InstallApp recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.varStartApp">
+            <summary>
+            Gets or sets the value of variable varStartApp.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened">
+             <summary>
+            The ValidateAppOpened recording.
+             </summary>
+        </member>
+        <member name="F:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.repo">
+            <summary>
+            Holds an instance of the global::DesktopApp_Modules.DesktopApp_ModulesRepository repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.ApplicationModules.Notepad.ValidateAppOpened.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepository">
+            <summary>
+            The class representing the DesktopApp_ModulesRepository element repository.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the DesktopApp_ModulesRepository element repository.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.Explorer">
+            <summary>
+            The Explorer folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.ControlPanel">
+            <summary>
+            The ControlPanel folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.ProgramsAndFeatures">
+            <summary>
+            The ProgramsAndFeatures folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.Explorer1">
+            <summary>
+            The Explorer1 folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.NotepadPlusPlusV786Uninstall">
+            <summary>
+            The NotepadPlusPlusV786Uninstall folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.NotepadPlusPlusV786Uninstall1">
+            <summary>
+            The NotepadPlusPlusV786Uninstall1 folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.DownloadsNotepadPlusPlus">
+            <summary>
+            The DownloadsNotepadPlusPlus folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.NotepadPlusPlus786ReleaseNotepadP">
+            <summary>
+            The NotepadPlusPlus786ReleaseNotepadP folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.InstallerLanguage">
+            <summary>
+            The InstallerLanguage folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.NotepadPlusPlusV786Setup">
+            <summary>
+            The NotepadPlusPlusV786Setup folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepository.CProgramFilesNotepadPlusPlusChange">
+            <summary>
+            The CProgramFilesNotepadPlusPlusChange folder.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder">
+            <summary>
+            The ExplorerAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Explorer  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.Text4101">
+            <summary>
+            The Text4101 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.Text4101Info">
+            <summary>
+            The Text4101 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.NotepadPlusPlusAFreeGNUSourceCo">
+            <summary>
+            The NotepadPlusPlusAFreeGNUSourceCo item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ExplorerAppFolder.NotepadPlusPlusAFreeGNUSourceCoInfo">
+            <summary>
+            The NotepadPlusPlusAFreeGNUSourceCo item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder">
+            <summary>
+            The ControlPanelAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ControlPanel  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder.Tasklink">
+            <summary>
+            The Tasklink item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ControlPanelAppFolder.TasklinkInfo">
+            <summary>
+            The Tasklink item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder">
+            <summary>
+            The ProgramsAndFeaturesAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ProgramsAndFeatures  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.NotepadPlusPlus64BitX64">
+            <summary>
+            The NotepadPlusPlus64BitX64 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.NotepadPlusPlus64BitX64Info">
+            <summary>
+            The NotepadPlusPlus64BitX64 item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.ProgramsAndFeaturesAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder">
+            <summary>
+            The Explorer1AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Explorer1  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder.Uninstall">
+            <summary>
+            The Uninstall item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.Explorer1AppFolder.UninstallInfo">
+            <summary>
+            The Uninstall item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder">
+            <summary>
+            The NotepadPlusPlusV786UninstallAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusV786Uninstall  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonUninstall">
+            <summary>
+            The ButtonUninstall item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonUninstallInfo">
+            <summary>
+            The ButtonUninstall item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonClose">
+            <summary>
+            The ButtonClose item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786UninstallAppFolder.ButtonCloseInfo">
+            <summary>
+            The ButtonClose item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder">
+            <summary>
+            The NotepadPlusPlusV786Uninstall1AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusV786Uninstall1  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.ButtonNo">
+            <summary>
+            The ButtonNo item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786Uninstall1AppFolder.ButtonNoInfo">
+            <summary>
+            The ButtonNo item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder">
+            <summary>
+            The DownloadsNotepadPlusPlusAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DownloadsNotepadPlusPlus  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.ATagNotepadPlusPlus786R">
+            <summary>
+            The ATagNotepadPlusPlus786R item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.ATagNotepadPlusPlus786RInfo">
+            <summary>
+            The ATagNotepadPlusPlus786R item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.Installer">
+            <summary>
+            The Installer item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.InstallerInfo">
+            <summary>
+            The Installer item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.ATagNotepadPlusPlus786R1">
+            <summary>
+            The ATagNotepadPlusPlus786R1 item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.DownloadsNotepadPlusPlusAppFolder.ATagNotepadPlusPlus786R1Info">
+            <summary>
+            The ATagNotepadPlusPlus786R1 item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder">
+            <summary>
+            The NotepadPlusPlus786ReleaseNotepadPAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlus786ReleaseNotepadP  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.ButtonNpp786InstallerX646Exe">
+            <summary>
+            The ButtonNpp786InstallerX646Exe item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.ButtonNpp786InstallerX646ExeInfo">
+            <summary>
+            The ButtonNpp786InstallerX646Exe item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.Pane">
+            <summary>
+            The Pane item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlus786ReleaseNotepadPAppFolder.PaneInfo">
+            <summary>
+            The Pane item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder">
+            <summary>
+            The InstallerLanguageAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new InstallerLanguage  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.InstallerLanguageAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder">
+            <summary>
+            The NotepadPlusPlusV786SetupAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new NotepadPlusPlusV786Setup  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonNext">
+            <summary>
+            The ButtonNext item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonNextInfo">
+            <summary>
+            The ButtonNext item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.IAgree">
+            <summary>
+            The IAgree item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.IAgreeInfo">
+            <summary>
+            The IAgree item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonInstall">
+            <summary>
+            The ButtonInstall item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonInstallInfo">
+            <summary>
+            The ButtonInstall item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonFinish">
+            <summary>
+            The ButtonFinish item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.NotepadPlusPlusV786SetupAppFolder.ButtonFinishInfo">
+            <summary>
+            The ButtonFinish item info.
+            </summary>
+        </member>
+        <member name="T:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder">
+            <summary>
+            The CProgramFilesNotepadPlusPlusChangeAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new CProgramFilesNotepadPlusPlusChange  folder.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:DesktopApp_Modules.DesktopApp_ModulesRepositoryFolders.CProgramFilesNotepadPlusPlusChangeAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+    </members>
+</doc>

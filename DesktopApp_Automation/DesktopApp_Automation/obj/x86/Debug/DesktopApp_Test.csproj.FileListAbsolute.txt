@@ -1,0 +1,14 @@
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Test.rxtmg
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Test.rxtst
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Test.exe.config
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Test.xml
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Test.exe
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Test.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Test.csprojResolveAssemblyReference.cache
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Test.exe
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\obj\x86\Debug\DesktopApp_Test.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Modules.rxtmg
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Modules.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Modules.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\bin\Debug\DesktopApp_Modules.xml

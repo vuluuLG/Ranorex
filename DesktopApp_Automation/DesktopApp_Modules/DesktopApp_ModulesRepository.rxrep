@@ -1,18 +1,610 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="DesktopApp_ModulesRepository"
-id="ef30ac9a-a357-4910-917a-46d0e437f538">
-  <codegen
-  classname="DesktopApp_ModulesRepository"
-  namespace="DesktopApp_Modules"/>
-  <rootfolder
-  name="Root"
-  id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+﻿<repository
+id="ef30ac9a-a357-4910-917a-46d0e437f538"
+name="DesktopApp_ModulesRepository">
+	<codegen
+	classname="DesktopApp_ModulesRepository"
+	namespace="DesktopApp_Modules">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="menubar,nativewindow"
+		capname="menubar"
+		id="10fee342-2ada-4302-87dc-b3a55c23760a"
+		isrooted="True"
+		name="Explorer"
+		refpath="/menubar[@processname='explorer']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="4f9f4c88-a097-4212-9592-0e09f35ce4c2"
+			name="Text4101"
+			refimgid="95f41165-2675-459d-8205-142b487f5cc9"
+			refpath="/menubar[@processname='explorer']/element[@controlid='4100']/text[@controlid='4101']"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/?/?/text[@controlid='4101']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="56709342-70dd-4f6c-a0dc-6eca0d9b598c"
+			name="NotepadPlusPlusAFreeGNUSourceCo"
+			refimgid="16832dfa-de3c-46d5-93c5-bc8257448f98"
+			refpath="/menubar[@processname='explorer']/container[@controlid='40965']/container/element/toolbar/button[21]"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[21]
+			</item>
+			<basepath>
+				/menubar[@processname='explorer']
+			</basepath>
+			<icon>
+				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
+VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="9a1be1cb-8128-4372-9e7f-ea6fba3812b3"
+		isrooted="True"
+		name="ControlPanel"
+		refimgid="3931daa9-90bb-4bc4-a266-4c2f6a5de711"
+		refpath="/form[@title='Control Panel']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="link,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="link"
+			id="cc723430-0638-47a6-be70-93238dd98562"
+			name="Tasklink"
+			refimgid="41c4eec6-8f63-4c9f-86ee-feb7ce306e10"
+			refpath="/form[@title='Control Panel']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container/container[@automationid='FolderLayoutContainer']/container/link[@automationid='tasklink' and @name='Uninstall a program']"
+			searchtimeout="30000ms">
+				/form[@title='Control Panel']//container[@automationid='FolderLayoutContainer']/container[@automationid='CategoryPanel']/link[@name='Uninstall a program']
+			</item>
+			<basepath>
+				/form[@title='Control Panel']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEbSURBVDhPYxh4oFk07z8+rJAz6z9zZC9ODDZg
+ys3/OHHblf//Gy9hxygGzLr97/+dt9//f/ny5f+fU2r/H9ya8H/qzX9ghb5b3mNgDANAmnsPP/mv
+Nvnq/z/b1f7/Oaz2/875LLgBb7//BeP/DQyYBiy48w9sM0iz2rSb//+sARqwQfH/7/UMxLsAbMAU
+oAHTb4ExX8fF/58+ffrff+0vWAND5X64K7AaAPbCEaAXpl7/rzjp6v/Knff/X3v1lXgXIAfi58+f
+wZo7rkACERdGMQCGJwNxExbF2DCKAX9WAAMOhBcK//89kwGMYYCh6Ox/htJL/xnKr/5nqLgGxNcx
+DSDVdhAGG6BeMBeebCXSp4MFScHQHDFggIEBAD+cKjHXl4W6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="2b77e709-7db2-4b70-8e93-ee0aaefdb420"
+		isrooted="True"
+		name="ProgramsAndFeatures"
+		refpath="/form[@title='Programs and Features']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell"
+			capname="cell"
+			id="0227c8ad-f286-4279-9855-3fdb5c910f33"
+			name="NotepadPlusPlus64BitX64"
+			refimgid="647e5c12-33b4-40a6-b208-656eda2b4f89"
+			refpath="/form[@title='Programs and Features']/element[@class='ShellTabWindowClass']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']"
+			searchtimeout="30000ms">
+				/form[@title='Programs and Features']//container[@caption='ShellView']/table[@controlid='1']/row[@index='11']/cell[@text='Notepad++ (64-bit x64)']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c8c597eb-8417-4a5c-98d3-c91cb54b136c"
+			name="Close"
+			refimgid="6e246085-df6a-4fba-bedd-c42eedbf59f8"
+			refpath="/form[@title='Programs and Features']/titlebar/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@title='Programs and Features']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title='Programs and Features']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAMRSURBVDhPjZJdTJNXGMcJISEhIeGCCzK54YYL
+brghmeyGCxs1mFkTJwaHM8EYx2RuDuYHohHRSLzRCfhRamvLR7WuCC2jLQhFoK/Udn4gK5SKVaNO
+NIU57/Tit/c577LrPcnJORfn/zv/5/yfDKlYLPaj7KlUioWFBWZnZ4lGo4TDYUKhEMFgEJ/Ph8fj
+weVy4XA4kPv6nROyy8Eu6/+KbTab3FEaBZBaWloimUySSCSIx+PMzc2h/R5hMBxAi84oaCQSQdM0
+pqenmZycVC7+q8XFRWU/8ijGoBbEOnad9qCDXwLX6Bu/xRPNyZupU7ycOM3DUI9y96/UqFuaH8uY
+i87RbjpGnFxQYjvnh23cH2/hw+T3fAh9y9+ju3nv/4bHgfMGoLa2Vg5UVVVhNpuprKzEZDKpVV5e
+TllZGaWlpZSUlFBcXMz74Z385d3Ou/7tBqCmpkYBzHuPsK3uMM2tbQwMDeELBPB4vRw/1caX1bWs
+M1dTVFTE6mAVK7+aSV/faADkZQGI2Nndw7vVVf5cWeHZ8jLJ16/5Q4/2cpeVTVu/prCwUBdvJu3a
+wKseswEQ2wI4erKNt+k0Hz99IvXiBTOxGI/m50no51k9nYNNzRQUFJDuW88b53rGb14wANKzADwD
+A7xcfkvq+XMsVhu76g5wpesqD/Q4409T3NDnID8/n5HefQx7rqm5UAD5rM/WrKFf7zeReoamZy1i
+k3kHO/fUo81EmNcB/YNe8vLyaOo5i93djdvtNgAVFRXKQd8NNw/j89y7/0C9LOIreu93whpT92I4
+envJzc3lkKONk85zaioVQKISwOFjLYQjUWZ0gP/2GL5hPxNT0ywknzARvktD40FycnJotJ/mp6ut
+XHJaDYDkLIDN1btp77yI1x9kKDjKbyO3GRmf0CFh2js6WGfaQHZ2NgesrfxgaaGp64wBkCERgGnL
+DjZ9VUPjoSYsunWrza5WQ8PPSrz28y/Iyspiv+UE9ZeP893FZgMgEyYAGRLJWaKS35Zdehbb8rKI
+MzMzqb90TInrOo/quoyMfwAGFGQluUenNgAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow"
+		capname="contextmenu"
+		id="b36e0940-9774-4635-a077-455aeecbf069"
+		isrooted="True"
+		name="Explorer1"
+		refpath="/contextmenu[@processname='explorer']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="254fea72-1350-4535-b1e5-1feb4df712e9"
+			name="Uninstall"
+			refimgid="50049156-0e79-4c3d-b26d-7d0ee723747f"
+			refpath="/contextmenu[@processname='explorer']/contextmenu/menuitem[@accessiblename='Uninstall']"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='explorer']/?/?/menuitem[@accessiblename='Uninstall']
+			</item>
+			<basepath>
+				/contextmenu[@processname='explorer']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="ce1c3d5a-7559-4bcc-9377-531b3c03b585"
+		isrooted="True"
+		name="NotepadPlusPlusV786Uninstall"
+		refpath="/form[@title='Notepad++ v7.8.6 Uninstall ']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="bc9b1712-2937-49c3-b3e5-2fb6b8edd364"
+			name="ButtonUninstall"
+			refimgid="6b151855-ebfc-4e35-9d02-4072a1432a26"
+			refpath="/form[@title>'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Uninstall']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Uninstall']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="3c38e0b9-7930-4f61-b90b-13e50d0742b5"
+			name="ButtonClose"
+			refimgid="6151555e-80b3-4501-b38c-11868c8583e4"
+			refpath="/form[@title>'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Close']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Notepad++ v7.8.6 Uninstall']/button[@text='&amp;Close']
+			</item>
+			<basepath>
+				/form[@title&gt;'Notepad++ v7.8.6 Uninstall']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALbSURBVDhPjZNZSFRRGMfvGM7mzOA64zJ3dLZ7
+5965izNphFoSpSgylgaVhFJOlEKLMe62UGEPuTwYFPaQFdVTaAshLYQpSTU2FRkmhRvSqA+JhhRM
++nXuzFCGkf3gcL5z/t//7AdbDalUWq9UKj0xMTF3hbbVasXFYnG+X/wHKQqZokAIlCrlGCA6Ojog
+NDT0gUajGXY4HF+Q9F7QV7AGCxlOitaP0Km2qagQjcdZ7Byd/zovjAFV1ZU//AFCrVZ/ROmxAVcQ
+EYa5s07kwyE4DTXQAE5fEbTWtUFtZb3ftNdx0F8LoPRvAddvMqJU+OhNaILWsWK4OOmE87APUitw
+mBsAGOqahYTdGBxpLoJoZexblB8fsP1C1FLSvs33Cs5CPyp3oBaeQiN0w0moGkyHCnc6zMBVuAXV
+aHaRcAZ/IsJCnreOl0EIFt5HWgnPKV8Z5DVmwqZSBrIPb/6QttXm1egSe3GF6Z1cLi8N2jBMJpM1
+iyUSD8MyfSa90U1Z6Z4k3NAfo8CfmOLpzkSt8RFl4Ho0Wp3bbOKfkSTtIgjiukQi6UQDVaF7pWfK
+cwrAlkrA9izeq6V0s3mZ3NiWDcmvd+Wu9RpsibAzn/vOkUnjbU3pkJMWDy7XsSmSJEfQG3nsX4VE
+Lt9PWKjLBE9/4nk+3GplX1gYZpBl7euTuWSnULOE7WGkyNCbqCIvRYvVF2Ri2VG/eRm5RAaxxFJs
+A47jE5SdGmBZdk4Q7JR9hyYncoGDeCgfLllsX2wB0kJOoy3wfucyJs0242eO4ep4lr9nshkWVCpV
+dgqXwuDr4iZivaFQPF0IN6AN9OHmwaBnBUsEZZyx0JZpFLuFDgkm9RjydRP2ISMk3FeC3acHiiPf
+WMz0NUH/GxQq2kCIYWGYYtHcHoce1jk4/rIG9kAhRBwQA6Nnu4Mpq0NGWG5rN2pmu+AK+gfR3jBM
+eSYo/T+0kXHpIwyT6HuTgR4M+wm5tBqNKfr6YAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="6ae39e09-c117-4074-a8ec-89b26fe58fad"
+		isrooted="True"
+		name="NotepadPlusPlusV786Uninstall1"
+		refpath="/form[@title='Notepad++ v7.8.6 Uninstall']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="36de699f-a132-49ba-8ec0-06e7c7f1da98"
+			name="ButtonNo"
+			refimgid="9c6635c1-bdd1-4095-a083-81b450ed56f6"
+			refpath="/form[@title>'Notepad++ v7.8.6 Uninstal']/button[@text='&amp;No']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Notepad++ v7.8.6 Uninstal']/button[@text='&amp;No']
+			</item>
+			<basepath>
+				/form[@title&gt;'Notepad++ v7.8.6 Uninstal']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALbSURBVDhPjZNZSFRRGMfvGM7mzOA64zJ3dLZ7
+5965izNphFoSpSgylgaVhFJOlEKLMe62UGEPuTwYFPaQFdVTaAshLYQpSTU2FRkmhRvSqA+JhhRM
++nXuzFCGkf3gcL5z/t//7AdbDalUWq9UKj0xMTF3hbbVasXFYnG+X/wHKQqZokAIlCrlGCA6Ojog
+NDT0gUajGXY4HF+Q9F7QV7AGCxlOitaP0Km2qagQjcdZ7Byd/zovjAFV1ZU//AFCrVZ/ROmxAVcQ
+EYa5s07kwyE4DTXQAE5fEbTWtUFtZb3ftNdx0F8LoPRvAddvMqJU+OhNaILWsWK4OOmE87APUitw
+mBsAGOqahYTdGBxpLoJoZexblB8fsP1C1FLSvs33Cs5CPyp3oBaeQiN0w0moGkyHCnc6zMBVuAXV
+aHaRcAZ/IsJCnreOl0EIFt5HWgnPKV8Z5DVmwqZSBrIPb/6QttXm1egSe3GF6Z1cLi8N2jBMJpM1
+iyUSD8MyfSa90U1Z6Z4k3NAfo8CfmOLpzkSt8RFl4Ho0Wp3bbOKfkSTtIgjiukQi6UQDVaF7pWfK
+cwrAlkrA9izeq6V0s3mZ3NiWDcmvd+Wu9RpsibAzn/vOkUnjbU3pkJMWDy7XsSmSJEfQG3nsX4VE
+Lt9PWKjLBE9/4nk+3GplX1gYZpBl7euTuWSnULOE7WGkyNCbqCIvRYvVF2Ri2VG/eRm5RAaxxFJs
+A47jE5SdGmBZdk4Q7JR9hyYncoGDeCgfLllsX2wB0kJOoy3wfucyJs0242eO4ep4lr9nshkWVCpV
+dgqXwuDr4iZivaFQPF0IN6AN9OHmwaBnBUsEZZyx0JZpFLuFDgkm9RjydRP2ISMk3FeC3acHiiPf
+WMz0NUH/GxQq2kCIYWGYYtHcHoce1jk4/rIG9kAhRBwQA6Nnu4Mpq0NGWG5rN2pmu+AK+gfR3jBM
+eSYo/T+0kXHpIwyT6HuTgR4M+wm5tBqNKfr6YAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ebd13ecd-b78c-4a63-bb86-8fb87872759e"
+		isrooted="True"
+		name="DownloadsNotepadPlusPlus"
+		refimgid="e4c4ee61-528f-42b7-b337-31ec82bd7771"
+		refpath="/dom[@domain='notepad-plus-plus.org']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="litag"
+			id="5e7c12b6-09af-4c9c-983c-2a3f70c47d9c"
+			name="ATagNotepadPlusPlus786R"
+			refimgid="101ef31e-fe83-49a0-a3f8-29b7c5c9363f"
+			searchtimeout="30000ms">
+				/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul/li[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="5461a5b6-1dac-4bd8-a7ba-849ea5bc29da"
+			name="Installer"
+			refimgid="8b126357-8825-4541-b72c-367c3d91cd26"
+			refpath="/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul[2]/li[@innertext='         | ']/a[@innertext='Installer']"
+			searchtimeout="30000ms">
+				/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul[2]/?/?/a[@innertext='Installer']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="697fd51b-23d0-45f9-9536-78b74fe5cb25"
+			name="ATagNotepadPlusPlus786R1"
+			refimgid="4e83649d-8b89-40c8-97e7-621904cd851e"
+			searchtimeout="30000ms">
+				/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul//a[1]
+			</item>
+			<basepath>
+				/dom[@domain='notepad-plus-plus.org']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="5bf747e1-1f5d-4959-a60f-a6c46e74f68d"
+		isrooted="True"
+		name="NotepadPlusPlus786ReleaseNotepadP"
+		refpath="/form[@title='Notepad++ 7.8.6 release | Notepad++ - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c47b9956-a952-4255-9d62-7dc3b67f46a1"
+			name="ButtonNpp786InstallerX646Exe"
+			refimgid="2fec37bd-fe4d-4baf-af08-5a7c63cc0569"
+			refpath="/form[@title='Notepad++ 7.8.6 release | Notepad++ - Google Chrome']/container[@accessiblename='Notepad++ 7.8.6 release | Notepad++ - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[@accessiblename='Downloads bar']/container[@accessiblename=' npp.7.8.6.Installer.x64 (6).exe']/button[@accessiblename=' npp.7.8.6.Installer.x64 (6).exe']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Notepad++ 7.8.6 release |']/container[@accessiblename&gt;'Notepad++ 7.8.6 release |']//container[@accessiblename='Downloads bar']/?/?/button[@accessiblename&gt;' npp.7.8.6.Installer.x64']
+			</item>
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="a628bb3f-5a18-4593-bfd5-e4d087782f7b"
+			name="Pane"
+			refimgid="aa137878-eed4-4668-ae14-b0a6832f00bc"
+			refpath="/form[@title>'Notepad++ 7.8.6 release |']/container/container/container[2]/container[1]"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Notepad++ 7.8.6 release |']/container[@accessiblename&gt;'Notepad++ 7.8.6 release |']/container/container[2]/container[1]
+			</item>
+			<basepath>
+				/form[@title&gt;'Notepad++ 7.8.6 release |']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="07f946ec-20c5-4170-a004-b1f999572c04"
+		isrooted="True"
+		name="InstallerLanguage"
+		refpath="/form[@title='Installer Language']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="a8754ebe-35b0-4e5f-a8a7-e92f47cd60d4"
+			name="ButtonOK"
+			refimgid="78851537-0a99-4847-a5dd-5d73fd757417"
+			refpath="/form[@title='Installer Language']/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Installer Language']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Installer Language']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALbSURBVDhPjZNZSFRRGMfvGM7mzOA64zJ3dLZ7
+5965izNphFoSpSgylgaVhFJOlEKLMe62UGEPuTwYFPaQFdVTaAshLYQpSTU2FRkmhRvSqA+JhhRM
++nXuzFCGkf3gcL5z/t//7AdbDalUWq9UKj0xMTF3hbbVasXFYnG+X/wHKQqZokAIlCrlGCA6Ojog
+NDT0gUajGXY4HF+Q9F7QV7AGCxlOitaP0Km2qagQjcdZ7Byd/zovjAFV1ZU//AFCrVZ/ROmxAVcQ
+EYa5s07kwyE4DTXQAE5fEbTWtUFtZb3ftNdx0F8LoPRvAddvMqJU+OhNaILWsWK4OOmE87APUitw
+mBsAGOqahYTdGBxpLoJoZexblB8fsP1C1FLSvs33Cs5CPyp3oBaeQiN0w0moGkyHCnc6zMBVuAXV
+aHaRcAZ/IsJCnreOl0EIFt5HWgnPKV8Z5DVmwqZSBrIPb/6QttXm1egSe3GF6Z1cLi8N2jBMJpM1
+iyUSD8MyfSa90U1Z6Z4k3NAfo8CfmOLpzkSt8RFl4Ho0Wp3bbOKfkSTtIgjiukQi6UQDVaF7pWfK
+cwrAlkrA9izeq6V0s3mZ3NiWDcmvd+Wu9RpsibAzn/vOkUnjbU3pkJMWDy7XsSmSJEfQG3nsX4VE
+Lt9PWKjLBE9/4nk+3GplX1gYZpBl7euTuWSnULOE7WGkyNCbqCIvRYvVF2Ri2VG/eRm5RAaxxFJs
+A47jE5SdGmBZdk4Q7JR9hyYncoGDeCgfLllsX2wB0kJOoy3wfucyJs0242eO4ep4lr9nshkWVCpV
+dgqXwuDr4iZivaFQPF0IN6AN9OHmwaBnBUsEZZyx0JZpFLuFDgkm9RjydRP2ISMk3FeC3acHiiPf
+WMz0NUH/GxQq2kCIYWGYYtHcHoce1jk4/rIG9kAhRBwQA6Nnu4Mpq0NGWG5rN2pmu+AK+gfR3jBM
+eSYo/T+0kXHpIwyT6HuTgR4M+wm5tBqNKfr6YAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="26f35ee2-0395-40de-ae09-7328f6846f54"
+		isrooted="True"
+		name="NotepadPlusPlusV786Setup"
+		refpath="/form[@title='Notepad++ v7.8.6 Setup']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="eff53f5c-b839-448d-af24-8d4324f200e4"
+			name="ButtonNext"
+			refimgid="a2c49ab1-0e2b-4b22-9d0d-db77e5412f6c"
+			refpath="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next >']"
+			searchtimeout="30000ms">
+				/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next &gt;']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="1184adbb-e2d2-419b-950b-8ca123e6a4d2"
+			name="IAgree"
+			refimgid="1b4961e6-6c7f-48d1-bc6d-f6e0dea5c388"
+			refpath="/form[@title='Notepad++ v7.8.6 Setup ']/button[@text='I &amp;Agree']"
+			searchtimeout="30000ms">
+				/form[@title='Notepad++ v7.8.6 Setup']/button[@text='I &amp;Agree']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="152359dc-1124-4553-a903-de362014a817"
+			name="ButtonInstall"
+			refimgid="51893aa1-f0dc-4eaa-a8a9-cc10e1e8094e"
+			refpath="/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Install']"
+			searchtimeout="30000ms">
+				/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Install']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="66c0a68c-bff9-4550-9321-f7c81f4ae82f"
+			name="ButtonFinish"
+			refimgid="982180f5-4dea-4cad-83fc-b4d3d32d9dab"
+			refpath="/form[@title='Notepad++ v7.8.6 Setup ']/button[@text='&amp;Finish']"
+			searchtimeout="30000ms">
+				/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Finish']
+			</item>
+			<basepath>
+				/form[@title='Notepad++ v7.8.6 Setup']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALbSURBVDhPjZNZSFRRGMfvGM7mzOA64zJ3dLZ7
+5965izNphFoSpSgylgaVhFJOlEKLMe62UGEPuTwYFPaQFdVTaAshLYQpSTU2FRkmhRvSqA+JhhRM
++nXuzFCGkf3gcL5z/t//7AdbDalUWq9UKj0xMTF3hbbVasXFYnG+X/wHKQqZokAIlCrlGCA6Ojog
+NDT0gUajGXY4HF+Q9F7QV7AGCxlOitaP0Km2qagQjcdZ7Byd/zovjAFV1ZU//AFCrVZ/ROmxAVcQ
+EYa5s07kwyE4DTXQAE5fEbTWtUFtZb3ftNdx0F8LoPRvAddvMqJU+OhNaILWsWK4OOmE87APUitw
+mBsAGOqahYTdGBxpLoJoZexblB8fsP1C1FLSvs33Cs5CPyp3oBaeQiN0w0moGkyHCnc6zMBVuAXV
+aHaRcAZ/IsJCnreOl0EIFt5HWgnPKV8Z5DVmwqZSBrIPb/6QttXm1egSe3GF6Z1cLi8N2jBMJpM1
+iyUSD8MyfSa90U1Z6Z4k3NAfo8CfmOLpzkSt8RFl4Ho0Wp3bbOKfkSTtIgjiukQi6UQDVaF7pWfK
+cwrAlkrA9izeq6V0s3mZ3NiWDcmvd+Wu9RpsibAzn/vOkUnjbU3pkJMWDy7XsSmSJEfQG3nsX4VE
+Lt9PWKjLBE9/4nk+3GplX1gYZpBl7euTuWSnULOE7WGkyNCbqCIvRYvVF2Ri2VG/eRm5RAaxxFJs
+A47jE5SdGmBZdk4Q7JR9hyYncoGDeCgfLllsX2wB0kJOoy3wfucyJs0242eO4ep4lr9nshkWVCpV
+dgqXwuDr4iZivaFQPF0IN6AN9OHmwaBnBUsEZZyx0JZpFLuFDgkm9RjydRP2ISMk3FeC3acHiiPf
+WMz0NUH/GxQq2kCIYWGYYtHcHoce1jk4/rIG9kAhRBwQA6Nnu4Mpq0NGWG5rN2pmu+AK+gfR3jBM
+eSYo/T+0kXHpIwyT6HuTgR4M+wm5tBqNKfr6YAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="45ddef09-d6e5-41dd-9a00-48635b5f1562"
+		isrooted="True"
+		name="CProgramFilesNotepadPlusPlusChange"
+		refpath="/form[@title='C:\Program Files\Notepad++\change.log - Notepad++']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3eeea3b0-f8da-4fca-8cbf-2676b2504c88"
+			name="Close"
+			refimgid="f90eab24-0106-4446-be70-61be5099e7ad"
+			refpath="/form[@title>'C:\Program Files\Notepad++\change.log']/titlebar/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'C:\Program Files\Notepad++\change.log']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title&gt;'C:\Program Files\Notepad++\change.log']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAImSURBVDhPjZJdaJJRGMePIQuKoJs+L6LL0eWo
+q64KgnYTgUHNKSo4RWQivrnEMBSFgi4kNqwrIUiyLtZumkyoaTFWqBBrBAXLGX1tfbxrZbP5vuff
+OcfXsTcn9Icf5+Kc5/c853BINBoFJ51Ov4zFYnx9tXnlJBKJfrIpcrW6O7ljOyRCQCKRCHK5HFh6
+8/l8x6o1oPF43KrVk+nsxFTiwCFc5IJwOMwP42YqhV/1NYyNjmL1Z12s3+RVIVBVdUOy+FE2jd0r
+48xAAE9mKxYSCoWEQGGH/s16U9kQtCVKcRe9nzyLkSvX58Q4wWBQHK4tfcX84ocO+BtwCac0bkJj
+0ojCMIEsVw8LgSRJQsCjUtoVHlrsQSVuQDGyf0kU8/j9fr6FT99/bDlBmz/zFqzljJj2EdTrtYNa
+OSE+nw+UqlheWcbC56Gu0EIPnl82YCI5CK20Fa/Xy/orKL8pYe5taksalT6sPDDiMeseCAT0Ao/H
+IwTZwl1M1U52MPN+UHSfvWTAu6c3wCfWSltxuVzskRTE7kRxe+F4B41ne/Ela8SjkZ3iqnxirbQV
+p9MJhTYxcPUCgi/6dIy/llDOmDDDul+7NSQaud1uvcDhcAjBseGjOPWwV0dm0on+E0dQypwT+woT
+8IZaaSs2mw1NtYl95/dg22nSFb6vsCvY7Xa9wGKxoLHeUBWV+Rnsy7Zph/1ytkFpk/HbarV2Csxm
+83/Dz2ulLIT8BWcccbdwkJ53AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

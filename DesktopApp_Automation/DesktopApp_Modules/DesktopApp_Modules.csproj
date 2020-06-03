@@ -122,6 +122,150 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationModules\Chrome\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33a01cfd-7279-4cc7-b218-b3718585a2d0</id>
+      <BoundTo>d9f15c56-2ea2-4539-b918-1ce2d32abdd5</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55b9f5c6-1f06-4541-bd8f-d38ceeb174ad</id>
+      <BoundTo>d9f15c56-2ea2-4539-b918-1ce2d32abdd5</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\DownloadApp.cs">
+      <DependentUpon>DownloadApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0688b290-ebb8-4210-8941-2dbb6bacb297</id>
+      <BoundTo>4c1bb938-151e-4e5a-81c1-433075686407</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\DownloadApp.UserCode.cs">
+      <DependentUpon>DownloadApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1612c51b-dc7c-47d9-8cae-f8ce447ee9a9</id>
+      <BoundTo>4c1bb938-151e-4e5a-81c1-433075686407</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\OpenBrowser.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77ef7ad9-7147-4d62-9718-75973517d06f</id>
+      <BoundTo>1bec6e71-ee0f-4d81-a45f-60cd7280b16e</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\OpenBrowser.UserCode.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a44bef9-1e85-4f09-9155-68a87b7741bb</id>
+      <BoundTo>1bec6e71-ee0f-4d81-a45f-60cd7280b16e</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\ValidateDownloaded.cs">
+      <DependentUpon>ValidateDownloaded.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8796737e-a360-4f07-9f36-454158af18c4</id>
+      <BoundTo>fe1d4903-69b8-4e7e-a677-ce0c7d9b845d</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Chrome\ValidateDownloaded.UserCode.cs">
+      <DependentUpon>ValidateDownloaded.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33944f38-81a3-4f30-8090-836753841ff0</id>
+      <BoundTo>fe1d4903-69b8-4e7e-a677-ce0c7d9b845d</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\ControlPanel\CloseControlPanel.cs">
+      <DependentUpon>CloseControlPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79fcc8e3-fbba-409e-8a3d-00d03f67e3c4</id>
+      <BoundTo>48751317-8058-4f54-a4dc-882e3189009f</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\ControlPanel\CloseControlPanel.UserCode.cs">
+      <DependentUpon>CloseControlPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85723fc7-fa4a-4877-a865-31f6a7bb9ed6</id>
+      <BoundTo>48751317-8058-4f54-a4dc-882e3189009f</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\ControlPanel\UninstallApp.cs">
+      <DependentUpon>UninstallApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9c1cd147-aa0e-43d9-a2a8-43cb14235a48</id>
+      <BoundTo>efcdb540-db80-409d-8d0d-23dd6bcc171a</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\ControlPanel\UninstallApp.UserCode.cs">
+      <DependentUpon>UninstallApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>473b4026-43dc-4e44-8fa9-d1e63c988d98</id>
+      <BoundTo>efcdb540-db80-409d-8d0d-23dd6bcc171a</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\ControlPanel\ValidateInstalled.cs">
+      <DependentUpon>ValidateInstalled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f61a1e71-eb9b-49ff-bc69-11c8c02e974b</id>
+      <BoundTo>c6d9e4d5-1c75-4ba7-9441-3affb2272693</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\ControlPanel\ValidateInstalled.UserCode.cs">
+      <DependentUpon>ValidateInstalled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>413ce1cf-e130-45cf-8b89-a95b791d5936</id>
+      <BoundTo>c6d9e4d5-1c75-4ba7-9441-3affb2272693</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\GeneralApplication\OpenApp.cs">
+      <DependentUpon>OpenApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ff9d1d07-b488-48f0-879b-5cee0aab9dbc</id>
+      <BoundTo>7a763da9-35a4-464e-a560-9fca5a9f9b7f</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\GeneralApplication\OpenApp.UserCode.cs">
+      <DependentUpon>OpenApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f732926-1227-4685-aa27-fe69be191319</id>
+      <BoundTo>7a763da9-35a4-464e-a560-9fca5a9f9b7f</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\GeneralApplication\OpenControlPanel.cs">
+      <DependentUpon>OpenControlPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ea6c5b89-d053-4a08-966b-efa7554e3db6</id>
+      <BoundTo>59adcca1-eb94-494c-ab50-c90e89ef0c8c</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\GeneralApplication\OpenControlPanel.UserCode.cs">
+      <DependentUpon>OpenControlPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d40c2d3a-89c4-4be8-a94c-549ca57efefa</id>
+      <BoundTo>59adcca1-eb94-494c-ab50-c90e89ef0c8c</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\CloseApp.cs">
+      <DependentUpon>CloseApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>88196751-1a7b-40de-85c1-f8de61616504</id>
+      <BoundTo>ea05ce92-63d3-4d06-a651-cc6f5c99949d</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\CloseApp.UserCode.cs">
+      <DependentUpon>CloseApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d61fff4b-cf0a-4638-88c0-29be33c97368</id>
+      <BoundTo>ea05ce92-63d3-4d06-a651-cc6f5c99949d</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\InstallApp.cs">
+      <DependentUpon>InstallApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e1166b8-2418-4cde-93bc-19b34f3c157f</id>
+      <BoundTo>484625a3-b947-468b-9d7e-30ea429da7f8</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\InstallApp.UserCode.cs">
+      <DependentUpon>InstallApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01cd8cdc-c460-484b-baba-05fd727c9823</id>
+      <BoundTo>484625a3-b947-468b-9d7e-30ea429da7f8</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\ValidateAppOpened.cs">
+      <DependentUpon>ValidateAppOpened.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4407ed7-1f31-497e-919b-3381b41436b4</id>
+      <BoundTo>37220087-357b-4460-b233-c18647b76567</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\ValidateAppOpened.UserCode.cs">
+      <DependentUpon>ValidateAppOpened.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>695e8d8a-be0c-4b9d-8209-ced0bee4b6ee</id>
+      <BoundTo>37220087-357b-4460-b233-c18647b76567</BoundTo>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>e8ba593f-db79-43bd-b7b0-6ed30de3940a</id>
     </Compile>
@@ -131,116 +275,68 @@
       <RepositoryCode>true</RepositoryCode>
       <id>897f7a07-9d0e-4acb-8850-46da49b75352</id>
     </Compile>
-    <Compile Include="Page modules\GeneralPage\OpenBrowser.cs">
-      <BoundTo>f9a104b3-3d70-427a-a41e-ae81c75d7d2c</BoundTo>
-      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>df89d8d0-3ba6-4341-8e29-cd63db98fd9f</id>
-    </Compile>
-    <Compile Include="Page modules\GeneralPage\OpenBrowser.UserCode.cs">
-      <BoundTo>f9a104b3-3d70-427a-a41e-ae81c75d7d2c</BoundTo>
-      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>10b215f3-b672-4afa-b371-218da928ba9d</id>
-    </Compile>
-    <Compile Include="Page modules\GeneralPage\OpenControlPanel.cs">
-      <BoundTo>59adcca1-eb94-494c-ab50-c90e89ef0c8c</BoundTo>
-      <DependentUpon>OpenControlPanel.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>ea6c5b89-d053-4a08-966b-efa7554e3db6</id>
-    </Compile>
-    <Compile Include="Page modules\GeneralPage\OpenControlPanel.UserCode.cs">
-      <BoundTo>59adcca1-eb94-494c-ab50-c90e89ef0c8c</BoundTo>
-      <DependentUpon>OpenControlPanel.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>d40c2d3a-89c4-4be8-a94c-549ca57efefa</id>
-    </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>445c7437-daa0-4b02-9568-62762504b0e2</id>
-      <BoundTo>b1040c28-5ce0-4146-9a14-7ce0d111a6b8</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>9c130180-dbd5-4815-ba44-64ef53867146</id>
-      <BoundTo>b1040c28-5ce0-4146-9a14-7ce0d111a6b8</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\DownloadApp.cs">
-      <BoundTo>26bfd1c4-c579-4acc-ac3b-8c89dcf74f92</BoundTo>
-      <DependentUpon>DownloadApp.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>6324f56b-6e0f-4171-bb50-6a5bffeac9f7</id>
-    </Compile>
-    <Compile Include="Recordings\DownloadApp.UserCode.cs">
-      <BoundTo>26bfd1c4-c579-4acc-ac3b-8c89dcf74f92</BoundTo>
-      <DependentUpon>DownloadApp.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ebe192bb-6d20-4706-acb1-6fbfa33cb731</id>
-    </Compile>
-    <Compile Include="Recordings\InstallApp.cs">
-      <BoundTo>b62694de-efc0-4f24-902a-30bb736cd048</BoundTo>
-      <DependentUpon>InstallApp.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5333be35-8bef-49a1-bbfe-7e8cf459dfec</id>
-    </Compile>
-    <Compile Include="Recordings\InstallApp.UserCode.cs">
-      <BoundTo>b62694de-efc0-4f24-902a-30bb736cd048</BoundTo>
-      <DependentUpon>InstallApp.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>384421a8-33f7-44b5-8ece-1a05936baa13</id>
-    </Compile>
-    <Compile Include="Recordings\OpenApp.cs">
-      <BoundTo>d4e35bf5-e280-42ca-bb4f-d6aa4e145ef9</BoundTo>
-      <DependentUpon>OpenApp.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>2a097541-8cdb-44c4-b9b3-5c07fca67579</id>
-    </Compile>
-    <Compile Include="Recordings\OpenApp.UserCode.cs">
-      <BoundTo>d4e35bf5-e280-42ca-bb4f-d6aa4e145ef9</BoundTo>
-      <DependentUpon>OpenApp.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ad7e9622-7943-46ca-95da-7fb23e2e5fe6</id>
-    </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>66c609eb-a381-4259-adaa-16cfb7c3243e</id>
-      <BoundTo>3c15be80-b71e-47c9-8005-67582a1f1385</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>f929fb8d-d8fd-4437-a9c5-64a5c1a590f3</id>
-      <BoundTo>3c15be80-b71e-47c9-8005-67582a1f1385</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\UninstallApp.cs">
-      <BoundTo>3de8ed92-9694-4628-99f1-8c0e725fb681</BoundTo>
-      <DependentUpon>UninstallApp.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5cda8c9a-0a1d-4996-9b10-a4b99e608269</id>
-    </Compile>
-    <Compile Include="Recordings\UninstallApp.UserCode.cs">
-      <BoundTo>3de8ed92-9694-4628-99f1-8c0e725fb681</BoundTo>
-      <DependentUpon>UninstallApp.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>599b2f30-af1f-41c5-98f1-d9936721e2f7</id>
-    </Compile>
-    <Compile Include="Recordings\ValidateInstalled.cs">
-      <BoundTo>0347c3af-1193-46c2-aa92-60996b7964cc</BoundTo>
-      <DependentUpon>ValidateInstalled.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>00676ef6-0e51-45b6-ae1f-25ed0983d8c9</id>
-    </Compile>
-    <Compile Include="Recordings\ValidateInstalled.UserCode.cs">
-      <BoundTo>0347c3af-1193-46c2-aa92-60996b7964cc</BoundTo>
-      <DependentUpon>ValidateInstalled.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>67e4e6be-61a3-4858-bcd6-b6e9687a2764</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ApplicationModules\Chrome\CloseBrowser.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>d9f15c56-2ea2-4539-b918-1ce2d32abdd5</id>
+      <recordtableid>2fe35adf-b05b-4456-b5bf-b2478c438c6c</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Chrome\DownloadApp.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>4c1bb938-151e-4e5a-81c1-433075686407</id>
+      <recordtableid>1079f995-3537-470e-a785-773b49ffa279</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Chrome\OpenBrowser.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>1bec6e71-ee0f-4d81-a45f-60cd7280b16e</id>
+      <recordtableid>a975b00a-e317-4c5d-bdf8-6ecbe21531f4</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Chrome\ValidateDownloaded.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>fe1d4903-69b8-4e7e-a677-ce0c7d9b845d</id>
+      <recordtableid>9a097a65-4066-42c4-9816-9c541e035607</recordtableid>
+    </None>
+    <None Include="ApplicationModules\ControlPanel\CloseControlPanel.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>48751317-8058-4f54-a4dc-882e3189009f</id>
+      <recordtableid>4c2d7051-ec98-482e-9852-1e9af3524fe0</recordtableid>
+    </None>
+    <None Include="ApplicationModules\ControlPanel\UninstallApp.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>efcdb540-db80-409d-8d0d-23dd6bcc171a</id>
+      <recordtableid>bcf63e84-8b93-4423-b0c1-45fbe12d487c</recordtableid>
+    </None>
+    <None Include="ApplicationModules\ControlPanel\ValidateInstalled.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>c6d9e4d5-1c75-4ba7-9441-3affb2272693</id>
+      <recordtableid>6b238876-72f3-40a2-97ba-4ecf35e8c515</recordtableid>
+    </None>
+    <None Include="ApplicationModules\GeneralApplication\OpenApp.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>7a763da9-35a4-464e-a560-9fca5a9f9b7f</id>
+      <recordtableid>8f31c4de-ebcc-435c-8313-ceb234fbf2d1</recordtableid>
+    </None>
+    <None Include="ApplicationModules\GeneralApplication\OpenControlPanel.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>59adcca1-eb94-494c-ab50-c90e89ef0c8c</id>
+      <recordtableid>20da548e-0ca7-4fcb-b121-e4913fb1db5a</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Notepad\CloseApp.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>ea05ce92-63d3-4d06-a651-cc6f5c99949d</id>
+      <recordtableid>a472755a-fde8-4072-859d-a5f373948c57</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Notepad\InstallApp.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>484625a3-b947-468b-9d7e-30ea429da7f8</id>
+      <recordtableid>5c2fb7c1-bef7-495e-8078-58f859991342</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Notepad\ValidateAppOpened.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>37220087-357b-4460-b233-c18647b76567</id>
+      <recordtableid>44cc08ed-ee9e-4d58-a76d-750ceb07306b</recordtableid>
+    </None>
     <None Include="DesktopApp_ModulesRepository.rximg">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
       <DependentUpon>DesktopApp_ModulesRepository.rxrep</DependentUpon>
@@ -252,51 +348,6 @@
       <repoid>ef30ac9a-a357-4910-917a-46d0e437f538</repoid>
       <reporootid>43f9a22b-83ee-4a35-a13f-fe3b69b8da65</reporootid>
     </None>
-    <None Include="Page modules\GeneralPage\OpenBrowser.rxrec">
-      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>f9a104b3-3d70-427a-a41e-ae81c75d7d2c</id>
-      <recordtableid>acaadf73-d422-4536-acac-12a71b756201</recordtableid>
-    </None>
-    <None Include="Page modules\GeneralPage\OpenControlPanel.rxrec">
-      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>59adcca1-eb94-494c-ab50-c90e89ef0c8c</id>
-      <recordtableid>20da548e-0ca7-4fcb-b121-e4913fb1db5a</recordtableid>
-    </None>
-    <None Include="Recordings\CloseAUT.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>b1040c28-5ce0-4146-9a14-7ce0d111a6b8</id>
-      <recordtableid>7096983f-420b-4de0-9f11-11715526019a</recordtableid>
-    </None>
-    <None Include="Recordings\DownloadApp.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>26bfd1c4-c579-4acc-ac3b-8c89dcf74f92</id>
-      <recordtableid>74e20cc8-6176-4a3a-9388-fece32c32f9f</recordtableid>
-    </None>
-    <None Include="Recordings\InstallApp.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>b62694de-efc0-4f24-902a-30bb736cd048</id>
-      <recordtableid>34a2672d-15b3-4cca-b381-442a2d20103c</recordtableid>
-    </None>
-    <None Include="Recordings\OpenApp.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>d4e35bf5-e280-42ca-bb4f-d6aa4e145ef9</id>
-      <recordtableid>123028a2-860f-4416-97b3-5bb984146779</recordtableid>
-    </None>
-    <None Include="Recordings\StartAUT.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>3c15be80-b71e-47c9-8005-67582a1f1385</id>
-      <recordtableid>637b9911-4c36-41ee-9a59-c4d8e143a025</recordtableid>
-    </None>
-    <None Include="Recordings\UninstallApp.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>3de8ed92-9694-4628-99f1-8c0e725fb681</id>
-      <recordtableid>113054de-f97e-4533-90a3-1b968541ae5e</recordtableid>
-    </None>
-    <None Include="Recordings\ValidateInstalled.rxrec">
-      <BoundTo>e4c00106-7745-4a90-81a7-3372e750c5a2</BoundTo>
-      <id>0347c3af-1193-46c2-aa92-60996b7964cc</id>
-      <recordtableid>8eaed4a9-ef77-43b6-b80f-1482c01c1b0c</recordtableid>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DesktopApp_Modules.rxtmg">
@@ -305,20 +356,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Page modules">
+    <Folder Include="ApplicationModules\Chrome">
+      <id>370a32b3-0960-41a8-82f1-76860c095ffd</id>
+    </Folder>
+    <Folder Include="ApplicationModules\ControlPanel">
+      <id>c5fe62ad-7e40-4e50-b2de-9ea2254d6f01</id>
+    </Folder>
+    <Folder Include="ApplicationModules\Notepad">
+      <id>457ef068-177d-423c-a1f7-7173d5e7e3a4</id>
+    </Folder>
+    <Folder Include="ApplicationModules">
       <id>543e4602-ed9f-4a14-893b-e1214efbe51c</id>
     </Folder>
-    <Folder Include="Page modules\GeneralPage">
+    <Folder Include="ApplicationModules\GeneralApplication">
       <id>de459cc0-02e3-43df-85cd-33020461225f</id>
-    </Folder>
-    <Folder Include="Page modules\Common">
-      <id>076b6bff-8141-4db0-872c-0574f9f59639</id>
-    </Folder>
-    <Folder Include="Page modules\BasePage">
-      <id>cbf25de5-123b-4663-be22-0cb91dba0411</id>
-    </Folder>
-    <Folder Include="Recordings">
-      <id>9a664f67-e81d-494f-b98d-bab81b37a2b7</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
