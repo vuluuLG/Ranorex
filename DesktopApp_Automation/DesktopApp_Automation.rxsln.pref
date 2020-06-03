@@ -11,6 +11,6 @@
       <string>f459749b-8098-41cd-8dff-e057454ab20b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Automation[]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\DesktopApp_Automation.rxtst&#xD;&#xA;Solution DesktopApp_Automation" />
+  <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Automation[Reports[]Recordings[InstallApp.rxrec[]ValidateInstalled.rxrec[]]]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\Reports&#xD;&#xA;Solution DesktopApp_Automation" />
   <StartupProject value="{BA6510CB-66BB-40D1-8786-6EF8618D02A6}" />
 </Properties>

@@ -277,6 +277,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>4e8230e7-90b3-4622-ac23-6c4a2b93518f</id>
     </Content>
+    <Content Include="TestCase001_DataSource.csv">
+      <Link>TestCase001_DataSource.csv</Link>
+      <BoundTo>2ef19a5a-3363-4dbd-85e2-22e91132d799</BoundTo>
+      <DependentUpon>DesktopApp_Automation.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>9c5117d6-6ff6-4d2d-a554-faeaa4dc5c50</id>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DesktopApp_Automation.rxtmg">
