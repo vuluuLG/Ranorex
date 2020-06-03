@@ -79,8 +79,11 @@ namespace mobileSol.Recording_Modules.General
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.Browser.Form.SelfInfo, repo.Browser.Form.BtnOKInfo);
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.Browser.BrowserPopup.SelfInfo, repo.Browser.BrowserPopup.BtnOKInfo);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Delay.Duration(3000, false);
             
         }
 

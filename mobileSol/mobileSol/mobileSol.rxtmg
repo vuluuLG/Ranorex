@@ -82,7 +82,7 @@ rxversion="9.3">
 				<groupvariables>
 					<groupvariable
 					id="f231f77e-d610-4965-bb3a-dd5e88829811"
-					name="ModuleGroupNewParameter">
+					name="ModuleGroupRepMainMenuItem">
 						<modulevariable
 						moduleref="a39c950b-e7ab-469f-8b68-cfa15fc49e98"
 						name="repMainMenuItem"
@@ -91,7 +91,7 @@ rxversion="9.3">
 					</groupvariable>
 					<groupvariable
 					id="f9dc3827-c340-418a-93ef-201a53e7d2a3"
-					name="ModuleGroupNewParameter2">
+					name="ModuleGroupRepGSItemName">
 						<modulevariable
 						moduleref="f3315f9a-8d80-4600-8cc8-4e52fba4fb14"
 						name="repGSItemName"
@@ -100,7 +100,7 @@ rxversion="9.3">
 					</groupvariable>
 					<groupvariable
 					id="d24e3211-8007-40bf-bd5e-2d6297e40e85"
-					name="ModuleGroupNewParameter1">
+					name="ModuleGroupModPageName">
 						<modulevariable
 						moduleref="6de8f24f-bacb-4f1d-8fe2-881704e8acea"
 						name="modPageName"

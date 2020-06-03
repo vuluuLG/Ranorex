@@ -85,6 +85,18 @@ namespace mobileSol
             set { _repUsername = value; }
         }
 
+        string _modDeviceName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable modDeviceName.
+        /// </summary>
+        [TestVariable("532d27b1-b0c8-42b9-9c51-77e0298b59e5")]
+        public string modDeviceName
+        {
+            get { return _modDeviceName; }
+            set { _modDeviceName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -124,7 +136,7 @@ namespace mobileSol
             mobileSolRepositoryFolders.LoginPageFolder _loginpage;
             mobileSolRepositoryFolders.DashboardPageFolder _dashboardpage;
             mobileSolRepositoryFolders.DomAppFolder _dom;
-            mobileSolRepositoryFolders.FormFolder _form;
+            mobileSolRepositoryFolders.BrowserPopupFolder _browserpopup;
 
             /// <summary>
             /// Creates a new Browser  folder.
@@ -135,7 +147,7 @@ namespace mobileSol
                 _loginpage = new mobileSolRepositoryFolders.LoginPageFolder(this);
                 _dashboardpage = new mobileSolRepositoryFolders.DashboardPageFolder(this);
                 _dom = new mobileSolRepositoryFolders.DomAppFolder(this);
-                _form = new mobileSolRepositoryFolders.FormFolder(this);
+                _browserpopup = new mobileSolRepositoryFolders.BrowserPopupFolder(this);
             }
 
             /// <summary>
@@ -190,12 +202,12 @@ namespace mobileSol
             }
 
             /// <summary>
-            /// The Form folder.
+            /// The BrowserPopup folder.
             /// </summary>
-            [RepositoryFolder("3c09e35f-7904-4cdb-8091-9179ce887a8e")]
-            public virtual mobileSolRepositoryFolders.FormFolder Form
+            [RepositoryFolder("9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7")]
+            public virtual mobileSolRepositoryFolders.BrowserPopupFolder BrowserPopup
             {
-                get { return _form; }
+                get { return _browserpopup; }
             }
         }
 
@@ -735,38 +747,38 @@ namespace mobileSol
         }
 
         /// <summary>
-        /// The FormFolder folder.
+        /// The BrowserPopupFolder folder.
         /// </summary>
-        [RepositoryFolder("3c09e35f-7904-4cdb-8091-9179ce887a8e")]
-        public partial class FormFolder : RepoGenBaseFolder
+        [RepositoryFolder("9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7")]
+        public partial class BrowserPopupFolder : RepoGenBaseFolder
         {
             RepoItemInfo _btnokInfo;
 
             /// <summary>
-            /// Creates a new Form  folder.
+            /// Creates a new BrowserPopup  folder.
             /// </summary>
-            public FormFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", ".//form", parentFolder, 30000, null, false, "3c09e35f-7904-4cdb-8091-9179ce887a8e", "")
+            public BrowserPopupFolder(RepoGenBaseFolder parentFolder) :
+                    base("BrowserPopup", ".//container[@platformclass~'UIAlertController']", parentFolder, 30000, null, false, "9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7", "")
             {
-                _btnokInfo = new RepoItemInfo(this, "BtnOK", ".//button[@accessibilitylabel='OK']", 30000, null, "03530834-552f-43ce-9b95-118216a201f8");
+                _btnokInfo = new RepoItemInfo(this, "BtnOK", ".//*[@accessibilitylabel='OK']", 30000, null, "03530834-552f-43ce-9b95-118216a201f8");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("3c09e35f-7904-4cdb-8091-9179ce887a8e")]
-            public virtual Ranorex.Form Self
+            [RepositoryItem("9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7")]
+            public virtual Ranorex.Container Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
                 }
             }
 
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("3c09e35f-7904-4cdb-8091-9179ce887a8e")]
+            [RepositoryItemInfo("9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -779,11 +791,11 @@ namespace mobileSol
             /// The BtnOK item.
             /// </summary>
             [RepositoryItem("03530834-552f-43ce-9b95-118216a201f8")]
-            public virtual Ranorex.Button BtnOK
+            public virtual Ranorex.Unknown BtnOK
             {
                 get
                 {
-                    return _btnokInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _btnokInfo.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 

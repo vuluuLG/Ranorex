@@ -176,21 +176,21 @@ name="mobileSolRepository">
 				</basepath>
 			</appfolder>
 			<folder
-			capname="form"
-			id="3c09e35f-7904-4cdb-8091-9179ce887a8e"
+			capname="container"
+			id="9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7"
 			isrooted="True"
-			name="Form"
+			name="BrowserPopup"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				capname="button"
+				capname="unknown"
 				id="03530834-552f-43ce-9b95-118216a201f8"
 				name="BtnOK"
 				searchtimeout="30000ms">
-					/mobileapp[@title='ranorex.RxBrowser']//form//button[@accessibilitylabel='OK']
+					/mobileapp[@title='ranorex.RxBrowser']//container[@platformclass~'UIAlertController']//*[@accessibilitylabel='OK']
 				</item>
 				<basepath>
-					/mobileapp[@title='ranorex.RxBrowser']//form
+					/mobileapp[@title='ranorex.RxBrowser']//container[@platformclass~'UIAlertController']
 				</basepath>
 			</folder>
 			<basepath>
@@ -212,6 +212,10 @@ name="mobileSolRepository">
 		<var
 		id="9070833a-c51c-4996-a05b-acf80582ff3f"
 		name="repUsername">
+		</var>
+		<var
+		id="532d27b1-b0c8-42b9-9c51-77e0298b59e5"
+		name="modDeviceName">
 		</var>
 	</variables>
 </repository>

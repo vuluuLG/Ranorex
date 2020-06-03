@@ -132,6 +132,9 @@
     <Compile Include="Coding Modules\ModifyPageNameUpdate.cs">
       <id>462f2d9a-fbcf-409e-8dee-c6ec298828b6</id>
     </Compile>
+    <Compile Include="Coding Modules\StartApp.cs">
+      <id>9120a1ff-083d-4c50-9e40-5960ba496a8a</id>
+    </Compile>
     <Compile Include="Common\Utility.cs">
       <id>5e2aa410-54f1-45ab-8e5f-e5a5cb74a000</id>
     </Compile>
@@ -332,9 +335,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="mobileSol.cd">
-      <id>d5dcf4b5-739f-4af2-acf8-4901237859a3</id>
-    </Content>
     <Content Include="mobileSol.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>63d741c0-c2ff-4667-bc82-91acecca6bfa</id>

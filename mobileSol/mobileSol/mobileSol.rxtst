@@ -3,10 +3,27 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			enabled="False"
 			id="032c4651-1195-49a9-b5d3-e099fc1bc253"
 			name="StartApp"
 			ref="1b57d7b6-d364-4490-8dfc-7904d4291977"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="varDeviceName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="483e234d-b286-4caa-82d5-b4ee9851e3c7"
+					variablename="modDeviceName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="modDeviceName"
+					datasourceid="903c1766-0248-429f-82db-cfa2964aeab1"
+					variableid="483e234d-b286-4caa-82d5-b4ee9851e3c7"
+					variablename="modDeviceName">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testcase
 			id="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
@@ -26,6 +43,20 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="087b07a6-ce1d-4951-a91d-dda1e736e9da"
+			name="StartApp"
+			ref="05722412-efa8-49c5-a662-7efd84afa86c"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="varDeviceName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="a5dc0c85-3bdb-43d5-820c-cbd4a3efbe8f"
+					variablename="modDeviceName">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="4ff6aac2-4c55-44fa-8498-e85a95c6c0ed"
 			name="AddPage"
@@ -100,6 +131,7 @@
 			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
+			enabled="False"
 			id="665410cd-3cd2-45ba-aab7-7965d7e0bc0d"
 			name="CloseApp"
 			ref="833b3673-eac1-4e7a-8c8b-f9fcb39c723a"
@@ -115,7 +147,7 @@
 					dataname="varPageName"
 					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="d10443f0-8177-4ee4-a1ab-5cadc7459319"
-					variablename="modMainMenuItem">
+					variablename="repMainMenuItem">
 					</var>
 				</databinding>
 			</testmodule>
@@ -140,6 +172,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="779dbe4d-8680-4107-98dc-ed84593084a7"
 			name="LogOut"
 			ref="2e7a9cf5-f61a-4dc2-af9e-2f87a1bc74ff"
@@ -215,7 +248,7 @@
 					dataname="varPageNameUpdate"
 					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="d10443f0-8177-4ee4-a1ab-5cadc7459319"
-					variablename="modMainMenuItem">
+					variablename="repMainMenuItem">
 					</var>
 				</databinding>
 			</testmodule>
@@ -267,6 +300,22 @@
 					variablename="modPassword">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="modDeviceName"
+					datasourceid="903c1766-0248-429f-82db-cfa2964aeab1"
+					variableid="532d27b1-b0c8-42b9-9c51-77e0298b59e5"
+					variablename="modDeviceName">
+					</var>
+				</missingdatabinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="varDeviceName"
+					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
+					variableid="532d27b1-b0c8-42b9-9c51-77e0298b59e5"
+					variablename="modDeviceName">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="c556462a-e67a-49b8-8601-09ca46a37e25"
@@ -291,22 +340,26 @@
 					dataname="varPageName"
 					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="f231f77e-d610-4965-bb3a-dd5e88829811"
-					variablename="ModuleGroupNewParameter">
+					variablename="ModuleGroupRepMainMenuItem">
 					</var>
 					<var
 					dataname="parGSEdit"
 					datasourceid="06b9ef9e-fde5-4e40-9f2a-5f1e94e2aba4"
 					variableid="f9dc3827-c340-418a-93ef-201a53e7d2a3"
-					variablename="ModuleGroupNewParameter2">
+					variablename="ModuleGroupRepGSItemName">
 					</var>
 					<var
 					dataname="varPageNameUpdate"
 					datasourceid="5bd49d25-e171-45db-a73d-dd753cdc8ddb"
 					variableid="d24e3211-8007-40bf-bd5e-2d6297e40e85"
-					variablename="ModuleGroupNewParameter1">
+					variablename="ModuleGroupModPageName">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			id="ccf83b10-c4c7-4207-9813-d09c90850498"
+			name="TestCase">
+			</testcase>
 			<testmodule
 			id="f865f41d-672b-451c-bef3-044f009d00ba"
 			name="ModifyPageNameUpdate"
@@ -347,14 +400,6 @@
 					id="a19b79b8-f319-4e65-8778-1ef2c3aff03d"
 					name="setup">
 						<testmodule
-						id="032c4651-1195-49a9-b5d3-e099fc1bc253"
-						name="StartApp">
-						</testmodule>
-						<testmodule
-						id="b1510a18-a40c-48b7-988b-a48051543074"
-						name="Login">
-						</testmodule>
-						<testmodule
 						id="830870f4-9279-48cf-a866-c8f0505ee7b4"
 						name="ModifyPageName">
 						</testmodule>
@@ -363,6 +408,22 @@
 						name="ModifyPageNameUpdate">
 						</testmodule>
 					</setup>
+					<testcase
+					id="ccf83b10-c4c7-4207-9813-d09c90850498"
+					name="TestCase">
+						<testmodule
+						id="032c4651-1195-49a9-b5d3-e099fc1bc253"
+						name="StartApp">
+						</testmodule>
+						<testmodule
+						id="087b07a6-ce1d-4951-a91d-dda1e736e9da"
+						name="StartApp">
+						</testmodule>
+						<testmodule
+						id="b1510a18-a40c-48b7-988b-a48051543074"
+						name="Login">
+						</testmodule>
+					</testcase>
 					<testcase
 					id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
 					name="Test_case_001:_Verify_that_user_can_add_page">
@@ -436,6 +497,9 @@
 			</testcontainer>
 			<testcontainer
 			id="c556462a-e67a-49b8-8601-09ca46a37e25">
+			</testcontainer>
+			<testcontainer
+			id="ccf83b10-c4c7-4207-9813-d09c90850498">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

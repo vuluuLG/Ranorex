@@ -37,26 +37,26 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="af5c3688-e3b9-404c-9c2a-8bb4f35e38e6">
+			id="39a1ed1d-0e22-4f78-a3c2-428c2e218b2b">
 				<argument
 				argname="findElement"
-				id="1abd0c65-34cb-411c-aae9-43ae8acba907">
+				id="b114e777-b13f-4fc9-8323-b9bd416765e5">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
 					</argvaluetype>
 					<argvalue>
 					</argvalue>
 					<info
-					id="3c09e35f-7904-4cdb-8091-9179ce887a8e"
+					id="9cf4d586-8ba4-4330-b8d1-7fa04f09f8f7"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/mobileapp[@title='ranorex.RxBrowser']//form
+							/mobileapp[@title='ranorex.RxBrowser']//container[@platformclass~'UIAlertController']
 						</path>
 					</info>
 				</argument>
 				<argument
 				argname="clickElement"
-				id="7f12f420-c434-4f70-ac07-4f9e17937dad">
+				id="79f928f6-1f2b-465b-ad31-e7a1c19d4e6d">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
 					</argvaluetype>
@@ -66,12 +66,21 @@ mode="Global">
 					id="03530834-552f-43ce-9b95-118216a201f8"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/mobileapp[@title='ranorex.RxBrowser']//form//button[@accessibilitylabel='OK']
+							/mobileapp[@title='ranorex.RxBrowser']//*[@accessibilitylabel='OK']
 						</path>
 					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="67c22d6c-c97e-4bbb-93f5-3ca7d2a89007"

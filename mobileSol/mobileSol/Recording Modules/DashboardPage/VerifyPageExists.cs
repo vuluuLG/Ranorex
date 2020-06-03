@@ -41,7 +41,6 @@ namespace mobileSol.Recording_Modules.DashboardPage
         /// </summary>
         public VerifyPageExists()
         {
-            modMainMenuItem = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace mobileSol.Recording_Modules.DashboardPage
         }
 
 #region Variables
-
-        string _modMainMenuItem;
-
-        /// <summary>
-        /// Gets or sets the value of variable modMainMenuItem.
-        /// </summary>
-        [TestVariable("d10443f0-8177-4ee4-a1ab-5cadc7459319")]
-        public string modMainMenuItem
-        {
-            get { return _modMainMenuItem; }
-            set { _modMainMenuItem = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable repMainMenuItem.

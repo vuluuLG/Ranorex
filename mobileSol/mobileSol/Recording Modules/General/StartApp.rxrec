@@ -26,11 +26,15 @@ mode="Mobile">
 	namespace="mobileSol.Recording_Modules.General">
 	</codegen>
 	<variables>
+		<var
+		id="483e234d-b286-4caa-82d5-b4ee9851e3c7"
+		name="modDeviceName">
+		</var>
 	</variables>
 	<recorditems>
 		<runmobileapprecorditem
 		application="ranorex.RxBrowser"
-		devicename="Samsung Galaxy Tab A"
+		devicename="Current Endpoint (None)"
 		duration="3500ms"
 		enabled="True"
 		optional="False"

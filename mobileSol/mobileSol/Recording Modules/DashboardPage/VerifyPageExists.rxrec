@@ -23,34 +23,26 @@ mode="Global">
 	namespace="mobileSol.Recording_Modules.DashboardPage">
 	</codegen>
 	<variables>
-		<var
-		id="d10443f0-8177-4ee4-a1ab-5cadc7459319"
-		name="modMainMenuItem">
-		</var>
 	</variables>
 	<recorditems>
 		<validationitem
 		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="9b04dcdb-871f-4b18-916f-43accbe07a19">
+		searchpropertyid="d008e34f-96b2-4307-af46-4f00a1112290">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="modMainMenuItem">
-				</binding>
 			</bindings>
 			<info
 			id="27ead7b6-0298-45b0-9253-2fca024e301e"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$varMainMenuItem]
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$repMainMenuItem]
 				</path>
 			</info>
 			<matchname>
-				innerText
+				Text
 			</matchname>
 			<matchvalue>
 				yourtext

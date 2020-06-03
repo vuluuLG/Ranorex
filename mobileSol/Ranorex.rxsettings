@@ -407,7 +407,7 @@ rxversion="9.3">
       },
       &quot;MetaData&quot;: {},
       &quot;Description&quot;: &quot;&quot;,
-      &quot;DisplayName&quot;: &quot;Samsung Galaxy Tab A&quot;,
+      &quot;DisplayName&quot;: &quot;Galaxy Tab A&quot;,
       &quot;Url&quot;: &quot;c57bf216&quot;,
       &quot;Tags&quot;: []
     }
@@ -423,7 +423,7 @@ rxversion="9.3">
       },
       &quot;MetaData&quot;: {},
       &quot;Description&quot;: &quot;&quot;,
-      &quot;DisplayName&quot;: &quot;iPhone 6s_Gen_2017_101&quot;,
+      &quot;DisplayName&quot;: &quot;iPhone 6s&quot;,
       &quot;Url&quot;: &quot;468191f9f9e3a1743ddca8ed16375d02bc0858ab&quot;,
       &quot;Tags&quot;: []
     }
@@ -662,7 +662,7 @@ rxversion="9.3">
 		50
 	</plugin.mobile.ios.maxcollectionviewvcellcount>
 	<plugin.mobile.android.UseAndroidOS>
-		True
+		False
 	</plugin.mobile.android.UseAndroidOS>
 	<plugin.mobile.android.FetchAndroidOSScreenshots>
 		True

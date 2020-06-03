@@ -41,6 +41,7 @@ namespace mobileSol.Recording_Modules.General
         /// </summary>
         public StartApp()
         {
+            modDeviceName = "";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace mobileSol.Recording_Modules.General
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable modDeviceName.
+        /// </summary>
+        [TestVariable("483e234d-b286-4caa-82d5-b4ee9851e3c7")]
+        public string modDeviceName
+        {
+            get { return repo.modDeviceName; }
+            set { repo.modDeviceName = value; }
+        }
 
 #endregion
 
@@ -79,8 +90,8 @@ namespace mobileSol.Recording_Modules.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'Samsung Galaxy Tab A'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("Samsung Galaxy Tab A", "ranorex.RxBrowser", true);
+            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device " + Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName() + ".", new RecordItemIndex(0));
+            Host.Local.RunMobileApp(Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName(), "ranorex.RxBrowser", true);
             Delay.Milliseconds(3500);
             
             // Browse to site.
