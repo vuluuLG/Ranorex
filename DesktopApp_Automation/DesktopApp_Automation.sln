@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Ranorex = .\Ranorex.rxsettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp_Automation", "DesktopApp_Automation\DesktopApp_Automation.csproj", "{BA6510CB-66BB-40D1-8786-6EF8618D02A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp_Test", "DesktopApp_Automation\DesktopApp_Test.csproj", "{BA6510CB-66BB-40D1-8786-6EF8618D02A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp_Modules", "DesktopApp_Modules\DesktopApp_Modules.csproj", "{39EBB2BB-80A9-4F93-99C8-492F9160856E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,5 +23,9 @@ Global
 		{BA6510CB-66BB-40D1-8786-6EF8618D02A6}.Debug|x86.ActiveCfg = Debug|x86
 		{BA6510CB-66BB-40D1-8786-6EF8618D02A6}.Release|x86.Build.0 = Release|x86
 		{BA6510CB-66BB-40D1-8786-6EF8618D02A6}.Release|x86.ActiveCfg = Release|x86
+		{39EBB2BB-80A9-4F93-99C8-492F9160856E}.Debug|x86.Build.0 = Debug|x86
+		{39EBB2BB-80A9-4F93-99C8-492F9160856E}.Debug|x86.ActiveCfg = Debug|x86
+		{39EBB2BB-80A9-4F93-99C8-492F9160856E}.Release|x86.Build.0 = Release|x86
+		{39EBB2BB-80A9-4F93-99C8-492F9160856E}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 EndGlobal
