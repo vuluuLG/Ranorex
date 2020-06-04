@@ -3,7 +3,6 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			enabled="False"
 			id="032c4651-1195-49a9-b5d3-e099fc1bc253"
 			name="StartApp"
 			ref="1b57d7b6-d364-4490-8dfc-7904d4291977"
@@ -44,6 +43,7 @@
 				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="087b07a6-ce1d-4951-a91d-dda1e736e9da"
 			name="StartApp"
 			ref="05722412-efa8-49c5-a662-7efd84afa86c"
@@ -56,6 +56,12 @@
 					variablename="modDeviceName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3e80e40c-1098-4b7d-b81e-716396ba10a0"
+			name="GoToPanelsPage"
+			ref="11912396-f616-417a-8a13-96b81c102730"
+			type="Recording">
 			</testmodule>
 			<modulegroup
 			id="4ff6aac2-4c55-44fa-8498-e85a95c6c0ed"
@@ -107,7 +113,7 @@
 					</param>
 					<param
 					name="varDeviceName"
-					value="">
+					value="Galaxy Tab A">
 					</param>
 				</parameters>
 			</testcase>
@@ -271,10 +277,21 @@
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="9f8c788a-45b3-4afe-820a-579352d66527"
+			name="AddPage"
+			ref="54c24229-3075-48cd-87b8-c5965f655b68"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="a19b79b8-f319-4e65-8778-1ef2c3aff03d"
 			name="setup">
 			</setup>
+			<testcase
+			datasource="TestCase08"
+			id="ad2c7248-b11d-4645-b927-a9aaae0d4934"
+			name="Test_case_008:_Verify_that_user_is_able_to_create_a_panel_with_multi-color_selection_in_Dashboard">
+			</testcase>
 			<testmodule
 			id="b1510a18-a40c-48b7-988b-a48051543074"
 			name="Login"
@@ -361,6 +378,50 @@
 			name="TestCase">
 			</testcase>
 			<testmodule
+			id="d7bcd709-faaf-48aa-b50d-8b46c9330393"
+			name="SetFieldOnPanelEditor"
+			ref="40df2330-379b-4e47-b6d2-d35383935e96"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="PanelName"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="a7e4a9c2-dab2-4d12-8297-c9f429c19cd6"
+					variablename="modPanelName">
+					</var>
+					<var
+					dataname="StatisticField"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="c4bc7f70-b1dc-4a07-85b8-d6e0c3c0a84e"
+					variablename="modStatisticField">
+					</var>
+					<var
+					dataname="Value"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="6d35f351-a8f1-4ebb-b614-fc4dbcab2033"
+					variablename="modValue">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="79a3f2bb-3e5b-4259-a75e-a58c51c19b39"
+					variablename="modForms">
+					</var>
+					<var
+					dataname="Color"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="905f7661-52ae-44c4-abdc-9322f721d1cb"
+					variablename="modColors">
+					</var>
+					<var
+					dataname="PanelType"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="354cdc55-2853-4250-afd9-e225e0262b21"
+					variablename="modPanelType">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f865f41d-672b-451c-bef3-044f009d00ba"
 			name="ModifyPageNameUpdate"
 			ref="24e437c0-45e6-4d5b-91aa-d845e139cc08"
@@ -425,6 +486,22 @@
 						</testmodule>
 					</testcase>
 					<testcase
+					id="ad2c7248-b11d-4645-b927-a9aaae0d4934"
+					name="Test_case_008:_Verify_that_user_is_able_to_create_a_panel_with_multi-color_selection_in_Dashboard">
+						<testmodule
+						id="3e80e40c-1098-4b7d-b81e-716396ba10a0"
+						name="GoToPanelsPage">
+						</testmodule>
+						<testmodule
+						id="9f8c788a-45b3-4afe-820a-579352d66527"
+						name="AddPage">
+						</testmodule>
+						<testmodule
+						id="d7bcd709-faaf-48aa-b50d-8b46c9330393"
+						name="SetFieldOnPanelEditor">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
 					name="Test_case_001:_Verify_that_user_can_add_page">
 						<modulegroup
@@ -481,6 +558,38 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="D:\Ranorex\mobileSol\mobileSol\TestData\TestCase_08.xlsx"
+		id="fddb78e6-6a03-4648-92e2-e630956d190c"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="TestCase08"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="TestCase08"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					PanelType
+				</column>
+				<column>
+					PanelName
+				</column>
+				<column>
+					StatisticField
+				</column>
+				<column>
+					Value
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					Color
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
@@ -494,6 +603,9 @@
 			</testcontainer>
 			<testcontainer
 			id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779">
+			</testcontainer>
+			<testcontainer
+			id="ad2c7248-b11d-4645-b927-a9aaae0d4934">
 			</testcontainer>
 			<testcontainer
 			id="c556462a-e67a-49b8-8601-09ca46a37e25">

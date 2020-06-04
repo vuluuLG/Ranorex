@@ -20,11 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-using mobileSol.Common;
-
-namespace mobileSol.Recording_Modules.DashboardPage
+namespace mobileSol.Recording_Modules.PanelsPage
 {
-    public partial class ModifyPage
+    public partial class AddPage
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -34,13 +32,6 @@ namespace mobileSol.Recording_Modules.DashboardPage
         {
             // Your recording specific initialization code goes here.
         }
-        	
-        public string GetPageName(String baseName, bool isRnd)
-        {
-        	if (isRnd) {
-        		return baseName + Utility.GetCurrentDate("yyyyddMM");
-        	}
-        	return baseName;
-        }
+
     }
 }

@@ -67,7 +67,7 @@ namespace mobileSol.Coding_Modules
             Delay.SpeedFactor = 1.0;
             
             Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device " + Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName() + ".");
-            Host.Local.RunMobileApp(Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName(), "org.mozilla.firefox", true);
+            Host.Local.RunMobileApp(Ranorex.Core.Remoting.RemoteServiceLocator.GetCurrentDeviceName(), "ranorex.RxBrowser", true);
             
             // Browse to site.
             Report.Log(ReportLevel.Info, "Set value", "Browse to site.\r\nSetting attribute PageUrl to 'http://192.168.171.142/TADashboard' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo);

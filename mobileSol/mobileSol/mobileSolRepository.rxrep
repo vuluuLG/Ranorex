@@ -142,26 +142,160 @@ name="mobileSolRepository">
 				searchtimeout="30000ms">
 					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'main-menu']//ul//li/a[@innertext=$repMainMenuItem]
 				</item>
-				<item
-				addcaps="unknown,atag,webelement,mobileuielement"
-				capname="atag"
-				id="33b1dc0c-0488-4f82-8ef0-697801e4a81c"
-				name="LblUserPanel"
-				refimgid="d25d8a33-74fa-4827-bab7-034c68004add"
-				searchtimeout="30000ms">
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext=$repUsername]
-				</item>
-				<item
-				addcaps="unknown,atag,webelement,mobileuielement"
-				capname="atag"
-				id="412e4ab5-b8c4-4d63-8537-efcdd769dadd"
-				name="BtnLogout"
-				refimgid="0909bf98-85d1-4c59-a39b-6535cb4b89ee"
-				searchtimeout="30000ms">
-					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul[@class='head-menu']//ul//a[@innertext='Logout']
-				</item>
+				<folder
+				capname="divtag"
+				id="cd1d71f6-2ede-465e-95e3-84b38f4c5bad"
+				isrooted="True"
+				name="Header"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="atag"
+					id="e14a613e-4fb0-4a15-973e-ed7e045d02c1"
+					name="MnuAdminister"
+					searchtimeout="30000ms">
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext='Administer']
+					</item>
+					<item
+					addcaps="unknown,atag,webelement,mobileuielement"
+					capname="atag"
+					id="412e4ab5-b8c4-4d63-8537-efcdd769dadd"
+					name="BtnLogout"
+					refimgid="0909bf98-85d1-4c59-a39b-6535cb4b89ee"
+					searchtimeout="30000ms">
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul[@class='head-menu']//ul//a[@innertext='Logout']
+					</item>
+					<item
+					addcaps="unknown,atag,webelement,mobileuielement"
+					capname="atag"
+					id="33b1dc0c-0488-4f82-8ef0-697801e4a81c"
+					name="LblUserPanel"
+					refimgid="d25d8a33-74fa-4827-bab7-034c68004add"
+					searchtimeout="30000ms">
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul//a[@innertext=$repUsername]
+					</item>
+					<folder
+					capname="ultag"
+					id="6269889e-eef5-4c50-b148-04047fbbf0f8"
+					isrooted="True"
+					name="UlAdminister"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="atag"
+						id="a9ac8322-a6ec-4a88-a49a-876cf175bde5"
+						name="BtnPanels"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul[#'ulAdminister']//li/a[@innertext='Panels']
+						</item>
+						<basepath>
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']//ul[#'ulAdminister']
+						</basepath>
+					</folder>
+					<basepath>
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']//div[#'header']
+					</basepath>
+				</folder>
 				<basepath>
 					/mobileapp[@title='ranorex.RxBrowser']//dom[@path~'/TADashboard/.*.page']
+				</basepath>
+			</folder>
+			<folder
+			capname="webdocument"
+			id="e0e53a42-8d12-4c8b-836e-bd4bdce3f59a"
+			isrooted="True"
+			name="PanelsPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="atag"
+				id="29d479fd-e67d-4687-8ab7-3ec4155d501e"
+				name="BtnAddNew"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//form[#'form1']//a[@innertext='Add New']
+				</item>
+				<folder
+				capname="table"
+				id="795d64d8-8fc4-4064-a30c-4b2a90571800"
+				isrooted="True"
+				name="TblResult"
+				searchtimeout="30000ms"
+				usecache="False">
+					<basepath>
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//table[@class='GridView']
+					</basepath>
+				</folder>
+				<folder
+				capname="divtag"
+				id="d9439f4b-1889-4320-b3b1-1ff501b2a6ec"
+				isrooted="True"
+				name="AddNewPanel"
+				searchtimeout="30000ms"
+				usecache="False">
+					<folder
+					capname="tabletag"
+					id="769c26ec-6b0e-4583-b18e-e1a00c61735c"
+					isrooted="True"
+					name="InfoSettings"
+					refimgid="0bdc96ba-3d3f-4b86-ae8e-6a21eaf60829"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="inputtag"
+						id="78c5e984-bb0c-477f-b6cf-857296579072"
+						name="RbPanelType"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//table[#'infoSettings']//label[@innertext=$repPanelType]/input
+						</item>
+						<item
+						capname="inputtag"
+						id="38268f0e-4167-4d4e-9c6e-cf781b8d52fa"
+						name="TxtDisplayName"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//table[#'infoSettings']//input[@id='txtDisplayName']
+						</item>
+						<basepath>
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//table[#'infoSettings']
+						</basepath>
+					</folder>
+					<folder
+					capname="divtag"
+					id="9126d6dd-0a08-4462-bbb3-ece7ee15e51d"
+					isrooted="True"
+					name="DetailSettings"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="selecttag"
+						id="115369f0-a313-4ad0-b35c-b4946bcd8f58"
+						name="DdlStatisticField"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//div[@id='tdSettings']//select[@id='cbbStatField']
+						</item>
+						<item
+						capname="selecttag"
+						id="57d7537e-770d-47f6-ae6b-ba9cfd3b941d"
+						name="DdlValue"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//div[@id='tdSettings']//select[@id='cbbStatFieldValue']
+						</item>
+						<basepath>
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//div[@id='tdSettings']
+						</basepath>
+					</folder>
+					<item
+					capname="inputtag"
+					id="5c5e449d-935b-423e-90c5-8fa1460fe8d5"
+					name="BtnOK"
+					searchtimeout="30000ms">
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//input[#'OK']
+					</item>
+					<basepath>
+						/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']
+					</basepath>
+				</folder>
+				<basepath>
+					/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']
 				</basepath>
 			</folder>
 			<appfolder
@@ -193,6 +327,94 @@ name="mobileSolRepository">
 					/mobileapp[@title='ranorex.RxBrowser']//container[@platformclass~'UIAlertController']
 				</basepath>
 			</folder>
+			<folder
+			capname="divtag"
+			id="67a7cf05-8098-4747-b78d-b4e5d115e12d"
+			isrooted="True"
+			name="ColorPicker"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="tdtag"
+				id="2542e93b-eb71-4903-bcbe-589d4d397c9a"
+				name="DarkRed"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#c00000']
+				</item>
+				<item
+				capname="tdtag"
+				id="5469f019-a7a8-4e1b-8be3-01112046b05f"
+				name="Red"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#ff0000']
+				</item>
+				<item
+				capname="tdtag"
+				id="5c01ba96-a085-4512-9d4d-7c7034dd4f68"
+				name="Orange"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#ffc000']
+				</item>
+				<item
+				capname="tdtag"
+				id="7b55aa23-80a5-4013-a6e5-36b8ba56e74b"
+				name="Yellow"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#ffff00']
+				</item>
+				<item
+				capname="tdtag"
+				id="271133ec-724d-4a57-9fcf-975b91fed0b9"
+				name="LightGreen"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#92d050']
+				</item>
+				<item
+				capname="tdtag"
+				id="bcae69eb-bc99-4113-aa85-2e47238bb768"
+				name="Green"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#00b050']
+				</item>
+				<item
+				capname="tdtag"
+				id="cc8ef4f2-076c-458e-936e-eba1e010f3b2"
+				name="LightBlue"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#00b0f0']
+				</item>
+				<item
+				capname="tdtag"
+				id="54bfc770-11df-4267-9d68-62176332ebfc"
+				name="Blue"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#0070c0']
+				</item>
+				<item
+				capname="tdtag"
+				id="a8092174-f247-4dd5-bd24-912af5fb3991"
+				name="DarkBlue"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#002060']
+				</item>
+				<item
+				capname="tdtag"
+				id="11280a20-18d5-4b9b-895a-b5e18d41344d"
+				name="Purple"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title='#7030a0']
+				</item>
+				<item
+				capname="tdtag"
+				id="fdb0bab8-76fc-47b4-b8ce-6267adbd5979"
+				name="DynamicColor"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']//td[@title=$repHex]
+				</item>
+				<basepath>
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'colorPickerDiv']
+				</basepath>
+			</folder>
 			<basepath>
 				/mobileapp[@title='ranorex.RxBrowser']
 			</basepath>
@@ -216,6 +438,15 @@ name="mobileSolRepository">
 		<var
 		id="532d27b1-b0c8-42b9-9c51-77e0298b59e5"
 		name="modDeviceName">
+		</var>
+		<var
+		id="9d75717d-efcd-4761-92ea-ce675f4b3fbf"
+		name="repPanelType">
+		</var>
+		<var
+		id="001a5d5e-e0d9-4cbf-95cd-958216d817d3"
+		name="repHex">
+			#7030a0
 		</var>
 	</variables>
 </repository>

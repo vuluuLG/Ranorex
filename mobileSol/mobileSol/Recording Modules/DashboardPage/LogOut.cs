@@ -89,12 +89,12 @@ namespace mobileSol.Recording_Modules.DashboardPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.LblUserPanel' at Center", repo.Browser.DashboardPage.LblUserPanelInfo, new RecordItemIndex(0));
-            repo.Browser.DashboardPage.LblUserPanel.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.Header.LblUserPanel' at Center", repo.Browser.DashboardPage.Header.LblUserPanelInfo, new RecordItemIndex(0));
+            repo.Browser.DashboardPage.Header.LblUserPanel.Touch();
             Delay.Milliseconds(300);
             
-            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.BtnLogout' at Center", repo.Browser.DashboardPage.BtnLogoutInfo, new RecordItemIndex(1));
-            repo.Browser.DashboardPage.BtnLogout.Touch();
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.DashboardPage.Header.BtnLogout' at Center", repo.Browser.DashboardPage.Header.BtnLogoutInfo, new RecordItemIndex(1));
+            repo.Browser.DashboardPage.Header.BtnLogout.Touch();
             Delay.Milliseconds(300);
             
         }

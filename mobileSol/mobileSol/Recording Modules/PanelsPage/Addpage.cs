@@ -20,49 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace mobileSol.Recording_Modules.General
+namespace mobileSol.Recording_Modules.PanelsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartApp recording.
+    ///The AddPage recording.
     /// </summary>
-    [TestModule("1b57d7b6-d364-4490-8dfc-7904d4291977", ModuleType.Recording, 1)]
-    public partial class StartApp : ITestModule
+    [TestModule("54c24229-3075-48cd-87b8-c5965f655b68", ModuleType.Recording, 1)]
+    public partial class AddPage : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::mobileSol.mobileSolRepository repository.
         /// </summary>
         public static global::mobileSol.mobileSolRepository repo = global::mobileSol.mobileSolRepository.Instance;
 
-        static StartApp instance = new StartApp();
+        static AddPage instance = new AddPage();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartApp()
+        public AddPage()
         {
-            modDeviceName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartApp Instance
+        public static AddPage Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable modDeviceName.
-        /// </summary>
-        [TestVariable("483e234d-b286-4caa-82d5-b4ee9851e3c7")]
-        public string modDeviceName
-        {
-            get { return repo.modDeviceName; }
-            set { repo.modDeviceName = value; }
-        }
 
 #endregion
 
@@ -90,14 +79,9 @@ namespace mobileSol.Recording_Modules.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'iPhone 6s'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("iPhone 6s", "ranorex.RxBrowser", true);
-            Delay.Milliseconds(3500);
-            
-            // Browse to site.
-            Report.Log(ReportLevel.Info, "Set value", "Browse to site.\r\nSetting attribute PageUrl to 'http://192.168.171.142/TADashboard' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo, new RecordItemIndex(1));
-            repo.Browser.Dom.Self.Element.SetAttributeValue("PageUrl", "http://192.168.171.142/TADashboard");
-            Delay.Milliseconds(10000);
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.PanelsPage.BtnAddNew' at Center", repo.Browser.PanelsPage.BtnAddNewInfo, new RecordItemIndex(0));
+            repo.Browser.PanelsPage.BtnAddNew.Touch();
+            Delay.Milliseconds(300);
             
         }
 

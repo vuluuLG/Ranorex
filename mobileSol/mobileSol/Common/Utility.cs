@@ -7,6 +7,8 @@
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
 using System;
+
+using Ranorex;
 using Ranorex.Core.Testing;
 
 namespace mobileSol.Common
@@ -23,7 +25,49 @@ namespace mobileSol.Common
 		[UserCodeMethod]
 		public static String GetCurrentDate(String dateFormat = "MM/dd/yyyy")
 		{
-			return DateTime.Now.ToString(dateFormat);
+			return System.DateTime.Now.ToString(dateFormat);
+		}
+		
+		[UserCodeMethod]
+		public static String GetHexByColorName(String colorName)
+		{
+			String result = "";
+			switch (colorName.ToUpper()) {
+				case "RED":
+					result = ColorByHex.Red;
+					break;
+				case "DARKRED":
+					result = ColorByHex.DarkRed;
+					break;
+				case "ORANGE":
+					result = ColorByHex.Orange;
+					break;
+				case "YELLOW":
+					result = ColorByHex.Yellow;
+					break;
+				case "LIGHTGREEN":
+					result = ColorByHex.LightGreen;
+					break;
+				case "GREEN":
+					result = ColorByHex.Green;
+					break;
+				case "LIGHTBLUE":
+					result = ColorByHex.LightBlue;
+					break;
+				case "BLUE":
+					result = ColorByHex.Blue;
+					break;
+				case "DARKBLUE":
+					result = ColorByHex.DarkBlue;
+					break;
+				case "PURPLE":
+					result = ColorByHex.Purple;
+					break;
+				default:
+					Report.Log(ReportLevel.Error, "This color have not supported yet.");
+					break;					           
+			}
+			return result;
 		}
 	}
 }

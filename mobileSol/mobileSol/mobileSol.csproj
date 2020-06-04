@@ -132,8 +132,14 @@
     <Compile Include="Coding Modules\ModifyPageNameUpdate.cs">
       <id>462f2d9a-fbcf-409e-8dee-c6ec298828b6</id>
     </Compile>
+    <Compile Include="Coding Modules\SetFieldOnPanelEditor.cs">
+      <id>6ab2e7ea-b76a-4064-addd-48c32eb4c6c6</id>
+    </Compile>
     <Compile Include="Coding Modules\StartApp.cs">
       <id>9120a1ff-083d-4c50-9e40-5960ba496a8a</id>
+    </Compile>
+    <Compile Include="Common\Constant.cs">
+      <id>cd8e9733-33f7-45c4-a2ab-4967834e5a75</id>
     </Compile>
     <Compile Include="Common\Utility.cs">
       <id>5e2aa410-54f1-45ab-8e5f-e5a5cb74a000</id>
@@ -146,6 +152,18 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>66d4b30d-f01d-45e7-9556-cda2b6a06558</id>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\GoToPanelsPage.cs">
+      <BoundTo>d76a0f73-d658-426a-b229-3764bd419642</BoundTo>
+      <DependentUpon>GoToPanelsPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>89a3d9cf-0127-40ad-b380-75da6dce57af</id>
+    </Compile>
+    <Compile Include="Recording Modules\DashboardPage\GoToPanelsPage.UserCode.cs">
+      <BoundTo>d76a0f73-d658-426a-b229-3764bd419642</BoundTo>
+      <DependentUpon>GoToPanelsPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4bdd9163-200d-443a-97d2-661c07b4da41</id>
     </Compile>
     <Compile Include="Recording Modules\DashboardPage\LogOut.cs">
       <DependentUpon>LogOut.rxrec</DependentUpon>
@@ -267,6 +285,18 @@
       <id>ac064cdf-aff5-4a6a-83cc-8b1a198d3b5a</id>
       <BoundTo>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</BoundTo>
     </Compile>
+    <Compile Include="Recording Modules\PanelsPage\Addpage.cs">
+      <BoundTo>072f272f-8f76-4d12-9087-95fd4a2b9531</BoundTo>
+      <DependentUpon>AddPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>29c6f56d-3035-4714-b954-b67a3b9b5680</id>
+    </Compile>
+    <Compile Include="Recording Modules\PanelsPage\Addpage.UserCode.cs">
+      <BoundTo>072f272f-8f76-4d12-9087-95fd4a2b9531</BoundTo>
+      <DependentUpon>AddPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65a524db-09eb-4b6d-ad65-c6e3183973d4</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -282,6 +312,11 @@
       <id>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</id>
       <repoid>67c22d6c-c97e-4bbb-93f5-3ca7d2a89007</repoid>
       <reporootid>481228dd-fc9e-4553-a870-03b9f327e5aa</reporootid>
+    </None>
+    <None Include="Recording Modules\DashboardPage\GoToPanelsPage.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>d76a0f73-d658-426a-b229-3764bd419642</id>
+      <recordtableid>11912396-f616-417a-8a13-96b81c102730</recordtableid>
     </None>
     <None Include="Recording Modules\DashboardPage\LogOut.rxrec">
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
@@ -333,6 +368,11 @@
       <id>0cc4b214-3ed2-44c6-97b5-9b804cd1129d</id>
       <recordtableid>80c2ffe4-1e67-44b5-9b5c-f20cd908e272</recordtableid>
     </None>
+    <None Include="Recording Modules\PanelsPage\AddPage.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>072f272f-8f76-4d12-9087-95fd4a2b9531</id>
+      <recordtableid>54c24229-3075-48cd-87b8-c5965f655b68</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="mobileSol.rxtmg">
@@ -362,6 +402,9 @@
     </Folder>
     <Folder Include="Recording Modules\General">
       <id>5006a41d-10b7-4cfb-ab71-b4d181d2730c</id>
+    </Folder>
+    <Folder Include="Recording Modules\PanelsPage">
+      <id>34288b86-757e-410b-9e8c-007e97009889</id>
     </Folder>
   </ItemGroup>
   <ItemGroup>
