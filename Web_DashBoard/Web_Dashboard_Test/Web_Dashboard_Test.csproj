@@ -148,6 +148,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Web_Dashboard_Panels.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>09d274bc-9aa6-46d3-a4a7-d16f38fdde23</id>
+    </Content>
     <None Include="app.config">
       <id>052b9cea-7df5-4b19-afb7-d1f081e2ac18</id>
     </None>
@@ -162,6 +166,17 @@
       <DependentUpon>Web_Dashboard_Test.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>1b17a795-4f9f-4b57-8360-d1e304854720</id>
+    </Content>
+    <Content Include="Web_Dashboard_Test.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1186d1e0-8c80-401b-8e04-172648b29511</id>
+    </Content>
+    <Content Include="TADashboard_TestData_Panel.xlsx">
+      <Link>TADashboard_TestData_Panel.xlsx</Link>
+      <BoundTo>09d274bc-9aa6-46d3-a4a7-d16f38fdde23</BoundTo>
+      <DependentUpon>Web_Dashboard_Panels.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>c51026fa-bde0-4cf7-8ecd-7bce4a90b063</id>
     </Content>
     <None Include="Web_Dashboard_TestRepository.rximg">
       <BoundTo>1a58ae48-fa9b-41cc-bcf9-0cdc3d438646</BoundTo>

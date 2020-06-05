@@ -89,12 +89,12 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.Main.Main_Menu.mniSetting' at Center.", repo.Dashboard.Main.Main_Menu.mniSettingInfo, new RecordItemIndex(0));
-            repo.Dashboard.Main.Main_Menu.mniSetting.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.MainMenu.mniSetting' at Center.", repo.Dashboard.MainMenu.mniSettingInfo, new RecordItemIndex(0));
+            repo.Dashboard.MainMenu.mniSetting.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.Main.Main_Menu.mniGlobalSetingSelectedItem' at Center.", repo.Dashboard.Main.Main_Menu.mniGlobalSetingSelectedItemInfo, new RecordItemIndex(1));
-            repo.Dashboard.Main.Main_Menu.mniGlobalSetingSelectedItem.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.MainMenu.mniGlobalSetingSelectedItem' at Center.", repo.Dashboard.MainMenu.mniGlobalSetingSelectedItemInfo, new RecordItemIndex(1));
+            repo.Dashboard.MainMenu.mniGlobalSetingSelectedItem.Click();
             Delay.Milliseconds(0);
             
         }

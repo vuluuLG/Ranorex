@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="GetUpdatedPageName"
+	classname="GenerateUpdateName"
 	namespace="Web_DashBoard.Record_Actions">
 	</codegen>
 	<variables>
@@ -30,7 +30,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="GetUpdatedPageName"
+		classname="GenerateUpdateName"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="GetUpdatedName"
@@ -46,6 +46,15 @@ mode="Global">
 			</bindings>
 			<arguments
 			id="09eb48a0-c75b-4387-b13e-5ed8fbc80089">
+				<argument
+				argname="modName"
+				id="9b32fe5a-f3b4-47f8-9a0b-964b550861e8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -64,7 +73,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		GetUpdatedPageName.UserCode.cs
+		GenerateUpdateName.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

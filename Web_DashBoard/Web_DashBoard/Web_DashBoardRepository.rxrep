@@ -18,114 +18,277 @@ name="Web_DashBoardRepository">
 		id="934797ae-8706-4401-9275-bf20491199a0"
 		isrooted="True"
 		name="Dashboard"
-		refimgid="4a32b04b-995a-4e4b-907d-aa613dd13238"
+		refimgid="6488574c-84a8-4f42-b03a-9759fee93e6a"
 		searchtimeout="30000ms"
 		usecache="False">
 			<folder
-			capname="unknown"
-			id="ec188f65-3f25-4864-a8db-e4148ebf0625"
-			isrooted="False"
-			name="LogIn"
-			searchtimeout="0ms">
-				<item
-				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
-				id="fe09a122-4239-43e8-8e19-0347508f2b0a"
-				name="cbbRepository"
-				refimgid="518a4dc8-1f9e-40f2-a2c5-03e653f9fc78"
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//select[#'repository']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="1e5a7e31-ad3b-40c0-9c11-811b6d74177e"
-				name="txtUsername"
-				refimgid="283aa778-c4a4-4994-bb20-04815d34da8b"
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//input[#'username']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="2255e35a-19c6-4a77-a590-d1722ec75969"
-				name="txtPassword"
-				refimgid="62646c4e-5cba-4597-a7e5-ee8245587e6e"
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//input[#'password']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="d301670d-7a95-4c2e-a8c2-22476a57770b"
+			isrooted="True"
+			name="Panels"
+			refimgid="4a7333eb-d670-4edc-8ef2-e293f8da198c"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
 				capname="divtag"
-				id="92e47a16-ab8b-4f93-9071-777b5c61cee8"
-				name="btnLogin"
-				refimgid="0a97d0e5-7080-40c7-b61e-fadb74281900"
+				id="530542fa-3a61-4e6f-9ba3-81676006744d"
+				isrooted="True"
+				name="DisplaySettingTab"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="inputtag"
+					id="8b5d5a21-246c-4689-b434-c29bfc0b8048"
+					name="rdbPanelType"
+					refimgid="34b41734-f3cf-4f43-a0da-31c6de248a82"
+					searchtimeout="30000ms">
+						/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//label[@innertext~$repoPanelType]/input[@name='radPanelType']
+					</item>
+					<item
+					capname="selecttag"
+					id="00b43fd7-9a7d-4c3b-ac73-6589de83832a"
+					name="cbbDataProfile"
+					refimgid="eaacd73f-7dcc-4996-ba48-1b76134286d4"
+					searchtimeout="30000ms">
+						/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//select[@id='cbbProfile']
+					</item>
+					<item
+					capname="inputtag"
+					id="3fd7e556-e911-4f78-b2fb-4cfbf8596e60"
+					name="txtDisplayName"
+					refimgid="f3e3eb5c-e142-4c8f-978f-753343537b72"
+					searchtimeout="30000ms">
+						/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//input[@id='txtDisplayName']
+					</item>
+					<folder
+					capname="fieldsettag"
+					id="6929bded-512f-4274-9664-df2959ff2c09"
+					isrooted="True"
+					name="IndicatorSettingGroup"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="inputtag"
+						id="820ec28c-f016-43df-aa74-cd52c8a13d10"
+						name="txtTitle"
+						refimgid="f511cb01-1ab8-4576-87d8-6c9023db112c"
+						searchtimeout="30000ms">
+							/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='txtIndicatorTitle']
+						</item>
+						<item
+						capname="inputtag"
+						id="c9a7df61-608f-4026-8770-b4b665b1a9c5"
+						name="cbxShowTitle"
+						refimgid="fd5b9fa3-5d4c-4f2b-b648-95182c3d887b"
+						searchtimeout="30000ms">
+							/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='chkShowTitle']
+						</item>
+						<item
+						capname="selecttag"
+						id="0b32f176-c122-41fe-9c8f-35de99a85a1e"
+						name="cbbStatisticField"
+						refimgid="d53652c1-ca3b-4068-bdad-66bdab7a3ed8"
+						searchtimeout="30000ms">
+							/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//select[@id='cbbStatField']
+						</item>
+						<item
+						capname="selecttag"
+						id="c56f6e04-56c7-466e-8f93-21e728636837"
+						name="cbbValue"
+						refimgid="17290e4e-475b-4473-bd82-8d7c496b3746"
+						searchtimeout="30000ms">
+							/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//select[@id='cbbStatFieldValue']
+						</item>
+						<item
+						capname="inputtag"
+						id="f4e2d6ce-5682-4b59-bb07-64c4566c4424"
+						name="cbxPercentage"
+						refimgid="27a0eb95-aa51-4296-b03a-e6653d4ad8fa"
+						searchtimeout="30000ms">
+							/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='chkPercentage']
+						</item>
+						<basepath>
+							/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']
+						</basepath>
+					</folder>
+					<basepath>
+						/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']
+					</basepath>
+				</folder>
+				<folder
+				capname="divtag"
+				id="83107cbd-a914-4c0e-a9af-9490a6f4534f"
+				isrooted="True"
+				name="FilterSettingTab"
+				searchtimeout="30000ms"
+				usecache="False">
+					<basepath>
+						/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//div[@id='tabs-data']
+					</basepath>
+				</folder>
+				<item
+				capname="inputtag"
+				id="c1a43a33-fbbe-44d7-9ae4-78392c782393"
+				name="btnOK"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//div[@class='btn-login']
+					/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//input[@id='OK']
 				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//div[#'div_panelPopup']
+				</basepath>
+			</folder>
+			<item
+			capname="atag"
+			id="17b1980c-9a05-44a5-b416-2e619527cd02"
+			name="btnAddNew"
+			refimgid="1a072266-e61e-415e-a41d-3d8403920d87"
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.170.92']//form//a[@innertext='Add New']
+			</item>
+			<item
+			capname="atag"
+			id="e9c1b1ae-2b3e-4b9d-bd1b-3ac48d216f63"
+			name="btnDelete"
+			refimgid="1fa18673-9f7b-41e6-9c07-de5ecc307d1f"
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.170.92']//form//a[@innertext='Delete']
+			</item>
+			<folder
+			capname="table"
+			id="3cae600e-f2d8-424a-8c3e-2b258479cab9"
+			isrooted="True"
+			name="ColorPickerTable"
+			refimgid="8ac2ddab-5841-4110-a817-fde081eeafab"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="6595f4ff-4672-489d-a6f6-5c3227e33a57"
+				name="TdTagHash7030a0"
+				refimgid="fa2c2103-a583-4a71-8be4-c75caba16940"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//table[@id='colorPickerTable']//td[@title='#7030a0']
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="1689ccbe-9707-4838-a997-70e9301d8832"
+				name="TdTagHashff0000"
+				refimgid="8d99bd21-8768-4367-9860-0d4463e94e0a"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//table[@id='colorPickerTable']//td[@title='#ff0000']
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="11ce0fda-92fc-4406-810b-503f2826c3aa"
+				name="TdTagHashffff00"
+				refimgid="36d767a4-bf66-49bf-850f-93bde5b4866d"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//table[@id='colorPickerTable']//td[@title='#ffff00']
+				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//table[@id='colorPickerTable']
+				</basepath>
 			</folder>
 			<folder
-			capname="unknown"
-			id="43cf54e7-0586-44a0-812a-b0d607df4153"
-			isrooted="False"
-			name="Main"
-			searchtimeout="0ms">
-				<folder
-				capname="unknown"
-				id="3bca4313-6c40-45e7-9747-8b34ecd35e04"
-				isrooted="False"
-				name="Header_Menu"
-				searchtimeout="0ms">
-					<item
-					addcaps="unknown,webelement,atag"
-					capname="atag"
-					id="4a66ccf2-9821-4971-b5f3-c3264636c333"
-					name="mniSignedInUser"
-					refimgid="f47e4a76-9eb9-4056-8df8-08185014fecc"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'header']//a[@href~'#Welcome']
-					</item>
-					<item
-					addcaps="unknown,webelement,atag"
-					capname="atag"
-					id="4e1a0c03-e001-4fc0-ab94-ec096d3ddb7e"
-					name="mniLogout"
-					refimgid="d9d0021b-c287-4fdd-8ee5-0e37fd233676"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'header']//a[@href~'logout.do']
-					</item>
-				</folder>
-				<folder
-				capname="unknown"
-				id="f1f2dfbe-c345-43eb-90c3-a1d4f007a72d"
-				isrooted="False"
-				name="Main_Menu"
-				searchtimeout="0ms">
-					<item
-					addcaps="unknown,webelement,atag"
-					capname="litag"
-					id="fc525480-bb7e-4ec4-bdda-eb9cab5d1fae"
-					name="mniSetting"
-					refimgid="39b83222-ee27-4101-97d7-9ada2b9b4872"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'main-menu']//li[@class='mn-setting']
-					</item>
-					<item
-					capname="atag"
-					id="d773694f-0bef-4f9f-8037-b2d0551b4fa8"
-					name="mniGlobalSetingSelectedItem"
-					refimgid="41466a94-0e18-4daf-aae8-9df93f5b0882"
-					searchtimeout="30000ms">
-						/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext=$repoSelectedItem]
-					</item>
-				</folder>
+			addcaps="unknown,webelement,tabletag"
+			capname="table"
+			id="bd821e3b-678d-4efc-8118-bb9660076b9f"
+			isrooted="True"
+			name="TblThreshold"
+			refpath="/dom[@domain='192.168.170.92']//table[#'tblThreshold']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="4e292bb9-c3b9-4f5d-b0fe-01a9c7c2f50d"
+				name="txtCriteria"
+				refimgid="f67af1ce-d772-422a-a3ef-78a30758925d"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//table[#'tblThreshold']//input[#'criteria']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="1545531d-c9a1-4e2c-bd0d-b5d1aed9fd6c"
+				name="TxtColor"
+				refimgid="12ff65e7-c23c-4e34-ba17-ae152da7dc83"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//table[#'tblThreshold']//input[#'txtColor']
+				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//table[#'tblThreshold']
+				</basepath>
 			</folder>
 			<folder
-			capname="unknown"
-			id="040492da-98c7-4437-ad5c-e0b6c34aa3a2"
-			isrooted="False"
-			name="AddPage"
-			searchtimeout="0ms">
+			capname="divtag"
+			id="0be9bce7-de05-44a9-9546-0a08470dc57c"
+			isrooted="True"
+			name="HeaderMenu"
+			refimgid="0e080103-e3e5-4b65-b5e3-a2a2848364cc"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="4a66ccf2-9821-4971-b5f3-c3264636c333"
+				name="mniSignedInUser"
+				refimgid="f47e4a76-9eb9-4056-8df8-08185014fecc"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'header']//a[@href~'#Welcome']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="4e1a0c03-e001-4fc0-ab94-ec096d3ddb7e"
+				name="mniLogout"
+				refimgid="d9d0021b-c287-4fdd-8ee5-0e37fd233676"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'header']//a[@href~'logout.do']
+				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//div[#'header']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="c2ad8d94-b8e6-4b2a-a49c-3ba528ba7964"
+			isrooted="True"
+			name="MainMenu"
+			refimgid="e6b9617c-0982-4cc4-a13d-200241233552"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="litag"
+				id="fc525480-bb7e-4ec4-bdda-eb9cab5d1fae"
+				name="mniSetting"
+				refimgid="39b83222-ee27-4101-97d7-9ada2b9b4872"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'main-menu']//li[@class='mn-setting']
+				</item>
+				<item
+				capname="atag"
+				id="d773694f-0bef-4f9f-8037-b2d0551b4fa8"
+				name="mniGlobalSetingSelectedItem"
+				refimgid="41466a94-0e18-4daf-aae8-9df93f5b0882"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'main-menu']//a[@innertext=$repoSelectedItem]
+				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//div[#'main-menu']
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="5c923750-dc2d-402d-91de-ecd990b43f25"
+			isrooted="True"
+			name="AddPages"
+			searchtimeout="30000ms"
+			usecache="False">
 				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
@@ -133,7 +296,7 @@ name="Web_DashBoardRepository">
 				name="txtName"
 				refimgid="d1b49a71-f5f3-4210-a842-0b7907adf8fe"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//input[#'name']
+					/dom[@domain='192.168.170.92']//div[#'div_popup']//input[#'name']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -142,7 +305,7 @@ name="Web_DashBoardRepository">
 				name="btnOK"
 				refimgid="badfaa36-7713-43e5-97e7-94e0ecc4bfe9"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//input[#'OK']
+					/dom[@domain='192.168.170.92']//div[#'div_popup']//input[#'OK']
 				</item>
 				<item
 				capname="selecttag"
@@ -150,7 +313,7 @@ name="Web_DashBoardRepository">
 				name="cbbParent"
 				refimgid="d57b9190-5ce4-4fce-97e8-bff1a1f6c38d"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//select[#'parent']
+					/dom[@domain='192.168.170.92']//div[#'div_popup']//select[#'parent']
 				</item>
 				<item
 				capname="selecttag"
@@ -158,7 +321,7 @@ name="Web_DashBoardRepository">
 				name="cbbNumberOfColumn"
 				refimgid="d8c2cf95-2c01-478f-bf32-9ed64b2b03e7"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//select[#'columnnumber']
+					/dom[@domain='192.168.170.92']//div[#'div_popup']//select[#'columnnumber']
 				</item>
 				<item
 				capname="selecttag"
@@ -166,7 +329,7 @@ name="Web_DashBoardRepository">
 				name="cbbDisplayAfter"
 				refimgid="383e4752-5a87-4627-a754-82b80a28e3ba"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//select[#'afterpage']
+					/dom[@domain='192.168.170.92']//div[#'div_popup']//select[#'afterpage']
 				</item>
 				<item
 				capname="inputtag"
@@ -174,9 +337,90 @@ name="Web_DashBoardRepository">
 				name="cbxPublic"
 				refimgid="ddeb2b5f-3386-4a4a-b138-57fe02fe237d"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.170.92']//input[#'ispublic']
+					/dom[@domain='192.168.170.92']//div[#'div_popup']//input[#'ispublic']
 				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//div[#'div_popup']
+				</basepath>
 			</folder>
+			<folder
+			capname="divtag"
+			id="c586d205-3fe9-4630-a9a4-4436dcd2d2b8"
+			isrooted="True"
+			name="LogIn"
+			refimgid="c1f3f0cf-7978-4440-a7e2-b2427105eb07"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="fe09a122-4239-43e8-8e19-0347508f2b0a"
+				name="cbbRepository"
+				refimgid="518a4dc8-1f9e-40f2-a2c5-03e653f9fc78"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'content']//select[#'repository']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="1e5a7e31-ad3b-40c0-9c11-811b6d74177e"
+				name="txtUsername"
+				refimgid="283aa778-c4a4-4994-bb20-04815d34da8b"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'content']//input[#'username']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="2255e35a-19c6-4a77-a590-d1722ec75969"
+				name="txtPassword"
+				refimgid="62646c4e-5cba-4597-a7e5-ee8245587e6e"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'content']//input[#'password']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="92e47a16-ab8b-4f93-9071-777b5c61cee8"
+				name="btnLogin"
+				refimgid="0a97d0e5-7080-40c7-b61e-fadb74281900"
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.170.92']//div[#'content']//div[@class='btn-login']
+				</item>
+				<basepath>
+					/dom[@domain='192.168.170.92']//div[#'content']
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="6f49cc90-ebe4-4957-8add-84638cc81905"
+			name="Dashboard123"
+			refimgid="45c8bdb7-d152-44c6-ada7-7c635b5f1f51"
+			refpath="/dom[@domain='192.168.170.92']//form[#'form1']/div/div[2]/table/tbody/tr[3]/td[2]/a[@innertext='Dashboard_123']"
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.170.92']//form[#'form1']//table/tbody/tr[3]/?/?/a[@innertext='Dashboard_123']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="4efb26ba-4092-4e6c-b6d8-c90ccb1cd744"
+			name="Dashboard"
+			refimgid="7c244018-b898-424b-b9a3-0b3c47498067"
+			refpath="/dom[@domain='192.168.170.92']//form[#'form1']/div/div[2]/table/tbody/tr[2]/td[2]/a[@innertext='Dashboard']"
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.170.92']//form[#'form1']//table/tbody/tr[2]/?/?/a[@innertext='Dashboard']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="27f76110-6f1e-4f99-ab91-56cf5552ce91"
+			name="LabelTagIndicator"
+			refimgid="d0b7ecd0-ac90-4303-8885-71ddee016c9b"
+			refpath="/dom[@domain='192.168.170.92']//table[#'infoSettings']/tbody/tr[1]/td[2]/label[@innertext=' Indicator']"
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.170.92']//table[#'infoSettings']/tbody/tr[1]/?/?/label[@innertext=' Indicator']
+			</item>
 			<basepath>
 				/dom[@domain='192.168.170.92']
 			</basepath>
@@ -202,7 +446,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="f8dd0b14-8c4b-4718-91eb-90bc810a1649"
 		isrooted="True"
 		name="Popup"
-		refimgid="94a0a4d8-1a82-422a-839d-eaab859bb15f"
+		refimgid="ab1c89ca-e7f9-4ca8-94b2-e560cd847f5a"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -210,9 +454,19 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			capname="button"
 			id="a7e5b9cb-4d83-4999-af64-c74a7e067f9f"
 			name="ButtonOK"
-			refimgid="73b3d82c-6299-43ab-9835-87a8aa93333b"
+			refimgid="689e77d3-26d0-47ec-aae8-2a1919480c03"
 			searchtimeout="30000ms">
 				/form[@title&gt;'TestArchitect' or @title='Message from webpage']//button[@accessiblename='OK' or @text='OK']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="13d9599c-3721-4bcd-9c88-9cfa933490c0"
+			name="AttributeBasedValidationExampleRan"
+			refimgid="5163a05a-8605-434a-8464-48140168eff6"
+			refpath="/form[@title>'Attribute-based validation']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'TestArchitect' or @title='Message from webpage']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<basepath>
 				/form[@title&gt;'TestArchitect' or @title='Message from webpage']
@@ -255,6 +509,10 @@ MdgAAAAASUVORK5CYII=
 		<var
 		id="ee505d0b-5904-48e8-8993-bab81144b2a5"
 		name="repoAddedPageName">
+		</var>
+		<var
+		id="a25ff99c-3212-46ff-97b2-855f9b416587"
+		name="repoPanelType">
 		</var>
 	</variables>
 </repository>

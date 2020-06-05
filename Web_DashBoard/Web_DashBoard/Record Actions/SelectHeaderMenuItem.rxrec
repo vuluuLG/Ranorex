@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="54a98369-c656-4046-b910-d4e6195a668e"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectHeaderMenuItem"
+	namespace="Web_DashBoard.Record_Actions">
+	</codegen>
+	<variables>
+		<var
+		id="2c991862-af79-49e6-ba63-ca60a6d7a603"
+		name="modMenuItem">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="SelectHeaderMenuItem"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectMenuItem"
+		namespace="Web_DashBoard.Record_Actions"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="66170efc-cb0e-4722-8f37-ff7f9f218421">
+				<argument
+				argname="modMenuItems"
+				id="ab918565-5679-4028-8ec1-3ee8a24a665b"
+				variable="modMenuItem">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectHeaderMenuItem.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

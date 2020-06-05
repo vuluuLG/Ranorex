@@ -4,6 +4,45 @@
         <name>Web_DashBoard</name>
     </assembly>
     <members>
+        <member name="T:Web_DashBoard.Record_Actions.AddNew">
+             <summary>
+            The AddNew recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.AddNew.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.AddNew.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.AddNew.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.AddNew.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.AddNew.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.AddNew.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.AddNew.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:Web_DashBoard.Record_Actions.CheckPageExist">
              <summary>
             The CheckPageExist recording.
@@ -214,37 +253,37 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:Web_DashBoard.Record_Actions.GetNewPageName">
+        <member name="T:Web_DashBoard.Record_Actions.GenerateNewName">
              <summary>
-            The GetNewPageName recording.
+            The GenerateNewName recording.
              </summary>
         </member>
-        <member name="F:Web_DashBoard.Record_Actions.GetNewPageName.repo">
+        <member name="F:Web_DashBoard.Record_Actions.GenerateNewName.repo">
             <summary>
             Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
             </summary>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.#ctor">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateNewName.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Record_Actions.GetNewPageName.Instance">
+        <member name="P:Web_DashBoard.Record_Actions.GenerateNewName.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Record_Actions.GetNewPageName.modNewPageName">
+        <member name="P:Web_DashBoard.Record_Actions.GenerateNewName.modNewPageName">
             <summary>
             Gets or sets the value of variable modNewPageName.
             </summary>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.Start">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateNewName.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GetNewPageName.Instance"/>.
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GenerateNewName.Instance"/>.
             </summary>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateNewName.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -252,43 +291,43 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetNewPageName.Init">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateNewName.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:Web_DashBoard.Record_Actions.GetUpdatedPageName">
+        <member name="T:Web_DashBoard.Record_Actions.GenerateUpdateName">
              <summary>
-            The GetUpdatedPageName recording.
+            The GenerateUpdateName recording.
              </summary>
         </member>
-        <member name="F:Web_DashBoard.Record_Actions.GetUpdatedPageName.repo">
+        <member name="F:Web_DashBoard.Record_Actions.GenerateUpdateName.repo">
             <summary>
             Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
             </summary>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.#ctor">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateUpdateName.#ctor">
             <summary>
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Record_Actions.GetUpdatedPageName.Instance">
+        <member name="P:Web_DashBoard.Record_Actions.GenerateUpdateName.Instance">
             <summary>
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Record_Actions.GetUpdatedPageName.modUpdatedName">
+        <member name="P:Web_DashBoard.Record_Actions.GenerateUpdateName.modUpdatedName">
             <summary>
             Gets or sets the value of variable modUpdatedName.
             </summary>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.Start">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateUpdateName.Start">
             <summary>
-            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GetUpdatedPageName.Instance"/>.
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GenerateUpdateName.Instance"/>.
             </summary>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.Ranorex#Core#Testing#ITestModule#Run">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateUpdateName.Ranorex#Core#Testing#ITestModule#Run">
             <summary>
             Performs the playback of actions in this recording.
             </summary>
@@ -296,7 +335,7 @@
             instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
             that will in turn invoke this method.</remarks>
         </member>
-        <member name="M:Web_DashBoard.Record_Actions.GetUpdatedPageName.Init">
+        <member name="M:Web_DashBoard.Record_Actions.GenerateUpdateName.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -439,6 +478,359 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:Web_DashBoard.Record_Actions.Page.SubmitPageInfo">
+             <summary>
+            The SubmitPageInfo recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.modSubmitedParentPage">
+            <summary>
+            Gets or sets the value of variable modSubmitedParentPage.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.modSubmitedNumberOfColumn">
+            <summary>
+            Gets or sets the value of variable modSubmitedNumberOfColumn.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.modSubmitedDisplayAfter">
+            <summary>
+            Gets or sets the value of variable modSubmitedDisplayAfter.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.modSubmitedPublic">
+            <summary>
+            Gets or sets the value of variable modSubmitedPublic.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.modSubmitedPageName">
+            <summary>
+            Gets or sets the value of variable modSubmitedPageName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Page.SubmitPageInfo.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.Panel.AddPanel">
+             <summary>
+            The AddPanel recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Panel.AddPanel.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.AddPanel.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.AddPanel.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.AddPanel.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Panel.AddPanel.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.AddPanel.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.AddPanel.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.Panel.CheckColorSelected">
+             <summary>
+            The CheckColorSelected recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.modExpectedColors">
+            <summary>
+            Gets or sets the value of variable modExpectedColors.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckColorSelected.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.Panel.CheckPanelExist">
+             <summary>
+            The CheckPanelExist recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.modPanelName">
+            <summary>
+            Gets or sets the value of variable modPanelName.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting">
+             <summary>
+            The EnterIndicatorSetting recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelTitle">
+            <summary>
+            Gets or sets the value of variable modPanelTitle.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelShowTitle">
+            <summary>
+            Gets or sets the value of variable modPanelShowTitle.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelStatisticfield">
+            <summary>
+            Gets or sets the value of variable modPanelStatisticfield.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelValue">
+            <summary>
+            Gets or sets the value of variable modPanelValue.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelPercentage">
+            <summary>
+            Gets or sets the value of variable modPanelPercentage.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelCriterias">
+            <summary>
+            Gets or sets the value of variable modPanelCriterias.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo">
+             <summary>
+            The EnterPanelInfo recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.modPanelDataProfile">
+            <summary>
+            Gets or sets the value of variable modPanelDataProfile.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.modPanelDisplayName">
+            <summary>
+            Gets or sets the value of variable modPanelDisplayName.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.repoPanelType">
+            <summary>
+            Gets or sets the value of variable repoPanelType.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.EnterPanelInfo.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.Panel.SubmitPanel">
+             <summary>
+            The SubmitPanel recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.Panel.SubmitPanel.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.SubmitPanel.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.SubmitPanel.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.SubmitPanel.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.Panel.SubmitPanel.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.SubmitPanel.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.Panel.SubmitPanel.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:Web_DashBoard.Record_Actions.SelectGlobleMenuItem">
              <summary>
             The SelectGlobleMenuItem recording.
@@ -478,6 +870,50 @@
             that will in turn invoke this method.</remarks>
         </member>
         <member name="M:Web_DashBoard.Record_Actions.SelectGlobleMenuItem.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Record_Actions.SelectHeaderMenuItem">
+             <summary>
+            The SelectHeaderMenuItem recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.modMenuItem">
+            <summary>
+            Gets or sets the value of variable modMenuItem.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectHeaderMenuItem.Init">
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
@@ -527,70 +963,6 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
-        <member name="T:Web_DashBoard.Record_Actions.SubmitPageInfo">
-             <summary>
-            The SubmitPageInfo recording.
-             </summary>
-        </member>
-        <member name="F:Web_DashBoard.Record_Actions.SubmitPageInfo.repo">
-            <summary>
-            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.#ctor">
-            <summary>
-            Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.Instance">
-            <summary>
-            Gets a static instance of this recording.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.modSubmitedParentPage">
-            <summary>
-            Gets or sets the value of variable modSubmitedParentPage.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.modSubmitedNumberOfColumn">
-            <summary>
-            Gets or sets the value of variable modSubmitedNumberOfColumn.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.modSubmitedDisplayAfter">
-            <summary>
-            Gets or sets the value of variable modSubmitedDisplayAfter.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.modSubmitedPublic">
-            <summary>
-            Gets or sets the value of variable modSubmitedPublic.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Record_Actions.SubmitPageInfo.modSubmitedPageName">
-            <summary>
-            Gets or sets the value of variable modSubmitedPageName.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.Start">
-            <summary>
-            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.SubmitPageInfo.Instance"/>.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.Ranorex#Core#Testing#ITestModule#Run">
-            <summary>
-            Performs the playback of actions in this recording.
-            </summary>
-            <remarks>You should not call this method directly, instead pass the module
-            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
-            that will in turn invoke this method.</remarks>
-        </member>
-        <member name="M:Web_DashBoard.Record_Actions.SubmitPageInfo.Init">
-            <summary>
-            This method gets called right after the recording has been started.
-            It can be used to execute recording specific initialization code.
-            </summary>
-        </member>
         <member name="T:Web_DashBoard.Web_DashBoardRepository">
             <summary>
             The class representing the Web_DashBoardRepository element repository.
@@ -629,6 +1001,11 @@
         <member name="P:Web_DashBoard.Web_DashBoardRepository.repoAddedPageName">
             <summary>
             Gets or sets the value of variable repoAddedPageName.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepository.repoPanelType">
+            <summary>
+            Gets or sets the value of variable repoPanelType.
             </summary>
         </member>
         <member name="P:Web_DashBoard.Web_DashBoardRepository.SelfInfo">
@@ -671,19 +1048,524 @@
             The Self item info.
             </summary>
         </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.btnAddNew">
+            <summary>
+            The btnAddNew item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.btnAddNewInfo">
+            <summary>
+            The btnAddNew item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.btnDelete">
+            <summary>
+            The btnDelete item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.btnDeleteInfo">
+            <summary>
+            The btnDelete item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Dashboard123">
+            <summary>
+            The Dashboard123 item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Dashboard123Info">
+            <summary>
+            The Dashboard123 item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Dashboard">
+            <summary>
+            The Dashboard item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.DashboardInfo">
+            <summary>
+            The Dashboard item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.LabelTagIndicator">
+            <summary>
+            The LabelTagIndicator item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.LabelTagIndicatorInfo">
+            <summary>
+            The LabelTagIndicator item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Panels">
+            <summary>
+            The Panels folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.ColorPickerTable">
+            <summary>
+            The ColorPickerTable folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.TblThreshold">
+            <summary>
+            The TblThreshold folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.HeaderMenu">
+            <summary>
+            The HeaderMenu folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.MainMenu">
+            <summary>
+            The MainMenu folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.AddPages">
+            <summary>
+            The AddPages folder.
+            </summary>
+        </member>
         <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.LogIn">
             <summary>
             The LogIn folder.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Main">
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder">
             <summary>
-            The Main folder.
+            The PanelsFolder folder.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.AddPage">
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
-            The AddPage folder.
+            Creates a new Panels  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.btnOK">
+            <summary>
+            The btnOK item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.btnOKInfo">
+            <summary>
+            The btnOK item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.DisplaySettingTab">
+            <summary>
+            The DisplaySettingTab folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PanelsFolder.FilterSettingTab">
+            <summary>
+            The FilterSettingTab folder.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder">
+            <summary>
+            The DisplaySettingTabFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new DisplaySettingTab  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.rdbPanelType">
+            <summary>
+            The rdbPanelType item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.rdbPanelTypeInfo">
+            <summary>
+            The rdbPanelType item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.cbbDataProfile">
+            <summary>
+            The cbbDataProfile item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.cbbDataProfileInfo">
+            <summary>
+            The cbbDataProfile item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.txtDisplayName">
+            <summary>
+            The txtDisplayName item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.txtDisplayNameInfo">
+            <summary>
+            The txtDisplayName item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DisplaySettingTabFolder.IndicatorSettingGroup">
+            <summary>
+            The IndicatorSettingGroup folder.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder">
+            <summary>
+            The IndicatorSettingGroupFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new IndicatorSettingGroup  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.txtTitle">
+            <summary>
+            The txtTitle item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.txtTitleInfo">
+            <summary>
+            The txtTitle item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbxShowTitle">
+            <summary>
+            The cbxShowTitle item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbxShowTitleInfo">
+            <summary>
+            The cbxShowTitle item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbbStatisticField">
+            <summary>
+            The cbbStatisticField item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbbStatisticFieldInfo">
+            <summary>
+            The cbbStatisticField item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbbValue">
+            <summary>
+            The cbbValue item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbbValueInfo">
+            <summary>
+            The cbbValue item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbxPercentage">
+            <summary>
+            The cbxPercentage item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.IndicatorSettingGroupFolder.cbxPercentageInfo">
+            <summary>
+            The cbxPercentage item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.FilterSettingTabFolder">
+            <summary>
+            The FilterSettingTabFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.FilterSettingTabFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new FilterSettingTab  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.FilterSettingTabFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.FilterSettingTabFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder">
+            <summary>
+            The ColorPickerTableFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ColorPickerTable  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.TdTagHash7030a0">
+            <summary>
+            The TdTagHash7030a0 item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.TdTagHash7030a0Info">
+            <summary>
+            The TdTagHash7030a0 item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.TdTagHashff0000">
+            <summary>
+            The TdTagHashff0000 item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.TdTagHashff0000Info">
+            <summary>
+            The TdTagHashff0000 item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.TdTagHashffff00">
+            <summary>
+            The TdTagHashffff00 item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.ColorPickerTableFolder.TdTagHashffff00Info">
+            <summary>
+            The TdTagHashffff00 item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder">
+            <summary>
+            The TblThresholdFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new TblThreshold  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.txtCriteria">
+            <summary>
+            The txtCriteria item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.txtCriteriaInfo">
+            <summary>
+            The txtCriteria item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.TxtColor">
+            <summary>
+            The TxtColor item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.TblThresholdFolder.TxtColorInfo">
+            <summary>
+            The TxtColor item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder">
+            <summary>
+            The HeaderMenuFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new HeaderMenu  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.mniSignedInUser">
+            <summary>
+            The mniSignedInUser item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.mniSignedInUserInfo">
+            <summary>
+            The mniSignedInUser item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.mniLogout">
+            <summary>
+            The mniLogout item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.HeaderMenuFolder.mniLogoutInfo">
+            <summary>
+            The mniLogout item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder">
+            <summary>
+            The MainMenuFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new MainMenu  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.mniSetting">
+            <summary>
+            The mniSetting item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.mniSettingInfo">
+            <summary>
+            The mniSetting item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.mniGlobalSetingSelectedItem">
+            <summary>
+            The mniGlobalSetingSelectedItem item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainMenuFolder.mniGlobalSetingSelectedItemInfo">
+            <summary>
+            The mniGlobalSetingSelectedItem item info.
+            </summary>
+        </member>
+        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder">
+            <summary>
+            The AddPagesFolder folder.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new AddPages  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.txtName">
+            <summary>
+            The txtName item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.txtNameInfo">
+            <summary>
+            The txtName item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.btnOK">
+            <summary>
+            The btnOK item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.btnOKInfo">
+            <summary>
+            The btnOK item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbbParent">
+            <summary>
+            The cbbParent item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbbParentInfo">
+            <summary>
+            The cbbParent item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbbNumberOfColumn">
+            <summary>
+            The cbbNumberOfColumn item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbbNumberOfColumnInfo">
+            <summary>
+            The cbbNumberOfColumn item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbbDisplayAfter">
+            <summary>
+            The cbbDisplayAfter item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbbDisplayAfterInfo">
+            <summary>
+            The cbbDisplayAfter item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbxPublic">
+            <summary>
+            The cbxPublic item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPagesFolder.cbxPublicInfo">
+            <summary>
+            The cbxPublic item info.
             </summary>
         </member>
         <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder">
@@ -694,6 +1576,11 @@
         <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
             <summary>
             Creates a new LogIn  folder.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.Self">
+            <summary>
+            The Self item.
             </summary>
         </member>
         <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.LogInFolder.SelfInfo">
@@ -741,176 +1628,6 @@
             The btnLogin item info.
             </summary>
         </member>
-        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder">
-            <summary>
-            The MainFolder folder.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new Main  folder.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.Header_Menu">
-            <summary>
-            The Header_Menu folder.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.MainFolder.Main_Menu">
-            <summary>
-            The Main_Menu folder.
-            </summary>
-        </member>
-        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder">
-            <summary>
-            The Header_MenuFolder folder.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new Header_Menu  folder.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniSignedInUser">
-            <summary>
-            The mniSignedInUser item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniSignedInUserInfo">
-            <summary>
-            The mniSignedInUser item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniLogout">
-            <summary>
-            The mniLogout item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Header_MenuFolder.mniLogoutInfo">
-            <summary>
-            The mniLogout item info.
-            </summary>
-        </member>
-        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder">
-            <summary>
-            The Main_MenuFolder folder.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new Main_Menu  folder.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniSetting">
-            <summary>
-            The mniSetting item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniSettingInfo">
-            <summary>
-            The mniSetting item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniGlobalSetingSelectedItem">
-            <summary>
-            The mniGlobalSetingSelectedItem item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.Main_MenuFolder.mniGlobalSetingSelectedItemInfo">
-            <summary>
-            The mniGlobalSetingSelectedItem item info.
-            </summary>
-        </member>
-        <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder">
-            <summary>
-            The AddPageFolder folder.
-            </summary>
-        </member>
-        <member name="M:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
-            <summary>
-            Creates a new AddPage  folder.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.SelfInfo">
-            <summary>
-            The Self item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.txtName">
-            <summary>
-            The txtName item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.txtNameInfo">
-            <summary>
-            The txtName item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.btnOK">
-            <summary>
-            The btnOK item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.btnOKInfo">
-            <summary>
-            The btnOK item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbParent">
-            <summary>
-            The cbbParent item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbParentInfo">
-            <summary>
-            The cbbParent item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbNumberOfColumn">
-            <summary>
-            The cbbNumberOfColumn item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbNumberOfColumnInfo">
-            <summary>
-            The cbbNumberOfColumn item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbDisplayAfter">
-            <summary>
-            The cbbDisplayAfter item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbbDisplayAfterInfo">
-            <summary>
-            The cbbDisplayAfter item info.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbxPublic">
-            <summary>
-            The cbxPublic item.
-            </summary>
-        </member>
-        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.AddPageFolder.cbxPublicInfo">
-            <summary>
-            The cbxPublic item info.
-            </summary>
-        </member>
         <member name="T:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder">
             <summary>
             The PopupAppFolder folder.
@@ -939,6 +1656,16 @@
         <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.ButtonOKInfo">
             <summary>
             The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.AttributeBasedValidationExampleRan">
+            <summary>
+            The AttributeBasedValidationExampleRan item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.PopupAppFolder.AttributeBasedValidationExampleRanInfo">
+            <summary>
+            The AttributeBasedValidationExampleRan item info.
             </summary>
         </member>
         <member name="T:__RxMain.__RxProgram">

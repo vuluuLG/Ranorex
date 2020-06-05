@@ -92,8 +92,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.170.92/TADashboard/' with browser specified by variable $modBrowser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("http://192.168.170.92/TADashboard/", modBrowser, "", false, true, false, false, false, true);
+            OpenBrowser_Open_browser();
             Delay.Milliseconds(0);
             
         }

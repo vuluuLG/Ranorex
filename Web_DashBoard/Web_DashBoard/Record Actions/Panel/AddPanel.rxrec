@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="455c5cca-d304-4091-8038-6f16b69d4e7f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AddPanel"
+	namespace="Web_DashBoard.Record_Actions.Panel">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="18b116ec-ff99-4945-99da-3a3141d7bb62"
+		sx="34"
+		sy="170"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17b1980c-9a05-44a5-b416-2e619527cd02"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="14,162,49,14"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Add New
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						javascript:Dashboard.openAddPanel('');
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='192.168.170.92']//form//a[@innertext='Add New']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="bdd047c4-21a3-49a6-a46f-f4a600e47a11">
+				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
+B1FFFABRRRQAUUUUAFFFFABRRRQB/9k=
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AddPanel.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,12 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "Web_Dashboard_Test",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Web_Dashboard_Panels",
+    "RunConfig": "TestRun"
+  }
+]

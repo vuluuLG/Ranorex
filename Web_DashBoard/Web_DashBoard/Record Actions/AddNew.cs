@@ -24,47 +24,34 @@ namespace Web_DashBoard.Record_Actions
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The GetUpdatedPageName recording.
+    ///The AddNew recording.
     /// </summary>
-    [TestModule("68c8aa2f-900e-4f76-b2b1-02fefaf1e51f", ModuleType.Recording, 1)]
-    public partial class GetUpdatedPageName : ITestModule
+    [TestModule("6c7d15ff-8f5a-4247-ba12-e8a95711969e", ModuleType.Recording, 1)]
+    public partial class AddNew : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
         /// </summary>
         public static global::Web_DashBoard.Web_DashBoardRepository repo = global::Web_DashBoard.Web_DashBoardRepository.Instance;
 
-        static GetUpdatedPageName instance = new GetUpdatedPageName();
+        static AddNew instance = new AddNew();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public GetUpdatedPageName()
+        public AddNew()
         {
-            modUpdatedName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static GetUpdatedPageName Instance
+        public static AddNew Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _modUpdatedName;
-
-        /// <summary>
-        /// Gets or sets the value of variable modUpdatedName.
-        /// </summary>
-        [TestVariable("150112c1-739c-4393-8b80-96cb0c0a9b0f")]
-        public string modUpdatedName
-        {
-            get { return _modUpdatedName; }
-            set { _modUpdatedName = value; }
-        }
 
 #endregion
 
@@ -92,7 +79,8 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            modUpdatedName = GetUpdatedName();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.btnAddNew' at Center.", repo.Dashboard.btnAddNewInfo, new RecordItemIndex(0));
+            repo.Dashboard.btnAddNew.Click();
             Delay.Milliseconds(0);
             
         }

@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Web_DashBoard.Record_Actions
+namespace Web_DashBoard.Record_Actions.Page
 {
     public partial class SubmitPageInfo
     {
@@ -37,7 +37,7 @@ namespace Web_DashBoard.Record_Actions
         {	
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$pageName' with focus on 'inputtagInfo'.", inputtagInfo);
             Web_DashBoardRepository myRepo = new Web_DashBoardRepository();
-            myRepo.Dashboard.AddPage.txtName.Element.SetAttributeValue("Value", pageName);
+            myRepo.Dashboard.AddPages.txtName.Element.SetAttributeValue("Value", pageName);
         }
 
         public void SelectParentPage(RepoItemInfo selecttagInfo, string parentPage)

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="da6b3217-35db-4570-ac77-b0335825776a"
+id="13543351-7643-4a26-b824-389cfe5c4466"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,40 +19,41 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="GetNewPageName"
-	namespace="Web_DashBoard.Record_Actions">
+	classname="SubmitPanel"
+	namespace="Web_DashBoard.Record_Actions.Panel">
 	</codegen>
 	<variables>
-		<var
-		id="2f02d2ab-e902-4601-b2e8-5e2d34683031"
-		name="modNewPageName">
-		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="GetNewPageName"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="GetNewName"
-		namespace="Web_DashBoard.Record_Actions"
-		optional="False">
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1160a0cc-3671-4f66-b029-24d6d7426509"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="modNewPageName">
-				</binding>
 			</bindings>
-			<arguments
-			id="d6eac8a7-ff4c-48e8-b7ea-a902dc4861ad">
-			</arguments>
-		</userrecorditem>
+			<info
+			id="c1a43a33-fbbe-44d7-9ae4-78392c782393"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='192.168.170.92']//div[#'div_panelPopup']//input[@id='OK']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"
 	name="Web_DashBoardRepository"
-	relativepath="..\Web_DashBoardRepository.rxrep">
+	relativepath="..\..\Web_DashBoardRepository.rxrep">
 		<codegen
 		classname="Web_DashBoardRepository"
 		namespace="Web_DashBoard">
@@ -64,7 +65,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		GetNewPageName.UserCode.cs
+		SubmitPanel.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

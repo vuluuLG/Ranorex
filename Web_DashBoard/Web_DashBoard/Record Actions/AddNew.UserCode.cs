@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Web_DashBoard.Record_Actions
 {
-    public partial class GetUpdatedPageName
+    public partial class AddNew
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,11 +31,6 @@ namespace Web_DashBoard.Record_Actions
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public string GetUpdatedName()
-        {
-           return "Test_" + System.DateTime.Now.ToString("yyyyMMdd")+"_Updated";
         }
 
     }

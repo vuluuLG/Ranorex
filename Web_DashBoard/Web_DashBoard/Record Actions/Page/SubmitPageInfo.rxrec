@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="SubmitPageInfo"
-	namespace="Web_DashBoard.Record_Actions">
+	namespace="Web_DashBoard.Record_Actions.Page">
 	</codegen>
 	<variables>
 		<var
@@ -53,7 +53,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="EnterPageName"
-		namespace="Web_DashBoard.Record_Actions"
+		namespace="Web_DashBoard.Record_Actions.Page"
 		optional="False">
 			<comment>
 			</comment>
@@ -94,7 +94,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="SelectParentPage"
-		namespace="Web_DashBoard.Record_Actions"
+		namespace="Web_DashBoard.Record_Actions.Page"
 		optional="False">
 			<comment>
 			</comment>
@@ -135,7 +135,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="SelectNumberOfColumn"
-		namespace="Web_DashBoard.Record_Actions"
+		namespace="Web_DashBoard.Record_Actions.Page"
 		optional="False">
 			<comment>
 			</comment>
@@ -176,7 +176,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="SelectDisplayAfterPage"
-		namespace="Web_DashBoard.Record_Actions"
+		namespace="Web_DashBoard.Record_Actions.Page"
 		optional="False">
 			<comment>
 			</comment>
@@ -217,7 +217,7 @@ mode="Global">
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="SetIsPublic"
-		namespace="Web_DashBoard.Record_Actions"
+		namespace="Web_DashBoard.Record_Actions.Page"
 		optional="False">
 			<comment>
 			</comment>
@@ -530,7 +530,7 @@ v/PSb/vof4Uf2Ba/89Jv++h/hWpRRzy7hyR7ENpax2kPlRA4zkk9SamooqNygooooA//2Q==
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"
 	name="Web_DashBoardRepository"
-	relativepath="..\Web_DashBoardRepository.rxrep">
+	relativepath="..\..\Web_DashBoardRepository.rxrep">
 		<codegen
 		classname="Web_DashBoardRepository"
 		namespace="Web_DashBoard">

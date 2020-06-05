@@ -79,12 +79,12 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.Main.Header_Menu.mniSignedInUser' at Center.", repo.Dashboard.Main.Header_Menu.mniSignedInUserInfo, new RecordItemIndex(0));
-            repo.Dashboard.Main.Header_Menu.mniSignedInUser.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.HeaderMenu.mniSignedInUser' at Center.", repo.Dashboard.HeaderMenu.mniSignedInUserInfo, new RecordItemIndex(0));
+            repo.Dashboard.HeaderMenu.mniSignedInUser.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.Main.Header_Menu.mniLogout' at Center.", repo.Dashboard.Main.Header_Menu.mniLogoutInfo, new RecordItemIndex(1));
-            repo.Dashboard.Main.Header_Menu.mniLogout.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.HeaderMenu.mniLogout' at Center.", repo.Dashboard.HeaderMenu.mniLogoutInfo, new RecordItemIndex(1));
+            repo.Dashboard.HeaderMenu.mniLogout.Click();
             Delay.Milliseconds(0);
             
         }

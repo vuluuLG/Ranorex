@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Web_DashBoard.Record_Actions
+namespace Web_DashBoard.Record_Actions.Panel
 {
-    public partial class GetNewPageName
+    public partial class CheckPanelExist
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,11 +33,11 @@ namespace Web_DashBoard.Record_Actions
             // Your recording specific initialization code goes here.
         }
 
-        
-
-        public string GetNewName()
+        public void CheckPanelExists(string modCheckPanelExistName)
         {
-            return "Test_" + System.DateTime.Now.ToString("yyyyMMdd");
+            Report.Log(ReportLevel.Info, "Validation", "Varify panel: '"+modCheckPanelExistName+"' exist.");
+            ATag linkPanel = "//table//a[@innertext='" +modCheckPanelExistName+ "']";
+            Validate.Exists(linkPanel);
         }
 
     }

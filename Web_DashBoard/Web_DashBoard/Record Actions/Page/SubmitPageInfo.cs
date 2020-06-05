@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Web_DashBoard.Record_Actions
+namespace Web_DashBoard.Record_Actions.Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -144,27 +144,27 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            EnterPageName(repo.Dashboard.AddPage.txtNameInfo, modSubmitedPageName);
+            EnterPageName(repo.Dashboard.AddPages.txtNameInfo, modSubmitedPageName);
             Delay.Milliseconds(0);
             
-            SelectParentPage(repo.Dashboard.AddPage.cbbParentInfo, modSubmitedParentPage);
+            SelectParentPage(repo.Dashboard.AddPages.cbbParentInfo, modSubmitedParentPage);
             Delay.Milliseconds(0);
             
-            SelectNumberOfColumn(repo.Dashboard.AddPage.cbbNumberOfColumnInfo, modSubmitedNumberOfColumn);
+            SelectNumberOfColumn(repo.Dashboard.AddPages.cbbNumberOfColumnInfo, modSubmitedNumberOfColumn);
             Delay.Milliseconds(0);
             
-            SelectDisplayAfterPage(repo.Dashboard.AddPage.cbbDisplayAfterInfo, modSubmitedDisplayAfter);
+            SelectDisplayAfterPage(repo.Dashboard.AddPages.cbbDisplayAfterInfo, modSubmitedDisplayAfter);
             Delay.Milliseconds(0);
             
-            SetIsPublic(repo.Dashboard.AddPage.cbxPublicInfo, modSubmitedPublic);
+            SetIsPublic(repo.Dashboard.AddPages.cbxPublicInfo, modSubmitedPublic);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.AddPage.btnOK' at Center.", repo.Dashboard.AddPage.btnOKInfo, new RecordItemIndex(5));
-            repo.Dashboard.AddPage.btnOK.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.AddPages.btnOK' at Center.", repo.Dashboard.AddPages.btnOKInfo, new RecordItemIndex(5));
+            repo.Dashboard.AddPages.btnOK.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to not exist. Associated repository item: 'Dashboard.AddPage.btnOK'", repo.Dashboard.AddPage.btnOKInfo, new ActionTimeout(5000), new RecordItemIndex(6));
-            repo.Dashboard.AddPage.btnOKInfo.WaitForNotExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to not exist. Associated repository item: 'Dashboard.AddPages.btnOK'", repo.Dashboard.AddPages.btnOKInfo, new ActionTimeout(5000), new RecordItemIndex(6));
+            repo.Dashboard.AddPages.btnOKInfo.WaitForNotExists(5000);
             
         }
 

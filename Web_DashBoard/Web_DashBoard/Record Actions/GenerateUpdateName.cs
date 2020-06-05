@@ -24,46 +24,46 @@ namespace Web_DashBoard.Record_Actions
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The GetNewPageName recording.
+    ///The GenerateUpdateName recording.
     /// </summary>
-    [TestModule("da6b3217-35db-4570-ac77-b0335825776a", ModuleType.Recording, 1)]
-    public partial class GetNewPageName : ITestModule
+    [TestModule("68c8aa2f-900e-4f76-b2b1-02fefaf1e51f", ModuleType.Recording, 1)]
+    public partial class GenerateUpdateName : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
         /// </summary>
         public static global::Web_DashBoard.Web_DashBoardRepository repo = global::Web_DashBoard.Web_DashBoardRepository.Instance;
 
-        static GetNewPageName instance = new GetNewPageName();
+        static GenerateUpdateName instance = new GenerateUpdateName();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public GetNewPageName()
+        public GenerateUpdateName()
         {
-            modNewPageName = "";
+            modUpdatedName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static GetNewPageName Instance
+        public static GenerateUpdateName Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _modNewPageName;
+        string _modUpdatedName;
 
         /// <summary>
-        /// Gets or sets the value of variable modNewPageName.
+        /// Gets or sets the value of variable modUpdatedName.
         /// </summary>
-        [TestVariable("2f02d2ab-e902-4601-b2e8-5e2d34683031")]
-        public string modNewPageName
+        [TestVariable("150112c1-739c-4393-8b80-96cb0c0a9b0f")]
+        public string modUpdatedName
         {
-            get { return _modNewPageName; }
-            set { _modNewPageName = value; }
+            get { return _modUpdatedName; }
+            set { _modUpdatedName = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            modNewPageName = GetNewName();
+            modUpdatedName = GetUpdatedName("");
             Delay.Milliseconds(0);
             
         }

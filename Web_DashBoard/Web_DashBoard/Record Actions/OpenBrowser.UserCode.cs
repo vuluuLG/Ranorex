@@ -33,5 +33,11 @@ namespace Web_DashBoard.Record_Actions
             // Your recording specific initialization code goes here.
         }
 
+        public void OpenBrowser_Open_browser()
+        {
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.170.92/TADashboard/' with browser specified by variable $modBrowser in maximized mode.");
+            Host.Current.OpenBrowser("http://192.168.170.92/TADashboard/", modBrowser, "", false, true, false, false, false, true);
+        }
+
     }
 }

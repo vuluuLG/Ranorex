@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ae8967a1-966c-4a5e-bfaa-07aef347c320"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckColorSelected"
+	namespace="Web_DashBoard.Record_Actions.Panel">
+	</codegen>
+	<variables>
+		<var
+		id="2166aa37-135c-42aa-a153-66574de63a7c"
+		name="modExpectedColors">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="CheckColorSelected"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CheckElementColor"
+		namespace="Web_DashBoard.Record_Actions.Panel"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cf07c3e7-9939-4932-9bad-45d12ab5d869">
+				<argument
+				argname="modColors"
+				id="f14f889b-3c89-4261-8c08-bbfe71466abb"
+				variable="modExpectedColors">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckColorSelected.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
