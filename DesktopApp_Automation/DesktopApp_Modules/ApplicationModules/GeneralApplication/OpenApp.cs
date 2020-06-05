@@ -41,7 +41,7 @@ namespace DesktopApp_Modules.ApplicationModules.GeneralApplication
         /// </summary>
         public OpenApp()
         {
-            varFileLocation = "";
+            varFileLocation = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Notepad++.lnk";
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace DesktopApp_Modules.ApplicationModules.GeneralApplication
         /// <summary>
         /// Gets or sets the value of variable varFileLocation.
         /// </summary>
-        [TestVariable("6b6e48c6-c4e6-4bc5-bdf9-8f8fd4795e16")]
+        [TestVariable("c1f134e0-5996-4020-a3cc-05bb76148dc3")]
         public string varFileLocation
         {
             get { return _varFileLocation; }
@@ -92,8 +92,8 @@ namespace DesktopApp_Modules.ApplicationModules.GeneralApplication
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $varFileLocation in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(varFileLocation, "", "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $varFileLocation in normal mode. Return value bound to $varFileLocation.", new RecordItemIndex(0));
+            varFileLocation = ValueConverter.ToString(Host.Local.RunApplication(varFileLocation, "", "", false));
             Delay.Milliseconds(0);
             
         }

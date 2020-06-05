@@ -79,8 +79,8 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'CProgramFilesNotepadPlusPlusChange'.", repo.CProgramFilesNotepadPlusPlusChange.SelfInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.CProgramFilesNotepadPlusPlusChange.SelfInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange'.", repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.SelfInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.SelfInfo, "Enabled", "True");
             Delay.Milliseconds(100);
             
         }

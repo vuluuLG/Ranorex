@@ -6,11 +6,17 @@
   <Array name="files" />
   <SerializedValue name="ModuleBrowserState">
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <string>{BA6510CB-66BB-40D1-8786-6EF8618D02A6}</string>
+      <string>{39EBB2BB-80A9-4F93-99C8-492F9160856E}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>7167e60e-079c-4337-83cc-556ef8bb8db6</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
-      <string>f459749b-8098-41cd-8dff-e057454ab20b</string>
+      <string>543e4602-ed9f-4a14-893b-e1214efbe51c</string>
+      <string>370a32b3-0960-41a8-82f1-76860c095ffd</string>
+      <string>de459cc0-02e3-43df-85cd-33020461225f</string>
+      <string>8f31c4de-ebcc-435c-8313-ceb234fbf2d1</string>
+      <string>457ef068-177d-423c-a1f7-7173d5e7e3a4</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Automation[Reports[]Recordings[InstallApp.rxrec[]ValidateInstalled.rxrec[]]]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Automation\Reports&#xD;&#xA;Solution DesktopApp_Automation" />
+  <ProjectBrowserState value="[Solution DesktopApp_Automation[DesktopApp_Modules[Reports[]ApplicationModules[Chrome[DownloadApp.rxrec[]]ControlPanel[]GeneralApplication[]Notepad[]]]DesktopApp_Test[Reports[]]]]&#xD;&#xA;Solution DesktopApp_Automation\DesktopApp_Modules\Reports&#xD;&#xA;Solution DesktopApp_Automation" />
   <StartupProject value="{BA6510CB-66BB-40D1-8786-6EF8618D02A6}" />
 </Properties>

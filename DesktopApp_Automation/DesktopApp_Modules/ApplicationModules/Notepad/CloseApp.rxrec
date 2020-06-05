@@ -27,7 +27,7 @@ mode="Global">
 	<recorditems>
 		<closeapprecorditem
 		enabled="True"
-		graceperiod="0ms"
+		graceperiod="1000ms"
 		method="CloseWindow"
 		optional="False"
 		searchpropertyid="bdc74d0a-139e-47a8-b56b-0de6054283e4">
@@ -36,10 +36,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="3eeea3b0-f8da-4fca-8cbf-2676b2504c88"
+			id="5c3be95a-f11a-44ba-b12b-7bcd8c5361f4"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@title&gt;'C:\Program Files\Notepad++\change.log']/?/?/button[@accessiblename='Close']
+					/form[@title&gt;'C:\Program Files\Notepad++\change.log']/titlebar/button[@accessiblename='Close']
 				</path>
 			</info>
 		</closeapprecorditem>

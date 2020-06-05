@@ -53,6 +53,16 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable repoVersionApp.
+        /// </summary>
+        [TestVariable("c33a7b58-c069-4176-98d7-9637f83d8b63")]
+        public string repoVersionApp
+        {
+            get { return repo.repoVersionApp; }
+            set { repo.repoVersionApp = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,24 +89,24 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64' at 80;10.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(0));
-            repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64.Click(System.Windows.Forms.MouseButtons.Right, "80;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'ApplicationModules.ControlPanel.ProgramsAndFeatures.NotepadPlusPlus64BitX64' at 80;10.", repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(0));
+            repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.NotepadPlusPlus64BitX64.Click(System.Windows.Forms.MouseButtons.Right, "80;10");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer1.Uninstall' at 50;15.", repo.Explorer1.UninstallInfo, new RecordItemIndex(1));
-            repo.Explorer1.Uninstall.Click("50;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.ControlPanel.Explorer.Uninstall' at 44;15.", repo.ApplicationModules.ControlPanel.Explorer.UninstallInfo, new RecordItemIndex(1));
+            repo.ApplicationModules.ControlPanel.Explorer.Uninstall.Click("44;15");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonUninstall' at 23;15.", repo.NotepadPlusPlusV786Uninstall.ButtonUninstallInfo, new RecordItemIndex(2));
-            repo.NotepadPlusPlusV786Uninstall.ButtonUninstall.Click("23;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall.ButtonUninstall' at 25;7.", repo.ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall.ButtonUninstallInfo, new RecordItemIndex(2));
+            repo.ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall.ButtonUninstall.Click("25;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall1.ButtonNo' at 36;14.", repo.NotepadPlusPlusV786Uninstall1.ButtonNoInfo, new RecordItemIndex(3));
-            repo.NotepadPlusPlusV786Uninstall1.ButtonNo.Click("36;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall1.ButtonNo' at 40;14.", repo.ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall1.ButtonNoInfo, new RecordItemIndex(3));
+            repo.ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall1.ButtonNo.Click("40;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Uninstall.ButtonClose' at 46;10.", repo.NotepadPlusPlusV786Uninstall.ButtonCloseInfo, new RecordItemIndex(4));
-            repo.NotepadPlusPlusV786Uninstall.ButtonClose.Click("46;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall.ButtonClose' at 38;10.", repo.ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall.ButtonCloseInfo, new RecordItemIndex(4));
+            repo.ApplicationModules.ControlPanel.NotepadPlusPlusV786Uninstall.ButtonClose.Click("38;10");
             Delay.Milliseconds(0);
             
         }

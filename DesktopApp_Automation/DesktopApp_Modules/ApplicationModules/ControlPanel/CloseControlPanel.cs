@@ -79,8 +79,8 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgramsAndFeatures.Close' at 15;-1.", repo.ProgramsAndFeatures.CloseInfo, new RecordItemIndex(0));
-            repo.ProgramsAndFeatures.Close.Click("15;-1");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationModules.ControlPanel.ProgramsAndFeatures.Close'.", repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.CloseInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.Close, new Duration(0));
             Delay.Milliseconds(0);
             
         }

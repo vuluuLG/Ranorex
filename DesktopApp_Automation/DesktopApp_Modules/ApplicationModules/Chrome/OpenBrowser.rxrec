@@ -64,16 +64,16 @@ mode="Global">
 		optional="False"
 		searchpropertyid="dec10dc5-eff2-428f-ad5a-55e5d27df807"
 		waitaction="Exists"
-		waittimeout="5000ms">
+		waittimeout="10000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="5e7c12b6-09af-4c9c-983c-2a3f70c47d9c"
+			id="60c428c1-4602-4c0a-86d1-de13aa322d2b"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul/li[1]
+					/dom[@domain='notepad-plus-plus.org']//main[#'main']/ul//a[1]
 				</path>
 			</info>
 		</WaitForRecordItem>

@@ -1,0 +1,16 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="DesktopApp_ModulesRepository.rxrep" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="DesktopApp_ModulesRepository.rxrep" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Array name="recentusercodeselections">
+      <Element value="DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Wait_for_ButtonNpp786InstallerX646Exe1(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Report_Log()" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Get_value_ButtonNpp786InstallerX646Exe(RepoItemInfo buttonInfo)" />
+    </Array>
+  </Properties>
+</Properties>

@@ -24,8 +24,9 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="6b6e48c6-c4e6-4bc5-bdf9-8f8fd4795e16"
+		id="c1f134e0-5996-4020-a3cc-05bb76148dc3"
 		name="varFileLocation">
+			C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk
 		</var>
 	</variables>
 	<recorditems>
@@ -38,6 +39,10 @@ mode="Global">
 			<bindings>
 				<binding
 				target="FileName"
+				variable="varFileLocation">
+				</binding>
+				<binding
+				target="ReturnVariable"
 				variable="varFileLocation">
 				</binding>
 			</bindings>

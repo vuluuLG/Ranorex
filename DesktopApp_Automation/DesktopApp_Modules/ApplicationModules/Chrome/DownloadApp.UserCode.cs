@@ -33,5 +33,34 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
             // Your recording specific initialization code goes here.
         }
 
+        public void Report_Log()
+        {
+            Report.Log(ReportLevel.Info, "User", repoVersionApp);
+        }
+
+        public void Wait_for_ButtonNpp786InstallerX646Exe(RepoItemInfo buttonInfo)
+        {
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'buttonInfo'", buttonInfo, new ActionTimeout(120000));
+            buttonInfo.WaitForExists(5000);
+        }
+
+        public void Mouse_Click_Installer(RepoItemInfo atagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'atagInfo' at Center.", atagInfo);
+            atagInfo.FindAdapter<ATag>().Click();
+        }
+
+        public void Mouse_Click_ATagNotepadPlusPlus786R(RepoItemInfo atagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'atagInfo' at 24;16.", atagInfo);
+            atagInfo.FindAdapter<ATag>().Click("24;16");
+        }
+
+        public void Wait_for_ButtonNpp786InstallerX646Exe1(RepoItemInfo buttonInfo)
+        {
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'buttonInfo'", buttonInfo, new ActionTimeout(120000));
+            buttonInfo.WaitForExists(120000);
+        }
+
     }
 }

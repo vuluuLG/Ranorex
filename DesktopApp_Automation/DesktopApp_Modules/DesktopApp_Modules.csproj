@@ -230,6 +230,18 @@
       <id>d40c2d3a-89c4-4be8-a94c-549ca57efefa</id>
       <BoundTo>59adcca1-eb94-494c-ab50-c90e89ef0c8c</BoundTo>
     </Compile>
+    <Compile Include="ApplicationModules\GeneralApplication\Test.cs">
+      <BoundTo>9eee0769-17d3-484a-b676-ca48d204823c</BoundTo>
+      <DependentUpon>Test.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6eee30d8-5b9e-4188-8858-a3cd26606ec5</id>
+    </Compile>
+    <Compile Include="ApplicationModules\GeneralApplication\Test.UserCode.cs">
+      <BoundTo>9eee0769-17d3-484a-b676-ca48d204823c</BoundTo>
+      <DependentUpon>Test.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>02ab6302-6dfc-4283-8de9-b3fa69bacf05</id>
+    </Compile>
     <Compile Include="ApplicationModules\Notepad\CloseApp.cs">
       <DependentUpon>CloseApp.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -321,6 +333,11 @@
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
       <id>59adcca1-eb94-494c-ab50-c90e89ef0c8c</id>
       <recordtableid>20da548e-0ca7-4fcb-b121-e4913fb1db5a</recordtableid>
+    </None>
+    <None Include="ApplicationModules\GeneralApplication\Test.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>9eee0769-17d3-484a-b676-ca48d204823c</id>
+      <recordtableid>422298ca-74f1-4425-a5e2-f83cacb68b08</recordtableid>
     </None>
     <None Include="ApplicationModules\Notepad\CloseApp.rxrec">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>

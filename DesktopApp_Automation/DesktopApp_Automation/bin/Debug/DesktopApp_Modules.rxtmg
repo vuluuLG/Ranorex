@@ -8,22 +8,31 @@ rxversion="9.3">
 			name="UninstallApp"
 			ref="bcf63e84-8b93-4423-b0c1-45fbe12d487c"
 			type="Recording">
+				<description>
+					<![CDATA[Uninstall app]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="4e28b505-9de4-416f-948a-afc8dd3bbc33"
 			name="CloseControlPanel"
 			ref="4c2d7051-ec98-482e-9852-1e9af3524fe0"
 			type="Recording">
+				<description>
+					<![CDATA[Close control panel]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="575200fb-f270-4782-a098-b0e12e733a04"
 			name="ValidateInstalled"
 			ref="6b238876-72f3-40a2-97ba-4ecf35e8c515"
 			type="Recording">
+				<description>
+					<![CDATA[Validate app installed in control panel]]>
+				</description>
 			</testmodule>
 			<simplefolder
 			id="7167e60e-079c-4337-83cc-556ef8bb8db6"
-			name="GroupModules">
+			name="AutFunction">
 			</simplefolder>
 			<modulegroupdef
 			id="88c01b50-f183-45c5-81a9-8e4d3cbac41e"
@@ -39,6 +48,16 @@ rxversion="9.3">
 						variableref="5902be29-de50-4d29-b3ce-4662954e7f01">
 						</modulevariable>
 					</groupvariable>
+					<groupvariable
+					defaultvalue="7.8.6"
+					id="7dc52ece-dbc6-41b5-b777-50d98a225082"
+					name="repoVersionApp">
+						<modulevariable
+						moduleref="575200fb-f270-4782-a098-b0e12e733a04"
+						name="repoVersionApp"
+						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
+						</modulevariable>
+					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
 			<testmodule
@@ -46,18 +65,27 @@ rxversion="9.3">
 			name="DownloadApp"
 			ref="1079f995-3537-470e-a785-773b49ffa279"
 			type="Recording">
+				<description>
+					<![CDATA[Download app]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="9c45741d-64d2-4e8f-bc86-ff29f9e90d59"
 			name="ValidateDownloaded"
 			ref="9a097a65-4066-42c4-9816-9c541e035607"
 			type="Recording">
+				<description>
+					<![CDATA[Validate app downloaded]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="baa1395d-8687-46cb-9e93-c34861e98908"
 			name="OpenBrowser"
 			ref="a975b00a-e317-4c5d-bdf8-6ecbe21531f4"
 			type="Recording">
+				<description>
+					<![CDATA[Open browser]]>
+				</description>
 			</testmodule>
 			<modulegroupdef
 			id="c72c4cdc-a1b9-4016-a146-49149c03c451"
@@ -93,6 +121,36 @@ rxversion="9.3">
 						variableref="2a7bc221-2d79-4cb4-80e1-a85d20d7adb9">
 						</modulevariable>
 					</groupvariable>
+					<groupvariable
+					defaultvalue="7.8.6"
+					id="2697d359-48bf-4d98-ab35-c8a90b735cc9"
+					name="repoVersionApp">
+						<modulevariable
+						moduleref="8c5c9df8-d707-42b5-acf6-0e8411b0f96f"
+						name="repoVersionApp"
+						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
+						</modulevariable>
+						<modulevariable
+						moduleref="9c45741d-64d2-4e8f-bc86-ff29f9e90d59"
+						name="repoVersionApp"
+						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
+						</modulevariable>
+						<modulevariable
+						moduleref="d35be50a-6818-43c5-953b-ea1b98306cbd"
+						name="repoVersionApp"
+						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="64"
+					id="75ed46c0-80aa-4857-bd44-9e20b5705242"
+					name="repoWindownVersion">
+						<modulevariable
+						moduleref="8c5c9df8-d707-42b5-acf6-0e8411b0f96f"
+						name="repoWindownVersion"
+						variableref="f8d32d52-e8bd-4c90-b774-55f6418a93c6">
+						</modulevariable>
+					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
 			<testmodule
@@ -100,12 +158,18 @@ rxversion="9.3">
 			name="OpenControlPanel"
 			ref="20da548e-0ca7-4fcb-b121-e4913fb1db5a"
 			type="Recording">
+				<description>
+					<![CDATA[Open control panel]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="d35be50a-6818-43c5-953b-ea1b98306cbd"
 			name="CloseBrowser"
 			ref="2fe35adf-b05b-4456-b5bf-b2478c438c6c"
 			type="Recording">
+				<description>
+					<![CDATA[Close browser]]>
+				</description>
 			</testmodule>
 			<modulegroups
 			id="feafae67-bf61-46f2-93a0-7d8566da7aee"
@@ -118,7 +182,7 @@ rxversion="9.3">
 			name="DesktopApp_Modules">
 				<simplefolder
 				id="7167e60e-079c-4337-83cc-556ef8bb8db6"
-				name="GroupModules">
+				name="AutFunction">
 					<modulegroupdef
 					id="88c01b50-f183-45c5-81a9-8e4d3cbac41e"
 					name="UninstallApp">

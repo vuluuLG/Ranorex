@@ -92,40 +92,42 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $varStartApp in normal mode. Return value bound to $varStartApp.", new RecordItemIndex(0));
-            varStartApp = ValueConverter.ToString(Host.Local.RunApplication(varStartApp, "", "", false));
-            Delay.Milliseconds(5530);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InstallerLanguage.ButtonOK' at 30;10.", repo.InstallerLanguage.ButtonOKInfo, new RecordItemIndex(1));
-            repo.InstallerLanguage.ButtonOK.Click("30;10");
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $varStartApp in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(varStartApp, "", "", false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 30;9.", repo.NotepadPlusPlusV786Setup.ButtonNextInfo, new RecordItemIndex(2));
-            repo.NotepadPlusPlusV786Setup.ButtonNext.Click("30;9");
+            Report.Log(ReportLevel.Info, "User", varStartApp, new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.ButtonOK' at 34;11.", repo.ApplicationModules.Notepad.ButtonOKInfo, new RecordItemIndex(2));
+            repo.ApplicationModules.Notepad.ButtonOK.Click("34;11");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.IAgree' at 30;9.", repo.NotepadPlusPlusV786Setup.IAgreeInfo, new RecordItemIndex(3));
-            repo.NotepadPlusPlusV786Setup.IAgree.Click("30;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.ButtonNext' at 31;6.", repo.ApplicationModules.Notepad.ButtonNextInfo, new RecordItemIndex(3));
+            repo.ApplicationModules.Notepad.ButtonNext.Click("31;6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 31;9.", repo.NotepadPlusPlusV786Setup.ButtonNextInfo, new RecordItemIndex(4));
-            repo.NotepadPlusPlusV786Setup.ButtonNext.Click("31;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.SetupNotepadPlusPlus.IAgree' at 40;12.", repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.IAgreeInfo, new RecordItemIndex(4));
+            repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.IAgree.Click("40;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonNext' at 31;9.", repo.NotepadPlusPlusV786Setup.ButtonNextInfo, new RecordItemIndex(5));
-            repo.NotepadPlusPlusV786Setup.ButtonNext.Click("31;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonNext' at 40;12.", repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonNextInfo, new RecordItemIndex(5));
+            repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonNext.Click("40;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonInstall' at 31;9.", repo.NotepadPlusPlusV786Setup.ButtonInstallInfo, new RecordItemIndex(6));
-            repo.NotepadPlusPlusV786Setup.ButtonInstall.Click("31;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonNext' at 40;12.", repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonNextInfo, new RecordItemIndex(6));
+            repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonNext.Click("40;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlusV786Setup.ButtonFinish' at 31;9.", repo.NotepadPlusPlusV786Setup.ButtonFinishInfo, new RecordItemIndex(7));
-            repo.NotepadPlusPlusV786Setup.ButtonFinish.Click("31;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.ButtonInstall' at 40;12.", repo.ApplicationModules.Notepad.ButtonInstallInfo, new RecordItemIndex(7));
+            repo.ApplicationModules.Notepad.ButtonInstall.Click("40;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CProgramFilesNotepadPlusPlusChange.Close' at 29;18.", repo.CProgramFilesNotepadPlusPlusChange.CloseInfo, new RecordItemIndex(8));
-            repo.CProgramFilesNotepadPlusPlusChange.Close.Click("29;18");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonFinish' at 40;12.", repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonFinishInfo, new RecordItemIndex(8));
+            repo.ApplicationModules.Notepad.SetupNotepadPlusPlus.ButtonFinish.Click("40;12");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.Close' at 20;8.", repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.CloseInfo, new RecordItemIndex(9));
+            repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.Close.Click("20;8");
             Delay.Milliseconds(0);
             
         }

@@ -79,8 +79,8 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'CProgramFilesNotepadPlusPlusChange.Close'.", repo.CProgramFilesNotepadPlusPlusChange.CloseInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.CProgramFilesNotepadPlusPlusChange.Close, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.Close'.", repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.CloseInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.Close, 1000);
             Delay.Milliseconds(0);
             
         }

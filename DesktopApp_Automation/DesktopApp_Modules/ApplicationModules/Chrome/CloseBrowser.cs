@@ -53,6 +53,16 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable repoVersionApp.
+        /// </summary>
+        [TestVariable("c33a7b58-c069-4176-98d7-9637f83d8b63")]
+        public string repoVersionApp
+        {
+            get { return repo.repoVersionApp; }
+            set { repo.repoVersionApp = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,8 +89,8 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NotepadPlusPlus786ReleaseNotepadP.Pane' at 1264;14.", repo.NotepadPlusPlus786ReleaseNotepadP.PaneInfo, new RecordItemIndex(0));
-            repo.NotepadPlusPlus786ReleaseNotepadP.Pane.Click("1264;14");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.Restore'.", repo.ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.RestoreInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.Restore, 1000);
             Delay.Milliseconds(0);
             
         }

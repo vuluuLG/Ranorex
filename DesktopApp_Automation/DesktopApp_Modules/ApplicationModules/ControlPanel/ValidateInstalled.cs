@@ -41,7 +41,8 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
         /// </summary>
         public ValidateInstalled()
         {
-            varSoftwareName = "";
+            varSoftwareName = "Notepad++ (64-bit x64)";
+            repoVersionApp = "7.8.6";
         }
 
         /// <summary>
@@ -64,6 +65,16 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
         {
             get { return _varSoftwareName; }
             set { _varSoftwareName = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable repoVersionApp.
+        /// </summary>
+        [TestVariable("c33a7b58-c069-4176-98d7-9637f83d8b63")]
+        public string repoVersionApp
+        {
+            get { return repo.repoVersionApp; }
+            set { repo.repoVersionApp = value; }
         }
 
 #endregion
@@ -92,9 +103,15 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varSoftwareName) on item 'ProgramsAndFeatures.NotepadPlusPlus64BitX64'.", repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, "Text", varSoftwareName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$varSoftwareName) on item 'ApplicationModules.ControlPanel.ProgramsAndFeatures.NotepadPlusPlus64BitX64'.", repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.NotepadPlusPlus64BitX64Info, "Text", varSoftwareName);
             Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ColumnIndex='4') on item 'ApplicationModules.ControlPanel.ProgramsAndFeatures.Cell786'.", repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.Cell786Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.Cell786Info, "ColumnIndex", "4");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "User", repoVersionApp, new RecordItemIndex(2));
             
         }
 

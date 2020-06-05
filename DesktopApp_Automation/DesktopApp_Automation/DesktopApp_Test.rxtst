@@ -11,22 +11,34 @@
 				</description>
 				<databinding>
 					<var
-					dataname="varURL"
+					dataname="repoVersionApp"
 					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					variableid="2697d359-48bf-4d98-ab35-c8a90b735cc9"
+					variablename="repoVersionApp">
+					</var>
+					<var
+					dataname="varFileSetupName "
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="050de14d-e0ab-437a-8212-1f18af2505e6"
+					variablename="varFileSetupName">
+					</var>
+					<var
+					dataname="varURL"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="f33472b8-c75d-4b06-b620-9673f5235864"
 					variablename="varURL">
 					</var>
 					<var
 					dataname="varBrowser"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="70457a30-be21-4013-a0a4-699af46840d7"
 					variablename="varBrowser">
 					</var>
 					<var
-					dataname="varFileSetupName"
+					dataname="repoWindownVersion"
 					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="050de14d-e0ab-437a-8212-1f18af2505e6"
-					variablename="varFileSetupName">
+					variableid="75ed46c0-80aa-4857-bd44-9e20b5705242"
+					variablename="repoWindownVersion">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -39,8 +51,14 @@
 				</description>
 				<databinding>
 					<var
-					dataname="varSoftwareName"
+					dataname="repoVersionApp"
 					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					variableid="7dc52ece-dbc6-41b5-b777-50d98a225082"
+					variablename="repoVersionApp">
+					</var>
+					<var
+					dataname="varSoftwareName"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="50ae6168-a875-429d-a1e0-c330089206cb"
 					variablename="varSoftwareName">
 					</var>
@@ -51,28 +69,17 @@
 			name="teardown">
 			</teardown>
 			<smartfoldernode
+			datasource="MyData"
 			id="64b27845-8550-467d-94e5-cbf8de636c14"
 			name="SmartFolder">
 				<parameters>
 					<param
-					name="varURL"
-					value="https://notepad-plus-plus.org/downloads/">
+					name="repoVersionApp"
+					value="7.8.6">
 					</param>
 					<param
-					name="varBrowser"
-					value="Chrome">
-					</param>
-					<param
-					name="varFileSetupName"
-					value="npp.7.8.6.Installer.x64">
-					</param>
-					<param
-					name="varStartApp"
-					value="D:\npp.7.8.6.Installer.x64.exe">
-					</param>
-					<param
-					name="varSoftwareName"
-					value="Notepad++ (64-bit x64)">
+					name="repoWindownVersion"
+					value="64">
 					</param>
 				</parameters>
 			</smartfoldernode>
@@ -89,8 +96,14 @@
 				</description>
 				<databinding>
 					<var
+					dataname="repoVersionApp"
+					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					variableid="7dc52ece-dbc6-41b5-b777-50d98a225082"
+					variablename="repoVersionApp">
+					</var>
+					<var
 					dataname="varSoftwareName"
-					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="50ae6168-a875-429d-a1e0-c330089206cb"
 					variablename="varSoftwareName">
 					</var>
@@ -114,22 +127,34 @@
 				</description>
 				<databinding>
 					<var
-					dataname="varURL"
+					dataname="repoVersionApp"
 					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="f33472b8-c75d-4b06-b620-9673f5235864"
-					variablename="varURL">
+					variableid="2697d359-48bf-4d98-ab35-c8a90b735cc9"
+					variablename="repoVersionApp">
+					</var>
+					<var
+					dataname="varFileSetupName "
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="050de14d-e0ab-437a-8212-1f18af2505e6"
+					variablename="varFileSetupName">
 					</var>
 					<var
 					dataname="varBrowser"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="70457a30-be21-4013-a0a4-699af46840d7"
 					variablename="varBrowser">
 					</var>
 					<var
-					dataname="varFileSetupName"
+					dataname="varURL"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="f33472b8-c75d-4b06-b620-9673f5235864"
+					variablename="varURL">
+					</var>
+					<var
+					dataname="repoWindownVersion"
 					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="050de14d-e0ab-437a-8212-1f18af2505e6"
-					variablename="varFileSetupName">
+					variableid="75ed46c0-80aa-4857-bd44-9e20b5705242"
+					variablename="repoWindownVersion">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -138,10 +163,13 @@
 			name="InstallApp"
 			ref="5c2fb7c1-bef7-495e-8078-58f859991342"
 			type="Recording">
+				<description>
+					<![CDATA[Install app]]>
+				</description>
 				<databinding>
 					<var
 					dataname="varStartApp"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="63b67a07-fb9f-4e4b-9fa4-7ec2b13592a1"
 					variablename="varStartApp">
 					</var>
@@ -153,32 +181,6 @@
 				<description>
 					<![CDATA[Verify app: install/uninstall]]>
 				</description>
-				<parameters>
-					<param
-					name="varStartApp"
-					value="D:\npp.7.8.6.Installer.x64.exe">
-					</param>
-					<param
-					name="varSoftwareName"
-					value="Notepad++ (64-bit x64)">
-					</param>
-					<param
-					name="varURL"
-					value="https://notepad-plus-plus.org/downloads/">
-					</param>
-					<param
-					name="varBrowser"
-					value="Chrome">
-					</param>
-					<param
-					name="varFileSetupName"
-					value="npp.7.8.6.Installer.x64">
-					</param>
-					<param
-					name="varFileLocation"
-					value="C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk">
-					</param>
-				</parameters>
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -223,8 +225,8 @@
 				<databinding>
 					<var
 					dataname="varFileLocation"
-					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
-					variableid="6b6e48c6-c4e6-4bc5-bdf9-8f8fd4795e16"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="c1f134e0-5996-4020-a3cc-05bb76148dc3"
 					variablename="varFileLocation">
 					</var>
 				</databinding>
@@ -245,10 +247,13 @@
 			name="InstallApp"
 			ref="5c2fb7c1-bef7-495e-8078-58f859991342"
 			type="Recording">
+				<description>
+					<![CDATA[Install app]]>
+				</description>
 				<databinding>
 					<var
 					dataname="varStartApp"
-					datasourceid="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="63b67a07-fb9f-4e4b-9fa4-7ec2b13592a1"
 					variablename="varStartApp">
 					</var>
@@ -323,11 +328,64 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\MyData.xlsx"
+		id="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+		includefile="Unchecked"
+		lastknownrowcount="2"
+		name="MyData"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Browser"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					varFileSetupName&#32;
+				</column>
+				<column>
+					varStartApp
+				</column>
+				<column>
+					varSoftwareName
+				</column>
+				<column>
+					varFileLocation
+				</column>
+				<column>
+					varBrowser
+				</column>
+				<column>
+					varURL
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					varFileLocation
+				</columnname>
+				<columnname>
+					varFileSetupName&#32;
+				</columnname>
+				<columnname>
+					varSoftwareName
+				</columnname>
+				<columnname>
+					varStartApp
+				</columnname>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="64b27845-8550-467d-94e5-cbf8de636c14">
+			</testcontainer>
+			<testcontainer
+			id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0">
+			</testcontainer>
+			<testcontainer
+			id="ed080cd5-dd07-413d-8b09-d33deb8f8a32">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

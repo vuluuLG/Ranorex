@@ -41,6 +41,8 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
         /// </summary>
         public DownloadApp()
         {
+            repoVersionApp = "7.8.6";
+            repoWindownVersion = "64";
         }
 
         /// <summary>
@@ -52,6 +54,26 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable repoWindownVersion.
+        /// </summary>
+        [TestVariable("f8d32d52-e8bd-4c90-b774-55f6418a93c6")]
+        public string repoWindownVersion
+        {
+            get { return repo.repoWindownVersion; }
+            set { repo.repoWindownVersion = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable repoVersionApp.
+        /// </summary>
+        [TestVariable("c33a7b58-c069-4176-98d7-9637f83d8b63")]
+        public string repoVersionApp
+        {
+            get { return repo.repoVersionApp; }
+            set { repo.repoVersionApp = value; }
+        }
 
 #endregion
 
@@ -79,16 +101,20 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R' at 150;11.", repo.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo, new RecordItemIndex(0));
-            repo.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R.Click("150;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Browser.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R' at 24;16.", repo.ApplicationModules.Browser.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo, new RecordItemIndex(0));
+            repo.ApplicationModules.Browser.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R.Click("24;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DownloadsNotepadPlusPlus.Installer' at Center.", repo.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(1));
-            repo.DownloadsNotepadPlusPlus.Installer.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.Browser.DownloadsNotepadPlusPlus.Installer' at Center.", repo.ApplicationModules.Browser.DownloadsNotepadPlusPlus.InstallerInfo, new RecordItemIndex(1));
+            repo.ApplicationModules.Browser.DownloadsNotepadPlusPlus.Installer.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.7m to exist. Associated repository item: 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe'", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo, new ActionTimeout(100000), new RecordItemIndex(2));
-            repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo.WaitForExists(100000);
+            Report.Log(ReportLevel.Info, "User", repoVersionApp, new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "User", repoWindownVersion, new RecordItemIndex(3));
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe'", repo.ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo, new ActionTimeout(300000), new RecordItemIndex(4));
+            repo.ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo.WaitForExists(300000);
             
         }
 

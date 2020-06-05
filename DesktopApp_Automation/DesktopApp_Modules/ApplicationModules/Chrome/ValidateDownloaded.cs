@@ -66,6 +66,16 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
             set { _varFileSetupName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable repoVersionApp.
+        /// </summary>
+        [TestVariable("c33a7b58-c069-4176-98d7-9637f83d8b63")]
+        public string repoVersionApp
+        {
+            get { return repo.repoVersionApp; }
+            set { repo.repoVersionApp = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -92,8 +102,8 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$varFileSetupName) on item 'NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe'.", repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo, "Text", varFileSetupName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$varFileSetupName) on item 'ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646Exe'.", repo.ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.ApplicationModules.Browser.NotepadPlusPlus786ReleaseNotepadP.ButtonNpp786InstallerX646ExeInfo, "Text", varFileSetupName);
             Delay.Milliseconds(100);
             
         }

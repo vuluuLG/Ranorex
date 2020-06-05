@@ -109,8 +109,8 @@ namespace DesktopApp_Modules.ApplicationModules.Chrome
             Host.Current.OpenBrowser(varURL, varBrowser, "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R'", repo.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo, new ActionTimeout(5000), new RecordItemIndex(1));
-            repo.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'ApplicationModules.Browser.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786R'", repo.ApplicationModules.Browser.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo, new ActionTimeout(10000), new RecordItemIndex(1));
+            repo.ApplicationModules.Browser.DownloadsNotepadPlusPlus.ATagNotepadPlusPlus786RInfo.WaitForExists(10000);
             
         }
 
