@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TADashboard_Modules.Browser_modules.Dialog
+namespace TADashboard_Modules.Business_modules.Pages.UserDefinedPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SelectOk recording.
+    ///The ValidatePageDisplayed recording.
     /// </summary>
-    [TestModule("50505152-9cf9-4aea-9955-db626387089a", ModuleType.Recording, 1)]
-    public partial class SelectOk : ITestModule
+    [TestModule("c0c69a53-4497-4b46-8579-2ebc6102b05d", ModuleType.Recording, 1)]
+    public partial class ValidatePageDisplayed : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TADashboard_Modules.TADashboard_Repository repository.
         /// </summary>
         public static global::TADashboard_Modules.TADashboard_Repository repo = global::TADashboard_Modules.TADashboard_Repository.Instance;
 
-        static SelectOk instance = new SelectOk();
+        static ValidatePageDisplayed instance = new ValidatePageDisplayed();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SelectOk()
+        public ValidatePageDisplayed()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SelectOk Instance
+        public static ValidatePageDisplayed Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable repoTabName.
+        /// </summary>
+        [TestVariable("1c37f47c-f432-49a9-b76f-909507b56426")]
+        public string repoTabName
+        {
+            get { return repo.repoTabName; }
+            set { repo.repoTabName = value; }
+        }
 
 #endregion
 
@@ -79,11 +89,8 @@ namespace TADashboard_Modules.Browser_modules.Dialog
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Browser.Dialogs.ButtonOK' at Center.", repo.Browser.Dialogs.ButtonOKInfo, new RecordItemIndex(1));
-            repo.Browser.Dialogs.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Class='active') on item 'TADashboard.Pages.BasePage.MainMenu.LnkPageTab'.", repo.TADashboard.Pages.BasePage.MainMenu.LnkPageTabInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TADashboard.Pages.BasePage.MainMenu.LnkPageTabInfo, "Class", "active");
             Delay.Milliseconds(0);
             
         }

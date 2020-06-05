@@ -48,16 +48,16 @@ name="TADashboard_Repository">
 						name="LnkChoosePanels"
 						refimgid="8eb3fe6a-461c-499b-a59f-711ed4fb9b7c"
 						searchtimeout="30000ms">
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'main-menu']//li[@class~'mn-panels']/a
+							/dom[@path~'/TADashboard']//div[#'main-menu']//li[@class~'mn-panels']/a
 						</item>
 						<item
 						addcaps="unknown,webelement,atag"
 						capname="atag"
 						id="44a702c5-59b4-4a8e-9644-397cd2cf7241"
-						name="LnkSetting"
+						name="LnkGlobalSetting"
 						refimgid="8eb3fe6a-461c-499b-a59f-711ed4fb9b7c"
 						searchtimeout="30000ms">
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'main-menu']//li[@class~'mn-setting']/a
+							/dom[@path~'/TADashboard']//div[#'main-menu']//li[@class~'mn-setting']/a
 						</item>
 						<item
 						addcaps="unknown,webelement,atag"
@@ -66,7 +66,7 @@ name="TADashboard_Repository">
 						name="LnkPageTab"
 						refimgid="8eb3fe6a-461c-499b-a59f-711ed4fb9b7c"
 						searchtimeout="30000ms">
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'main-menu']//a[@innertext=$repoTabName]
+							/dom[@path~'/TADashboard']//div[#'main-menu']//a[@innertext=$repoTabName]
 						</item>
 						<folder
 						capname="litag"
@@ -78,18 +78,19 @@ name="TADashboard_Repository">
 							<item
 							addcaps="unknown,webelement,atag"
 							capname="atag"
+							ensurevisible="True"
 							id="0aa23f00-c028-46c3-9071-7cb839846a42"
 							name="LnkSetting"
 							refimgid="b4d61c5f-304d-4a62-b82d-9170acfdc64a"
 							searchtimeout="30000ms">
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'main-menu']//li[@class~'mn-setting']//a[@innertext=$repoSettingName]
+								/dom[@path~'/TADashboard']//div[#'main-menu']//li[@class~'mn-setting']//a[@innertext=$repoSettingName]
 							</item>
 							<basepath>
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'main-menu']//li[@class~'mn-setting']
+								/dom[@path~'/TADashboard']//div[#'main-menu']//li[@class~'mn-setting']
 							</basepath>
 						</folder>
 						<basepath>
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'main-menu']
+							/dom[@path~'/TADashboard']//div[#'main-menu']
 						</basepath>
 					</folder>
 					<folder
@@ -103,55 +104,55 @@ name="TADashboard_Repository">
 						<item
 						addcaps="unknown,webelement,atag"
 						capname="atag"
+						ensurevisible="True"
 						id="8a80a1f8-f139-4321-9edb-295d7d5e1284"
 						name="LnkUserName"
-						refimgid="8eb3fe6a-461c-499b-a59f-711ed4fb9b7c"
+						refimgid="5ce8dd61-9ab9-438e-bd60-c8321b2d1cdf"
 						searchtimeout="30000ms">
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext=$repoUsername]
+							/dom[@path~'/TADashboard']//ul[@class~'head-menu']//a[@href~'#Welcome']
 						</item>
 						<item
 						capname="atag"
+						ensurevisible="True"
 						id="5b7e0f1c-60bf-4cc3-bf6f-e17f7733eed9"
 						name="LnkAdminiter"
+						refimgid="eab9b487-88b1-423a-aaef-9045c427800e"
 						searchtimeout="30000ms">
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='Administer']
+							/dom[@path~'/TADashboard']//ul[@class~'head-menu']//a[@innertext='Administer']
 						</item>
 						<folder
-						capname="litag"
-						id="a8009501-6b48-4f51-a708-b920cf8861dc"
-						isrooted="True"
-						name="User"
-						searchtimeout="30000ms"
-						usecache="False">
+						capname="unknown"
+						id="dfbf9b3a-e568-41d5-b0f0-7d6dda5ca8dd"
+						isrooted="False"
+						name="UserMenu"
+						searchtimeout="0ms">
 							<item
 							addcaps="unknown,webelement,atag"
 							capname="atag"
+							ensurevisible="True"
 							id="6f768881-f1c8-47af-8851-a2829daa99ee"
 							name="LnkMyProfile"
 							refimgid="aff03fbc-69a8-4534-a6c7-1811880aa4ca"
 							searchtimeout="30000ms">
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='$userName']//parent::li//a[@innertext='My Profile']
+								/dom[@path~'/TADashboard']//ul[@class~'head-menu']//a[@innertext='My Profile']
 							</item>
 							<item
 							addcaps="unknown,webelement,atag"
 							capname="atag"
+							ensurevisible="True"
 							id="c28366ec-f065-406e-b909-78d649c60be9"
 							name="LnkLogout"
 							refimgid="aff03fbc-69a8-4534-a6c7-1811880aa4ca"
 							searchtimeout="30000ms">
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='$userName']//parent::li//a[@innertext='Logout']
+								/dom[@path~'/TADashboard']//ul[@class~'head-menu']//a[@innertext='Logout']
 							</item>
-							<basepath>
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='$userName']//parent::li
-							</basepath>
 						</folder>
 						<folder
-						capname="litag"
-						id="428cf32e-3865-4dff-8b72-fd4f0fd8c3b0"
-						isrooted="True"
-						name="Administer"
-						searchtimeout="30000ms"
-						usecache="False">
+						capname="unknown"
+						id="32f50b82-fd7a-44af-967e-ade203c4d2d2"
+						isrooted="False"
+						name="AdminMenu"
+						searchtimeout="0ms">
 							<item
 							addcaps="unknown,webelement,atag"
 							capname="atag"
@@ -159,7 +160,7 @@ name="TADashboard_Repository">
 							name="LnkProfiles"
 							refimgid="aff03fbc-69a8-4534-a6c7-1811880aa4ca"
 							searchtimeout="30000ms">
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='Administer']//parent::li//a[@innertext='Data Profiles']
+								/dom[@path~'/TADashboard']//ul[@class~'head-menu']//a[@innertext='Data Profiles']
 							</item>
 							<item
 							addcaps="unknown,webelement,atag"
@@ -168,14 +169,11 @@ name="TADashboard_Repository">
 							name="LnkPanels"
 							refimgid="aff03fbc-69a8-4534-a6c7-1811880aa4ca"
 							searchtimeout="30000ms">
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='Administer']//parent::li//a[@innertext='Panels']
+								/dom[@path~'/TADashboard']//ul[@class~'head-menu']//a[@innertext='Panels']
 							</item>
-							<basepath>
-								/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']//a[@innertext='Administer']//parent::li
-							</basepath>
 						</folder>
 						<basepath>
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ul[@class~'head-menu']
+							/dom[@path~'/TADashboard']//ul[@class~'head-menu']
 						</basepath>
 					</folder>
 				</folder>
@@ -193,7 +191,7 @@ name="TADashboard_Repository">
 					name="CbxRepository"
 					refimgid="aafcea79-72eb-43a0-9a4b-37ccd388d641"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'login.jsp']//select[#'repository']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'login.jsp']//select[#'repository']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -202,7 +200,7 @@ name="TADashboard_Repository">
 					name="TxtUsername"
 					refimgid="0f7bf20a-499d-4147-8790-c999cc0d894e"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'login.jsp']//input[#'username']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'login.jsp']//input[#'username']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -211,7 +209,7 @@ name="TADashboard_Repository">
 					name="TxtPassword"
 					refimgid="ed16d722-68b0-4e62-8d06-179f593ac05a"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'login.jsp']//input[#'password']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'login.jsp']//input[#'password']
 					</item>
 					<item
 					addcaps="unknown,webelement,divtag"
@@ -220,10 +218,10 @@ name="TADashboard_Repository">
 					name="BtnLogin"
 					refimgid="addc5238-d1b8-4db3-9c14-08ed572f1879"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'login.jsp']//div[#'content']/?/div[@class~'btn-login']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'login.jsp']//div[#'content']/?/div[@class~'btn-login']
 					</item>
 					<basepath>
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'login.jsp']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'login.jsp']
 					</basepath>
 				</folder>
 				<folder
@@ -234,7 +232,7 @@ name="TADashboard_Repository">
 				searchtimeout="30000ms"
 				usecache="False">
 					<basepath>
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'2f9njfdusj.page']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'2f9njfdusj.page']
 					</basepath>
 				</folder>
 				<folder
@@ -245,7 +243,7 @@ name="TADashboard_Repository">
 				searchtimeout="30000ms"
 				usecache="False">
 					<basepath>
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'2f9njff6y9.page']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'2f9njff6y9.page']
 					</basepath>
 				</folder>
 				<folder
@@ -256,7 +254,7 @@ name="TADashboard_Repository">
 				searchtimeout="30000ms"
 				usecache="False">
 					<basepath>
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'profiles.jsp']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'profiles.jsp']
 					</basepath>
 				</folder>
 				<folder
@@ -267,7 +265,7 @@ name="TADashboard_Repository">
 				searchtimeout="30000ms"
 				usecache="False">
 					<basepath>
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//ancestor-or-self::dom[@path~'panels.jsp']
+						/dom[@path~'/TADashboard']//ancestor-or-self::dom[@path~'panels.jsp']
 					</basepath>
 				</folder>
 			</folder>
@@ -292,7 +290,7 @@ name="TADashboard_Repository">
 					name="TxtPageName"
 					refimgid="e0f6d04b-afd9-4f54-95f7-7ba93fcc52bf"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'name']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'name']
 					</item>
 					<item
 					addcaps="unknown,webelement,selecttag"
@@ -301,7 +299,7 @@ name="TADashboard_Repository">
 					name="CbxParentPage"
 					refimgid="eafef3f9-0509-4bbf-9da5-5383e7df014e"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//select[#'parent']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//select[#'parent']
 					</item>
 					<item
 					addcaps="unknown,webelement,selecttag"
@@ -310,7 +308,7 @@ name="TADashboard_Repository">
 					name="CbxNumberOfColumns"
 					refimgid="86832c57-e324-434d-a06b-4ee49e554a84"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//select[#'columnnumber']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//select[#'columnnumber']
 					</item>
 					<item
 					addcaps="unknown,webelement,selecttag"
@@ -319,7 +317,7 @@ name="TADashboard_Repository">
 					name="CbxDisplayAfter"
 					refimgid="cf0ddc12-e6d0-4bb0-9d21-b4f0faa580d1"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//select[#'afterpage']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//select[#'afterpage']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -328,7 +326,7 @@ name="TADashboard_Repository">
 					name="ChkIsPublic"
 					refimgid="92d5f5fa-9bfe-4e3e-8cc7-503baeffaef1"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'ispublic']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'ispublic']
 					</item>
 					<item
 					addcaps="unknown,webelement,inputtag"
@@ -337,7 +335,7 @@ name="TADashboard_Repository">
 					name="BtnOk"
 					refimgid="e8f5a657-0d22-42a0-9aed-a611b820b32d"
 					searchtimeout="30000ms">
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'OK']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'OK']
 					</item>
 					<folder
 					capname="divtag"
@@ -348,7 +346,7 @@ name="TADashboard_Repository">
 					searchtimeout="30000ms"
 					usecache="False">
 						<basepath>
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//h2[@innertext='New Page']//ancestor::div[#'div_popup']
+							/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//h2[@innertext='New Page']//ancestor::div[#'div_popup']
 						</basepath>
 					</folder>
 					<folder
@@ -360,19 +358,19 @@ name="TADashboard_Repository">
 					searchtimeout="30000ms"
 					usecache="False">
 						<basepath>
-							/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//h2[@innertext='Edit Page']//ancestor::div[#'div_popup']
+							/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//h2[@innertext='Edit Page']//ancestor::div[#'div_popup']
 						</basepath>
 					</folder>
 					<basepath>
-						/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']
+						/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']
 					</basepath>
 				</folder>
 				<basepath>
-					/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']//div[#'div_popup']
+					/dom[@path~'/TADashboard']//div[#'div_popup']
 				</basepath>
 			</folder>
 			<basepath>
-				/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']
+				/dom[@path~'/TADashboard']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -393,6 +391,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<appfolder
 		addcaps="form,nativewindow"
 		capname="form"
+		ensurevisible="True"
 		id="b4da6f2d-d9fc-4d3a-ad6a-f97d488a380f"
 		isrooted="True"
 		name="Browser"
@@ -412,14 +411,14 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				name="ButtonOK"
 				refimgid="a271d351-94d4-46db-a188-a6c9d9337835"
 				searchtimeout="30000ms">
-					/form[@processname~'(?i:'+$repoBrowserName+')']//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
+					/form//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
 				</item>
 				<basepath>
-					/form[@processname~'(?i:'+$repoBrowserName+')']//form[@accessiblerole='Dialog']
+					/form//form[@accessiblerole='Dialog']
 				</basepath>
 			</folder>
 			<basepath>
-				/form[@processname~'(?i:'+$repoBrowserName+')']
+				/form
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
@@ -446,17 +445,8 @@ AAAASUVORK5CYII=
 		name="repoTabName">
 		</var>
 		<var
-		id="52c221c2-7d6e-46f7-a225-20da84dec8e7"
-		name="repoUsername">
-		</var>
-		<var
 		id="a04b4e4c-053a-4df7-ad51-7204c6d71e69"
 		name="repoSettingName">
-		</var>
-		<var
-		id="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d"
-		name="repoBrowserName">
-			Chrome
 		</var>
 	</variables>
 </repository>

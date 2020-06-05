@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TADashboard_Modules.Browser_modules.Dialog
+namespace TADashboard_Modules.Business_modules.Pages.MainPage.MainMenu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SelectOk recording.
+    ///The SelectSetting recording.
     /// </summary>
-    [TestModule("50505152-9cf9-4aea-9955-db626387089a", ModuleType.Recording, 1)]
-    public partial class SelectOk : ITestModule
+    [TestModule("5eafb320-c6bf-4bdc-9214-eb32eaf2b2be", ModuleType.Recording, 1)]
+    public partial class SelectSetting : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TADashboard_Modules.TADashboard_Repository repository.
         /// </summary>
         public static global::TADashboard_Modules.TADashboard_Repository repo = global::TADashboard_Modules.TADashboard_Repository.Instance;
 
-        static SelectOk instance = new SelectOk();
+        static SelectSetting instance = new SelectSetting();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SelectOk()
+        public SelectSetting()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SelectOk Instance
+        public static SelectSetting Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable repoSettingName.
+        /// </summary>
+        [TestVariable("a04b4e4c-053a-4df7-ad51-7204c6d71e69")]
+        public string repoSettingName
+        {
+            get { return repo.repoSettingName; }
+            set { repo.repoSettingName = value; }
+        }
 
 #endregion
 
@@ -79,11 +89,14 @@ namespace TADashboard_Modules.Browser_modules.Dialog
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
+            // Hover on Setting icon
+            Report.Log(ReportLevel.Info, "Mouse", "Hover on Setting icon\r\nMouse Left Move item 'TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSettingInfo, new RecordItemIndex(0));
+            repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting.MoveTo();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Browser.Dialogs.ButtonOK' at Center.", repo.Browser.Dialogs.ButtonOKInfo, new RecordItemIndex(1));
-            repo.Browser.Dialogs.ButtonOK.Click();
+            // Select setting
+            Report.Log(ReportLevel.Info, "Mouse", "Select setting\r\nMouse Left Click item 'TADashboard.Pages.BasePage.MainMenu.GlobalSetting.LnkSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.GlobalSetting.LnkSettingInfo, new RecordItemIndex(1));
+            repo.TADashboard.Pages.BasePage.MainMenu.GlobalSetting.LnkSetting.Click();
             Delay.Milliseconds(0);
             
         }

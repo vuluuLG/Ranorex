@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TADashboard_Modules.Browser_modules.Dialog
+namespace TADashboard_Modules.Business_modules.Pages.MainPage.HeaderMenu
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SelectOk recording.
+    ///The Logout recording.
     /// </summary>
-    [TestModule("50505152-9cf9-4aea-9955-db626387089a", ModuleType.Recording, 1)]
-    public partial class SelectOk : ITestModule
+    [TestModule("fdb41a20-77a7-4949-8dea-871ed6fc440a", ModuleType.Recording, 1)]
+    public partial class Logout : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TADashboard_Modules.TADashboard_Repository repository.
         /// </summary>
         public static global::TADashboard_Modules.TADashboard_Repository repo = global::TADashboard_Modules.TADashboard_Repository.Instance;
 
-        static SelectOk instance = new SelectOk();
+        static Logout instance = new Logout();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SelectOk()
+        public Logout()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SelectOk Instance
+        public static Logout Instance
         {
             get { return instance; }
         }
@@ -79,12 +79,18 @@ namespace TADashboard_Modules.Browser_modules.Dialog
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Browser.Dialogs.ButtonOK' at Center.", repo.Browser.Dialogs.ButtonOKInfo, new RecordItemIndex(1));
-            repo.Browser.Dialogs.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TADashboard.Pages.BasePage.HeaderMenu.LnkUserName' at Center.", repo.TADashboard.Pages.BasePage.HeaderMenu.LnkUserNameInfo, new RecordItemIndex(0));
+            repo.TADashboard.Pages.BasePage.HeaderMenu.LnkUserName.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TADashboard.Pages.BasePage.HeaderMenu.UserMenu.LnkLogout' at Center.", repo.TADashboard.Pages.BasePage.HeaderMenu.UserMenu.LnkLogoutInfo, new RecordItemIndex(1));
+            repo.TADashboard.Pages.BasePage.HeaderMenu.UserMenu.LnkLogout.Click();
+            Delay.Milliseconds(0);
+            
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'TADashboard.Pages.LoginPage'", repo.TADashboard.Pages.LoginPage.SelfInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+                repo.TADashboard.Pages.LoginPage.SelfInfo.WaitForExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
         }
 

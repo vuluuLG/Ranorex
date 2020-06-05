@@ -134,13 +134,18 @@
     <None Include="app.config">
       <id>795ba65c-7392-4154-af6f-e14eb1799747</id>
     </None>
-    <Content Include="TADashboard_TestData.xlsx">
-      <Link>TADashboard_TestData.xlsx</Link>
-      <BoundTo>3753d445-01dd-4f6e-a43f-2d8bccf7b8cc</BoundTo>
-      <DependentUpon>TADashboard_Tests.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>ad745d65-5bcd-4544-bcfd-15c90e853bcf</id>
-    </Content>
+    <None Include="TestData\LoginData.csv">
+      <id>3b41013e-c93f-445c-8f70-ad00ff08cd6c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\PageData.csv">
+      <id>56e471da-5a64-44aa-a4d1-f259810eb59c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData\UpdatedPageData.csv">
+      <id>b1202f59-fdfb-4d63-a69a-69355cf5f32e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="TADashboard_Tests.rxtmg">
@@ -157,6 +162,11 @@
       <Project>{817D030A-C630-4EF8-A8E1-741D6E3D5547}</Project>
       <Name>TADashboard_Modules</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestData">
+      <id>42ed343c-b4ee-46e7-9309-f8da90979f26</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

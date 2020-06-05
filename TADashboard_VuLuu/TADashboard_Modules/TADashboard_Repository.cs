@@ -63,18 +63,6 @@ namespace TADashboard_Modules
             set { _repoTabName = value; }
         }
 
-        string _repoUsername = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable repoUsername.
-        /// </summary>
-        [TestVariable("52c221c2-7d6e-46f7-a225-20da84dec8e7")]
-        public string repoUsername
-        {
-            get { return _repoUsername; }
-            set { _repoUsername = value; }
-        }
-
         string _repoSettingName = "";
 
         /// <summary>
@@ -85,18 +73,6 @@ namespace TADashboard_Modules
         {
             get { return _repoSettingName; }
             set { _repoSettingName = value; }
-        }
-
-        string _repoBrowserName = "Chrome";
-
-        /// <summary>
-        /// Gets or sets the value of variable repoBrowserName.
-        /// </summary>
-        [TestVariable("0bbdec9e-d077-4ab9-b70e-458c78ba6e1d")]
-        public string repoBrowserName
-        {
-            get { return _repoBrowserName; }
-            set { _repoBrowserName = value; }
         }
 
 #endregion
@@ -151,7 +127,7 @@ namespace TADashboard_Modules
             /// Creates a new TADashboard  folder.
             /// </summary>
             public TADashboardAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("TADashboard", "/dom[@path~'/TADashboard' and @browsername~'(?i:'+$repoBrowserName+')']", parentFolder, 30000, null, false, "68ec8234-f98c-499d-9132-fca7cea07c4d", "")
+                    base("TADashboard", "/dom[@path~'/TADashboard']", parentFolder, 30000, null, false, "68ec8234-f98c-499d-9132-fca7cea07c4d", "")
             {
                 _pages = new TADashboard_RepositoryFolders.PagesFolder(this);
                 _popups = new TADashboard_RepositoryFolders.PopupsFolder(this);
@@ -352,7 +328,7 @@ namespace TADashboard_Modules
         {
             TADashboard_RepositoryFolders.GlobalSettingFolder _globalsetting;
             RepoItemInfo _lnkchoosepanelsInfo;
-            RepoItemInfo _lnksettingInfo;
+            RepoItemInfo _lnkglobalsettingInfo;
             RepoItemInfo _lnkpagetabInfo;
 
             /// <summary>
@@ -363,7 +339,7 @@ namespace TADashboard_Modules
             {
                 _globalsetting = new TADashboard_RepositoryFolders.GlobalSettingFolder(this);
                 _lnkchoosepanelsInfo = new RepoItemInfo(this, "LnkChoosePanels", ".//li[@class~'mn-panels']/a", 30000, null, "9c71dcab-bd63-4f2d-97c9-1fb22d097b56");
-                _lnksettingInfo = new RepoItemInfo(this, "LnkSetting", ".//li[@class~'mn-setting']/a", 30000, null, "44a702c5-59b4-4a8e-9644-397cd2cf7241");
+                _lnkglobalsettingInfo = new RepoItemInfo(this, "LnkGlobalSetting", ".//li[@class~'mn-setting']/a", 30000, null, "44a702c5-59b4-4a8e-9644-397cd2cf7241");
                 _lnkpagetabInfo = new RepoItemInfo(this, "LnkPageTab", ".//a[@innertext=$repoTabName]", 30000, null, "72859d0d-5511-4a56-9d2a-2deee83227ba");
             }
 
@@ -416,26 +392,26 @@ namespace TADashboard_Modules
             }
 
             /// <summary>
-            /// The LnkSetting item.
+            /// The LnkGlobalSetting item.
             /// </summary>
             [RepositoryItem("44a702c5-59b4-4a8e-9644-397cd2cf7241")]
-            public virtual Ranorex.ATag LnkSetting
+            public virtual Ranorex.ATag LnkGlobalSetting
             {
                 get
                 {
-                    return _lnksettingInfo.CreateAdapter<Ranorex.ATag>(true);
+                    return _lnkglobalsettingInfo.CreateAdapter<Ranorex.ATag>(true);
                 }
             }
 
             /// <summary>
-            /// The LnkSetting item info.
+            /// The LnkGlobalSetting item info.
             /// </summary>
             [RepositoryItemInfo("44a702c5-59b4-4a8e-9644-397cd2cf7241")]
-            public virtual RepoItemInfo LnkSettingInfo
+            public virtual RepoItemInfo LnkGlobalSettingInfo
             {
                 get
                 {
-                    return _lnksettingInfo;
+                    return _lnkglobalsettingInfo;
                 }
             }
 
@@ -487,7 +463,7 @@ namespace TADashboard_Modules
             public GlobalSettingFolder(RepoGenBaseFolder parentFolder) :
                     base("GlobalSetting", ".//li[@class~'mn-setting']", parentFolder, 30000, null, false, "b5d7b66f-134b-459b-975b-4823b12b682e", "")
             {
-                _lnksettingInfo = new RepoItemInfo(this, "LnkSetting", ".//a[@innertext=$repoSettingName]", 30000, null, "0aa23f00-c028-46c3-9071-7cb839846a42");
+                _lnksettingInfo = new RepoItemInfo(this, "LnkSetting", ".//a[@innertext=$repoSettingName]", 30000, true, "0aa23f00-c028-46c3-9071-7cb839846a42");
             }
 
             /// <summary>
@@ -545,8 +521,8 @@ namespace TADashboard_Modules
         [RepositoryFolder("77be5d7f-400a-4db4-ad95-8c91a5c5a8cd")]
         public partial class HeaderMenuFolder : RepoGenBaseFolder
         {
-            TADashboard_RepositoryFolders.UserFolder _user;
-            TADashboard_RepositoryFolders.AdministerFolder _administer;
+            TADashboard_RepositoryFolders.UserMenuFolder _usermenu;
+            TADashboard_RepositoryFolders.AdminMenuFolder _adminmenu;
             RepoItemInfo _lnkusernameInfo;
             RepoItemInfo _lnkadminiterInfo;
 
@@ -556,10 +532,10 @@ namespace TADashboard_Modules
             public HeaderMenuFolder(RepoGenBaseFolder parentFolder) :
                     base("HeaderMenu", ".//ul[@class~'head-menu']", parentFolder, 30000, null, false, "77be5d7f-400a-4db4-ad95-8c91a5c5a8cd", "")
             {
-                _user = new TADashboard_RepositoryFolders.UserFolder(this);
-                _administer = new TADashboard_RepositoryFolders.AdministerFolder(this);
-                _lnkusernameInfo = new RepoItemInfo(this, "LnkUserName", ".//a[@innertext=$repoUsername]", 30000, null, "8a80a1f8-f139-4321-9edb-295d7d5e1284");
-                _lnkadminiterInfo = new RepoItemInfo(this, "LnkAdminiter", ".//a[@innertext='Administer']", 30000, null, "5b7e0f1c-60bf-4cc3-bf6f-e17f7733eed9");
+                _usermenu = new TADashboard_RepositoryFolders.UserMenuFolder(this);
+                _adminmenu = new TADashboard_RepositoryFolders.AdminMenuFolder(this);
+                _lnkusernameInfo = new RepoItemInfo(this, "LnkUserName", ".//a[@href~'#Welcome']", 30000, true, "8a80a1f8-f139-4321-9edb-295d7d5e1284");
+                _lnkadminiterInfo = new RepoItemInfo(this, "LnkAdminiter", ".//a[@innertext='Administer']", 30000, true, "5b7e0f1c-60bf-4cc3-bf6f-e17f7733eed9");
             }
 
             /// <summary>
@@ -635,59 +611,47 @@ namespace TADashboard_Modules
             }
 
             /// <summary>
-            /// The User folder.
+            /// The UserMenu folder.
             /// </summary>
-            [RepositoryFolder("a8009501-6b48-4f51-a708-b920cf8861dc")]
-            public virtual TADashboard_RepositoryFolders.UserFolder User
+            [RepositoryFolder("dfbf9b3a-e568-41d5-b0f0-7d6dda5ca8dd")]
+            public virtual TADashboard_RepositoryFolders.UserMenuFolder UserMenu
             {
-                get { return _user; }
+                get { return _usermenu; }
             }
 
             /// <summary>
-            /// The Administer folder.
+            /// The AdminMenu folder.
             /// </summary>
-            [RepositoryFolder("428cf32e-3865-4dff-8b72-fd4f0fd8c3b0")]
-            public virtual TADashboard_RepositoryFolders.AdministerFolder Administer
+            [RepositoryFolder("32f50b82-fd7a-44af-967e-ade203c4d2d2")]
+            public virtual TADashboard_RepositoryFolders.AdminMenuFolder AdminMenu
             {
-                get { return _administer; }
+                get { return _adminmenu; }
             }
         }
 
         /// <summary>
-        /// The UserFolder folder.
+        /// The UserMenuFolder folder.
         /// </summary>
-        [RepositoryFolder("a8009501-6b48-4f51-a708-b920cf8861dc")]
-        public partial class UserFolder : RepoGenBaseFolder
+        [RepositoryFolder("dfbf9b3a-e568-41d5-b0f0-7d6dda5ca8dd")]
+        public partial class UserMenuFolder : RepoGenBaseFolder
         {
             RepoItemInfo _lnkmyprofileInfo;
             RepoItemInfo _lnklogoutInfo;
 
             /// <summary>
-            /// Creates a new User  folder.
+            /// Creates a new UserMenu  folder.
             /// </summary>
-            public UserFolder(RepoGenBaseFolder parentFolder) :
-                    base("User", ".//a[@innertext='$userName']//parent::li", parentFolder, 30000, null, false, "a8009501-6b48-4f51-a708-b920cf8861dc", "")
+            public UserMenuFolder(RepoGenBaseFolder parentFolder) :
+                    base("UserMenu", "", parentFolder, 0, null, false, "dfbf9b3a-e568-41d5-b0f0-7d6dda5ca8dd", "")
             {
-                _lnkmyprofileInfo = new RepoItemInfo(this, "LnkMyProfile", ".//a[@innertext='My Profile']", 30000, null, "6f768881-f1c8-47af-8851-a2829daa99ee");
-                _lnklogoutInfo = new RepoItemInfo(this, "LnkLogout", ".//a[@innertext='Logout']", 30000, null, "c28366ec-f065-406e-b909-78d649c60be9");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("a8009501-6b48-4f51-a708-b920cf8861dc")]
-            public virtual Ranorex.LiTag Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.LiTag>(true);
-                }
+                _lnkmyprofileInfo = new RepoItemInfo(this, "LnkMyProfile", ".//a[@innertext='My Profile']", 30000, true, "6f768881-f1c8-47af-8851-a2829daa99ee");
+                _lnklogoutInfo = new RepoItemInfo(this, "LnkLogout", ".//a[@innertext='Logout']", 30000, true, "c28366ec-f065-406e-b909-78d649c60be9");
             }
 
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("a8009501-6b48-4f51-a708-b920cf8861dc")]
+            [RepositoryItemInfo("dfbf9b3a-e568-41d5-b0f0-7d6dda5ca8dd")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -746,40 +710,28 @@ namespace TADashboard_Modules
         }
 
         /// <summary>
-        /// The AdministerFolder folder.
+        /// The AdminMenuFolder folder.
         /// </summary>
-        [RepositoryFolder("428cf32e-3865-4dff-8b72-fd4f0fd8c3b0")]
-        public partial class AdministerFolder : RepoGenBaseFolder
+        [RepositoryFolder("32f50b82-fd7a-44af-967e-ade203c4d2d2")]
+        public partial class AdminMenuFolder : RepoGenBaseFolder
         {
             RepoItemInfo _lnkprofilesInfo;
             RepoItemInfo _lnkpanelsInfo;
 
             /// <summary>
-            /// Creates a new Administer  folder.
+            /// Creates a new AdminMenu  folder.
             /// </summary>
-            public AdministerFolder(RepoGenBaseFolder parentFolder) :
-                    base("Administer", ".//a[@innertext='Administer']//parent::li", parentFolder, 30000, null, false, "428cf32e-3865-4dff-8b72-fd4f0fd8c3b0", "")
+            public AdminMenuFolder(RepoGenBaseFolder parentFolder) :
+                    base("AdminMenu", "", parentFolder, 0, null, false, "32f50b82-fd7a-44af-967e-ade203c4d2d2", "")
             {
                 _lnkprofilesInfo = new RepoItemInfo(this, "LnkProfiles", ".//a[@innertext='Data Profiles']", 30000, null, "0852e3fe-0b50-4cad-a17e-820f0cda0c09");
                 _lnkpanelsInfo = new RepoItemInfo(this, "LnkPanels", ".//a[@innertext='Panels']", 30000, null, "256ddab0-6ca4-45a9-9985-fbc8924b6a1b");
             }
 
             /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("428cf32e-3865-4dff-8b72-fd4f0fd8c3b0")]
-            public virtual Ranorex.LiTag Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.LiTag>(true);
-                }
-            }
-
-            /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("428cf32e-3865-4dff-8b72-fd4f0fd8c3b0")]
+            [RepositoryItemInfo("32f50b82-fd7a-44af-967e-ade203c4d2d2")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -1502,7 +1454,7 @@ namespace TADashboard_Modules
             /// Creates a new Browser  folder.
             /// </summary>
             public BrowserAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Browser", "/form[@processname~'(?i:'+$repoBrowserName+')']", parentFolder, 30000, null, true, "b4da6f2d-d9fc-4d3a-ad6a-f97d488a380f", "")
+                    base("Browser", "/form", parentFolder, 30000, true, true, "b4da6f2d-d9fc-4d3a-ad6a-f97d488a380f", "")
             {
                 _dialogs = new TADashboard_RepositoryFolders.DialogsFolder(this);
             }

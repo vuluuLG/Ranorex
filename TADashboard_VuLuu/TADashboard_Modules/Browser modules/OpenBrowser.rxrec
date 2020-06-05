@@ -23,6 +23,23 @@ mode="Global">
 	namespace="TADashboard_Modules.Browser_modules">
 	</codegen>
 	<variables>
+		<var
+		id="a7f7a54e-d68e-49f8-a64c-e7517631a3d1"
+		name="modPageUrl">
+		</var>
+		<var
+		id="6c716692-6039-49d0-a0c5-fe79593d195b"
+		name="modBrowserName">
+		</var>
+		<var
+		id="5f67480e-bf9a-4860-9e30-647e83837ae2"
+		name="modIsPrivateMode">
+			True
+		</var>
+		<var
+		id="1527b5ea-351c-4a3f-b0ef-b74313198265"
+		name="modArguments">
+		</var>
 	</variables>
 	<recorditems>
 		<openwebsiterecorditem
@@ -40,6 +57,22 @@ mode="Global">
 				Open browser
 			</comment>
 			<bindings>
+				<binding
+				target="Url"
+				variable="modPageUrl">
+				</binding>
+				<binding
+				target="BrowserName"
+				variable="modBrowserName">
+				</binding>
+				<binding
+				target="Incognito"
+				variable="modIsPrivateMode">
+				</binding>
+				<binding
+				target="BrowserArgs"
+				variable="modArguments">
+				</binding>
 			</bindings>
 			<url>
 				$pageUrl

@@ -13,30 +13,11 @@ rxversion="9.3">
 				<groupvariables>
 					<groupvariable
 					id="1c524524-6535-467f-9268-f1f423882a33"
-					name="varPageName">
+					name="modPageName">
 						<modulevariable
 						moduleref="6a606303-0cd2-4cfa-b9dd-118e3eba3c93"
 						name="repoTabName"
 						variableref="1c37f47c-f432-49a9-b76f-909507b56426">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					id="6abcd815-d974-4f22-a69b-e293b1fbaed7"
-					name="repoBrowserName">
-						<modulevariable
-						moduleref="6a606303-0cd2-4cfa-b9dd-118e3eba3c93"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="737ef5be-021d-4be6-b022-eb5389a9b267"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="cf4210cd-d50f-4753-8e25-cbe1b932fa90"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>
@@ -76,66 +57,47 @@ rxversion="9.3">
 				<groupvariables>
 					<groupvariable
 					id="1c524524-6535-467f-9268-f1f423882a33"
-					name="varPageName">
+					name="modPageName">
 						<modulevariable
 						moduleref="ab22b22a-6439-48de-a6cf-ae340832a5a8"
-						name="varPageName"
+						name="modPageName"
 						variableref="448990e5-fcdf-4ec7-8279-8c8cee101849">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="d51f3350-d98b-4f6f-ae18-34e0599109f8"
-					name="varColNumber">
+					name="modColNumber">
 						<modulevariable
 						moduleref="ab22b22a-6439-48de-a6cf-ae340832a5a8"
-						name="varColNumber"
+						name="modColNumber"
 						variableref="1487c30f-5662-4fad-8bf7-e8f5ab9a5919">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="651550f2-cbb2-43a0-af5e-45c4b9b3e232"
-					name="varParentPage">
+					name="modParentPage">
 						<modulevariable
 						moduleref="ab22b22a-6439-48de-a6cf-ae340832a5a8"
-						name="varParentPage"
+						name="modParentPage"
 						variableref="862889ec-f2b6-4f16-b92e-4c3e2e417e98">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="368adab7-2c4d-4498-86ad-2a05d8ed8f72"
-					name="varDisplayAfter">
+					name="modDisplayAfter">
 						<modulevariable
 						moduleref="ab22b22a-6439-48de-a6cf-ae340832a5a8"
-						name="varDisplayAfter"
+						name="modDisplayAfter"
 						variableref="08fce4f2-797d-4690-aa14-a9f644f236c8">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="0152c3ec-9539-4131-b679-82c4cda0a2c9"
-					name="varIsPublic">
+					name="modIsPublic">
 						<modulevariable
 						moduleref="ab22b22a-6439-48de-a6cf-ae340832a5a8"
-						name="varIsPublic"
+						name="modIsPublic"
 						variableref="a914e309-757a-4feb-ac46-b02a81745f8c">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					id="82b0625a-b9bd-4aa1-b97f-a9f9f8857f54"
-					name="repoBrowserName">
-						<modulevariable
-						moduleref="e5982363-e008-4b97-9032-34c75c44d9c8"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="ab22b22a-6439-48de-a6cf-ae340832a5a8"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="d66961f6-7a25-48ff-a0f0-1a957352a79a"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>
@@ -203,80 +165,56 @@ rxversion="9.3">
 				<groupvariables>
 					<groupvariable
 					id="1c524524-6535-467f-9268-f1f423882a33"
-					name="varPageName">
+					name="modPageName">
 						<modulevariable
 						moduleref="27ca9f72-cbb3-4b21-9d68-e24453549e91"
-						name="varPageName"
+						name="modPageName"
 						variableref="448990e5-fcdf-4ec7-8279-8c8cee101849">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="d51f3350-d98b-4f6f-ae18-34e0599109f8"
-					name="varColNumber">
+					name="modColNumber">
 						<modulevariable
 						moduleref="27ca9f72-cbb3-4b21-9d68-e24453549e91"
-						name="varColNumber"
+						name="modColNumber"
 						variableref="1487c30f-5662-4fad-8bf7-e8f5ab9a5919">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="651550f2-cbb2-43a0-af5e-45c4b9b3e232"
-					name="varParentPage">
+					name="modParentPage">
 						<modulevariable
 						moduleref="27ca9f72-cbb3-4b21-9d68-e24453549e91"
-						name="varParentPage"
+						name="modParentPage"
 						variableref="862889ec-f2b6-4f16-b92e-4c3e2e417e98">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="368adab7-2c4d-4498-86ad-2a05d8ed8f72"
-					name="varDisplayAfter">
+					name="modDisplayAfter">
 						<modulevariable
 						moduleref="27ca9f72-cbb3-4b21-9d68-e24453549e91"
-						name="varDisplayAfter"
+						name="modDisplayAfter"
 						variableref="08fce4f2-797d-4690-aa14-a9f644f236c8">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="0152c3ec-9539-4131-b679-82c4cda0a2c9"
-					name="varIsPublic">
+					name="modIsPublic">
 						<modulevariable
 						moduleref="27ca9f72-cbb3-4b21-9d68-e24453549e91"
-						name="varIsPublic"
+						name="modIsPublic"
 						variableref="a914e309-757a-4feb-ac46-b02a81745f8c">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="ff04503c-9eec-4978-8810-67e6d886cdd9"
-					name="varOriginPageName">
+					name="modOriginPageName">
 						<modulevariable
 						moduleref="9255ef66-bb78-425a-b97b-c61a23a7f444"
 						name="repoTabName"
 						variableref="1c37f47c-f432-49a9-b76f-909507b56426">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					id="c38bde37-90a4-4263-8210-1bb89f1bcec7"
-					name="repoBrowserName">
-						<modulevariable
-						moduleref="9255ef66-bb78-425a-b97b-c61a23a7f444"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="c8a5fdca-124c-446d-810b-b65f4d528830"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="27ca9f72-cbb3-4b21-9d68-e24453549e91"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
-						</modulevariable>
-						<modulevariable
-						moduleref="c32b8866-7c93-45bb-8455-b8c3d02599c2"
-						name="repoBrowserName"
-						variableref="0bbdec9e-d077-4ab9-b70e-458c78ba6e1d">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>

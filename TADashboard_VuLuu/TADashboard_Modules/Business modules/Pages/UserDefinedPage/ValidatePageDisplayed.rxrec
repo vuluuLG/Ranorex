@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="50505152-9cf9-4aea-9955-db626387089a"
+id="c0c69a53-4497-4b46-8579-2ebc6102b05d"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,50 +19,40 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SelectOk"
-	namespace="TADashboard_Modules.Browser_modules.Dialog">
+	classname="ValidatePageDisplayed"
+	namespace="TADashboard_Modules.Business_modules.Pages.UserDefinedPage">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="2000ms"
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="adde9b41-4afe-417d-ab24-e82b16b200e1"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="5a2da1d9-d52b-4303-b146-6799338397f2">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="6fc1675f-eae1-4ba7-aec2-fbb078dc2805"
+			id="72859d0d-5511-4a56-9d2a-2deee83227ba"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
+					/dom[@path~'/TADashboard']//div[#'main-menu']//a[@innertext=$repoTabName]
 				</path>
 			</info>
-		</mouseitem>
+			<matchname>
+				Class
+			</matchname>
+			<matchvalue>
+				active
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="8538eef7-bc22-4008-8378-02c650bfaccf"
 	name="TADashboard_Repository"
-	relativepath="..\..\TADashboard_Repository.rxrep">
+	relativepath="..\..\..\TADashboard_Repository.rxrep">
 		<codegen
 		classname="TADashboard_Repository"
 		namespace="TADashboard_Modules">
@@ -74,7 +64,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SelectOk.UserCode.cs
+		ValidatePageDisplayed.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

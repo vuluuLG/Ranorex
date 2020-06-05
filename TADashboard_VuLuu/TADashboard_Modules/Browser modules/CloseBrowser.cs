@@ -53,16 +53,6 @@ namespace TADashboard_Modules.Browser_modules
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable repoBrowserName.
-        /// </summary>
-        [TestVariable("0bbdec9e-d077-4ab9-b70e-458c78ba6e1d")]
-        public string repoBrowserName
-        {
-            get { return repo.repoBrowserName; }
-            set { repo.repoBrowserName = value; }
-        }
-
 #endregion
 
         /// <summary>

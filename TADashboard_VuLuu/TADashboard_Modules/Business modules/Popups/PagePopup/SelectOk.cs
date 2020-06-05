@@ -20,13 +20,13 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TADashboard_Modules.Browser_modules.Dialog
+namespace TADashboard_Modules.Business_modules.Popups.PagePopup
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The SelectOk recording.
     /// </summary>
-    [TestModule("50505152-9cf9-4aea-9955-db626387089a", ModuleType.Recording, 1)]
+    [TestModule("c6d70d02-4cde-4e4a-a4b8-accd7e5b574a", ModuleType.Recording, 1)]
     public partial class SelectOk : ITestModule
     {
         /// <summary>
@@ -79,12 +79,14 @@ namespace TADashboard_Modules.Browser_modules.Dialog
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Browser.Dialogs.ButtonOK' at Center.", repo.Browser.Dialogs.ButtonOKInfo, new RecordItemIndex(1));
-            repo.Browser.Dialogs.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TADashboard.Popups.PagePopup.BtnOk' at Center.", repo.TADashboard.Popups.PagePopup.BtnOkInfo, new RecordItemIndex(0));
+            repo.TADashboard.Popups.PagePopup.BtnOk.Click();
             Delay.Milliseconds(0);
+            
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 10s to not exist. Associated repository item: 'TADashboard.Popups.PagePopup'", repo.TADashboard.Popups.PagePopup.SelfInfo, new ActionTimeout(10000), new RecordItemIndex(1));
+                repo.TADashboard.Popups.PagePopup.SelfInfo.WaitForNotExists(10000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
         }
 

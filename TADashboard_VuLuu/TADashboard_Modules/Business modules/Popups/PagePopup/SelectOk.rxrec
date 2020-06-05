@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="50505152-9cf9-4aea-9955-db626387089a"
+id="c6d70d02-4cde-4e4a-a4b8-accd7e5b574a"
 mode="Global">
 	<repeatcount>
 		1
@@ -20,20 +20,11 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="SelectOk"
-	namespace="TADashboard_Modules.Browser_modules.Dialog">
+	namespace="TADashboard_Modules.Business_modules.Popups.PagePopup">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="2000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -42,27 +33,45 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="adde9b41-4afe-417d-ab24-e82b16b200e1"
-		sx="0"
-		sy="0"
+		searchpropertyid="9ce2f5a8-6d6e-4c04-8db9-cf70ed769c60"
+		sx="1023"
+		sy="641"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="6fc1675f-eae1-4ba7-aec2-fbb078dc2805"
-			sourcename="ItemRecorderEditor">
+			id="c15c02fd-568b-4925-99a9-328ef5ecef62"
+			sourcename="Recorder">
 				<path>
-					/form//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
+					/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']//input[#'OK']
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="True"
+		searchpropertyid="d30e75d8-4b83-4492-99fa-d8a098ed76ff"
+		waitaction="NotExists"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e86dc393-d67f-4bc5-9128-a5a69fe8495b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@path~'/TADashboard']//div[#'div_popup']//h2[@innertext~'Page']//ancestor::div[#'div_popup']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="8538eef7-bc22-4008-8378-02c650bfaccf"
 	name="TADashboard_Repository"
-	relativepath="..\..\TADashboard_Repository.rxrep">
+	relativepath="..\..\..\TADashboard_Repository.rxrep">
 		<codegen
 		classname="TADashboard_Repository"
 		namespace="TADashboard_Modules">
@@ -74,7 +83,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SelectOk.UserCode.cs
+		SelectOK.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

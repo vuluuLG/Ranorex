@@ -12,16 +12,16 @@
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>7dbdc8a9-c65a-4243-a06c-d5b32fc96fd4</string>
       <string>ff2be567-05de-4067-8b65-2b6efc7546ea</string>
-      <string>db3aec07-b35f-4ab3-aa8b-db727244f4bd</string>
+      <string>70549514-3d33-43b9-b183-15a26097732c</string>
+      <string>3157d3f9-01d1-4df8-b780-ff8b69ed90c9</string>
+      <string>2547d5c6-88f0-4c98-ad74-e5f04a01e7cc</string>
       <string>e632ae89-2d9c-4374-8bc3-f297ae1ed546</string>
       <string>3232c6f9-afbd-4aef-a253-7a8feeea4f56</string>
-      <string>7645c0fc-9a30-4e9d-96c5-7bed94344eb3</string>
-      <string>bc54abf8-856f-40df-83b7-0bd29bde23c9</string>
       <string>3695d8c3-7a59-4087-ac9a-176edf3160d5</string>
       <string>7e398c13-fd24-48f2-9029-a1fee97bdb4c</string>
       <string>7850777b-07f9-416a-a8df-a61fdb06fef6</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution TADashboard_VuLuu[Solution Items[]TADashboard_Modules[Extension[]Page modules[Base[HeaderMenu[]MainMenu[]]CustomPage[]Login[LoginToDashboard.rxrec[]]Popups[]Utilities[]]]TADashboard_Tests[TADashboard_Tests.rxtst[]]]]&#xD;&#xA;Solution TADashboard_VuLuu\TADashboard_Tests\TADashboard_Tests.rxtst&#xD;&#xA;Solution TADashboard_VuLuu\TADashboard_Modules\Page modules\Overview" />
+  <ProjectBrowserState value="[Solution TADashboard_VuLuu[Solution Items[]TADashboard_Modules[Reports[]Extension[]]TADashboard_Tests[Reports[]TestData[]TADashboard_Tests.rxtst[]]]]&#xD;&#xA;Solution TADashboard_VuLuu\TADashboard_Modules\Business modules&#xD;&#xA;Solution TADashboard_VuLuu" />
   <StartupProject value="{C2251CCE-B105-46A5-B4D8-7AA0B0454804}" />
 </Properties>

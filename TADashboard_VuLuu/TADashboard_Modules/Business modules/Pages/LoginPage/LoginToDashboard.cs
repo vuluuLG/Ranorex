@@ -20,89 +20,76 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TADashboard_Modules.Browser_modules
+namespace TADashboard_Modules.Business_modules.Pages.LoginPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The OpenBrowser recording.
+    ///The LoginToDashboard recording.
     /// </summary>
-    [TestModule("fbdfe932-3144-40d4-abbd-7cb4c10896f4", ModuleType.Recording, 1)]
-    public partial class OpenBrowser : ITestModule
+    [TestModule("bce4dce4-f4c8-4bdf-b67e-9c6bd888c6f7", ModuleType.Recording, 1)]
+    public partial class LoginToDashboard : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TADashboard_Modules.TADashboard_Repository repository.
         /// </summary>
         public static global::TADashboard_Modules.TADashboard_Repository repo = global::TADashboard_Modules.TADashboard_Repository.Instance;
 
-        static OpenBrowser instance = new OpenBrowser();
+        static LoginToDashboard instance = new LoginToDashboard();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public OpenBrowser()
+        public LoginToDashboard()
         {
-            modPageUrl = "";
-            modBrowserName = "";
-            modIsPrivateMode = "True";
-            modArguments = "";
+            modUsername = "";
+            modPassword = "";
+            modDashboardRepo = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static OpenBrowser Instance
+        public static LoginToDashboard Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _modPageUrl;
+        string _modUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable modPageUrl.
+        /// Gets or sets the value of variable modUsername.
         /// </summary>
-        [TestVariable("a7f7a54e-d68e-49f8-a64c-e7517631a3d1")]
-        public string modPageUrl
+        [TestVariable("372d446b-1945-49b5-83ff-ea1828c4793f")]
+        public string modUsername
         {
-            get { return _modPageUrl; }
-            set { _modPageUrl = value; }
+            get { return _modUsername; }
+            set { _modUsername = value; }
         }
 
-        string _modBrowserName;
+        string _modPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable modBrowserName.
+        /// Gets or sets the value of variable modPassword.
         /// </summary>
-        [TestVariable("6c716692-6039-49d0-a0c5-fe79593d195b")]
-        public string modBrowserName
+        [TestVariable("b147142b-a86d-4f2c-9d4e-905f842027d9")]
+        public string modPassword
         {
-            get { return _modBrowserName; }
-            set { _modBrowserName = value; }
+            get { return _modPassword; }
+            set { _modPassword = value; }
         }
 
-        string _modIsPrivateMode;
+        string _modDashboardRepo;
 
         /// <summary>
-        /// Gets or sets the value of variable modIsPrivateMode.
+        /// Gets or sets the value of variable modDashboardRepo.
         /// </summary>
-        [TestVariable("5f67480e-bf9a-4860-9e30-647e83837ae2")]
-        public string modIsPrivateMode
+        [TestVariable("8e74dbf4-3423-4ed7-b47f-0ff8cfe4a6ea")]
+        public string modDashboardRepo
         {
-            get { return _modIsPrivateMode; }
-            set { _modIsPrivateMode = value; }
-        }
-
-        string _modArguments;
-
-        /// <summary>
-        /// Gets or sets the value of variable modArguments.
-        /// </summary>
-        [TestVariable("1527b5ea-351c-4a3f-b0ef-b74313198265")]
-        public string modArguments
-        {
-            get { return _modArguments; }
-            set { _modArguments = value; }
+            get { return _modDashboardRepo; }
+            set { _modDashboardRepo = value; }
         }
 
 #endregion
@@ -125,16 +112,25 @@ namespace TADashboard_Modules.Browser_modules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            // Open browser
-            Report.Log(ReportLevel.Info, "Website", "Open browser\r\nOpening web site URL in variable $modPageUrl with browser specified by variable $modBrowserName in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(modPageUrl, modBrowserName, modArguments, false, true, false, Boolean.Parse(modIsPrivateMode), false, true);
-            Delay.Milliseconds(0);
+            Helper_modules.ControlExtension.SelectByText(repo.TADashboard.Pages.LoginPage.CbxRepositoryInfo, modDashboardRepo);
+            
+            Helper_modules.ControlExtension.InputText(repo.TADashboard.Pages.LoginPage.TxtUsernameInfo, modUsername);
+            
+            Helper_modules.ControlExtension.InputText(repo.TADashboard.Pages.LoginPage.TxtPasswordInfo, modPassword);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TADashboard.Pages.LoginPage.BtnLogin' at Center.", repo.TADashboard.Pages.LoginPage.BtnLoginInfo, new RecordItemIndex(3));
+            repo.TADashboard.Pages.LoginPage.BtnLogin.Click();
+            
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to exist. Associated repository item: 'TADashboard.Pages.ExecutionDashboardPage'", repo.TADashboard.Pages.ExecutionDashboardPage.SelfInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+                repo.TADashboard.Pages.ExecutionDashboardPage.SelfInfo.WaitForExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
         }
 

@@ -1,7 +1,5 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="TADashboard_Tests.rxtst" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="TADashboard_Tests.rxtst" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="50505152-9cf9-4aea-9955-db626387089a"
+id="5eafb320-c6bf-4bdc-9214-eb32eaf2b2be"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,21 +19,37 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SelectOk"
-	namespace="TADashboard_Modules.Browser_modules.Dialog">
+	classname="SelectSetting"
+	namespace="TADashboard_Modules.Business_modules.Pages.MainPage.MainMenu">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="2000ms"
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
 		enabled="True"
-		optional="False">
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="3065cd46-32d1-4b35-9121-2fb07e863ccf"
+		sx="356"
+		sy="199"
+		warnoutofbounds="False">
 			<comment>
+				Hover on Setting icon
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="44a702c5-59b4-4a8e-9644-397cd2cf7241"
+			sourcename="Recorder">
+				<path>
+					/dom[@path~'/TADashboard']//div[#'main-menu']//li[@class~'mn-setting']/a
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -42,19 +58,20 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="adde9b41-4afe-417d-ab24-e82b16b200e1"
-		sx="0"
-		sy="0"
+		searchpropertyid="85e2dc18-8168-47f0-91de-deac89c32d88"
+		sx="668"
+		sy="517"
 		warnoutofbounds="False">
 			<comment>
+				Select setting
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="6fc1675f-eae1-4ba7-aec2-fbb078dc2805"
-			sourcename="ItemRecorderEditor">
+			id="0aa23f00-c028-46c3-9071-7cb839846a42"
+			sourcename="Recorder">
 				<path>
-					/form//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
+					/dom[@path~'/TADashboard']//div[#'main-menu']//li[@class~'mn-setting']//a[@innertext=$settingName]
 				</path>
 			</info>
 		</mouseitem>
@@ -62,7 +79,7 @@ mode="Global">
 	<repository
 	id="8538eef7-bc22-4008-8378-02c650bfaccf"
 	name="TADashboard_Repository"
-	relativepath="..\..\TADashboard_Repository.rxrep">
+	relativepath="..\..\..\..\TADashboard_Repository.rxrep">
 		<codegen
 		classname="TADashboard_Repository"
 		namespace="TADashboard_Modules">
@@ -74,7 +91,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SelectOk.UserCode.cs
+		SelectSetting.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
