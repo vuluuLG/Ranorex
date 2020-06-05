@@ -138,6 +138,9 @@
     <Compile Include="Coding Modules\StartApp.cs">
       <id>9120a1ff-083d-4c50-9e40-5960ba496a8a</id>
     </Compile>
+    <Compile Include="Coding Modules\VerifyFieldOnPanelEditor.cs">
+      <id>7cf3ca66-b1ac-4547-9dc1-79e1f2945a28</id>
+    </Compile>
     <Compile Include="Common\Constant.cs">
       <id>cd8e9733-33f7-45c4-a2ab-4967834e5a75</id>
     </Compile>
@@ -297,6 +300,18 @@
       <UserCode>true</UserCode>
       <id>65a524db-09eb-4b6d-ad65-c6e3183973d4</id>
     </Compile>
+    <Compile Include="Recording Modules\PanelsPage\SelectPanel.cs">
+      <BoundTo>229cd2e6-7f34-4ad0-b2ed-ddd243e3af2d</BoundTo>
+      <DependentUpon>SelectPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0ce33e5d-1d28-4711-aa25-6b2374d52c50</id>
+    </Compile>
+    <Compile Include="Recording Modules\PanelsPage\SelectPanel.UserCode.cs">
+      <BoundTo>229cd2e6-7f34-4ad0-b2ed-ddd243e3af2d</BoundTo>
+      <DependentUpon>SelectPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ab53522-6824-492a-b608-be5495d83517</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -372,6 +387,11 @@
       <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
       <id>072f272f-8f76-4d12-9087-95fd4a2b9531</id>
       <recordtableid>54c24229-3075-48cd-87b8-c5965f655b68</recordtableid>
+    </None>
+    <None Include="Recording Modules\PanelsPage\SelectPanel.rxrec">
+      <BoundTo>b1b4ee2c-049d-4eb3-abbc-fcb61dcb0a28</BoundTo>
+      <id>229cd2e6-7f34-4ad0-b2ed-ddd243e3af2d</id>
+      <recordtableid>ab86465d-8fbd-4471-80b4-4eb1fbcb9252</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

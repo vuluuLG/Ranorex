@@ -34,7 +34,7 @@ mode="Mobile">
 	<recorditems>
 		<runmobileapprecorditem
 		application="ranorex.RxBrowser"
-		devicename="iPhone 6s"
+		devicename="Galaxy Tab A"
 		duration="3500ms"
 		enabled="True"
 		optional="False"

@@ -20,48 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace mobileSol.Recording_Modules.General
+namespace mobileSol.Recording_Modules.PanelsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartApp recording.
+    ///The SelectPanel recording.
     /// </summary>
-    [TestModule("1b57d7b6-d364-4490-8dfc-7904d4291977", ModuleType.Recording, 1)]
-    public partial class StartApp : ITestModule
+    [TestModule("ab86465d-8fbd-4471-80b4-4eb1fbcb9252", ModuleType.Recording, 1)]
+    public partial class SelectPanel : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::mobileSol.mobileSolRepository repository.
         /// </summary>
         public static global::mobileSol.mobileSolRepository repo = global::mobileSol.mobileSolRepository.Instance;
 
-        static StartApp instance = new StartApp();
+        static SelectPanel instance = new SelectPanel();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartApp()
+        public SelectPanel()
         {
-            modDeviceName = "";
+            modPanelName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartApp Instance
+        public static SelectPanel Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _modPanelName;
+
         /// <summary>
-        /// Gets or sets the value of variable modDeviceName.
+        /// Gets or sets the value of variable modPanelName.
         /// </summary>
-        [TestVariable("483e234d-b286-4caa-82d5-b4ee9851e3c7")]
-        public string modDeviceName
+        [TestVariable("4d26bb6e-e194-4aa0-8397-d780cfe773fc")]
+        public string modPanelName
         {
-            get { return repo.modDeviceName; }
-            set { repo.modDeviceName = value; }
+            get { return _modPanelName; }
+            set { _modPanelName = value; }
         }
 
 #endregion
@@ -90,14 +92,8 @@ namespace mobileSol.Recording_Modules.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'Galaxy Tab A'.", new RecordItemIndex(0));
-            Host.Local.RunMobileApp("Galaxy Tab A", "ranorex.RxBrowser", true);
-            Delay.Milliseconds(3500);
-            
-            // Browse to site.
-            Report.Log(ReportLevel.Info, "Set value", "Browse to site.\r\nSetting attribute PageUrl to 'http://192.168.171.142/TADashboard' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo, new RecordItemIndex(1));
-            repo.Browser.Dom.Self.Element.SetAttributeValue("PageUrl", "http://192.168.171.142/TADashboard");
-            Delay.Milliseconds(10000);
+            Common.Utility.SelectItemInTable(repo.Browser.PanelsPage.TblResult.SelfInfo, modPanelName, "Panel Name");
+            Delay.Milliseconds(0);
             
         }
 

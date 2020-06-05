@@ -121,6 +121,78 @@ namespace mobileSol
             set { _repHex = value; }
         }
 
+        string _rowIndex = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable rowIndex.
+        /// </summary>
+        [TestVariable("c66d0934-ffe9-4f4e-82b6-fa6772ee6e90")]
+        public string rowIndex
+        {
+            get { return _rowIndex; }
+            set { _rowIndex = value; }
+        }
+
+        string _colIndex = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable colIndex.
+        /// </summary>
+        [TestVariable("b978b499-e116-4243-8bcb-c1470419e7fc")]
+        public string colIndex
+        {
+            get { return _colIndex; }
+            set { _colIndex = value; }
+        }
+
+        string _PanelName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable PanelName.
+        /// </summary>
+        [TestVariable("89823a61-60ab-433e-96b1-f3d9303d193a")]
+        public string PanelName
+        {
+            get { return _PanelName; }
+            set { _PanelName = value; }
+        }
+
+        string _repIRow = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable repIRow.
+        /// </summary>
+        [TestVariable("a0c754e4-2bf4-4c4e-817a-a8fc54d1b8ea")]
+        public string repIRow
+        {
+            get { return _repIRow; }
+            set { _repIRow = value; }
+        }
+
+        string _repICol = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable repICol.
+        /// </summary>
+        [TestVariable("b701ab64-50dd-4835-a6bd-152726fe6bba")]
+        public string repICol
+        {
+            get { return _repICol; }
+            set { _repICol = value; }
+        }
+
+        string _repPanelName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable repPanelName.
+        /// </summary>
+        [TestVariable("b0413e4b-1aad-4155-aeac-431a23cf7c80")]
+        public string repPanelName
+        {
+            get { return _repPanelName; }
+            set { _repPanelName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1000,6 +1072,7 @@ namespace mobileSol
         [RepositoryFolder("795d64d8-8fc4-4064-a30c-4b2a90571800")]
         public partial class TblResultFolder : RepoGenBaseFolder
         {
+            mobileSolRepositoryFolders.ItemsFolder _items;
 
             /// <summary>
             /// Creates a new TblResult  folder.
@@ -1007,6 +1080,7 @@ namespace mobileSol
             public TblResultFolder(RepoGenBaseFolder parentFolder) :
                     base("TblResult", ".//table[@class='GridView']", parentFolder, 30000, null, false, "795d64d8-8fc4-4064-a30c-4b2a90571800", "")
             {
+                _items = new mobileSolRepositoryFolders.ItemsFolder(this);
             }
 
             /// <summary>
@@ -1030,6 +1104,81 @@ namespace mobileSol
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The items folder.
+            /// </summary>
+            [RepositoryFolder("9f2719c0-57e1-4db8-88cc-fe0fe0670ffc")]
+            public virtual mobileSolRepositoryFolders.ItemsFolder items
+            {
+                get { return _items; }
+            }
+        }
+
+        /// <summary>
+        /// The ItemsFolder folder.
+        /// </summary>
+        [RepositoryFolder("9f2719c0-57e1-4db8-88cc-fe0fe0670ffc")]
+        public partial class ItemsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btnpanelnameInfo;
+
+            /// <summary>
+            /// Creates a new items  folder.
+            /// </summary>
+            public ItemsFolder(RepoGenBaseFolder parentFolder) :
+                    base("items", ".//tr[$repIRow]//td[$repICol]", parentFolder, 30000, null, false, "9f2719c0-57e1-4db8-88cc-fe0fe0670ffc", "")
+            {
+                _btnpanelnameInfo = new RepoItemInfo(this, "btnPanelName", "a[@innertext=$repPanelName]", 30000, null, "c7935f0a-ea1c-411f-9604-d60007f4382e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9f2719c0-57e1-4db8-88cc-fe0fe0670ffc")]
+            public virtual Ranorex.TdTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9f2719c0-57e1-4db8-88cc-fe0fe0670ffc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnPanelName item.
+            /// </summary>
+            [RepositoryItem("c7935f0a-ea1c-411f-9604-d60007f4382e")]
+            public virtual Ranorex.ATag btnPanelName
+            {
+                get
+                {
+                    return _btnpanelnameInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnPanelName item info.
+            /// </summary>
+            [RepositoryItemInfo("c7935f0a-ea1c-411f-9604-d60007f4382e")]
+            public virtual RepoItemInfo btnPanelNameInfo
+            {
+                get
+                {
+                    return _btnpanelnameInfo;
                 }
             }
         }
@@ -1130,6 +1279,7 @@ namespace mobileSol
         {
             RepoItemInfo _rbpaneltypeInfo;
             RepoItemInfo _txtdisplaynameInfo;
+            RepoItemInfo _lblpaneltypeInfo;
 
             /// <summary>
             /// Creates a new InfoSettings  folder.
@@ -1139,6 +1289,7 @@ namespace mobileSol
             {
                 _rbpaneltypeInfo = new RepoItemInfo(this, "RbPanelType", ".//label[@innertext=$repPanelType]/input", 30000, null, "78c5e984-bb0c-477f-b6cf-857296579072");
                 _txtdisplaynameInfo = new RepoItemInfo(this, "TxtDisplayName", ".//input[@id='txtDisplayName']", 30000, null, "38268f0e-4167-4d4e-9c6e-cf781b8d52fa");
+                _lblpaneltypeInfo = new RepoItemInfo(this, "LblPanelType", ".//label[@innertext=$repPanelType]", 30000, null, "d996fac9-df88-4139-9471-39a6ecfa6e8c");
             }
 
             /// <summary>
@@ -1210,6 +1361,30 @@ namespace mobileSol
                 get
                 {
                     return _txtdisplaynameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LblPanelType item.
+            /// </summary>
+            [RepositoryItem("d996fac9-df88-4139-9471-39a6ecfa6e8c")]
+            public virtual Ranorex.LabelTag LblPanelType
+            {
+                get
+                {
+                    return _lblpaneltypeInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LblPanelType item info.
+            /// </summary>
+            [RepositoryItemInfo("d996fac9-df88-4139-9471-39a6ecfa6e8c")]
+            public virtual RepoItemInfo LblPanelTypeInfo
+            {
+                get
+                {
+                    return _lblpaneltypeInfo;
                 }
             }
         }

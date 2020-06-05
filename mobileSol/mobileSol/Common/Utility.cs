@@ -7,8 +7,10 @@
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
 using System;
-
+using System.Linq;
+using System.Xml.Linq;
 using Ranorex;
+using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
 namespace mobileSol.Common
@@ -68,6 +70,39 @@ namespace mobileSol.Common
 					break;					           
 			}
 			return result;
+		}
+		
+		[UserCodeMethod]
+		public static int GetHeaderIndex(RepoItemInfo tableRepo, String headerName)
+		{
+			return tableRepo.FindAdapter<Ranorex.TableTag>().FindSingle(".//tr[1]/th[@innertext='"+ headerName+"']").ChildIndex + 1;
+		}
+		
+		[UserCodeMethod]
+		public static int GetTotalCols(RepoItemInfo tableRepo)
+		{
+			return tableRepo.FindAdapter<Ranorex.TableTag>().FindDescendants<Ranorex.ThTag>().Count;
+		}
+		
+		[UserCodeMethod]
+		public static int GetTotalRows(RepoItemInfo tableRepo)
+		{
+			return tableRepo.FindAdapter<Ranorex.TableTag>().FindDescendants<Ranorex.TrTag>().Count;
+		}
+		
+		[UserCodeMethod]
+		public static int GetRowIndex(RepoItemInfo tableRepo, String itemName, String headerName)
+		{
+			int headerIndex = GetHeaderIndex(tableRepo, headerName);
+			return tableRepo.FindAdapter<Ranorex.TableTag>().FindSingle(".//td[" + headerIndex + "]//a[@innertext = '" + itemName + "']").Parent.Parent.ChildIndex + 1;
+		}
+		
+		[UserCodeMethod]
+		public static void SelectItemInTable(RepoItemInfo tableRepo, String itemName, String headerName)
+		{
+			int headerIndex = GetHeaderIndex(tableRepo, headerName);
+			ATag element = tableRepo.FindAdapter<Ranorex.TableTag>().FindSingle(".//td[" + headerIndex + "]//a[@innertext = '" + itemName + "']");
+			element.Touch();
 		}
 	}
 }

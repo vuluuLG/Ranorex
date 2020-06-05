@@ -221,6 +221,24 @@ name="mobileSolRepository">
 				name="TblResult"
 				searchtimeout="30000ms"
 				usecache="False">
+					<folder
+					capname="tdtag"
+					id="9f2719c0-57e1-4db8-88cc-fe0fe0670ffc"
+					isrooted="True"
+					name="items"
+					searchtimeout="30000ms"
+					usecache="False">
+						<item
+						capname="atag"
+						id="c7935f0a-ea1c-411f-9604-d60007f4382e"
+						name="btnPanelName"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//table[@class='GridView']//tr[$repIRow]//td[$repICol]/a[@innertext=$repPanelName]
+						</item>
+						<basepath>
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//table[@class='GridView']//tr[$repIRow]//td[$repICol]
+						</basepath>
+					</folder>
 					<basepath>
 						/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//table[@class='GridView']
 					</basepath>
@@ -253,6 +271,13 @@ name="mobileSolRepository">
 						name="TxtDisplayName"
 						searchtimeout="30000ms">
 							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//table[#'infoSettings']//input[@id='txtDisplayName']
+						</item>
+						<item
+						capname="labeltag"
+						id="d996fac9-df88-4139-9471-39a6ecfa6e8c"
+						name="LblPanelType"
+						searchtimeout="30000ms">
+							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//table[#'infoSettings']//label[@innertext=$repPanelType]
 						</item>
 						<basepath>
 							/mobileapp[@title='ranorex.RxBrowser']//dom[@path='/TADashboard/panels.jsp']//div[@class='ui-dialog editpanelDlg']//table[#'infoSettings']
@@ -447,6 +472,30 @@ name="mobileSolRepository">
 		id="001a5d5e-e0d9-4cbf-95cd-958216d817d3"
 		name="repHex">
 			#7030a0
+		</var>
+		<var
+		id="c66d0934-ffe9-4f4e-82b6-fa6772ee6e90"
+		name="rowIndex">
+		</var>
+		<var
+		id="b978b499-e116-4243-8bcb-c1470419e7fc"
+		name="colIndex">
+		</var>
+		<var
+		id="89823a61-60ab-433e-96b1-f3d9303d193a"
+		name="PanelName">
+		</var>
+		<var
+		id="a0c754e4-2bf4-4c4e-817a-a8fc54d1b8ea"
+		name="repIRow">
+		</var>
+		<var
+		id="b701ab64-50dd-4835-a6bd-152726fe6bba"
+		name="repICol">
+		</var>
+		<var
+		id="b0413e4b-1aad-4155-aeac-431a23cf7c80"
+		name="repPanelName">
 		</var>
 	</variables>
 </repository>

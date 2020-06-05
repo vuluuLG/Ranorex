@@ -58,6 +58,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="3e80e40c-1098-4b7d-b81e-716396ba10a0"
 			name="GoToPanelsPage"
 			ref="11912396-f616-417a-8a13-96b81c102730"
@@ -245,6 +246,50 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="8dc0edac-b7aa-479c-9043-7bb6b90021f8"
+			name="VerifyFieldOnPanelEditor"
+			ref="6ec3e102-67a9-48cc-ab65-33fbe554ef01"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="PanelType"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="ba497d5d-af84-4c6b-88a5-ba3cd1c043b7"
+					variablename="modPanelType">
+					</var>
+					<var
+					dataname="PanelName"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="37c36629-8365-4315-91ed-cc39e5dc415e"
+					variablename="modPanelName">
+					</var>
+					<var
+					dataname="StatisticField"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="795457ed-9bfe-40a3-b601-8dca8dd4c9a9"
+					variablename="modStatisticField">
+					</var>
+					<var
+					dataname="Value"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="8c78e59a-e155-4ba7-88fa-9b316bcd1ec1"
+					variablename="modValue">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="40443597-73e1-4549-85cb-7c5108fa2bef"
+					variablename="modFroms">
+					</var>
+					<var
+					dataname="Color"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="b0e9e336-82dd-4418-b9e1-6e2dc0d7b6c7"
+					variablename="modColors">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8e00f3ba-5a4c-4812-8441-ad268726324f"
 			name="VerifyPageExists"
 			ref="1cc91304-99dd-43e5-92b1-321b42ec1fa4"
@@ -333,6 +378,20 @@
 					variablename="modDeviceName">
 					</var>
 				</missingdatavariablesbinding>
+			</testmodule>
+			<testmodule
+			id="bc29827f-7a88-44a8-8908-4b2e415386a4"
+			name="SelectPanel"
+			ref="ab86465d-8fbd-4471-80b4-4eb1fbcb9252"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelName"
+					datasourceid="fddb78e6-6a03-4648-92e2-e630956d190c"
+					variableid="4d26bb6e-e194-4aa0-8397-d780cfe773fc"
+					variablename="modPanelName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="c556462a-e67a-49b8-8601-09ca46a37e25"
@@ -486,22 +545,6 @@
 						</testmodule>
 					</testcase>
 					<testcase
-					id="ad2c7248-b11d-4645-b927-a9aaae0d4934"
-					name="Test_case_008:_Verify_that_user_is_able_to_create_a_panel_with_multi-color_selection_in_Dashboard">
-						<testmodule
-						id="3e80e40c-1098-4b7d-b81e-716396ba10a0"
-						name="GoToPanelsPage">
-						</testmodule>
-						<testmodule
-						id="9f8c788a-45b3-4afe-820a-579352d66527"
-						name="AddPage">
-						</testmodule>
-						<testmodule
-						id="d7bcd709-faaf-48aa-b50d-8b46c9330393"
-						name="SetFieldOnPanelEditor">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="81e9fe95-3323-4ef3-ac4d-e5f5111a3779"
 					name="Test_case_001:_Verify_that_user_can_add_page">
 						<modulegroup
@@ -539,6 +582,30 @@
 						<testmodule
 						id="6c16678e-5a42-4797-9549-6e3737c5b480"
 						name="VerifyPageNotExists">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="ad2c7248-b11d-4645-b927-a9aaae0d4934"
+					name="Test_case_008:_Verify_that_user_is_able_to_create_a_panel_with_multi-color_selection_in_Dashboard">
+						<testmodule
+						id="3e80e40c-1098-4b7d-b81e-716396ba10a0"
+						name="GoToPanelsPage">
+						</testmodule>
+						<testmodule
+						id="9f8c788a-45b3-4afe-820a-579352d66527"
+						name="AddPage">
+						</testmodule>
+						<testmodule
+						id="d7bcd709-faaf-48aa-b50d-8b46c9330393"
+						name="SetFieldOnPanelEditor">
+						</testmodule>
+						<testmodule
+						id="bc29827f-7a88-44a8-8908-4b2e415386a4"
+						name="SelectPanel">
+						</testmodule>
+						<testmodule
+						id="8dc0edac-b7aa-479c-9043-7bb6b90021f8"
+						name="VerifyFieldOnPanelEditor">
 						</testmodule>
 					</testcase>
 					<teardown

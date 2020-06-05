@@ -427,6 +427,21 @@ rxversion="9.3">
       &quot;Url&quot;: &quot;468191f9f9e3a1743ddca8ed16375d02bc0858ab&quot;,
       &quot;Tags&quot;: []
     }
+  ],
+  &quot;webdriver.remote&quot;: [
+    {
+      &quot;Id&quot;: &quot;7b8d276e-5103-4f64-9f4c-7e67ac8237d6&quot;,
+      &quot;ControlFlags&quot;: 0,
+      &quot;CoreData&quot;: {},
+      &quot;PluginData&quot;: {
+        &quot;capabilities&quot;: &quot;&quot;
+      },
+      &quot;MetaData&quot;: {},
+      &quot;Description&quot;: &quot;&quot;,
+      &quot;DisplayName&quot;: &quot;Chrome&quot;,
+      &quot;Url&quot;: &quot;http://192.168.171.142/TADashboard/&quot;,
+      &quot;Tags&quot;: []
+    }
   ]
 }]]&gt;
 	</Endpoints.Data>
