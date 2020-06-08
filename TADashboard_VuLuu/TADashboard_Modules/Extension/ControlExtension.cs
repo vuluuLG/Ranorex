@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 
 using WinForms = System.Windows.Forms;
+using OpenQA.Selenium;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
@@ -67,8 +68,9 @@ namespace TADashboard_Modules.Helper_modules
         	{
     			Report.Log(ReportLevel.Info, "Input Text", string.Format("Input text '{0}'.", text), inputtagInfo);
             	var control = inputtagInfo.FindAdapter<InputTag>();
-            	Keyboard.PrepareFocus(control.Element);
-            	Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            	control.PressKeys(Keys.Control + "a");
+            	//Keyboard.PrepareFocus(control.Element);
+            	//Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             	control.PressKeys(text);
         	}
     	}

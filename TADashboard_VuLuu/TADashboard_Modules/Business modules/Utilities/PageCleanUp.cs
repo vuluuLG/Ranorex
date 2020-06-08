@@ -71,8 +71,8 @@ namespace TADashboard_Modules.Page_modules.Utilities
             	} catch(Exception) { }
             	
             	// Hover on Setting icon
-	            Report.Log(ReportLevel.Info, "Mouse", "Hover on Setting icon\r\nMouse Left Move item 'TADashboard.Pages.BasePage.MainMenu.LnkSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSettingInfo);
-	            repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting.MoveTo();
+	            Report.Log(ReportLevel.Info, "Mouse", "Setting icon\r\nMouse Left Move item 'TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSettingInfo);
+	            repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting.Click();
 	            
 	            // Select setting
 	            Report.Log(ReportLevel.Info, "Mouse", "Select setting\r\nMouse Left Click item 'TADashboard.Pages.BasePage.MainMenu.GlobalSetting.LnkSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.GlobalSetting.LnkSettingInfo);

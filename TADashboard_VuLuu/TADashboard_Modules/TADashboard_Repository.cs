@@ -339,8 +339,8 @@ namespace TADashboard_Modules
             {
                 _globalsetting = new TADashboard_RepositoryFolders.GlobalSettingFolder(this);
                 _lnkchoosepanelsInfo = new RepoItemInfo(this, "LnkChoosePanels", ".//li[@class~'mn-panels']/a", 30000, null, "9c71dcab-bd63-4f2d-97c9-1fb22d097b56");
-                _lnkglobalsettingInfo = new RepoItemInfo(this, "LnkGlobalSetting", ".//li[@class~'mn-setting']/a", 30000, null, "44a702c5-59b4-4a8e-9644-397cd2cf7241");
-                _lnkpagetabInfo = new RepoItemInfo(this, "LnkPageTab", ".//a[@innertext=$repoTabName]", 30000, null, "72859d0d-5511-4a56-9d2a-2deee83227ba");
+                _lnkglobalsettingInfo = new RepoItemInfo(this, "LnkGlobalSetting", ".//li[@class~'mn-setting']/a", 30000, true, "44a702c5-59b4-4a8e-9644-397cd2cf7241");
+                _lnkpagetabInfo = new RepoItemInfo(this, "LnkPageTab", ".//a[@innertext=$repoTabName]", 30000, true, "72859d0d-5511-4a56-9d2a-2deee83227ba");
             }
 
             /// <summary>

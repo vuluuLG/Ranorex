@@ -26,7 +26,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<mouseitem
-		action="Move"
+		action="Click"
 		button="Left"
 		duration="300ms"
 		enabled="True"

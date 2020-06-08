@@ -53,6 +53,7 @@ name="TADashboard_Repository">
 						<item
 						addcaps="unknown,webelement,atag"
 						capname="atag"
+						ensurevisible="True"
 						id="44a702c5-59b4-4a8e-9644-397cd2cf7241"
 						name="LnkGlobalSetting"
 						refimgid="8eb3fe6a-461c-499b-a59f-711ed4fb9b7c"
@@ -62,6 +63,7 @@ name="TADashboard_Repository">
 						<item
 						addcaps="unknown,webelement,atag"
 						capname="atag"
+						ensurevisible="True"
 						id="72859d0d-5511-4a56-9d2a-2deee83227ba"
 						name="LnkPageTab"
 						refimgid="8eb3fe6a-461c-499b-a59f-711ed4fb9b7c"

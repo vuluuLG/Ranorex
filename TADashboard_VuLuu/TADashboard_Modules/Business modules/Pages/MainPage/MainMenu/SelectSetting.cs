@@ -90,8 +90,8 @@ namespace TADashboard_Modules.Business_modules.Pages.MainPage.MainMenu
             Init();
 
             // Hover on Setting icon
-            Report.Log(ReportLevel.Info, "Mouse", "Hover on Setting icon\r\nMouse Left Move item 'TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSettingInfo, new RecordItemIndex(0));
-            repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Hover on Setting icon\r\nMouse Left Click item 'TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting' at Center.", repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSettingInfo, new RecordItemIndex(0));
+            repo.TADashboard.Pages.BasePage.MainMenu.LnkGlobalSetting.Click();
             Delay.Milliseconds(0);
             
             // Select setting
