@@ -14,6 +14,6 @@
       <string>a5544349-1205-4d66-887a-2d78f236a050</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution Web_DashBoard[Web_DashBoard[Record Actions[Page[]Panel[]]]Web_Dashboard_Test[]]]&#xD;&#xA;Solution Web_DashBoard\Web_Dashboard_Test\Web_Dashboard_Test.rxtst&#xD;&#xA;Solution Web_DashBoard\Web_DashBoard\AssemblyInfo.cs" />
+  <ProjectBrowserState value="[Solution Web_DashBoard[Web_DashBoard[]Web_Dashboard_Test[]]]&#xD;&#xA;Solution Web_DashBoard\Ranorex Automation Helpers&#xD;&#xA;Solution Web_DashBoard" />
   <StartupProject value="{811E16C6-362D-4EA9-896A-622ADAF7ABA0}" />
 </Properties>

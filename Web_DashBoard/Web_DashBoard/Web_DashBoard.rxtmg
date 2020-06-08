@@ -63,13 +63,6 @@ rxversion="9.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="2dc6b9b0-92e9-4621-8c60-96e764a0cc6d"
-			name="SubmitPanel"
-			ref="13543351-7643-4a26-b824-389cfe5c4466"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="6c391417-8d12-4a25-82a3-82c12d34f132"
 			name="EnterPanelInfo"
 			ref="20c8d798-d8a1-42db-b4ff-556fdb9d001b"
@@ -444,10 +437,6 @@ rxversion="9.3">
 					<testmodule
 					id="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
 					name="EnterIndicatorSetting">
-					</testmodule>
-					<testmodule
-					id="2dc6b9b0-92e9-4621-8c60-96e764a0cc6d"
-					name="SubmitPanel">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef

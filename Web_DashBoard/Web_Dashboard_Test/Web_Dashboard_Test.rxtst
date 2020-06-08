@@ -46,6 +46,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<teardown
+			id="0b696ac9-472b-4085-8025-68209bfed1b6"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="0ec8510c-ef31-476b-b8ed-ba8de0ff2361"
 			name="CheckColorSelected"
@@ -122,6 +126,10 @@
 					</var>
 				</databinding>
 			</modulegroup>
+			<setup
+			id="10971839-093e-4317-b18c-f4d94f976df9"
+			name="setup">
+			</setup>
 			<testmodule
 			id="19414ec3-8d6a-4b52-9ce8-9829b23a235e"
 			name="LogIn"
@@ -335,6 +343,10 @@
 					</var>
 				</missingdatabinding>
 			</modulegroup>
+			<setup
+			id="4a67d870-8041-412f-84c2-4cfaf5f54de2"
+			name="setup">
+			</setup>
 			<testcase
 			id="566817d0-d83e-442a-857b-f73e3b43e657"
 			name="TC08">
@@ -570,6 +582,10 @@
 			ref="6ae83ff8-be06-4ef6-92bb-f608d9b74367"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="81db1807-8ac5-4f5a-a74c-e45845540efa"
+			name="setup">
+			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -712,6 +728,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<teardown
+			id="96e51b90-c60d-4955-9d06-2056cc926cfc"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="97862a55-8bc1-4737-bc71-4578952fa5c5"
 			name="CheckPageExist"
@@ -734,6 +754,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<teardown
+			id="a286ff09-ebca-4139-9b1d-a8f25ce76e16"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="a5ed8436-b22b-42a7-ad2f-e455558553c0"
 			name="CheckPageNotExist"
@@ -762,6 +786,10 @@
 			ref="13543351-7643-4a26-b824-389cfe5c4466"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="aef64b77-020e-436b-8359-5abe2fafb923"
+			name="setup">
+			</setup>
 			<testmodule
 			id="af84823b-f693-4c95-a8dd-27c8ab28b737"
 			name="CloseBrowser"
@@ -939,6 +967,14 @@
 					</var>
 				</databinding>
 			</modulegroup>
+			<teardown
+			id="c30047c6-1777-4574-aa40-658b93d79a8d"
+			name="teardown">
+			</teardown>
+			<setup
+			id="c89e8880-8bd7-4076-9610-6cb99c3c7aac"
+			name="setup">
+			</setup>
 			<testmodule
 			id="ccaf8cbe-030f-43e3-97c9-d4c5cd5190b5"
 			name="CheckPanelExist"
@@ -999,7 +1035,7 @@
 				<parameters>
 					<param
 					name="varBrowserName"
-					value="IE">
+					value="Firefox">
 					</param>
 				</parameters>
 			</testcase>
@@ -1140,10 +1176,14 @@
 							<testcase
 							id="2e170a85-6bf1-417b-928f-4812cceefe2e"
 							name="TC01">
-								<testmodule
-								id="c1f68a00-2bca-4534-b1c0-cc18db5ca329"
-								name="GenerateNewName">
-								</testmodule>
+								<setup
+								id="aef64b77-020e-436b-8359-5abe2fafb923"
+								name="setup">
+									<testmodule
+									id="c1f68a00-2bca-4534-b1c0-cc18db5ca329"
+									name="GenerateNewName">
+									</testmodule>
+								</setup>
 								<modulegroup
 								id="48e822ec-1cbb-405e-bca9-b7f30b575d34"
 								name="AddNewPage">
@@ -1152,18 +1192,26 @@
 								id="97862a55-8bc1-4737-bc71-4578952fa5c5"
 								name="CheckPageExist">
 								</testmodule>
-								<modulegroup
-								id="1042108e-19ce-4fab-9dc3-d82ed1e66025"
-								name="DeletePage">
-								</modulegroup>
+								<teardown
+								id="96e51b90-c60d-4955-9d06-2056cc926cfc"
+								name="teardown">
+									<modulegroup
+									id="1042108e-19ce-4fab-9dc3-d82ed1e66025"
+									name="DeletePage">
+									</modulegroup>
+								</teardown>
 							</testcase>
 							<testcase
 							id="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
 							name="TC02">
-								<testmodule
-								id="80f702ef-0087-4fac-9fb2-cad191235053"
-								name="GenerateNewName">
-								</testmodule>
+								<setup
+								id="c89e8880-8bd7-4076-9610-6cb99c3c7aac"
+								name="setup">
+									<testmodule
+									id="80f702ef-0087-4fac-9fb2-cad191235053"
+									name="GenerateNewName">
+									</testmodule>
+								</setup>
 								<modulegroup
 								id="6c7873db-d3dc-403f-9555-ece2cbdcc179"
 								name="AddNewPage">
@@ -1176,26 +1224,34 @@
 								id="8ff7f7a8-5868-4dc1-926f-a94c80c82ad6"
 								name="CheckPageIsNavigated">
 								</testmodule>
-								<modulegroup
-								id="bcd7bf96-98db-49c0-b389-b53cf8921df6"
-								name="DeletePage">
-								</modulegroup>
+								<teardown
+								id="0b696ac9-472b-4085-8025-68209bfed1b6"
+								name="teardown">
+									<modulegroup
+									id="bcd7bf96-98db-49c0-b389-b53cf8921df6"
+									name="DeletePage">
+									</modulegroup>
+								</teardown>
 							</testcase>
 							<testcase
 							id="fde06d93-708e-4658-be1e-dd1529f3bcbf"
 							name="TC03">
-								<testmodule
-								id="479e2759-436f-4dc3-868e-cfb16e20022b"
-								name="GenerateNewName">
-								</testmodule>
-								<testmodule
-								id="906c11cb-462e-47d2-8c28-e18c9e316c96"
-								name="GenerateUpdateName">
-								</testmodule>
-								<modulegroup
-								id="10401169-65e9-415d-b582-10311d090836"
-								name="AddNewPage">
-								</modulegroup>
+								<setup
+								id="81db1807-8ac5-4f5a-a74c-e45845540efa"
+								name="setup">
+									<testmodule
+									id="479e2759-436f-4dc3-868e-cfb16e20022b"
+									name="GenerateNewName">
+									</testmodule>
+									<testmodule
+									id="906c11cb-462e-47d2-8c28-e18c9e316c96"
+									name="GenerateUpdateName">
+									</testmodule>
+									<modulegroup
+									id="10401169-65e9-415d-b582-10311d090836"
+									name="AddNewPage">
+									</modulegroup>
+								</setup>
 								<modulegroup
 								id="5c71d1f7-b755-4ecf-9a22-c29fa8dc1408"
 								name="UpdatePage">
@@ -1204,26 +1260,34 @@
 								id="0a97c1bc-1df4-470a-b0bd-f0048b3bcf18"
 								name="CheckPageExist">
 								</testmodule>
-								<modulegroup
-								id="725005a5-1783-4143-b0b0-1f23f492950c"
-								name="DeletePage">
-								</modulegroup>
+								<teardown
+								id="c30047c6-1777-4574-aa40-658b93d79a8d"
+								name="teardown">
+									<modulegroup
+									id="725005a5-1783-4143-b0b0-1f23f492950c"
+									name="DeletePage">
+									</modulegroup>
+								</teardown>
 							</testcase>
 							<testcase
 							id="f3d4749f-4b94-4e49-865b-eccff2fa3158"
 							name="TC04">
-								<testmodule
-								id="bfe1a2a7-1fc5-4ca5-88e1-4313f8743dc4"
-								name="GenerateNewName">
-								</testmodule>
-								<testmodule
-								id="28f3f90f-68d5-4769-831e-b2ec74064f8c"
-								name="GenerateUpdateName">
-								</testmodule>
-								<modulegroup
-								id="c2683e3f-0bc8-4c5d-978d-a28a4c4a27a1"
-								name="AddNewPage">
-								</modulegroup>
+								<setup
+								id="4a67d870-8041-412f-84c2-4cfaf5f54de2"
+								name="setup">
+									<testmodule
+									id="bfe1a2a7-1fc5-4ca5-88e1-4313f8743dc4"
+									name="GenerateNewName">
+									</testmodule>
+									<testmodule
+									id="28f3f90f-68d5-4769-831e-b2ec74064f8c"
+									name="GenerateUpdateName">
+									</testmodule>
+									<modulegroup
+									id="c2683e3f-0bc8-4c5d-978d-a28a4c4a27a1"
+									name="AddNewPage">
+									</modulegroup>
+								</setup>
 								<modulegroup
 								id="c2d49f4b-26b0-429b-ae04-ec8239e86fe3"
 								name="UpdatePage">
@@ -1248,10 +1312,14 @@
 							<testcase
 							id="566817d0-d83e-442a-857b-f73e3b43e657"
 							name="TC08">
-								<testmodule
-								id="f2f2e9e4-bad6-4b9b-af10-a93239a1b09b"
-								name="GenerateNewName">
-								</testmodule>
+								<setup
+								id="10971839-093e-4317-b18c-f4d94f976df9"
+								name="setup">
+									<testmodule
+									id="f2f2e9e4-bad6-4b9b-af10-a93239a1b09b"
+									name="GenerateNewName">
+									</testmodule>
+								</setup>
 								<testmodule
 								id="3d922a14-ec55-4f59-a417-5a5e71d9a349"
 								name="SelectHeaderMenuItem">
@@ -1272,10 +1340,14 @@
 								id="ccaf8cbe-030f-43e3-97c9-d4c5cd5190b5"
 								name="CheckPanelExist">
 								</testmodule>
-								<modulegroup
-								id="609adcc1-2070-42c7-ab86-eb8cb06aac0a"
-								name="DeletePanel">
-								</modulegroup>
+								<teardown
+								id="a286ff09-ebca-4139-9b1d-a8f25ce76e16"
+								name="teardown">
+									<modulegroup
+									id="609adcc1-2070-42c7-ab86-eb8cb06aac0a"
+									name="DeletePanel">
+									</modulegroup>
+								</teardown>
 							</testcase>
 						</smartfoldernode>
 						<teardown

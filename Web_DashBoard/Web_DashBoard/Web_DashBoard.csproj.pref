@@ -2,10 +2,8 @@
   <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Record Actions\Panel\CheckColorSelected.UserCode.cs" />
-    <Element value="Record Actions\SelectRowItem.rxrec" />
+    <Element value="Web_DashBoard.rxtmg" />
     <Element value="Record Actions\Panel\CheckColorSelected.rxrec" />
-    <Element value="Web_DashBoardRepository.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
