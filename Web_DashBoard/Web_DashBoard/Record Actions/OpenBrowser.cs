@@ -42,6 +42,7 @@ namespace Web_DashBoard.Record_Actions
         public OpenBrowser()
         {
             modBrowser = "Chrome";
+            mdDomain = "192.168.1.19";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace Web_DashBoard.Record_Actions
         {
             get { return _modBrowser; }
             set { _modBrowser = value; }
+        }
+
+        string _mdDomain;
+
+        /// <summary>
+        /// Gets or sets the value of variable mdDomain.
+        /// </summary>
+        [TestVariable("dd935287-e460-4408-b802-3bb74b33b4fb")]
+        public string mdDomain
+        {
+            get { return _mdDomain; }
+            set { _mdDomain = value; }
         }
 
 #endregion
@@ -92,7 +105,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            OpenBrowser_Open_browser();
+            OpenBrowser_OpenDashboard(mdDomain, modBrowser);
             Delay.Milliseconds(0);
             
         }

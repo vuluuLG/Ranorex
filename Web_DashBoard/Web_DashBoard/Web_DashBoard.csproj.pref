@@ -1,35 +1,23 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="Record Actions\CheckPageNotExist.UserCode.cs" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Record Actions\CheckPageNotExist.UserCode.cs" />
-    <Element value="Record Actions\CheckPageNotExist.rxrec" />
-    <Element value="Record Actions\CheckPageExist.UserCode.cs" />
-    <Element value="Record Actions\CheckPageExist.cs" />
-    <Element value="Record Actions\SubmitPageInfo.rxrec" />
-    <Element value="Record Actions\SelectGlobleMenuItem.UserCode.cs" />
-    <Element value="Record Actions\SelectGlobleMenuItem.cs" />
-    <Element value="Record Actions\OpenBrowser.rxrec" />
-    <Element value="Record Actions\ConfirmDeletePage.rxrec" />
-    <Element value="Record Actions\CloseBrowser.rxrec" />
-    <Element value="Record Actions\CheckPageIsNavigated.rxrec" />
-    <Element value="Record Actions\LogOut.rxrec" />
-    <Element value="Record Actions\ConfirmDeletePage.UserCode.cs" />
-    <Element value="Record Actions\ConfirmDeletePage.cs" />
+    <Element value="Record Actions\Panel\CheckColorSelected.UserCode.cs" />
+    <Element value="Record Actions\SelectRowItem.rxrec" />
+    <Element value="Record Actions\Panel\CheckColorSelected.rxrec" />
+    <Element value="Web_DashBoardRepository.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="Web_DashBoard.Record_Actions.SelectPage.NavigateToPage(RepoItemInfo atagInfo, RepoItemInfo webdocumentInfo)" />
-      <Element value="Web_DashBoard.Record_Actions.SelectPage.NavigateToPage(String modSelectedPageName)" />
-      <Element value="Web_DashBoard.Record_Actions.SelectPage.NavigateToPage()" />
-      <Element value="Web_DashBoard.Record_Actions.CheckPageExist.CheckPageExists(String modValidateExistPageName)" />
-      <Element value="Web_DashBoard.Record_Actions.CheckPageExist.CheckPageExist(String modValidateExistPageName)" />
-      <Element value="Web_DashBoard.Record_Actions.CheckPageExist.CheckPageExist(RepoItemInfo atagInfo, String modValidateExistPageName)" />
+      <Element value="Web_DashBoard.Record_Actions.SelectRowItem.selectRownItem(String modSelectedRowItemName)" />
+      <Element value="Web_DashBoard.Record_Actions.SelectRowItem.selectRownItem(String modSelectedRowItemName)" />
+      <Element value="Web_DashBoard.Record_Actions.SelectRowItem.Mouse_Click_ChkDelPanel(String modSelectedRowItemName)" />
+      <Element value="Web_DashBoard.Record_Actions.Panel.CheckPanelExist.CheckPanelExists(String modCheckPanelExistName)" />
+      <Element value="Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.SetStatisticField(RepoItemInfo selecttagInfo)" />
+      <Element value="Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Set_value_cbbStatisticField(RepoItemInfo selecttagInfo)" />
     </Array>
   </Properties>
 </Properties>

@@ -278,6 +278,11 @@
             Gets or sets the value of variable modNewPageName.
             </summary>
         </member>
+        <member name="P:Web_DashBoard.Record_Actions.GenerateNewName.modName">
+            <summary>
+            Gets or sets the value of variable modName.
+            </summary>
+        </member>
         <member name="M:Web_DashBoard.Record_Actions.GenerateNewName.Start">
             <summary>
             Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.GenerateNewName.Instance"/>.
@@ -320,6 +325,11 @@
         <member name="P:Web_DashBoard.Record_Actions.GenerateUpdateName.modUpdatedName">
             <summary>
             Gets or sets the value of variable modUpdatedName.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.GenerateUpdateName.modUpdateName">
+            <summary>
+            Gets or sets the value of variable modUpdateName.
             </summary>
         </member>
         <member name="M:Web_DashBoard.Record_Actions.GenerateUpdateName.Start">
@@ -457,6 +467,11 @@
         <member name="P:Web_DashBoard.Record_Actions.OpenBrowser.modBrowser">
             <summary>
             Gets or sets the value of variable modBrowser.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.OpenBrowser.mdDomain">
+            <summary>
+            Gets or sets the value of variable mdDomain.
             </summary>
         </member>
         <member name="M:Web_DashBoard.Record_Actions.OpenBrowser.Start">
@@ -645,9 +660,9 @@
             Gets a static instance of this recording.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.modPanelName">
+        <member name="P:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.modCheckPanelExistName">
             <summary>
-            Gets or sets the value of variable modPanelName.
+            Gets or sets the value of variable modCheckPanelExistName.
             </summary>
         </member>
         <member name="M:Web_DashBoard.Record_Actions.Panel.CheckPanelExist.Start">
@@ -714,9 +729,14 @@
             Gets or sets the value of variable modPanelPercentage.
             </summary>
         </member>
-        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelCriterias">
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelFroms">
             <summary>
-            Gets or sets the value of variable modPanelCriterias.
+            Gets or sets the value of variable modPanelFroms.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.modPanelColors">
+            <summary>
+            Gets or sets the value of variable modPanelColors.
             </summary>
         </member>
         <member name="M:Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.Start">
@@ -963,6 +983,45 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="T:Web_DashBoard.Record_Actions.SelectRowItem">
+             <summary>
+            The SelectRowItem recording.
+             </summary>
+        </member>
+        <member name="F:Web_DashBoard.Record_Actions.SelectRowItem.repo">
+            <summary>
+            Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectRowItem.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Record_Actions.SelectRowItem.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectRowItem.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Web_DashBoard.Record_Actions.SelectRowItem.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectRowItem.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Web_DashBoard.Record_Actions.SelectRowItem.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
         <member name="T:Web_DashBoard.Web_DashBoardRepository">
             <summary>
             The class representing the Web_DashBoardRepository element repository.
@@ -1096,6 +1155,16 @@
         <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.LabelTagIndicatorInfo">
             <summary>
             The LabelTagIndicator item info.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.ChkDelPanel">
+            <summary>
+            The ChkDelPanel item.
+            </summary>
+        </member>
+        <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.ChkDelPanelInfo">
+            <summary>
+            The ChkDelPanel item info.
             </summary>
         </member>
         <member name="P:Web_DashBoard.Web_DashBoardRepositoryFolders.DashboardAppFolder.Panels">

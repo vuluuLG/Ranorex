@@ -11,8 +11,9 @@
       <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
       <string>38c14862-9003-480c-b2d6-2a028e5e14ae</string>
       <string>521a7a12-0750-4c0c-b417-a0f70b4c43a9</string>
+      <string>a5544349-1205-4d66-887a-2d78f236a050</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution Web_DashBoard[Web_DashBoard[Record Actions[]]Web_Dashboard_Test[Web_Dashboard_Test.rxtst[]]]]&#xD;&#xA;Solution Web_DashBoard\Web_DashBoard\Reports&#xD;&#xA;Solution Web_DashBoard" />
+  <ProjectBrowserState value="[Solution Web_DashBoard[Web_DashBoard[Record Actions[Page[]Panel[]]]Web_Dashboard_Test[]]]&#xD;&#xA;Solution Web_DashBoard\Web_Dashboard_Test\Web_Dashboard_Test.rxtst&#xD;&#xA;Solution Web_DashBoard\Web_DashBoard\AssemblyInfo.cs" />
   <StartupProject value="{811E16C6-362D-4EA9-896A-622ADAF7ABA0}" />
 </Properties>

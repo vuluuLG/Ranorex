@@ -32,8 +32,7 @@ namespace Web_DashBoard.Record_Actions
         {
             // Your recording specific initialization code goes here.
         }
-
-        
+      
 
         public string GetNewName(string modName)
         {

@@ -172,7 +172,7 @@ rxversion="9.3">
 			name="AddPanel-Indicator">
 				<groupvariables>
 					<groupvariable
-					id="293cb6d9-d586-4c52-834b-e25f2a77d776"
+					id="733a9c4e-33a6-4e71-97d1-0c85ebe1a36f"
 					name="modPanelDataProfile">
 						<modulevariable
 						moduleref="6c391417-8d12-4a25-82a3-82c12d34f132"
@@ -181,7 +181,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="6b613960-0e50-4ab9-8787-5e04d37e2215"
+					id="94a2c1c5-6609-4d5d-b866-3382b6e6e1e2"
 					name="modPanelDisplayName">
 						<modulevariable
 						moduleref="6c391417-8d12-4a25-82a3-82c12d34f132"
@@ -190,7 +190,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="a46b2f32-3834-421c-a7a0-75a3831f4de5"
+					id="426ef9c5-01e9-4550-a45d-309625700d61"
 					name="repoPanelType">
 						<modulevariable
 						moduleref="6c391417-8d12-4a25-82a3-82c12d34f132"
@@ -199,7 +199,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="78eaea2f-e9b8-4482-8955-59b85b0ecbc9"
+					id="2e075967-1cd7-4530-a3c4-8ca43294141e"
 					name="modPanelTitle">
 						<modulevariable
 						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
@@ -208,7 +208,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="7bd477e7-a215-4d95-93b3-0e23a507741c"
+					id="8eb3feae-c82a-4d1d-bcc0-cc2c4ca85b00"
 					name="modPanelShowTitle">
 						<modulevariable
 						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
@@ -217,7 +217,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="d5d0fbf9-ba7a-4806-a1fa-cf87bee3bdd3"
+					id="856d03c9-42de-43ee-8071-56f069f3650c"
 					name="modPanelStatisticfield">
 						<modulevariable
 						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
@@ -226,7 +226,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="2ab29628-eba1-42ab-af2a-1daffdd961b5"
+					id="248e8db1-d104-4522-8da9-595c58ea5df0"
 					name="modPanelValue">
 						<modulevariable
 						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
@@ -235,7 +235,7 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="0f29da33-a830-44c8-96f7-b35b42b56778"
+					id="0f6e2e62-ddf7-4cdb-b6cf-01481865447a"
 					name="modPanelPercentage">
 						<modulevariable
 						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
@@ -244,12 +244,21 @@ rxversion="9.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="096eaffb-9e4c-4602-818f-471481cddc55"
-					name="modPanelCriterias">
+					id="26fc15a8-58d0-47a5-b310-06fdbd2a4cf3"
+					name="modPanelFroms">
 						<modulevariable
 						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
-						name="modPanelCriterias"
-						variableref="fa6c220c-371f-43aa-b7fd-d03b8c1a736d">
+						name="modPanelFroms"
+						variableref="c326afc5-3bbf-46a2-bc4c-db93b6ffb179">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="7c5f2d00-1814-4654-a31f-52c56e282a91"
+					name="modPanelColors">
+						<modulevariable
+						moduleref="a43bbd9a-8683-4654-a22d-8459e91a0d7b"
+						name="modPanelColors"
+						variableref="83ab5b5f-d318-45a9-8476-004099028efc">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>

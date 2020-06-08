@@ -9,12 +9,20 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="modSubmitedPageName"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="28a0f270-2452-41da-b91b-fb15c2a97fb2"
+					variablename="repoSelectedPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedNewPageName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="28a0f270-2452-41da-b91b-fb15c2a97fb2"
 					variablename="repoSelectedPageName">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="0a97c1bc-1df4-470a-b0bd-f0048b3bcf18"
@@ -23,19 +31,123 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="modUpdatedName"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
+					variablename="modValidateExistPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedUpdatedName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
 					variablename="modValidateExistPageName">
 					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="0ec8510c-ef31-476b-b8ed-ba8de0ff2361"
+			name="CheckColorSelected"
+			ref="ae8967a1-966c-4a5e-bfaa-07aef347c320"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExColor"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="2166aa37-135c-42aa-a153-66574de63a7c"
+					variablename="modExpectedColors">
+					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="10401169-65e9-415d-b582-10311d090836"
+			name="AddNewPage"
+			ref="f9b719eb-a790-4642-a189-944e1e8170a8">
+				<databinding>
+					<var
+					dataname="modNewPageName"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
+					variablename="modSubmitedPageName">
+					</var>
+					<var
+					dataname="modSubmitedNumberOfColumn"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="54698028-e8b8-4be3-ac31-89487a890ffb"
+					variablename="modSubmitedNumberOfColumn">
+					</var>
+					<var
+					dataname="modSubmitedDisplayAfter"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="f70be4a1-c459-4b27-8099-7b2500700f0e"
+					variablename="modSubmitedDisplayAfter">
+					</var>
+					<var
+					dataname="modSubmitedPublic"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="6fabb1b5-3f85-4b5e-98f0-00e5ac9e168f"
+					variablename="modSubmitedPublic">
+					</var>
+					<var
+					dataname="modSubmitedParentPage"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="54ae5fc4-e2bd-450c-80df-c91577174290"
+					variablename="modSubmitedParentPage">
+					</var>
+					<var
+					dataname="varAddNewMenuitem"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="6b8375f7-0926-486a-8d82-3f65a459d611"
+					variablename="modSelectedItem">
+					</var>
+				</databinding>
+			</modulegroup>
+			<modulegroup
+			id="1042108e-19ce-4fab-9dc3-d82ed1e66025"
+			name="DeletePage"
+			ref="0ec17c20-507d-4a7d-8c75-23e050607f2e">
+				<databinding>
+					<var
+					dataname="modNewPageName"
+					datasourceid="2e170a85-6bf1-417b-928f-4812cceefe2e"
+					variableid="c865dd6f-ae2c-46fd-b841-09f92215a50e"
+					variablename="repoSelectedPageName">
+					</var>
+					<var
+					dataname="repoSelectedItem"
+					datasourceid="2e170a85-6bf1-417b-928f-4812cceefe2e"
+					variableid="4d253b8b-5e1c-4550-8ba9-b21d689e3982"
+					variablename="repoSelectedItem">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="19414ec3-8d6a-4b52-9ce8-9829b23a235e"
 			name="LogIn"
 			ref="32b25d90-fcc7-4b82-951e-171f7933c94e"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Repository"
+					datasourceid="3ca9618c-c7fd-4ca0-945b-3ac4d972371e"
+					variableid="64e39241-b5be-44c2-bfb6-823dbec266e4"
+					variablename="modRepository">
+					</var>
+					<var
+					dataname="Username"
+					datasourceid="3ca9618c-c7fd-4ca0-945b-3ac4d972371e"
+					variableid="a71012bb-098e-4af1-9403-57d63f300d42"
+					variablename="modUser">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="3ca9618c-c7fd-4ca0-945b-3ac4d972371e"
+					variableid="f52fbe2a-0ac7-4107-ab78-c181d1010688"
+					variablename="modPassword">
+					</var>
+				</databinding>
+				<missingdatabinding>
 					<var
 					dataname="Repository"
 					datasourceid="3e8b693e-cacd-48b9-ab16-a6a484c31088"
@@ -53,6 +165,26 @@
 					datasourceid="3e8b693e-cacd-48b9-ab16-a6a484c31088"
 					variableid="f52fbe2a-0ac7-4107-ab78-c181d1010688"
 					variablename="modPassword">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="28f3f90f-68d5-4769-831e-b2ec74064f8c"
+			name="GenerateUpdateName"
+			ref="68c8aa2f-900e-4f76-b2b1-02fefaf1e51f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Page Name"
+					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
+					variableid="662328e7-5c21-4284-b51b-8fa2ef5646a6"
+					variablename="modUpdateName">
+					</var>
+					<var
+					dataname="modUpdatedName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="150112c1-739c-4393-8b80-96cb0c0a9b0f"
+					variablename="modUpdatedName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -80,12 +212,34 @@
 					name="modSubmitedPublic"
 					value="">
 					</param>
+					<param
+					name="modNewPageName"
+					value="">
+					</param>
+					<param
+					name="repoSelectedItem"
+					value="Delete">
+					</param>
 				</parameters>
 			</testcase>
 			<teardown
 			id="36980e35-f492-4901-81a1-a253f4079a64"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="3d922a14-ec55-4f59-a417-5a5e71d9a349"
+			name="SelectHeaderMenuItem"
+			ref="54a98369-c656-4046-b910-d4e6195a668e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="modMenuItem"
+					datasourceid="566817d0-d83e-442a-857b-f73e3b43e657"
+					variableid="2c991862-af79-49e6-ba63-ca60a6d7a603"
+					variablename="modMenuItem">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="3dd2778d-2647-44cb-b533-200f052873f5"
 			name="CheckPageIsNavigated"
@@ -101,31 +255,40 @@
 				</databinding>
 			</testmodule>
 			<smartfoldernode
-			datasource="LoginInfo"
+			datasource="PanelData"
+			id="43afd8f3-bf93-4c33-9bc5-d8c418226932"
+			name="ManagePanel">
+			</smartfoldernode>
+			<testmodule
+			id="479e2759-436f-4dc3-868e-cfb16e20022b"
+			name="GenerateNewName"
+			ref="da6b3217-35db-4570-ac77-b0335825776a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Page Name"
+					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
+					variableid="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+					variablename="modName">
+					</var>
+					<var
+					dataname="modNewPageName"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="2f02d2ab-e902-4601-b2e8-5e2d34683031"
+					variablename="modNewPageName">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datasource="BaseConfig"
 			id="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 			name="Regression">
-				<parameters>
-					<param
-					name="modGeneratedNewPageName"
-					value="">
-					</param>
-					<param
-					name="modGeneratedUpdatedName"
-					value="">
-					</param>
-				</parameters>
 			</smartfoldernode>
 			<modulegroup
 			id="48e822ec-1cbb-405e-bca9-b7f30b575d34"
 			name="AddNewPage"
 			ref="f9b719eb-a790-4642-a189-944e1e8170a8">
 				<databinding>
-					<var
-					dataname="modGeneratedNewPageName"
-					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
-					variableid="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
-					variablename="modSubmitedPageName">
-					</var>
 					<var
 					dataname="modSelectedItem"
 					datasourceid="2e170a85-6bf1-417b-928f-4812cceefe2e"
@@ -156,24 +319,52 @@
 					variableid="6fabb1b5-3f85-4b5e-98f0-00e5ac9e168f"
 					variablename="modSubmitedPublic">
 					</var>
+					<var
+					dataname="modNewPageName"
+					datasourceid="2e170a85-6bf1-417b-928f-4812cceefe2e"
+					variableid="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
+					variablename="modSubmitedPageName">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="modGeneratedNewPageName"
+					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
+					variableid="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
+					variablename="modSubmitedPageName">
+					</var>
+				</missingdatabinding>
 			</modulegroup>
+			<testcase
+			id="566817d0-d83e-442a-857b-f73e3b43e657"
+			name="TC08">
+				<parameters>
+					<param
+					name="modMenuItem"
+					value="Administer>Panels">
+					</param>
+					<param
+					name="modPanelDisplayName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<modulegroup
 			id="5c71d1f7-b755-4ecf-9a22-c29fa8dc1408"
 			name="UpdatePage"
 			ref="a4731725-d9d5-403c-b4b4-2a6441cb72f5">
 				<databinding>
 					<var
-					dataname="modSubmitedNumberOfColumn"
+					dataname="modNewPageName"
 					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
-					variableid="82d64fbd-4b64-4ed6-b025-3ea4ca364268"
-					variablename="modSubmitedNumberOfColumn">
+					variableid="b3e50b36-b914-43d2-ac01-ebac4e0f47c9"
+					variablename="repoSelectedPageName">
 					</var>
 					<var
-					dataname="modSubmitedParentPage"
+					dataname="modUpdatedName"
 					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
-					variableid="bc7fedab-d54d-41f2-9193-93f9a4513ae2"
-					variablename="modSubmitedParentPage">
+					variableid="d260425d-57b7-46c3-9ee6-7e80553c4123"
+					variablename="modSubmitedPageName">
 					</var>
 					<var
 					dataname="modSelectedItem"
@@ -182,16 +373,16 @@
 					variablename="repoSelectedItem">
 					</var>
 					<var
-					dataname="modGeneratedNewPageName"
-					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
-					variableid="b3e50b36-b914-43d2-ac01-ebac4e0f47c9"
-					variablename="repoSelectedPageName">
+					dataname="modSelectedItem"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="e960723e-861e-4aa2-8dba-4154ba522cab"
+					variablename="modSelectedItem">
 					</var>
 					<var
-					dataname="modGeneratedUpdatedName"
-					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
-					variableid="d260425d-57b7-46c3-9ee6-7e80553c4123"
-					variablename="modSubmitedPageName">
+					dataname="modSubmitedNumberOfColumn"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="82d64fbd-4b64-4ed6-b025-3ea4ca364268"
+					variablename="modSubmitedNumberOfColumn">
 					</var>
 					<var
 					dataname="modSubmitedDisplayAfter"
@@ -206,12 +397,26 @@
 					variablename="modSubmitedPublic">
 					</var>
 					<var
-					dataname="modSelectedItem"
+					dataname="modSubmitedParentPage"
 					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
-					variableid="e960723e-861e-4aa2-8dba-4154ba522cab"
-					variablename="modSelectedItem">
+					variableid="bc7fedab-d54d-41f2-9193-93f9a4513ae2"
+					variablename="modSubmitedParentPage">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="modGeneratedNewPageName"
+					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
+					variableid="b3e50b36-b914-43d2-ac01-ebac4e0f47c9"
+					variablename="repoSelectedPageName">
+					</var>
+					<var
+					dataname="modGeneratedUpdatedName"
+					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
+					variableid="d260425d-57b7-46c3-9ee6-7e80553c4123"
+					variablename="modSubmitedPageName">
+					</var>
+				</missingdatabinding>
 			</modulegroup>
 			<modulegroup
 			id="5fb80f1a-fd90-4212-8257-016dfb635ed8"
@@ -219,23 +424,93 @@
 			ref="0ec17c20-507d-4a7d-8c75-23e050607f2e">
 				<databinding>
 					<var
+					dataname="varDeleteMenuitem"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="4d253b8b-5e1c-4550-8ba9-b21d689e3982"
+					variablename="repoSelectedItem">
+					</var>
+					<var
+					dataname="modUpdatedName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="c865dd6f-ae2c-46fd-b841-09f92215a50e"
+					variablename="repoSelectedPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedUpdatedName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="c865dd6f-ae2c-46fd-b841-09f92215a50e"
 					variablename="repoSelectedPageName">
 					</var>
-					<var
-					dataname="repoSelectedItem"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="4d253b8b-5e1c-4550-8ba9-b21d689e3982"
-					variablename="repoSelectedItem">
-					</var>
-				</databinding>
+				</missingdatabinding>
 			</modulegroup>
 			<setup
 			id="5fcabaa4-cbfb-473f-a5fb-28efd4591841"
 			name="setup">
 			</setup>
+			<modulegroup
+			id="6c7873db-d3dc-403f-9555-ece2cbdcc179"
+			name="AddNewPage"
+			ref="f9b719eb-a790-4642-a189-944e1e8170a8">
+				<databinding>
+					<var
+					dataname="modSelectedItem"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="6b8375f7-0926-486a-8d82-3f65a459d611"
+					variablename="modSelectedItem">
+					</var>
+					<var
+					dataname="modSubmitedPageName"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
+					variablename="modSubmitedPageName">
+					</var>
+					<var
+					dataname="modSubmitedParentPage"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="54ae5fc4-e2bd-450c-80df-c91577174290"
+					variablename="modSubmitedParentPage">
+					</var>
+					<var
+					dataname="modSubmitedNumberOfColumn"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="54698028-e8b8-4be3-ac31-89487a890ffb"
+					variablename="modSubmitedNumberOfColumn">
+					</var>
+					<var
+					dataname="modSubmitedDisplayAfter"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="f70be4a1-c459-4b27-8099-7b2500700f0e"
+					variablename="modSubmitedDisplayAfter">
+					</var>
+					<var
+					dataname="modSubmitedPublic"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="6fabb1b5-3f85-4b5e-98f0-00e5ac9e168f"
+					variablename="modSubmitedPublic">
+					</var>
+				</databinding>
+			</modulegroup>
+			<modulegroup
+			id="725005a5-1783-4143-b0b0-1f23f492950c"
+			name="DeletePage"
+			ref="0ec17c20-507d-4a7d-8c75-23e050607f2e">
+				<databinding>
+					<var
+					dataname="modUpdatedName"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="c865dd6f-ae2c-46fd-b841-09f92215a50e"
+					variablename="repoSelectedPageName">
+					</var>
+					<var
+					dataname="varDeleteMenuitem"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="4d253b8b-5e1c-4550-8ba9-b21d689e3982"
+					variablename="repoSelectedItem">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="731948a2-53a1-498c-b924-e2536eb828cf"
 			name="OpenBrowser"
@@ -247,6 +522,32 @@
 					datasourceid="e9a25934-0242-443d-a76b-609e6fbd38ce"
 					variableid="3cb61d55-6e68-4335-b3a1-4b71b421fed2"
 					variablename="modBrowser">
+					</var>
+					<var
+					dataname="Domain"
+					datasourceid="3ca9618c-c7fd-4ca0-945b-3ac4d972371e"
+					variableid="dd935287-e460-4408-b802-3bb74b33b4fb"
+					variablename="mdDomain">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="80f702ef-0087-4fac-9fb2-cad191235053"
+			name="GenerateNewName"
+			ref="da6b3217-35db-4570-ac77-b0335825776a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Page Name"
+					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
+					variableid="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+					variablename="modName">
+					</var>
+					<var
+					dataname="modSubmitedPageName"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="2f02d2ab-e902-4601-b2e8-5e2d34683031"
+					variablename="modNewPageName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -275,6 +576,73 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<modulegroup
+			id="8935d71e-989e-47ac-92e8-efd7bce52e89"
+			name="AddPanel-Indicator"
+			ref="d04edef4-520f-4ba6-9647-a5d9768ae3fb">
+				<databinding>
+					<var
+					dataname="Percentage"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="0f6e2e62-ddf7-4cdb-b6cf-01481865447a"
+					variablename="modPanelPercentage">
+					</var>
+					<var
+					dataname="Value"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="248e8db1-d104-4522-8da9-595c58ea5df0"
+					variablename="modPanelValue">
+					</var>
+					<var
+					dataname="Statistic field"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="856d03c9-42de-43ee-8071-56f069f3650c"
+					variablename="modPanelStatisticfield">
+					</var>
+					<var
+					dataname="Show Title"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="8eb3feae-c82a-4d1d-bcc0-cc2c4ca85b00"
+					variablename="modPanelShowTitle">
+					</var>
+					<var
+					dataname="Title"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="2e075967-1cd7-4530-a3c4-8ca43294141e"
+					variablename="modPanelTitle">
+					</var>
+					<var
+					dataname="Data Profile"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="733a9c4e-33a6-4e71-97d1-0c85ebe1a36f"
+					variablename="modPanelDataProfile">
+					</var>
+					<var
+					dataname="Type"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="426ef9c5-01e9-4550-a45d-309625700d61"
+					variablename="repoPanelType">
+					</var>
+					<var
+					dataname="modPanelDisplayName"
+					datasourceid="566817d0-d83e-442a-857b-f73e3b43e657"
+					variableid="94a2c1c5-6609-4d5d-b866-3382b6e6e1e2"
+					variablename="modPanelDisplayName">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="26fc15a8-58d0-47a5-b310-06fdbd2a4cf3"
+					variablename="modPanelFroms">
+					</var>
+					<var
+					dataname="Color"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="7c5f2d00-1814-4654-a31f-52c56e282a91"
+					variablename="modPanelColors">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="8ff7f7a8-5868-4dc1-926f-a94c80c82ad6"
 			name="CheckPageIsNavigated"
@@ -282,12 +650,20 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="modSubmitedPageName"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="78003753-5da4-4f92-9077-a4960ab6f620"
+					variablename="modValidateNavigatedPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedNewPageName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="78003753-5da4-4f92-9077-a4960ab6f620"
 					variablename="modValidateNavigatedPageName">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="906c11cb-462e-47d2-8c28-e18c9e316c96"
@@ -296,12 +672,32 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Page Name"
+					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
+					variableid="662328e7-5c21-4284-b51b-8fa2ef5646a6"
+					variablename="modUpdateName">
+					</var>
+					<var
+					dataname="modUpdatedName"
+					datasourceid="fde06d93-708e-4658-be1e-dd1529f3bcbf"
+					variableid="150112c1-739c-4393-8b80-96cb0c0a9b0f"
+					variablename="modUpdatedName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedUpdatedName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="150112c1-739c-4393-8b80-96cb0c0a9b0f"
 					variablename="modUpdatedName">
 					</var>
-				</databinding>
+					<var
+					dataname="Page Name"
+					datasourceid="a915eb00-124c-417d-b386-fc7359a07ca1"
+					variableid="662328e7-5c21-4284-b51b-8fa2ef5646a6"
+					variablename="modUpdateName">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="97862a55-8bc1-4737-bc71-4578952fa5c5"
@@ -310,17 +706,21 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="modNewPageName"
+					datasourceid="2e170a85-6bf1-417b-928f-4812cceefe2e"
+					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
+					variablename="modValidateExistPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedNewPageName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
 					variablename="modValidateExistPageName">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
-			<smartfoldernode
-			id="a5bc563e-7a1b-4857-a30e-2d15f5df6964"
-			name="ManagePage">
-			</smartfoldernode>
 			<testmodule
 			id="a5ed8436-b22b-42a7-ad2f-e455558553c0"
 			name="CheckPageNotExist"
@@ -328,18 +728,71 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="modUpdatedName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
+					variablename="modValidateNotExistPageName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedUpdatedName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
 					variablename="modValidateNotExistPageName">
 					</var>
-				</databinding>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="a9ea170c-85b0-4169-99e7-28171d6ccd4b"
+			name="SubmitPanel"
+			ref="13543351-7643-4a26-b824-389cfe5c4466"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="af84823b-f693-4c95-a8dd-27c8ab28b737"
 			name="CloseBrowser"
 			ref="37ce4a7a-5626-4f2f-b8f7-2de12472c5cb"
 			type="Recording">
+			</testmodule>
+			<modulegroup
+			id="bcd7bf96-98db-49c0-b389-b53cf8921df6"
+			name="DeletePage"
+			ref="0ec17c20-507d-4a7d-8c75-23e050607f2e">
+				<databinding>
+					<var
+					dataname="modSubmitedPageName"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="c865dd6f-ae2c-46fd-b841-09f92215a50e"
+					variablename="repoSelectedPageName">
+					</var>
+					<var
+					dataname="varDeleteMenuitem"
+					datasourceid="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
+					variableid="4d253b8b-5e1c-4550-8ba9-b21d689e3982"
+					variablename="repoSelectedItem">
+					</var>
+				</databinding>
+			</modulegroup>
+			<testmodule
+			id="bfe1a2a7-1fc5-4ca5-88e1-4313f8743dc4"
+			name="GenerateNewName"
+			ref="da6b3217-35db-4570-ac77-b0335825776a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Page Name"
+					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
+					variableid="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+					variablename="modName">
+					</var>
+					<var
+					dataname="modNewPageName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="2f02d2ab-e902-4601-b2e8-5e2d34683031"
+					variablename="modNewPageName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c1f68a00-2bca-4534-b1c0-cc18db5ca329"
@@ -348,10 +801,142 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="modNewPageName"
+					datasourceid="2e170a85-6bf1-417b-928f-4812cceefe2e"
+					variableid="2f02d2ab-e902-4601-b2e8-5e2d34683031"
+					variablename="modNewPageName">
+					</var>
+					<var
+					dataname="Page Name"
+					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
+					variableid="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+					variablename="modName">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="modGeneratedNewPageName"
 					datasourceid="480875f2-a09a-43f6-b5f0-f46fb43e3685"
 					variableid="2f02d2ab-e902-4601-b2e8-5e2d34683031"
 					variablename="modNewPageName">
+					</var>
+					<var
+					dataname="Page Name"
+					datasourceid="a915eb00-124c-417d-b386-fc7359a07ca1"
+					variableid="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+					variablename="modName">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<modulegroup
+			id="c2683e3f-0bc8-4c5d-978d-a28a4c4a27a1"
+			name="AddNewPage"
+			ref="f9b719eb-a790-4642-a189-944e1e8170a8">
+				<databinding>
+					<var
+					dataname="modNewPageName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="6cd0d94d-656e-4535-bc60-faf5440c1fcf"
+					variablename="modSubmitedPageName">
+					</var>
+					<var
+					dataname="varAddNewMenuitem"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="6b8375f7-0926-486a-8d82-3f65a459d611"
+					variablename="modSelectedItem">
+					</var>
+					<var
+					dataname="modSubmitedParentPage"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="54ae5fc4-e2bd-450c-80df-c91577174290"
+					variablename="modSubmitedParentPage">
+					</var>
+					<var
+					dataname="modSubmitedNumberOfColumn"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="54698028-e8b8-4be3-ac31-89487a890ffb"
+					variablename="modSubmitedNumberOfColumn">
+					</var>
+					<var
+					dataname="modSubmitedDisplayAfter"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="f70be4a1-c459-4b27-8099-7b2500700f0e"
+					variablename="modSubmitedDisplayAfter">
+					</var>
+					<var
+					dataname="modSubmitedPublic"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="6fabb1b5-3f85-4b5e-98f0-00e5ac9e168f"
+					variablename="modSubmitedPublic">
+					</var>
+				</databinding>
+			</modulegroup>
+			<modulegroup
+			id="c2d49f4b-26b0-429b-ae04-ec8239e86fe3"
+			name="UpdatePage"
+			ref="a4731725-d9d5-403c-b4b4-2a6441cb72f5">
+				<databinding>
+					<var
+					dataname="varUpdateMenuitem"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="96a8e0bc-fc93-4dd0-ba51-29d1953a65e5"
+					variablename="repoSelectedItem">
+					</var>
+					<var
+					dataname="modNewPageName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="b3e50b36-b914-43d2-ac01-ebac4e0f47c9"
+					variablename="repoSelectedPageName">
+					</var>
+					<var
+					dataname="modUpdatedName"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="d260425d-57b7-46c3-9ee6-7e80553c4123"
+					variablename="modSubmitedPageName">
+					</var>
+					<var
+					dataname="modSubmitedParentPage"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="bc7fedab-d54d-41f2-9193-93f9a4513ae2"
+					variablename="modSubmitedParentPage">
+					</var>
+					<var
+					dataname="modSubmitedNumberOfColumn"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="82d64fbd-4b64-4ed6-b025-3ea4ca364268"
+					variablename="modSubmitedNumberOfColumn">
+					</var>
+					<var
+					dataname="modSubmitedDisplayAfter"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="06e88a50-16f7-43b0-a34b-837a45639c08"
+					variablename="modSubmitedDisplayAfter">
+					</var>
+					<var
+					dataname="modSubmitedPublic"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="4511d58d-949a-45c1-9d3b-a630b081caf4"
+					variablename="modSubmitedPublic">
+					</var>
+					<var
+					dataname="varUpdateMenuitem"
+					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
+					variableid="e960723e-861e-4aa2-8dba-4154ba522cab"
+					variablename="modSelectedItem">
+					</var>
+				</databinding>
+			</modulegroup>
+			<testmodule
+			id="ccaf8cbe-030f-43e3-97c9-d4c5cd5190b5"
+			name="CheckPanelExist"
+			ref="d81c1385-88b0-4402-bc70-c80f7515c228"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="modPanelDisplayName"
+					datasourceid="566817d0-d83e-442a-857b-f73e3b43e657"
+					variableid="af844167-c966-4e63-b871-f7b2cfe39b98"
+					variablename="modCheckPanelExistName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -360,14 +945,39 @@
 			name="TC02">
 				<parameters>
 					<param
-					name="repoSelectedItem"
+					name="modSelectedItem"
+					value="Add Page">
+					</param>
+					<param
+					name="modSubmitedPageName"
 					value="">
+					</param>
+					<param
+					name="modSubmitedParentPage"
+					value="">
+					</param>
+					<param
+					name="modSubmitedNumberOfColumn"
+					value="">
+					</param>
+					<param
+					name="modSubmitedDisplayAfter"
+					value="">
+					</param>
+					<param
+					name="modSubmitedPublic"
+					value="">
+					</param>
+					<param
+					name="varDeleteMenuitem"
+					value="Delete">
 					</param>
 				</parameters>
 			</testcase>
 			<smartfoldernode
+			datasource="PageData"
 			id="e4f02c3b-6f39-4123-b262-dbe82de8919d"
-			name="CreateNewPage">
+			name="ManagePage">
 			</smartfoldernode>
 			<testcase
 			id="e9a25934-0242-443d-a76b-609e6fbd38ce"
@@ -376,10 +986,30 @@
 				<parameters>
 					<param
 					name="varBrowserName"
-					value="Firefox">
+					value="IE">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f2f2e9e4-bad6-4b9b-af10-a93239a1b09b"
+			name="GenerateNewName"
+			ref="da6b3217-35db-4570-ac77-b0335825776a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Display Name"
+					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+					variableid="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+					variablename="modName">
+					</var>
+					<var
+					dataname="modPanelDisplayName"
+					datasourceid="566817d0-d83e-442a-857b-f73e3b43e657"
+					variableid="2f02d2ab-e902-4601-b2e8-5e2d34683031"
+					variablename="modNewPageName">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="f3d4749f-4b94-4e49-865b-eccff2fa3158"
 			name="TC04">
@@ -389,8 +1019,40 @@
 					value="Overview">
 					</param>
 					<param
-					name="repoSelectedItem"
+					name="varDeleteMenuitem"
 					value="Delete">
+					</param>
+					<param
+					name="modNewPageName"
+					value="">
+					</param>
+					<param
+					name="modUpdatedName"
+					value="">
+					</param>
+					<param
+					name="varAddNewMenuitem"
+					value="Add Page">
+					</param>
+					<param
+					name="modSubmitedParentPage"
+					value="">
+					</param>
+					<param
+					name="modSubmitedNumberOfColumn"
+					value="">
+					</param>
+					<param
+					name="modSubmitedDisplayAfter"
+					value="">
+					</param>
+					<param
+					name="modSubmitedPublic"
+					value="">
+					</param>
+					<param
+					name="varUpdateMenuitem"
+					value="Edit">
 					</param>
 				</parameters>
 			</testcase>
@@ -418,6 +1080,22 @@
 					name="modSelectedItem"
 					value="Edit">
 					</param>
+					<param
+					name="modNewPageName"
+					value="">
+					</param>
+					<param
+					name="modUpdatedName"
+					value="">
+					</param>
+					<param
+					name="varAddNewMenuitem"
+					value="Add Page">
+					</param>
+					<param
+					name="varDeleteMenuitem"
+					value="Delete">
+					</param>
 				</parameters>
 			</testcase>
 		</flatlistofchildren>
@@ -442,21 +1120,17 @@
 							id="19414ec3-8d6a-4b52-9ce8-9829b23a235e"
 							name="LogIn">
 							</testmodule>
-							<testmodule
-							id="c1f68a00-2bca-4534-b1c0-cc18db5ca329"
-							name="GenerateNewName">
-							</testmodule>
-							<testmodule
-							id="906c11cb-462e-47d2-8c28-e18c9e316c96"
-							name="GenerateUpdateName">
-							</testmodule>
 						</setup>
 						<smartfoldernode
 						id="e4f02c3b-6f39-4123-b262-dbe82de8919d"
-						name="CreateNewPage">
+						name="ManagePage">
 							<testcase
 							id="2e170a85-6bf1-417b-928f-4812cceefe2e"
 							name="TC01">
+								<testmodule
+								id="c1f68a00-2bca-4534-b1c0-cc18db5ca329"
+								name="GenerateNewName">
+								</testmodule>
 								<modulegroup
 								id="48e822ec-1cbb-405e-bca9-b7f30b575d34"
 								name="AddNewPage">
@@ -465,14 +1139,22 @@
 								id="97862a55-8bc1-4737-bc71-4578952fa5c5"
 								name="CheckPageExist">
 								</testmodule>
+								<modulegroup
+								id="1042108e-19ce-4fab-9dc3-d82ed1e66025"
+								name="DeletePage">
+								</modulegroup>
 							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="a5bc563e-7a1b-4857-a30e-2d15f5df6964"
-						name="ManagePage">
 							<testcase
 							id="d3cf6ee8-05e9-40c5-8341-c54eb0d5ccd0"
 							name="TC02">
+								<testmodule
+								id="80f702ef-0087-4fac-9fb2-cad191235053"
+								name="GenerateNewName">
+								</testmodule>
+								<modulegroup
+								id="6c7873db-d3dc-403f-9555-ece2cbdcc179"
+								name="AddNewPage">
+								</modulegroup>
 								<testmodule
 								id="057647f9-7f35-441b-a0ba-97574b62c117"
 								name="SelectPage">
@@ -481,10 +1163,26 @@
 								id="8ff7f7a8-5868-4dc1-926f-a94c80c82ad6"
 								name="CheckPageIsNavigated">
 								</testmodule>
+								<modulegroup
+								id="bcd7bf96-98db-49c0-b389-b53cf8921df6"
+								name="DeletePage">
+								</modulegroup>
 							</testcase>
 							<testcase
 							id="fde06d93-708e-4658-be1e-dd1529f3bcbf"
 							name="TC03">
+								<testmodule
+								id="479e2759-436f-4dc3-868e-cfb16e20022b"
+								name="GenerateNewName">
+								</testmodule>
+								<testmodule
+								id="906c11cb-462e-47d2-8c28-e18c9e316c96"
+								name="GenerateUpdateName">
+								</testmodule>
+								<modulegroup
+								id="10401169-65e9-415d-b582-10311d090836"
+								name="AddNewPage">
+								</modulegroup>
 								<modulegroup
 								id="5c71d1f7-b755-4ecf-9a22-c29fa8dc1408"
 								name="UpdatePage">
@@ -493,10 +1191,30 @@
 								id="0a97c1bc-1df4-470a-b0bd-f0048b3bcf18"
 								name="CheckPageExist">
 								</testmodule>
+								<modulegroup
+								id="725005a5-1783-4143-b0b0-1f23f492950c"
+								name="DeletePage">
+								</modulegroup>
 							</testcase>
 							<testcase
 							id="f3d4749f-4b94-4e49-865b-eccff2fa3158"
 							name="TC04">
+								<testmodule
+								id="bfe1a2a7-1fc5-4ca5-88e1-4313f8743dc4"
+								name="GenerateNewName">
+								</testmodule>
+								<testmodule
+								id="28f3f90f-68d5-4769-831e-b2ec74064f8c"
+								name="GenerateUpdateName">
+								</testmodule>
+								<modulegroup
+								id="c2683e3f-0bc8-4c5d-978d-a28a4c4a27a1"
+								name="AddNewPage">
+								</modulegroup>
+								<modulegroup
+								id="c2d49f4b-26b0-429b-ae04-ec8239e86fe3"
+								name="UpdatePage">
+								</modulegroup>
 								<modulegroup
 								id="5fb80f1a-fd90-4212-8257-016dfb635ed8"
 								name="DeletePage">
@@ -508,6 +1226,38 @@
 								<testmodule
 								id="a5ed8436-b22b-42a7-ad2f-e455558553c0"
 								name="CheckPageNotExist">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="43afd8f3-bf93-4c33-9bc5-d8c418226932"
+						name="ManagePanel">
+							<testcase
+							id="566817d0-d83e-442a-857b-f73e3b43e657"
+							name="TC08">
+								<testmodule
+								id="f2f2e9e4-bad6-4b9b-af10-a93239a1b09b"
+								name="GenerateNewName">
+								</testmodule>
+								<testmodule
+								id="3d922a14-ec55-4f59-a417-5a5e71d9a349"
+								name="SelectHeaderMenuItem">
+								</testmodule>
+								<modulegroup
+								id="8935d71e-989e-47ac-92e8-efd7bce52e89"
+								name="AddPanel-Indicator">
+								</modulegroup>
+								<testmodule
+								id="0ec8510c-ef31-476b-b8ed-ba8de0ff2361"
+								name="CheckColorSelected">
+								</testmodule>
+								<testmodule
+								id="a9ea170c-85b0-4169-99e7-28171d6ccd4b"
+								name="SubmitPanel">
+								</testmodule>
+								<testmodule
+								id="ccaf8cbe-030f-43e3-97c9-d4c5cd5190b5"
+								name="CheckPanelExist">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -530,15 +1280,16 @@
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
-		filename="TADashboard_TestData.xlsx"
-		id="3e8b693e-cacd-48b9-ab16-a6a484c31088"
-		includefile="Checked"
+		id="3ca9618c-c7fd-4ca0-945b-3ac4d972371e"
+		includefile="Unchecked"
 		lastknownrowcount="1"
-		name="LoginInfo"
-		type="Ranorex.Core.Data.ExcelDataConnector"
-		worksheetname="LoginData"
-		worksheetrange="Auto-Range">
+		name="BaseConfig"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
 			<lastknowncolumns>
+				<column>
+					Domain
+				</column>
 				<column>
 					Repository
 				</column>
@@ -551,6 +1302,9 @@
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
+					Domain
+				</columnname>
+				<columnname>
 					Password
 				</columnname>
 				<columnname>
@@ -560,16 +1314,17 @@
 					Username
 				</columnname>
 			</maskedcolumns>
+			<file>
+				D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\TADashboard_BaseData.csv
+			</file>
 		</DataSource>
 		<DataSource
-		filename="F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\TADashboard_TestData.xlsx"
-		id="a915eb00-124c-417d-b386-fc7359a07ca1"
+		id="d4f308ce-1175-4278-8284-4c2d12d15692"
 		includefile="Unchecked"
 		lastknownrowcount="1"
-		name="PageInfo"
-		type="Ranorex.Core.Data.ExcelDataConnector"
-		worksheetname="PageData"
-		worksheetrange="Auto-Range">
+		name="PageData"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
 			<lastknowncolumns>
 				<column>
 					Page Name
@@ -588,7 +1343,103 @@
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					Display After
+				</columnname>
+				<columnname>
+					Number of Columns
+				</columnname>
+				<columnname>
+					Page Name
+				</columnname>
+				<columnname>
+					Parent Name
+				</columnname>
+				<columnname>
+					Public
+				</columnname>
 			</maskedcolumns>
+			<file>
+				D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\Page\TADashboard_PageInfo.csv
+			</file>
+		</DataSource>
+		<DataSource
+		id="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="PanelData"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					Type
+				</column>
+				<column>
+					Data Profile
+				</column>
+				<column>
+					Display Name
+				</column>
+				<column>
+					Title
+				</column>
+				<column>
+					Show Title
+				</column>
+				<column>
+					Statistic field
+				</column>
+				<column>
+					Value
+				</column>
+				<column>
+					Percentage
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					Color
+				</column>
+				<column>
+					ExColor
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					Color
+				</columnname>
+				<columnname>
+					Data Profile
+				</columnname>
+				<columnname>
+					Display Name
+				</columnname>
+				<columnname>
+					From
+				</columnname>
+				<columnname>
+					Percentage
+				</columnname>
+				<columnname>
+					Show Title
+				</columnname>
+				<columnname>
+					Statistic field
+				</columnname>
+				<columnname>
+					Title
+				</columnname>
+				<columnname>
+					Type
+				</columnname>
+				<columnname>
+					Value
+				</columnname>
+			</maskedcolumns>
+			<file>
+				D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\Panel\TADashboard_TestData_Panel.csv
+			</file>
 		</DataSource>
 	</datasources>
 	<testconfigurations
@@ -596,13 +1447,13 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="2e170a85-6bf1-417b-928f-4812cceefe2e">
+			id="43afd8f3-bf93-4c33-9bc5-d8c418226932">
 			</testcontainer>
 			<testcontainer
 			id="480875f2-a09a-43f6-b5f0-f46fb43e3685">
 			</testcontainer>
 			<testcontainer
-			id="e4f02c3b-6f39-4123-b262-dbe82de8919d">
+			id="566817d0-d83e-442a-857b-f73e3b43e657">
 			</testcontainer>
 			<testcontainer
 			id="e9a25934-0242-443d-a76b-609e6fbd38ce">

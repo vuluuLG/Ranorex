@@ -25,7 +25,7 @@ mode="Global">
 	<variables>
 		<var
 		id="af844167-c966-4e63-b871-f7b2cfe39b98"
-		name="modPanelName">
+		name="modCheckPanelExistName">
 		</var>
 	</variables>
 	<recorditems>
@@ -45,7 +45,7 @@ mode="Global">
 				<argument
 				argname="modCheckPanelExistName"
 				id="9e5482ff-23ca-4393-bf69-48e7db0d6e02"
-				variable="modPanelName">
+				variable="modCheckPanelExistName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

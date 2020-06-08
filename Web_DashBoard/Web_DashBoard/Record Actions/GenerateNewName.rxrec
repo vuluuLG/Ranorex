@@ -27,6 +27,10 @@ mode="Global">
 		id="2f02d2ab-e902-4601-b2e8-5e2d34683031"
 		name="modNewPageName">
 		</var>
+		<var
+		id="59b40e61-d36b-4ccf-8592-31cf36947cf3"
+		name="modName">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
@@ -48,7 +52,8 @@ mode="Global">
 			id="d6eac8a7-ff4c-48e8-b7ea-a902dc4861ad">
 				<argument
 				argname="modName"
-				id="423c99e1-280a-4d92-8696-36b2956ed056">
+				id="423c99e1-280a-4d92-8696-36b2956ed056"
+				variable="modName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

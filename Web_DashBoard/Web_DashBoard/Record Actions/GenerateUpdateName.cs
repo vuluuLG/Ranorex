@@ -42,6 +42,7 @@ namespace Web_DashBoard.Record_Actions
         public GenerateUpdateName()
         {
             modUpdatedName = "";
+            modUpdateName = "";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace Web_DashBoard.Record_Actions
         {
             get { return _modUpdatedName; }
             set { _modUpdatedName = value; }
+        }
+
+        string _modUpdateName;
+
+        /// <summary>
+        /// Gets or sets the value of variable modUpdateName.
+        /// </summary>
+        [TestVariable("662328e7-5c21-4284-b51b-8fa2ef5646a6")]
+        public string modUpdateName
+        {
+            get { return _modUpdateName; }
+            set { _modUpdateName = value; }
         }
 
 #endregion
@@ -92,7 +105,7 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            modUpdatedName = GetUpdatedName("");
+            modUpdatedName = GetUpdatedName(modUpdateName);
             Delay.Milliseconds(0);
             
         }

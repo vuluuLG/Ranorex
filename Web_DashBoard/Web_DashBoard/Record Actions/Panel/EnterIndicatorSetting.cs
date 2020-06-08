@@ -46,7 +46,8 @@ namespace Web_DashBoard.Record_Actions.Panel
             modPanelStatisticfield = "Created by";
             modPanelValue = "administrator";
             modPanelPercentage = "false";
-            modPanelCriterias = "";
+            modPanelFroms = "";
+            modPanelColors = "";
         }
 
         /// <summary>
@@ -119,16 +120,28 @@ namespace Web_DashBoard.Record_Actions.Panel
             set { _modPanelPercentage = value; }
         }
 
-        string _modPanelCriterias;
+        string _modPanelFroms;
 
         /// <summary>
-        /// Gets or sets the value of variable modPanelCriterias.
+        /// Gets or sets the value of variable modPanelFroms.
         /// </summary>
-        [TestVariable("fa6c220c-371f-43aa-b7fd-d03b8c1a736d")]
-        public string modPanelCriterias
+        [TestVariable("c326afc5-3bbf-46a2-bc4c-db93b6ffb179")]
+        public string modPanelFroms
         {
-            get { return _modPanelCriterias; }
-            set { _modPanelCriterias = value; }
+            get { return _modPanelFroms; }
+            set { _modPanelFroms = value; }
+        }
+
+        string _modPanelColors;
+
+        /// <summary>
+        /// Gets or sets the value of variable modPanelColors.
+        /// </summary>
+        [TestVariable("83ab5b5f-d318-45a9-8476-004099028efc")]
+        public string modPanelColors
+        {
+            get { return _modPanelColors; }
+            set { _modPanelColors = value; }
         }
 
 #endregion
@@ -177,7 +190,7 @@ namespace Web_DashBoard.Record_Actions.Panel
             repo.Dashboard.Panels.DisplaySettingTab.IndicatorSettingGroup.cbxPercentage.Element.SetAttributeValue("Checked", modPanelPercentage);
             Delay.Milliseconds(0);
             
-            AddCriteria(modPanelCriterias);
+            AddCriteria(modPanelFroms, modPanelColors);
             Delay.Milliseconds(0);
             
         }

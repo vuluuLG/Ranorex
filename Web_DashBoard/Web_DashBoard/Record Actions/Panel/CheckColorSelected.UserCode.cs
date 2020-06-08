@@ -33,8 +33,32 @@ namespace Web_DashBoard.Record_Actions.Panel
             // Your recording specific initialization code goes here.
         }
 
+        public void GetBGColor(Ranorex.Adapter tdTagToInspect)  
+        {  
+            TdTag tdTagElmt = tdTagToInspect.Element;  
+            var bgColor = tdTagElmt.GetStyle("background-color");  
+            Regex regExp = new Regex(@"\((\d{1,3}), (\d{1,3}), (\d{1,3})\)");  
+            MatchCollection matchCol = regExp.Matches(bgColor);  
+            if (matchCol.Count >=1)  
+            {  
+                Match[] rgbArray = new Match[matchCol.Count];  
+                matchCol.CopyTo(rgbArray, 0);  
+                int rCol = int.Parse(rgbArray[0].Groups[1].Value);  
+                int gCol = int.Parse(rgbArray[0].Groups[2].Value);  
+                int bCol = int.Parse(rgbArray[0].Groups[3].Value);  
+                string hexColor = "#"+HexFromRGB(rCol, gCol, bCol);  
+            }  
+        }  
+  
+        private string HexFromRGB(int r, int g, int b)  
+        {  
+            return ColorTranslator.FromHtml(String.Format("#{0:X2}{1:X2}{2:X2}", r, g, b)).Name.Remove(0,2);  
+        }  
+        
+        
         public void CheckElementColor(string modColors)
         {
+        	Report.Log(ReportLevel.Info,"Validate","Validate Color added ["+modColors+"]");
         	if (modColors!="") {
         		string[] varColors = modColors.Split(',');
         		int loops = varColors.Length;
@@ -42,9 +66,9 @@ namespace Web_DashBoard.Record_Actions.Panel
         			int varRow = i + 2;       			
         			
         			InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";        		      			
-        			
-        			//string varStyle = txtColor.Element.GetAttributeValue("style");
-        			//Report.Log(ReportLevel.Error,varStyle);
+        			string currentColor = txtColor.Element.GetAttributeValueText("background-color"); 
+        			Report.Log(ReportLevel.Info,currentColor);
+        			//Validate.AreEqual(currentColor,varColors[i]);
         		}
         	}        	
         }

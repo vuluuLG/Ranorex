@@ -381,6 +381,18 @@
       <UserCode>true</UserCode>
       <id>985eb837-ec9c-4858-9dc5-8d99b6c69e5b</id>
     </Compile>
+    <Compile Include="Record Actions\SelectRowItem.cs">
+      <BoundTo>e36c3aa2-7467-4954-8b6a-19b7971f08f5</BoundTo>
+      <DependentUpon>SelectRowItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>be53a4ca-6e95-4181-bb75-7e73ef6e799f</id>
+    </Compile>
+    <Compile Include="Record Actions\SelectRowItem.UserCode.cs">
+      <BoundTo>e36c3aa2-7467-4954-8b6a-19b7971f08f5</BoundTo>
+      <DependentUpon>SelectRowItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddedabbc-66d7-461b-b21c-f7fb65539add</id>
+    </Compile>
     <Compile Include="Web_DashBoardRepository.cs">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <DependentUpon>Web_DashBoardRepository.rxrep</DependentUpon>
@@ -468,9 +480,9 @@
       <recordtableid>d81c1385-88b0-4402-bc70-c80f7515c228</recordtableid>
     </None>
     <None Include="Record Actions\Panel\EnterIndicatorSetting.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>6181e54f-53d7-46f3-befb-d8bfa440e9e9</id>
       <recordtableid>08c95115-3695-442b-ae6d-cbf4150d3788</recordtableid>
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
     </None>
     <None Include="Record Actions\Panel\EnterPanelInfo.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
@@ -501,6 +513,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>836d5f0f-8567-4cda-9ca1-6923f9669018</id>
     </Content>
+    <None Include="Record Actions\SelectRowItem.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>e36c3aa2-7467-4954-8b6a-19b7971f08f5</id>
+      <recordtableid>e04541d0-965e-4da8-9e99-0b6534d318b2</recordtableid>
+    </None>
     <None Include="Web_DashBoardRepository.rximg">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <DependentUpon>Web_DashBoardRepository.rxrep</DependentUpon>

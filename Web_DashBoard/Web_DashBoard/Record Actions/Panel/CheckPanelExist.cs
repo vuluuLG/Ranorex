@@ -41,7 +41,7 @@ namespace Web_DashBoard.Record_Actions.Panel
         /// </summary>
         public CheckPanelExist()
         {
-            modPanelName = "";
+            modCheckPanelExistName = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace Web_DashBoard.Record_Actions.Panel
 
 #region Variables
 
-        string _modPanelName;
+        string _modCheckPanelExistName;
 
         /// <summary>
-        /// Gets or sets the value of variable modPanelName.
+        /// Gets or sets the value of variable modCheckPanelExistName.
         /// </summary>
         [TestVariable("af844167-c966-4e63-b871-f7b2cfe39b98")]
-        public string modPanelName
+        public string modCheckPanelExistName
         {
-            get { return _modPanelName; }
-            set { _modPanelName = value; }
+            get { return _modCheckPanelExistName; }
+            set { _modCheckPanelExistName = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace Web_DashBoard.Record_Actions.Panel
 
             Init();
 
-            CheckPanelExists(modPanelName);
+            CheckPanelExists(modCheckPanelExistName);
             Delay.Milliseconds(0);
             
         }

@@ -180,12 +180,13 @@ namespace Web_DashBoard
             RepoItemInfo _dashboard123Info;
             RepoItemInfo _dashboardInfo;
             RepoItemInfo _labeltagindicatorInfo;
+            RepoItemInfo _chkdelpanelInfo;
 
             /// <summary>
             /// Creates a new Dashboard  folder.
             /// </summary>
             public DashboardAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Dashboard", "/dom[@domain='192.168.170.92']", parentFolder, 30000, null, false, "934797ae-8706-4401-9275-bf20491199a0", "")
+                    base("Dashboard", "/dom[@domain='192.168.1.112']", parentFolder, 30000, null, false, "934797ae-8706-4401-9275-bf20491199a0", "")
             {
                 _panels = new Web_DashBoardRepositoryFolders.PanelsFolder(this);
                 _colorpickertable = new Web_DashBoardRepositoryFolders.ColorPickerTableFolder(this);
@@ -199,6 +200,7 @@ namespace Web_DashBoard
                 _dashboard123Info = new RepoItemInfo(this, "Dashboard123", ".//form[#'form1']//table/tbody/tr[3]/?/?/a[@innertext='Dashboard_123']", 30000, null, "6f49cc90-ebe4-4957-8add-84638cc81905");
                 _dashboardInfo = new RepoItemInfo(this, "Dashboard", ".//form[#'form1']//table/tbody/tr[2]/?/?/a[@innertext='Dashboard']", 30000, null, "4efb26ba-4092-4e6c-b6d8-c90ccb1cd744");
                 _labeltagindicatorInfo = new RepoItemInfo(this, "LabelTagIndicator", ".//table[#'infoSettings']/tbody/tr[1]/?/?/label[@innertext=' Indicator']", 30000, null, "27f76110-6f1e-4f99-ab91-56cf5552ce91");
+                _chkdelpanelInfo = new RepoItemInfo(this, "ChkDelPanel", ".//input[#'chkDelPanel']", 30000, null, "08c9b039-1a50-49df-b5c5-cb69c1dfdd85");
             }
 
             /// <summary>
@@ -342,6 +344,30 @@ namespace Web_DashBoard
                 get
                 {
                     return _labeltagindicatorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChkDelPanel item.
+            /// </summary>
+            [RepositoryItem("08c9b039-1a50-49df-b5c5-cb69c1dfdd85")]
+            public virtual Ranorex.InputTag ChkDelPanel
+            {
+                get
+                {
+                    return _chkdelpanelInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChkDelPanel item info.
+            /// </summary>
+            [RepositoryItemInfo("08c9b039-1a50-49df-b5c5-cb69c1dfdd85")]
+            public virtual RepoItemInfo ChkDelPanelInfo
+            {
+                get
+                {
+                    return _chkdelpanelInfo;
                 }
             }
 

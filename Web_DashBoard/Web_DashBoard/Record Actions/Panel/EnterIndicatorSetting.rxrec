@@ -47,8 +47,12 @@ mode="Global">
 			false
 		</var>
 		<var
-		id="fa6c220c-371f-43aa-b7fd-d03b8c1a736d"
-		name="modPanelCriterias">
+		id="c326afc5-3bbf-46a2-bc4c-db93b6ffb179"
+		name="modPanelFroms">
+		</var>
+		<var
+		id="83ab5b5f-d318-45a9-8476-004099028efc"
+		name="modPanelColors">
 		</var>
 	</variables>
 	<recorditems>
@@ -616,9 +620,19 @@ iiigAooooAKKKKACiiigAooooA//2Q==
 			<arguments
 			id="b4b36d93-b196-4d04-a18c-20afcd6e2192">
 				<argument
-				argname="modPanelCriterias"
+				argname="modPanelFroms"
 				id="6fc45deb-0c1f-4a26-8723-0f85bcf02bcb"
-				variable="modPanelCriterias">
+				variable="modPanelFroms">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="modPanelColors"
+				id="70701fdb-a9b7-4021-a39e-d6b5b48a9242"
+				variable="modPanelColors">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

@@ -28,31 +28,48 @@ mode="Desktop">
 		name="modBrowser">
 			Chrome
 		</var>
+		<var
+		id="dd935287-e460-4408-b802-3bb74b33b4fb"
+		name="mdDomain">
+			192.168.1.19
+		</var>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="IE"
-		clearcache="False"
-		clearcookies="False"
+		<userrecorditem
+		classname="OpenBrowser"
 		enabled="True"
-		incognito="False"
-		instrument="True"
-		killexisting="False"
-		maximized="True"
+		isexternaltestmethod="False"
+		methodname="OpenBrowser_OpenDashboard"
+		namespace="Web_DashBoard.Record_Actions"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="BrowserName"
-				variable="modBrowser">
-				</binding>
 			</bindings>
-			<url>
-				http://192.168.170.92/TADashboard/
-			</url>
-		</openwebsiterecorditem>
+			<arguments
+			id="2f817df7-a6e1-42a7-af99-427f08567941">
+				<argument
+				argname="modDomain"
+				id="69276346-5e38-432a-ba87-6dacdb4f21ed"
+				variable="mdDomain">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="modBrowser"
+				id="e8260486-5eb2-483c-ae37-2768aba46908"
+				variable="modBrowser">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"

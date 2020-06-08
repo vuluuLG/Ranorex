@@ -33,46 +33,46 @@ namespace Web_DashBoard.Record_Actions.Panel
             // Your recording specific initialization code goes here.
         }
 
-        public void AddCriteria(string modPanelCriterias)
+        public void AddCriteria(string modPanelFroms, string modPanelColors)
         {           
-        	Report.Log(ReportLevel.Info,"Add Criterias: " + modPanelCriterias);
-        	if (modPanelCriterias!="") {
-        		if (modPanelCriterias.Split(',').Length==1) {
-        			repo.Dashboard.TblThreshold.txtCriteria.Element.SetAttributeValue("Value",modPanelCriterias.Split('-')[0]);
-        			repo.Dashboard.TblThreshold.TxtColor.Click();
-        			repo.Dashboard.ColorPickerTable.SelfInfo.WaitForExists(5000);
-        			TdTag varPickedColor = "//table[@id='colorPickerTable']//td[@title~'"+modPanelCriterias.Split('-')[1]+"']";
-        			varPickedColor.Click();
-        			repo.Dashboard.ColorPickerTable.SelfInfo.WaitForNotExists(5000);
-        		} else {
-        			string[] varCriterias = modPanelCriterias.Split(',');
-        			for (int i = 0; i < varCriterias.Length; i++) {   
-        				string varFrom = varCriterias[i].Split('-')[0];
-        				string varColor = varCriterias[i].Split('-')[1];
-        				int varRow = i+2;        				
-        				
-        				Report.Log(ReportLevel.Info,"varFrom: " + varFrom);
-        				Report.Log(ReportLevel.Info,"varColor: " + varColor);
-        				
-        				if (i>0) {    
-							int varButtonRow = i+1;        					
-							ImgTag btnAdd = "//table[@id='tblThreshold']//tr["+ varButtonRow +"]//img[@id='btnAdd']";        					
-							Report.Log(ReportLevel.Info,"Add one more  criteria.");
-        					btnAdd.Click();
-        				}
-        				
-        				InputTag txtFrom = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='criteria']";
-        				InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";        				        				
-        				
-        				txtFrom.Element.SetAttributeValue("Value",varFrom);
-        				txtColor.Click();
-        				repo.Dashboard.ColorPickerTable.SelfInfo.WaitForExists(5000);
-        				
-        				TdTag tdPickedColor = "//table[@id='colorPickerTable']//td[@title~'"+ varColor +"']";
-        				tdPickedColor.Click();
+        	Report.Log(ReportLevel.Info,"Add Criterias: " + modPanelFroms);
+        	if (modPanelFroms!="") {
+        		string[] arrFroms = modPanelFroms.Split(',');
+        		string[] arrColors = modPanelColors.Split(',');
+        		
+        		for (int i = 0; i < arrFroms.Length; i++) {
+        			string varFrom = arrFroms[i];
+        			string varColor = arrColors[i];
+        			int varRow = i+2;
+        			if (i>0) {
+        				int varButtonRow = i+1;        					
+						ImgTag btnAdd = "//table[@id='tblThreshold']//tr["+ varButtonRow +"]//img[@id='btnAdd']";        					
+						Report.Log(ReportLevel.Info,"Add one more  criteria.");
+        				btnAdd.Click();
         			}
+        			InputTag txtFrom = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='criteria']";
+        			InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";        				        				
+        				
+        			txtFrom.Element.SetAttributeValue("Value",varFrom);
+        			txtColor.Click();
+        			repo.Dashboard.ColorPickerTable.SelfInfo.WaitForExists(5000);
+        				
+        			TdTag tdPickedColor = "//table[@id='colorPickerTable']//td[@title~'"+ varColor +"']";
+        			tdPickedColor.Click();        			
         		}
-        	}
+        	}      	
+        }
+
+        public void SetStatisticField(RepoItemInfo selecttagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$modPanelStatisticfield' on item 'selecttagInfo'.", selecttagInfo);
+            selecttagInfo.FindAdapter<SelectTag>().Element.SetAttributeValue("TagValue", modPanelStatisticfield);
+        }
+
+        public void Set_value_cbbStatisticField(RepoItemInfo selecttagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '$modPanelStatisticfield' on item 'selecttagInfo'.", selecttagInfo);
+            selecttagInfo.FindAdapter<SelectTag>().Element.SetAttributeValue("TagValue", modPanelStatisticfield);
         }
     }
 }

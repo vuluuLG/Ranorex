@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <Array name="active" />
+  <Array name="active">
+    <Element value="Web_Dashboard_Test.rxtst" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="Web_Dashboard_Test.rxtst" />
-    <Element value="Web_Dashboard_TestRepository.rxrep" />
-    <Element value="Web_Dashboard_Test.rxtmg" />
-    <Element value="Recording1.rxrec" />
+    <Element value="app.config" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
