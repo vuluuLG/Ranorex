@@ -23,6 +23,10 @@ mode="Global">
 	namespace="Web_DashBoard.Record_Actions">
 	</codegen>
 	<variables>
+		<var
+		id="f020f97b-4983-4ded-8386-594568ff5f66"
+		name="modSelectedRowItemName">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
@@ -40,7 +44,8 @@ mode="Global">
 			id="a7d9a002-9645-48db-ba6e-8df75add8159">
 				<argument
 				argname="modSelectedRowItemName"
-				id="62273381-994d-4c48-884d-1272530ad774">
+				id="62273381-994d-4c48-884d-1272530ad774"
+				variable="modSelectedRowItemName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -49,6 +54,26 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="a0efbe5c-49b9-48bd-8a00-86db1fedd494">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="934797ae-8706-4401-9275-bf20491199a0"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@pageurl~'TADashboard']
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="3d69752c-c401-4365-984f-a65a6c995533"

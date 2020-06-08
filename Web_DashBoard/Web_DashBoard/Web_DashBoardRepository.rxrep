@@ -42,7 +42,7 @@ name="Web_DashBoardRepository">
 					name="rdbPanelType"
 					refimgid="34b41734-f3cf-4f43-a0da-31c6de248a82"
 					searchtimeout="30000ms">
-						/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//label[@innertext~$repoPanelType]/input[@name='radPanelType']
+						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//label[@innertext~$repoPanelType]/input[@name='radPanelType']
 					</item>
 					<item
 					capname="selecttag"
@@ -50,7 +50,7 @@ name="Web_DashBoardRepository">
 					name="cbbDataProfile"
 					refimgid="eaacd73f-7dcc-4996-ba48-1b76134286d4"
 					searchtimeout="30000ms">
-						/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//select[@id='cbbProfile']
+						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//select[@id='cbbProfile']
 					</item>
 					<item
 					capname="inputtag"
@@ -58,7 +58,7 @@ name="Web_DashBoardRepository">
 					name="txtDisplayName"
 					refimgid="f3e3eb5c-e142-4c8f-978f-753343537b72"
 					searchtimeout="30000ms">
-						/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//input[@id='txtDisplayName']
+						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']//input[@id='txtDisplayName']
 					</item>
 					<folder
 					capname="fieldsettag"
@@ -73,7 +73,7 @@ name="Web_DashBoardRepository">
 						name="txtTitle"
 						refimgid="f511cb01-1ab8-4576-87d8-6c9023db112c"
 						searchtimeout="30000ms">
-							/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='txtIndicatorTitle']
+							/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='txtIndicatorTitle']
 						</item>
 						<item
 						capname="inputtag"
@@ -81,7 +81,7 @@ name="Web_DashBoardRepository">
 						name="cbxShowTitle"
 						refimgid="fd5b9fa3-5d4c-4f2b-b648-95182c3d887b"
 						searchtimeout="30000ms">
-							/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='chkShowTitle']
+							/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='chkShowTitle']
 						</item>
 						<item
 						capname="selecttag"
@@ -89,7 +89,7 @@ name="Web_DashBoardRepository">
 						name="cbbStatisticField"
 						refimgid="d53652c1-ca3b-4068-bdad-66bdab7a3ed8"
 						searchtimeout="30000ms">
-							/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//select[@id='cbbStatField']
+							/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//select[@id='cbbStatField']
 						</item>
 						<item
 						capname="selecttag"
@@ -97,7 +97,7 @@ name="Web_DashBoardRepository">
 						name="cbbValue"
 						refimgid="17290e4e-475b-4473-bd82-8d7c496b3746"
 						searchtimeout="30000ms">
-							/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//select[@id='cbbStatFieldValue']
+							/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//select[@id='cbbStatFieldValue']
 						</item>
 						<item
 						capname="inputtag"
@@ -105,14 +105,14 @@ name="Web_DashBoardRepository">
 						name="cbxPercentage"
 						refimgid="27a0eb95-aa51-4296-b03a-e6653d4ad8fa"
 						searchtimeout="30000ms">
-							/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='chkPercentage']
+							/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']//input[@id='chkPercentage']
 						</item>
 						<basepath>
-							/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']
+							/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']/div[@id='tdSettings']/fieldset[@id='fdSettings']
 						</basepath>
 					</folder>
 					<basepath>
-						/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']
+						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']
 					</basepath>
 				</folder>
 				<folder
@@ -123,7 +123,7 @@ name="Web_DashBoardRepository">
 				searchtimeout="30000ms"
 				usecache="False">
 					<basepath>
-						/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//div[@id='tabs-data']
+						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-data']
 					</basepath>
 				</folder>
 				<item
@@ -131,10 +131,10 @@ name="Web_DashBoardRepository">
 				id="c1a43a33-fbbe-44d7-9ae4-78392c782393"
 				name="btnOK"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_panelPopup']//input[@id='OK']
+					/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//input[@id='OK']
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//div[#'div_panelPopup']
+					/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']
 				</basepath>
 			</folder>
 			<item
@@ -143,7 +143,7 @@ name="Web_DashBoardRepository">
 			name="btnAddNew"
 			refimgid="1a072266-e61e-415e-a41d-3d8403920d87"
 			searchtimeout="30000ms">
-				/dom[@domain='192.168.1.112']//form//a[@innertext='Add New']
+				/dom[@pageurl~'TADashboard']//form//a[@innertext='Add New']
 			</item>
 			<item
 			capname="atag"
@@ -151,7 +151,7 @@ name="Web_DashBoardRepository">
 			name="btnDelete"
 			refimgid="1fa18673-9f7b-41e6-9c07-de5ecc307d1f"
 			searchtimeout="30000ms">
-				/dom[@domain='192.168.1.112']//form//a[@innertext='Delete']
+				/dom[@pageurl~'TADashboard']//form//a[@innertext='Delete']
 			</item>
 			<folder
 			capname="table"
@@ -168,7 +168,7 @@ name="Web_DashBoardRepository">
 				name="TdTagHash7030a0"
 				refimgid="fa2c2103-a583-4a71-8be4-c75caba16940"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//table[@id='colorPickerTable']//td[@title='#7030a0']
+					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title='#7030a0']
 				</item>
 				<item
 				addcaps="unknown,webelement,tdtag"
@@ -177,7 +177,7 @@ name="Web_DashBoardRepository">
 				name="TdTagHashff0000"
 				refimgid="8d99bd21-8768-4367-9860-0d4463e94e0a"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//table[@id='colorPickerTable']//td[@title='#ff0000']
+					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title='#ff0000']
 				</item>
 				<item
 				addcaps="unknown,webelement,tdtag"
@@ -186,10 +186,10 @@ name="Web_DashBoardRepository">
 				name="TdTagHashffff00"
 				refimgid="36d767a4-bf66-49bf-850f-93bde5b4866d"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//table[@id='colorPickerTable']//td[@title='#ffff00']
+					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title='#ffff00']
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//table[@id='colorPickerTable']
+					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']
 				</basepath>
 			</folder>
 			<folder
@@ -207,7 +207,7 @@ name="Web_DashBoardRepository">
 				name="txtCriteria"
 				refimgid="f67af1ce-d772-422a-a3ef-78a30758925d"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//table[#'tblThreshold']//input[#'criteria']
+					/dom[@pageurl~'TADashboard']//table[#'tblThreshold']//input[#'criteria']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -216,10 +216,10 @@ name="Web_DashBoardRepository">
 				name="TxtColor"
 				refimgid="12ff65e7-c23c-4e34-ba17-ae152da7dc83"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//table[#'tblThreshold']//input[#'txtColor']
+					/dom[@pageurl~'TADashboard']//table[#'tblThreshold']//input[#'txtColor']
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//table[#'tblThreshold']
+					/dom[@pageurl~'TADashboard']//table[#'tblThreshold']
 				</basepath>
 			</folder>
 			<folder
@@ -237,7 +237,7 @@ name="Web_DashBoardRepository">
 				name="mniSignedInUser"
 				refimgid="f47e4a76-9eb9-4056-8df8-08185014fecc"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'header']//a[@href~'#Welcome']
+					/dom[@pageurl~'TADashboard']//div[#'header']//a[@href~'#Welcome']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -246,10 +246,10 @@ name="Web_DashBoardRepository">
 				name="mniLogout"
 				refimgid="d9d0021b-c287-4fdd-8ee5-0e37fd233676"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'header']//a[@href~'logout.do']
+					/dom[@pageurl~'TADashboard']//div[#'header']//a[@href~'logout.do']
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//div[#'header']
+					/dom[@pageurl~'TADashboard']//div[#'header']
 				</basepath>
 			</folder>
 			<folder
@@ -267,7 +267,7 @@ name="Web_DashBoardRepository">
 				name="mniSetting"
 				refimgid="39b83222-ee27-4101-97d7-9ada2b9b4872"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'main-menu']//li[@class='mn-setting']
+					/dom[@pageurl~'TADashboard']//div[#'main-menu']//li[@class='mn-setting']
 				</item>
 				<item
 				capname="atag"
@@ -275,10 +275,10 @@ name="Web_DashBoardRepository">
 				name="mniGlobalSetingSelectedItem"
 				refimgid="41466a94-0e18-4daf-aae8-9df93f5b0882"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'main-menu']//a[@innertext=$repoSelectedItem]
+					/dom[@pageurl~'TADashboard']//div[#'main-menu']//a[@innertext=$repoSelectedItem]
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//div[#'main-menu']
+					/dom[@pageurl~'TADashboard']//div[#'main-menu']
 				</basepath>
 			</folder>
 			<folder
@@ -295,7 +295,7 @@ name="Web_DashBoardRepository">
 				name="txtName"
 				refimgid="d1b49a71-f5f3-4210-a842-0b7907adf8fe"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_popup']//input[#'name']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']//input[#'name']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -304,7 +304,7 @@ name="Web_DashBoardRepository">
 				name="btnOK"
 				refimgid="badfaa36-7713-43e5-97e7-94e0ecc4bfe9"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_popup']//input[#'OK']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']//input[#'OK']
 				</item>
 				<item
 				capname="selecttag"
@@ -312,7 +312,7 @@ name="Web_DashBoardRepository">
 				name="cbbParent"
 				refimgid="d57b9190-5ce4-4fce-97e8-bff1a1f6c38d"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_popup']//select[#'parent']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']//select[#'parent']
 				</item>
 				<item
 				capname="selecttag"
@@ -320,7 +320,7 @@ name="Web_DashBoardRepository">
 				name="cbbNumberOfColumn"
 				refimgid="d8c2cf95-2c01-478f-bf32-9ed64b2b03e7"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_popup']//select[#'columnnumber']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']//select[#'columnnumber']
 				</item>
 				<item
 				capname="selecttag"
@@ -328,7 +328,7 @@ name="Web_DashBoardRepository">
 				name="cbbDisplayAfter"
 				refimgid="383e4752-5a87-4627-a754-82b80a28e3ba"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_popup']//select[#'afterpage']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']//select[#'afterpage']
 				</item>
 				<item
 				capname="inputtag"
@@ -336,10 +336,10 @@ name="Web_DashBoardRepository">
 				name="cbxPublic"
 				refimgid="ddeb2b5f-3386-4a4a-b138-57fe02fe237d"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'div_popup']//input[#'ispublic']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']//input[#'ispublic']
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//div[#'div_popup']
+					/dom[@pageurl~'TADashboard']//div[#'div_popup']
 				</basepath>
 			</folder>
 			<folder
@@ -357,7 +357,7 @@ name="Web_DashBoardRepository">
 				name="cbbRepository"
 				refimgid="518a4dc8-1f9e-40f2-a2c5-03e653f9fc78"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'content']//select[#'repository']
+					/dom[@pageurl~'TADashboard']//div[#'content']//select[#'repository']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -366,7 +366,7 @@ name="Web_DashBoardRepository">
 				name="txtUsername"
 				refimgid="283aa778-c4a4-4994-bb20-04815d34da8b"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'content']//input[#'username']
+					/dom[@pageurl~'TADashboard']//div[#'content']//input[#'username']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -375,7 +375,7 @@ name="Web_DashBoardRepository">
 				name="txtPassword"
 				refimgid="62646c4e-5cba-4597-a7e5-ee8245587e6e"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'content']//input[#'password']
+					/dom[@pageurl~'TADashboard']//div[#'content']//input[#'password']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -384,50 +384,14 @@ name="Web_DashBoardRepository">
 				name="btnLogin"
 				refimgid="0a97d0e5-7080-40c7-b61e-fadb74281900"
 				searchtimeout="30000ms">
-					/dom[@domain='192.168.1.112']//div[#'content']//div[@class='btn-login']
+					/dom[@pageurl~'TADashboard']//div[#'content']//div[@class='btn-login']
 				</item>
 				<basepath>
-					/dom[@domain='192.168.1.112']//div[#'content']
+					/dom[@pageurl~'TADashboard']//div[#'content']
 				</basepath>
 			</folder>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="6f49cc90-ebe4-4957-8add-84638cc81905"
-			name="Dashboard123"
-			refimgid="45c8bdb7-d152-44c6-ada7-7c635b5f1f51"
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.1.112']//form[#'form1']//table/tbody/tr[3]/?/?/a[@innertext='Dashboard_123']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="4efb26ba-4092-4e6c-b6d8-c90ccb1cd744"
-			name="Dashboard"
-			refimgid="7c244018-b898-424b-b9a3-0b3c47498067"
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.1.112']//form[#'form1']//table/tbody/tr[2]/?/?/a[@innertext='Dashboard']
-			</item>
-			<item
-			addcaps="unknown,webelement,labeltag"
-			capname="labeltag"
-			id="27f76110-6f1e-4f99-ab91-56cf5552ce91"
-			name="LabelTagIndicator"
-			refimgid="d0b7ecd0-ac90-4303-8885-71ddee016c9b"
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.1.112']//table[#'infoSettings']/tbody/tr[1]/?/?/label[@innertext=' Indicator']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="08c9b039-1a50-49df-b5c5-cb69c1dfdd85"
-			name="ChkDelPanel"
-			refimgid="3bfff2ec-2b30-4ba7-8acf-4ba7387568ae"
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.1.112']//input[#'chkDelPanel']
-			</item>
 			<basepath>
-				/dom[@domain='192.168.1.112']
+				/dom[@pageurl~'TADashboard']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN

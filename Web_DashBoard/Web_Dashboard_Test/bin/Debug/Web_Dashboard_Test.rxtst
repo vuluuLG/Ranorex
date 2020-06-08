@@ -53,7 +53,7 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="ExColor"
+					dataname="Color"
 					datasourceid="7bf30aa4-a121-4eb6-a657-feae061cdb8a"
 					variableid="2166aa37-135c-42aa-a153-66574de63a7c"
 					variablename="modExpectedColors">
@@ -449,6 +449,19 @@
 			id="5fcabaa4-cbfb-473f-a5fb-28efd4591841"
 			name="setup">
 			</setup>
+			<modulegroup
+			id="609adcc1-2070-42c7-ab86-eb8cb06aac0a"
+			name="DeletePanel"
+			ref="702630b1-df40-4dcc-9b38-bae7cdd64d08">
+				<databinding>
+					<var
+					dataname="modPanelDisplayName"
+					datasourceid="566817d0-d83e-442a-857b-f73e3b43e657"
+					variableid="775f36cd-ecba-455b-bba7-66314690e6af"
+					variablename="modSelectedRowItemName">
+					</var>
+				</databinding>
+			</modulegroup>
 			<modulegroup
 			id="6c7873db-d3dc-403f-9555-ece2cbdcc179"
 			name="AddNewPage"
@@ -1259,6 +1272,10 @@
 								id="ccaf8cbe-030f-43e3-97c9-d4c5cd5190b5"
 								name="CheckPanelExist">
 								</testmodule>
+								<modulegroup
+								id="609adcc1-2070-42c7-ab86-eb8cb06aac0a"
+								name="DeletePanel">
+								</modulegroup>
 							</testcase>
 						</smartfoldernode>
 						<teardown
@@ -1315,7 +1332,7 @@
 				</columnname>
 			</maskedcolumns>
 			<file>
-				D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\TADashboard_BaseData.csv
+				F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\TADashboard_BaseData.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -1360,7 +1377,7 @@
 				</columnname>
 			</maskedcolumns>
 			<file>
-				D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\Page\TADashboard_PageInfo.csv
+				F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\Page\TADashboard_PageInfo.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -1416,6 +1433,9 @@
 					Display Name
 				</columnname>
 				<columnname>
+					ExColor
+				</columnname>
+				<columnname>
 					From
 				</columnname>
 				<columnname>
@@ -1438,7 +1458,7 @@
 				</columnname>
 			</maskedcolumns>
 			<file>
-				D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\Panel\TADashboard_TestData_Panel.csv
+				F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\TestData\Panel\TADashboard_TestData_Panel.csv
 			</file>
 		</DataSource>
 	</datasources>

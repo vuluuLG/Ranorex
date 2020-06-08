@@ -1,4 +1,3 @@
-F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\TADashboard_TestData.xlsx
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_DashBoard.rxsqc
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_DashBoard.rxtmg
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_Dashboard_Test.rxtmg
@@ -16,9 +15,7 @@ F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_Test.csproj.CopyComplete
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_Test.exe
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_Test.pdb
-F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_Dashboard_Panels.rxtst
 F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_Dashboard_Test.rxsqc
-F:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\TADashboard_TestData_Panel.xlsx
 D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_DashBoard.rxsqc
 D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_DashBoard.rxtmg
 D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\Web_Dashboard_Test.rxsqc

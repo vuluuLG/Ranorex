@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Web_DashBoard.Record_Actions
 {
-    public partial class SelectRowItem
+    public partial class ConfirmDelete
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,13 +33,14 @@ namespace Web_DashBoard.Record_Actions
             // Your recording specific initialization code goes here.
         }
 
-        public void selectRownItem(string modSelectedRowItemName)
+        public void MergedUserCodeMethod(RepoItemInfo popup,RepoItemInfo control)
         {
-			Report.Log(ReportLevel.Info, "Set Checkbox", "Select item name as '" +modSelectedRowItemName+ "'");
-            InputTag chkDelPanel = "/dom[@pageurl~'TADashboard']//table/tbody/tr//a[@innertext='"+modSelectedRowItemName+"']/ancestor::tr//input";
-            chkDelPanel.Element.SetAttributeValue("Checked","True");
-            
+            PopupWatcher watcher = new PopupWatcher();
+			watcher.WatchAndClick(popup,control);
+			watcher.Start();
+			control.WaitForNotExists(5000);			
+			watcher.Stop();
         }
-
+       
     }
 }

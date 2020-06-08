@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Web_DashBoard.Record_Actions
 {
-    public partial class ConfirmDeletePage
+    public partial class ClickDeleteItem
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,14 +33,5 @@ namespace Web_DashBoard.Record_Actions
             // Your recording specific initialization code goes here.
         }
 
-        public void MergedUserCodeMethod(RepoItemInfo popup,RepoItemInfo control)
-        {
-            PopupWatcher watcher = new PopupWatcher();
-			watcher.WatchAndClick(popup,control);
-			watcher.Start();
-			control.WaitForNotExists(5000);			
-			watcher.Stop();
-        }
-       
     }
 }

@@ -33,9 +33,10 @@ namespace Web_DashBoard.Record_Actions.Panel
             // Your recording specific initialization code goes here.
         }
 
-        public void GetBGColor(Ranorex.Adapter tdTagToInspect)  
+        public string GetBGColor(Ranorex.Adapter control)  
         {  
-            TdTag tdTagElmt = tdTagToInspect.Element;  
+        	string hexColor = "";
+            InputTag tdTagElmt = control.Element;  
             var bgColor = tdTagElmt.GetStyle("background-color");  
             Regex regExp = new Regex(@"\((\d{1,3}), (\d{1,3}), (\d{1,3})\)");  
             MatchCollection matchCol = regExp.Matches(bgColor);  
@@ -46,16 +47,16 @@ namespace Web_DashBoard.Record_Actions.Panel
                 int rCol = int.Parse(rgbArray[0].Groups[1].Value);  
                 int gCol = int.Parse(rgbArray[0].Groups[2].Value);  
                 int bCol = int.Parse(rgbArray[0].Groups[3].Value);  
-                string hexColor = "#"+HexFromRGB(rCol, gCol, bCol);  
+                hexColor = "#"+HexFromRGB(rCol, gCol, bCol);  
             }  
+            return hexColor;
         }  
   
         private string HexFromRGB(int r, int g, int b)  
         {  
             return ColorTranslator.FromHtml(String.Format("#{0:X2}{1:X2}{2:X2}", r, g, b)).Name.Remove(0,2);  
         }  
-        
-        
+                
         public void CheckElementColor(string modColors)
         {
         	Report.Log(ReportLevel.Info,"Validate","Validate Color added ["+modColors+"]");
@@ -63,12 +64,9 @@ namespace Web_DashBoard.Record_Actions.Panel
         		string[] varColors = modColors.Split(',');
         		int loops = varColors.Length;
         		for (int i = 0; i < loops; i++) {
-        			int varRow = i + 2;       			
-        			
-        			InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";        		      			
-        			string currentColor = txtColor.Element.GetAttributeValueText("background-color"); 
-        			Report.Log(ReportLevel.Info,currentColor);
-        			//Validate.AreEqual(currentColor,varColors[i]);
+        			int varRow = i + 2;        			
+        			InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";         			
+					Validate.AreEqual(this.GetBGColor(txtColor).ToUpper(),varColors[i].ToUpper());
         		}
         	}        	
         }

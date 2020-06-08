@@ -177,16 +177,12 @@ namespace Web_DashBoard
             Web_DashBoardRepositoryFolders.LogInFolder _login;
             RepoItemInfo _btnaddnewInfo;
             RepoItemInfo _btndeleteInfo;
-            RepoItemInfo _dashboard123Info;
-            RepoItemInfo _dashboardInfo;
-            RepoItemInfo _labeltagindicatorInfo;
-            RepoItemInfo _chkdelpanelInfo;
 
             /// <summary>
             /// Creates a new Dashboard  folder.
             /// </summary>
             public DashboardAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Dashboard", "/dom[@domain='192.168.1.112']", parentFolder, 30000, null, false, "934797ae-8706-4401-9275-bf20491199a0", "")
+                    base("Dashboard", "/dom[@pageurl~'TADashboard']", parentFolder, 30000, null, false, "934797ae-8706-4401-9275-bf20491199a0", "")
             {
                 _panels = new Web_DashBoardRepositoryFolders.PanelsFolder(this);
                 _colorpickertable = new Web_DashBoardRepositoryFolders.ColorPickerTableFolder(this);
@@ -197,10 +193,6 @@ namespace Web_DashBoard
                 _login = new Web_DashBoardRepositoryFolders.LogInFolder(this);
                 _btnaddnewInfo = new RepoItemInfo(this, "btnAddNew", ".//form//a[@innertext='Add New']", 30000, null, "17b1980c-9a05-44a5-b416-2e619527cd02");
                 _btndeleteInfo = new RepoItemInfo(this, "btnDelete", ".//form//a[@innertext='Delete']", 30000, null, "e9c1b1ae-2b3e-4b9d-bd1b-3ac48d216f63");
-                _dashboard123Info = new RepoItemInfo(this, "Dashboard123", ".//form[#'form1']//table/tbody/tr[3]/?/?/a[@innertext='Dashboard_123']", 30000, null, "6f49cc90-ebe4-4957-8add-84638cc81905");
-                _dashboardInfo = new RepoItemInfo(this, "Dashboard", ".//form[#'form1']//table/tbody/tr[2]/?/?/a[@innertext='Dashboard']", 30000, null, "4efb26ba-4092-4e6c-b6d8-c90ccb1cd744");
-                _labeltagindicatorInfo = new RepoItemInfo(this, "LabelTagIndicator", ".//table[#'infoSettings']/tbody/tr[1]/?/?/label[@innertext=' Indicator']", 30000, null, "27f76110-6f1e-4f99-ab91-56cf5552ce91");
-                _chkdelpanelInfo = new RepoItemInfo(this, "ChkDelPanel", ".//input[#'chkDelPanel']", 30000, null, "08c9b039-1a50-49df-b5c5-cb69c1dfdd85");
             }
 
             /// <summary>
@@ -272,102 +264,6 @@ namespace Web_DashBoard
                 get
                 {
                     return _btndeleteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Dashboard123 item.
-            /// </summary>
-            [RepositoryItem("6f49cc90-ebe4-4957-8add-84638cc81905")]
-            public virtual Ranorex.ATag Dashboard123
-            {
-                get
-                {
-                    return _dashboard123Info.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Dashboard123 item info.
-            /// </summary>
-            [RepositoryItemInfo("6f49cc90-ebe4-4957-8add-84638cc81905")]
-            public virtual RepoItemInfo Dashboard123Info
-            {
-                get
-                {
-                    return _dashboard123Info;
-                }
-            }
-
-            /// <summary>
-            /// The Dashboard item.
-            /// </summary>
-            [RepositoryItem("4efb26ba-4092-4e6c-b6d8-c90ccb1cd744")]
-            public virtual Ranorex.ATag Dashboard
-            {
-                get
-                {
-                    return _dashboardInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Dashboard item info.
-            /// </summary>
-            [RepositoryItemInfo("4efb26ba-4092-4e6c-b6d8-c90ccb1cd744")]
-            public virtual RepoItemInfo DashboardInfo
-            {
-                get
-                {
-                    return _dashboardInfo;
-                }
-            }
-
-            /// <summary>
-            /// The LabelTagIndicator item.
-            /// </summary>
-            [RepositoryItem("27f76110-6f1e-4f99-ab91-56cf5552ce91")]
-            public virtual Ranorex.LabelTag LabelTagIndicator
-            {
-                get
-                {
-                    return _labeltagindicatorInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LabelTagIndicator item info.
-            /// </summary>
-            [RepositoryItemInfo("27f76110-6f1e-4f99-ab91-56cf5552ce91")]
-            public virtual RepoItemInfo LabelTagIndicatorInfo
-            {
-                get
-                {
-                    return _labeltagindicatorInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ChkDelPanel item.
-            /// </summary>
-            [RepositoryItem("08c9b039-1a50-49df-b5c5-cb69c1dfdd85")]
-            public virtual Ranorex.InputTag ChkDelPanel
-            {
-                get
-                {
-                    return _chkdelpanelInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ChkDelPanel item info.
-            /// </summary>
-            [RepositoryItemInfo("08c9b039-1a50-49df-b5c5-cb69c1dfdd85")]
-            public virtual RepoItemInfo ChkDelPanelInfo
-            {
-                get
-                {
-                    return _chkdelpanelInfo;
                 }
             }
 

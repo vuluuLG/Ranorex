@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ConfirmDeletePage"
+	classname="ConfirmDelete"
 	namespace="Web_DashBoard.Record_Actions">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="ConfirmDeletePage"
+		classname="ConfirmDelete"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="MergedUserCodeMethod"
@@ -88,7 +88,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ConfirmDeletePage.UserCode.cs
+		ConfirmDelete.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

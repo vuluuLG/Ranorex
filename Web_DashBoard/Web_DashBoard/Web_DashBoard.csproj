@@ -177,6 +177,18 @@
       <id>52063458-ed49-4c4b-a213-9ca6fb9a8fa0</id>
       <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
     </Compile>
+    <Compile Include="Record Actions\ClickDeleteItem.cs">
+      <DependentUpon>ClickDeleteItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72849da5-597f-4e42-b918-6ac7e0a8a2f6</id>
+      <BoundTo>7a25a5fb-8d92-480f-a9a8-4d41e2ba462b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\ClickDeleteItem.UserCode.cs">
+      <DependentUpon>ClickDeleteItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a826e38-b627-45a2-bc82-c6bab9a3997f</id>
+      <BoundTo>7a25a5fb-8d92-480f-a9a8-4d41e2ba462b</BoundTo>
+    </Compile>
     <Compile Include="Record Actions\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -189,15 +201,15 @@
       <id>38d25232-85a7-4740-9fe4-12fb48c6f4f8</id>
       <BoundTo>b4679731-9dd5-4031-a053-fbb45db0d5c3</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\ConfirmDeletePage.cs">
+    <Compile Include="Record Actions\ConfirmDelete.cs">
       <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
-      <DependentUpon>ConfirmDeletePage.rxrec</DependentUpon>
+      <DependentUpon>ConfirmDelete.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>b918d800-16a7-4deb-a5c7-2dc776f55a05</id>
     </Compile>
-    <Compile Include="Record Actions\ConfirmDeletePage.UserCode.cs">
+    <Compile Include="Record Actions\ConfirmDelete.UserCode.cs">
       <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
-      <DependentUpon>ConfirmDeletePage.rxrec</DependentUpon>
+      <DependentUpon>ConfirmDelete.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5fd3f6a1-736f-476c-b145-97a277444f1e</id>
     </Compile>
@@ -424,12 +436,17 @@
       <id>91e80488-8bd2-4a96-abec-104393c24e6b</id>
       <recordtableid>3b04334d-a660-4e7a-a871-7817814435b9</recordtableid>
     </None>
+    <None Include="Record Actions\ClickDeleteItem.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>7a25a5fb-8d92-480f-a9a8-4d41e2ba462b</id>
+      <recordtableid>255bb4e3-40e8-45c7-a6aa-790dde55c617</recordtableid>
+    </None>
     <None Include="Record Actions\CloseBrowser.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>b4679731-9dd5-4031-a053-fbb45db0d5c3</id>
       <recordtableid>37ce4a7a-5626-4f2f-b8f7-2de12472c5cb</recordtableid>
     </None>
-    <None Include="Record Actions\ConfirmDeletePage.rxrec">
+    <None Include="Record Actions\ConfirmDelete.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</id>
       <recordtableid>6fa42f98-ed2a-4abc-a1c7-057f776bad1c</recordtableid>

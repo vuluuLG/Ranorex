@@ -24,29 +24,29 @@ namespace Web_DashBoard.Record_Actions
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ConfirmDeletePage recording.
+    ///The ConfirmDelete recording.
     /// </summary>
     [TestModule("6fa42f98-ed2a-4abc-a1c7-057f776bad1c", ModuleType.Recording, 1)]
-    public partial class ConfirmDeletePage : ITestModule
+    public partial class ConfirmDelete : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
         /// </summary>
         public static global::Web_DashBoard.Web_DashBoardRepository repo = global::Web_DashBoard.Web_DashBoardRepository.Instance;
 
-        static ConfirmDeletePage instance = new ConfirmDeletePage();
+        static ConfirmDelete instance = new ConfirmDelete();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ConfirmDeletePage()
+        public ConfirmDelete()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ConfirmDeletePage Instance
+        public static ConfirmDelete Instance
         {
             get { return instance; }
         }

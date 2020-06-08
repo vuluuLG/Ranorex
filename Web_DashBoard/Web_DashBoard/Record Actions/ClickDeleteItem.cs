@@ -24,47 +24,34 @@ namespace Web_DashBoard.Record_Actions
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SelectRowItem recording.
+    ///The ClickDeleteItem recording.
     /// </summary>
-    [TestModule("e04541d0-965e-4da8-9e99-0b6534d318b2", ModuleType.Recording, 1)]
-    public partial class SelectRowItem : ITestModule
+    [TestModule("255bb4e3-40e8-45c7-a6aa-790dde55c617", ModuleType.Recording, 1)]
+    public partial class ClickDeleteItem : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Web_DashBoard.Web_DashBoardRepository repository.
         /// </summary>
         public static global::Web_DashBoard.Web_DashBoardRepository repo = global::Web_DashBoard.Web_DashBoardRepository.Instance;
 
-        static SelectRowItem instance = new SelectRowItem();
+        static ClickDeleteItem instance = new ClickDeleteItem();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SelectRowItem()
+        public ClickDeleteItem()
         {
-            modSelectedRowItemName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SelectRowItem Instance
+        public static ClickDeleteItem Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _modSelectedRowItemName;
-
-        /// <summary>
-        /// Gets or sets the value of variable modSelectedRowItemName.
-        /// </summary>
-        [TestVariable("f020f97b-4983-4ded-8386-594568ff5f66")]
-        public string modSelectedRowItemName
-        {
-            get { return _modSelectedRowItemName; }
-            set { _modSelectedRowItemName = value; }
-        }
 
 #endregion
 
@@ -92,10 +79,9 @@ namespace Web_DashBoard.Record_Actions
 
             Init();
 
-            selectRownItem(modSelectedRowItemName);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dashboard.btnDelete' at Center.", repo.Dashboard.btnDeleteInfo, new RecordItemIndex(0));
+            repo.Dashboard.btnDelete.Click();
             Delay.Milliseconds(0);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.Dashboard.Self, false, new RecordItemIndex(1));
             
         }
 

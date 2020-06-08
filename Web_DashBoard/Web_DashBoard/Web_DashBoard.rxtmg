@@ -3,6 +3,12 @@
 rxversion="9.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="03e289f5-2a2f-4591-93f4-588ce13e5787"
+			name="ClickDeleteItem"
+			ref="255bb4e3-40e8-45c7-a6aa-790dde55c617"
+			type="Recording">
+			</testmodule>
 			<modulegroups
 			id="0c7a5e19-c94e-4d50-9337-15c4efcd8f52"
 			name="Web_DashBoard">
@@ -45,6 +51,12 @@ rxversion="9.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="1ac399c3-79ab-4e9f-a6e9-cdf8acded068"
+			name="SelectRowItem"
+			ref="e04541d0-965e-4da8-9e99-0b6534d318b2"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="21028e42-b7ec-4011-aefb-831731ba710b"
 			name="SubmitPageInfo"
 			ref="bace383e-ce24-4d35-a374-222d4571d37a"
@@ -63,9 +75,24 @@ rxversion="9.3">
 			ref="20c8d798-d8a1-42db-b4ff-556fdb9d001b"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="702630b1-df40-4dcc-9b38-bae7cdd64d08"
+			name="DeletePanel">
+				<groupvariables>
+					<groupvariable
+					id="775f36cd-ecba-455b-bba7-66314690e6af"
+					name="modSelectedRowItemName">
+						<modulevariable
+						moduleref="1ac399c3-79ab-4e9f-a6e9-cdf8acded068"
+						name="modSelectedRowItemName"
+						variableref="f020f97b-4983-4ded-8386-594568ff5f66">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="7614283e-bc73-4424-814b-d51691180150"
-			name="ConfirmDeletePage"
+			name="ConfirmDelete"
 			ref="6fa42f98-ed2a-4abc-a1c7-057f776bad1c"
 			type="Recording">
 			</testmodule>
@@ -159,6 +186,12 @@ rxversion="9.3">
 			id="b30b667d-d9e7-4305-863e-9ddf005a16d2"
 			name="SelectGlobleMenuItem"
 			ref="acbfcf69-45f3-4f16-8229-d16754701799"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bd2c2a53-1677-41fb-9941-0a48c6aaec5a"
+			name="ConfirmDelete"
+			ref="6fa42f98-ed2a-4abc-a1c7-057f776bad1c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -394,7 +427,7 @@ rxversion="9.3">
 					</testmodule>
 					<testmodule
 					id="7614283e-bc73-4424-814b-d51691180150"
-					name="ConfirmDeletePage">
+					name="ConfirmDelete">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef
@@ -415,6 +448,22 @@ rxversion="9.3">
 					<testmodule
 					id="2dc6b9b0-92e9-4621-8c60-96e764a0cc6d"
 					name="SubmitPanel">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="702630b1-df40-4dcc-9b38-bae7cdd64d08"
+				name="DeletePanel">
+					<testmodule
+					id="1ac399c3-79ab-4e9f-a6e9-cdf8acded068"
+					name="SelectRowItem">
+					</testmodule>
+					<testmodule
+					id="03e289f5-2a2f-4591-93f4-588ce13e5787"
+					name="ClickDeleteItem">
+					</testmodule>
+					<testmodule
+					id="bd2c2a53-1677-41fb-9941-0a48c6aaec5a"
+					name="ConfirmDelete">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>
