@@ -33,5 +33,13 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
             // Your recording specific initialization code goes here.
         }
 
+        public void Close_application_Close(RepoItemInfo buttonInfo)
+        {
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'buttonInfo'.", buttonInfo);
+            if(buttonInfo.Exists(2000)){
+               	Host.Current.CloseApplication(buttonInfo.FindAdapter<Button>(), 1000);
+            }
+        }
+
     }
 }

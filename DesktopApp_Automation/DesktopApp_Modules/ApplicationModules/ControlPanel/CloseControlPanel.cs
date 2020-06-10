@@ -79,8 +79,8 @@ namespace DesktopApp_Modules.ApplicationModules.ControlPanel
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationModules.ControlPanel.ProgramsAndFeatures.Close'.", repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.CloseInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.ApplicationModules.ControlPanel.ProgramsAndFeatures.Close, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ProgramsAndFeatures.CloseButton'.", repo.ProgramsAndFeatures.CloseButtonInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.ProgramsAndFeatures.CloseButton, new Duration(0));
             Delay.Milliseconds(0);
             
         }

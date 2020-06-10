@@ -5,12 +5,17 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="DesktopApp_ModulesRepository.rxrep" />
+    <Element value="DesktopApp_Modules.rxtmg" />
+    <Element value="ApplicationModules\Notepad\DeleteFile.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Array name="recentusercodeselections">
-      <Element value="DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Wait_for_ButtonNpp786InstallerX646Exe1(RepoItemInfo buttonInfo)" />
-      <Element value="DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Report_Log()" />
-      <Element value="DesktopApp_Modules.ApplicationModules.Chrome.DownloadApp.Get_value_ButtonNpp786InstallerX646Exe(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_Close(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonFinish(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonInstall(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonNext2(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonNext1(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_IAgree(RepoItemInfo buttonInfo)" />
     </Array>
   </Properties>
 </Properties>

@@ -53,6 +53,16 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable repoProcessNameScreenApp.
+        /// </summary>
+        [TestVariable("f932be9f-bdab-4342-8312-f6361a48bc95")]
+        public string repoProcessNameScreenApp
+        {
+            get { return repo.repoProcessNameScreenApp; }
+            set { repo.repoProcessNameScreenApp = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,8 +89,8 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange'.", repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.SelfInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.SelfInfo, "Enabled", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Application.ScreenApp'.", repo.Application.ScreenApp.SelfInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.Application.ScreenApp.SelfInfo);
             Delay.Milliseconds(100);
             
         }

@@ -53,6 +53,16 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable repoProcessNameScreenApp.
+        /// </summary>
+        [TestVariable("f932be9f-bdab-4342-8312-f6361a48bc95")]
+        public string repoProcessNameScreenApp
+        {
+            get { return repo.repoProcessNameScreenApp; }
+            set { repo.repoProcessNameScreenApp = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,8 +89,7 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.Close'.", repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.CloseInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.ApplicationModules.Notepad.CProgramFilesNotepadPlusPlusChange.Close, 1000);
+            Close_application_Close(repo.Application.ScreenApp.CloseInfo);
             Delay.Milliseconds(0);
             
         }

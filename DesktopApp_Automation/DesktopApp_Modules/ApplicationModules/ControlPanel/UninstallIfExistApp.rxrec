@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bcf63e84-8b93-4423-b0c1-45fbe12d487c"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="UninstallIfExistApp"
+	namespace="DesktopApp_Modules.ApplicationModules.ControlPanel">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="UninstallIfExistApp"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="UninstallIfExist"
+		namespace="DesktopApp_Modules.ApplicationModules.ControlPanel"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0e616c7f-f285-4741-9393-9d1d139c1fbd">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="ef30ac9a-a357-4910-917a-46d0e437f538"
+	name="DesktopApp_ModulesRepository"
+	relativepath="..\..\DesktopApp_ModulesRepository.rxrep">
+		<codegen
+		classname="DesktopApp_ModulesRepository"
+		namespace="DesktopApp_Modules">
+		</codegen>
+		<rootfolder
+		id="43f9a22b-83ee-4a35-a13f-fe3b69b8da65"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		UninstallIfExistApp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

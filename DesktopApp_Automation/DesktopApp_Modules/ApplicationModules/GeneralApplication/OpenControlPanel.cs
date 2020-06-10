@@ -79,8 +79,8 @@ namespace DesktopApp_Modules.ApplicationModules.GeneralApplication
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.GeneralApplication.Text4101' at 123;16.", repo.ApplicationModules.GeneralApplication.Text4101Info, new RecordItemIndex(0));
-            repo.ApplicationModules.GeneralApplication.Text4101.Click("123;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer.TypeHereToSearch' at Center.", repo.Explorer.TypeHereToSearchInfo, new RecordItemIndex(0));
+            repo.Explorer.TypeHereToSearch.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Control Panel'.", new RecordItemIndex(1));
@@ -91,8 +91,8 @@ namespace DesktopApp_Modules.ApplicationModules.GeneralApplication
             Keyboard.Press("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationModules.GeneralApplication.Tasklink' at 71;4.", repo.ApplicationModules.GeneralApplication.TasklinkInfo, new RecordItemIndex(3));
-            repo.ApplicationModules.GeneralApplication.Tasklink.Click("71;4");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ControlPanel.Tasklink' at Center.", repo.ControlPanel.TasklinkInfo, new RecordItemIndex(3));
+            repo.ControlPanel.Tasklink.Click();
             Delay.Milliseconds(0);
             
         }

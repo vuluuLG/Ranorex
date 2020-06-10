@@ -4,13 +4,10 @@ rxversion="9.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="28468fc8-50f4-4472-8828-a1fc7af49e73"
-			name="UninstallApp"
+			id="1b363589-e717-4465-8995-251f24edb93a"
+			name="UninstallIfExistApp"
 			ref="bcf63e84-8b93-4423-b0c1-45fbe12d487c"
 			type="Recording">
-				<description>
-					<![CDATA[Uninstall app]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="4e28b505-9de4-416f-948a-afc8dd3bbc33"
@@ -19,15 +16,6 @@ rxversion="9.3">
 			type="Recording">
 				<description>
 					<![CDATA[Close control panel]]>
-				</description>
-			</testmodule>
-			<testmodule
-			id="575200fb-f270-4782-a098-b0e12e733a04"
-			name="ValidateInstalled"
-			ref="6b238876-72f3-40a2-97ba-4ecf35e8c515"
-			type="Recording">
-				<description>
-					<![CDATA[Validate app installed in control panel]]>
 				</description>
 			</testmodule>
 			<simplefolder
@@ -39,116 +27,23 @@ rxversion="9.3">
 			name="UninstallApp">
 				<groupvariables>
 					<groupvariable
-					defaultvalue="Notepad++ (64-bit x64)"
-					id="50ae6168-a875-429d-a1e0-c330089206cb"
-					name="varSoftwareName">
+					defaultvalue="PyCharm 2020.1.2"
+					id="995a0496-5e75-4108-a4cd-8e3eaf632924"
+					name="repoSoftwareName">
 						<modulevariable
-						moduleref="575200fb-f270-4782-a098-b0e12e733a04"
-						name="varSoftwareName"
-						variableref="5902be29-de50-4d29-b3ce-4662954e7f01">
+						moduleref="1b363589-e717-4465-8995-251f24edb93a"
+						name="repoSoftwareName"
+						variableref="17312650-b8ff-4723-8ac4-27f8eed9d1c2">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					defaultvalue="7.8.6"
-					id="7dc52ece-dbc6-41b5-b777-50d98a225082"
-					name="repoVersionApp">
+					defaultvalue="PyCharm Uninstall"
+					id="39763cb5-60be-4f06-b5f6-79e37debdc25"
+					name="repoUninstallApp">
 						<modulevariable
-						moduleref="575200fb-f270-4782-a098-b0e12e733a04"
-						name="repoVersionApp"
-						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
-						</modulevariable>
-					</groupvariable>
-				</groupvariables>
-			</modulegroupdef>
-			<testmodule
-			id="8c5c9df8-d707-42b5-acf6-0e8411b0f96f"
-			name="DownloadApp"
-			ref="1079f995-3537-470e-a785-773b49ffa279"
-			type="Recording">
-				<description>
-					<![CDATA[Download app]]>
-				</description>
-			</testmodule>
-			<testmodule
-			id="9c45741d-64d2-4e8f-bc86-ff29f9e90d59"
-			name="ValidateDownloaded"
-			ref="9a097a65-4066-42c4-9816-9c541e035607"
-			type="Recording">
-				<description>
-					<![CDATA[Validate app downloaded]]>
-				</description>
-			</testmodule>
-			<testmodule
-			id="baa1395d-8687-46cb-9e93-c34861e98908"
-			name="OpenBrowser"
-			ref="a975b00a-e317-4c5d-bdf8-6ecbe21531f4"
-			type="Recording">
-				<description>
-					<![CDATA[Open browser]]>
-				</description>
-			</testmodule>
-			<modulegroupdef
-			id="c72c4cdc-a1b9-4016-a146-49149c03c451"
-			name="DownloadApp">
-				<groupvariables>
-					<groupvariable
-					defaultvalue="https://notepad-plus-plus.org/downloads/"
-					id="f33472b8-c75d-4b06-b620-9673f5235864"
-					name="varURL">
-						<modulevariable
-						moduleref="baa1395d-8687-46cb-9e93-c34861e98908"
-						name="varURL"
-						variableref="70d5e7d3-2c90-438b-b04e-adf37bb4d86b">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					defaultvalue="Chrome"
-					id="70457a30-be21-4013-a0a4-699af46840d7"
-					name="varBrowser">
-						<modulevariable
-						moduleref="baa1395d-8687-46cb-9e93-c34861e98908"
-						name="varBrowser"
-						variableref="c1e2c134-164f-4b3f-8391-af9b9cbe0c89">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					defaultvalue="npp.7.8.6.Installer.x64"
-					id="050de14d-e0ab-437a-8212-1f18af2505e6"
-					name="varFileSetupName">
-						<modulevariable
-						moduleref="9c45741d-64d2-4e8f-bc86-ff29f9e90d59"
-						name="varFileSetupName"
-						variableref="2a7bc221-2d79-4cb4-80e1-a85d20d7adb9">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					defaultvalue="7.8.6"
-					id="2697d359-48bf-4d98-ab35-c8a90b735cc9"
-					name="repoVersionApp">
-						<modulevariable
-						moduleref="8c5c9df8-d707-42b5-acf6-0e8411b0f96f"
-						name="repoVersionApp"
-						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
-						</modulevariable>
-						<modulevariable
-						moduleref="9c45741d-64d2-4e8f-bc86-ff29f9e90d59"
-						name="repoVersionApp"
-						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
-						</modulevariable>
-						<modulevariable
-						moduleref="d35be50a-6818-43c5-953b-ea1b98306cbd"
-						name="repoVersionApp"
-						variableref="c33a7b58-c069-4176-98d7-9637f83d8b63">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					defaultvalue="64"
-					id="75ed46c0-80aa-4857-bd44-9e20b5705242"
-					name="repoWindownVersion">
-						<modulevariable
-						moduleref="8c5c9df8-d707-42b5-acf6-0e8411b0f96f"
-						name="repoWindownVersion"
-						variableref="f8d32d52-e8bd-4c90-b774-55f6418a93c6">
+						moduleref="1b363589-e717-4465-8995-251f24edb93a"
+						name="repoUninstallApp"
+						variableref="7eef9d79-fb2e-4df1-8e6b-44bbe41bc9f9">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>
@@ -160,15 +55,6 @@ rxversion="9.3">
 			type="Recording">
 				<description>
 					<![CDATA[Open control panel]]>
-				</description>
-			</testmodule>
-			<testmodule
-			id="d35be50a-6818-43c5-953b-ea1b98306cbd"
-			name="CloseBrowser"
-			ref="2fe35adf-b05b-4456-b5bf-b2478c438c6c"
-			type="Recording">
-				<description>
-					<![CDATA[Close browser]]>
 				</description>
 			</testmodule>
 			<modulegroups
@@ -191,36 +77,12 @@ rxversion="9.3">
 						name="OpenControlPanel">
 						</testmodule>
 						<testmodule
-						id="575200fb-f270-4782-a098-b0e12e733a04"
-						name="ValidateInstalled">
-						</testmodule>
-						<testmodule
-						id="28468fc8-50f4-4472-8828-a1fc7af49e73"
-						name="UninstallApp">
+						id="1b363589-e717-4465-8995-251f24edb93a"
+						name="UninstallIfExistApp">
 						</testmodule>
 						<testmodule
 						id="4e28b505-9de4-416f-948a-afc8dd3bbc33"
 						name="CloseControlPanel">
-						</testmodule>
-					</modulegroupdef>
-					<modulegroupdef
-					id="c72c4cdc-a1b9-4016-a146-49149c03c451"
-					name="DownloadApp">
-						<testmodule
-						id="baa1395d-8687-46cb-9e93-c34861e98908"
-						name="OpenBrowser">
-						</testmodule>
-						<testmodule
-						id="8c5c9df8-d707-42b5-acf6-0e8411b0f96f"
-						name="DownloadApp">
-						</testmodule>
-						<testmodule
-						id="9c45741d-64d2-4e8f-bc86-ff29f9e90d59"
-						name="ValidateDownloaded">
-						</testmodule>
-						<testmodule
-						id="d35be50a-6818-43c5-953b-ea1b98306cbd"
-						name="CloseBrowser">
 						</testmodule>
 					</modulegroupdef>
 				</simplefolder>

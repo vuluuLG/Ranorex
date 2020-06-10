@@ -25,24 +25,37 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<userrecorditem
+		classname="CloseApp"
 		enabled="True"
-		graceperiod="1000ms"
-		method="CloseWindow"
-		optional="False"
-		searchpropertyid="bdc74d0a-139e-47a8-b56b-0de6054283e4">
+		isexternaltestmethod="False"
+		methodname="Close_application_Close"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="5c3be95a-f11a-44ba-b12b-7bcd8c5361f4"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@title&gt;'C:\Program Files\Notepad++\change.log']/titlebar/button[@accessiblename='Close']
-				</path>
-			</info>
-		</closeapprecorditem>
+			<arguments
+			id="8c93e065-cc5e-4c47-89c8-b00ae467b691">
+				<argument
+				argname="buttonInfo"
+				id="d473b91d-976b-4d72-9ae4-43d5767f2e5c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="055630ef-5419-4f39-8729-7e882bc372fc"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='notepad++']/?/?/button[@accessiblename='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="ef30ac9a-a357-4910-917a-46d0e437f538"

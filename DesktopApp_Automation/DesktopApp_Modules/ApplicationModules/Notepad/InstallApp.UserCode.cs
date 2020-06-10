@@ -19,6 +19,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using DesktopApp_Modules.Common;
 
 namespace DesktopApp_Modules.ApplicationModules.Notepad
 {
@@ -31,6 +32,65 @@ namespace DesktopApp_Modules.ApplicationModules.Notepad
         private void Init()
         {
             // Your recording specific initialization code goes here.
+        }
+
+        public void Mouse_Click_ButtonOK(RepoItemInfo buttonInfo)
+        {
+        	if(buttonInfo.Exists(Common.Constants.shortTime)){
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+            	buttonInfo.FindAdapter<Button>().Click();
+        	}
+        }
+
+        public void Mouse_Click_ButtonNext(RepoItemInfo buttonInfo)
+        {
+        	if(buttonInfo.Exists(Common.Constants.shortTime)){
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+	            buttonInfo.FindAdapter<Button>().Click();
+        	}
+        }
+
+        public void Mouse_Click_IAgree(RepoItemInfo buttonInfo)
+        {
+        	if(buttonInfo.Exists(Common.Constants.shortTime)){
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+	            buttonInfo.FindAdapter<Button>().Click();
+        	}
+        }
+
+        public void Mouse_Click_ButtonNext1(RepoItemInfo buttonInfo)
+        {
+        	while(buttonInfo.Exists(Common.Constants.shortTime)){
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+	            buttonInfo.FindAdapter<Button>().Click();
+	            buttonInfo.Exists(Common.Constants.shortTime);
+        	}
+        }
+
+        public void Mouse_Click_ButtonInstall(RepoItemInfo buttonInfo)
+        {
+        	if(buttonInfo.Exists(Common.Constants.shortTime)){
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+	            buttonInfo.FindAdapter<Button>().Click();  
+        	}
+        	
+        }
+
+        public void Mouse_Click_ButtonFinish(RepoItemInfo buttonInfo)
+        {
+        	buttonInfo.WaitForExists(Common.Constants.longTime);
+        	if(buttonInfo.Exists(Common.Constants.shortTime)){
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+	            buttonInfo.FindAdapter<Button>().Click();
+        	}
+        }
+
+        public void Mouse_Click_Close(RepoItemInfo buttonInfo)
+        {
+        	if(buttonInfo.Exists(Common.Constants.shortTime)){
+	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+	            buttonInfo.FindAdapter<Button>().Click();
+        	}
         }
 
     }

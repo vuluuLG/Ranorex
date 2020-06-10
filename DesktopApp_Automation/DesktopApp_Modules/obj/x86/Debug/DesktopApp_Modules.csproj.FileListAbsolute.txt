@@ -6,3 +6,7 @@ C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp
 C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\Ranorex.Core.Resolver.dll
 C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\obj\x86\Debug\DesktopApp_Modules.dll
 C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\obj\x86\Debug\DesktopApp_Modules.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\Ranorex Automation Helpers.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\Ranorex.ReportToPDF.exe
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\Ranorex Automation Helpers.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Modules\bin\Debug\Ranorex Automation Helpers.xml

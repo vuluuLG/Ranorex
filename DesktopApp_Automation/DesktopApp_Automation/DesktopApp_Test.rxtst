@@ -3,183 +3,83 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<modulegroup
-			id="16a49419-d907-44e4-a456-d6eec5700fb9"
-			name="DownloadApp"
-			ref="c72c4cdc-a1b9-4016-a146-49149c03c451">
-				<description>
-					<![CDATA[Download app]]>
-				</description>
-				<databinding>
-					<var
-					dataname="repoVersionApp"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="2697d359-48bf-4d98-ab35-c8a90b735cc9"
-					variablename="repoVersionApp">
-					</var>
-					<var
-					dataname="varFileSetupName "
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="050de14d-e0ab-437a-8212-1f18af2505e6"
-					variablename="varFileSetupName">
-					</var>
-					<var
-					dataname="varURL"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="f33472b8-c75d-4b06-b620-9673f5235864"
-					variablename="varURL">
-					</var>
-					<var
-					dataname="varBrowser"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="70457a30-be21-4013-a0a4-699af46840d7"
-					variablename="varBrowser">
-					</var>
-					<var
-					dataname="repoWindownVersion"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="75ed46c0-80aa-4857-bd44-9e20b5705242"
-					variablename="repoWindownVersion">
-					</var>
-				</databinding>
-			</modulegroup>
-			<modulegroup
 			id="29ca3aea-5298-43a7-94af-cbfd52426276"
 			name="UninstallApp"
 			ref="88c01b50-f183-45c5-81a9-8e4d3cbac41e">
 				<description>
-					<![CDATA[Uninstall app]]>
+					<![CDATA[If program exists -> Uninstall app; If not exists, skip.]]>
 				</description>
 				<databinding>
+					<var
+					dataname="repoUninstallApp"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="39763cb5-60be-4f06-b5f6-79e37debdc25"
+					variablename="repoUninstallApp">
+					</var>
+					<var
+					dataname="repoSoftwareName"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="995a0496-5e75-4108-a4cd-8e3eaf632924"
+					variablename="repoSoftwareName">
+					</var>
+				</databinding>
+				<missingdatabinding>
 					<var
 					dataname="repoVersionApp"
 					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
 					variableid="7dc52ece-dbc6-41b5-b777-50d98a225082"
 					variablename="repoVersionApp">
 					</var>
+				</missingdatabinding>
+			</modulegroup>
+			<smartfoldernode
+			datasource="AppData"
+			id="64b27845-8550-467d-94e5-cbf8de636c14"
+			name="ApplicationTest">
+			</smartfoldernode>
+			<testmodule
+			id="659bfc58-4333-49e2-9746-8999ea007419"
+			name="DownloadFileSetup"
+			ref="9772c450-296e-4f85-8832-3597466bd661"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="varSoftwareName"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="50ae6168-a875-429d-a1e0-c330089206cb"
-					variablename="varSoftwareName">
+					dataname="varURI"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="077e92c7-3bd0-4c0c-bfd8-3f73d1701825"
+					variablename="varURI">
+					</var>
+					<var
+					dataname="varLocalPath"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="ded150b1-1a25-4f83-844e-70bef58c2946"
+					variablename="varLocalPath">
 					</var>
 				</databinding>
-			</modulegroup>
-			<teardown
-			id="5b578d00-6af4-4e96-b93d-36245b4f146b"
-			name="teardown">
-			</teardown>
-			<smartfoldernode
-			datasource="MyData"
-			id="64b27845-8550-467d-94e5-cbf8de636c14"
-			name="SmartFolder">
-				<parameters>
-					<param
-					name="repoVersionApp"
-					value="7.8.6">
-					</param>
-					<param
-					name="repoWindownVersion"
-					value="64">
-					</param>
-				</parameters>
-			</smartfoldernode>
+				<missingdatabinding>
+					<var
+					dataname="varLocalPath"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="ded150b1-1a25-4f83-844e-70bef58c2946"
+					variablename="varLocalPath">
+					</var>
+					<var
+					dataname="varURI"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="077e92c7-3bd0-4c0c-bfd8-3f73d1701825"
+					variablename="varURI">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<teardown
 			id="65d233e8-2ee6-4cd2-8013-a6056572c266"
 			name="teardown">
 			</teardown>
-			<modulegroup
-			id="8dba4b68-123e-44ce-b929-0954e4f90509"
-			name="UninstallApp"
-			ref="88c01b50-f183-45c5-81a9-8e4d3cbac41e">
-				<description>
-					<![CDATA[Uninstall app]]>
-				</description>
-				<databinding>
-					<var
-					dataname="repoVersionApp"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="7dc52ece-dbc6-41b5-b777-50d98a225082"
-					variablename="repoVersionApp">
-					</var>
-					<var
-					dataname="varSoftwareName"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="50ae6168-a875-429d-a1e0-c330089206cb"
-					variablename="varSoftwareName">
-					</var>
-				</databinding>
-			</modulegroup>
-			<testmodule
-			id="92115564-20dc-4632-8c5b-cd48869d320c"
-			name="CloseApp"
-			ref="a472755a-fde8-4072-859d-a5f373948c57"
-			type="Recording">
-				<description>
-					<![CDATA[Close app]]>
-				</description>
-			</testmodule>
-			<modulegroup
-			id="947c2a03-183a-4718-b854-91ae612535b6"
-			name="DownloadApp"
-			ref="c72c4cdc-a1b9-4016-a146-49149c03c451">
-				<description>
-					<![CDATA[Download app]]>
-				</description>
-				<databinding>
-					<var
-					dataname="repoVersionApp"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="2697d359-48bf-4d98-ab35-c8a90b735cc9"
-					variablename="repoVersionApp">
-					</var>
-					<var
-					dataname="varFileSetupName "
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="050de14d-e0ab-437a-8212-1f18af2505e6"
-					variablename="varFileSetupName">
-					</var>
-					<var
-					dataname="varBrowser"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="70457a30-be21-4013-a0a4-699af46840d7"
-					variablename="varBrowser">
-					</var>
-					<var
-					dataname="varURL"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="f33472b8-c75d-4b06-b620-9673f5235864"
-					variablename="varURL">
-					</var>
-					<var
-					dataname="repoWindownVersion"
-					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
-					variableid="75ed46c0-80aa-4857-bd44-9e20b5705242"
-					variablename="repoWindownVersion">
-					</var>
-				</databinding>
-			</modulegroup>
-			<testmodule
-			id="98f3ac69-d995-4c63-b735-39ee2db31f61"
-			name="InstallApp"
-			ref="5c2fb7c1-bef7-495e-8078-58f859991342"
-			type="Recording">
-				<description>
-					<![CDATA[Install app]]>
-				</description>
-				<databinding>
-					<var
-					dataname="varStartApp"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
-					variableid="63b67a07-fb9f-4e4b-9fa4-7ec2b13592a1"
-					variablename="varStartApp">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
 			name="TestCase001">
 				<description>
-					<![CDATA[Verify app: install/uninstall]]>
+					<![CDATA[Verify app: install/uninstall and open]]>
 				</description>
 			</testcase>
 			<testsuite
@@ -206,6 +106,28 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="d010ade1-a48a-47c3-ad93-1f87e65c2c6c"
+			name="CloseApp"
+			ref="a472755a-fde8-4072-859d-a5f373948c57"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
 			id="dbd61933-a6f5-4b74-97cc-008d2a581369"
 			name="ValidateAppOpened"
 			ref="44cc08ed-ee9e-4d58-a76d-750ceb07306b"
@@ -213,7 +135,44 @@
 				<description>
 					<![CDATA[Validate app opened]]>
 				</description>
+				<databinding>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="dc4afced-934b-4001-bf47-d8872311b1d1"
+			name="CloseApp"
+			ref="a472755a-fde8-4072-859d-a5f373948c57"
+			type="Recording">
+				<description>
+					<![CDATA[Close app]]>
+				</description>
+				<databinding>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="e39dc36b-1ef7-4ac5-8632-9049e62cc02b"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="ec841ad6-a345-4da2-b043-e5f9e596417f"
 			name="OpenApp"
@@ -225,11 +184,19 @@
 				<databinding>
 					<var
 					dataname="varFileLocation"
-					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
 					variableid="c1f134e0-5996-4020-a3cc-05bb76148dc3"
 					variablename="varFileLocation">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="varFileLocation"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="c1f134e0-5996-4020-a3cc-05bb76148dc3"
+					variablename="varFileLocation">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testcase
 			id="ed080cd5-dd07-413d-8b09-d33deb8f8a32"
@@ -252,12 +219,78 @@
 				</description>
 				<databinding>
 					<var
+					dataname="repoProcessName"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="28ba20a8-c71d-48fb-93bf-651e889402cf"
+					variablename="repoProcessName">
+					</var>
+					<var
+					dataname="varStartApp"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="63b67a07-fb9f-4e4b-9fa4-7ec2b13592a1"
+					variablename="varStartApp">
+					</var>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
 					dataname="varStartApp"
 					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
 					variableid="63b67a07-fb9f-4e4b-9fa4-7ec2b13592a1"
 					variablename="varStartApp">
 					</var>
+					<var
+					dataname="repoProcessNameScreenApp"
+					datasourceid="64b27845-8550-467d-94e5-cbf8de636c14"
+					variableid="f932be9f-bdab-4342-8312-f6361a48bc95"
+					variablename="repoProcessNameScreenApp">
+					</var>
+				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="fd8f9aa0-2960-4f42-85e6-131e6d736643"
+			name="DeleteFile"
+			ref="2eb0b3b6-3579-4d8b-bd74-28ec3b46a358"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="varLocalPath"
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="ae0dc919-078b-4d9e-9f17-56c00a49a5e6"
+					variablename="varLocalPath">
+					</var>
+					<var
+					dataname="varFileSetupName "
+					datasourceid="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
+					variableid="5a6c1bab-4299-4213-a09e-6f46f255c52b"
+					variablename="varFileSetupName">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="varFileSetupName"
+					datasourceid="1d83e744-4fcd-4674-be4d-548a564a546e"
+					variableid="dc306e21-2108-4b2a-b313-fc8946164485"
+					variablename="varFileSetupName">
+					</var>
+					<var
+					dataname="varFileSetupName "
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="5a6c1bab-4299-4213-a09e-6f46f255c52b"
+					variablename="varFileSetupName">
+					</var>
+					<var
+					dataname="varLocalPath"
+					datasourceid="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+					variableid="ae0dc919-078b-4d9e-9f17-56c00a49a5e6"
+					variablename="varLocalPath">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -269,30 +302,22 @@
 				name="DesktopApp_Test">
 					<smartfoldernode
 					id="64b27845-8550-467d-94e5-cbf8de636c14"
-					name="SmartFolder">
+					name="ApplicationTest">
 						<setup
 						id="cd9731b5-c579-4df2-acb1-f84617ba567e"
 						name="setup">
 							<modulegroup
-							id="947c2a03-183a-4718-b854-91ae612535b6"
-							name="DownloadApp">
+							id="29ca3aea-5298-43a7-94af-cbfd52426276"
+							name="UninstallApp">
 							</modulegroup>
-							<testmodule
-							id="98f3ac69-d995-4c63-b735-39ee2db31f61"
-							name="InstallApp">
-							</testmodule>
 						</setup>
 						<testcase
 						id="a0a55f94-0b4d-43ef-a316-6b89a015ccb0"
 						name="TestCase001">
-							<modulegroup
-							id="8dba4b68-123e-44ce-b929-0954e4f90509"
-							name="UninstallApp">
-							</modulegroup>
-							<modulegroup
-							id="16a49419-d907-44e4-a456-d6eec5700fb9"
-							name="DownloadApp">
-							</modulegroup>
+							<testmodule
+							id="659bfc58-4333-49e2-9746-8999ea007419"
+							name="DownloadFileSetup">
+							</testmodule>
 							<testmodule
 							id="ef1bc40f-2a3f-4b47-bd10-5d3568630fc2"
 							name="InstallApp">
@@ -306,21 +331,25 @@
 							name="ValidateAppOpened">
 							</testmodule>
 							<teardown
-							id="5b578d00-6af4-4e96-b93d-36245b4f146b"
+							id="e39dc36b-1ef7-4ac5-8632-9049e62cc02b"
 							name="teardown">
 								<testmodule
-								id="92115564-20dc-4632-8c5b-cd48869d320c"
+								id="d010ade1-a48a-47c3-ad93-1f87e65c2c6c"
 								name="CloseApp">
+								</testmodule>
+								<testmodule
+								id="fd8f9aa0-2960-4f42-85e6-131e6d736643"
+								name="DeleteFile">
 								</testmodule>
 							</teardown>
 						</testcase>
 						<teardown
 						id="65d233e8-2ee6-4cd2-8013-a6056572c266"
 						name="teardown">
-							<modulegroup
-							id="29ca3aea-5298-43a7-94af-cbfd52426276"
-							name="UninstallApp">
-							</modulegroup>
+							<testmodule
+							id="dc4afced-934b-4001-bf47-d8872311b1d1"
+							name="CloseApp">
+							</testmodule>
 						</teardown>
 					</smartfoldernode>
 				</testcase>
@@ -329,11 +358,11 @@
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
-		filename="C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\DesktopApp_Automation\MyData.xlsx"
-		id="51f71513-3f18-42bf-b2c8-2c84fd03d2dc"
+		filename="ApplicationData.xlsx"
+		id="081ae7f8-40f6-4b4a-ad1c-e48dc7dbf582"
 		includefile="Unchecked"
-		lastknownrowcount="2"
-		name="MyData"
+		lastknownrowcount="1"
+		name="AppData"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Browser"
 		worksheetrange="Auto-Range">
@@ -351,13 +380,37 @@
 					varFileLocation
 				</column>
 				<column>
-					varBrowser
+					varURI
 				</column>
 				<column>
-					varURL
+					varLocalPath
+				</column>
+				<column>
+					repoSoftwareName
+				</column>
+				<column>
+					repoUninstallApp
+				</column>
+				<column>
+					repoProcessName
+				</column>
+				<column>
+					repoProcessNameScreenApp
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					repoProcessName
+				</columnname>
+				<columnname>
+					repoProcessNameScreenApp
+				</columnname>
+				<columnname>
+					repoSoftwareName
+				</columnname>
+				<columnname>
+					repoUninstallApp
+				</columnname>
 				<columnname>
 					varFileLocation
 				</columnname>
@@ -365,10 +418,16 @@
 					varFileSetupName&#32;
 				</columnname>
 				<columnname>
+					varLocalPath
+				</columnname>
+				<columnname>
 					varSoftwareName
 				</columnname>
 				<columnname>
 					varStartApp
+				</columnname>
+				<columnname>
+					varURI
 				</columnname>
 			</maskedcolumns>
 		</DataSource>
@@ -391,6 +450,9 @@
 	<references>
 		<reference>
 			DesktopApp_Modules.dll
+		</reference>
+		<reference>
+			Ranorex Automation Helpers.dll
 		</reference>
 	</references>
 </testsuitedoc>

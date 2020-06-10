@@ -4,5 +4,14 @@
   <Array name="files">
     <Element value="DesktopApp_Test.rxtst" />
   </Array>
-  <Properties name="projectSavedData" />
+  <Properties name="projectSavedData">
+    <Array name="recentusercodeselections">
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonOK(RepoItemInfo RepoItemInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonOK(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_ButtonOK2(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.Notepad.InstallApp.Mouse_Click_Close(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallIfExistApp.UninstallIfExist(RepoItemInfo buttonInfo)" />
+      <Element value="DesktopApp_Modules.ApplicationModules.ControlPanel.UninstallIfExistApp.UninstallIfExist()" />
+    </Array>
+  </Properties>
 </Properties>

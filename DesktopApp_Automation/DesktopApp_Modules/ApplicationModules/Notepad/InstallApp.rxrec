@@ -26,7 +26,17 @@ mode="Global">
 		<var
 		id="63b67a07-fb9f-4e4b-9fa4-7ec2b13592a1"
 		name="varStartApp">
-			D:\npp.7.8.6.Installer.x64.exe
+			D:\pycharm-professional-2020.1.2.exe
+		</var>
+		<var
+		id="28ba20a8-c71d-48fb-93bf-651e889402cf"
+		name="repoProcessName">
+			pycharm-professional-2020.1.2
+		</var>
+		<var
+		id="f932be9f-bdab-4342-8312-f6361a48bc95"
+		name="repoProcessNameScreenApp">
+			pycharm64
 		</var>
 	</variables>
 	<recorditems>
@@ -48,1752 +58,223 @@ mode="Global">
 			<args>
 			</args>
 		</runapprecorditem>
-		<loggingrecorditem
-		category="User"
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="9f763eae-943c-469b-b876-6b4fecd18aac">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="Message"
-				variable="varStartApp">
-				</binding>
-			</bindings>
-		</loggingrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="34;11"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="3bb01406-ff02-45cc-9a7e-249a0c22c531"
-		sx="643"
-		sy="546"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_ButtonOK"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="a8754ebe-35b0-4e5f-a8a7-e92f47cd60d4"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="True"
-				index="1"
-				prefcap="button"
-				rect="609,535,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						OK
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						4265832
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						OK
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Installer Language']/button[@text='OK']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="aacd252b-0b84-4190-a367-65ac51fd5b68">
-				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
-/9k=
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<arguments
+			id="3df53c8c-ea3e-4e17-a26d-b1c0c826cbe7">
+				<argument
+				argname="buttonInfo"
+				id="9cf65c27-b54d-436a-b259-749a60259b16">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="a8754ebe-35b0-4e5f-a8a7-e92f47cd60d4"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title='Installer Language']/button[@text='OK']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		loc="31;6"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4a33bfe2-99be-4d5e-b767-639795b6112c"
-		sx="746"
-		sy="656"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_ButtonNext"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="eff53f5c-b839-448d-af24-8d4324f200e4"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="True"
-				index="1"
-				prefcap="button"
-				rect="715,650,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						&amp;Next &gt;
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						5182958
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						0
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						&amp;Next &gt;
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Next &gt;']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="daa21968-b20e-4831-857d-62337e346d5a">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAD2APYDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
-oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
-igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-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
-f8KsbaNtAFfE3/Pd/wAl/wAKMTf893/Jf8KsbaNtAFfE3/Pd/wAl/wAKMTf893/Jf8KsbaNtAFfE
-3/Pd/wAl/wAKKsbaKAJcUYpaKAExRilooATFGKWigBMUYpaKAExRilooATFGKWigBMUYpaKAExRi
-looATFGKWigBMUYpaKAExRilooATFGKWigBMUYpaKAExRilooATFGKWigBMUUtFABRRRQAUUUUAF
-FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
-UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
-QAUUUUAFFQszNIQkmFCZGADTVkeT+PZhA3A60AWKKgilY7dzdY93400TSBBk5LqNvHegCzRVffMW
-YLuO0gY4wfr3oLyAO+/hXxtwOlAFiikYBhg5/A4qGNykCYAIweO5+lAE9FVosMZAw3EkHDAgZp8X
-/Huw9MjHpQBNRVMp+5yE2KVUHpyc9acXLmMH+BgG+uaALVFFFABRRRQAUUUUAFFFFABRRRQAUUUU
-AFFFFABWbr8skNirRSMjeYBlTjsa0qyvEn/IOT/rqP5GgDB+33n/AD9Tf99mj7fef8/U3/fZqBVL
-MFUEknAA70+SGWHHmxOmem5SM0ASfb7z/n6m/wC+zRVeigDugqjooHGOlMki34A2AAYGUyR9Khlu
-Sj5V8qQGKtG2VH4Dj8anVwZSoYH5QcAfrmgAESbVUqCF6ZGaPL+dTxtX7qgdKRriNZRGxIYnH3Tj
-PpnpUhOFJPagBrJGTuZVz6kUAIcgbTnkis+SeZpuItyf3twH5CkklmVx5cW4dzuwfwrmdd32NOTQ
-06QKoxgAY6cdKbC/mR579KY9wI5nVyAiqDnHOSTXQndXM2SlFbO5Qc9cigKAuAAB6UjuqJvc4UVV
-ju3eVwwRFXbgkMTyccggUwLe0YxgY9KNo9B1z0pssqRAGQ4BOBxnJpouYjHv3HGduNpzn0x1zQBL
-RUQuInU7XOd23oQQcdOlLAxKbXYNImA+PXFAElFQJcAIzSA8OVAVSTwfQVKjq8YdTlSMg0AOoqH7
-TGyMULcDgmNsH6ev4U6CUTR7h1HDDBGD9DzQBJRUIuoTIEDHJbb904z6Z6ZpjXDqDJ8jRlioAB3Z
-6Y/PvQBZoqIXEZlEeSGPHKnBPpnoaloAKKKKACiiigArK8Sf8g5P+uo/ka1ayvEn/IOT/rqP5GgD
-Asf+P6D/AK6L/OtSSMXRVIxmMTv5gckkNz6dqxKKAN+3060knw8JAMQbaSRg5PufT1orAopNAdm8
-cyyyNEI2EgGdxI2np6c/pToYDFJnIKiNUHrxmiimBDLbzST7iQVDhgfMYYAxxt6fjVmYM0LhTgkU
-UU1uJ7GDeySRPE4SORXG3ZJkgH1wD7/pTIppJLuOIQ28P8RMQK8Dt1oorNv3X8y4LRfI27EN5bEk
-YJ4FE1s7XPnoV3KoChuh65z+fWiitHuZQ+FEk8byRDbtDqQwB6ZHaoWgmkd3fy1LbMAEnGDnriii
-kWTzRl2iIx8j7jn6GoWt5BIZEKlhJvAJwCNuPwoooAYkcshlb5PMWYNjJx90cZ/+tU9vHIjStJty
-7ZwpzjgCiigCJoJguFIILsxAkKZyeOQM1JFblbLyHPJUgkHPWiigBrJdNDsIjUjAyrkbh35xx+tO
-tIXhWTfjLNuxuLY4Hc80UUAJ9nfyguVz5u/8N2aYIJgVT935ay785OSM5xjFFFACC3mNykjkEK5O
-fMY5HOPl6CrlFFABRRRQAUUUUAFZXiMZ09B/01H8jRRQBzew+1Gw+1FFABsPtRRRQB//2Q==
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<arguments
+			id="58993a39-ba73-462f-a798-e4d43e58e964">
+				<argument
+				argname="buttonInfo"
+				id="170b1f8b-234e-4020-a77f-e3edddb66a25">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f75a8ed8-e22c-4d8f-8537-fd11578122bf"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='npp.7.8.6.Installer.x64']/button[@text='&amp;Next &gt;']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		loc="40;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="c4b9f1b2-25a3-4b2d-9cd0-00c2e5059c18"
-		sx="755"
-		sy="662"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_IAgree"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="5dee88ae-8723-48fb-8469-72c95a92ad7b"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="False"
-				index="1"
-				prefcap="button"
-				rect="715,650,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						I &amp;Agree
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						5182958
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						I &amp;Agree
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Notepad++ v7.8.6 Setup ']/button[@text='I &amp;Agree']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="6053aa2f-62a8-453c-8c41-fe8d49a5f942">
-				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
-mLG42xj90DCoVME4fDA88cdPfrWlRQBT+zzPbXSSeWHmJwASQPlA649qZPYPJ5m0ou9y2fYpt/nV
-+igDPktrmWQyskQf5doWVhtxu5zt9+hGKmt4ZopgzFGBjVWI4IIz0GMd/arVFAGbLY3E0xLuMZb5
-vMY8EED5egxkVN5d1vjl8qDegK7fMOMHHOdvHT0q5RQBlTWMqxTkxiTIdlImc8kHjZjHfFTtbTyF
-5SsSSHZtQMSCFOeTj39KvUUAV7mOWTymjCbkbJDMQOQR1x7+lVpNPdoIUUoDHEF4JGSCp6jkdOta
-NFAEFnCYY2DIEZmyf3rSZ/FuanoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAG4k/vr/3x/wDXoxJ/
-fX/vj/69OooAbiT++v8A3x/9ejEn99f++P8A69OooAbiT++v/fH/ANejEn99f++P/r06igBuJP76
-/wDfH/16MSf31/74/wDr06igBuJP76/98f8A16MSf31/74/+vTqKAG4k/vr/AN8f/XoxJ/fX/vj/
-AOvVa71CG0lEciuSRu+UD/GoP7atv7kv5D/GpckjWNCpJXSNDEn99f8Avj/69GJP76/98f8A16z/
-AO2rb+5L+Q/xo/tq2/uS/kP8aOePcr6vV/lNDEn99f8Avj/69GJP76/98f8A16z/AO2rb+5L+Q/x
-o/tq2/uS/kP8aOePcPq9X+U0MSf31/74/wDr0Yk/vr/3x/8AXrP/ALatv7kv5D/Gj+2rb+5L+Q/x
-o549w+r1f5TQxJ/fX/vj/wCvRiT++v8A3x/9es/+2rb+5L+Q/wAaP7atv7kv5D/Gjnj3D6vV/lND
-En99f++P/r0Yk/vr/wB8f/XqtaahDdymONXBA3fMB/jVummnsZShKDtJDcSf31/74/8Ar0Yk/vr/
-AN8f/Xp1FMkbiT++v/fH/wBejEn99f8Avj/69OooAbiT++v/AHx/9ejEn99f++P/AK9OooAbiT++
-v/fH/wBejEn99f8Avj/69OooAbiT++v/AHx/9einUUAFRycuoyQMHocelSVHJ/rF+h/pQA3b7t/3
-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
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<arguments
+			id="e94a5e53-70b0-4e29-a90f-7ccbd7ce77f6">
+				<argument
+				argname="buttonInfo"
+				id="e70c9a30-d7e1-4397-bdcb-1b6f22ad5d03">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="5dee88ae-8723-48fb-8469-72c95a92ad7b"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='npp.7.8.6.Installer.x64']/button[@text='I &amp;Agree']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		loc="40;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="fac5d5b2-3544-4b11-bf59-f3a50a1f1a50"
-		sx="755"
-		sy="662"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_ButtonNext1"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="f75a8ed8-e22c-4d8f-8537-fd11578122bf"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="False"
-				index="1"
-				prefcap="button"
-				rect="715,650,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						&amp;Next &gt;
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						5182958
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						&amp;Next &gt;
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Notepad++ v7.8.6 Setup ']/button[@text='&amp;Next &gt;']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="c18aa3d1-5175-43d5-863b-ac0c4bb07046">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAD2APYDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKi+
-123/AD8Rf99ij7Xbf8/EX/fYp8rFzIloqL7Xbf8APxF/32KPtdt/z8Rf99ijlYcyJaKi+123/PxF
-/wB9ij7Xbf8APxF/32KOVhzIloqL7Xbf8/EX/fYo+123/PxF/wB9ijlYcyJaKi+123/PxF/32KPt
-dt/z8Rf99ijlYcyJaKi+123/AD8Rf99ij7Xbf8/EX/fYo5WHMiWiovtdt/z8Rf8AfYo+123/AD8R
-f99ijlYcyGR/664/66D/ANBWpKhgdXknZGDKZBgg5H3Vqah7gtiGP/Vr9BTqjR1CLlh0Henb0/vr
-+dIZTvlke4jSPJGxiR5zRjqOfl60yK7mNsZAyFRsRSwOSSF5PPv0q3LHbT485IpMdN4BxTj5JVlP
-lkN94cc/WgCobudSUIjZwxjDAEAtxjjPuc/SkkvZym+NVWPklipbAAHUA56k8jOMdKtqtuiqqLEq
-qcqAAAD7U1orV9u+OFtpyuQDg+1AENvc3E1wf3Q8jcy7uOMd87s9umO9WhIjbcOp3DcMHqPWmeXb
-eb5uyLzP7+Bn86cBCu3HljaNoxjgelAD1YMoZSGUjIIPBpaYrRqoVSiqBgAYwKXen99fzoAJP9W3
-0NTVXd1KNhh0PerFABSDqaWkHU0ALRRRQAUUnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+
-VAC0UnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+V
-AC0UnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+VAC0UnPqPyo59R+VA
-C0UnPqPyo59R+VAC0g6mjn1H5UCgBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
-AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
-ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
-iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
-KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBuJP7
-6/8AfH/16MSf31/74/8Ar06igBuJP76/98f/AF6MSf31/wC+P/r06igBuJP76/8AfH/16MSf31/7
-4/8Ar06igBuJP76/98f/AF6MSf31/wC+P/r06igBuJP76/8AfH/16MSf31/74/8Ar06igBuJP76/
-98f/AF6MSf31/wC+P/r1Wu9QhtJRHIrkkbvlA/xqD+2rb+5L+Q/xqXJI1jQqSV0jQxJ/fX/vj/69
-GJP76/8AfH/16z/7atv7kv5D/Gj+2rb+5L+Q/wAaOePcr6vV/lNDEn99f++P/r0Yk/vr/wB8f/Xr
-P/tq2/uS/kP8aP7atv7kv5D/ABo549w+r1f5TQxJ/fX/AL4/+vRiT++v/fH/ANes/wDtq2/uS/kP
-8aP7atv7kv5D/Gjnj3D6vV/lNDEn99f++P8A69GJP76/98f/AF6z/wC2rb+5L+Q/xo/tq2/uS/kP
-8aOePcPq9X+U0MSf31/74/8Ar0Yk/vr/AN8f/XqtaahDdymONXBA3fMB/jVummnsZShKDtJDcSf3
-1/74/wDr0Yk/vr/3x/8AXp1FMkbiT++v/fH/ANejEn99f++P/r06igBuJP76/wDfH/16MSf31/74
-/wDr06igBuJP76/98f8A16MSf31/74/+vTqKAG4k/vr/AN8f/Xop1FABUcnLqMkDB6HHpUlRyf6x
-fof6UAN2+7f99Gjb7t/30adRQA3b7t/30aNvu3/fRquzyfaQsxaOPPybBw31bt2449Oap6gIzeSb
-mg3iNdiuuXY5PCHPB/A0Aam33b/vo0ny7gu85Izjec1mtezC6by3DD5h5RYFgQD2AyOR60jTfvUe
-K785djb5BtJjGVzwB/P9aANTb7t/30aNvu3/AH0aUEFQQcg9/WloAy73K6mpUkEQMQc8jhq0/s6f
-3pf+/rf41mX/APyEl/64N/Jq2KIPR+ppXXw+n6si+zp/el/7+t/jR9nT+9L/AN/W/wAalrJug0a3
-0q5KsSjgf7owf8+tXdmFkaP2dP70v/f1v8aPs6f3pf8Av63+NUI7mZrp1kuYolBYFC43KBnBClfo
-ckkVHNPcTWTEs3nLJGFjXC5yww3I4z+mMetHMx8qNP7On96X/v63+NH2dP70v/f1v8agFzFPaCRZ
-ZUIO3hfnDDqCuOvtj396nt2maLM6hW9v8MnH5mi7FZB9nT+9L/39b/Go7iFUt5WVpQyoSD5ren1q
-zUV3/wAek3/XNv5U03cTSsUoP+Q9cf8AXMf+y1el/hGSMnscdjVGD/kPXH/XMf8AstX5eqf739DW
-Mep11t4+iGbfdv8Avo0bfdv++jTqKowG7fdv++jRt92/76NUIza+c32nZ9qEh27vvdfl298Yx09/
-eoUvJ3k2pOCHxjlWKfMBggKMHB6c0Aau33b/AL6NDbVUszkAcklzxVBp3SQxTXZjRXI84hQTwCBy
-Mdz27VBLcTSCdWnixhx5ZcbsAHBC7c+h64oA1tvu3/fRo2+7f99GlHSloAhnyiAqzA5/vGii5/1Y
-+tFAFqo5A25SFJwD0/CpKKAIvm/55t+Y/wAaPm/55t+Y/wAalooAi+b/AJ5t+Y/xo+b/AJ5t+Y/x
-qWigCL5v+ebfmP8AGj5v+ebfmP8AGpaKAIvm/wCebfmP8aPm/wCebfmP8alooAyLxWfVUUKdzQsA
-Dj0atLzX/wCfeX81/wAahu9Phu5RJIzggbflI/wqD+xbb+/L+Y/wqU2uhvJU5pXlaytsXfNf/n3l
-/Nf8aPNf/n3l/Nf8apf2Lbf35fzH+FH9i239+X8x/hVcz7E+zpfzv7i75r/8+8v5r/jUF3IzRxgw
-uo86LklcffX0NQ/2Lbf35fzH+FI+jpHtkt2YyI6uA7YBwwPYUcz7CdOmlpN/cWru2kWU3dmB5+MO
-hOBMB2PofQ/h0oguzPEJI7ebacjnaCCDgjBPrWZqNvdNC6XLPOZF81NiMypIv8IAHAIOOfQmrQ0S
-1UYDSgexH+FF2tkTGMZfE7F3zX/595fzX/Go52kkgkQW8mWUgZK+n1qt/Ytt/fl/Mf4Uf2Lbf35f
-zH+FHPLsV7Kl/O/uCD/kPXH/AFzH/stX5ATtwM4P9Kr2mnw2kpkjZySNvzEf4VbqYprcdWUZNcvR
-Ii+b/nm35j/Gj5v+ebfmP8aloqjIi+b/AJ5t+Y/xo+b/AJ5t+Y/xqWigCL5v+ebfmP8AGj5v+ebf
-mP8AGpaKAIvm/wCebfmP8aPm/wCebfmP8alooArTI7qAEPXuRRVmigCpif8A57P+S/4UuJ/+ez/k
-v+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvi
-b/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCF
-GJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FW
-NtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu
-/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+
-e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2gCvib/nu/wCS/wCFGJv+e7/kv+FWNtG2
-gCvib/nu/wCS/wCFFWNtFAEuKMUtFACYoxS0UAJijFLRQAmKMUtFACYoxS0UAJijFLRQAmKMUtFA
-CYoxS0UAJijFLRQAmKMUtFACYoxS0UAJijFLRQAmKMUtFACYoxS0UAJijFLRQAmKKWigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACioWZmkISTChMjABpqyPJ/HswgbgdaALFFQRSsdu5use78aaJpAgycl1G3jvQBZoq
-vvmLMF3HaQMcYP170F5AHffwr424HSgCxRSMAwwc/gcVDG5SBMAEYPHc/SgCeiq0WGMgYbiSDhgQ
-M0+L/j3YemRj0oAmoqmU/c5CbFKqD05OetOLlzGD/AwDfXNAFqiiigAooooAKKKKACiiigAooooA
-KKKKACiiigArN1+WSGxVopGRvMAypx2NaVZXiT/kHJ/11H8jQBg/b7z/AJ+pv++zR9vvP+fqb/vs
-1AqlmCqCSTgAd6fJDLDjzYnTPTcpGaAJPt95/wA/U3/fZoqvRQB3QVR0UDjHSmSRb8AbAAMDKZI+
-lQy3JR8q+VIDFWjbKj8Bx+NTq4MpUMD8oOAP1zQACJNqqVBC9MjNHl/Op42r91QOlI1xGsojYkMT
-j7pxn0z0qQnCkntQA1kjJ3Mq59SKAEOQNpzyRWfJPM03EW5P724D8hSSSzK48uLcO53YP4VzOu77
-GnJoadIFUYwAMdOOlNhfzI89+lMe4Eczq5ARVBzjnJJroTurmbJSitncoOeuRQFAXAAA9KR3VE3u
-cKKqx3bvK4YIirtwSGJ5OOQQKYFvaMYwMelG0eg656U2WVIgDIcAnA4zk00XMRj37jjO3G05z6Y6
-5oAloqIXETqdrnO7b0IIOOnSlgYlNrsGkTAfHrigCSioEuAEZpAeHKgKpJ4PoKlR1eMOpypGQaAH
-UVD9pjZGKFuBwTG2D9PX8KdBKJo9w6jhhgjB+h5oAkoqEXUJkCBjktt+6cZ9M9M0xrh1Bk+RoyxU
-AA7s9Mfn3oAs0VELiMyiPJDHjlTgn0z0NS0AFFFFABRRRQAVleJP+Qcn/XUfyNatZXiT/kHJ/wBd
-R/I0AYFj/wAf0H/XRf51qSRi6KpGMxid/MDkkhufTtWJRQBv2+nWkk+HhIBiDbSSMHJ9z6etFYFF
-JoDs3jmWWRohGwkAzuJG09PTn9KdDAYpM5BURqg9eM0UUwIZbeaSfcSCocMD5jDAGONvT8aszBmh
-cKcEiiimtxPYwb2SSJ4nCRyK427JMkA+uAff9KZFNJJdxxCG3h/iJiBXgdutFFZt+6/mXBaL5G3Y
-hvLYkjBPAomtna589Cu5VAUN0PXOfz60UVo9zKHwoknjeSIbdodSGAPTI7VC0E0ju7+WpbZgAk4w
-c9cUUUiyeaMu0RGPkfcc/Q1C1vIJDIhUsJN4BOARtx+FFFADEjlkMrfJ5izBsZOPujjP/wBap7eO
-RGlaTbl2zhTnHAFFFAETQTBcKQQXZiBIUzk8cgZqSK3K2XkOeSpBIOetFFADWS6aHYRGpGBlXI3D
-vzjj9adaQvCsm/GWbdjcWxwO55oooAT7O/lBcrnzd/4bs0wQTAqn7vy1l35yckZzjGKKKAEFvMbl
-JHIIVyc+YxyOcfL0FXKKKACiiigAooooAKyvEYzp6f8AXUfyNFFAHN7TRtNFFABtNFFFAH//2Q==
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<arguments
+			id="36c9473c-d023-429f-b6f6-49fb0a2cd494">
+				<argument
+				argname="buttonInfo"
+				id="eaf54844-8fae-407b-a8c3-36bf95dabda6">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f75a8ed8-e22c-4d8f-8537-fd11578122bf"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='npp.7.8.6.Installer.x64']/button[@text='&amp;Next &gt;']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		loc="40;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="a5f3cf4b-beeb-4876-b082-5d3456c90bfb"
-		sx="755"
-		sy="662"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_ButtonInstall"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="f75a8ed8-e22c-4d8f-8537-fd11578122bf"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="False"
-				index="1"
-				prefcap="button"
-				rect="715,650,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						&amp;Next &gt;
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						5182958
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						&amp;Next &gt;
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Notepad++ v7.8.6 Setup ']/button[@text='&amp;Next &gt;']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="60e9e472-d14d-49cc-a351-32c7718a7a91">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAD2APYDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDfNtbs
-pVoIipGCCgx2/wAB+VN+xWuFH2aHC8L+7HH0qk2oXMaZdYmLZC7RjBDhc8n3zjI+venPd30cQMkS
-x43FmKbuBjB2qxI69QT06UAX/Ii83zfKTzP7+0Z/Okjt4IgBFDGgB3AKoHPTNSA5ANFACKqqMKAB
-nOAKWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAR+lMp79KZQAyb/
-AFf/AAJf/QhT6ZN/q/8AgS/+hCn0AFFFFACmGIggxoQQQRtHQ9fzqMWVoFUC1hwpyo8scH1ojaZI
-1TarbRjLSEk/XilMkxH+rT/vs/4UATUVUdJnthDllwAN6zENx74p2JvP83r8u3b5ny/XG3rQBZoq
-HzJv+eaf99n/AAo8yb/nmn/fZ/woAmoqnLC8su9w44A2rcuoH4ACpt82MeWn/fw/4UATUVBG0yRq
-m1W2jGWkJJ+vFL5k3/PNP++z/hQBNRUPmTf880/77P8AhR5k3/PNP++z/hQBNRUPmTf880/77P8A
-hR5k3/PNP++z/hQBNRUPmTf880/77P8AhR5k3/PNP++z/hQBNRUPmTf880/77P8AhR5k3/PNP++z
-/hQBNRUPmTf880/77P8AhR5k3/PNP++z/hQBNRUPmTf880/77P8AhR5k3/PNP++z/hQBNRUPmTf8
-80/77P8AhR5k3/PNP++z/hQBNRUPmTf880/77P8AhR5k3/PNP++z/hQBK/Ss6S1naRo1lIt5CWb1
-HqB9f8+9wvKf+Waf99n/AApN0v8AzzT/AL7P+FABN/q/+BL/AOhCn1EwkcAFEAyCTvJ6HPpUtABR
-RRQAnNHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE
-59R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE5
-9R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE59R+VHPqPypaKAE5HpS0h6UtABRRRQA1
-nCttwSfb8f8ACh3CHkE8EkjsBQEAbcWZj749/wDGhkDZznlSv50AJ5nOArbu68cf5yKBICMjOMgf
-nj/GlKAsWBIJOcj8P8BSeWoxgkAEHA9v/wBQoATzl2b8fKTgHI5/X+dOEgKbxyDx+PSkEYBzubd/
-e4zTiuVwSfqTzmgBokGcEFeuc9qTzl3BTkE44OOM+1O8tSMHJ5ySe/8AkcUu35idzDJyQD1NACI2
-9QwBAPTNJHIsmcdvcH+VLtHl7OoxilVcEkszE464/wA96AGiTIBCnn7vTmk80f3WPr065xj8xSiM
-AAbm46dOKURqPXsfyOf60AN80c/KcAZJ446/4GlMoUEkHAzz64//AFGk8rlvmO0jkDvySf50rRhs
-5Jwc8emf/wBZoARpQv3gVPoSP/1djQJgRkAkAZJ446/4GnMgLFskHjkduv8AjQUBDAljuGCSfr/j
-QAIxYHIxgkfXmmpISikodzDOBj8+vvTwME4JwTnHpTRGABhmGOB04Hp+lACmQBVbru6e9NMqh9h4
-PA6jrTigKhQSoAxx6fjQqBT8pYDjgGgBElWQ4X0z1FIJPmbI+UDJPpyf8Keq7RjcxAGACeBSBAOh
-IznP5k/1oAVTuXOMZ9x/SlpFUKDjucknuaWgAooooAKKKKAEPSlpD0paACiiigBAQwBHQjIpaKKA
-CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBD0paQ9
-KWgAooooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c
-+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+
-g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATn0H50c+g/OlooATk+lLRRQA
-UUUUANxJ/fX/AL4/+vRiT++v/fH/ANenUUANxJ/fX/vj/wCvRiT++v8A3x/9enUUANxJ/fX/AL4/
-+vRiT++v/fH/ANenUUANxJ/fX/vj/wCvRiT++v8A3x/9enUUANxJ/fX/AL4/+vRiT++v/fH/ANen
-UUANxJ/fX/vj/wCvRiT++v8A3x/9eq13qENpKI5Fckjd8oH+NQf21bf3JfyH+NS5JGsaFSSukaGJ
-P76/98f/AF6MSf31/wC+P/r1n/21bf3JfyH+NH9tW39yX8h/jRzx7lfV6v8AKaGJP76/98f/AF6M
-Sf31/wC+P/r1n/21bf3JfyH+NH9tW39yX8h/jRzx7h9Xq/ymhiT++v8A3x/9ejEn99f++P8A69Z/
-9tW39yX8h/jR/bVt/cl/If40c8e4fV6v8poYk/vr/wB8f/XoxJ/fX/vj/wCvWf8A21bf3JfyH+NH
-9tW39yX8h/jRzx7h9Xq/ymhiT++v/fH/ANejEn99f++P/r1WtNQhu5THGrggbvmA/wAat0009jKU
-JQdpIbiT++v/AHx/9ejEn99f++P/AK9OopkjcSf31/74/wDr0Yk/vr/3x/8AXp1FADcSf31/74/+
-vRiT++v/AHx/9enUUANxJ/fX/vj/AOvRiT++v/fH/wBenUUANxJ/fX/vj/69FOooAKjk5dRkgYPQ
-49KkqOT/AFi/Q/0oAbt92/76NG33b/vo06igBu33b/vo0bfdv++jVdnk+0hZi0cefk2Dhvq3btxx
-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
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<arguments
+			id="5118cf6d-7056-4df1-811a-11c3feca2ccd">
+				<argument
+				argname="buttonInfo"
+				id="411765ac-268d-4b9f-b06c-70c6d1a28823">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fd62e641-1c11-427e-b47f-a4dfdd4ea88a"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='npp.7.8.6.Installer.x64']/button[@text='&amp;Install']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		loc="40;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="a2202157-b339-462a-81ca-671b5d76db46"
-		sx="755"
-		sy="662"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_ButtonFinish"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="152359dc-1124-4553-a903-de362014a817"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="True"
-				index="1"
-				prefcap="button"
-				rect="715,650,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						&amp;Install
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						5182958
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						&amp;Install
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Notepad++ v7.8.6 Setup']/button[@text='&amp;Install']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="0e0552a7-e2a0-4aa9-ab14-8f46012bfc19">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAD2APYDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
-oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
-igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
-oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAbiT++v8A3x/9ejEn99f++P8A
-69OooAbiT++v/fH/ANejEn99f++P/r06igBuJP76/wDfH/16MSf31/74/wDr06igBuJP76/98f8A
-16MSf31/74/+vTqKAG4k/vr/AN8f/XoxJ/fX/vj/AOvTqKAG4k/vr/3x/wDXoxJ/fX/vj/69VrvU
-IbSURyK5JG75QP8AGoP7atv7kv5D/GpckjWNCpJXSNDEn99f++P/AK9GJP76/wDfH/16z/7atv7k
-v5D/ABo/tq2/uS/kP8aOePcr6vV/lNDEn99f++P/AK9GJP76/wDfH/16z/7atv7kv5D/ABo/tq2/
-uS/kP8aOePcPq9X+U0MSf31/74/+vRiT++v/AHx/9es/+2rb+5L+Q/xo/tq2/uS/kP8AGjnj3D6v
-V/lNDEn99f8Avj/69GJP76/98f8A16z/AO2rb+5L+Q/xo/tq2/uS/kP8aOePcPq9X+U0MSf31/74
-/wDr0Yk/vr/3x/8AXqtaahDdymONXBA3fMB/jVummnsZShKDtJDcSf31/wC+P/r0Yk/vr/3x/wDX
-p1FMkbiT++v/AHx/9ejEn99f++P/AK9OooAbiT++v/fH/wBejEn99f8Avj/69OooAbiT++v/AHx/
-9ejEn99f++P/AK9OooAbiT++v/fH/wBeinUUAFRycuoyQMHocelSVHJ/rF+h/pQA3b7t/wB9Gjb7
-t/30adRQA3b7t/30aNvu3/fRquzyfaQsxaOPPybBw31bt2449Oap6gIzeSbmg3iNdiuuXY5PCHPB
-/A0Aam33b/vo0ny7gu85Izjec1mtezC6by3DD5h5RYFgQD2AyOR60jTfvUeK785djb5BtJjGVzwB
-/P8AWgDU2+7f99Gjb7t/30aUEFQQcg9/WloAy73K6mpUkEQMQc8jhq0/s6f3pf8Av63+NZl//wAh
-Jf8Arg38mrYog9H6mldfD6fqyL7On96X/v63+NH2dP70v/f1v8alqlqnkfZ0+0eXt81P9ZjHXnr7
-Zq7swsix9nT+9L/39b/Gj7On96X/AL+t/jVFp7hIxL9oHzNIoDKNqgbsHgZ7VXmuZjDDLHJJM63A
-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
-xnT0H/TUfyNFFAHN7D7UbD7UUUAGw+1FFFAH/9k=
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<arguments
+			id="11f5c79d-859e-4ddc-9ced-558168ada377">
+				<argument
+				argname="buttonInfo"
+				id="8dea749d-7c52-4d36-87e7-5bf73eaad930">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="17f37782-4773-400d-9dd6-ea1620177f84"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='npp.7.8.6.Installer.x64']/button[@text='&amp;Finish']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InstallApp"
 		enabled="True"
-		loc="40;12"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="da933983-ed6f-495f-b397-cb765c32a7ae"
-		sx="755"
-		sy="662"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_Close"
+		namespace="DesktopApp_Modules.ApplicationModules.Notepad"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="17f37782-4773-400d-9dd6-ea1620177f84"
-			sourcename="Recorder">
-				<element
-				capabilities="nativewindow"
-				dontcache="False"
-				enabled="True"
-				flavor="win32"
-				hasfocus="False"
-				index="1"
-				prefcap="button"
-				rect="715,650,75,23"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						&amp;Finish
-					</attribute>
-					<attribute
-					name="apphung"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="class"
-					type="System.String">
-						Button
-					</attribute>
-					<attribute
-					name="controlid"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="handle"
-					type="System.IntPtr">
-						5182958
-					</attribute>
-					<attribute
-					name="instance"
-					type="System.Int32">
-						1
-					</attribute>
-					<attribute
-					name="processid"
-					type="System.Int32">
-						20168
-					</attribute>
-					<attribute
-					name="processname"
-					type="System.String">
-						npp.7.8.6.Installer.x64 (10)
-					</attribute>
-					<attribute
-					name="windowextendedstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
-						RightScrollBar, Left, NoParentNotify
-					</attribute>
-					<attribute
-					name="windowstyle"
-					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, Visible, ChildWindow
-					</attribute>
-					<attribute
-					name="windowtext"
-					type="System.String">
-						&amp;Finish
-					</attribute>
-					<dynamicattribute
-					description="The default action of the accessible object."
-					name="AccessibleDefaultAction"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The description of the accessible object."
-					name="AccessibleDescription"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The help string of the accessible object."
-					name="AccessibleHelp"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
-					name="AccessibleHelpTopic"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The keyboard shortcut of the accessible object."
-					name="AccessibleKeyboardShortcut"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The name of the accessible object."
-					name="AccessibleName"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The role of the accessible object."
-					name="AccessibleRole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The state of the accessible object."
-					name="AccessibleState"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The value of the accessible object."
-					name="AccessibleValue"
-					readonly="False"
-					truncationlength="-1"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicaction
-					description="Invokes the default action of the accessible object."
-					displayName="AccessibleDoDefaultAction">
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@title='Notepad++ v7.8.6 Setup ']/button[@text='&amp;Finish']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="db6cc3ae-6f8a-4894-b926-efd119f9140c">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAD2APYDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
-oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
-igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
-oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAizJ/fT/vg/40Zk/vp/3wf8aW
-igBMyf30/wC+D/jRmT++n/fB/wAaWigBMyf30/74P+NGZP76f98H/GlooATMn99P++D/AI0Zk/vp
-/wB8H/GlooATMn99P++D/jRmT++n/fB/xpaKAEzJ/fT/AL4P+NGZP76f98H/ABqrd6hDaSiORXJI
-3fKB/jUH9tW39yX8h/jUuSRrGhUkrpGjmT++n/fB/wAaMyf30/74P+NZ39tW39yX8h/jR/bVt/cl
-/If40c8e5X1er/KaOZP76f8AfB/xozJ/fT/vg/41nf21bf3JfyH+NH9tW39yX8h/jRzx7h9Xq/ym
-jmT++n/fB/xozJ/fT/vg/wCNZ39tW39yX8h/jR/bVt/cl/If40c8e4fV6v8AKaOZP76f98H/ABoz
-J/fT/vg/41nf21bf3JfyH+NH9tW39yX8h/jRzx7h9Xq/ymjmT++n/fB/xozJ/fT/AL4P+NVbTUIb
-uUxxq4IG75gP8at0009jKUJQdpITMn99P++D/jRmT++n/fB/xpaKZImZP76f98H/ABozJ/fT/vg/
-40tFACZk/vp/3wf8aMyf30/74P8AjS0UAJmT++n/AHwf8aMyf30/74P+NLRQAmZP76f98H/Giloo
-AKimJBXBI69DUtQz9V/GgBm5v7zfnRub+8350lFAC7m/vN+dG5v7zfnURJ3/ADZA7Y7/AI1HLjzG
-yVzgYBHJ+lAFnc395vzpNxzjcc/WoDI284Oevy55oLfMCsm7g5PHHSgCxub+8350bm/vN+dNHSlo
-Az7pmGpKwY5ELYOenDVq/Z0/vS/9/W/xrJu/+QiP+uDf+gtW3RB6P1NK6+H0/VkX2dP70v8A39b/
-ABo+zp/el/7+t/jUtVNSTzLUJhTukQfMu4feHUd6u7MLIm+zp/el/wC/rf40fZ0/vS/9/W/xrPkS
-S0kjjjMEZfvFCF6sg6ZNMuLi5id0jcyyKdiEhQxyU74wPvemKLsOVGl5MRYqHk3DkjzWyP1pfs6f
-3pf+/rf41lQ3Ekq3E8c8qtFGNwdFDZBbhhjj8MVs0XYWRH9nT+9L/wB/W/xqO4hVLeVlaUMqEg+a
-3p9as1Fd/wDHpN/1zb+VNN3E0rFKD/kPXH/XMf8AstXpiQowSOe1UYP+Q9cf9cx/7LV6f7o+tYx6
-nXW3j6Ii3N/eb86Nzf3m/OkoqjAXc395vzo3N/eb86gGzcd+N+7v19sU0SMTgN1+hxz9KALO5v7z
-fnSFiBksfzqHcQdrPgA/e4prOxDAsvfjPP8AKgCzub+8350bm/vN+dJRQAjMwH3m/OikbpRQBcqO
-ZWYrtGcVJRQBX8t/7v6ijy3/ALv6irFFAFfy3/u/qKPLf+7+oqxRQBX8t/7v6ijy3/u/qKsUUAV/
-Lf8Au/qKPLf+7+oqxRQBjXUbnVEQD5mhYAfg1anmv/z7y/mv+NQ3enw3cokkZwQNvykf4VB/Ytt/
-fl/Mf4VKbXQ3kqc0rytZW2Lvmv8A8+8v5r/jR5r/APPvL+a/41S/sW2/vy/mP8KP7Ftv78v5j/Cq
-5n2J9nS/nf3F3zX/AOfeX81/xqC7kZo4wYXUedFySuPvr6Gof7Ftv78v5j/CkfR0j2yW7MZEdXAd
-sA4YHsKOZ9hOnTS0m/uLV3bSLKbuzA8/GHQnAmA7H0Pofw6UQXZniEkdvNtORztBBBwRgn1rM1G3
-umhdLlnnMi+amxGZUkX+EADgEHHPoTVoaJaqMBpQPYj/AAou1siYxjL4nYu+a/8Az7y/mv8AjUc7
-SSQSILeTLKQMlfT61W/sW2/vy/mP8KP7Ftv78v5j/Cjnl2K9lS/nf3BB/wAh64/65j/2Wr8qllGB
-nmq9pp8NpKZI2ckjb8xH+FW6mKa3HVlGTXL0SK/lv/d/UUeW/wDd/UVYoqjIr+W/939RR5b/AN39
-RViigCv5b/3f1FHlv/d/UVYooAr+W/8Ad/UUeW/939RViigCsYnI+7+tFWaKAKmJ/wDns/5L/hS4
-n/57P+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY2
-0baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/
-AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57
-v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baA
-K+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/
-AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/4VY20baAK+Jv+e7/AJL/AIUYm/57v+S/
-4VY20baAK+Jv+e7/AJL/AIUVY20UAS4oxS0UAJijFLRQAmKMUtFACYoxS0UAJijFLRQAmKMUtFAC
-YoxS0UAJijFLRQAmKMUtFACYoxS0UAJijFLRQAmKMUtFACYoxS0UAJijFLRQAmKMUtFACYopaKAC
-iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKhZmaQhJMKEyMAGmrI8n8ezCBuB1oAsUVBFKx27m6x7vxpomkCDJyXUbe
-O9AFmiq++YswXcdpAxxg/XvQXkAd9/CvjbgdKALFFIwDDBz+BxUMblIEwARg8dz9KAJ6KrRYYyBh
-uJIOGBAzT4v+Pdh6ZGPSgCaiqZT9zkJsUqoPTk5604uXMYP8DAN9c0AWqKKKACiiigAooooAKKKK
-ACiiigAooooAKKKKACs3X5ZIbFWikZG8wDKnHY1pVleJP+Qcn/XUfyNAGD9vvP8An6m/77NH2+8/
-5+pv++zUCqWYKoJJOAB3p8kMsOPNidM9NykZoAk+33n/AD9Tf99miq9FAHdBVHRQOMdKZJFvwBsA
-AwMpkj6VDLclHyr5UgMVaNsqPwHH41OrgylQwPyg4A/XNAAIk2qpUEL0yM0eX86njav3VA6UjXEa
-yiNiQxOPunGfTPSpCcKSe1ADWSMncyrn1IoAQ5A2nPJFZ8k8zTcRbk/vbgPyFJJLMrjy4tw7ndg/
-hXM67vsacmhp0gVRjAAx046U2F/Mjz36Ux7gRzOrkBFUHOOckmuhO6uZslKK2dyg565FAUBcAAD0
-pHdUTe5woqrHdu8rhgiKu3BIYnk45BApgW9oxjAx6UbR6DrnpTZZUiAMhwCcDjOTTRcxGPfuOM7c
-bTnPpjrmgCWiohcROp2uc7tvQgg46dKWBiU2uwaRMB8euKAJKKgS4ARmkB4cqAqkng+gqVHV4w6n
-KkZBoAdRUP2mNkYoW4HBMbYP09fwp0Eomj3DqOGGCMH6HmgCSioRdQmQIGOS237pxn0z0zTGuHUG
-T5GjLFQADuz0x+fegCzRUQuIzKI8kMeOVOCfTPQ1LQAUUUUAFFFFABWV4k/5Byf9dR/I1q1leJP+
-Qcn/AF1H8jQBgWP/AB/Qf9dF/nWpJGLoqkYzGJ38wOSSG59O1YlFAG/b6daST4eEgGINtJIwcn3P
-p60VgUUmgOzeOZZZGiEbCQDO4kbT09Of0p0MBikzkFRGqD14zRRTAhlt5pJ9xIKhwwPmMMAY429P
-xqzMGaFwpwSKKKa3E9jBvZJInicJHIrjbskyQD64B9/0pkU0kl3HEIbeH+ImIFeB260UVm37r+Zc
-FovkbdiG8tiSME8Cia2drnz0K7lUBQ3Q9c5/PrRRWj3MofCiSeN5Iht2h1IYA9MjtULQTSO7v5al
-tmACTjBz1xRRSLJ5oy7REY+R9xz9DULW8gkMiFSwk3gE4BG3H4UUUAMSOWQyt8nmLMGxk4+6OM//
-AFqnt45EaVpNuXbOFOccAUUUARNBMFwpBBdmIEhTOTxyBmpIrcrZeQ55KkEg560UUANZLpodhEak
-YGVcjcO/OOP1p1pC8Kyb8ZZt2NxbHA7nmiigBPs7+UFyufN3/huzTBBMCqfu/LWXfnJyRnOMYooo
-AQW8xuUkcghXJz5jHI5x8vQVcoooAKKKKACiiigArK8RjOnoP+mo/kaKKAOb2H2o2H2oooANh9qK
-KKAP/9k=
-			</helperscreenshot>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="20;8"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="02eb8e72-e197-453d-8dbd-42d91ae94e67"
-		sx="1068"
-		sy="16"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5c3be95a-f11a-44ba-b12b-7bcd8c5361f4"
-			sourcename="Recorder">
-				<path>
-					/form[@title&gt;'C:\Program Files\Notepad++\change.log']/titlebar/button[@accessiblename='Close']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="e463e00d-fefb-42e6-88d4-a8e578e99f9a">
+				<argument
+				argname="buttonInfo"
+				id="5588c6f4-5097-40f5-98f1-e4468bfe12d9">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="055630ef-5419-4f39-8729-7e882bc372fc"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@processname='notepad++']/?/?/button[@accessiblename='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="ef30ac9a-a357-4910-917a-46d0e437f538"

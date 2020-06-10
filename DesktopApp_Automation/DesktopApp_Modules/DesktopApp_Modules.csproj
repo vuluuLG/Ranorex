@@ -122,53 +122,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationModules\Chrome\CloseBrowser.cs">
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+    <Compile Include="ApplicationModules\Browser\DownloadFileSetup.cs">
+      <BoundTo>89cd528c-6c72-45c3-80a3-ae6e7092d9a9</BoundTo>
+      <DependentUpon>DownloadFileSetup.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>33a01cfd-7279-4cc7-b218-b3718585a2d0</id>
-      <BoundTo>d9f15c56-2ea2-4539-b918-1ce2d32abdd5</BoundTo>
+      <id>20339154-543f-43d7-9546-e55507770d56</id>
     </Compile>
-    <Compile Include="ApplicationModules\Chrome\CloseBrowser.UserCode.cs">
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+    <Compile Include="ApplicationModules\Browser\DownloadFileSetup.UserCode.cs">
+      <BoundTo>89cd528c-6c72-45c3-80a3-ae6e7092d9a9</BoundTo>
+      <DependentUpon>DownloadFileSetup.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>55b9f5c6-1f06-4541-bd8f-d38ceeb174ad</id>
-      <BoundTo>d9f15c56-2ea2-4539-b918-1ce2d32abdd5</BoundTo>
-    </Compile>
-    <Compile Include="ApplicationModules\Chrome\DownloadApp.cs">
-      <DependentUpon>DownloadApp.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0688b290-ebb8-4210-8941-2dbb6bacb297</id>
-      <BoundTo>4c1bb938-151e-4e5a-81c1-433075686407</BoundTo>
-    </Compile>
-    <Compile Include="ApplicationModules\Chrome\DownloadApp.UserCode.cs">
-      <DependentUpon>DownloadApp.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>1612c51b-dc7c-47d9-8cae-f8ce447ee9a9</id>
-      <BoundTo>4c1bb938-151e-4e5a-81c1-433075686407</BoundTo>
-    </Compile>
-    <Compile Include="ApplicationModules\Chrome\OpenBrowser.cs">
-      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>77ef7ad9-7147-4d62-9718-75973517d06f</id>
-      <BoundTo>1bec6e71-ee0f-4d81-a45f-60cd7280b16e</BoundTo>
-    </Compile>
-    <Compile Include="ApplicationModules\Chrome\OpenBrowser.UserCode.cs">
-      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4a44bef9-1e85-4f09-9155-68a87b7741bb</id>
-      <BoundTo>1bec6e71-ee0f-4d81-a45f-60cd7280b16e</BoundTo>
-    </Compile>
-    <Compile Include="ApplicationModules\Chrome\ValidateDownloaded.cs">
-      <DependentUpon>ValidateDownloaded.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>8796737e-a360-4f07-9f36-454158af18c4</id>
-      <BoundTo>fe1d4903-69b8-4e7e-a677-ce0c7d9b845d</BoundTo>
-    </Compile>
-    <Compile Include="ApplicationModules\Chrome\ValidateDownloaded.UserCode.cs">
-      <DependentUpon>ValidateDownloaded.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>33944f38-81a3-4f30-8090-836753841ff0</id>
-      <BoundTo>fe1d4903-69b8-4e7e-a677-ce0c7d9b845d</BoundTo>
+      <id>b476f1e6-e74a-4ad5-9dba-47ea464d8a2c</id>
     </Compile>
     <Compile Include="ApplicationModules\ControlPanel\CloseControlPanel.cs">
       <DependentUpon>CloseControlPanel.rxrec</DependentUpon>
@@ -182,14 +146,14 @@
       <id>85723fc7-fa4a-4877-a865-31f6a7bb9ed6</id>
       <BoundTo>48751317-8058-4f54-a4dc-882e3189009f</BoundTo>
     </Compile>
-    <Compile Include="ApplicationModules\ControlPanel\UninstallApp.cs">
-      <DependentUpon>UninstallApp.rxrec</DependentUpon>
+    <Compile Include="ApplicationModules\ControlPanel\UninstallIfExistApp.cs">
+      <DependentUpon>UninstallIfExistApp.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>9c1cd147-aa0e-43d9-a2a8-43cb14235a48</id>
       <BoundTo>efcdb540-db80-409d-8d0d-23dd6bcc171a</BoundTo>
     </Compile>
-    <Compile Include="ApplicationModules\ControlPanel\UninstallApp.UserCode.cs">
-      <DependentUpon>UninstallApp.rxrec</DependentUpon>
+    <Compile Include="ApplicationModules\ControlPanel\UninstallIfExistApp.UserCode.cs">
+      <DependentUpon>UninstallIfExistApp.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>473b4026-43dc-4e44-8fa9-d1e63c988d98</id>
       <BoundTo>efcdb540-db80-409d-8d0d-23dd6bcc171a</BoundTo>
@@ -230,18 +194,6 @@
       <id>d40c2d3a-89c4-4be8-a94c-549ca57efefa</id>
       <BoundTo>59adcca1-eb94-494c-ab50-c90e89ef0c8c</BoundTo>
     </Compile>
-    <Compile Include="ApplicationModules\GeneralApplication\Test.cs">
-      <BoundTo>9eee0769-17d3-484a-b676-ca48d204823c</BoundTo>
-      <DependentUpon>Test.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>6eee30d8-5b9e-4188-8858-a3cd26606ec5</id>
-    </Compile>
-    <Compile Include="ApplicationModules\GeneralApplication\Test.UserCode.cs">
-      <BoundTo>9eee0769-17d3-484a-b676-ca48d204823c</BoundTo>
-      <DependentUpon>Test.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>02ab6302-6dfc-4283-8de9-b3fa69bacf05</id>
-    </Compile>
     <Compile Include="ApplicationModules\Notepad\CloseApp.cs">
       <DependentUpon>CloseApp.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -253,6 +205,18 @@
       <UserCode>true</UserCode>
       <id>d61fff4b-cf0a-4638-88c0-29be33c97368</id>
       <BoundTo>ea05ce92-63d3-4d06-a651-cc6f5c99949d</BoundTo>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\DeleteFile.cs">
+      <BoundTo>78f3b860-c22a-4c32-a18f-8b0074db3f41</BoundTo>
+      <DependentUpon>DeleteFile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>38e8f8d1-2d9d-4282-a32a-1be35c6e33da</id>
+    </Compile>
+    <Compile Include="ApplicationModules\Notepad\DeleteFile.UserCode.cs">
+      <BoundTo>78f3b860-c22a-4c32-a18f-8b0074db3f41</BoundTo>
+      <DependentUpon>DeleteFile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0397258b-0a9b-4ec1-8520-f98388460a91</id>
     </Compile>
     <Compile Include="ApplicationModules\Notepad\InstallApp.cs">
       <DependentUpon>InstallApp.rxrec</DependentUpon>
@@ -281,6 +245,9 @@
     <Compile Include="AssemblyInfo.cs">
       <id>e8ba593f-db79-43bd-b7b0-6ed30de3940a</id>
     </Compile>
+    <Compile Include="Common\Constants.cs">
+      <id>331be3fb-12d1-4d75-bb1c-b81c1b82a693</id>
+    </Compile>
     <Compile Include="DesktopApp_ModulesRepository.cs">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
       <DependentUpon>DesktopApp_ModulesRepository.rxrep</DependentUpon>
@@ -289,32 +256,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ApplicationModules\Chrome\CloseBrowser.rxrec">
+    <None Include="ApplicationModules\Browser\DownloadFileSetup.rxrec">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>d9f15c56-2ea2-4539-b918-1ce2d32abdd5</id>
-      <recordtableid>2fe35adf-b05b-4456-b5bf-b2478c438c6c</recordtableid>
-    </None>
-    <None Include="ApplicationModules\Chrome\DownloadApp.rxrec">
-      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>4c1bb938-151e-4e5a-81c1-433075686407</id>
-      <recordtableid>1079f995-3537-470e-a785-773b49ffa279</recordtableid>
-    </None>
-    <None Include="ApplicationModules\Chrome\OpenBrowser.rxrec">
-      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>1bec6e71-ee0f-4d81-a45f-60cd7280b16e</id>
-      <recordtableid>a975b00a-e317-4c5d-bdf8-6ecbe21531f4</recordtableid>
-    </None>
-    <None Include="ApplicationModules\Chrome\ValidateDownloaded.rxrec">
-      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>fe1d4903-69b8-4e7e-a677-ce0c7d9b845d</id>
-      <recordtableid>9a097a65-4066-42c4-9816-9c541e035607</recordtableid>
+      <id>89cd528c-6c72-45c3-80a3-ae6e7092d9a9</id>
+      <recordtableid>9772c450-296e-4f85-8832-3597466bd661</recordtableid>
     </None>
     <None Include="ApplicationModules\ControlPanel\CloseControlPanel.rxrec">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
       <id>48751317-8058-4f54-a4dc-882e3189009f</id>
       <recordtableid>4c2d7051-ec98-482e-9852-1e9af3524fe0</recordtableid>
     </None>
-    <None Include="ApplicationModules\ControlPanel\UninstallApp.rxrec">
+    <None Include="ApplicationModules\ControlPanel\UninstallIfExistApp.rxrec">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
       <id>efcdb540-db80-409d-8d0d-23dd6bcc171a</id>
       <recordtableid>bcf63e84-8b93-4423-b0c1-45fbe12d487c</recordtableid>
@@ -334,15 +286,15 @@
       <id>59adcca1-eb94-494c-ab50-c90e89ef0c8c</id>
       <recordtableid>20da548e-0ca7-4fcb-b121-e4913fb1db5a</recordtableid>
     </None>
-    <None Include="ApplicationModules\GeneralApplication\Test.rxrec">
-      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
-      <id>9eee0769-17d3-484a-b676-ca48d204823c</id>
-      <recordtableid>422298ca-74f1-4425-a5e2-f83cacb68b08</recordtableid>
-    </None>
     <None Include="ApplicationModules\Notepad\CloseApp.rxrec">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
       <id>ea05ce92-63d3-4d06-a651-cc6f5c99949d</id>
       <recordtableid>a472755a-fde8-4072-859d-a5f373948c57</recordtableid>
+    </None>
+    <None Include="ApplicationModules\Notepad\DeleteFile.rxrec">
+      <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
+      <id>78f3b860-c22a-4c32-a18f-8b0074db3f41</id>
+      <recordtableid>2eb0b3b6-3579-4d8b-bd74-28ec3b46a358</recordtableid>
     </None>
     <None Include="ApplicationModules\Notepad\InstallApp.rxrec">
       <BoundTo>6bb3eeb7-a396-4b2e-8960-f1ca53093f1d</BoundTo>
@@ -373,7 +325,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ApplicationModules\Chrome">
+    <Folder Include="ApplicationModules\Browser">
       <id>370a32b3-0960-41a8-82f1-76860c095ffd</id>
     </Folder>
     <Folder Include="ApplicationModules\ControlPanel">
@@ -388,6 +340,15 @@
     <Folder Include="ApplicationModules\GeneralApplication">
       <id>de459cc0-02e3-43df-85cd-33020461225f</id>
     </Folder>
+    <Folder Include="Common">
+      <id>c9f66a88-22e6-4539-9f63-544a6cb866c4</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{B289424B-DE3D-4641-8B71-EEEEF77D498B}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

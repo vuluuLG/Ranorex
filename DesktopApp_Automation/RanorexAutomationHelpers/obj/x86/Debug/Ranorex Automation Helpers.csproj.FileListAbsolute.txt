@@ -1,0 +1,8 @@
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.xml
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.pdb
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex.ReportToPDF.exe
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csprojResolveAssemblyReference.cache
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.dll
+C:\Users\trang.duong\Documents\Ranorex\RanorexStudio Projects\Ranorex\DesktopApp_Automation\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.pdb
