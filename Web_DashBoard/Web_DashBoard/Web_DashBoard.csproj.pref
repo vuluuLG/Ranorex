@@ -2,15 +2,16 @@
   <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Record Actions\Panel\EnterIndicatorSetting.UserCode.cs" />
+    <Element value="Record Actions\Panel\EnterIndicatorSetting.rxrec" />
     <Element value="Web_DashBoard.rxtmg" />
-    <Element value="Record Actions\Panel\CheckColorSelected.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="Web_DashBoard.Record_Actions.SelectRowItem.selectRownItem(String modSelectedRowItemName)" />
+      <Element value="Web_DashBoard.Record_Actions.Panel.EnterIndicatorSetting.AddCriteria(String modPanelFroms, String modPanelColors)" />
       <Element value="Web_DashBoard.Record_Actions.SelectRowItem.selectRownItem(String modSelectedRowItemName)" />
       <Element value="Web_DashBoard.Record_Actions.SelectRowItem.Mouse_Click_ChkDelPanel(String modSelectedRowItemName)" />
       <Element value="Web_DashBoard.Record_Actions.Panel.CheckPanelExist.CheckPanelExists(String modCheckPanelExistName)" />

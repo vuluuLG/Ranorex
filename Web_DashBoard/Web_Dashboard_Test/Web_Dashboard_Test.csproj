@@ -161,6 +161,27 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>1186d1e0-8c80-401b-8e04-172648b29511</id>
     </Content>
+    <Content Include="TADashboard_BaseData.csv">
+      <Link>TADashboard_BaseData.csv</Link>
+      <BoundTo>970645dd-6cd5-4112-8008-f38a76a828f4</BoundTo>
+      <DependentUpon>Web_Dashboard_Test.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>d10c2fc1-a6f5-4498-b537-498002e15fbd</id>
+    </Content>
+    <Content Include="TADashboard_PageInfo.csv">
+      <Link>TADashboard_PageInfo.csv</Link>
+      <BoundTo>970645dd-6cd5-4112-8008-f38a76a828f4</BoundTo>
+      <DependentUpon>Web_Dashboard_Test.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>73319378-12b3-41e1-b639-d3e294ac2539</id>
+    </Content>
+    <Content Include="TADashboard_TestData_Panel.csv">
+      <Link>TADashboard_TestData_Panel.csv</Link>
+      <BoundTo>970645dd-6cd5-4112-8008-f38a76a828f4</BoundTo>
+      <DependentUpon>Web_Dashboard_Test.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>df7ebc42-dda3-4e1a-b52e-b81a201f2c9a</id>
+    </Content>
     <None Include="Web_Dashboard_TestRepository.rximg">
       <BoundTo>1a58ae48-fa9b-41cc-bcf9-0cdc3d438646</BoundTo>
       <DependentUpon>Web_Dashboard_TestRepository.rxrep</DependentUpon>

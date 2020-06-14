@@ -35,3 +35,6 @@ D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_
 D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_Test.csproj.CopyComplete
 D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_Test.exe
 D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\obj\x86\Debug\Web_Dashboard_Test.pdb
+D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\TADashboard_BaseData.csv
+D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\TADashboard_PageInfo.csv
+D:\Ranorex\Ranorex\Web_DashBoard\Web_Dashboard_Test\bin\Debug\TADashboard_TestData_Panel.csv

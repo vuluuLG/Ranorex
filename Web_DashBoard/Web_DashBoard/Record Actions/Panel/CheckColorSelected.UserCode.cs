@@ -65,7 +65,7 @@ namespace Web_DashBoard.Record_Actions.Panel
         		int loops = varColors.Length;
         		for (int i = 0; i < loops; i++) {
         			int varRow = i + 2;        			
-        			InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";         			
+        			InputTag txtColor = "/dom[@pageurl~'TADashboard']//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";         			
 					Validate.AreEqual(this.GetBGColor(txtColor).ToUpper(),varColors[i].ToUpper());
         		}
         	}        	

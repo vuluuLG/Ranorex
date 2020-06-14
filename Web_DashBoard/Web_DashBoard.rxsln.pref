@@ -9,11 +9,10 @@
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>{4D8CB34A-C6D5-4491-BBB7-FD3B40252B91}</string>
       <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
-      <string>38c14862-9003-480c-b2d6-2a028e5e14ae</string>
       <string>521a7a12-0750-4c0c-b417-a0f70b4c43a9</string>
       <string>a5544349-1205-4d66-887a-2d78f236a050</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution Web_DashBoard[Web_DashBoard[]Web_Dashboard_Test[]]]&#xD;&#xA;Solution Web_DashBoard\Ranorex Automation Helpers&#xD;&#xA;Solution Web_DashBoard" />
+  <ProjectBrowserState value="[Solution Web_DashBoard[Web_DashBoard[Record Actions[]Web_DashBoardRepository.rxrep[]]]]&#xD;&#xA;Solution Web_DashBoard\Web_Dashboard_Test&#xD;&#xA;Solution Web_DashBoard" />
   <StartupProject value="{811E16C6-362D-4EA9-896A-622ADAF7ABA0}" />
 </Properties>

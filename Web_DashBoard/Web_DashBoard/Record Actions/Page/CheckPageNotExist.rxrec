@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3b04334d-a660-4e7a-a871-7817814435b9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CheckPageNotExist"
+	namespace="Web_DashBoard.Record_Actions.Page">
+	</codegen>
+	<variables>
+		<var
+		id="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
+		name="modValidateNotExistPageName">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="CheckPageNotExist"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CheckPageDeleted"
+		namespace="Web_DashBoard.Record_Actions.Page"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d5357f51-218b-439d-9eb5-94080dbd9a27">
+				<argument
+				argname="modValidateNotExistPageName"
+				id="b0d164db-31e7-4fb4-9792-930b0d7576f3"
+				variable="modValidateNotExistPageName">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="3d69752c-c401-4365-984f-a65a6c995533"
+	name="Web_DashBoardRepository"
+	relativepath="..\..\Web_DashBoardRepository.rxrep">
+		<codegen
+		classname="Web_DashBoardRepository"
+		namespace="Web_DashBoard">
+		</codegen>
+		<rootfolder
+		id="c0b288b1-adc9-4642-a32e-5641551c150e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CheckPageNotExist.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

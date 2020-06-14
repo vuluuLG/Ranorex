@@ -115,17 +115,6 @@ name="Web_DashBoardRepository">
 						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-displaySettings']
 					</basepath>
 				</folder>
-				<folder
-				capname="divtag"
-				id="83107cbd-a914-4c0e-a9af-9490a6f4534f"
-				isrooted="True"
-				name="FilterSettingTab"
-				searchtimeout="30000ms"
-				usecache="False">
-					<basepath>
-						/dom[@pageurl~'TADashboard']//div[#'div_panelPopup']//div[@id='tabs-data']
-					</basepath>
-				</folder>
 				<item
 				capname="inputtag"
 				id="c1a43a33-fbbe-44d7-9ae4-78392c782393"
@@ -161,65 +150,8 @@ name="Web_DashBoardRepository">
 			refimgid="8ac2ddab-5841-4110-a817-fde081eeafab"
 			searchtimeout="30000ms"
 			usecache="False">
-				<item
-				addcaps="unknown,webelement,tdtag"
-				capname="tdtag"
-				id="6595f4ff-4672-489d-a6f6-5c3227e33a57"
-				name="TdTagHash7030a0"
-				refimgid="fa2c2103-a583-4a71-8be4-c75caba16940"
-				searchtimeout="30000ms">
-					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title='#7030a0']
-				</item>
-				<item
-				addcaps="unknown,webelement,tdtag"
-				capname="tdtag"
-				id="1689ccbe-9707-4838-a997-70e9301d8832"
-				name="TdTagHashff0000"
-				refimgid="8d99bd21-8768-4367-9860-0d4463e94e0a"
-				searchtimeout="30000ms">
-					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title='#ff0000']
-				</item>
-				<item
-				addcaps="unknown,webelement,tdtag"
-				capname="tdtag"
-				id="11ce0fda-92fc-4406-810b-503f2826c3aa"
-				name="TdTagHashffff00"
-				refimgid="36d767a4-bf66-49bf-850f-93bde5b4866d"
-				searchtimeout="30000ms">
-					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title='#ffff00']
-				</item>
 				<basepath>
 					/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']
-				</basepath>
-			</folder>
-			<folder
-			addcaps="unknown,webelement,tabletag"
-			capname="table"
-			id="bd821e3b-678d-4efc-8118-bb9660076b9f"
-			isrooted="True"
-			name="TblThreshold"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="4e292bb9-c3b9-4f5d-b0fe-01a9c7c2f50d"
-				name="txtCriteria"
-				refimgid="f67af1ce-d772-422a-a3ef-78a30758925d"
-				searchtimeout="30000ms">
-					/dom[@pageurl~'TADashboard']//table[#'tblThreshold']//input[#'criteria']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="1545531d-c9a1-4e2c-bd0d-b5d1aed9fd6c"
-				name="TxtColor"
-				refimgid="12ff65e7-c23c-4e34-ba17-ae152da7dc83"
-				searchtimeout="30000ms">
-					/dom[@pageurl~'TADashboard']//table[#'tblThreshold']//input[#'txtColor']
-				</item>
-				<basepath>
-					/dom[@pageurl~'TADashboard']//table[#'tblThreshold']
 				</basepath>
 			</folder>
 			<folder
@@ -427,16 +359,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@title&gt;'TestArchitect' or @title='Message from webpage']//button[@accessiblename='OK' or @text='OK']
 			</item>
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="13d9599c-3721-4bcd-9c88-9cfa933490c0"
-			name="AttributeBasedValidationExampleRan"
-			refimgid="5163a05a-8605-434a-8464-48140168eff6"
-			refpath="/form[@title>'Attribute-based validation']/titlebar[@accessiblerole='TitleBar']"
-			searchtimeout="30000ms">
-				/form[@title&gt;'TestArchitect' or @title='Message from webpage']/titlebar[@accessiblerole='TitleBar']
-			</item>
 			<basepath>
 				/form[@title&gt;'TestArchitect' or @title='Message from webpage']
 			</basepath>
@@ -460,24 +382,8 @@ MdgAAAAASUVORK5CYII=
 	</rootfolder>
 	<variables>
 		<var
-		id="0b52e6cb-f81d-49cd-94fc-37ca34305381"
-		name="modSelectedItem">
-		</var>
-		<var
-		id="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
-		name="modValidateNotExistPageName">
-		</var>
-		<var
-		id="643b0c28-4bc5-4754-ac40-9a1ef660178f"
-		name="repoPageName">
-		</var>
-		<var
 		id="26955889-fa67-4888-819b-fd4a9830099a"
 		name="repoSelectedItem">
-		</var>
-		<var
-		id="ee505d0b-5904-48e8-8993-bab81144b2a5"
-		name="repoAddedPageName">
 		</var>
 		<var
 		id="a25ff99c-3212-46ff-97b2-855f9b416587"

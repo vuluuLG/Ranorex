@@ -1,10 +1,6 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="UserCodeCollections\FileLibrary.cs" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
-  <Array name="files">
-    <Element value="UserCodeCollections\FileLibrary.cs" />
-  </Array>
+  <Array name="files" />
   <Properties name="projectSavedData" />
 </Properties>

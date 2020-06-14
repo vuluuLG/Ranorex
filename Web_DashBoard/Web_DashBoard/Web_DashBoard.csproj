@@ -129,149 +129,185 @@
     <Compile Include="Program.cs">
       <id>0e8f8dd5-6c12-424f-aa7d-1b5456932a99</id>
     </Compile>
-    <Compile Include="Record Actions\AddNew.cs">
-      <BoundTo>ac303085-8b70-4725-9b29-6a2251eeec8b</BoundTo>
-      <DependentUpon>AddNew.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>a3c83b22-c31c-4e0f-bc9f-90887fd2408c</id>
-    </Compile>
-    <Compile Include="Record Actions\AddNew.UserCode.cs">
-      <BoundTo>ac303085-8b70-4725-9b29-6a2251eeec8b</BoundTo>
-      <DependentUpon>AddNew.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>d1312edf-29ed-41b1-9364-cc13ca8cf9c3</id>
-    </Compile>
-    <Compile Include="Record Actions\CheckPageExist.cs">
-      <DependentUpon>CheckPageExist.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>76027073-169c-4174-8469-23fb5e6a2ec4</id>
-      <BoundTo>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\CheckPageExist.UserCode.cs">
-      <DependentUpon>CheckPageExist.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>32e73646-9eff-407b-a886-9c4d6236a52c</id>
-      <BoundTo>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\CheckPageIsNavigated.cs">
-      <DependentUpon>CheckPageIsNavigated.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>ee3b4a7d-1245-4262-92f3-3f3c7296a4c4</id>
-      <BoundTo>8af8a105-b6b1-448c-8e4c-ed24973068d0</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\CheckPageIsNavigated.UserCode.cs">
-      <DependentUpon>CheckPageIsNavigated.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e5e973ab-a2fa-43e1-b11c-d5b9560a92a5</id>
-      <BoundTo>8af8a105-b6b1-448c-8e4c-ed24973068d0</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\CheckPageNotExist.cs">
-      <DependentUpon>CheckPageNotExist.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0418dadd-dccb-4207-83fc-4f63b539a4b1</id>
-      <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\CheckPageNotExist.UserCode.cs">
-      <DependentUpon>CheckPageNotExist.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>52063458-ed49-4c4b-a213-9ca6fb9a8fa0</id>
-      <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\ClickDeleteItem.cs">
+    <Compile Include="Record Actions\Common\ClickDeleteItem.cs">
       <DependentUpon>ClickDeleteItem.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>72849da5-597f-4e42-b918-6ac7e0a8a2f6</id>
       <BoundTo>7a25a5fb-8d92-480f-a9a8-4d41e2ba462b</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\ClickDeleteItem.UserCode.cs">
+    <Compile Include="Record Actions\Common\ClickDeleteItem.UserCode.cs">
       <DependentUpon>ClickDeleteItem.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4a826e38-b627-45a2-bc82-c6bab9a3997f</id>
       <BoundTo>7a25a5fb-8d92-480f-a9a8-4d41e2ba462b</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\CloseBrowser.cs">
+    <Compile Include="Record Actions\Common\CloseBrowser.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>839fc8fe-1059-4548-80ff-dcee787693ee</id>
       <BoundTo>b4679731-9dd5-4031-a053-fbb45db0d5c3</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\CloseBrowser.UserCode.cs">
+    <Compile Include="Record Actions\Common\CloseBrowser.UserCode.cs">
       <DependentUpon>CloseBrowser.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>38d25232-85a7-4740-9fe4-12fb48c6f4f8</id>
       <BoundTo>b4679731-9dd5-4031-a053-fbb45db0d5c3</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\ConfirmDelete.cs">
-      <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
+    <Compile Include="Record Actions\Common\ConfirmDelete.cs">
       <DependentUpon>ConfirmDelete.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>b918d800-16a7-4deb-a5c7-2dc776f55a05</id>
-    </Compile>
-    <Compile Include="Record Actions\ConfirmDelete.UserCode.cs">
       <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\ConfirmDelete.UserCode.cs">
       <DependentUpon>ConfirmDelete.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5fd3f6a1-736f-476c-b145-97a277444f1e</id>
+      <BoundTo>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\GenerateNewName.cs">
-      <BoundTo>13abfe69-dcb6-4101-a21f-164300533adf</BoundTo>
+    <Compile Include="Record Actions\Common\GenerateNewName.cs">
       <DependentUpon>GenerateNewName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>80b6278f-5f43-454e-b5a1-42f2af2acd6f</id>
-    </Compile>
-    <Compile Include="Record Actions\GenerateNewName.UserCode.cs">
       <BoundTo>13abfe69-dcb6-4101-a21f-164300533adf</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\GenerateNewName.UserCode.cs">
       <DependentUpon>GenerateNewName.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>09f225f0-b77e-4bf3-a674-ad2c606de10d</id>
+      <BoundTo>13abfe69-dcb6-4101-a21f-164300533adf</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\GenerateUpdateName.cs">
-      <BoundTo>8527b371-6018-4271-b0ed-7c3e6f7db77d</BoundTo>
+    <Compile Include="Record Actions\Common\GenerateUpdateName.cs">
       <DependentUpon>GenerateUpdateName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>91b84446-bd88-4950-88ec-92864a413d01</id>
-    </Compile>
-    <Compile Include="Record Actions\GenerateUpdateName.UserCode.cs">
       <BoundTo>8527b371-6018-4271-b0ed-7c3e6f7db77d</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\GenerateUpdateName.UserCode.cs">
       <DependentUpon>GenerateUpdateName.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d1448db7-2e89-439f-a43d-e430a4a76616</id>
+      <BoundTo>8527b371-6018-4271-b0ed-7c3e6f7db77d</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\LogIn.cs">
-      <DependentUpon>LogIn.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>21a16aa4-06bd-4053-9abc-f857b90a6e75</id>
-      <BoundTo>68cdc111-de0e-44c5-bd22-126eb299001b</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\LogIn.UserCode.cs">
-      <DependentUpon>LogIn.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e743279d-1e5f-4c28-a13c-c59fc142099f</id>
-      <BoundTo>68cdc111-de0e-44c5-bd22-126eb299001b</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\LogOut.cs">
-      <DependentUpon>LogOut.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>e1b1b7be-6231-4679-bbbf-c42bb83c7d11</id>
-      <BoundTo>6b3663cf-e1f2-45cf-9490-a6f729129049</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\LogOut.UserCode.cs">
-      <DependentUpon>LogOut.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>bc41d48b-201c-4672-b3cd-dd4096320743</id>
-      <BoundTo>6b3663cf-e1f2-45cf-9490-a6f729129049</BoundTo>
-    </Compile>
-    <Compile Include="Record Actions\OpenBrowser.cs">
+    <Compile Include="Record Actions\Common\OpenBrowser.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>78e13056-0773-4dc9-a459-92a89deff348</id>
       <BoundTo>4d608b70-31a5-41d2-9296-38e587d91152</BoundTo>
     </Compile>
-    <Compile Include="Record Actions\OpenBrowser.UserCode.cs">
+    <Compile Include="Record Actions\Common\OpenBrowser.UserCode.cs">
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6f9ef0df-0dfa-4a77-9475-a808621cf7cb</id>
       <BoundTo>4d608b70-31a5-41d2-9296-38e587d91152</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\SelectGlobleMenuItem.cs">
+      <DependentUpon>SelectGlobleMenuItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8ce62100-93e1-41f9-8ee8-141103a8eebd</id>
+      <BoundTo>333bf649-a9f0-474b-a302-80a4d3da0c67</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\SelectGlobleMenuItem.UserCode.cs">
+      <DependentUpon>SelectGlobleMenuItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3211a23e-3de3-4639-954f-c7cc70e7b569</id>
+      <BoundTo>333bf649-a9f0-474b-a302-80a4d3da0c67</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\SelectHeaderMenuItem.cs">
+      <DependentUpon>SelectHeaderMenuItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>daae3a95-76ca-462a-afb0-8fb111adb7d8</id>
+      <BoundTo>88808c27-a32a-403d-a5d0-621a7adaf46a</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\SelectHeaderMenuItem.UserCode.cs">
+      <DependentUpon>SelectHeaderMenuItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9e18ee7-d751-4925-91de-7b01aa7123a9</id>
+      <BoundTo>88808c27-a32a-403d-a5d0-621a7adaf46a</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\SelectRowItem.cs">
+      <DependentUpon>SelectRowItem.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>be53a4ca-6e95-4181-bb75-7e73ef6e799f</id>
+      <BoundTo>e36c3aa2-7467-4954-8b6a-19b7971f08f5</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Common\SelectRowItem.UserCode.cs">
+      <DependentUpon>SelectRowItem.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddedabbc-66d7-461b-b21c-f7fb65539add</id>
+      <BoundTo>e36c3aa2-7467-4954-8b6a-19b7971f08f5</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogIn\LogIn.cs">
+      <DependentUpon>LogIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>21a16aa4-06bd-4053-9abc-f857b90a6e75</id>
+      <BoundTo>68cdc111-de0e-44c5-bd22-126eb299001b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogIn\LogIn.UserCode.cs">
+      <DependentUpon>LogIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e743279d-1e5f-4c28-a13c-c59fc142099f</id>
+      <BoundTo>68cdc111-de0e-44c5-bd22-126eb299001b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogIn\LogOut.cs">
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1b1b7be-6231-4679-bbbf-c42bb83c7d11</id>
+      <BoundTo>6b3663cf-e1f2-45cf-9490-a6f729129049</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\LogIn\LogOut.UserCode.cs">
+      <DependentUpon>LogOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc41d48b-201c-4672-b3cd-dd4096320743</id>
+      <BoundTo>6b3663cf-e1f2-45cf-9490-a6f729129049</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\CheckPageExist.cs">
+      <DependentUpon>CheckPageExist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76027073-169c-4174-8469-23fb5e6a2ec4</id>
+      <BoundTo>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\CheckPageExist.UserCode.cs">
+      <DependentUpon>CheckPageExist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32e73646-9eff-407b-a886-9c4d6236a52c</id>
+      <BoundTo>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\CheckPageIsNavigated.cs">
+      <DependentUpon>CheckPageIsNavigated.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee3b4a7d-1245-4262-92f3-3f3c7296a4c4</id>
+      <BoundTo>8af8a105-b6b1-448c-8e4c-ed24973068d0</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\CheckPageIsNavigated.UserCode.cs">
+      <DependentUpon>CheckPageIsNavigated.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e5e973ab-a2fa-43e1-b11c-d5b9560a92a5</id>
+      <BoundTo>8af8a105-b6b1-448c-8e4c-ed24973068d0</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\CheckPageNotExist.cs">
+      <DependentUpon>CheckPageNotExist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0418dadd-dccb-4207-83fc-4f63b539a4b1</id>
+      <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\CheckPageNotExist.UserCode.cs">
+      <DependentUpon>CheckPageNotExist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52063458-ed49-4c4b-a213-9ca6fb9a8fa0</id>
+      <BoundTo>91e80488-8bd2-4a96-abec-104393c24e6b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\SelectPage.cs">
+      <DependentUpon>SelectPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa6c1e2d-69c5-461b-a9a4-1f4fe0101f6c</id>
+      <BoundTo>375aa49f-4329-4af4-a7c0-5a06fb5be60e</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Page\SelectPage.UserCode.cs">
+      <DependentUpon>SelectPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>985eb837-ec9c-4858-9dc5-8d99b6c69e5b</id>
+      <BoundTo>375aa49f-4329-4af4-a7c0-5a06fb5be60e</BoundTo>
     </Compile>
     <Compile Include="Record Actions\Page\SubmitPageInfo.cs">
       <DependentUpon>SubmitPageInfo.rxrec</DependentUpon>
@@ -284,6 +320,18 @@
       <UserCode>true</UserCode>
       <id>e34cfe87-0630-4965-adab-170d6a7e7a3a</id>
       <BoundTo>f154513c-4723-43d9-ad0a-a8900b6d31b2</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Panel\AddNew.cs">
+      <DependentUpon>AddNew.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a3c83b22-c31c-4e0f-bc9f-90887fd2408c</id>
+      <BoundTo>ac303085-8b70-4725-9b29-6a2251eeec8b</BoundTo>
+    </Compile>
+    <Compile Include="Record Actions\Panel\AddNew.UserCode.cs">
+      <DependentUpon>AddNew.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d1312edf-29ed-41b1-9364-cc13ca8cf9c3</id>
+      <BoundTo>ac303085-8b70-4725-9b29-6a2251eeec8b</BoundTo>
     </Compile>
     <Compile Include="Record Actions\Panel\AddPanel.cs">
       <BoundTo>4637106b-d550-40e2-9cc9-b0947b7c1b9d</BoundTo>
@@ -357,54 +405,6 @@
       <UserCode>true</UserCode>
       <id>cd554b23-dedd-44a0-b975-c53df3ed5b7e</id>
     </Compile>
-    <Compile Include="Record Actions\SelectGlobleMenuItem.cs">
-      <BoundTo>333bf649-a9f0-474b-a302-80a4d3da0c67</BoundTo>
-      <DependentUpon>SelectGlobleMenuItem.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>8ce62100-93e1-41f9-8ee8-141103a8eebd</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectGlobleMenuItem.UserCode.cs">
-      <BoundTo>333bf649-a9f0-474b-a302-80a4d3da0c67</BoundTo>
-      <DependentUpon>SelectGlobleMenuItem.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>3211a23e-3de3-4639-954f-c7cc70e7b569</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectHeaderMenuItem.cs">
-      <BoundTo>88808c27-a32a-403d-a5d0-621a7adaf46a</BoundTo>
-      <DependentUpon>SelectHeaderMenuItem.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>daae3a95-76ca-462a-afb0-8fb111adb7d8</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectHeaderMenuItem.UserCode.cs">
-      <BoundTo>88808c27-a32a-403d-a5d0-621a7adaf46a</BoundTo>
-      <DependentUpon>SelectHeaderMenuItem.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b9e18ee7-d751-4925-91de-7b01aa7123a9</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectPage.cs">
-      <BoundTo>375aa49f-4329-4af4-a7c0-5a06fb5be60e</BoundTo>
-      <DependentUpon>SelectPage.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>fa6c1e2d-69c5-461b-a9a4-1f4fe0101f6c</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectPage.UserCode.cs">
-      <BoundTo>375aa49f-4329-4af4-a7c0-5a06fb5be60e</BoundTo>
-      <DependentUpon>SelectPage.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>985eb837-ec9c-4858-9dc5-8d99b6c69e5b</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectRowItem.cs">
-      <BoundTo>e36c3aa2-7467-4954-8b6a-19b7971f08f5</BoundTo>
-      <DependentUpon>SelectRowItem.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>be53a4ca-6e95-4181-bb75-7e73ef6e799f</id>
-    </Compile>
-    <Compile Include="Record Actions\SelectRowItem.UserCode.cs">
-      <BoundTo>e36c3aa2-7467-4954-8b6a-19b7971f08f5</BoundTo>
-      <DependentUpon>SelectRowItem.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>ddedabbc-66d7-461b-b21c-f7fb65539add</id>
-    </Compile>
     <Compile Include="Web_DashBoardRepository.cs">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <DependentUpon>Web_DashBoardRepository.rxrep</DependentUpon>
@@ -416,70 +416,90 @@
     <None Include="app.config">
       <id>8739c1b7-ca83-4ef8-a09a-6b9ffb86a8d2</id>
     </None>
-    <None Include="Record Actions\AddNew.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>ac303085-8b70-4725-9b29-6a2251eeec8b</id>
-      <recordtableid>6c7d15ff-8f5a-4247-ba12-e8a95711969e</recordtableid>
-    </None>
-    <None Include="Record Actions\CheckPageExist.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</id>
-      <recordtableid>38f921a5-7c5e-46de-a863-381071224212</recordtableid>
-    </None>
-    <None Include="Record Actions\CheckPageIsNavigated.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>8af8a105-b6b1-448c-8e4c-ed24973068d0</id>
-      <recordtableid>336b06f1-53fb-497c-9cbc-9a1612cfb32a</recordtableid>
-    </None>
-    <None Include="Record Actions\CheckPageNotExist.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>91e80488-8bd2-4a96-abec-104393c24e6b</id>
-      <recordtableid>3b04334d-a660-4e7a-a871-7817814435b9</recordtableid>
-    </None>
-    <None Include="Record Actions\ClickDeleteItem.rxrec">
+    <None Include="Record Actions\Common\ClickDeleteItem.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>7a25a5fb-8d92-480f-a9a8-4d41e2ba462b</id>
       <recordtableid>255bb4e3-40e8-45c7-a6aa-790dde55c617</recordtableid>
     </None>
-    <None Include="Record Actions\CloseBrowser.rxrec">
+    <None Include="Record Actions\Common\CloseBrowser.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>b4679731-9dd5-4031-a053-fbb45db0d5c3</id>
       <recordtableid>37ce4a7a-5626-4f2f-b8f7-2de12472c5cb</recordtableid>
     </None>
-    <None Include="Record Actions\ConfirmDelete.rxrec">
+    <None Include="Record Actions\Common\ConfirmDelete.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>a8991b7d-c49b-4aa7-9fd1-c0c9d32dd3b2</id>
       <recordtableid>6fa42f98-ed2a-4abc-a1c7-057f776bad1c</recordtableid>
     </None>
-    <None Include="Record Actions\GenerateNewName.rxrec">
+    <None Include="Record Actions\Common\GenerateNewName.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>13abfe69-dcb6-4101-a21f-164300533adf</id>
       <recordtableid>da6b3217-35db-4570-ac77-b0335825776a</recordtableid>
     </None>
-    <None Include="Record Actions\GenerateUpdateName.rxrec">
+    <None Include="Record Actions\Common\GenerateUpdateName.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>8527b371-6018-4271-b0ed-7c3e6f7db77d</id>
       <recordtableid>68c8aa2f-900e-4f76-b2b1-02fefaf1e51f</recordtableid>
     </None>
-    <None Include="Record Actions\LogIn.rxrec">
+    <None Include="Record Actions\Common\OpenBrowser.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>4d608b70-31a5-41d2-9296-38e587d91152</id>
+      <recordtableid>abdff23a-ebdb-460e-a1e2-ad870356a5e0</recordtableid>
+    </None>
+    <None Include="Record Actions\Common\SelectGlobleMenuItem.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>333bf649-a9f0-474b-a302-80a4d3da0c67</id>
+      <recordtableid>acbfcf69-45f3-4f16-8229-d16754701799</recordtableid>
+    </None>
+    <None Include="Record Actions\Common\SelectHeaderMenuItem.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>88808c27-a32a-403d-a5d0-621a7adaf46a</id>
+      <recordtableid>54a98369-c656-4046-b910-d4e6195a668e</recordtableid>
+    </None>
+    <None Include="Record Actions\Common\SelectRowItem.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>e36c3aa2-7467-4954-8b6a-19b7971f08f5</id>
+      <recordtableid>e04541d0-965e-4da8-9e99-0b6534d318b2</recordtableid>
+    </None>
+    <None Include="Record Actions\LogIn\LogIn.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>68cdc111-de0e-44c5-bd22-126eb299001b</id>
       <recordtableid>32b25d90-fcc7-4b82-951e-171f7933c94e</recordtableid>
     </None>
-    <None Include="Record Actions\LogOut.rxrec">
+    <None Include="Record Actions\LogIn\LogOut.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>6b3663cf-e1f2-45cf-9490-a6f729129049</id>
       <recordtableid>6ae83ff8-be06-4ef6-92bb-f608d9b74367</recordtableid>
     </None>
-    <None Include="Record Actions\OpenBrowser.rxrec">
+    <None Include="Record Actions\Page\CheckPageExist.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>4d608b70-31a5-41d2-9296-38e587d91152</id>
-      <recordtableid>abdff23a-ebdb-460e-a1e2-ad870356a5e0</recordtableid>
+      <id>bc3da69b-c056-4cb9-9217-48f9ba1aea5e</id>
+      <recordtableid>38f921a5-7c5e-46de-a863-381071224212</recordtableid>
+    </None>
+    <None Include="Record Actions\Page\CheckPageIsNavigated.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>8af8a105-b6b1-448c-8e4c-ed24973068d0</id>
+      <recordtableid>336b06f1-53fb-497c-9cbc-9a1612cfb32a</recordtableid>
+    </None>
+    <None Include="Record Actions\Page\CheckPageNotExist.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>91e80488-8bd2-4a96-abec-104393c24e6b</id>
+      <recordtableid>3b04334d-a660-4e7a-a871-7817814435b9</recordtableid>
+    </None>
+    <None Include="Record Actions\Page\SelectPage.rxrec">
+      <id>375aa49f-4329-4af4-a7c0-5a06fb5be60e</id>
+      <recordtableid>38c14862-9003-480c-b2d6-2a028e5e14ae</recordtableid>
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
     </None>
     <None Include="Record Actions\Page\SubmitPageInfo.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <id>f154513c-4723-43d9-ad0a-a8900b6d31b2</id>
       <recordtableid>bace383e-ce24-4d35-a374-222d4571d37a</recordtableid>
+    </None>
+    <None Include="Record Actions\Panel\AddNew.rxrec">
+      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
+      <id>ac303085-8b70-4725-9b29-6a2251eeec8b</id>
+      <recordtableid>6c7d15ff-8f5a-4247-ba12-e8a95711969e</recordtableid>
     </None>
     <None Include="Record Actions\Panel\AddPanel.rxrec">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
@@ -511,30 +531,10 @@
       <id>1c20c758-6b95-4a6e-bb63-4227ed6757e8</id>
       <recordtableid>13543351-7643-4a26-b824-389cfe5c4466</recordtableid>
     </None>
-    <None Include="Record Actions\SelectGlobleMenuItem.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>333bf649-a9f0-474b-a302-80a4d3da0c67</id>
-      <recordtableid>acbfcf69-45f3-4f16-8229-d16754701799</recordtableid>
-    </None>
-    <None Include="Record Actions\SelectHeaderMenuItem.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>88808c27-a32a-403d-a5d0-621a7adaf46a</id>
-      <recordtableid>54a98369-c656-4046-b910-d4e6195a668e</recordtableid>
-    </None>
-    <None Include="Record Actions\SelectPage.rxrec">
-      <id>375aa49f-4329-4af4-a7c0-5a06fb5be60e</id>
-      <recordtableid>38c14862-9003-480c-b2d6-2a028e5e14ae</recordtableid>
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-    </None>
     <Content Include="Web_DashBoard.rxsqc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>836d5f0f-8567-4cda-9ca1-6923f9669018</id>
     </Content>
-    <None Include="Record Actions\SelectRowItem.rxrec">
-      <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
-      <id>e36c3aa2-7467-4954-8b6a-19b7971f08f5</id>
-      <recordtableid>e04541d0-965e-4da8-9e99-0b6534d318b2</recordtableid>
-    </None>
     <None Include="Web_DashBoardRepository.rximg">
       <BoundTo>c3427588-8506-43d8-9c15-fa4919818b27</BoundTo>
       <DependentUpon>Web_DashBoardRepository.rxrep</DependentUpon>
@@ -556,6 +556,12 @@
   <ItemGroup>
     <Folder Include="Record Actions">
       <id>521a7a12-0750-4c0c-b417-a0f70b4c43a9</id>
+    </Folder>
+    <Folder Include="Record Actions\LogIn">
+      <id>e8ca4bb3-f0b5-4c84-a927-8ed507cab1a6</id>
+    </Folder>
+    <Folder Include="Record Actions\Common">
+      <id>c68584ac-4e63-4c3b-8504-979e5307d235</id>
     </Folder>
     <Folder Include="Record Actions\Page">
       <id>1e63dd93-e143-4b6e-bd03-fdf52325486a</id>

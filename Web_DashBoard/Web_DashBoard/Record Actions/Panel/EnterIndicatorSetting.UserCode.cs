@@ -46,18 +46,18 @@ namespace Web_DashBoard.Record_Actions.Panel
         			int varRow = i+2;
         			if (i>0) {
         				int varButtonRow = i+1;        					
-						ImgTag btnAdd = "//table[@id='tblThreshold']//tr["+ varButtonRow +"]//img[@id='btnAdd']";        					
+						ImgTag btnAdd = "/dom[@pageurl~'TADashboard']//table[@id='tblThreshold']//tr["+ varButtonRow +"]//img[@id='btnAdd']";        					
 						Report.Log(ReportLevel.Info,"Add one more  criteria.");
         				btnAdd.Click();
         			}
-        			InputTag txtFrom = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='criteria']";
-        			InputTag txtColor = "//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";        				        				
+        			InputTag txtFrom = "/dom[@pageurl~'TADashboard']//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='criteria']";
+        			InputTag txtColor = "/dom[@pageurl~'TADashboard']//table[@id='tblThreshold']//tr["+ varRow +"]//input[@id='txtColor']";        				        				
         				
         			txtFrom.Element.SetAttributeValue("Value",varFrom);
         			txtColor.Click();
         			repo.Dashboard.ColorPickerTable.SelfInfo.WaitForExists(5000);
         				
-        			TdTag tdPickedColor = "//table[@id='colorPickerTable']//td[@title~'"+ varColor +"']";
+        			TdTag tdPickedColor = "/dom[@pageurl~'TADashboard']//table[@id='colorPickerTable']//td[@title~'"+ varColor +"']";
         			tdPickedColor.Click();        			
         		}
         	}      	

@@ -36,7 +36,7 @@ namespace Web_DashBoard.Record_Actions.Panel
         public void CheckPanelExists(string modCheckPanelExistName)
         {
             Report.Log(ReportLevel.Info, "Validation", "Varify panel: '"+modCheckPanelExistName+"' exist.");
-            ATag linkPanel = "//table//a[@innertext='" +modCheckPanelExistName+ "']";
+            ATag linkPanel = "/dom[@pageurl~'TADashboard']//table//a[@innertext='" +modCheckPanelExistName+ "']";
             Validate.Exists(linkPanel);
         }
 
