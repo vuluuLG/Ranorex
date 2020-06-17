@@ -14,10 +14,23 @@
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>1a58ae48-fa9b-41cc-bcf9-0cdc3d438646</projectdefaultrepository>
     <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
-    <Prefer32Bit>True</Prefer32Bit>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -27,6 +40,7 @@
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -125,21 +139,10 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
       <id>739f2295-8e05-4956-b52c-593f78f17045</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Program.cs">
       <id>e3db5fdb-546e-45c9-bf01-2525364e913b</id>
-    </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>d8c7cc75-af79-4032-8d0a-5edebb1e383d</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b26ba015-ed79-41b5-b29d-534cc8bf4b0f</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>d8c7cc75-af79-4032-8d0a-5edebb1e383d</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>2bdd87fd-c377-41c4-a258-e195e59664f8</id>
     </Compile>
     <Compile Include="Web_Dashboard_TestRepository.cs">
       <BoundTo>1a58ae48-fa9b-41cc-bcf9-0cdc3d438646</BoundTo>
@@ -151,11 +154,7 @@
   <ItemGroup>
     <None Include="app.config">
       <id>052b9cea-7df5-4b19-afb7-d1f081e2ac18</id>
-    </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>1a58ae48-fa9b-41cc-bcf9-0cdc3d438646</BoundTo>
-      <id>d8c7cc75-af79-4032-8d0a-5edebb1e383d</id>
-      <recordtableid>e88324b0-67bc-4bcd-9e60-d0897f662bb9</recordtableid>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Content Include="Web_Dashboard_Test.rxsqc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

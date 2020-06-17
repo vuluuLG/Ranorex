@@ -36,7 +36,7 @@ namespace Web_DashBoard.Record_Actions.Page
         public void CheckPageDeleted(string modValidateNotExistPageName)
         {        	
             Report.Log(ReportLevel.Info, "Validation", "Validating Page Not Exists on item 'atagInfo'.");
-            Validate.NotExists(".//div[#'main-menu']//a[@innertext='"+modValidateNotExistPageName+"']");
+            Validate.NotExists("/dom[@pageurl~'TADashboard']//div[#'main-menu']//a[@innertext='"+modValidateNotExistPageName+"']");
         }
         
 

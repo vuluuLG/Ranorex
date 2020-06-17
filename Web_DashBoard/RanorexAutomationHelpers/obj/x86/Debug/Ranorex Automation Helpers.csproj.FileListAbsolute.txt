@@ -17,3 +17,13 @@ D:\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex 
 D:\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csproj.CopyComplete
 D:\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.dll
 D:\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.pdb
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.xml
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.pdb
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\bin\Debug\Ranorex.Core.Resolver.dll
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\bin\Debug\Ranorex.ReportToPDF.exe
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csprojAssemblyReference.cache
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csproj.CoreCompileInputs.cache
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csproj.CopyComplete
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.dll
+F:\Training\Ranorex\Ranorex\Web_DashBoard\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.pdb

@@ -176,26 +176,6 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
-			<testmodule
-			id="28f3f90f-68d5-4769-831e-b2ec74064f8c"
-			name="GenerateUpdateName"
-			ref="68c8aa2f-900e-4f76-b2b1-02fefaf1e51f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Page Name"
-					datasourceid="d4f308ce-1175-4278-8284-4c2d12d15692"
-					variableid="662328e7-5c21-4284-b51b-8fa2ef5646a6"
-					variablename="modUpdateName">
-					</var>
-					<var
-					dataname="modUpdatedName"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="150112c1-739c-4393-8b80-96cb0c0a9b0f"
-					variablename="modUpdatedName">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="2e170a85-6bf1-417b-928f-4812cceefe2e"
 			name="TC01">
@@ -442,7 +422,7 @@
 					variablename="repoSelectedItem">
 					</var>
 					<var
-					dataname="modUpdatedName"
+					dataname="modNewPageName"
 					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
 					variableid="c865dd6f-ae2c-46fd-b841-09f92215a50e"
 					variablename="repoSelectedPageName">
@@ -765,7 +745,7 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="modUpdatedName"
+					dataname="modNewPageName"
 					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
 					variableid="e92a8d07-3b39-4648-8de0-d9d309b59f2e"
 					variablename="modValidateNotExistPageName">
@@ -912,61 +892,6 @@
 					</var>
 				</databinding>
 			</modulegroup>
-			<modulegroup
-			id="c2d49f4b-26b0-429b-ae04-ec8239e86fe3"
-			name="UpdatePage"
-			ref="a4731725-d9d5-403c-b4b4-2a6441cb72f5">
-				<databinding>
-					<var
-					dataname="varUpdateMenuitem"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="96a8e0bc-fc93-4dd0-ba51-29d1953a65e5"
-					variablename="repoSelectedItem">
-					</var>
-					<var
-					dataname="modNewPageName"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="b3e50b36-b914-43d2-ac01-ebac4e0f47c9"
-					variablename="repoSelectedPageName">
-					</var>
-					<var
-					dataname="modUpdatedName"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="d260425d-57b7-46c3-9ee6-7e80553c4123"
-					variablename="modSubmitedPageName">
-					</var>
-					<var
-					dataname="modSubmitedParentPage"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="bc7fedab-d54d-41f2-9193-93f9a4513ae2"
-					variablename="modSubmitedParentPage">
-					</var>
-					<var
-					dataname="modSubmitedNumberOfColumn"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="82d64fbd-4b64-4ed6-b025-3ea4ca364268"
-					variablename="modSubmitedNumberOfColumn">
-					</var>
-					<var
-					dataname="modSubmitedDisplayAfter"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="06e88a50-16f7-43b0-a34b-837a45639c08"
-					variablename="modSubmitedDisplayAfter">
-					</var>
-					<var
-					dataname="modSubmitedPublic"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="4511d58d-949a-45c1-9d3b-a630b081caf4"
-					variablename="modSubmitedPublic">
-					</var>
-					<var
-					dataname="varUpdateMenuitem"
-					datasourceid="f3d4749f-4b94-4e49-865b-eccff2fa3158"
-					variableid="e960723e-861e-4aa2-8dba-4154ba522cab"
-					variablename="modSelectedItem">
-					</var>
-				</databinding>
-			</modulegroup>
 			<teardown
 			id="c30047c6-1777-4574-aa40-658b93d79a8d"
 			name="teardown">
@@ -1035,7 +960,7 @@
 				<parameters>
 					<param
 					name="varBrowserName"
-					value="Chrome">
+					value="IE">
 					</param>
 				</parameters>
 			</testcase>
@@ -1076,10 +1001,6 @@
 					value="">
 					</param>
 					<param
-					name="modUpdatedName"
-					value="">
-					</param>
-					<param
 					name="varAddNewMenuitem"
 					value="Add Page">
 					</param>
@@ -1098,10 +1019,6 @@
 					<param
 					name="modSubmitedPublic"
 					value="">
-					</param>
-					<param
-					name="varUpdateMenuitem"
-					value="Edit">
 					</param>
 				</parameters>
 			</testcase>
@@ -1279,17 +1196,9 @@
 									id="bfe1a2a7-1fc5-4ca5-88e1-4313f8743dc4"
 									name="GenerateNewName">
 									</testmodule>
-									<testmodule
-									id="28f3f90f-68d5-4769-831e-b2ec74064f8c"
-									name="GenerateUpdateName">
-									</testmodule>
 									<modulegroup
 									id="c2683e3f-0bc8-4c5d-978d-a28a4c4a27a1"
 									name="AddNewPage">
-									</modulegroup>
-									<modulegroup
-									id="c2d49f4b-26b0-429b-ae04-ec8239e86fe3"
-									name="UpdatePage">
 									</modulegroup>
 								</setup>
 								<modulegroup

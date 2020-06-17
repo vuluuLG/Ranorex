@@ -545,6 +545,7 @@
       <id>c3427588-8506-43d8-9c15-fa4919818b27</id>
       <repoid>3d69752c-c401-4365-984f-a65a6c995533</repoid>
       <reporootid>c0b288b1-adc9-4642-a32e-5641551c150e</reporootid>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>

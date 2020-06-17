@@ -1,7 +1,7 @@
 ﻿<configuration
 rxversion="9.3">
 	<adapter.defaultsearchtimeout>
-		10000ms
+		5000ms
 	</adapter.defaultsearchtimeout>
 	<adapter.defaultuseensurevisible>
 		True

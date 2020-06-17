@@ -36,7 +36,7 @@ namespace Web_DashBoard.Record_Actions.Page
         public void CheckPageExists(string modValidateExistPageName)
         {        	
             Report.Log(ReportLevel.Info, "Validation", "Validating Page'"+modValidateExistPageName+"' Exists .");
-            ATag expectedPage = ".//div[#'main-menu']//a[@innertext='"+modValidateExistPageName+"']";
+            ATag expectedPage = "/dom[@pageurl~'TADashboard']//div[#'main-menu']//a[@innertext='"+modValidateExistPageName+"']";
             Validate.Exists(expectedPage);
         }
 
