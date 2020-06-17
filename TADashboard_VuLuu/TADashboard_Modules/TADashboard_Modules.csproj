@@ -287,6 +287,9 @@
     <Compile Include="Business modules\Utilities\GeneratePageName.cs">
       <id>e53064db-e17c-4851-b661-a005ed506500</id>
     </Compile>
+    <Compile Include="Extension\WebDriverExtension.cs">
+      <id>bd70eab8-350b-4267-95ba-612827686543</id>
+    </Compile>
     <Compile Include="TADashboard_Repository.cs">
       <BoundTo>842ecd5d-66e3-45ef-a7ed-8296cd00ee5e</BoundTo>
       <DependentUpon>TADashboard_Repository.rxrep</DependentUpon>

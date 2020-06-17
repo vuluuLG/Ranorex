@@ -8,15 +8,16 @@
  */
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Drawing;
 using System.Threading;
-using WinForms = System.Windows.Forms;
 
+using WinForms = System.Windows.Forms;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
+using TADashboard_Modules.Extension;
 
 namespace TADashboard_Modules.Page_modules.Utilities
 {
@@ -83,7 +84,16 @@ namespace TADashboard_Modules.Page_modules.Utilities
 	            
 	            // Select OK on confirm dialog
 	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Browser.Dialogs.ButtonOK' at Center.", repo.Browser.Dialogs.ButtonOKInfo);
-            	repo.Browser.Dialogs.ButtonOK.Click();
+            	if (WebDriverExtension.IsWebDriverEndPoint())
+				{
+	            	WebDriverExtension.WaitForAlert(5000);
+	        		var webDriver = WebDriverExtension.GetCurrentWebDriver();
+	        		webDriver.SwitchTo().Alert().Accept();
+				}
+				else
+				{
+					repo.Browser.Dialogs.ButtonOK.Click();
+				}
             	
             	Delay.Seconds(1);
             }

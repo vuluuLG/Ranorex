@@ -19,6 +19,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using TADashboard_Modules.Extension;
 
 namespace TADashboard_Modules.Helper_modules
 {
@@ -67,10 +68,16 @@ namespace TADashboard_Modules.Helper_modules
     		if (!string.IsNullOrEmpty(text))
         	{
     			Report.Log(ReportLevel.Info, "Input Text", string.Format("Input text '{0}'.", text), inputtagInfo);
-            	var control = inputtagInfo.FindAdapter<InputTag>();
-            	control.PressKeys(Keys.Control + "a");
-            	//Keyboard.PrepareFocus(control.Element);
-            	//Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+    			var control = inputtagInfo.FindAdapter<InputTag>();
+    			if (WebDriverExtension.IsWebDriverEndPoint())
+    			{
+    				control.PressKeys(Keys.Control + "a");
+    			}
+    			else
+    			{
+    				Keyboard.PrepareFocus(control.Element);
+            		Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+    			}
             	control.PressKeys(text);
         	}
     	}

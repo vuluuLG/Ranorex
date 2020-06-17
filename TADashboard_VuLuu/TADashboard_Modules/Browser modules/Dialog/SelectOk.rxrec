@@ -34,30 +34,37 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<userrecorditem
+		classname="SelectOk"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="adde9b41-4afe-417d-ab24-e82b16b200e1"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_ButtonOK"
+		namespace="TADashboard_Modules.Browser_modules.Dialog"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="6fc1675f-eae1-4ba7-aec2-fbb078dc2805"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="b3e04c1f-f838-4e8f-9945-80bffe4011ff">
+				<argument
+				argname="buttonInfo"
+				id="6032a14b-0fc0-479d-bcdb-41f0ddb7a26b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="6fc1675f-eae1-4ba7-aec2-fbb078dc2805"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form//form[@accessiblerole='Dialog']//button[@accessiblename='OK']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="8538eef7-bc22-4008-8378-02c650bfaccf"

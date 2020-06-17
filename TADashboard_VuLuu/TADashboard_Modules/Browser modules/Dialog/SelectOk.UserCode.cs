@@ -14,11 +14,13 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using OpenQA.Selenium;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using TADashboard_Modules.Extension;
+using TADashboard_Modules.Helper_modules;
 
 namespace TADashboard_Modules.Browser_modules.Dialog
 {
@@ -31,6 +33,21 @@ namespace TADashboard_Modules.Browser_modules.Dialog
         private void Init()
         {
             // Your recording specific initialization code goes here.
+        }
+
+        public void Mouse_Click_ButtonOK(RepoItemInfo buttonInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+            if (WebDriverExtension.IsWebDriverEndPoint())
+			{
+            	WebDriverExtension.WaitForAlert(5000);
+        		var webDriver = WebDriverExtension.GetCurrentWebDriver();
+        		webDriver.SwitchTo().Alert().Accept();
+			}
+			else
+			{
+				buttonInfo.FindAdapter<Button>().Click();
+			}
         }
 
     }

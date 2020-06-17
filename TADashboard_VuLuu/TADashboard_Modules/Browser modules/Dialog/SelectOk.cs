@@ -82,8 +82,7 @@ namespace TADashboard_Modules.Browser_modules.Dialog
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Browser.Dialogs.ButtonOK' at Center.", repo.Browser.Dialogs.ButtonOKInfo, new RecordItemIndex(1));
-            repo.Browser.Dialogs.ButtonOK.Click();
+            Mouse_Click_ButtonOK(repo.Browser.Dialogs.ButtonOKInfo);
             Delay.Milliseconds(0);
             
         }
